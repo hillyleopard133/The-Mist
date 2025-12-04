@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5819245328237367481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d4302d994b4b834eb125a9e68fedf0b, type: 3}
+  m_Name: 6b42305f-165e-4f66-a76c-95f067afe77c
+  m_EditorClassIdentifier: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 594
+    y: 355
+    width: 250
+    height: 100
+  roomNodeType: {fileID: 11400000, guid: 547badf04dada6246a4cf9bb5d78817a, type: 2}
+  roomNodeTypeList: {fileID: 0}
+  templeGraph: {fileID: 0}
+  parent: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a1388a4c314584ba055b0584168b9b, type: 3}
+  m_Name: TempleGraph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 5426358549079168093}
+  - {fileID: -5819245328237367481}
+  newNodeOffset: {x: 350, y: 0}
+--- !u!114 &5426358549079168093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d4302d994b4b834eb125a9e68fedf0b, type: 3}
+  m_Name: 49c5f369-4963-489f-82da-5b9e1c5b75a8
+  m_EditorClassIdentifier: 
+  children:
+  - 6b42305f-165e-4f66-a76c-95f067afe77c
+  rect:
+    serializedVersion: 2
+    x: 137
+    y: 343
+    width: 250
+    height: 100
+  roomNodeType: {fileID: 0}
+  roomNodeTypeList: {fileID: 0}
+  templeGraph: {fileID: 0}
+  parent: {fileID: 0}
