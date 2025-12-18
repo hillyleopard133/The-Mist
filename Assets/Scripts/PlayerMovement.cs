@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using BayatGames.SaveGameFree;
 //using BayatGames.SaveGameFree;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -45,8 +46,7 @@ public class PlayerMovement : MonoBehaviour
         actions.Movement.Sprint.performed += ctx => Sprint(true);  
         actions.Movement.Sprint.canceled += ctx => Sprint(false); 
         
-        //bool toggleSprintIsOn = SaveGame.Exists(TOGGLE_SPRINT) ? SaveGame.Load<bool>(TOGGLE_SPRINT) : false;
-        bool toggleSprintIsOn = false;
+        bool toggleSprintIsOn = SaveGame.Exists(TOGGLE_SPRINT) ? SaveGame.Load<bool>(TOGGLE_SPRINT) : false;
         sprintToggle.isOn = toggleSprintIsOn;
         ToggleSprint(toggleSprintIsOn);
         sprintToggle.onValueChanged.AddListener(ToggleSprint);
@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
     public void ToggleSprint(bool toggle)
     {
         sprintToggleActive = toggle;
-        //SaveGame.Save(TOGGLE_SPRINT, toggle);
+        SaveGame.Save(TOGGLE_SPRINT, toggle);
     }
 
     private void Move()
