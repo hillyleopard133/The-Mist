@@ -84,7 +84,6 @@ public class BSPAlgorithm
         int roomY = node.Bounds.y + (node.Bounds.height - roomHeight) / 2;
 
         node.Room = new RectInt(roomX, roomY, roomWidth, roomHeight);
-
     }
 
     public static void CreateCorridors(BSPNode node, List<RectInt> corridors)
@@ -96,36 +95,35 @@ public class BSPAlgorithm
 
         Vector2Int centerA = new Vector2Int(roomA.x + roomA.width / 2, roomA.y + roomA.height / 2);
         Vector2Int centerB = new Vector2Int(roomB.x + roomB.width / 2, roomB.y + roomB.height / 2);
-
-        Vector2Int start = new Vector2Int(
-            Random.Range(roomA.x + 1, roomA.xMax - 1),
-            Random.Range(roomA.y + 1, roomA.yMax - 1)
-        );
-        Vector2Int end = new Vector2Int(
-            Random.Range(roomB.x + 1, roomB.xMax - 1),
-            Random.Range(roomB.y + 1, roomB.yMax - 1)
-        );
         
-        int xMin = Mathf.Min(centerA.x, centerB.x);
-        int yMin = Mathf.Min(centerA.y, centerB.y);
-
-        int width = Mathf.Abs(centerA.x - centerB.x);
-        int height = Mathf.Abs(centerA.y - centerB.y);
-
-        if (width == 0) width = 1;
-        if (height == 0) height = 1;
+        int corridorWidth = 3;
+        int half = corridorWidth / 2;
 
         if (Random.value > 0.5f)
         {
-            corridors.Add(new RectInt(xMin, centerA.y, width, 1));
-            corridors.Add(new RectInt(centerB.x, yMin, 1, height));
+            int xStart = Mathf.Min(centerA.x, centerB.x);
+            int xEnd = Mathf.Max(centerA.x, centerB.x);
+            int y = centerA.y - half;
+            corridors.Add(new RectInt(xStart, y, xEnd - xStart + 1, corridorWidth));
+
+            int yStart = Mathf.Min(centerA.y, centerB.y);
+            int yEnd = Mathf.Max(centerA.y, centerB.y);
+            int x = centerB.x - half;
+            corridors.Add(new RectInt(x, yStart - half, corridorWidth, yEnd - yStart + 1 + half));
         }
         else
         {
-            corridors.Add(new RectInt(centerA.x, yMin, 1, height));
-            corridors.Add(new RectInt(xMin, centerB.y, width, 1));
-        }
+            int yStart = Mathf.Min(centerA.y, centerB.y);
+            int yEnd = Mathf.Max(centerA.y, centerB.y);
+            int x = centerA.x - half;
+            corridors.Add(new RectInt(x, yStart, corridorWidth, yEnd - yStart + 1));
 
+            int xStart = Mathf.Min(centerA.x, centerB.x);
+            int xEnd = Mathf.Max(centerA.x, centerB.x);
+            int y = centerB.y - half;
+            corridors.Add(new RectInt(xStart - half, y, xEnd - xStart + 1 + half, corridorWidth));
+        }
+        
         CreateCorridors(node.Left, corridors);
         CreateCorridors(node.Right, corridors);
     }

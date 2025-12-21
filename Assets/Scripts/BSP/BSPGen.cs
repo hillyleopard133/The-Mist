@@ -24,7 +24,7 @@ public class BSPGen: MonoBehaviour
         RoomPainter.Instance.Clear();
 
         root = new BSPNode(new RectInt(0, 0, width, height));
-        BSPAlgorithm.Split(root, 17, 5);
+        BSPAlgorithm.Split(root, 17, 7);
         BSPAlgorithm.CreateRooms(root,minRoomWidth: 12, maxRoomWidth: 15, minRoomHeight: 12, maxRoomHeight: 15);
         
         corridors = new List<RectInt>();
