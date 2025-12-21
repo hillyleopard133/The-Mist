@@ -140,6 +140,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "BSP",
+            "id": "7f14bd3e-0bb0-44f8-a8f0-1f926cab60ab",
+            "actions": [
+                {
+                    "name": "Generate",
+                    "type": "Button",
+                    "id": "239363a3-3ade-4032-9138-a617c66d5a9b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "33d0ad01-c997-4707-bce2-4459f01d21fc",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Generate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

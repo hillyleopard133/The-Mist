@@ -162,6 +162,34 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""BSP"",
+            ""id"": ""7f14bd3e-0bb0-44f8-a8f0-1f926cab60ab"",
+            ""actions"": [
+                {
+                    ""name"": ""Generate"",
+                    ""type"": ""Button"",
+                    ""id"": ""239363a3-3ade-4032-9138-a617c66d5a9b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""33d0ad01-c997-4707-bce2-4459f01d21fc"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Generate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -174,6 +202,9 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         m_Dialogue = asset.FindActionMap("Dialogue", throwIfNotFound: true);
         m_Dialogue_Interact = m_Dialogue.FindAction("Interact", throwIfNotFound: true);
         m_Dialogue_Continue = m_Dialogue.FindAction("Continue", throwIfNotFound: true);
+        // BSP
+        m_BSP = asset.FindActionMap("BSP", throwIfNotFound: true);
+        m_BSP_Generate = m_BSP.FindAction("Generate", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -311,6 +342,39 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         }
     }
     public DialogueActions @Dialogue => new DialogueActions(this);
+
+    // BSP
+    private readonly InputActionMap m_BSP;
+    private IBSPActions m_BSPActionsCallbackInterface;
+    private readonly InputAction m_BSP_Generate;
+    public struct BSPActions
+    {
+        private @PlayerActions m_Wrapper;
+        public BSPActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Generate => m_Wrapper.m_BSP_Generate;
+        public InputActionMap Get() { return m_Wrapper.m_BSP; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(BSPActions set) { return set.Get(); }
+        public void SetCallbacks(IBSPActions instance)
+        {
+            if (m_Wrapper.m_BSPActionsCallbackInterface != null)
+            {
+                @Generate.started -= m_Wrapper.m_BSPActionsCallbackInterface.OnGenerate;
+                @Generate.performed -= m_Wrapper.m_BSPActionsCallbackInterface.OnGenerate;
+                @Generate.canceled -= m_Wrapper.m_BSPActionsCallbackInterface.OnGenerate;
+            }
+            m_Wrapper.m_BSPActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Generate.started += instance.OnGenerate;
+                @Generate.performed += instance.OnGenerate;
+                @Generate.canceled += instance.OnGenerate;
+            }
+        }
+    }
+    public BSPActions @BSP => new BSPActions(this);
     public interface IMovementActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -320,5 +384,9 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     {
         void OnInteract(InputAction.CallbackContext context);
         void OnContinue(InputAction.CallbackContext context);
+    }
+    public interface IBSPActions
+    {
+        void OnGenerate(InputAction.CallbackContext context);
     }
 }
