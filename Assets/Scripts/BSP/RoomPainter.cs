@@ -17,6 +17,26 @@ public class RoomPainter : Singleton<RoomPainter>
         PaintWalls();
     }
     
+    public void Paint(List<BSPNode> nodes, List<RectInt> corridors)
+    {
+        PaintRooms(nodes);
+        PaintCorridors(corridors);
+        PaintWalls();
+    }
+
+    void PaintRooms(List<BSPNode> nodes)
+    {
+        foreach (var node in nodes)
+        {
+            if (!node.Room.HasValue) continue;
+
+            RectInt r = node.Room.Value;
+            for (int x = r.x; x < r.xMax; x++)
+            for (int y = r.y; y < r.yMax; y++)
+                floorMap.SetTile(new Vector3Int(x, y, 0), floorTile);
+        }
+    }
+    
     public void Clear()
     {
         floorMap.ClearAllTiles();
