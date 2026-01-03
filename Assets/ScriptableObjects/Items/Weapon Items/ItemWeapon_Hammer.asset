@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f50c7d94d36c8f44939a235b74aa2e9, type: 3}
+  m_Name: ItemWeapon_Hammer
+  m_EditorClassIdentifier: 
+  ID: WeaponHammer
+  Name: Hammer
+  Icon: {fileID: 21300000, guid: a5b8293e5551a1a45910a3231bc90de1, type: 3}
+  Description: A heavy, imposing war hammer adorned with intricate runes.
+  ItemType: 0
+  IsConsumable: 0
+  IsStackable: 0
+  MaxStack: 1
+  Weapon: {fileID: 11400000, guid: 8b88872c6120ee547ad350a08321a046, type: 2}

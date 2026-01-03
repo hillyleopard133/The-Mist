@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a70602509f7d0f49bb155d2f669ccfd, type: 3}
+  m_Name: ItemExtra_ScrollRock
+  m_EditorClassIdentifier: 
+  ID: ItemScrollRock
+  Name: Rock Scroll
+  Icon: {fileID: 21300000, guid: b0d60b912b81b8248bf86bc62609b75a, type: 3}
+  Description: Send rock projectiles from each direction.
+  ItemType: 2
+  IsConsumable: 0
+  IsStackable: 1
+  MaxStack: 10

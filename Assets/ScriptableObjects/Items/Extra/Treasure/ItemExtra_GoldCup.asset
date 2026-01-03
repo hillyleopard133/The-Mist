@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a70602509f7d0f49bb155d2f669ccfd, type: 3}
+  m_Name: ItemExtra_GoldCup
+  m_EditorClassIdentifier: 
+  ID: ItemGoldCup
+  Name: Gold Cup
+  Icon: {fileID: 21300000, guid: 8e52ce6a589231849959c4c08f1ca623, type: 3}
+  Description: A beautiful gold chalice, covered in intricate designs.
+  ItemType: 4
+  IsConsumable: 0
+  IsStackable: 1
+  MaxStack: 10
+  Quantity: 0

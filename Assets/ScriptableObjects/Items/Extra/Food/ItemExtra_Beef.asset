@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a70602509f7d0f49bb155d2f669ccfd, type: 3}
+  m_Name: ItemExtra_Beef
+  m_EditorClassIdentifier: 
+  ID: ItemBeef
+  Name: Beef
+  Icon: {fileID: 21300000, guid: 4f90205e269a947448b74bdd6d390a73, type: 3}
+  Description: Delicious slices of roast beef.
+  ItemType: 3
+  IsConsumable: 0
+  IsStackable: 1
+  MaxStack: 50

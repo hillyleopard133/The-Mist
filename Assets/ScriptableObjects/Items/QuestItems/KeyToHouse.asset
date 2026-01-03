@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27784ca44b040fda739fa2d618aa2bf, type: 3}
+  m_Name: KeyToHouse
+  m_EditorClassIdentifier: 
+  ID: HouseKey
+  Name: Old key
+  Icon: {fileID: 21300000, guid: 3620d693c0563274ebfd9f8c62e16cd3, type: 3}
+  Description: An old key I received from the monk. What does it open?
+  ItemType: 5
+  IsConsumable: 0
+  IsStackable: 0
+  MaxStack: 1
+  Quantity: 0
