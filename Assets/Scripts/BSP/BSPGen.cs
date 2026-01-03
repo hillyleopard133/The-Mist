@@ -9,13 +9,12 @@ public class BSPGen: MonoBehaviour
     
     private PlayerActions actions;
     
-    private int mapWidth = 100;
-    private int mapHeight = 100;
-    private int rows = 5;      
-    private int cols = 5;     
-    private int roomPadding = 4;
-    private int corridorWidth = 3;
-
+    private const int mapWidth = 150;
+    private const int mapHeight = 150;
+    private const int rows = 5;
+    private const int cols = 5;
+    private const int roomPadding = 4;
+    private const int corridorWidth = 3;
 
     private void Awake()
     {
@@ -24,7 +23,7 @@ public class BSPGen: MonoBehaviour
     
     private void Start()
     {
-        actions.BSP.Generate.performed += ctx => GenerateGrid(); 
+        actions.BSP.Generate.performed += ctx => Generate(); 
     }
     
     public BSPNode GenerateGrid()
@@ -38,10 +37,7 @@ public class BSPGen: MonoBehaviour
         BSPAlgorithm.CreateRoomsInGrid(nodes, roomPadding);
         BSPAlgorithm.RemoveRandomRooms(nodes, 0.5f);
         
-        int bottomRow = 0; 
-        int middleCol = cols / 2;
-        int startIndex = bottomRow * cols + middleCol;
-        BSPNode startRoom = nodes[startIndex];
+        BSPNode startRoom = nodes[cols/2];
         
         BSPAlgorithm.KeepStartingRoom(startRoom, cols, roomPadding);
 
@@ -53,17 +49,43 @@ public class BSPGen: MonoBehaviour
         return root;
     }
 
+    public BSPNode GenerateTemple()
+    {
+        RoomPainter.Instance.Clear();
+        root = new BSPNode(new RectInt(0, 0, mapWidth, mapHeight));
+        
+        BSPAlgorithm.Split(root, 17, 7);
+        BSPAlgorithm.CreateRooms(root,minRoomWidth: 12, maxRoomWidth: 15, minRoomHeight: 12, maxRoomHeight: 15);
+        
+        List<BSPNode> leaves = BSPAlgorithm.GetLeafNodes(root);
+        
+        int cols = Mathf.CeilToInt(Mathf.Sqrt(leaves.Count)); 
+        int rows = Mathf.CeilToInt(leaves.Count / (float)cols);
+        int bottomRow = rows - 1;
+        int startIndex = bottomRow * cols + cols / 2;
+        BSPNode startRoom = leaves[Mathf.Min(startIndex, leaves.Count - 1)];
+        
+        BSPAlgorithm.KeepStartingRoom(startRoom, cols, roomPadding);
+        
+        List<RectInt> corridors = BSPAlgorithm.CreateGridCorridors(leaves, rows, cols);
+        corridors.AddRange(BSPAlgorithm.ConnectUnreachableRooms(startRoom, leaves, cols, rows, corridorWidth));
+        
+        RoomPainter.Instance.Paint(root, corridors);
+
+        return root;
+    }
+
     
-    public BSPNode Generate(int width, int height)
+    public BSPNode Generate()
     {
         RoomPainter.Instance.Clear();
 
-        root = new BSPNode(new RectInt(0, 0, width, height));
+        root = new BSPNode(new RectInt(0, 0, mapWidth, mapHeight));
         BSPAlgorithm.Split(root, 17, 7);
         BSPAlgorithm.CreateRooms(root,minRoomWidth: 12, maxRoomWidth: 15, minRoomHeight: 12, maxRoomHeight: 15);
         
         corridors = new List<RectInt>();
-        BSPAlgorithm.CreateCorridors(root, corridors);
+        BSPAlgorithm.CreateCorridorsBetter(root, corridors, corridorWidth);
         
         RoomPainter.Instance.Paint(root, corridors);
 

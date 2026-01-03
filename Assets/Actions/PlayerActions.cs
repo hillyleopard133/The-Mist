@@ -190,6 +190,54 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""General"",
+            ""id"": ""23d13b93-48a3-483a-912f-e60ba8a60eca"",
+            ""actions"": [
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""df8619d6-bd8c-48aa-94ce-24f031c1c71c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Respawn"",
+                    ""type"": ""Button"",
+                    ""id"": ""4fcdd94f-9c65-4b13-b7af-9da720fc9d86"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""76597117-bd88-42a9-913c-df0ca1c69528"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4d28003c-731f-4dd7-8bc1-ac39bec26a3c"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Respawn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -205,6 +253,10 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         // BSP
         m_BSP = asset.FindActionMap("BSP", throwIfNotFound: true);
         m_BSP_Generate = m_BSP.FindAction("Generate", throwIfNotFound: true);
+        // General
+        m_General = asset.FindActionMap("General", throwIfNotFound: true);
+        m_General_Pause = m_General.FindAction("Pause", throwIfNotFound: true);
+        m_General_Respawn = m_General.FindAction("Respawn", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -375,6 +427,47 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         }
     }
     public BSPActions @BSP => new BSPActions(this);
+
+    // General
+    private readonly InputActionMap m_General;
+    private IGeneralActions m_GeneralActionsCallbackInterface;
+    private readonly InputAction m_General_Pause;
+    private readonly InputAction m_General_Respawn;
+    public struct GeneralActions
+    {
+        private @PlayerActions m_Wrapper;
+        public GeneralActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Pause => m_Wrapper.m_General_Pause;
+        public InputAction @Respawn => m_Wrapper.m_General_Respawn;
+        public InputActionMap Get() { return m_Wrapper.m_General; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(GeneralActions set) { return set.Get(); }
+        public void SetCallbacks(IGeneralActions instance)
+        {
+            if (m_Wrapper.m_GeneralActionsCallbackInterface != null)
+            {
+                @Pause.started -= m_Wrapper.m_GeneralActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_GeneralActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_GeneralActionsCallbackInterface.OnPause;
+                @Respawn.started -= m_Wrapper.m_GeneralActionsCallbackInterface.OnRespawn;
+                @Respawn.performed -= m_Wrapper.m_GeneralActionsCallbackInterface.OnRespawn;
+                @Respawn.canceled -= m_Wrapper.m_GeneralActionsCallbackInterface.OnRespawn;
+            }
+            m_Wrapper.m_GeneralActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
+                @Respawn.started += instance.OnRespawn;
+                @Respawn.performed += instance.OnRespawn;
+                @Respawn.canceled += instance.OnRespawn;
+            }
+        }
+    }
+    public GeneralActions @General => new GeneralActions(this);
     public interface IMovementActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -388,5 +481,10 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     public interface IBSPActions
     {
         void OnGenerate(InputAction.CallbackContext context);
+    }
+    public interface IGeneralActions
+    {
+        void OnPause(InputAction.CallbackContext context);
+        void OnRespawn(InputAction.CallbackContext context);
     }
 }

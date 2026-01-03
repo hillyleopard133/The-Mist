@@ -21,6 +21,7 @@ public class AudioManager : Singleton<AudioManager>
     [Header("Music")]
     [SerializeField] private AudioClip townMusic;
     [SerializeField] private AudioClip enemyAreaMusic;
+    [SerializeField] private AudioClip deadMusic;
     [SerializeField] private AudioClip menuMusicIntro;
     [SerializeField] private AudioClip menuMusicLoop;
     
@@ -36,6 +37,8 @@ public class AudioManager : Singleton<AudioManager>
     [Header("Player Sounds")]
     [SerializeField] private AudioClip playerDeath;
     [SerializeField] private AudioClip playerDamage;
+    [SerializeField] private AudioClip playerAttackMagic;
+    [SerializeField] private AudioClip playerAttackMelee;
     
     [Header("Enemy Sounds")]
     [SerializeField] private AudioClip enemyDeath;
@@ -206,7 +209,7 @@ public class AudioManager : Singleton<AudioManager>
         nextClipVolume = volume;
     }
 
-    private void PlayMusic(AudioClip musicClip, float volume)
+    public void PlayMusic(AudioClip musicClip, float volume)
     {
         if (musicSourceLoop.clip == musicClip) return; 
         
@@ -231,6 +234,7 @@ public class AudioManager : Singleton<AudioManager>
     public void PlayMenuMusic() => PlayMusicWithIntro(menuMusicIntro, menuMusicLoop, 1f);
     public void PlayTownMusic() => PlayMusic(townMusic, 0.5f);
     public void PlayEnemyAreaMusic() => PlayMusic(enemyAreaMusic, 1f);
+    public void PlayDeadMusic() => PlayMusic(deadMusic, 1f);
 
     // Menu Sounds
     public void PlayRemoveItemSound() => PlaySFX(removeItem, 0.7f);
@@ -244,6 +248,8 @@ public class AudioManager : Singleton<AudioManager>
     // Player Sounds
     public void PlayPlayerDeathSound() => PlaySFX(playerDeath);
     public void PlayPlayerDamageSound() => PlaySFX(playerDamage);
+    public void PlayPlayerAttackMagicSound() => PlaySFX(playerAttackMagic);
+    public void PlayPlayerAttackMeleeSound() => PlaySFX(playerAttackMelee);
 
     // Enemy Sounds
     public void PlayEnemyDeathSound() => PlaySFX(enemyDeath);

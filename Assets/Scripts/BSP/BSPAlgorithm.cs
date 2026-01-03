@@ -58,6 +58,26 @@ public class BSPAlgorithm
         Split(node.Left, minSize, maxDepth, depth + 1);
         Split(node.Right, minSize, maxDepth, depth + 1);
     }
+    
+    public static List<BSPNode> GetLeafNodes(BSPNode root)
+    {
+        List<BSPNode> leaves = new List<BSPNode>();
+        TraverseLeaves(root, leaves);
+        return leaves;
+    }
+
+    private static void TraverseLeaves(BSPNode node, List<BSPNode> leaves)
+    {
+        if (node == null) return;
+        if (node.IsLeaf)
+        {
+            leaves.Add(node);
+            return;
+        }
+
+        TraverseLeaves(node.Left, leaves);
+        TraverseLeaves(node.Right, leaves);
+    }
 
     public static void CreateRooms(BSPNode node, int minRoomWidth, int maxRoomWidth, int minRoomHeight, int maxRoomHeight, int padding = 1)
     {
@@ -98,6 +118,50 @@ public class BSPAlgorithm
         CreateCorridors(node.Left, corridors, corridorWidth);
         CreateCorridors(node.Right, corridors, corridorWidth);
     }
+    
+    public static void CreateCorridorsBetter(BSPNode node, List<RectInt> corridors, int corridorWidth)
+    {
+        if (node == null || node.IsLeaf) return;
+
+        List<BSPNode> leftLeaves = GetLeafNodes(node.Left);
+        List<BSPNode> rightLeaves = GetLeafNodes(node.Right);
+
+        
+        if (leftLeaves.Count > 0 && rightLeaves.Count > 0)
+        {
+            // Find nearest pair between left and right
+            BSPNode nearestLeft = null;
+            BSPNode nearestRight = null;
+            float minDist = float.MaxValue;
+
+            foreach (var l in leftLeaves)
+            {
+                Vector2Int lCenter = GetRoomCenter(l);
+                foreach (var r in rightLeaves)
+                {
+                    Vector2Int rCenter = GetRoomCenter(r);
+                    float dist = Vector2Int.Distance(lCenter, rCenter);
+                    if (dist < minDist)
+                    {
+                        minDist = dist;
+                        nearestLeft = l;
+                        nearestRight = r;
+                    }
+                }
+            }
+
+            // Connect the closest pair
+            if (nearestLeft != null && nearestRight != null)
+            {
+                CreateCorridor(nearestLeft.Room.Value, nearestRight.Room.Value, corridors, corridorWidth);
+            }
+        }
+
+        // Recurse into children
+        CreateCorridorsBetter(node.Left, corridors, corridorWidth);
+        CreateCorridorsBetter(node.Right, corridors, corridorWidth);
+    }
+
 
     public static void CreateCorridor(RectInt roomA, RectInt roomB, List<RectInt> corridors, int corridorWidth)
     {
