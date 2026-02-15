@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f9ac5861d74ef4aa3eae5ded0c702c, type: 3}
+  m_Name: TalkToGrassMan
+  m_EditorClassIdentifier: 
+  Name: Lend a helping hand
+  ID: TalkToGrassMan
+  QuestGoal: 0
+  Descriptions:
+  - Talk to the man standing in the patch of grass.
+  - Return to the monk.
+  - Talk to the monk to see what he needs.
+  - Bring 5 honey to the monk.
+  hasProgress: 0
+  GoldReward: 50
+  ExpReward: 100
+  ItemReward:
+    Item: {fileID: 11400000, guid: 6d22807872b87b7458ca6d4910c6db9f, type: 2}
+    Quantity: 1
+  CurrentStatus: 3
+  QuestCompleted: 1
+  QuestAccepted: 1
+  QuestClaimed: 1

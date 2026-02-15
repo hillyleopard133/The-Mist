@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03b7bf882fac4028a68eb2c4de7e5448, type: 3}
+  m_Name: RecipeList
+  m_EditorClassIdentifier: 
+  Recipes:
+  - Name: Medpack
+    Item1: {fileID: 11400000, guid: aad6a3a55c9aca745826d3afed541d45, type: 2}
+    Item1Amount: 5
+    Item2: {fileID: 11400000, guid: 0b700b5913215d04a8f848623a3dfb26, type: 2}
+    Item2Amount: 3
+    FinalItem: {fileID: 11400000, guid: 397aa0b022b6dc94f9fe4ec43e4411c4, type: 2}
+    FinalItemAmount: 2
+  - Name: Milk Potion
+    Item1: {fileID: 11400000, guid: aad6a3a55c9aca745826d3afed541d45, type: 2}
+    Item1Amount: 2
+    Item2: {fileID: 11400000, guid: 371572504a6f7df4b99592599973a000, type: 2}
+    Item2Amount: 4
+    FinalItem: {fileID: 11400000, guid: b9f7f904e69178544819a18eed4fc712, type: 2}
+    FinalItemAmount: 5

@@ -1,0 +1,757 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9171463112379255871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 70e96d1f-c7cd-49ec-82e2-724284442203
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: You're just going to leave me here!?
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 3414
+    y: 663
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-8729886637537444035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 88547ede-fcd7-468b-85cf-ad7bbfdc8173
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: 'Could you please escort me to the potion shop in town? '
+  children:
+  - 1a1f0ecb-6f65-43f8-8a68-7d7d8d350bdc
+  - 661327ae-bbcc-4b6a-a767-bd66947320db
+  rect:
+    serializedVersion: 2
+    x: 2726
+    y: 628
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 3
+      not: 0
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: 72e7358e519ffa14a89ec46a10162c6b, type: 2}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-7458688477135217237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 51ce9328-346c-4beb-a671-b099516da0cc
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 1
+  triggerInteraction: 0
+  text: I've got one right here
+  children:
+  - 8a777993-155f-462a-b455-4cda4877aa26
+  rect:
+    serializedVersion: 2
+    x: 1060
+    y: 316
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 2
+      not: 0
+      quest: {fileID: 0}
+      item: {fileID: 11400000, guid: 397aa0b022b6dc94f9fe4ec43e4411c4, type: 2}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 1
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-6144971849029944948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: f87c1ba3-f8df-4ff1-8f22-21098fcdf624
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 1
+  triggerInteraction: 0
+  text: Fine, take it
+  children:
+  - 8a777993-155f-462a-b455-4cda4877aa26
+  rect:
+    serializedVersion: 2
+    x: 1715
+    y: 88
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-5482419172332910164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 2000542c-7a2d-489d-ad09-3d09ae22d167
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Wow, such a kind stranger!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 3413
+    y: 506
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: PassDialogueTrigger
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 5837451f095303a43b9dcbd75854292a, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: StartFollowingPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: DisableInteractions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: AddQuestProgress
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d1b3211cce3539a47b0fe3c04eb06ba3, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-5061873566026587210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 3521214a-a7b7-49ba-9872-d8899ea07674
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Sorry, I can't help you
+  children:
+  - 2abd2971-ed90-4c41-88ee-e09595785f8c
+  rect:
+    serializedVersion: 2
+    x: 1025
+    y: 163
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 2
+      not: 0
+      quest: {fileID: 0}
+      item: {fileID: 11400000, guid: 397aa0b022b6dc94f9fe4ec43e4411c4, type: 2}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 1
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-5026718329800579646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: a9ccedea-5e74-408d-9283-a56a94979ce7
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Sorry, I don't have any
+  children:
+  - 2292ec24-df4b-4e87-8d0d-0dbc06dd631c
+  rect:
+    serializedVersion: 2
+    x: 981
+    y: 537
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 2
+      not: 1
+      quest: {fileID: 0}
+      item: {fileID: 11400000, guid: 397aa0b022b6dc94f9fe4ec43e4411c4, type: 2}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 1
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-4558787206033075690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 2292ec24-df4b-4e87-8d0d-0dbc06dd631c
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Please go find one and bring it to me, I'm not sure how much longer I can
+    hold out for..
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1348
+    y: 587
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1521bdc4c1880b43b77716221978fa6, type: 3}
+  m_Name: InjuredPrincess
+  m_EditorClassIdentifier: 
+  characterSpeakers:
+  - {fileID: 11400000, guid: 34c9e00320837d14b80046025fdeb818, type: 2}
+  nodes:
+  - {fileID: 2746369025272949828}
+  - {fileID: 1794464499406287636}
+  - {fileID: -7458688477135217237}
+  - {fileID: -5026718329800579646}
+  - {fileID: 1907073482035145414}
+  - {fileID: -5061873566026587210}
+  - {fileID: 945835210793961473}
+  - {fileID: -6144971849029944948}
+  - {fileID: 8983325232389090480}
+  - {fileID: -4558787206033075690}
+  - {fileID: 8286966860833882374}
+  - {fileID: 1400589722193276028}
+  - {fileID: -8729886637537444035}
+  - {fileID: 8541239528752460496}
+  - {fileID: 2527487750733076914}
+  - {fileID: 8376372532053571061}
+  - {fileID: -9171463112379255871}
+  - {fileID: -5482419172332910164}
+  newNodeOffset: {x: 350, y: 0}
+--- !u!114 &945835210793961473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 2abd2971-ed90-4c41-88ee-e09595785f8c
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: But you've got one in your hand!
+  children:
+  - f87c1ba3-f8df-4ff1-8f22-21098fcdf624
+  - ae7314c1-4870-40ff-9418-5c31992dc503
+  rect:
+    serializedVersion: 2
+    x: 1358
+    y: 141
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1400589722193276028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: a9bfcafe-6a6e-4016-9358-fa0789f34905
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: How could you be so cruel!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2134
+    y: 189
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1794464499406287636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 36c53f04-3323-4f5a-9617-03b477295440
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Help me! I was attacked I need a medpack!
+  children:
+  - 51ce9328-346c-4beb-a671-b099516da0cc
+  - a9ccedea-5e74-408d-9283-a56a94979ce7
+  - 3521214a-a7b7-49ba-9872-d8899ea07674
+  rect:
+    serializedVersion: 2
+    x: 484
+    y: 268
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 0
+      not: 1
+      quest: {fileID: 11400000, guid: d1b3211cce3539a47b0fe3c04eb06ba3, type: 2}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: GiveQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d1b3211cce3539a47b0fe3c04eb06ba3, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: ChangeStartDialogueOnEnter
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1907073482035145414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: f04a4d3b-7993-4e8d-9db1-7214c7145c76
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Did you find me a medpack?
+  children:
+  - 51ce9328-346c-4beb-a671-b099516da0cc
+  - a9ccedea-5e74-408d-9283-a56a94979ce7
+  - 3521214a-a7b7-49ba-9872-d8899ea07674
+  rect:
+    serializedVersion: 2
+    x: 489
+    y: 526
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 0
+      not: 0
+      quest: {fileID: 11400000, guid: d1b3211cce3539a47b0fe3c04eb06ba3, type: 2}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 0
+    - requirementType: 3
+      not: 1
+      quest: {fileID: 11400000, guid: d1b3211cce3539a47b0fe3c04eb06ba3, type: 2}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: 72e7358e519ffa14a89ec46a10162c6b, type: 2}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2527487750733076914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 1a1f0ecb-6f65-43f8-8a68-7d7d8d350bdc
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 1
+  triggerInteraction: 0
+  text: Yeah alright, follow me
+  children:
+  - 2000542c-7a2d-489d-ad09-3d09ae22d167
+  rect:
+    serializedVersion: 2
+    x: 3085
+    y: 506
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2746369025272949828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: beeb265a-c824-4c8b-aa5a-50fbfd99f187
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Hey, you!
+  children:
+  - 36c53f04-3323-4f5a-9617-03b477295440
+  - f04a4d3b-7993-4e8d-9db1-7214c7145c76
+  - 88547ede-fcd7-468b-85cf-ad7bbfdc8173
+  rect:
+    serializedVersion: 2
+    x: 96
+    y: 352
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8286966860833882374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 8a777993-155f-462a-b455-4cda4877aa26
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Thank you!
+  children:
+  - 7be20f0a-f99f-43cd-a353-5ce9841e6df7
+  rect:
+    serializedVersion: 2
+    x: 2127
+    y: 377
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: SetItemAmount
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: RemoveItems
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 397aa0b022b6dc94f9fe4ec43e4411c4, type: 2}
+          m_ObjectArgumentAssemblyTypeName: InventoryItem, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: AddQuestProgress
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d1b3211cce3539a47b0fe3c04eb06ba3, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: NPCIsAlive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: PassDialogueTrigger
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 72e7358e519ffa14a89ec46a10162c6b, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8376372532053571061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 661327ae-bbcc-4b6a-a767-bd66947320db
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Not right now
+  children:
+  - 70e96d1f-c7cd-49ec-82e2-724284442203
+  rect:
+    serializedVersion: 2
+    x: 3072
+    y: 677
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8541239528752460496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 7be20f0a-f99f-43cd-a353-5ce9841e6df7
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: I think I should be more careful and make sure I bring enough health potions
+    next time...
+  children:
+  - 88547ede-fcd7-468b-85cf-ad7bbfdc8173
+  rect:
+    serializedVersion: 2
+    x: 2415
+    y: 495
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8983325232389090480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: ae7314c1-4870-40ff-9418-5c31992dc503
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: It's mine you can't have it
+  children:
+  - a9bfcafe-6a6e-4016-9358-fa0789f34905
+  rect:
+    serializedVersion: 2
+    x: 1712
+    y: 250
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []

@@ -1,0 +1,352 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9131290118424439662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: ea1e5df5-dc06-438f-99bb-0cc6a8330faf
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: What a nice day it is today!
+  children:
+  - df2b36ce-aed8-4abb-bc11-07e374e688b8
+  rect:
+    serializedVersion: 2
+    x: 692
+    y: 83
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 0
+      not: 1
+      quest: {fileID: 11400000, guid: 78ceb8a9cb038a544a5ee9c62c73a7d5, type: 2}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-8767730664798988601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: c136a4fd-5c07-4c52-8b97-fa45204d874f
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Thank you so much!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1061
+    y: 511
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-6672249304668670272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 9365129e-a2ed-45d0-b4cc-083464f511a5
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 1
+  triggerInteraction: 0
+  text: The monk sent me to speak to you.
+  children:
+  - 056a7750-786b-44a8-b625-671a1a856b07
+  rect:
+    serializedVersion: 2
+    x: 699
+    y: 252
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 0
+      not: 0
+      quest: {fileID: 11400000, guid: 78ceb8a9cb038a544a5ee9c62c73a7d5, type: 2}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 0
+    - requirementType: 3
+      not: 1
+      quest: {fileID: 11400000, guid: 78ceb8a9cb038a544a5ee9c62c73a7d5, type: 2}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: d129712821846d845abf4918190266fb, type: 2}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-4177501903427220751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: df2b36ce-aed8-4abb-bc11-07e374e688b8
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Do you know whats in that building?
+  children:
+  - d49f9969-6de7-4218-b034-88b80377af64
+  rect:
+    serializedVersion: 2
+    x: 1010
+    y: 29
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-3711423167302429027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: d49f9969-6de7-4218-b034-88b80377af64
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: You should be careful there! theres monsters inside!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1313
+    y: 58
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-3448257388974266981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 056a7750-786b-44a8-b625-671a1a856b07
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: That guy is always sending people to come bother me! Can you please tell
+    him to stop!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1046
+    y: 301
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: PassDialogueTrigger
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d129712821846d845abf4918190266fb, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: AddQuestProgress
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 78ceb8a9cb038a544a5ee9c62c73a7d5, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-1113694633970941098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 1ca3fa03-2ad9-4ddb-8eed-e30060077bd1
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: I don't think he will be bothering you again.
+  children:
+  - c136a4fd-5c07-4c52-8b97-fa45204d874f
+  rect:
+    serializedVersion: 2
+    x: 685
+    y: 590
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 3
+      not: 0
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: f84d9d1f79469cc4d9f2ac3d7952b382, type: 2}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1521bdc4c1880b43b77716221978fa6, type: 3}
+  m_Name: Villager
+  m_EditorClassIdentifier: 
+  characterSpeakers:
+  - {fileID: 11400000, guid: ddd44e356855bdf40b6d29d776ffb75d, type: 2}
+  nodes:
+  - {fileID: 4484190964805308854}
+  - {fileID: -6672249304668670272}
+  - {fileID: -3448257388974266981}
+  - {fileID: 5280277943432225815}
+  - {fileID: -1113694633970941098}
+  - {fileID: -8767730664798988601}
+  - {fileID: -9131290118424439662}
+  - {fileID: -4177501903427220751}
+  - {fileID: -3711423167302429027}
+  newNodeOffset: {x: 350, y: 0}
+--- !u!114 &4484190964805308854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 3c502174-41e0-41fd-b3ee-c47e81b0f0ce
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Hello!
+  children:
+  - 9365129e-a2ed-45d0-b4cc-083464f511a5
+  - 59792127-f097-4eb3-acf8-bc2c7241f74b
+  - 1ca3fa03-2ad9-4ddb-8eed-e30060077bd1
+  - ea1e5df5-dc06-438f-99bb-0cc6a8330faf
+  rect:
+    serializedVersion: 2
+    x: 218
+    y: 338
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5280277943432225815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 59792127-f097-4eb3-acf8-bc2c7241f74b
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Please tell him to leave me alone!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 689
+    y: 403
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 3
+      not: 0
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: d129712821846d845abf4918190266fb, type: 2}
+      amountOfItemRequired: 0
+    - requirementType: 3
+      not: 1
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: f84d9d1f79469cc4d9f2ac3d7952b382, type: 2}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []

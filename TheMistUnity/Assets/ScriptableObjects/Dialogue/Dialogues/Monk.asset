@@ -1,0 +1,785 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7107343117645788423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 59882344-59d3-450b-9f76-5d316f5f42d2
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: You can get it from looting enemy corpses!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1187
+    y: 1231
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-6101467651603006391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: ac34588b-c3f2-4bf3-a34e-32fa5cac59b4
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Hi there!
+  children:
+  - 6e6f6543-1549-4c79-bdbb-09acc0ef056a
+  - fa1ea0bd-9d15-46b3-884e-d9692c96528e
+  - 408ff3ba-a30e-4257-b8fe-f2e17fb9fe57
+  - 0e52b9c1-9fa3-43cf-ab3f-3239b29b5940
+  - 0dca1b7e-a50a-4118-bb89-f8f3035a555e
+  - 54e10273-7e58-4398-bc19-537429b96ef6
+  rect:
+    serializedVersion: 2
+    x: 43
+    y: 596
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-5568251227208305691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 2303ee2b-ba39-4783-b0d4-2a1e0c693398
+  m_EditorClassIdentifier: 
+  speakerIndex: 1
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Miao!
+  children:
+  - 6bbd2216-80d8-4cbb-911d-266fbe9d8efd
+  rect:
+    serializedVersion: 2
+    x: 984
+    y: 228
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-5079279602843418637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 0e52b9c1-9fa3-43cf-ab3f-3239b29b5940
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Have you got my honey?
+  children:
+  - 9775c434-e205-4818-95ae-42d31bb26fb2
+  - 72c242ca-370e-4b8a-84bb-e61775a18653
+  rect:
+    serializedVersion: 2
+    x: 386
+    y: 1097
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 3
+      not: 0
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: 20ad0386021eaa04faacf0bb276780c9, type: 2}
+      amountOfItemRequired: 0
+    - requirementType: 1
+      not: 1
+      quest: {fileID: 11400000, guid: 78ceb8a9cb038a544a5ee9c62c73a7d5, type: 2}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-4086169911712893125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 9775c434-e205-4818-95ae-42d31bb26fb2
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Still working on it!
+  children:
+  - 59882344-59d3-450b-9f76-5d316f5f42d2
+  rect:
+    serializedVersion: 2
+    x: 792
+    y: 1237
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 2
+      not: 1
+      quest: {fileID: 0}
+      item: {fileID: 11400000, guid: 0b700b5913215d04a8f848623a3dfb26, type: 2}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 5
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-3470411302600246497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 0dca1b7e-a50a-4118-bb89-f8f3035a555e
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Thanks for all your help with everything!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 523
+    y: 833
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 1
+      not: 0
+      quest: {fileID: 11400000, guid: 78ceb8a9cb038a544a5ee9c62c73a7d5, type: 2}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-2983722923597355966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: b524f1a6-67c4-4ddc-9e99-314bf2e78d4d
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Hahaha! It's just a bit of fun. Don't worry you can tell him I'll stop.
+  children:
+  - 408ff3ba-a30e-4257-b8fe-f2e17fb9fe57
+  rect:
+    serializedVersion: 2
+    x: 1051
+    y: 589
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: PassDialogueTrigger
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: f84d9d1f79469cc4d9f2ac3d7952b382, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: AddQuestProgress
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 78ceb8a9cb038a544a5ee9c62c73a7d5, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-1772922340364301931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: fa1ea0bd-9d15-46b3-884e-d9692c96528e
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 1
+  triggerInteraction: 0
+  text: That guy says you've been harassing him.
+  children:
+  - b524f1a6-67c4-4ddc-9e99-314bf2e78d4d
+  rect:
+    serializedVersion: 2
+    x: 681
+    y: 545
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 3
+      not: 0
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: d129712821846d845abf4918190266fb, type: 2}
+      amountOfItemRequired: 0
+    - requirementType: 3
+      not: 1
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: f84d9d1f79469cc4d9f2ac3d7952b382, type: 2}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-1735543122938972191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 54e10273-7e58-4398-bc19-537429b96ef6
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Hello, I like your cat
+  children:
+  - 2303ee2b-ba39-4783-b0d4-2a1e0c693398
+  rect:
+    serializedVersion: 2
+    x: 588
+    y: 268
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 3
+      not: 1
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: f84d9d1f79469cc4d9f2ac3d7952b382, type: 2}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-1082247024498119779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 408ff3ba-a30e-4257-b8fe-f2e17fb9fe57
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: If you have a moment theres something else I'd like you to do for me.
+  children:
+  - 6278c45c-0684-4c22-be21-c95c7e101d14
+  - f79bf151-5e56-4563-9dd1-8fe85790ba0f
+  rect:
+    serializedVersion: 2
+    x: 1417
+    y: 830
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 3
+      not: 0
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: f84d9d1f79469cc4d9f2ac3d7952b382, type: 2}
+      amountOfItemRequired: 0
+    - requirementType: 3
+      not: 1
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: 20ad0386021eaa04faacf0bb276780c9, type: 2}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-141094256106924539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 6bbd2216-80d8-4cbb-911d-266fbe9d8efd
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: I think she likes you too!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1337
+    y: 230
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1521bdc4c1880b43b77716221978fa6, type: 3}
+  m_Name: Monk
+  m_EditorClassIdentifier: 
+  characterSpeakers:
+  - {fileID: 11400000, guid: 2cf55409cc36c8942bad0bd18ade7e98, type: 2}
+  - {fileID: 11400000, guid: 72c0cfef4fb0f3e4f8f6892fcb4300ed, type: 2}
+  nodes:
+  - {fileID: -6101467651603006391}
+  - {fileID: -1735543122938972191}
+  - {fileID: -5568251227208305691}
+  - {fileID: 5971623505455412960}
+  - {fileID: 4980767594155263501}
+  - {fileID: -141094256106924539}
+  - {fileID: -1772922340364301931}
+  - {fileID: -2983722923597355966}
+  - {fileID: -1082247024498119779}
+  - {fileID: 2327529992134937732}
+  - {fileID: 3798755770775200379}
+  - {fileID: 1527579642677914885}
+  - {fileID: 4181825195295571905}
+  - {fileID: -5079279602843418637}
+  - {fileID: -4086169911712893125}
+  - {fileID: 2196640126604000063}
+  - {fileID: -7107343117645788423}
+  - {fileID: 4612688200458476929}
+  - {fileID: -3470411302600246497}
+  newNodeOffset: {x: 350, y: 0}
+--- !u!114 &1527579642677914885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: ca206956-cb6e-4726-8c43-30c4cb21d427
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Find some honey and bring it back to me, I need it for my toast.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2070
+    y: 702
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: PassDialogueTrigger
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 20ad0386021eaa04faacf0bb276780c9, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: AddQuestProgress
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 78ceb8a9cb038a544a5ee9c62c73a7d5, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2196640126604000063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 72c242ca-370e-4b8a-84bb-e61775a18653
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 1
+  triggerInteraction: 0
+  text: Here it is!
+  children:
+  - 46a08441-df61-4b95-96d6-9939d3c4197d
+  rect:
+    serializedVersion: 2
+    x: 797
+    y: 1038
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 2
+      not: 0
+      quest: {fileID: 0}
+      item: {fileID: 11400000, guid: 0b700b5913215d04a8f848623a3dfb26, type: 2}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 5
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2327529992134937732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 6278c45c-0684-4c22-be21-c95c7e101d14
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 1
+  triggerInteraction: 0
+  text: Ok, what is it?
+  children:
+  - ca206956-cb6e-4726-8c43-30c4cb21d427
+  rect:
+    serializedVersion: 2
+    x: 1752
+    y: 731
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &3798755770775200379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: f79bf151-5e56-4563-9dd1-8fe85790ba0f
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Not right now.
+  children:
+  - 17c5d7ed-ceb6-4c53-8fd9-ee3460734a41
+  rect:
+    serializedVersion: 2
+    x: 1753
+    y: 907
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4181825195295571905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 17c5d7ed-ceb6-4c53-8fd9-ee3460734a41
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Ok no problem, come back and talk to me again when youre less busy.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2073
+    y: 912
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4612688200458476929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 46a08441-df61-4b95-96d6-9939d3c4197d
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Thank you so much! Here, take this gold key. I'm not sure what it opens but
+    maybe you'll find a use for it.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1180
+    y: 1029
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: CompleteQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 78ceb8a9cb038a544a5ee9c62c73a7d5, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: SetItemAmount
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: RemoveItems
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 0b700b5913215d04a8f848623a3dfb26, type: 2}
+          m_ObjectArgumentAssemblyTypeName: InventoryItem, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: SetItemAmount
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: AddItems
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d44d9c5ad5587284997497acee7416cc, type: 2}
+          m_ObjectArgumentAssemblyTypeName: InventoryItem, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4980767594155263501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: cd1c997a-ff3f-458f-a76e-87a69c84aac2
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Yes actually, could you go talk to the guy standing in the grass patch to
+    the left. Tell him I sent you.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1059
+    y: 411
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: GiveQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 78ceb8a9cb038a544a5ee9c62c73a7d5, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5971623505455412960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 6e6f6543-1549-4c79-bdbb-09acc0ef056a
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 1
+  triggerInteraction: 0
+  text: Do you need help with anything?
+  children:
+  - cd1c997a-ff3f-458f-a76e-87a69c84aac2
+  rect:
+    serializedVersion: 2
+    x: 679
+    y: 403
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 0
+      not: 1
+      quest: {fileID: 11400000, guid: 78ceb8a9cb038a544a5ee9c62c73a7d5, type: 2}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/RPG/StartingScreen.unity
+    guid: 09ccd12d3862cce4c817873fdba0e795
+  - enabled: 0
+    path: Assets/Scenes/RPG/Town.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/RPG/WeaponShop.unity
+    guid: 167655c965542ae42bfb48c21184f441
+  - enabled: 0
+    path: Assets/Scenes/RPG/MagicShop.unity
+    guid: a1135c9b6e63cba47b69739a89238b1c
+  - enabled: 0
+    path: Assets/Scenes/RPG/DarkWoods.unity
+    guid: 0855e4e4c7e68f84698318e2323b3f77
+  - enabled: 0
+    path: Assets/Scenes/RPG/PotionShop.unity
+    guid: daab75c857aa3474c8fa26e8b81aa834
+  - enabled: 1
+    path: Assets/Scenes/TheMist.unity
+    guid: 9f45a1a4429182d449be835fde072735
+  - enabled: 1
+    path: Assets/Scenes/TownTheMist.unity
+    guid: d2643499299bb6a4eb9296533b7d578c
+  - enabled: 1
+    path: Assets/Scenes/TheMistTemple.unity
+    guid: ce5daf11e53e7d1488f67b89a3a090de
+  - enabled: 1
+    path: Assets/Scenes/HamsterHoles.unity
+    guid: fa608af621e19274098e4d5d15feb7e9
+  m_configObjects: {}
