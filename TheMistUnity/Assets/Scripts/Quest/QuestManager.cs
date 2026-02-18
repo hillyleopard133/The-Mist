@@ -24,8 +24,11 @@ public class QuestManager : Singleton<QuestManager>
     {
         acceptedQuests.Add(quest);
         AudioManager.Instance.PlayAcceptQuestSound();
-        if(!quest.IsMainQuest) UIManager.Instance.UpdateSideQuestList();
-        //LoadQuestsIntoPlayerPanel();
+        if (!quest.IsMainQuest)
+        {
+            UIManager.Instance.UpdateSideQuestList();
+        }
+        quest.QuestAccepted = true;
         SaveQuestData();
     }
 
@@ -41,6 +44,8 @@ public class QuestManager : Singleton<QuestManager>
         {
             questToUpdate.AddProgress(amount);
         }
+        
+        SaveQuestData();
     }
 
     public void CompleteQuest(string questID)

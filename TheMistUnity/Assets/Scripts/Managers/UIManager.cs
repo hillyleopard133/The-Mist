@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
@@ -66,6 +67,7 @@ public class UIManager : Singleton<UIManager>
     private int currentTab = 0;
     private const int inventoryTabNumber = 1;
     private const int questTabNumber = 3;
+    private readonly Color selectedTabColor = new Color32(255,194,100, 255);
     
     [Header("Quests")]
     [SerializeField] private TextMeshProUGUI mainQuestTitle;
@@ -87,8 +89,13 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI itemDescriptionTMP;
     [SerializeField] private InventorySlot inventorySlotPrefab;
     [SerializeField] private Transform inventoryContainer;
+    [SerializeField] private GameObject[] inventoryTabs;
+    [SerializeField] private Button destroyButton;
     public InventorySlot CurrentSlot { get; set; }
-    private List<InventorySlot> slotList = new List<InventorySlot>();
+    private List<InventorySlot> slotList = new List<InventorySlot>(); 
+    private readonly Color selectedInventoryColor = new Color32(106,214,0, 255);
+    private int currentInventory = 0;
+    private const int questInventoryNumber = 4;
     
     private float respawnTimer;
     private PlayerActions actions;
@@ -110,6 +117,9 @@ public class UIManager : Singleton<UIManager>
         actions.UI.LeftTab.performed += ctx => SwitchTab(-1);
         actions.UI.RightTab.performed += ctx => SwitchTab(1);
         
+        actions.UI.LeftInv.performed += ctx => SwitchInventory(-1);
+        actions.UI.RightInv.performed += ctx => SwitchInventory(1);
+        
         InitialiseInventory();
         VerifyItemsForDraw();
     }
@@ -120,10 +130,43 @@ public class UIManager : Singleton<UIManager>
         UpdateRevivingClock();
     }
 
+    private void SwitchInventory(int direction)
+    {
+        currentInventory += direction;
+        if(currentInventory < 0) currentInventory = inventoryTabs.Length - 1;
+        if(currentInventory >= inventoryTabs.Length) currentInventory = 0;
+        
+        SelectInventory(currentInventory);
+    }
+
     public void SelectInventory(int index)
     {
         Inventory.Instance.SelectInventory(index);
+        currentInventory = index;
         DrawInventory(Inventory.Instance.GetCurrentInventory());
+        
+        foreach (GameObject tab in inventoryTabs)
+        {
+            Button tabButton = tab.GetComponent<Button>();
+            ColorBlock colors = tabButton.colors;    
+            colors.normalColor = Color.white;
+            tabButton.colors = colors; 
+        }
+        
+        Button SelectedTab = inventoryTabs[index].GetComponent<Button>();
+        ColorBlock cb = SelectedTab.colors;    
+        cb.normalColor = selectedInventoryColor;
+        SelectedTab.colors = cb;
+
+        ShowItemDescription(0);
+        if (index == questInventoryNumber)
+        {
+            destroyButton.interactable = false;
+        }
+        else
+        {
+            destroyButton.interactable = true;
+        }
     }
     
     public void VerifyItemsForDraw()
@@ -293,13 +336,32 @@ public class UIManager : Singleton<UIManager>
         {
             tab.SetActive(false);
         }
+
+        foreach (GameObject tab in tabButtons)
+        {
+            Button tabButton = tab.GetComponent<Button>();
+            ColorBlock colors = tabButton.colors;    
+            colors.normalColor = Color.white;
+            tabButton.colors = colors; 
+        }
+        
         tabs[tabIndex].SetActive(true);
         currentTab = tabIndex;
+
+        if (currentTab == questTabNumber && currentlySelectedQuest != null)
+        {
+            LoadQuestsUI();
+            SelectQuest(currentlySelectedQuest);
+        }
         
-        if(currentTab == questTabNumber && currentlySelectedQuest != null) SelectQuest(currentlySelectedQuest);
         if(currentTab == inventoryTabNumber) DrawInventory(Inventory.Instance.GetCurrentInventory());
         
-        EventSystem.current.SetSelectedGameObject(tabButtons[tabIndex].gameObject);
+        //EventSystem.current.SetSelectedGameObject(tabButtons[tabIndex].gameObject);
+        
+        Button SelectedTab = tabButtons[tabIndex].GetComponent<Button>();
+        ColorBlock cb = SelectedTab.colors;    
+        cb.normalColor = selectedTabColor;
+        SelectedTab.colors = cb;   
     }
 
     private void SwitchTab(int direction)

@@ -147,6 +147,8 @@ MonoBehaviour:
   - {fileID: 2812283158847825553}
   - {fileID: -2419091803932824626}
   - {fileID: 5189927166451159501}
+  - {fileID: 2427582969688873426}
+  - {fileID: 5563511894083646308}
   newNodeOffset: {x: 350, y: 0}
 --- !u!114 &652928221488076032
 MonoBehaviour:
@@ -177,6 +179,42 @@ MonoBehaviour:
   onTrigger:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2427582969688873426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: bb1c839e-4c42-41b4-9681-0c228d4bc205
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Take this key.
+  children:
+  - fa476d17-da86-417e-b6ec-ff66b2b11a89
+  rect:
+    serializedVersion: 2
+    x: 1132
+    y: 669
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 2
+      not: 0
+      quest: {fileID: 0}
+      item: {fileID: 11400000, guid: d44d9c5ad5587284997497acee7416cc, type: 2}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 1
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2812283158847825553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,6 +234,7 @@ MonoBehaviour:
   text: Ah you are back again! Excellent! Heres some progress!
   children:
   - 11d71be8-ba34-4eb4-bd99-5afff3d915fc
+  - bb1c839e-4c42-41b4-9681-0c228d4bc205
   rect:
     serializedVersion: 2
     x: 791
@@ -313,6 +352,58 @@ MonoBehaviour:
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: aad6a3a55c9aca745826d3afed541d45, type: 2}
+          m_ObjectArgumentAssemblyTypeName: InventoryItem, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5563511894083646308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: fa476d17-da86-417e-b6ec-ff66b2b11a89
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Ooh thanks!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1481
+    y: 669
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: SetItemAmount
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: RemoveItems
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d44d9c5ad5587284997497acee7416cc, type: 2}
           m_ObjectArgumentAssemblyTypeName: InventoryItem, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
