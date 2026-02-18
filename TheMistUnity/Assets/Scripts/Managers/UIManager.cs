@@ -70,6 +70,12 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Image respawnClock;
     [SerializeField] private float timeToRespawn;
     
+    [Header("Tab Menu")]
+    [SerializeField] private GameObject tabMenu;
+    [SerializeField] private GameObject[] tabs;
+
+    private int currentTab = 0;
+    
     private float respawnTimer;
     private PlayerActions actions;
     private bool isReviving;
@@ -86,11 +92,39 @@ public class UIManager : Singleton<UIManager>
     {
         actions.General.Respawn.performed += ctx => SetIsReviving(true);  
         actions.General.Respawn.canceled += ctx => SetIsReviving(false); 
+        actions.UI.TabMenu.performed += ctx => OpenCloseTabMenu();
+        actions.UI.Left.performed += ctx => SwitchTab(-1);
+        actions.UI.Right.performed += ctx => SwitchTab(1);
     }
+    
     private void Update()
     {
         UpdatePlayerUI();
         UpdateRevivingClock();
+    }
+    
+    private void OpenCloseTabMenu()
+    {
+        tabMenu.SetActive(!tabMenu.activeSelf);
+        SetTabMenu(currentTab);
+    }
+
+    public void SetTabMenu(int tabIndex)
+    {
+        foreach (GameObject tab in tabs)
+        {
+            tab.SetActive(false);
+        }
+        tabs[tabIndex].SetActive(true);
+        currentTab = tabIndex;
+    }
+
+    private void SwitchTab(int direction)
+    {
+        currentTab += direction;
+        if (currentTab < 0) currentTab = tabs.Length - 1;
+        if(currentTab >= tabs.Length) currentTab = 0;
+        SetTabMenu(currentTab);
     }
 
     public void DisableLoadButton()
