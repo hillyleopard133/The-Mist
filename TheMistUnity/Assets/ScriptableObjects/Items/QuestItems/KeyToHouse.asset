@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: Old key
   Icon: {fileID: 21300000, guid: 3620d693c0563274ebfd9f8c62e16cd3, type: 3}
   Description: An old key I received from the monk. What does it open?
-  ItemType: 5
+  ItemType: 4
   IsConsumable: 0
   IsStackable: 0
   MaxStack: 1

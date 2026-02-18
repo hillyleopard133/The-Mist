@@ -56,7 +56,6 @@ public class CraftingManager : Singleton<CraftingManager>
         
         Inventory.Instance.AddItem(RecipeSelected.FinalItem, RecipeSelected.FinalItemAmount);
         ShowRecipe(RecipeSelected);
-        Inventory.Instance.GetComponent<Hotbar>().UpdateUI();
     }
 
     public void ShowRecipe(Recipe recipe)

@@ -512,7 +512,7 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
             ""id"": ""9a4f5deb-1c3e-47b4-9e85-856002e8b94e"",
             ""actions"": [
                 {
-                    ""name"": ""Left"",
+                    ""name"": ""LeftTab"",
                     ""type"": ""Button"",
                     ""id"": ""8afeedb3-5d1f-4ac4-bdd6-eefb58df949c"",
                     ""expectedControlType"": ""Button"",
@@ -521,9 +521,27 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Right"",
+                    ""name"": ""RightTab"",
                     ""type"": ""Button"",
                     ""id"": ""c0f20d33-74d2-40dd-93fe-f52736a63d6e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LeftInv"",
+                    ""type"": ""Button"",
+                    ""id"": ""778c1cd4-51b6-4bd2-a904-2afa999a8b45"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RightInv"",
+                    ""type"": ""Button"",
+                    ""id"": ""206b842a-33fe-425b-9db8-dfa5f44001a6"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -538,7 +556,7 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Left"",
+                    ""action"": ""LeftTab"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -549,7 +567,29 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Right"",
+                    ""action"": ""RightTab"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3d02ec78-5006-42e3-a6e8-0551b8e154f3"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftInv"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6e65d2c2-2a04-40b5-ab32-e32169c034a5"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightInv"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -591,8 +631,10 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         m_Hamster_Sprint = m_Hamster.FindAction("Sprint", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
-        m_UI_Left = m_UI.FindAction("Left", throwIfNotFound: true);
-        m_UI_Right = m_UI.FindAction("Right", throwIfNotFound: true);
+        m_UI_LeftTab = m_UI.FindAction("LeftTab", throwIfNotFound: true);
+        m_UI_RightTab = m_UI.FindAction("RightTab", throwIfNotFound: true);
+        m_UI_LeftInv = m_UI.FindAction("LeftInv", throwIfNotFound: true);
+        m_UI_RightInv = m_UI.FindAction("RightInv", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -963,14 +1005,18 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     // UI
     private readonly InputActionMap m_UI;
     private IUIActions m_UIActionsCallbackInterface;
-    private readonly InputAction m_UI_Left;
-    private readonly InputAction m_UI_Right;
+    private readonly InputAction m_UI_LeftTab;
+    private readonly InputAction m_UI_RightTab;
+    private readonly InputAction m_UI_LeftInv;
+    private readonly InputAction m_UI_RightInv;
     public struct UIActions
     {
         private @PlayerActions m_Wrapper;
         public UIActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Left => m_Wrapper.m_UI_Left;
-        public InputAction @Right => m_Wrapper.m_UI_Right;
+        public InputAction @LeftTab => m_Wrapper.m_UI_LeftTab;
+        public InputAction @RightTab => m_Wrapper.m_UI_RightTab;
+        public InputAction @LeftInv => m_Wrapper.m_UI_LeftInv;
+        public InputAction @RightInv => m_Wrapper.m_UI_RightInv;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -980,22 +1026,34 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_UIActionsCallbackInterface != null)
             {
-                @Left.started -= m_Wrapper.m_UIActionsCallbackInterface.OnLeft;
-                @Left.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnLeft;
-                @Left.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnLeft;
-                @Right.started -= m_Wrapper.m_UIActionsCallbackInterface.OnRight;
-                @Right.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnRight;
-                @Right.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnRight;
+                @LeftTab.started -= m_Wrapper.m_UIActionsCallbackInterface.OnLeftTab;
+                @LeftTab.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnLeftTab;
+                @LeftTab.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnLeftTab;
+                @RightTab.started -= m_Wrapper.m_UIActionsCallbackInterface.OnRightTab;
+                @RightTab.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnRightTab;
+                @RightTab.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnRightTab;
+                @LeftInv.started -= m_Wrapper.m_UIActionsCallbackInterface.OnLeftInv;
+                @LeftInv.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnLeftInv;
+                @LeftInv.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnLeftInv;
+                @RightInv.started -= m_Wrapper.m_UIActionsCallbackInterface.OnRightInv;
+                @RightInv.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnRightInv;
+                @RightInv.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnRightInv;
             }
             m_Wrapper.m_UIActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Left.started += instance.OnLeft;
-                @Left.performed += instance.OnLeft;
-                @Left.canceled += instance.OnLeft;
-                @Right.started += instance.OnRight;
-                @Right.performed += instance.OnRight;
-                @Right.canceled += instance.OnRight;
+                @LeftTab.started += instance.OnLeftTab;
+                @LeftTab.performed += instance.OnLeftTab;
+                @LeftTab.canceled += instance.OnLeftTab;
+                @RightTab.started += instance.OnRightTab;
+                @RightTab.performed += instance.OnRightTab;
+                @RightTab.canceled += instance.OnRightTab;
+                @LeftInv.started += instance.OnLeftInv;
+                @LeftInv.performed += instance.OnLeftInv;
+                @LeftInv.canceled += instance.OnLeftInv;
+                @RightInv.started += instance.OnRightInv;
+                @RightInv.performed += instance.OnRightInv;
+                @RightInv.canceled += instance.OnRightInv;
             }
         }
     }
@@ -1040,7 +1098,9 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     }
     public interface IUIActions
     {
-        void OnLeft(InputAction.CallbackContext context);
-        void OnRight(InputAction.CallbackContext context);
+        void OnLeftTab(InputAction.CallbackContext context);
+        void OnRightTab(InputAction.CallbackContext context);
+        void OnLeftInv(InputAction.CallbackContext context);
+        void OnRightInv(InputAction.CallbackContext context);
     }
 }

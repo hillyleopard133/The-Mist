@@ -18,7 +18,7 @@ public class EnemySelector : MonoBehaviour
         if (enemySelected == enemyBrain)
         {
             selectorSprite.SetActive(true);
-            UIManager.Instance.UpdateEnemyInfoPanel(enemySelected);
+            //UIManager.Instance.UpdateEnemyInfoPanel(enemySelected);
         }
         else
         {
@@ -29,7 +29,7 @@ public class EnemySelector : MonoBehaviour
     public void NoSelectionCallback()
     {
         selectorSprite.SetActive(false);
-        UIManager.Instance.CloseEnemyInfoPanel();
+        //UIManager.Instance.CloseEnemyInfoPanel();
     }
 
     private void OnEnable()

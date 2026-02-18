@@ -74,7 +74,6 @@ public class DialogueQuestManager : ScriptableObject
         {
             Inventory.Instance.ConsumeItem(item.ID);
         }
-        Inventory.Instance.GetComponent<Hotbar>().UpdateUI();
     }
 
     public void AddItems(InventoryItem item)

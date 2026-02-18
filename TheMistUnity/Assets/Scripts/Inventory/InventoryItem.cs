@@ -4,11 +4,10 @@ using UnityEngine;
 
 public enum ItemType
 {
-    Weapon,
-    Potion,
-    Scroll,
-    Ingredients,
     Treasure,
+    Resource,
+    Consumable,
+    Equipment,
     Quest
 }
 

@@ -96,8 +96,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         SceneChangeManager.Instance.SaveGameLocation();
         QuestManager.Instance.SaveQuestData();
         player.SavePlayerStats();
-        inventory.SaveEquippedWeapon();
-        inventory.GetComponent<Hotbar>().SaveHotbarItems();
+        //inventory.SaveEquippedWeapon();
         GameManager.Instance.SaveTimer();
     }
 
@@ -122,7 +121,6 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         ResetInitialWeapon();
         QuestManager.Instance.ResetQuests();
         CoinManager.Instance.ResetCoins();
-        inventory.GetComponent<Hotbar>().ResetHotbarItems();
         DialogueManager.Instance.GetDialogueQuestManager().ResetDialogueTriggers();
         DialogueManager.Instance.ResetNPCs();
         NPCFollowerManager.Instance.ResetFollowing();
@@ -133,8 +131,8 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
     private void ResetInitialWeapon()
     {
         player.GetComponent<PlayerAttack>().ResetInitialWeapon();
-        inventory.SaveEquippedWeapon();
-        inventory.LoadEquippedWeapon();
+        //inventory.SaveEquippedWeapon();
+        //inventory.LoadEquippedWeapon();
     }
 
     private IEnumerator LoadSceneCoroutine()
@@ -163,8 +161,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
             ActivateGame();
             player.gameObject.transform.position = newPosition;
             player.LoadPlayerStats();
-            inventory.LoadEquippedWeapon();
-            inventory.GetComponent<Hotbar>().LoadHotbarItems();
+            //inventory.LoadEquippedWeapon();
             QuestManager.Instance.LoadQuestData();
             CoinManager.Instance.LoadCoins();
             DialogueManager.Instance.GetDialogueQuestManager().LoadDialogueTriggers();

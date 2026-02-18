@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: Health Potion
   Icon: {fileID: 21300000, guid: fbf0fefb3d88eb5499a97a09f5bce8d7, type: 3}
   Description: Health Potion that recovers 2HP.
-  ItemType: 1
+  ItemType: 2
   IsConsumable: 1
   IsStackable: 1
   MaxStack: 30

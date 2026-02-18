@@ -52,18 +52,6 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject optionsPanel;
     [SerializeField] private GameObject playerControlsPanel;
     [SerializeField] private ScrollRect scrollRect;
-
-    [Header("Enemy Info Panel")] 
-    [SerializeField] private GameObject enemyInfoPanel;
-    [SerializeField] private Image enemyIcon;
-    [SerializeField] private Image enemyHealthBar;
-    [SerializeField] private TextMeshProUGUI enemyName;
-    [SerializeField] private TextMeshProUGUI enemyHealth;
-    [SerializeField] private TextMeshProUGUI enemyExp;
-    [SerializeField] private TextMeshProUGUI enemyDamage;
-    [SerializeField] private Transform enemyInfoLootContainer;
-    [SerializeField] private EnemyInfoLootItem enemyInfoLootItemPrefab;
-    [SerializeField] private ScrollRect enemyInfoScrollRect;
     
     [Header("Death Screen")]
     [SerializeField] private GameObject deathScreen;
@@ -75,6 +63,9 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject tabMenu;
     [SerializeField] private GameObject[] tabs;
     [SerializeField] private GameObject[] tabButtons;
+    private int currentTab = 0;
+    private const int inventoryTabNumber = 1;
+    private const int questTabNumber = 3;
     
     [Header("Quests")]
     [SerializeField] private TextMeshProUGUI mainQuestTitle;
@@ -84,28 +75,30 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI questGiverName;
     [SerializeField] private Image questGiverIcon;
     [SerializeField] private GameObject taskPrefab;
-
     [SerializeField] private GameObject sideQuestList;
     [SerializeField] private GameObject questPrefab;
+    private readonly Color completedTaskColor = new Color32(91,89,89, 255);
+    private readonly Color currentTaskColor = new Color32(255,219,69, 255);
+    private Quest currentlySelectedQuest;
     
-    private Color completedTaskColor = new Color32(91,89,89, 255);
-    private Color currentTaskColor = new Color32(255,219,69, 255);
-
-    private int currentTab = 0;
-    private int questTabNumber = 3;
+    [Header("Inventory")]
+    [SerializeField] private Image itemIcon;
+    [SerializeField] private TextMeshProUGUI itemNameTMP;
+    [SerializeField] private TextMeshProUGUI itemDescriptionTMP;
+    [SerializeField] private InventorySlot inventorySlotPrefab;
+    [SerializeField] private Transform inventoryContainer;
+    public InventorySlot CurrentSlot { get; set; }
+    private List<InventorySlot> slotList = new List<InventorySlot>();
     
     private float respawnTimer;
     private PlayerActions actions;
     private bool isReviving;
 
-    private EnemyBrain enemyInPanel;
-
-    private Quest currentlySelectedQuest;
-
     private void Awake()
     {
         base.Awake();
         actions = new PlayerActions();
+        
     }
 
     private void Start()
@@ -114,14 +107,103 @@ public class UIManager : Singleton<UIManager>
         actions.General.Respawn.canceled += ctx => SetIsReviving(false); 
         actions.General.TabMenu.performed += ctx => OpenCloseTabMenu();
         
-        actions.UI.Left.performed += ctx => SwitchTab(-1);
-        actions.UI.Right.performed += ctx => SwitchTab(1);
+        actions.UI.LeftTab.performed += ctx => SwitchTab(-1);
+        actions.UI.RightTab.performed += ctx => SwitchTab(1);
+        
+        InitialiseInventory();
+        VerifyItemsForDraw();
     }
     
     private void Update()
     {
         UpdatePlayerUI();
         UpdateRevivingClock();
+    }
+
+    public void SelectInventory(int index)
+    {
+        Inventory.Instance.SelectInventory(index);
+        DrawInventory(Inventory.Instance.GetCurrentInventory());
+    }
+    
+    public void VerifyItemsForDraw()
+    {
+        for (int i = 0; i < Inventory.Instance.InventorySize; i++)
+        {
+            if (Inventory.Instance.GetCurrentInventory()[i] == null)
+            {
+                DrawItem(null, i);
+            }
+        }
+    }
+    
+    public void DrawInventory(InventoryItem[] items)
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            DrawItem(items[i], i);
+        }
+
+        for (int i = items.Length; i < slotList.Count; i++)
+        {
+            DrawItem(null, i);
+        }
+    }
+    
+    private void InitialiseInventory()
+    {
+        for (int i = 0; i < Inventory.Instance.InventorySize; i++)
+        {
+            InventorySlot slot = Instantiate(inventorySlotPrefab, inventoryContainer);
+            slot.Index = i;
+            slotList.Add(slot);
+        }
+    }
+    
+    public void RemoveItem()
+    {
+        if (CurrentSlot == null)
+        {
+            return;
+        }
+
+        Inventory.Instance.RemoveItem(CurrentSlot.Index);
+    }
+    
+    public void DrawItem(InventoryItem item, int index)
+    {
+        InventorySlot slot = slotList[index];
+        if (item == null)
+        {
+            slot.ShowSlotInformation(false);
+            return;
+        }
+        slot.ShowSlotInformation(true);
+        slot.UpdateSlot(item);
+    }
+
+    public void ShowItemDescription(int index)
+    {
+        InventoryItem[] items = Inventory.Instance.GetCurrentInventory();
+
+        if (items[index] == null)
+        {
+            itemIcon.sprite = null;
+            itemNameTMP.text = "Item Name";
+            itemDescriptionTMP.text = "Item Description";
+        }
+        else
+        {
+            itemIcon.sprite = items[index].Icon;
+            itemNameTMP.text = items[index].Name;
+            itemDescriptionTMP.text = items[index].Description;
+        }
+    }
+    
+    private void SlotSelectedCallback(int slotIndex)
+    {
+        CurrentSlot = slotList[slotIndex];
+        ShowItemDescription(slotIndex);
     }
 
     public void LoadQuestsUI()
@@ -213,7 +295,10 @@ public class UIManager : Singleton<UIManager>
         }
         tabs[tabIndex].SetActive(true);
         currentTab = tabIndex;
+        
         if(currentTab == questTabNumber && currentlySelectedQuest != null) SelectQuest(currentlySelectedQuest);
+        if(currentTab == inventoryTabNumber) DrawInventory(Inventory.Instance.GetCurrentInventory());
+        
         EventSystem.current.SetSelectedGameObject(tabButtons[tabIndex].gameObject);
     }
 
@@ -259,61 +344,6 @@ public class UIManager : Singleton<UIManager>
         if(npcQuestPanel.activeSelf || shopPanel.activeSelf) return true;
         
         return false;
-    }
-
-    public void UpdateEnemyInfoPanel(EnemyBrain enemyBrain)
-    {
-        if (enemyBrain == null)
-        {
-            CloseEnemyInfoPanel();
-            return;
-        }
-        CloseAllPanels();
-        enemyInPanel = enemyBrain;
-        enemyInfoScrollRect.verticalNormalizedPosition = 1f;
-        enemyInfoPanel.SetActive(true);
-        enemyIcon.sprite = enemyBrain.Icon;
-        enemyName.text = enemyBrain.Name;
-        float currentHealth = enemyBrain.GetComponent<EnemyHealth>().CurrentHealth;
-        float maxHealth = enemyBrain.GetComponent<EnemyHealth>().health;
-        if (currentHealth == Mathf.Floor(currentHealth))
-        {
-            enemyHealth.text = currentHealth.ToString("F0") + "/" + maxHealth; 
-        }
-        else
-        {
-            enemyHealth.text = currentHealth.ToString("F1") + "/" + maxHealth; 
-        }
-        enemyHealthBar.fillAmount = currentHealth / maxHealth;
-        enemyExp.text = enemyBrain.GetComponent<EnemyLoot>().ExpDrop.ToString();
-        enemyDamage.text = enemyBrain.GetComponent<ActionAttack>().damage.ToString();
-        
-        
-        foreach (Transform child in enemyInfoLootContainer)
-        {
-            Destroy(child.gameObject);
-        }
-
-        foreach (DropItem item in enemyBrain.GetComponent<EnemyLoot>().dropItems)
-        {
-            EnemyInfoLootItem lootItem = Instantiate(enemyInfoLootItemPrefab, enemyInfoLootContainer);
-            lootItem.ConfigLootInfo(item);
-        }
-    }
-
-    public void EnemyInInfoPanelDamaged(EnemyBrain enemyBrain)
-    {
-        if (enemyBrain == null) return;
-        if (enemyBrain != enemyInPanel) return;
-        
-        UpdateEnemyInfoPanel(enemyBrain);
-    }
-
-    public void CloseEnemyInfoPanel()
-    {
-        enemyInPanel = null;
-        enemyInfoScrollRect.verticalNormalizedPosition = 1f;
-        enemyInfoPanel.SetActive(false);
     }
 
     public bool IsPlayerDead()
@@ -447,8 +477,6 @@ public class UIManager : Singleton<UIManager>
         CloseShopPanel();
         CloseCraftingPanel();
         CloseNPCQuestPanel();
-        CloseEnemyInfoPanel();
-        InventoryUI.Instance.CloseInventory();
         CloseStatsPanel();
         LootManager.Instance.ClosePanel();
         DialogueManager.Instance.CloseDialoguePanel();
@@ -564,6 +592,7 @@ public class UIManager : Singleton<UIManager>
         
         PlayerUpgrade.OnPlayerUpgradeEvent += UpgradeCallback;
         DialogueManager.OnExtraInteractionEvent += ExtraInteractionCallback;
+        InventorySlot.OnSlotSelectedEvent += SlotSelectedCallback;
     }
 
     private void OnDisable()
@@ -575,6 +604,7 @@ public class UIManager : Singleton<UIManager>
         
         PlayerUpgrade.OnPlayerUpgradeEvent -= UpgradeCallback;
         DialogueManager.OnExtraInteractionEvent -= ExtraInteractionCallback;
+        InventorySlot.OnSlotSelectedEvent -= SlotSelectedCallback;
     }
     
 }

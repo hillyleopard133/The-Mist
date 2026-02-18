@@ -41,7 +41,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     public void TakeDamage(float amount)
     {
         CurrentHealth -= amount;
-        UIManager.Instance.EnemyInInfoPanelDamaged(enemyBrain);
+        //UIManager.Instance.EnemyInInfoPanelDamaged(enemyBrain);
         if (CurrentHealth <= 0)
         {
             DisableEnemy();
