@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -73,6 +74,7 @@ public class UIManager : Singleton<UIManager>
     [Header("Tab Menu")]
     [SerializeField] private GameObject tabMenu;
     [SerializeField] private GameObject[] tabs;
+    [SerializeField] private GameObject[] tabButtons;
 
     private int currentTab = 0;
     
@@ -117,6 +119,7 @@ public class UIManager : Singleton<UIManager>
         }
         tabs[tabIndex].SetActive(true);
         currentTab = tabIndex;
+        EventSystem.current.SetSelectedGameObject(tabButtons[tabIndex].gameObject);
     }
 
     private void SwitchTab(int direction)
