@@ -212,6 +212,15 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""TabMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""252d7f57-c81f-4a3d-97fd-a18c92684e22"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -234,6 +243,17 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Respawn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""672208dd-c94a-4702-8f16-f71f5aebd8a4"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TabMenu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -492,15 +512,6 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
             ""id"": ""9a4f5deb-1c3e-47b4-9e85-856002e8b94e"",
             ""actions"": [
                 {
-                    ""name"": ""TabMenu"",
-                    ""type"": ""Button"",
-                    ""id"": ""f2177cdd-7902-4e87-b4bc-1da0638511ec"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Left"",
                     ""type"": ""Button"",
                     ""id"": ""8afeedb3-5d1f-4ac4-bdd6-eefb58df949c"",
@@ -520,17 +531,6 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""e0bb5f3f-34ea-4413-b5bc-3b49c89997cc"",
-                    ""path"": ""<Keyboard>/tab"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""TabMenu"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
                 {
                     ""name"": """",
                     ""id"": ""ec1c081e-57e0-4f7e-8564-f1c171ad6559"",
@@ -573,6 +573,7 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         m_General = asset.FindActionMap("General", throwIfNotFound: true);
         m_General_Pause = m_General.FindAction("Pause", throwIfNotFound: true);
         m_General_Respawn = m_General.FindAction("Respawn", throwIfNotFound: true);
+        m_General_TabMenu = m_General.FindAction("TabMenu", throwIfNotFound: true);
         // Hotbar
         m_Hotbar = asset.FindActionMap("Hotbar", throwIfNotFound: true);
         m_Hotbar_Slot1 = m_Hotbar.FindAction("Slot1", throwIfNotFound: true);
@@ -590,7 +591,6 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         m_Hamster_Sprint = m_Hamster.FindAction("Sprint", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
-        m_UI_TabMenu = m_UI.FindAction("TabMenu", throwIfNotFound: true);
         m_UI_Left = m_UI.FindAction("Left", throwIfNotFound: true);
         m_UI_Right = m_UI.FindAction("Right", throwIfNotFound: true);
     }
@@ -769,12 +769,14 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     private IGeneralActions m_GeneralActionsCallbackInterface;
     private readonly InputAction m_General_Pause;
     private readonly InputAction m_General_Respawn;
+    private readonly InputAction m_General_TabMenu;
     public struct GeneralActions
     {
         private @PlayerActions m_Wrapper;
         public GeneralActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Pause => m_Wrapper.m_General_Pause;
         public InputAction @Respawn => m_Wrapper.m_General_Respawn;
+        public InputAction @TabMenu => m_Wrapper.m_General_TabMenu;
         public InputActionMap Get() { return m_Wrapper.m_General; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -790,6 +792,9 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                 @Respawn.started -= m_Wrapper.m_GeneralActionsCallbackInterface.OnRespawn;
                 @Respawn.performed -= m_Wrapper.m_GeneralActionsCallbackInterface.OnRespawn;
                 @Respawn.canceled -= m_Wrapper.m_GeneralActionsCallbackInterface.OnRespawn;
+                @TabMenu.started -= m_Wrapper.m_GeneralActionsCallbackInterface.OnTabMenu;
+                @TabMenu.performed -= m_Wrapper.m_GeneralActionsCallbackInterface.OnTabMenu;
+                @TabMenu.canceled -= m_Wrapper.m_GeneralActionsCallbackInterface.OnTabMenu;
             }
             m_Wrapper.m_GeneralActionsCallbackInterface = instance;
             if (instance != null)
@@ -800,6 +805,9 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                 @Respawn.started += instance.OnRespawn;
                 @Respawn.performed += instance.OnRespawn;
                 @Respawn.canceled += instance.OnRespawn;
+                @TabMenu.started += instance.OnTabMenu;
+                @TabMenu.performed += instance.OnTabMenu;
+                @TabMenu.canceled += instance.OnTabMenu;
             }
         }
     }
@@ -955,14 +963,12 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     // UI
     private readonly InputActionMap m_UI;
     private IUIActions m_UIActionsCallbackInterface;
-    private readonly InputAction m_UI_TabMenu;
     private readonly InputAction m_UI_Left;
     private readonly InputAction m_UI_Right;
     public struct UIActions
     {
         private @PlayerActions m_Wrapper;
         public UIActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @TabMenu => m_Wrapper.m_UI_TabMenu;
         public InputAction @Left => m_Wrapper.m_UI_Left;
         public InputAction @Right => m_Wrapper.m_UI_Right;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
@@ -974,9 +980,6 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_UIActionsCallbackInterface != null)
             {
-                @TabMenu.started -= m_Wrapper.m_UIActionsCallbackInterface.OnTabMenu;
-                @TabMenu.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnTabMenu;
-                @TabMenu.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnTabMenu;
                 @Left.started -= m_Wrapper.m_UIActionsCallbackInterface.OnLeft;
                 @Left.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnLeft;
                 @Left.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnLeft;
@@ -987,9 +990,6 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
             m_Wrapper.m_UIActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @TabMenu.started += instance.OnTabMenu;
-                @TabMenu.performed += instance.OnTabMenu;
-                @TabMenu.canceled += instance.OnTabMenu;
                 @Left.started += instance.OnLeft;
                 @Left.performed += instance.OnLeft;
                 @Left.canceled += instance.OnLeft;
@@ -1018,6 +1018,7 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     {
         void OnPause(InputAction.CallbackContext context);
         void OnRespawn(InputAction.CallbackContext context);
+        void OnTabMenu(InputAction.CallbackContext context);
     }
     public interface IHotbarActions
     {
@@ -1039,7 +1040,6 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     }
     public interface IUIActions
     {
-        void OnTabMenu(InputAction.CallbackContext context);
         void OnLeft(InputAction.CallbackContext context);
         void OnRight(InputAction.CallbackContext context);
     }

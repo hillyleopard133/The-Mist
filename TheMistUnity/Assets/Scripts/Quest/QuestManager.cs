@@ -5,17 +5,13 @@ using UnityEngine;
 public class QuestManager : Singleton<QuestManager>
 {
     [HideInInspector] public Quest[] Quests { get; set; }
-    private List<Quest> acceptedQuests;
+    public List<Quest> acceptedQuests;
     
     [SerializeField] public Quest[] AllQuests;
     
     [Header("NPC Quest Panel")]
     [SerializeField] private QuestCardNPC questCardNPCPrefab;
     [SerializeField] private Transform npcPanelContainer;
-    
-    [Header("Player Quest Panel")]
-    [SerializeField] private QuestCardPlayer questCardPlayerPrefab;
-    [SerializeField] private Transform playerQuestContainer;
     
     private readonly string QUEST_DATA = "QUEST_DATA";
 
@@ -28,11 +24,12 @@ public class QuestManager : Singleton<QuestManager>
     {
         acceptedQuests.Add(quest);
         AudioManager.Instance.PlayAcceptQuestSound();
-        LoadQuestsIntoPlayerPanel();
+        if(!quest.IsMainQuest) UIManager.Instance.UpdateSideQuestList();
+        //LoadQuestsIntoPlayerPanel();
         SaveQuestData();
     }
 
-    public void AddProgress(string questID, int amount)
+    public void AddProgress(string questID, int amount = 0)
     {
         Quest questToUpdate = QuestExists(questID);
         if (questToUpdate == null)
@@ -73,21 +70,6 @@ public class QuestManager : Singleton<QuestManager>
         return null;
     }
 
-    public void LoadQuestsIntoPlayerPanel()
-    {
-        foreach (Transform child in playerQuestContainer)
-        {
-            Destroy(child.gameObject);
-        }
-        
-        for (int i = 0; i < acceptedQuests.Count; i++)
-        {
-            if (acceptedQuests[i].QuestClaimed) continue;
-            QuestCardPlayer cardPlayer = Instantiate(questCardPlayerPrefab, playerQuestContainer);
-            cardPlayer.ConfigQuestUI(acceptedQuests[i]);
-        }
-    }
-
     public void LoadQuestsIntoNPCPanel()
     {
         foreach (Transform child in npcPanelContainer)
@@ -115,7 +97,6 @@ public class QuestManager : Singleton<QuestManager>
             {
                 AllQuests[i].QuestAccepted = questData.QuestAccepted[i];
                 AllQuests[i].QuestCompleted = questData.QuestCompleted[i];
-                AllQuests[i].CurrentStatus = questData.CurrentStatus[i];
                 AllQuests[i].QuestClaimed = questData.QuestClaimed[i];
                 
                 if (AllQuests[i].QuestAccepted && !AllQuests[i].QuestClaimed)
@@ -123,7 +104,7 @@ public class QuestManager : Singleton<QuestManager>
                     acceptedQuests.Add(AllQuests[i]);
                 }
             }
-            LoadQuestsIntoPlayerPanel();
+            UIManager.Instance.LoadQuestsUI();
         }
     }
 
@@ -139,7 +120,6 @@ public class QuestManager : Singleton<QuestManager>
         {
             questData.QuestAccepted[i] = AllQuests[i].QuestAccepted;
             questData.QuestCompleted[i] = AllQuests[i].QuestCompleted;
-            questData.CurrentStatus[i] = AllQuests[i].CurrentStatus;
             questData.QuestClaimed[i] = AllQuests[i].QuestClaimed;
         }
         SaveGame.Save(QUEST_DATA, questData);
@@ -152,7 +132,7 @@ public class QuestManager : Singleton<QuestManager>
         {
             quest.ResetQuest();
         }
-        LoadQuestsIntoPlayerPanel();
+        UIManager.Instance.LoadQuestsUI();
     }
     
 

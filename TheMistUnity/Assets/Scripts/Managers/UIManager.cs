@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -38,7 +39,6 @@ public class UIManager : Singleton<UIManager>
     
     [Header("Extra Panels")]
     [SerializeField] private GameObject npcQuestPanel;
-    [SerializeField] private GameObject playerQuestPanel;
     [SerializeField] private GameObject shopPanel;
     [SerializeField] private GameObject craftingPanel;
     
@@ -75,8 +75,24 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject tabMenu;
     [SerializeField] private GameObject[] tabs;
     [SerializeField] private GameObject[] tabButtons;
+    
+    [Header("Quests")]
+    [SerializeField] private TextMeshProUGUI mainQuestTitle;
+    [SerializeField] private TextMeshProUGUI questTitle;
+    [SerializeField] private TextMeshProUGUI questDescription;
+    [SerializeField] private GameObject taskList;
+    [SerializeField] private TextMeshProUGUI questGiverName;
+    [SerializeField] private Image questGiverIcon;
+    [SerializeField] private GameObject taskPrefab;
+
+    [SerializeField] private GameObject sideQuestList;
+    [SerializeField] private GameObject questPrefab;
+    
+    private Color completedTaskColor = new Color32(91,89,89, 255);
+    private Color currentTaskColor = new Color32(255,219,69, 255);
 
     private int currentTab = 0;
+    private int questTabNumber = 3;
     
     private float respawnTimer;
     private PlayerActions actions;
@@ -84,7 +100,9 @@ public class UIManager : Singleton<UIManager>
 
     private EnemyBrain enemyInPanel;
 
-    protected override void Awake()
+    private Quest currentlySelectedQuest;
+
+    private void Awake()
     {
         base.Awake();
         actions = new PlayerActions();
@@ -94,7 +112,8 @@ public class UIManager : Singleton<UIManager>
     {
         actions.General.Respawn.performed += ctx => SetIsReviving(true);  
         actions.General.Respawn.canceled += ctx => SetIsReviving(false); 
-        actions.UI.TabMenu.performed += ctx => OpenCloseTabMenu();
+        actions.General.TabMenu.performed += ctx => OpenCloseTabMenu();
+        
         actions.UI.Left.performed += ctx => SwitchTab(-1);
         actions.UI.Right.performed += ctx => SwitchTab(1);
     }
@@ -104,11 +123,86 @@ public class UIManager : Singleton<UIManager>
         UpdatePlayerUI();
         UpdateRevivingClock();
     }
+
+    public void LoadQuestsUI()
+    {
+        UpdateSideQuestList();
+    }
+
+    public void UpdateSideQuestList()
+    {
+        foreach (Transform child in sideQuestList.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        List<Quest> questList = QuestManager.Instance.acceptedQuests;
+        foreach (Quest quest in questList)
+        {
+            if(quest.QuestCompleted || quest.IsMainQuest) continue;
+            
+            GameObject newQuest = Instantiate(questPrefab, sideQuestList.transform);
+            newQuest.GetComponent<Button>().onClick.AddListener(() => SelectQuest(quest));
+        }
+    }
+
+    private void SelectQuest(Quest quest)
+    {
+        currentlySelectedQuest = quest;
+        
+        questTitle.text = quest.Name;
+        questDescription.text = quest.Description;
+        questGiverIcon.sprite = quest.QuestGiverIcon;
+        questGiverName.text = quest.QuestGiverName;
+
+        foreach (Transform child in taskList.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        bool currentTaskReached = false;
+        TextMeshProUGUI newTaskText = null;
+        foreach (QuestTask task in quest.Tasks)
+        {
+            if (!currentTaskReached)
+            {
+                GameObject newTask = Instantiate(taskPrefab, taskList.transform);
+                newTaskText = newTask.GetComponentInChildren<TextMeshProUGUI>();
+                newTaskText.text = task.GetDetails();
+                newTaskText.color = completedTaskColor;
+            }
+            if (!task.IsCompleted)
+            {
+                if (newTaskText != null)
+                {
+                    newTaskText.color = currentTaskColor;
+                }
+                currentTaskReached = true;
+            }
+        }
+    }
     
     private void OpenCloseTabMenu()
     {
-        tabMenu.SetActive(!tabMenu.activeSelf);
-        SetTabMenu(currentTab);
+        if (!SaveLoadManager.Instance.GameIsActive()) return;
+        
+        bool opening = !tabMenu.activeSelf;
+        
+        if(opening && PauseGameManager.Instance.isPaused) return;
+        
+        tabMenu.SetActive(opening);
+
+        if (opening)
+        {
+            SetTabMenu(currentTab);
+            actions.UI.Enable();
+            PauseGameManager.Instance.PauseGame();
+        }
+        else
+        {
+            actions.UI.Disable();
+            PauseGameManager.Instance.UnPause();
+        }
     }
 
     public void SetTabMenu(int tabIndex)
@@ -119,11 +213,14 @@ public class UIManager : Singleton<UIManager>
         }
         tabs[tabIndex].SetActive(true);
         currentTab = tabIndex;
+        if(currentTab == questTabNumber && currentlySelectedQuest != null) SelectQuest(currentlySelectedQuest);
         EventSystem.current.SetSelectedGameObject(tabButtons[tabIndex].gameObject);
     }
 
     private void SwitchTab(int direction)
     {
+        if (!tabMenu.activeSelf) return;
+        
         currentTab += direction;
         if (currentTab < 0) currentTab = tabs.Length - 1;
         if(currentTab >= tabs.Length) currentTab = 0;
@@ -353,7 +450,6 @@ public class UIManager : Singleton<UIManager>
         CloseEnemyInfoPanel();
         InventoryUI.Instance.CloseInventory();
         CloseStatsPanel();
-        ClosePlayerQuestPanel();
         LootManager.Instance.ClosePanel();
         DialogueManager.Instance.CloseDialoguePanel();
     }
@@ -362,12 +458,7 @@ public class UIManager : Singleton<UIManager>
     {
         statsPanel.SetActive(false);
     }
-
-    private void ClosePlayerQuestPanel()
-    {
-        playerQuestPanel.SetActive(false);
-    }
-
+    
     private void CloseCraftingPanel()
     {
         craftingPanel.SetActive(false);
@@ -400,13 +491,6 @@ public class UIManager : Singleton<UIManager>
         npcQuestPanel.SetActive(value);
     }
     
-    public void OpenClosePlayerQuestPanel()
-    {
-        bool isActive = playerQuestPanel.activeSelf;
-        CloseAllPanels();
-        playerQuestPanel.SetActive(!isActive);
-    }
-
     public void OpenCloseShopPanel(bool value)
     {
         CloseAllPanels();
@@ -473,16 +557,24 @@ public class UIManager : Singleton<UIManager>
 
     private void OnEnable()
     {
-        actions.Enable();
+        if (Instance != this) return;
+        
+        actions.General.Enable();
+        actions.UI.Disable();
+        
         PlayerUpgrade.OnPlayerUpgradeEvent += UpgradeCallback;
         DialogueManager.OnExtraInteractionEvent += ExtraInteractionCallback;
     }
 
     private void OnDisable()
     {
+        if (Instance != this) return;
+        
+        actions.General.Enable();
+        actions.UI.Disable();
+        
         PlayerUpgrade.OnPlayerUpgradeEvent -= UpgradeCallback;
         DialogueManager.OnExtraInteractionEvent -= ExtraInteractionCallback;
-        
     }
     
 }

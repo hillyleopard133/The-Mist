@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Dialogue/QuestManager")]
 public class DialogueQuestManager : ScriptableObject
 {
-    [HideInInspector] public List<DialogueTrigger> dialogueTriggers = new List<DialogueTrigger>();
+    public List<DialogueTrigger> dialogueTriggers = new List<DialogueTrigger>();
     private string DIALOGUE_TRIGGERS = "DIALOGUE_TRIGGERS";
     private int itemAmount;
     public void GiveQuest(Quest quest)
@@ -21,7 +21,7 @@ public class DialogueQuestManager : ScriptableObject
 
     public void AddQuestProgress(Quest quest)
     {
-        quest.AddProgress(0);
+        quest.AddProgress(1);
     }
 
     public void PassDialogueTrigger(DialogueTrigger trigger)

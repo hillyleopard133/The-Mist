@@ -20,10 +20,10 @@ public class PauseGameManager : Singleton<PauseGameManager>
     
     private void Start()
     {
-        actions.General.Pause.performed += ctx => TogglePause();
+        actions.General.Pause.performed += ctx => TogglePauseMenu();
     }
 
-    public void TogglePause()
+    public void TogglePauseMenu()
     {
         if(!SaveLoadManager.Instance.GameIsActive()) return;
         if (UIManager.Instance.IsPlayerDead()) return;
@@ -56,6 +56,13 @@ public class PauseGameManager : Singleton<PauseGameManager>
     public void HidePauseMenu()
     {
         pauseMenu.SetActive(false);
+    }
+
+    public void PauseGame()
+    {
+        GameManager.Instance.DisablePlayerMovement();
+        Time.timeScale = 0f;
+        isPaused = true;
     }
 
     public void UnPause()

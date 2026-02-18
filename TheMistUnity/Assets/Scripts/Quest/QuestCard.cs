@@ -15,7 +15,7 @@ public class QuestCard : MonoBehaviour
     {
         QuestToComplete = quest;
         questNameTMP.text = quest.Name;
-        questDescriptionTMP.text = quest.GetDescription();
+        questDescriptionTMP.text = quest.Description;
     }
     
 }

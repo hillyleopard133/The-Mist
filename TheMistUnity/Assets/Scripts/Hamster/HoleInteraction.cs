@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class HoleInteraction : MonoBehaviour
 {
-
     [SerializeField] private GameObject interactionBox;
     [SerializeField] private SceneChangeLocation location;
     
@@ -25,6 +24,8 @@ public class HoleInteraction : MonoBehaviour
 
     private void EnterHole()
     {
+        if(!interactionBox.activeSelf || PauseGameManager.Instance.isPaused) return;
+        
         SceneChangeManager.Instance.LoadScene(location.TargetSceneName, location.SceneEntryPointName);
         if (location.TargetSceneMusic == null) return;
         AudioManager.Instance.PlayMusic(location.TargetSceneMusic, location.MusicVolume);

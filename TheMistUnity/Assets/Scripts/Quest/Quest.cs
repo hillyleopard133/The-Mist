@@ -9,49 +9,42 @@ public class Quest : ScriptableObject
     [Header("Info")]
     public string Name;
     public string ID;
-    public int QuestGoal;
+    public Sprite QuestGiverIcon;
+    public string QuestGiverName;
+
+    public bool IsMainQuest;
     
-    [Header("Description")]
-    [TextArea] public string[] Descriptions;
-    public bool hasProgress;
+    [TextArea] public string Description;
+    
+    public QuestTask[] Tasks;
 
     [Header("Reward")]
     public int GoldReward;
     public float ExpReward;
     public QuestItemReward ItemReward;
 
-    [HideInInspector] public int CurrentStatus;
     [HideInInspector] public bool QuestCompleted;
     [HideInInspector] public bool QuestAccepted;
+    
     [HideInInspector] public bool QuestClaimed;
 
-    public string GetDescription()
+
+    public void AddProgress(int amount = 0)
     {
-        if (hasProgress)
+        foreach (QuestTask task in Tasks)
         {
-            return Descriptions[0];
+            if (task.IsCompleted) continue;
+            
+            task.AddProgress(amount);
+            break;
         }
-        else
+
+        if (Tasks[^1].IsCompleted)
         {
-            return Descriptions[CurrentStatus];
+            CompleteQuest();
         }
-    }
-    public void AddProgress(int amount)
-    {
-        if (hasProgress)
-        {
-            CurrentStatus += amount;
-            if (CurrentStatus >= QuestGoal)
-            {
-                CurrentStatus = QuestGoal;
-                CompleteQuest();
-            }
-        }
-        else
-        {
-            CurrentStatus++;
-            QuestManager.Instance.LoadQuestsIntoPlayerPanel();
-        }
+
+        UIManager.Instance.LoadQuestsUI();
     }
 
     public void CompleteQuest()
@@ -68,7 +61,16 @@ public class Quest : ScriptableObject
         QuestAccepted = false;
         QuestCompleted = false;
         QuestClaimed = false;
-        CurrentStatus = 0;
+        
+        ResetTasks();
+    }
+
+    private void ResetTasks()
+    {
+        foreach (QuestTask task in Tasks)
+        {
+            task.ResetTask();
+        }
     }
     
 }
