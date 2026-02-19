@@ -123,8 +123,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InventorySlot, Assembly-CSharp
+      - m_Target: {fileID: -7111520643693705623}
+        m_TargetAssemblyTypeName: EquipmentSlot, Assembly-CSharp
         m_MethodName: ClickSlot
         m_Mode: 1
         m_Arguments:

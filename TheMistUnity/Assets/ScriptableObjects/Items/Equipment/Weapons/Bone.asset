@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f50c7d94d36c8f44939a235b74aa2e9, type: 3}
-  m_Name: ItemWeapon
+  m_Name: Bone
   m_EditorClassIdentifier: 
   ID: WeaponBone
   Name: Bone
-  Icon: {fileID: 21300000, guid: bb8ddc6d640f551498e08902827077c1, type: 3}
+  Icon: {fileID: 21300000, guid: a6a3a8d76f318f347820e544612b067c, type: 3}
   Description: A large bone, perfect for bonking people.
   ItemType: 3
   IsConsumable: 0

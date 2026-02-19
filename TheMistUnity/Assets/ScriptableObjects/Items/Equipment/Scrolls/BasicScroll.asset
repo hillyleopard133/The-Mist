@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: ScrollBasic
   Name: Basic Scroll
-  Icon: {fileID: 21300000, guid: 469c774b485ec7f43a9d107d3cc967d4, type: 3}
+  Icon: {fileID: 21300000, guid: 4521359cb9c97184d8b5666e2e59ad0d, type: 3}
   Description: A basic scroll, provides no elemental boosts.
   ItemType: 3
   IsConsumable: 0

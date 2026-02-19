@@ -145,7 +145,6 @@ public class UIManager : Singleton<UIManager>
     {
         base.Awake();
         actions = new PlayerActions();
-        
     }
 
     private void Start()
@@ -164,6 +163,7 @@ public class UIManager : Singleton<UIManager>
         InitialiseEquipmentInventory();
         VerifyItemsForDraw();
         VerifyEquipmentItemsForDraw();
+        FilterEquipment(0);
     }
     
     private void Update()
@@ -194,11 +194,36 @@ public class UIManager : Singleton<UIManager>
         InventoryItem[] items = EquipmentManager.Instance.SortEquipment(index);
         currentEquipment = index;
         DrawEquipmentInventory(items);
+        ShowSelectedEquipment(0);
     }
 
     private void EquipSelectedItem()
     {
         
+    }
+    
+    private void ShowSelectedEquipment(int index)
+    {
+        InventoryItem item = EquipmentManager.Instance.SortEquipment(currentEquipment)[index];
+        
+        selectedItemIcon.sprite = item.Icon;
+        selectedItemName.text = item.Name;
+
+        if (item is ItemArmour armour)
+        {
+            selectedItemStat1.text = "Health: " + armour.health;
+            selectedItemStat2.text = "Defence: " + armour.defence;
+        }
+        else if (item is ItemWeapon weapon)
+        {
+            selectedItemStat1.text = "Damage: " + weapon.damage;
+            selectedItemStat2.text = "Crit: " + weapon.critChance + "%";
+        }
+        else if (item is ItemScroll scroll)
+        {
+            selectedItemStat1.text = "Mana: " + scroll.mana;
+            selectedItemStat2.text = "";
+        }
     }
 
     private void SwitchInventory(int direction)
@@ -358,11 +383,6 @@ public class UIManager : Singleton<UIManager>
             itemDescriptionTMP.text = items[index].Description;
         }
     }
-
-    private void ShowSelectedEquipment(int index)
-    {
-        
-    }
     
     private void SlotSelectedCallback(int slotIndex)
     {
@@ -372,6 +392,7 @@ public class UIManager : Singleton<UIManager>
 
     private void EquipmentSlotSelectedCallback(int slotIndex)
     {
+        Debug.Log("Equipment slot callback");
         CurrentEquipmentSlot = equipmentSlotList[slotIndex];
         ShowSelectedEquipment(slotIndex);
     }
