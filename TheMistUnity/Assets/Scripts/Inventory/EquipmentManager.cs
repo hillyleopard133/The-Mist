@@ -7,9 +7,9 @@ using UnityEngine;
 
 public class EquipmentManager : Singleton<EquipmentManager>
 {
-    [SerializeField] private ItemArmour[] equippedArmour;
-    [SerializeField] private ItemWeapon[] equippedWeapons;
-    [SerializeField] private ItemScroll[] equippedScrolls;
+    private ItemArmour[] equippedArmour;
+    private ItemWeapon[] equippedWeapons;
+    private ItemScroll[] equippedScrolls;
 
     private const int partySize = 3;
     
@@ -23,6 +23,7 @@ public class EquipmentManager : Singleton<EquipmentManager>
     private int currentType;
     
     [SerializeField] public int inventorySize = 9;
+    [SerializeField] public PartyMember[] partyMembers;
 
     private void Start()
     {
@@ -74,18 +75,21 @@ public class EquipmentManager : Singleton<EquipmentManager>
                 ItemArmour itemArmour = (ItemArmour) Inventory.Instance.InventoryItemsEquipment[armourIndexes[slotIndex]];
                 equippedArmour[characterIndex] = itemArmour;
                 itemArmour.equipped = characterIndex;
+                partyMembers[characterIndex].EquipItem(itemArmour);
                 break;
             case 1:
                 UnequipItem(equippedWeaponSlotIndexes[characterIndex], characterIndex);
                 ItemWeapon itemWeapon = (ItemWeapon) Inventory.Instance.InventoryItemsEquipment[weaponIndexes[slotIndex]];
                 equippedWeapons[characterIndex] = itemWeapon;
                 itemWeapon.equipped = characterIndex;
+                partyMembers[characterIndex].EquipItem(itemWeapon);
                 break;
             case 2:
                 UnequipItem(equippedScrollSlotIndexes[characterIndex], characterIndex);
                 ItemScroll itemScroll = (ItemScroll) Inventory.Instance.InventoryItemsEquipment[scrollIndexes[slotIndex]];
                 equippedScrolls[characterIndex] = itemScroll;
                 itemScroll.equipped = characterIndex;
+                partyMembers[characterIndex].EquipItem(itemScroll);
                 break;
         }
         SaveEquipment();
@@ -97,18 +101,21 @@ public class EquipmentManager : Singleton<EquipmentManager>
         {
             case 0:
                 ItemArmour itemArmour = (ItemArmour) Inventory.Instance.InventoryItemsEquipment[armourIndexes[slotIndex]];
-                equippedArmour[characterIndex] = null;
-                itemArmour.equipped = -1;
+                equippedArmour[characterIndex] = null; 
+                itemArmour.equipped = -1; 
+                partyMembers[characterIndex].UnEquipItem(itemArmour);
                 break;
             case 1:
                 ItemWeapon itemWeapon = (ItemWeapon) Inventory.Instance.InventoryItemsEquipment[weaponIndexes[slotIndex]];
                 equippedWeapons[characterIndex] = null;
                 itemWeapon.equipped = -1;
+                partyMembers[characterIndex].UnEquipItem(itemWeapon);
                 break;
             case 2:
                 ItemScroll itemScroll = (ItemScroll) Inventory.Instance.InventoryItemsEquipment[scrollIndexes[slotIndex]];
                 equippedScrolls[characterIndex] = null;
                 itemScroll.equipped = -1;
+                partyMembers[characterIndex].UnEquipItem(itemScroll);
                 break;
         }
         SaveEquipment();

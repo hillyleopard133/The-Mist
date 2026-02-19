@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338545f33ce61bc4aae53c6349dc3203, type: 3}
+  m_Name: IceScroll
+  m_EditorClassIdentifier: 
+  ID: ScrollIce
+  Name: Ice Scroll
+  Icon: {fileID: 21300000, guid: 9f46038650ffab749a79c02f96037738, type: 3}
+  Description: An ice scroll, adds freezing effect to attacks. It feels cold to touch.
+  ItemType: 3
+  IsConsumable: 0
+  IsStackable: 0
+  MaxStack: 1
+  Quantity: 0
+  mana: 35
+  equipped: -1

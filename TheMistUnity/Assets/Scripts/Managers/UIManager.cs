@@ -64,11 +64,11 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject tabMenu;
     [SerializeField] private GameObject[] tabs;
     [SerializeField] private Button[] tabButtons;
+    [SerializeField] private Color selectedTabColor;
     private int currentTab = 0;
     private const int inventoryTabNumber = 1;
     private const int equipmentTabNumber = 2;
     private const int questTabNumber = 3;
-    private readonly Color selectedTabColor = new Color32(255,194,100, 255);
     
     [Header("Quests")]
     [SerializeField] private TextMeshProUGUI mainQuestTitle;
@@ -80,8 +80,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject taskPrefab;
     [SerializeField] private GameObject sideQuestList;
     [SerializeField] private GameObject questPrefab;
-    private readonly Color completedTaskColor = new Color32(91,89,89, 255);
-    private readonly Color currentTaskColor = new Color32(255,219,69, 255);
+    [SerializeField] private Color completedTaskColor;
+    [SerializeField] private Color currentTaskColor;
     private Quest currentlySelectedQuest;
     
     [Header("Inventory")]
@@ -92,9 +92,9 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Transform inventoryContainer;
     [SerializeField] private Button[] inventoryTabs;
     [SerializeField] private Button destroyButton;
+    [SerializeField] private Color selectedInventoryColor;
     public InventorySlot CurrentSlot { get; set; }
     private List<InventorySlot> slotList = new List<InventorySlot>(); 
-    private readonly Color selectedInventoryColor = new Color32(106,214,0, 255);
     private int currentInventory = 0;
     private const int questInventoryNumber = 4;
     
@@ -119,6 +119,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private EquipmentSlot equipmentSlotPrefab;
     [SerializeField] private Transform equipmentInventoryContainer;
     [SerializeField] private Sprite[] characterIcons;
+    [SerializeField] private Color selectedEquipmentColor;
+    [SerializeField] private Button[] equipmentCards;
     public EquipmentSlot CurrentEquipmentSlot { get; set; }
     private List<EquipmentSlot> equipmentSlotList = new List<EquipmentSlot>();
     private int currentEquipment = 0;
@@ -131,10 +133,10 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI characterAttack;
     [SerializeField] private TextMeshProUGUI characterCritChance;
     [SerializeField] private TextMeshProUGUI characterMana;
-
     [SerializeField] private Button[] partyMembers;
     [SerializeField] private Image[] partyMemberImages;
     [SerializeField] private GameObject[] questionMarks;
+    [SerializeField] private Color selectedPartyMemberColor;
     private int selectedPartyMember = 0;
     
     private float respawnTimer;
@@ -163,6 +165,9 @@ public class UIManager : Singleton<UIManager>
         InitialiseEquipmentInventory();
         VerifyItemsForDraw();
         VerifyEquipmentItemsForDraw();
+        
+        UnlockPartyMember(1);
+        UnlockPartyMember(2);
     }
     
     private void Update()
@@ -186,6 +191,85 @@ public class UIManager : Singleton<UIManager>
         partyMemberImages[2].color = Color.black;
         questionMarks[0].SetActive(true);
         questionMarks[1].SetActive(true);
+    }
+
+    private void SetEquipButtonsInteractable(InventoryItem selectedItem)
+    {
+        if (selectedItem == null)
+        {
+            equipButton.interactable = false;
+            unEquipButton.interactable = false;
+            return;
+        }
+        
+        bool isEquipped = false;
+        bool isEquippedOnSelectedMember = false;
+        
+        switch (selectedItem)
+        {
+            case ItemArmour armour:
+                if (armour.equipped != -1) isEquipped = true;
+                if(armour.equipped == selectedPartyMember) isEquippedOnSelectedMember = true;
+                break;
+            case ItemWeapon weapon:
+                if (weapon.equipped != -1) isEquipped = true;
+                if(weapon.equipped == selectedPartyMember) isEquippedOnSelectedMember = true;
+                break;
+            case ItemScroll scroll:
+                if (scroll.equipped != -1) isEquipped = true;
+                if(scroll.equipped == selectedPartyMember) isEquippedOnSelectedMember = true;
+                break;
+        }
+        
+        if (isEquipped)
+        {
+            equipButton.interactable = false;
+            unEquipButton.interactable = isEquippedOnSelectedMember;
+        }
+        else
+        {
+            equipButton.interactable = true;
+            unEquipButton.interactable = false;
+        }
+    }
+
+    public void SelectPartyMember(int memberIndex)
+    {
+        selectedPartyMember = memberIndex;
+        UpdateEquipmentList();
+        FilterEquipment(currentEquipment);
+        
+        foreach (Button partyMember in partyMembers)
+        {
+            ColorBlock colors = partyMember.colors;    
+            colors.normalColor = Color.white;
+            partyMember.colors = colors; 
+        }
+        Button SelectedMember = partyMembers[memberIndex];
+        ColorBlock cb = SelectedMember.colors;    
+        cb.normalColor = selectedPartyMemberColor;
+        SelectedMember.colors = cb;
+    }
+
+    private void UpdateCharacterStats()
+    {
+        PartyMember partyMember = EquipmentManager.Instance.partyMembers[selectedPartyMember];
+        characterName.text = partyMember.Name;
+        characterDescription.text = partyMember.Description;
+        characterHealth.text = "Health: " + partyMember.CurrentMaxHealth;
+        characterDefence.text = "Defence: " + partyMember.CurrentDefence;
+        characterAttack.text = "Attack: " + partyMember.CurrentAttack;
+        characterCritChance.text = "Crit Chance: " + partyMember.CurrentCritChance + "%";
+        characterMana.text = "Mana: " + partyMember.CurrentMaxMana;
+    }
+    
+    private void UpdateEquipmentList()
+    {
+        InventoryItem[] items = EquipmentManager.Instance.SortEquipment(currentEquipment);
+        DrawEquipmentInventory(items);
+        UpdateEquippedItems();
+        UpdateCharacterStats();
+        SetEquipButtonsInteractable(items[CurrentEquipmentSlot.Index]);
     }
 
     private void UpdateEquippedItems()
@@ -217,7 +301,7 @@ public class UIManager : Singleton<UIManager>
             weaponIcon.gameObject.SetActive(true);
             weaponIcon.sprite = weapon.Icon;
             weaponAttackDamage.text = "Damage: " + weapon.damage;
-            weaponCritHit.text = "Crit Chance: " + weapon.critChance + "%";
+            weaponCritHit.text = "Crit: " + weapon.critChance + "%";
         }
         else
         {
@@ -259,13 +343,18 @@ public class UIManager : Singleton<UIManager>
         {
             ShowSelectedEquipment(0);
         }
-    }
 
-    private void UpdateEquipmentList()
-    {
-        InventoryItem[] items = EquipmentManager.Instance.SortEquipment(currentEquipment);
-        DrawEquipmentInventory(items);
-        UpdateEquippedItems();
+        foreach (Button equipmentCard in equipmentCards)
+        {
+            ColorBlock colors = equipmentCard.colors;    
+            colors.normalColor = Color.white;
+            equipmentCard.colors = colors; 
+        }
+        
+        Button SelectedCard = equipmentCards[index];
+        ColorBlock cb = SelectedCard.colors;    
+        cb.normalColor = selectedEquipmentColor;
+        SelectedCard.colors = cb;
     }
 
     public void EquipSelectedItem()
@@ -288,10 +377,11 @@ public class UIManager : Singleton<UIManager>
         UpdateEquipmentList();
     }
     
-    private void ShowSelectedEquipment(int index)
+    private void ShowSelectedEquipment(int slotIndex)
     {
-        InventoryItem item = EquipmentManager.Instance.SortEquipment(currentEquipment)[index];
-
+        InventoryItem item = EquipmentManager.Instance.SortEquipment(currentEquipment)[slotIndex];
+        SetEquipButtonsInteractable(item);
+        
         if (item == null)
         {
             selectedItemIcon.gameObject.SetActive(false);
@@ -313,7 +403,7 @@ public class UIManager : Singleton<UIManager>
         else if (item is ItemWeapon weapon)
         {
             selectedItemStat1.text = "Damage: " + weapon.damage;
-            selectedItemStat2.text = "Crit Chance: " + weapon.critChance + "%";
+            selectedItemStat2.text = "Crit: " + weapon.critChance + "%";
         }
         else if (item is ItemScroll scroll)
         {

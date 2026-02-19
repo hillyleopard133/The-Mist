@@ -2476,7 +2476,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.2247241, g: 0.41162336, b: 0.4716981, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.26517445, g: 0.48682493, b: 0.5566038, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2497,7 +2497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 190001882}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1683219267}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SelectPartyMember
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &190001882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2769,12 +2781,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8396226, g: 0.72234124, b: 0.23366857, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 0.8603223, b: 0.2688679, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2790,7 +2802,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 553438145}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -3220,12 +3232,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8396226, g: 0.72234124, b: 0.23366857, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 0.8603223, b: 0.2688679, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3241,7 +3253,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1571774575}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -4398,7 +4410,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.2247241, g: 0.41162336, b: 0.4716981, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.26517445, g: 0.48682493, b: 0.5566038, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
@@ -4419,7 +4431,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 266857151}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1683219267}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SelectPartyMember
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &266857151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16429,7 +16453,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Character Name
+  m_text: Name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 671c45858b5559247a83cc93a89a7660, type: 2}
   m_sharedMaterial: {fileID: -5920154114919826857, guid: 671c45858b5559247a83cc93a89a7660, type: 2}
@@ -16456,8 +16480,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -20126,6 +20150,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventorySize: 9
+  partyMembers:
+  - {fileID: 11400000, guid: 2fca617c7b6564746883ed8acce39b2f, type: 2}
+  - {fileID: 11400000, guid: 12ca74880f8bd534cbf765583f49498d, type: 2}
+  - {fileID: 11400000, guid: 46b08ff6030d9b148b5ab9e1543413a3, type: 2}
 --- !u!4 &817905468
 Transform:
   m_ObjectHideFlags: 0
@@ -36217,12 +36245,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8396226, g: 0.72234124, b: 0.23366857, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 0.8603223, b: 0.2688679, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -36238,7 +36266,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 929404450}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -40478,6 +40506,7 @@ MonoBehaviour:
   - {fileID: 1129581087}
   - {fileID: 1647189616}
   - {fileID: 1219823689}
+  selectedTabColor: {r: 1, g: 0.75972426, b: 0.3915094, a: 1}
   mainQuestTitle: {fileID: 327796176}
   questTitle: {fileID: 1782381414}
   questDescription: {fileID: 10971467}
@@ -40487,6 +40516,8 @@ MonoBehaviour:
   taskPrefab: {fileID: 1800304340697774408, guid: 632626933b825c842bb4bbc8aed0401f, type: 3}
   sideQuestList: {fileID: 375311233}
   questPrefab: {fileID: 6546083512094114197, guid: 748cb6ea16d662640897fb14d7e67cbb, type: 3}
+  completedTaskColor: {r: 0.35686275, g: 0.34901962, b: 0.34901962, a: 1}
+  currentTaskColor: {r: 1, g: 0.85882354, b: 0.27058825, a: 1}
   itemIcon: {fileID: 504168570}
   itemNameTMP: {fileID: 2049769521}
   itemDescriptionTMP: {fileID: 827054838}
@@ -40499,6 +40530,7 @@ MonoBehaviour:
   - {fileID: 1430968120}
   - {fileID: 1437731391}
   destroyButton: {fileID: 2075264174}
+  selectedInventoryColor: {r: 0.4156863, g: 0.83921576, b: 0, a: 1}
   weaponName: {fileID: 239242994}
   weaponAttackDamage: {fileID: 1946411717}
   weaponCritHit: {fileID: 1953995051}
@@ -40522,16 +40554,30 @@ MonoBehaviour:
   - {fileID: -1890032406, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
   - {fileID: -1750426169, guid: 4475269bdf83ce64ea47f370b42de858, type: 3}
   - {fileID: 274143192, guid: d47c533dd6617fa48b143dece7cab110, type: 3}
-  characterName: {fileID: 0}
-  characterDescription: {fileID: 0}
-  characterHealth: {fileID: 0}
-  characterDefence: {fileID: 0}
-  characterAttack: {fileID: 0}
-  characterCritChance: {fileID: 0}
-  characterMana: {fileID: 0}
-  partyMembers: []
-  partyMemberImages: []
-  questionMarks: []
+  selectedEquipmentColor: {r: 1, g: 0.85882354, b: 0.27058825, a: 1}
+  equipmentCards:
+  - {fileID: 205446207}
+  - {fileID: 1446400766}
+  - {fileID: 222511393}
+  characterName: {fileID: 609823442}
+  characterDescription: {fileID: 1487048267}
+  characterHealth: {fileID: 742623853}
+  characterDefence: {fileID: 1208385575}
+  characterAttack: {fileID: 1405737196}
+  characterCritChance: {fileID: 725111916}
+  characterMana: {fileID: 1207977943}
+  partyMembers:
+  - {fileID: 190001881}
+  - {fileID: 266857150}
+  - {fileID: 2021628416}
+  partyMemberImages:
+  - {fileID: 1326910399}
+  - {fileID: 1945607925}
+  - {fileID: 354233897}
+  questionMarks:
+  - {fileID: 599454975}
+  - {fileID: 1501635480}
+  selectedPartyMemberColor: {r: 0.26517445, g: 0.48682493, b: 0.5566038, a: 1}
 --- !u!4 &1683219268
 Transform:
   m_ObjectHideFlags: 0
@@ -47392,7 +47438,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.2247241, g: 0.41162336, b: 0.4716981, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.26517445, g: 0.48682493, b: 0.5566038, a: 1}
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
@@ -47413,7 +47459,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2021628417}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1683219267}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SelectPartyMember
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2021628417
 MonoBehaviour:
   m_ObjectHideFlags: 0
