@@ -13,11 +13,12 @@ public class Inventory : Singleton<Inventory>
     [Header("Config")] 
     [SerializeField] public GameContent gameContent;
     [SerializeField] private int initialInventorySize;
-    [SerializeField] private InventoryItem[] inventoryItemsTreasure;
-    [SerializeField] private InventoryItem[] inventoryItemsResources;
-    [SerializeField] private InventoryItem[] inventoryItemsConsumables;
-    [SerializeField] private InventoryItem[] inventoryItemsEquipment;
-    [SerializeField] private InventoryItem[] inventoryItemsQuests;
+    
+    private InventoryItem[] inventoryItemsTreasure;
+    private InventoryItem[] inventoryItemsResources;
+    private InventoryItem[] inventoryItemsConsumables;
+    private InventoryItem[] inventoryItemsEquipment;
+    private InventoryItem[] inventoryItemsQuests;
 
     public int InventorySize => inventorySize;
     private int inventorySize;
@@ -33,7 +34,7 @@ public class Inventory : Singleton<Inventory>
     private const string INVENTORY_EQUIPMENT = "Inventory_Equipment";
     private const string INVENTORY_QUESTS = "Inventory_Quests";
     
-    private readonly string EQUIPPED_WEAPON = "EQUIPPED_WEAPON";
+    private const string EQUIPMENT_EQUIPPED = "EQUIPMENT_EQUIPPED";
     
     private AudioManager audioManager;
 
@@ -54,7 +55,7 @@ public class Inventory : Singleton<Inventory>
         inventoryItemsQuests = new InventoryItem[inventorySize];
         
         audioManager = AudioManager.Instance;
-        LoadInventory();
+        //LoadInventory();
         //LoadEquippedWeapon();
         
     }
@@ -149,28 +150,16 @@ public class Inventory : Singleton<Inventory>
         SaveInventory();
     }
 
-    public void RemoveItem(int index)
+    public void RemoveItem(InventoryItem[] items, int index)
     {
-        InventoryItem[] items = GetCurrentInventory();
         if (index >= items.Length) return;
         if (items[index] == null) return;
         if (items[index].ItemType == ItemType.Quest) return;
         
-        RemoveFromInventory(items[index]);
         items[index] = null;
         UIManager.Instance.DrawItem(null, index);
         audioManager.PlayRemoveItemSound();
         SaveInventory();
-    }
-
-    public void RemoveFromInventory(InventoryItem item)
-    {
-        List<InventoryItem> items = GetCurrentInventory().ToList();
-        if (items.Contains(item))
-        {
-            int index = items.IndexOf(item);
-            GetCurrentInventory()[index] = null;
-        }
     }
 
     private void AddItemFreeSlot(InventoryItem item, int quantity)
@@ -265,66 +254,6 @@ public class Inventory : Singleton<Inventory>
         
         return null;
     }
-    
-    /*
-public void EquipItem(int index)
-{
-    InventoryItem[] items = inventoryItemsTreasure;
-    if (filteredInventory != null) items = filteredInventory;
-    if (index >= items.Length) return;
-
-    if (items[index] == null) return;
-    //if (items[index].ItemType != ItemType.Weapon) return;
-
-    InventoryItem item = items[index];
-    RemoveFromInventory(items[index]);
-    items[index] = null;
-    InventoryUI.Instance.DrawItem(null, index);
-    AddItem(FindWeaponInventoryItem(Player.Instance.gameObject.GetComponent<PlayerAttack>().CurrentWeapon),1);
-    item.EquipItem();
-    audioManager.PlayEquipItemSound();
-    SaveEquippedWeapon();
-    if(filteredInventory != null) UpdateInventoryFilter(filterDropdown.value);
-}
-*/
-    
-    /*
-private ItemWeapon FindWeaponInventoryItem(Weapon weapon)
-{
-    foreach (InventoryItem item in gameContent.GameItems)
-    {
-        ItemWeapon weaponItem = item as ItemWeapon;
-        if (weaponItem != null && weaponItem.Icon == weapon.Icon)
-        {
-            return weaponItem;
-        }
-    }
-    return null;
-}
-
-public void SaveEquippedWeapon()
-{
-    ItemWeapon itemWeapon = FindWeaponInventoryItem(Player.Instance.gameObject.GetComponent<PlayerAttack>().CurrentWeapon);
-    string itemID = itemWeapon.ID;
-    SaveGame.Save(EQUIPPED_WEAPON, itemID);
-}
-
-public void LoadEquippedWeapon()
-{
-    if (SaveGame.Exists(EQUIPPED_WEAPON))
-    {
-        string itemID = SaveGame.Load<string>(EQUIPPED_WEAPON);
-        InventoryItem itemFromContent = Inventory.Instance.ItemExistsInGameContent(itemID);
-        ItemWeapon weaponItem = itemFromContent as ItemWeapon;
-        if (weaponItem != null)
-        {
-            WeaponManager.Instance.EquipWeapon(weaponItem.Weapon);
-            Player.Instance.PlayerAttack.EquipWeapon(weaponItem.Weapon);
-        }
-    }
-}
-
-*/
 
     public void ResetInventory()
     {
@@ -340,7 +269,7 @@ public void LoadEquippedWeapon()
         SaveInventory();
     }
 
-    private void LoadInventory()
+    public void LoadInventory()
     {
         var inventories = new (InventoryItem[] array, string key)[]
         {
@@ -378,9 +307,33 @@ public void LoadEquippedWeapon()
                 }
             }
         }
+        
+        if (SaveGame.Exists(EQUIPMENT_EQUIPPED))
+        {
+            int[] equippedItems = SaveGame.Load<int[]>(EQUIPMENT_EQUIPPED);
+
+            for (int i = 0; i < InventorySize; i++)
+            {
+                if (inventoryItemsEquipment[i] != null)
+                {
+                    switch (inventoryItemsEquipment[i])
+                    {
+                        case ItemWeapon weapon:
+                            weapon.equipped = equippedItems[i];
+                            break;
+                        case ItemArmour armour:
+                            armour.equipped = equippedItems[i];
+                            break;
+                        case ItemScroll scroll:
+                            scroll.equipped = equippedItems[i];
+                            break;
+                    }
+                }
+            }
+        }
     }
     
-    private void SaveInventory()
+    public void SaveInventory()
     {
         var inventories = new (InventoryItem[] array, string key)[]
         {
@@ -390,7 +343,7 @@ public void LoadEquippedWeapon()
             (inventoryItemsEquipment, INVENTORY_EQUIPMENT),
             (inventoryItemsQuests, INVENTORY_QUESTS)
         };
-
+        
         foreach (var (array, key) in inventories)
         {
             InventoryData saveData = new InventoryData
@@ -398,7 +351,7 @@ public void LoadEquippedWeapon()
                 ItemContent = new string[inventorySize],
                 ItemQuantity = new int[inventorySize]
             };
-
+            
             for (int i = 0; i < inventorySize; i++)
             {
                 if (array[i] != null)
@@ -415,6 +368,33 @@ public void LoadEquippedWeapon()
 
             SaveGame.Save(key, saveData);
         }
+        
+        
+        int[] equippedItems = new int[inventorySize];
+        for (int i = 0; i < inventorySize; i++)
+        {
+            if (inventoryItemsEquipment[i] != null)
+            {
+                switch (inventoryItemsEquipment[i])
+                {
+                    case ItemWeapon weapon:
+                        equippedItems[i] = weapon.equipped;
+                        break;
+                    case ItemArmour armour:
+                        equippedItems[i] = armour.equipped;
+                        break;
+                    case ItemScroll scroll:
+                        equippedItems[i] = scroll.equipped;
+                        break;
+                }
+            }
+            else
+            {
+                equippedItems[i] = -1;
+            }
+        }
+        
+        SaveGame.Save(EQUIPMENT_EQUIPPED, equippedItems);
     }
 
     

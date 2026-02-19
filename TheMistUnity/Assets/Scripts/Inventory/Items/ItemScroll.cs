@@ -6,4 +6,6 @@ using UnityEngine;
 public class ItemScroll : InventoryItem
 {
     public int mana;
+    
+    public int equipped = -1;
 }

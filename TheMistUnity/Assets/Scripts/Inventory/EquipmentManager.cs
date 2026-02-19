@@ -1,33 +1,120 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using BayatGames.SaveGameFree;
 using UnityEngine;
 
 public class EquipmentManager : Singleton<EquipmentManager>
 {
-    private ItemWeapon[] equippedWeapons;
-    private ItemArmour[] equippedArmour;
-    private ItemScroll[] equippedScrolls;
+    [SerializeField] private ItemArmour[] equippedArmour;
+    [SerializeField] private ItemWeapon[] equippedWeapons;
+    [SerializeField] private ItemScroll[] equippedScrolls;
 
     private const int partySize = 3;
     
-    private const string EQUIPMENT_WEAPONS = "EQUIPMENT_WEAPONS";
     private const string EQUIPMENT_ARMOUR = "EQUIPMENT_ARMOUR";
+    private const string EQUIPMENT_WEAPONS = "EQUIPMENT_WEAPONS";
     private const string EQUIPMENT_SCROLL = "EQUIPMENT_SCROLL";
+    
+    private int[] armourIndexes, weaponIndexes, scrollIndexes;
+    private int[] equippedArmourSlotIndexes, equippedWeaponSlotIndexes, equippedScrollSlotIndexes;
+
+    private int currentType;
     
     [SerializeField] public int inventorySize = 9;
 
     private void Start()
     {
-        equippedWeapons = new ItemWeapon[partySize];
         equippedArmour = new ItemArmour[partySize];
+        equippedWeapons = new ItemWeapon[partySize];
         equippedScrolls = new ItemScroll[partySize];
+
+        armourIndexes = new int[inventorySize]; 
+        weaponIndexes = new int[inventorySize];
+        scrollIndexes = new int[inventorySize];
+        
+        equippedArmourSlotIndexes = new int[partySize];
+        equippedWeaponSlotIndexes = new int[partySize];
+        equippedScrollSlotIndexes = new int[partySize];
         
         LoadEquipment();
     }
 
-    public InventoryItem[] SortEquipment(int index)
+    public InventoryItem[] GetCharacterEquipment(int characterIndex)
+    {
+        InventoryItem[] equippedItems = new InventoryItem[3];
+        equippedItems[0] = equippedArmour[characterIndex];
+        equippedItems[1] = equippedWeapons[characterIndex];
+        equippedItems[2] = equippedScrolls[characterIndex];
+        return equippedItems;
+    }
+
+    public int GetEquippedSlotIndex(int equipmentType, int characterIndex)
+    {
+        switch (equipmentType)
+        {
+            case 0:
+                return equippedArmourSlotIndexes[characterIndex];
+            case 1:
+                return equippedWeaponSlotIndexes[characterIndex];
+            case 2:
+                return equippedScrollSlotIndexes[characterIndex];
+        }
+        
+        return -1;
+    }
+
+    public void EquipItem(int slotIndex, int characterIndex)
+    {
+        switch (currentType)
+        {
+            case 0:
+                UnequipItem(equippedArmourSlotIndexes[characterIndex], characterIndex);
+                ItemArmour itemArmour = (ItemArmour) Inventory.Instance.InventoryItemsEquipment[armourIndexes[slotIndex]];
+                equippedArmour[characterIndex] = itemArmour;
+                itemArmour.equipped = characterIndex;
+                break;
+            case 1:
+                UnequipItem(equippedWeaponSlotIndexes[characterIndex], characterIndex);
+                ItemWeapon itemWeapon = (ItemWeapon) Inventory.Instance.InventoryItemsEquipment[weaponIndexes[slotIndex]];
+                equippedWeapons[characterIndex] = itemWeapon;
+                itemWeapon.equipped = characterIndex;
+                break;
+            case 2:
+                UnequipItem(equippedScrollSlotIndexes[characterIndex], characterIndex);
+                ItemScroll itemScroll = (ItemScroll) Inventory.Instance.InventoryItemsEquipment[scrollIndexes[slotIndex]];
+                equippedScrolls[characterIndex] = itemScroll;
+                itemScroll.equipped = characterIndex;
+                break;
+        }
+        SaveEquipment();
+    }
+
+    public void UnequipItem(int slotIndex, int characterIndex)
+    {
+        switch (currentType)
+        {
+            case 0:
+                ItemArmour itemArmour = (ItemArmour) Inventory.Instance.InventoryItemsEquipment[armourIndexes[slotIndex]];
+                equippedArmour[characterIndex] = null;
+                itemArmour.equipped = -1;
+                break;
+            case 1:
+                ItemWeapon itemWeapon = (ItemWeapon) Inventory.Instance.InventoryItemsEquipment[weaponIndexes[slotIndex]];
+                equippedWeapons[characterIndex] = null;
+                itemWeapon.equipped = -1;
+                break;
+            case 2:
+                ItemScroll itemScroll = (ItemScroll) Inventory.Instance.InventoryItemsEquipment[scrollIndexes[slotIndex]];
+                equippedScrolls[characterIndex] = null;
+                itemScroll.equipped = -1;
+                break;
+        }
+        SaveEquipment();
+    }
+
+    public InventoryItem[] SortEquipment(int itemType)
     {
         InventoryItem[] items = Inventory.Instance.InventoryItemsEquipment;
         
@@ -39,32 +126,41 @@ public class EquipmentManager : Singleton<EquipmentManager>
         int armourIndex = 0;
         int scrollIndex = 0;
 
-        foreach (InventoryItem item in items)
+        for (int i = 0; i < items.Length; i++)
         {
-            if (item is ItemWeapon)
+            InventoryItem item = items[i];
+            switch (item)
             {
-                if (weaponIndex < inventorySize)
-                    weapons[weaponIndex++] = item;
-            }
-            else if (item is ItemArmour)
-            {
-                if (armourIndex < inventorySize)
-                    armours[armourIndex++] = item;
-            }
-            else if (item is ItemScroll)
-            {
-                if (scrollIndex < inventorySize)
-                    scrolls[scrollIndex++] = item;
+                case ItemWeapon weapon:
+                    weaponIndexes[weaponIndex] = i;
+                    if (weapon.equipped != -1) equippedWeaponSlotIndexes[weapon.equipped] = weaponIndex;
+                    if (weaponIndex < inventorySize) weapons[weaponIndex++] = weapon;
+                    break;
+
+                case ItemArmour armour:
+                    armourIndexes[armourIndex] = i;
+                    if(armour.equipped != -1) equippedArmourSlotIndexes[armour.equipped] = armourIndex;
+                    if (armourIndex < inventorySize) armours[armourIndex++] = armour;
+                    break;
+
+                case ItemScroll scroll:
+                    scrollIndexes[scrollIndex] = i;
+                    if (scroll.equipped != -1) equippedScrollSlotIndexes[scroll.equipped] = scrollIndex;
+                    if (scrollIndex < inventorySize) scrolls[scrollIndex++] = scroll;
+                    break;
             }
         }
 
-        switch (index)
+        switch (itemType)
         {
             case 0:
+                currentType = 0;
                 return armours;
             case 1:
+                currentType = 1;
                 return weapons;
             case 2:
+                currentType = 2;
                 return scrolls;
             default:
                 return null;

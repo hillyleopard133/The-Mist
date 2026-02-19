@@ -9,6 +9,7 @@ public class EquipmentSlot : MonoBehaviour
     public static event Action<int> OnSlotSelectedEvent; 
     
     [SerializeField] private Image itemIcon;
+    [SerializeField] private Image equippedCharacterIcon;
     
     public int Index {get; set;}
 
@@ -17,13 +18,24 @@ public class EquipmentSlot : MonoBehaviour
         OnSlotSelectedEvent?.Invoke(Index);
     }
 
-    public void UpdateSlot(InventoryItem item)
+    public void UpdateSlot(InventoryItem item, Sprite icon)
     {
         itemIcon.sprite = item.Icon;
+        
+        if (icon != null)
+        {
+            equippedCharacterIcon.gameObject.SetActive(true);
+            equippedCharacterIcon.sprite = icon;
+        }
+        else
+        {
+            equippedCharacterIcon.gameObject.SetActive(false);
+        }
     }
 
     public void ShowSlotInformation(bool value)
     {
         itemIcon.gameObject.SetActive(value);
+        equippedCharacterIcon.gameObject.SetActive(value);
     }
 }

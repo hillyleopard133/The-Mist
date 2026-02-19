@@ -9,4 +9,5 @@ public class ItemWeapon : InventoryItem
     public int damage;
     public int critChance;
     
+    public int equipped = -1;
 }

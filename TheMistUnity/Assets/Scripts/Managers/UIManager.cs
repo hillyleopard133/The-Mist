@@ -66,6 +66,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Button[] tabButtons;
     private int currentTab = 0;
     private const int inventoryTabNumber = 1;
+    private const int equipmentTabNumber = 2;
     private const int questTabNumber = 3;
     private readonly Color selectedTabColor = new Color32(255,194,100, 255);
     
@@ -109,17 +110,15 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI scrollName;
     [SerializeField] private TextMeshProUGUI scrollMana;
     [SerializeField] private Image scrollIcon;
-    
     [SerializeField] private TextMeshProUGUI selectedItemName;
     [SerializeField] private TextMeshProUGUI selectedItemStat1;
     [SerializeField] private TextMeshProUGUI selectedItemStat2;
     [SerializeField] private Image selectedItemIcon;
-    
     [SerializeField] private Button equipButton;
     [SerializeField] private Button unEquipButton;
-    
     [SerializeField] private EquipmentSlot equipmentSlotPrefab;
     [SerializeField] private Transform equipmentInventoryContainer;
+    [SerializeField] private Sprite[] characterIcons;
     public EquipmentSlot CurrentEquipmentSlot { get; set; }
     private List<EquipmentSlot> equipmentSlotList = new List<EquipmentSlot>();
     private int currentEquipment = 0;
@@ -136,6 +135,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Button[] partyMembers;
     [SerializeField] private Image[] partyMemberImages;
     [SerializeField] private GameObject[] questionMarks;
+    private int selectedPartyMember = 0;
     
     private float respawnTimer;
     private PlayerActions actions;
@@ -163,7 +163,6 @@ public class UIManager : Singleton<UIManager>
         InitialiseEquipmentInventory();
         VerifyItemsForDraw();
         VerifyEquipmentItemsForDraw();
-        FilterEquipment(0);
     }
     
     private void Update()
@@ -189,23 +188,120 @@ public class UIManager : Singleton<UIManager>
         questionMarks[1].SetActive(true);
     }
 
+    private void UpdateEquippedItems()
+    {
+        InventoryItem[] equippedItems = EquipmentManager.Instance.GetCharacterEquipment(selectedPartyMember);
+        ItemArmour armour = (ItemArmour) equippedItems[0];
+        ItemWeapon weapon = (ItemWeapon) equippedItems[1];
+        ItemScroll scroll = (ItemScroll) equippedItems[2];
+
+        if (armour != null)
+        {
+            armourName.text = armour.Name;
+            armourIcon.gameObject.SetActive(true);
+            armourIcon.sprite = armour.Icon;
+            armourHealth.text = "Health: " + armour.health;
+            armourDefence.text = "Defence: " + armour.defence;
+        }
+        else
+        {
+            armourName.text = "No Armour Equipped";
+            armourIcon.gameObject.SetActive(false);
+            armourHealth.text = "";
+            armourDefence.text = "";
+        }
+
+        if (weapon != null)
+        {
+            weaponName.text = weapon.Name;
+            weaponIcon.gameObject.SetActive(true);
+            weaponIcon.sprite = weapon.Icon;
+            weaponAttackDamage.text = "Damage: " + weapon.damage;
+            weaponCritHit.text = "Crit Chance: " + weapon.critChance + "%";
+        }
+        else
+        {
+            weaponName.text = "No Weapon Equipped";
+            weaponIcon.gameObject.SetActive(false);
+            weaponAttackDamage.text = "";
+            weaponCritHit.text = "";
+        }
+
+        if (scroll != null)
+        {
+            scrollName.text = scroll.Name;
+            scrollIcon.gameObject.SetActive(true);
+            scrollIcon.sprite = scroll.Icon;
+            scrollMana.text = "Mana: " + scroll.mana;
+        }
+        else
+        {
+            scrollName.text = "No Scroll Equipped";
+            scrollIcon.gameObject.SetActive(false);
+            scrollMana.text = "";
+        }
+        
+    }
+
     public void FilterEquipment(int index)
     {
         InventoryItem[] items = EquipmentManager.Instance.SortEquipment(index);
         currentEquipment = index;
         DrawEquipmentInventory(items);
-        ShowSelectedEquipment(0);
+        
+        int currentEquipped = EquipmentManager.Instance.GetEquippedSlotIndex(index, selectedPartyMember);
+        if (currentEquipped != -1)
+        {
+            CurrentEquipmentSlot = equipmentSlotList[currentEquipped];
+            ShowSelectedEquipment(CurrentEquipmentSlot.Index);
+        }
+        else
+        {
+            ShowSelectedEquipment(0);
+        }
     }
 
-    private void EquipSelectedItem()
+    private void UpdateEquipmentList()
     {
-        
+        InventoryItem[] items = EquipmentManager.Instance.SortEquipment(currentEquipment);
+        DrawEquipmentInventory(items);
+        UpdateEquippedItems();
+    }
+
+    public void EquipSelectedItem()
+    {
+        if (CurrentEquipmentSlot == null)
+        {
+            return;
+        }
+        EquipmentManager.Instance.EquipItem(CurrentEquipmentSlot.Index, selectedPartyMember);
+        UpdateEquipmentList();
+    }
+
+    public void UnEquipSelectedItem()
+    {
+        if (CurrentEquipmentSlot == null)
+        {
+            return;
+        }
+        EquipmentManager.Instance.UnequipItem(CurrentEquipmentSlot.Index, selectedPartyMember);
+        UpdateEquipmentList();
     }
     
     private void ShowSelectedEquipment(int index)
     {
         InventoryItem item = EquipmentManager.Instance.SortEquipment(currentEquipment)[index];
+
+        if (item == null)
+        {
+            selectedItemIcon.gameObject.SetActive(false);
+            selectedItemName.text = "No Item Selected";
+            selectedItemStat1.text = "";
+            selectedItemStat2.text = "";
+            return;
+        }
         
+        selectedItemIcon.gameObject.SetActive(true);
         selectedItemIcon.sprite = item.Icon;
         selectedItemName.text = item.Name;
 
@@ -217,7 +313,7 @@ public class UIManager : Singleton<UIManager>
         else if (item is ItemWeapon weapon)
         {
             selectedItemStat1.text = "Damage: " + weapon.damage;
-            selectedItemStat2.text = "Crit: " + weapon.critChance + "%";
+            selectedItemStat2.text = "Crit Chance: " + weapon.critChance + "%";
         }
         else if (item is ItemScroll scroll)
         {
@@ -339,7 +435,7 @@ public class UIManager : Singleton<UIManager>
             return;
         }
 
-        Inventory.Instance.RemoveItem(CurrentSlot.Index);
+        Inventory.Instance.RemoveItem(Inventory.Instance.GetCurrentInventory(),CurrentSlot.Index);
     }
     
     public void DrawItem(InventoryItem item, int index)
@@ -363,7 +459,41 @@ public class UIManager : Singleton<UIManager>
             return;
         }
         slot.ShowSlotInformation(true);
-        slot.UpdateSlot(item);
+
+        if (item is ItemArmour armour)
+        {
+            if (armour.equipped != -1)
+            {
+                slot.UpdateSlot(item, characterIcons[armour.equipped]);
+            }
+            else
+            {
+                slot.UpdateSlot(item, null);
+            }
+        }
+        else if (item is ItemWeapon weapon)
+        {
+            if (weapon.equipped != -1)
+            {
+                slot.UpdateSlot(item, characterIcons[weapon.equipped]);
+            }
+            else
+            {
+                slot.UpdateSlot(item, null);
+            }
+        }
+        else if (item is ItemScroll scroll)
+        {
+            if (scroll.equipped != -1)
+            {
+                slot.UpdateSlot(item, characterIcons[scroll.equipped]);
+            }
+            else
+            {
+                slot.UpdateSlot(item, null);
+            }
+        }
+        else slot.UpdateSlot(item, null);
     }
     
     private void ShowItemDescription(int index)
@@ -392,7 +522,6 @@ public class UIManager : Singleton<UIManager>
 
     private void EquipmentSlotSelectedCallback(int slotIndex)
     {
-        Debug.Log("Equipment slot callback");
         CurrentEquipmentSlot = equipmentSlotList[slotIndex];
         ShowSelectedEquipment(slotIndex);
     }
@@ -499,6 +628,12 @@ public class UIManager : Singleton<UIManager>
         {
             LoadQuestsUI();
             SelectQuest(currentlySelectedQuest);
+        }
+
+        if (currentTab == equipmentTabNumber)
+        {
+            FilterEquipment(0);
+            UpdateEquippedItems();
         }
         
         if(currentTab == inventoryTabNumber) DrawInventory(Inventory.Instance.GetCurrentInventory());

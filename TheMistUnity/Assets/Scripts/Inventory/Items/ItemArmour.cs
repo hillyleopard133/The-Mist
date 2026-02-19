@@ -7,4 +7,6 @@ public class ItemArmour : InventoryItem
 {
     public int health;
     public int defence;
+    
+    public int equipped = -1;
 }

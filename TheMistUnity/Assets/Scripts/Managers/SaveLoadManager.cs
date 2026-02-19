@@ -96,6 +96,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         SceneChangeManager.Instance.SaveGameLocation();
         QuestManager.Instance.SaveQuestData();
         EquipmentManager.Instance.SaveEquipment();
+        inventory.SaveInventory();
         player.SavePlayerStats();
         GameManager.Instance.SaveTimer();
     }
@@ -162,6 +163,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
             ActivateGame();
             player.gameObject.transform.position = newPosition;
             player.LoadPlayerStats();
+            inventory.LoadInventory();
             EquipmentManager.Instance.LoadEquipment();
             QuestManager.Instance.LoadQuestData();
             CoinManager.Instance.LoadCoins();
