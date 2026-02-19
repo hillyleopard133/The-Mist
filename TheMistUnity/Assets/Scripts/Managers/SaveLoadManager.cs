@@ -95,8 +95,8 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
     {
         SceneChangeManager.Instance.SaveGameLocation();
         QuestManager.Instance.SaveQuestData();
+        EquipmentManager.Instance.SaveEquipment();
         player.SavePlayerStats();
-        //inventory.SaveEquippedWeapon();
         GameManager.Instance.SaveTimer();
     }
 
@@ -120,6 +120,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         inventory.ResetInventory();
         ResetInitialWeapon();
         QuestManager.Instance.ResetQuests();
+        EquipmentManager.Instance.ResetEquipment();
         CoinManager.Instance.ResetCoins();
         DialogueManager.Instance.GetDialogueQuestManager().ResetDialogueTriggers();
         DialogueManager.Instance.ResetNPCs();
@@ -161,7 +162,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
             ActivateGame();
             player.gameObject.transform.position = newPosition;
             player.LoadPlayerStats();
-            //inventory.LoadEquippedWeapon();
+            EquipmentManager.Instance.LoadEquipment();
             QuestManager.Instance.LoadQuestData();
             CoinManager.Instance.LoadCoins();
             DialogueManager.Instance.GetDialogueQuestManager().LoadDialogueTriggers();

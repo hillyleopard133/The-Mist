@@ -63,7 +63,7 @@ public class UIManager : Singleton<UIManager>
     [Header("Tab Menu")]
     [SerializeField] private GameObject tabMenu;
     [SerializeField] private GameObject[] tabs;
-    [SerializeField] private GameObject[] tabButtons;
+    [SerializeField] private Button[] tabButtons;
     private int currentTab = 0;
     private const int inventoryTabNumber = 1;
     private const int questTabNumber = 3;
@@ -89,13 +89,53 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI itemDescriptionTMP;
     [SerializeField] private InventorySlot inventorySlotPrefab;
     [SerializeField] private Transform inventoryContainer;
-    [SerializeField] private GameObject[] inventoryTabs;
+    [SerializeField] private Button[] inventoryTabs;
     [SerializeField] private Button destroyButton;
     public InventorySlot CurrentSlot { get; set; }
     private List<InventorySlot> slotList = new List<InventorySlot>(); 
     private readonly Color selectedInventoryColor = new Color32(106,214,0, 255);
     private int currentInventory = 0;
     private const int questInventoryNumber = 4;
+    
+    [Header("Equipment")]
+    [SerializeField] private TextMeshProUGUI weaponName;
+    [SerializeField] private TextMeshProUGUI weaponAttackDamage;
+    [SerializeField] private TextMeshProUGUI weaponCritHit;
+    [SerializeField] private Image weaponIcon;
+    [SerializeField] private TextMeshProUGUI armourName;
+    [SerializeField] private TextMeshProUGUI armourDefence;
+    [SerializeField] private TextMeshProUGUI armourHealth;
+    [SerializeField] private Image armourIcon;
+    [SerializeField] private TextMeshProUGUI scrollName;
+    [SerializeField] private TextMeshProUGUI scrollMana;
+    [SerializeField] private Image scrollIcon;
+    
+    [SerializeField] private TextMeshProUGUI selectedItemName;
+    [SerializeField] private TextMeshProUGUI selectedItemStat1;
+    [SerializeField] private TextMeshProUGUI selectedItemStat2;
+    [SerializeField] private Image selectedItemIcon;
+    
+    [SerializeField] private Button equipButton;
+    [SerializeField] private Button unEquipButton;
+    
+    [SerializeField] private EquipmentSlot equipmentSlotPrefab;
+    [SerializeField] private Transform equipmentInventoryContainer;
+    public EquipmentSlot CurrentEquipmentSlot { get; set; }
+    private List<EquipmentSlot> equipmentSlotList = new List<EquipmentSlot>();
+    private int currentEquipment = 0;
+    
+    [Header("Party")]
+    [SerializeField] private TextMeshProUGUI characterName;
+    [SerializeField] private TextMeshProUGUI characterDescription;
+    [SerializeField] private TextMeshProUGUI characterHealth;
+    [SerializeField] private TextMeshProUGUI characterDefence;
+    [SerializeField] private TextMeshProUGUI characterAttack;
+    [SerializeField] private TextMeshProUGUI characterCritChance;
+    [SerializeField] private TextMeshProUGUI characterMana;
+
+    [SerializeField] private Button[] partyMembers;
+    [SerializeField] private Image[] partyMemberImages;
+    [SerializeField] private GameObject[] questionMarks;
     
     private float respawnTimer;
     private PlayerActions actions;
@@ -121,13 +161,44 @@ public class UIManager : Singleton<UIManager>
         actions.UI.RightInv.performed += ctx => SwitchInventory(1);
         
         InitialiseInventory();
+        InitialiseEquipmentInventory();
         VerifyItemsForDraw();
+        VerifyEquipmentItemsForDraw();
     }
     
     private void Update()
     {
         UpdatePlayerUI();
         UpdateRevivingClock();
+    }
+
+    public void UnlockPartyMember(int index)
+    {
+        partyMembers[index].interactable = true;
+        partyMemberImages[index].color = Color.white;
+        questionMarks[index - 1].SetActive(false);
+    }
+
+    public void ResetPartyUnlocks()
+    {
+        partyMembers[1].interactable = false;
+        partyMembers[2].interactable = false;
+        partyMemberImages[1].color = Color.black;
+        partyMemberImages[2].color = Color.black;
+        questionMarks[0].SetActive(true);
+        questionMarks[1].SetActive(true);
+    }
+
+    public void FilterEquipment(int index)
+    {
+        InventoryItem[] items = EquipmentManager.Instance.SortEquipment(index);
+        currentEquipment = index;
+        DrawEquipmentInventory(items);
+    }
+
+    private void EquipSelectedItem()
+    {
+        
     }
 
     private void SwitchInventory(int direction)
@@ -145,15 +216,14 @@ public class UIManager : Singleton<UIManager>
         currentInventory = index;
         DrawInventory(Inventory.Instance.GetCurrentInventory());
         
-        foreach (GameObject tab in inventoryTabs)
+        foreach (Button tab in inventoryTabs)
         {
-            Button tabButton = tab.GetComponent<Button>();
-            ColorBlock colors = tabButton.colors;    
+            ColorBlock colors = tab.colors;    
             colors.normalColor = Color.white;
-            tabButton.colors = colors; 
+            tab.colors = colors; 
         }
         
-        Button SelectedTab = inventoryTabs[index].GetComponent<Button>();
+        Button SelectedTab = inventoryTabs[index];
         ColorBlock cb = SelectedTab.colors;    
         cb.normalColor = selectedInventoryColor;
         SelectedTab.colors = cb;
@@ -169,7 +239,7 @@ public class UIManager : Singleton<UIManager>
         }
     }
     
-    public void VerifyItemsForDraw()
+    private void VerifyItemsForDraw()
     {
         for (int i = 0; i < Inventory.Instance.InventorySize; i++)
         {
@@ -180,7 +250,18 @@ public class UIManager : Singleton<UIManager>
         }
     }
     
-    public void DrawInventory(InventoryItem[] items)
+    private void VerifyEquipmentItemsForDraw()
+    {
+        for (int i = 0; i < EquipmentManager.Instance.inventorySize; i++)
+        {
+            if (EquipmentManager.Instance.SortEquipment(currentEquipment)[i] == null)
+            {
+                DrawEquipmentItem(null, i);
+            }
+        }
+    }
+    
+    private void DrawInventory(InventoryItem[] items)
     {
         for (int i = 0; i < items.Length; i++)
         {
@@ -193,6 +274,19 @@ public class UIManager : Singleton<UIManager>
         }
     }
     
+    private void DrawEquipmentInventory(InventoryItem[] items)
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            DrawEquipmentItem(items[i], i);
+        }
+
+        for (int i = items.Length; i < equipmentSlotList.Count; i++)
+        {
+            DrawEquipmentItem(null, i);
+        }
+    }
+    
     private void InitialiseInventory()
     {
         for (int i = 0; i < Inventory.Instance.InventorySize; i++)
@@ -200,6 +294,16 @@ public class UIManager : Singleton<UIManager>
             InventorySlot slot = Instantiate(inventorySlotPrefab, inventoryContainer);
             slot.Index = i;
             slotList.Add(slot);
+        }
+    }
+    
+    private void InitialiseEquipmentInventory()
+    {
+        for (int i = 0; i < EquipmentManager.Instance.inventorySize; i++)
+        {
+            EquipmentSlot slot = Instantiate(equipmentSlotPrefab, equipmentInventoryContainer);
+            slot.Index = i;
+            equipmentSlotList.Add(slot);
         }
     }
     
@@ -224,8 +328,20 @@ public class UIManager : Singleton<UIManager>
         slot.ShowSlotInformation(true);
         slot.UpdateSlot(item);
     }
-
-    public void ShowItemDescription(int index)
+    
+    public void DrawEquipmentItem(InventoryItem item, int index)
+    {
+        EquipmentSlot slot = equipmentSlotList[index];
+        if (item == null)
+        {
+            slot.ShowSlotInformation(false);
+            return;
+        }
+        slot.ShowSlotInformation(true);
+        slot.UpdateSlot(item);
+    }
+    
+    private void ShowItemDescription(int index)
     {
         InventoryItem[] items = Inventory.Instance.GetCurrentInventory();
 
@@ -242,11 +358,22 @@ public class UIManager : Singleton<UIManager>
             itemDescriptionTMP.text = items[index].Description;
         }
     }
+
+    private void ShowSelectedEquipment(int index)
+    {
+        
+    }
     
     private void SlotSelectedCallback(int slotIndex)
     {
         CurrentSlot = slotList[slotIndex];
         ShowItemDescription(slotIndex);
+    }
+
+    private void EquipmentSlotSelectedCallback(int slotIndex)
+    {
+        CurrentEquipmentSlot = equipmentSlotList[slotIndex];
+        ShowSelectedEquipment(slotIndex);
     }
 
     public void LoadQuestsUI()
@@ -337,12 +464,11 @@ public class UIManager : Singleton<UIManager>
             tab.SetActive(false);
         }
 
-        foreach (GameObject tab in tabButtons)
+        foreach (Button tab in tabButtons)
         {
-            Button tabButton = tab.GetComponent<Button>();
-            ColorBlock colors = tabButton.colors;    
+            ColorBlock colors = tab.colors;    
             colors.normalColor = Color.white;
-            tabButton.colors = colors; 
+            tab.colors = colors; 
         }
         
         tabs[tabIndex].SetActive(true);
@@ -356,9 +482,7 @@ public class UIManager : Singleton<UIManager>
         
         if(currentTab == inventoryTabNumber) DrawInventory(Inventory.Instance.GetCurrentInventory());
         
-        //EventSystem.current.SetSelectedGameObject(tabButtons[tabIndex].gameObject);
-        
-        Button SelectedTab = tabButtons[tabIndex].GetComponent<Button>();
+        Button SelectedTab = tabButtons[tabIndex];
         ColorBlock cb = SelectedTab.colors;    
         cb.normalColor = selectedTabColor;
         SelectedTab.colors = cb;   
@@ -655,6 +779,7 @@ public class UIManager : Singleton<UIManager>
         PlayerUpgrade.OnPlayerUpgradeEvent += UpgradeCallback;
         DialogueManager.OnExtraInteractionEvent += ExtraInteractionCallback;
         InventorySlot.OnSlotSelectedEvent += SlotSelectedCallback;
+        EquipmentSlot.OnSlotSelectedEvent += EquipmentSlotSelectedCallback;
     }
 
     private void OnDisable()
@@ -667,6 +792,7 @@ public class UIManager : Singleton<UIManager>
         PlayerUpgrade.OnPlayerUpgradeEvent -= UpgradeCallback;
         DialogueManager.OnExtraInteractionEvent -= ExtraInteractionCallback;
         InventorySlot.OnSlotSelectedEvent -= SlotSelectedCallback;
+        EquipmentSlot.OnSlotSelectedEvent -= EquipmentSlotSelectedCallback;
     }
     
 }

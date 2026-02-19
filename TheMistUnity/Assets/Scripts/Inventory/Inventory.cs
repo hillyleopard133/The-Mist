@@ -253,7 +253,7 @@ public class Inventory : Singleton<Inventory>
         return currentStock;
     }
 
-    private InventoryItem ItemExistsInGameContent(string itemID)
+    public InventoryItem ItemExistsInGameContent(string itemID)
     {
         for (int i = 0; i < gameContent.GameItems.Length; i++)
         {
