@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Items/Weapon", fileName = "ItemWeapon")]
-public class ItemWeapon : InventoryItem
+public class ItemWeapon : ItemEquipment
 {
     [Header("Weapon")] 
     public int damage;
     public int critChance;
-    
-    public int equipped = -1;
 }

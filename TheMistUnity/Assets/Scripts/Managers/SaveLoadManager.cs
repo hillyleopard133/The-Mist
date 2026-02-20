@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SaveLoadManager : Singleton<SaveLoadManager>
 {
-       //Instances
+    //Instances
     private Player player;
     private UIManager uIManager;
     private Inventory inventory;
@@ -22,11 +22,6 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
     private readonly string CHECKPOINT = "CHECKPOINT";
     private readonly string FIRST_START = "FIRST_START";
     
-    protected override void Awake()
-    {
-        base.Awake();
-    }
-
     private void Start()
     {
         player = Player.Instance;
@@ -119,7 +114,6 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
     {
         player.ResetPlayer();
         inventory.ResetInventory();
-        ResetInitialWeapon();
         QuestManager.Instance.ResetQuests();
         EquipmentManager.Instance.ResetEquipment();
         CoinManager.Instance.ResetCoins();
@@ -128,15 +122,9 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         NPCFollowerManager.Instance.ResetFollowing();
         GameManager.Instance.ResetTimer();
         SceneChangeManager.Instance.ResetVisitedScenes();
+        UIManager.Instance.ResetPartyUnlocks();
     }
-
-    private void ResetInitialWeapon()
-    {
-        player.GetComponent<PlayerAttack>().ResetInitialWeapon();
-        //inventory.SaveEquippedWeapon();
-        //inventory.LoadEquippedWeapon();
-    }
-
+    
     private IEnumerator LoadSceneCoroutine()
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);

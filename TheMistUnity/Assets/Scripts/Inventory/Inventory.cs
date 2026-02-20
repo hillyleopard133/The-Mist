@@ -17,14 +17,14 @@ public class Inventory : Singleton<Inventory>
     private InventoryItem[] inventoryItemsTreasure;
     private InventoryItem[] inventoryItemsResources;
     private InventoryItem[] inventoryItemsConsumables;
-    private InventoryItem[] inventoryItemsEquipment;
+    private ItemEquipment[] inventoryItemsEquipment;
     private InventoryItem[] inventoryItemsQuests;
 
     public int InventorySize => inventorySize;
     public InventoryItem[] InventoryItemsTreasure => inventoryItemsTreasure;
     public InventoryItem[] InventoryItemsResources => inventoryItemsResources;
     public InventoryItem[] InventoryItemsConsumables => inventoryItemsConsumables;
-    public InventoryItem[] InventoryItemsEquipment => inventoryItemsEquipment;
+    public ItemEquipment[] InventoryItemsEquipment => inventoryItemsEquipment;
     public InventoryItem[] InventoryItemsQuests => inventoryItemsQuests;
     
     private const string INVENTORY_TREASURE = "Inventory_Treasure";
@@ -32,8 +32,6 @@ public class Inventory : Singleton<Inventory>
     private const string INVENTORY_CONSUMABLES = "Inventory_Consumables";
     private const string INVENTORY_EQUIPMENT = "Inventory_Equipment";
     private const string INVENTORY_QUESTS = "Inventory_Quests";
-    
-    private const string EQUIPMENT_EQUIPPED = "EQUIPMENT_EQUIPPED";
     
     private AudioManager audioManager;
 
@@ -44,7 +42,7 @@ public class Inventory : Singleton<Inventory>
         inventoryItemsTreasure = new InventoryItem[inventorySize];
         inventoryItemsResources = new InventoryItem[inventorySize];
         inventoryItemsConsumables = new InventoryItem[inventorySize];
-        inventoryItemsEquipment = new InventoryItem[inventorySize];
+        inventoryItemsEquipment = new ItemEquipment[inventorySize];
         inventoryItemsQuests = new InventoryItem[inventorySize];
         
         audioManager = AudioManager.Instance;
@@ -294,30 +292,6 @@ public class Inventory : Singleton<Inventory>
                 }
             }
         }
-        
-        if (SaveGame.Exists(EQUIPMENT_EQUIPPED))
-        {
-            int[] equippedItems = SaveGame.Load<int[]>(EQUIPMENT_EQUIPPED);
-
-            for (int i = 0; i < InventorySize; i++)
-            {
-                if (inventoryItemsEquipment[i] != null)
-                {
-                    switch (inventoryItemsEquipment[i])
-                    {
-                        case ItemWeapon weapon:
-                            weapon.equipped = equippedItems[i];
-                            break;
-                        case ItemArmour armour:
-                            armour.equipped = equippedItems[i];
-                            break;
-                        case ItemScroll scroll:
-                            scroll.equipped = equippedItems[i];
-                            break;
-                    }
-                }
-            }
-        }
     }
     
     public void SaveInventory()
@@ -355,33 +329,6 @@ public class Inventory : Singleton<Inventory>
 
             SaveGame.Save(key, saveData);
         }
-        
-        
-        int[] equippedItems = new int[inventorySize];
-        for (int i = 0; i < inventorySize; i++)
-        {
-            if (inventoryItemsEquipment[i] != null)
-            {
-                switch (inventoryItemsEquipment[i])
-                {
-                    case ItemWeapon weapon:
-                        equippedItems[i] = weapon.equipped;
-                        break;
-                    case ItemArmour armour:
-                        equippedItems[i] = armour.equipped;
-                        break;
-                    case ItemScroll scroll:
-                        equippedItems[i] = scroll.equipped;
-                        break;
-                }
-            }
-            else
-            {
-                equippedItems[i] = -1;
-            }
-        }
-        
-        SaveGame.Save(EQUIPMENT_EQUIPPED, equippedItems);
     }
     
     #endregion

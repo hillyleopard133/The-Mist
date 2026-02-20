@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Items/Scroll", fileName = "ItemScroll")]
-public class ItemScroll : InventoryItem
+public class ItemScroll : ItemEquipment
 {
     public int mana;
-    
-    public int equipped = -1;
 }

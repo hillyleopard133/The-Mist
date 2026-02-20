@@ -147,7 +147,9 @@ public class UIManager : Singleton<UIManager>
     
     #endregion
 
-    private void Awake()
+    #region Awake, Start, Update
+    
+    protected override void Awake()
     {
         base.Awake();
         actions = new PlayerActions();
@@ -177,8 +179,10 @@ public class UIManager : Singleton<UIManager>
     private void Update()
     {
         UpdatePlayerUI();
-        UpdateRevivingClock();
+        //UpdateRevivingClock();
     }
+    
+    #endregion
 
     #region Party
     
@@ -187,6 +191,7 @@ public class UIManager : Singleton<UIManager>
         partyMembers[index].interactable = true;
         partyMemberImages[index].color = Color.white;
         questionMarks[index - 1].SetActive(false);
+        EquipmentManager.Instance.partyMembers[index].UnlockPartyMember();
     }
 
     public void ResetPartyUnlocks()
@@ -233,7 +238,7 @@ public class UIManager : Singleton<UIManager>
 
     #region Equipment
 
-    private void SetEquipButtonsInteractable(InventoryItem selectedItem)
+    private void SetEquipButtonsInteractable(ItemEquipment selectedItem)
     {
         if (selectedItem == null)
         {
@@ -241,25 +246,12 @@ public class UIManager : Singleton<UIManager>
             unEquipButton.interactable = false;
             return;
         }
-        
+        /*
         bool isEquipped = false;
         bool isEquippedOnSelectedMember = false;
         
-        switch (selectedItem)
-        {
-            case ItemArmour armour:
-                if (armour.equipped != -1) isEquipped = true;
-                if(armour.equipped == selectedPartyMember) isEquippedOnSelectedMember = true;
-                break;
-            case ItemWeapon weapon:
-                if (weapon.equipped != -1) isEquipped = true;
-                if(weapon.equipped == selectedPartyMember) isEquippedOnSelectedMember = true;
-                break;
-            case ItemScroll scroll:
-                if (scroll.equipped != -1) isEquipped = true;
-                if(scroll.equipped == selectedPartyMember) isEquippedOnSelectedMember = true;
-                break;
-        }
+        if (selectedItem.equipped != -1) isEquipped = true;
+        if(selectedItem.equipped == selectedPartyMember) isEquippedOnSelectedMember = true;
         
         if (isEquipped)
         {
@@ -271,11 +263,17 @@ public class UIManager : Singleton<UIManager>
             equipButton.interactable = true;
             unEquipButton.interactable = false;
         }
+        */
+        bool isEquipped = selectedItem.equipped != -1;
+        bool isEquippedOnSelectedMember = selectedItem.equipped == selectedPartyMember;
+
+        equipButton.interactable = !isEquipped;
+        unEquipButton.interactable = isEquipped && isEquippedOnSelectedMember;
     }
     
     private void UpdateEquipmentList()
     {
-        InventoryItem[] items = EquipmentManager.Instance.SortEquipment(currentEquipment);
+        ItemEquipment[] items = EquipmentManager.Instance.SortEquipment(currentEquipment);
         DrawEquipmentInventory(items);
         UpdateEquippedItems();
         UpdateCharacterStats();
@@ -342,15 +340,23 @@ public class UIManager : Singleton<UIManager>
         InventoryItem[] items = EquipmentManager.Instance.SortEquipment(index);
         currentEquipment = index;
         DrawEquipmentInventory(items);
+
+        if (CurrentEquipmentSlot != null)
+        {
+            CurrentEquipmentSlot.SetSelected(false);
+        }
         
         int currentEquipped = EquipmentManager.Instance.GetEquippedSlotIndex(index, selectedPartyMember);
         if (currentEquipped != -1)
         {
             CurrentEquipmentSlot = equipmentSlotList[currentEquipped];
+            CurrentEquipmentSlot.SetSelected(true);
             ShowSelectedEquipment(CurrentEquipmentSlot.Index);
         }
         else
         {
+            CurrentEquipmentSlot = equipmentSlotList[0];
+            CurrentEquipmentSlot.SetSelected(true);
             ShowSelectedEquipment(0);
         }
 
@@ -389,7 +395,7 @@ public class UIManager : Singleton<UIManager>
     
     private void ShowSelectedEquipment(int slotIndex)
     {
-        InventoryItem item = EquipmentManager.Instance.SortEquipment(currentEquipment)[slotIndex];
+        ItemEquipment item = EquipmentManager.Instance.SortEquipment(currentEquipment)[slotIndex];
         SetEquipButtonsInteractable(item);
         
         if (item == null)
@@ -470,7 +476,9 @@ public class UIManager : Singleton<UIManager>
     
     private void EquipmentSlotSelectedCallback(int slotIndex)
     {
+        CurrentEquipmentSlot.SetSelected(false);
         CurrentEquipmentSlot = equipmentSlotList[slotIndex];
+        CurrentEquipmentSlot.SetSelected(true);
         ShowSelectedEquipment(slotIndex);
     }
     
@@ -539,7 +547,7 @@ public class UIManager : Singleton<UIManager>
         cb.normalColor = selectedInventoryColor;
         SelectedTab.colors = cb;
 
-        ShowItemDescription(0);
+        ShowItemDescription(CurrentSlot.Index);
         if (index == questInventoryNumber)
         {
             destroyButton.interactable = false;
@@ -590,8 +598,8 @@ public class UIManager : Singleton<UIManager>
         {
             return;
         }
-
         Inventory.Instance.RemoveItem(Inventory.Instance.GetCurrentInventory(),CurrentSlot.Index);
+        ShowItemDescription(CurrentSlot.Index);
     }
     
     public void DrawItem(InventoryItem item, int index)
@@ -612,12 +620,13 @@ public class UIManager : Singleton<UIManager>
 
         if (items[index] == null)
         {
-            itemIcon.sprite = null;
-            itemNameTMP.text = "Item Name";
-            itemDescriptionTMP.text = "Item Description";
+            itemIcon.gameObject.SetActive(false);
+            itemNameTMP.text = "No Item Selected";
+            itemDescriptionTMP.text = "";
         }
         else
         {
+            itemIcon.gameObject.SetActive(true);
             itemIcon.sprite = items[index].Icon;
             itemNameTMP.text = items[index].Name;
             itemDescriptionTMP.text = items[index].Description;
@@ -626,7 +635,9 @@ public class UIManager : Singleton<UIManager>
     
     private void SlotSelectedCallback(int slotIndex)
     {
+        CurrentSlot.SetSelected(false);
         CurrentSlot = slotList[slotIndex];
+        CurrentSlot.SetSelected(true);
         ShowItemDescription(slotIndex);
     }
     
@@ -746,9 +757,19 @@ public class UIManager : Singleton<UIManager>
         {
             FilterEquipment(0);
             UpdateEquippedItems();
+            SelectPartyMember(selectedPartyMember);
         }
-        
-        if(currentTab == inventoryTabNumber) DrawInventory(Inventory.Instance.GetCurrentInventory());
+
+        if (currentTab == inventoryTabNumber)
+        {
+            DrawInventory(Inventory.Instance.GetCurrentInventory());
+            if (CurrentSlot == null)
+            {
+                CurrentSlot = slotList[0];
+                CurrentSlot.SetSelected(true);
+            }
+            SelectInventory(currentInventory);
+        }
         
         Button SelectedTab = tabButtons[tabIndex];
         ColorBlock cb = SelectedTab.colors;    
@@ -768,7 +789,7 @@ public class UIManager : Singleton<UIManager>
     
     #endregion
 
-    #region Start Sccreen
+    #region Start Screen
     
     public void DisableLoadButton()
     {

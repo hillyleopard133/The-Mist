@@ -7,6 +7,7 @@ public class PartyMember : ScriptableObject
 {
     public string Name;
     [TextArea] public string Description;
+    [HideInInspector] public bool isUnlocked;
     
     [Header("Stats")]
     public int BaseMaxHealth = 100;
@@ -34,6 +35,11 @@ public class PartyMember : ScriptableObject
         CurrentAttack = BaseAttack + EquipmentAttack;
         CurrentCritChance = BaseCritChance + EquipmentCritChance;
         CurrentMaxMana = BaseMaxMana + EquipmentMana;
+    }
+
+    public void UnlockPartyMember()
+    {
+        isUnlocked = true;
     }
     
     public void EquipItem(InventoryItem item)
@@ -71,6 +77,22 @@ public class PartyMember : ScriptableObject
                 EquipmentMana = 0;
                 break;
         }
+        CalculateStats();
+    }
+
+    public void ClearEquipment()
+    {
+        EquipmentHealth = 0;
+        EquipmentDefence = 0;
+        EquipmentAttack = 0;
+        EquipmentCritChance = 0;
+        EquipmentMana = 0;
+    }
+
+    public void ResetPartyMember()
+    {
+        ClearEquipment();
+        isUnlocked = false;
         CalculateStats();
     }
 }

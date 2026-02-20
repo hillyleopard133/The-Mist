@@ -9,6 +9,9 @@ public class EquipmentSlot : MonoBehaviour
     public static event Action<int> OnSlotSelectedEvent; 
     
     [SerializeField] private Image itemIcon;
+    [SerializeField] private Image slotImage;
+    [SerializeField] private Sprite slotNormal;
+    [SerializeField] private Sprite slotSelected;
     [SerializeField] private Image equippedCharacterIcon;
     
     public int Index {get; set;}
@@ -16,6 +19,18 @@ public class EquipmentSlot : MonoBehaviour
     public void ClickSlot()
     {
         OnSlotSelectedEvent?.Invoke(Index);
+    }
+    
+    public void SetSelected(bool selected)
+    {
+        if (selected)
+        {
+            slotImage.sprite = slotSelected;
+        }
+        else
+        {
+            slotImage.sprite = slotNormal;
+        }
     }
 
     public void UpdateSlot(InventoryItem item, Sprite icon)

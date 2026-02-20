@@ -11,7 +11,6 @@ public enum ItemType
     Quest
 }
 
-[CreateAssetMenu(menuName = "Items/Item")]
 public class InventoryItem : ScriptableObject
 {
     [Header("Config")]

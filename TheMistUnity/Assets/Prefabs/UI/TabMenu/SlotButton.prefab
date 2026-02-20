@@ -287,6 +287,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 6453910581087628848}
   quantityContainer: {fileID: 6453910581254280625}
+  slotImage: {fileID: 6453910580723106578}
+  slotNormal: {fileID: -2047256542, guid: ff4b83924d39f5644a233ade1a768fcc, type: 3}
+  slotSelected: {fileID: 2082290062, guid: ff4b83924d39f5644a233ade1a768fcc, type: 3}
   itemQuantityTMP: {fileID: 6453910580419364869}
 --- !u!1 &6453910581087628850
 GameObject:

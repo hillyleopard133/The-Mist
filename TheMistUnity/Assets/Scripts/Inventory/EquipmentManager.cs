@@ -17,6 +17,8 @@ public class EquipmentManager : Singleton<EquipmentManager>
     private const string EQUIPMENT_WEAPONS = "EQUIPMENT_WEAPONS";
     private const string EQUIPMENT_SCROLL = "EQUIPMENT_SCROLL";
     
+    private const string EQUIPMENT_EQUIPPED = "EQUIPMENT_EQUIPPED";
+    
     private int[] armourIndexes, weaponIndexes, scrollIndexes;
     private int[] equippedArmourSlotIndexes, equippedWeaponSlotIndexes, equippedScrollSlotIndexes;
 
@@ -97,6 +99,8 @@ public class EquipmentManager : Singleton<EquipmentManager>
 
     public void UnequipItem(int slotIndex, int characterIndex)
     {
+        if (slotIndex == -1) return;
+        
         switch (currentType)
         {
             case 0:
@@ -121,21 +125,28 @@ public class EquipmentManager : Singleton<EquipmentManager>
         SaveEquipment();
     }
 
-    public InventoryItem[] SortEquipment(int itemType)
+    public ItemEquipment[] SortEquipment(int itemType)
     {
-        InventoryItem[] items = Inventory.Instance.InventoryItemsEquipment;
+        ItemEquipment[] items = Inventory.Instance.InventoryItemsEquipment;
         
-        InventoryItem[] weapons = new InventoryItem[inventorySize];
-        InventoryItem[] armours = new InventoryItem[inventorySize];
-        InventoryItem[] scrolls = new InventoryItem[inventorySize];
+        ItemEquipment[] weapons = new ItemEquipment[inventorySize];
+        ItemEquipment[] armours = new ItemEquipment[inventorySize];
+        ItemEquipment[] scrolls = new ItemEquipment[inventorySize];
 
         int weaponIndex = 0;
         int armourIndex = 0;
         int scrollIndex = 0;
+        
+        for (int i = 0; i < partySize; i++)
+        {
+            equippedWeaponSlotIndexes[i] = -1;
+            equippedArmourSlotIndexes[i] = -1;
+            equippedScrollSlotIndexes[i] = -1;
+        }
 
         for (int i = 0; i < items.Length; i++)
         {
-            InventoryItem item = items[i];
+            ItemEquipment item = items[i];
             switch (item)
             {
                 case ItemWeapon weapon:
@@ -184,7 +195,12 @@ public class EquipmentManager : Singleton<EquipmentManager>
             equippedArmour[i] = null;
             equippedScrolls[i] = null;
         }
-        
+
+        foreach (PartyMember partyMember in partyMembers)
+        {
+            partyMember.ResetPartyMember();
+        }
+        partyMembers[0].UnlockPartyMember();
         SaveEquipment();
     }
 
@@ -269,6 +285,21 @@ public class EquipmentManager : Singleton<EquipmentManager>
                 }
             }
         }
+        
+        ItemEquipment[] inventoryItemsEquipment = Inventory.Instance.InventoryItemsEquipment;
+                
+        if (SaveGame.Exists(EQUIPMENT_EQUIPPED))
+        {
+            int[] equippedItems = SaveGame.Load<int[]>(EQUIPMENT_EQUIPPED);
+
+            for (int i = 0; i < Inventory.Instance.InventorySize; i++)
+            {
+                if (inventoryItemsEquipment[i] != null)
+                {
+                    inventoryItemsEquipment[i].equipped = equippedItems[i];
+                }
+            }
+        }
     }
 
     public void SaveEquipment()
@@ -330,6 +361,23 @@ public class EquipmentManager : Singleton<EquipmentManager>
         SaveGame.Save(EQUIPMENT_WEAPONS, weapons);
         SaveGame.Save(EQUIPMENT_ARMOUR, armour);
         SaveGame.Save(EQUIPMENT_SCROLL, scrolls);
+
+        ItemEquipment[] inventoryItemsEquipment = Inventory.Instance.InventoryItemsEquipment;
+        int[] equippedItems = new int[inventorySize];
+        
+        for (int i = 0; i < inventorySize; i++)
+        {
+            if (inventoryItemsEquipment[i] != null)
+            {
+                equippedItems[i] = inventoryItemsEquipment[i].equipped;
+            }
+            else
+            {
+                equippedItems[i] = -1;
+            }
+        }
+        
+        SaveGame.Save(EQUIPMENT_EQUIPPED, equippedItems);
     }
     
     #endregion
