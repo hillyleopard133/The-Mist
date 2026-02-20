@@ -363,9 +363,9 @@ public class EquipmentManager : Singleton<EquipmentManager>
         SaveGame.Save(EQUIPMENT_SCROLL, scrolls);
 
         ItemEquipment[] inventoryItemsEquipment = Inventory.Instance.InventoryItemsEquipment;
-        int[] equippedItems = new int[inventorySize];
+        int[] equippedItems = new int[Inventory.Instance.InventorySize];
         
-        for (int i = 0; i < inventorySize; i++)
+        for (int i = 0; i < Inventory.Instance.InventorySize; i++)
         {
             if (inventoryItemsEquipment[i] != null)
             {

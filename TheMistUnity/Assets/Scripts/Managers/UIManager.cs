@@ -531,14 +531,7 @@ public class UIManager : Singleton<UIManager>
         SelectedTab.colors = cb;
 
         ShowItemDescription(CurrentSlot.Index);
-        if (index == questInventoryNumber)
-        {
-            destroyButton.interactable = false;
-        }
-        else
-        {
-            destroyButton.interactable = true;
-        }
+        EventSystem.current.SetSelectedGameObject(CurrentSlot.gameObject);
     }
     
     private void VerifyItemsForDraw()
@@ -602,6 +595,7 @@ public class UIManager : Singleton<UIManager>
             itemIcon.gameObject.SetActive(false);
             itemNameTMP.text = "No Item Selected";
             itemDescriptionTMP.text = "";
+            destroyButton.interactable = false;
         }
         else
         {
@@ -609,6 +603,20 @@ public class UIManager : Singleton<UIManager>
             itemIcon.sprite = items[index].Icon;
             itemNameTMP.text = items[index].Name;
             itemDescriptionTMP.text = items[index].Description;
+            
+            if (items[index] is ItemEquipment equipment)
+            {
+                destroyButton.interactable = (equipment.equipped == -1);
+            }
+            else
+            {
+                destroyButton.interactable = true;
+            }
+            
+            if (currentInventory == questInventoryNumber)
+            {
+                destroyButton.interactable = false;
+            }
         }
     }
     
@@ -748,7 +756,6 @@ public class UIManager : Singleton<UIManager>
                 CurrentSlot.SetSelected(true);
             }
             SelectInventory(currentInventory);
-            EventSystem.current.SetSelectedGameObject(CurrentSlot.gameObject);
         }
         
         Button SelectedTab = tabButtons[tabIndex];
