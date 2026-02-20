@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour
+public class InventorySlot : MonoBehaviour, ISelectHandler
 {
     public static event Action<int> OnSlotSelectedEvent; 
     
@@ -20,6 +20,11 @@ public class InventorySlot : MonoBehaviour
     public int Index {get; set;}
 
     public void ClickSlot()
+    {
+        OnSlotSelectedEvent?.Invoke(Index);
+    }
+    
+    public void OnSelect(BaseEventData eventData)
     {
         OnSlotSelectedEvent?.Invoke(Index);
     }

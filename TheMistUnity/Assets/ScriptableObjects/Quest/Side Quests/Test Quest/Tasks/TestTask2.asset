@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdf74ac14eada9645b66f2d4eef0579a, type: 3}
   m_Name: TestTask2
   m_EditorClassIdentifier: 
-  Details: This is the second test task
+  Details: Speak to him a few more times.
   HasNumber: 1
   CompletionNumber: 3
   CurrentNumber: 0

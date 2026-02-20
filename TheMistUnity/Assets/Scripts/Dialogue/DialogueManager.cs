@@ -53,6 +53,17 @@ public class DialogueManager : Singleton<DialogueManager>
         LoadNPCs();
     }
 
+    public void EnableActions()
+    {
+        actions.Dialogue.Enable();
+    }
+    
+    public void DisableActions()
+    {
+        actions.Dialogue.Disable();
+    }
+    
+
     public void ResetNPCs()
     {
         npcs.Clear();

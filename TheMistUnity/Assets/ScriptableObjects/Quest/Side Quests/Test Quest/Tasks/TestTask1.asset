@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdf74ac14eada9645b66f2d4eef0579a, type: 3}
   m_Name: TestTask1
   m_EditorClassIdentifier: 
-  Details: This is the first test task
+  Details: Speak to villager again.
   HasNumber: 0
   CompletionNumber: 0
   CurrentNumber: 0

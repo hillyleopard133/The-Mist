@@ -769,6 +769,7 @@ public class UIManager : Singleton<UIManager>
                 CurrentSlot.SetSelected(true);
             }
             SelectInventory(currentInventory);
+            EventSystem.current.SetSelectedGameObject(CurrentSlot.gameObject);
         }
         
         Button SelectedTab = tabButtons[tabIndex];
