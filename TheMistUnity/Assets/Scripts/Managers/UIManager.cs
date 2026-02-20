@@ -120,7 +120,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Button unEquipButton;
     [SerializeField] private EquipmentSlot equipmentSlotPrefab;
     [SerializeField] private Transform equipmentInventoryContainer;
-    [SerializeField] private Sprite[] characterIcons;
+    [SerializeField] public Sprite[] characterIcons;
     [SerializeField] private Color selectedEquipmentColor;
     [SerializeField] private Button[] equipmentCards;
     public EquipmentSlot CurrentEquipmentSlot { get; set; }
@@ -246,24 +246,7 @@ public class UIManager : Singleton<UIManager>
             unEquipButton.interactable = false;
             return;
         }
-        /*
-        bool isEquipped = false;
-        bool isEquippedOnSelectedMember = false;
-        
-        if (selectedItem.equipped != -1) isEquipped = true;
-        if(selectedItem.equipped == selectedPartyMember) isEquippedOnSelectedMember = true;
-        
-        if (isEquipped)
-        {
-            equipButton.interactable = false;
-            unEquipButton.interactable = isEquippedOnSelectedMember;
-        }
-        else
-        {
-            equipButton.interactable = true;
-            unEquipButton.interactable = false;
-        }
-        */
+
         bool isEquipped = selectedItem.equipped != -1;
         bool isEquippedOnSelectedMember = selectedItem.equipped == selectedPartyMember;
 
@@ -605,13 +588,9 @@ public class UIManager : Singleton<UIManager>
     public void DrawItem(InventoryItem item, int index)
     {
         InventorySlot slot = slotList[index];
-        if (item == null)
-        {
-            slot.ShowSlotInformation(false);
-            return;
-        }
-        slot.ShowSlotInformation(true);
-        slot.UpdateSlot(item);
+
+        slot.ShowSlotInformation(item != null);
+        if(item != null) slot.UpdateSlot(item);
     }
     
     private void ShowItemDescription(int index)
