@@ -12,7 +12,7 @@ public class Inventory : Singleton<Inventory>
 {
     [Header("Config")] 
     [SerializeField] public GameContent gameContent;
-    [SerializeField] private int initialInventorySize;
+    [SerializeField] private int inventorySize;
     
     private InventoryItem[] inventoryItemsTreasure;
     private InventoryItem[] inventoryItemsResources;
@@ -21,7 +21,6 @@ public class Inventory : Singleton<Inventory>
     private InventoryItem[] inventoryItemsQuests;
 
     public int InventorySize => inventorySize;
-    private int inventorySize;
     public InventoryItem[] InventoryItemsTreasure => inventoryItemsTreasure;
     public InventoryItem[] InventoryItemsResources => inventoryItemsResources;
     public InventoryItem[] InventoryItemsConsumables => inventoryItemsConsumables;
@@ -40,12 +39,6 @@ public class Inventory : Singleton<Inventory>
 
     private int currentInventory;
     
-    protected override void Awake()
-    {
-        base.Awake();
-        inventorySize = initialInventorySize;
-    }
-
     private void Start()
     {
         inventoryItemsTreasure = new InventoryItem[inventorySize];
@@ -55,9 +48,6 @@ public class Inventory : Singleton<Inventory>
         inventoryItemsQuests = new InventoryItem[inventorySize];
         
         audioManager = AudioManager.Instance;
-        //LoadInventory();
-        //LoadEquippedWeapon();
-        
     }
 
     public void SelectInventory(int index)
@@ -81,11 +71,6 @@ public class Inventory : Singleton<Inventory>
                 return inventoryItemsQuests;
         }
         return null;
-    }
-    
-    public void UpgradeInventory()
-    {
-        
     }
 
     private InventoryItem[] GetInventoryItemsByItemType(InventoryItem item)
@@ -255,6 +240,8 @@ public class Inventory : Singleton<Inventory>
         return null;
     }
 
+    #region Save, Load and Reset Inventory
+
     public void ResetInventory()
     {
         for (int index = 0; index < inventorySize; index++)
@@ -396,6 +383,6 @@ public class Inventory : Singleton<Inventory>
         
         SaveGame.Save(EQUIPMENT_EQUIPPED, equippedItems);
     }
-
     
+    #endregion
 }

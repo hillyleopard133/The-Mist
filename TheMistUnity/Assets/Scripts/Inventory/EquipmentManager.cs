@@ -174,6 +174,8 @@ public class EquipmentManager : Singleton<EquipmentManager>
         }
     }
 
+    #region Save, Load and Reset Equipment
+
     public void ResetEquipment()
     {
         for (int i = 0; i < partySize; ++i)
@@ -329,4 +331,6 @@ public class EquipmentManager : Singleton<EquipmentManager>
         SaveGame.Save(EQUIPMENT_ARMOUR, armour);
         SaveGame.Save(EQUIPMENT_SCROLL, scrolls);
     }
+    
+    #endregion
 }

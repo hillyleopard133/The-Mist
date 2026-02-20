@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class UIManager : Singleton<UIManager>
 {
+    #region Fields
+    
     [Header("Stats")]
     [SerializeField] private PlayerStats stats;
 
@@ -142,6 +144,8 @@ public class UIManager : Singleton<UIManager>
     private float respawnTimer;
     private PlayerActions actions;
     private bool isReviving;
+    
+    #endregion
 
     private void Awake()
     {
@@ -176,6 +180,8 @@ public class UIManager : Singleton<UIManager>
         UpdateRevivingClock();
     }
 
+    #region Party
+    
     public void UnlockPartyMember(int index)
     {
         partyMembers[index].interactable = true;
@@ -192,6 +198,40 @@ public class UIManager : Singleton<UIManager>
         questionMarks[0].SetActive(true);
         questionMarks[1].SetActive(true);
     }
+    
+    public void SelectPartyMember(int memberIndex)
+    {
+        selectedPartyMember = memberIndex;
+        UpdateEquipmentList();
+        FilterEquipment(currentEquipment);
+        
+        foreach (Button partyMember in partyMembers)
+        {
+            ColorBlock colors = partyMember.colors;    
+            colors.normalColor = Color.white;
+            partyMember.colors = colors; 
+        }
+        Button SelectedMember = partyMembers[memberIndex];
+        ColorBlock cb = SelectedMember.colors;    
+        cb.normalColor = selectedPartyMemberColor;
+        SelectedMember.colors = cb;
+    }
+
+    private void UpdateCharacterStats()
+    {
+        PartyMember partyMember = EquipmentManager.Instance.partyMembers[selectedPartyMember];
+        characterName.text = partyMember.Name;
+        characterDescription.text = partyMember.Description;
+        characterHealth.text = "Health: " + partyMember.CurrentMaxHealth;
+        characterDefence.text = "Defence: " + partyMember.CurrentDefence;
+        characterAttack.text = "Attack: " + partyMember.CurrentAttack;
+        characterCritChance.text = "Crit Chance: " + partyMember.CurrentCritChance + "%";
+        characterMana.text = "Mana: " + partyMember.CurrentMaxMana;
+    }
+    
+    #endregion
+
+    #region Equipment
 
     private void SetEquipButtonsInteractable(InventoryItem selectedItem)
     {
@@ -231,36 +271,6 @@ public class UIManager : Singleton<UIManager>
             equipButton.interactable = true;
             unEquipButton.interactable = false;
         }
-    }
-
-    public void SelectPartyMember(int memberIndex)
-    {
-        selectedPartyMember = memberIndex;
-        UpdateEquipmentList();
-        FilterEquipment(currentEquipment);
-        
-        foreach (Button partyMember in partyMembers)
-        {
-            ColorBlock colors = partyMember.colors;    
-            colors.normalColor = Color.white;
-            partyMember.colors = colors; 
-        }
-        Button SelectedMember = partyMembers[memberIndex];
-        ColorBlock cb = SelectedMember.colors;    
-        cb.normalColor = selectedPartyMemberColor;
-        SelectedMember.colors = cb;
-    }
-
-    private void UpdateCharacterStats()
-    {
-        PartyMember partyMember = EquipmentManager.Instance.partyMembers[selectedPartyMember];
-        characterName.text = partyMember.Name;
-        characterDescription.text = partyMember.Description;
-        characterHealth.text = "Health: " + partyMember.CurrentMaxHealth;
-        characterDefence.text = "Defence: " + partyMember.CurrentDefence;
-        characterAttack.text = "Attack: " + partyMember.CurrentAttack;
-        characterCritChance.text = "Crit Chance: " + partyMember.CurrentCritChance + "%";
-        characterMana.text = "Mana: " + partyMember.CurrentMaxMana;
     }
     
     private void UpdateEquipmentList()
@@ -411,6 +421,96 @@ public class UIManager : Singleton<UIManager>
             selectedItemStat2.text = "";
         }
     }
+    
+    public void DrawEquipmentItem(InventoryItem item, int index)
+    {
+        EquipmentSlot slot = equipmentSlotList[index];
+        if (item == null)
+        {
+            slot.ShowSlotInformation(false);
+            return;
+        }
+        slot.ShowSlotInformation(true);
+
+        if (item is ItemArmour armour)
+        {
+            if (armour.equipped != -1)
+            {
+                slot.UpdateSlot(item, characterIcons[armour.equipped]);
+            }
+            else
+            {
+                slot.UpdateSlot(item, null);
+            }
+        }
+        else if (item is ItemWeapon weapon)
+        {
+            if (weapon.equipped != -1)
+            {
+                slot.UpdateSlot(item, characterIcons[weapon.equipped]);
+            }
+            else
+            {
+                slot.UpdateSlot(item, null);
+            }
+        }
+        else if (item is ItemScroll scroll)
+        {
+            if (scroll.equipped != -1)
+            {
+                slot.UpdateSlot(item, characterIcons[scroll.equipped]);
+            }
+            else
+            {
+                slot.UpdateSlot(item, null);
+            }
+        }
+        else slot.UpdateSlot(item, null);
+    }
+    
+    private void EquipmentSlotSelectedCallback(int slotIndex)
+    {
+        CurrentEquipmentSlot = equipmentSlotList[slotIndex];
+        ShowSelectedEquipment(slotIndex);
+    }
+    
+    private void DrawEquipmentInventory(InventoryItem[] items)
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            DrawEquipmentItem(items[i], i);
+        }
+
+        for (int i = items.Length; i < equipmentSlotList.Count; i++)
+        {
+            DrawEquipmentItem(null, i);
+        }
+    }
+    
+    private void InitialiseEquipmentInventory()
+    {
+        for (int i = 0; i < EquipmentManager.Instance.inventorySize; i++)
+        {
+            EquipmentSlot slot = Instantiate(equipmentSlotPrefab, equipmentInventoryContainer);
+            slot.Index = i;
+            equipmentSlotList.Add(slot);
+        }
+    }
+    
+    private void VerifyEquipmentItemsForDraw()
+    {
+        for (int i = 0; i < EquipmentManager.Instance.inventorySize; i++)
+        {
+            if (EquipmentManager.Instance.SortEquipment(currentEquipment)[i] == null)
+            {
+                DrawEquipmentItem(null, i);
+            }
+        }
+    }
+    
+    #endregion
+
+    #region Inventory
 
     private void SwitchInventory(int direction)
     {
@@ -461,17 +561,6 @@ public class UIManager : Singleton<UIManager>
         }
     }
     
-    private void VerifyEquipmentItemsForDraw()
-    {
-        for (int i = 0; i < EquipmentManager.Instance.inventorySize; i++)
-        {
-            if (EquipmentManager.Instance.SortEquipment(currentEquipment)[i] == null)
-            {
-                DrawEquipmentItem(null, i);
-            }
-        }
-    }
-    
     private void DrawInventory(InventoryItem[] items)
     {
         for (int i = 0; i < items.Length; i++)
@@ -485,19 +574,6 @@ public class UIManager : Singleton<UIManager>
         }
     }
     
-    private void DrawEquipmentInventory(InventoryItem[] items)
-    {
-        for (int i = 0; i < items.Length; i++)
-        {
-            DrawEquipmentItem(items[i], i);
-        }
-
-        for (int i = items.Length; i < equipmentSlotList.Count; i++)
-        {
-            DrawEquipmentItem(null, i);
-        }
-    }
-    
     private void InitialiseInventory()
     {
         for (int i = 0; i < Inventory.Instance.InventorySize; i++)
@@ -505,16 +581,6 @@ public class UIManager : Singleton<UIManager>
             InventorySlot slot = Instantiate(inventorySlotPrefab, inventoryContainer);
             slot.Index = i;
             slotList.Add(slot);
-        }
-    }
-    
-    private void InitialiseEquipmentInventory()
-    {
-        for (int i = 0; i < EquipmentManager.Instance.inventorySize; i++)
-        {
-            EquipmentSlot slot = Instantiate(equipmentSlotPrefab, equipmentInventoryContainer);
-            slot.Index = i;
-            equipmentSlotList.Add(slot);
         }
     }
     
@@ -540,52 +606,6 @@ public class UIManager : Singleton<UIManager>
         slot.UpdateSlot(item);
     }
     
-    public void DrawEquipmentItem(InventoryItem item, int index)
-    {
-        EquipmentSlot slot = equipmentSlotList[index];
-        if (item == null)
-        {
-            slot.ShowSlotInformation(false);
-            return;
-        }
-        slot.ShowSlotInformation(true);
-
-        if (item is ItemArmour armour)
-        {
-            if (armour.equipped != -1)
-            {
-                slot.UpdateSlot(item, characterIcons[armour.equipped]);
-            }
-            else
-            {
-                slot.UpdateSlot(item, null);
-            }
-        }
-        else if (item is ItemWeapon weapon)
-        {
-            if (weapon.equipped != -1)
-            {
-                slot.UpdateSlot(item, characterIcons[weapon.equipped]);
-            }
-            else
-            {
-                slot.UpdateSlot(item, null);
-            }
-        }
-        else if (item is ItemScroll scroll)
-        {
-            if (scroll.equipped != -1)
-            {
-                slot.UpdateSlot(item, characterIcons[scroll.equipped]);
-            }
-            else
-            {
-                slot.UpdateSlot(item, null);
-            }
-        }
-        else slot.UpdateSlot(item, null);
-    }
-    
     private void ShowItemDescription(int index)
     {
         InventoryItem[] items = Inventory.Instance.GetCurrentInventory();
@@ -609,12 +629,10 @@ public class UIManager : Singleton<UIManager>
         CurrentSlot = slotList[slotIndex];
         ShowItemDescription(slotIndex);
     }
+    
+    #endregion
 
-    private void EquipmentSlotSelectedCallback(int slotIndex)
-    {
-        CurrentEquipmentSlot = equipmentSlotList[slotIndex];
-        ShowSelectedEquipment(slotIndex);
-    }
+    #region Quests
 
     public void LoadQuestsUI()
     {
@@ -673,6 +691,10 @@ public class UIManager : Singleton<UIManager>
             }
         }
     }
+    
+    #endregion
+
+    #region Tab Menu
     
     private void OpenCloseTabMenu()
     {
@@ -743,7 +765,11 @@ public class UIManager : Singleton<UIManager>
         if(currentTab >= tabs.Length) currentTab = 0;
         SetTabMenu(currentTab);
     }
+    
+    #endregion
 
+    #region Start Sccreen
+    
     public void DisableLoadButton()
     {
         loadButton.interactable = false;
@@ -765,19 +791,26 @@ public class UIManager : Singleton<UIManager>
         HideNewGameWarning();
         ShowStartMenu();
     }
+    
+    public void HideStartMenu()
+    {
+        startMenu.SetActive(false);
+    }
 
+    public void ShowStartMenu()
+    {
+        startMenu.SetActive(true);
+    }
+    
     public void HideNewGameWarning()
     {
         newGameWarning.SetActive(false);
     }
 
-    public bool NPCInteractionPanelOpen()
-    {
-        if(npcQuestPanel.activeSelf || shopPanel.activeSelf) return true;
-        
-        return false;
-    }
+    #endregion
 
+    #region Death Screen
+    
     public bool IsPlayerDead()
     {
         return deathScreen.activeSelf;
@@ -839,14 +872,13 @@ public class UIManager : Singleton<UIManager>
         ShowGameHUD();
     }
     
-    public void HideStartMenu()
+    #endregion
+    
+    public bool NPCInteractionPanelOpen()
     {
-        startMenu.SetActive(false);
-    }
-
-    public void ShowStartMenu()
-    {
-        startMenu.SetActive(true);
+        if(npcQuestPanel.activeSelf || shopPanel.activeSelf) return true;
+        
+        return false;
     }
 
     public void HideGameHUD()
@@ -858,6 +890,8 @@ public class UIManager : Singleton<UIManager>
     {
         gameHUD.SetActive(true);
     }
+
+    #region Settings
     
     public void OpenOptionsPanel()
     {
@@ -902,6 +936,8 @@ public class UIManager : Singleton<UIManager>
         scrollRect.verticalNormalizedPosition = 1f;
         scrollRect.verticalScrollbar.value = 1f;
     }
+    
+    #endregion
     
     public void CloseAllPanels()
     {

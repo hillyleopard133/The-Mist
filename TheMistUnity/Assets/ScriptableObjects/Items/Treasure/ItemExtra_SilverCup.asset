@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a70602509f7d0f49bb155d2f669ccfd, type: 3}
-  m_Name: ItemExtra_GoldKey
+  m_Name: ItemExtra_SilverCup
   m_EditorClassIdentifier: 
-  ID: ItemGoldKey
-  Name: Gold Key
-  Icon: {fileID: 21300000, guid: 3620d693c0563274ebfd9f8c62e16cd3, type: 3}
-  Description: A shiny key made of gold.
-  ItemType: 4
+  ID: ItemSilverCup
+  Name: Silver Cup
+  Icon: {fileID: 21300000, guid: 12aaf27190a14824fb61230263036112, type: 3}
+  Description: A drinking cup made of silver.
+  ItemType: 0
   IsConsumable: 0
   IsStackable: 1
   MaxStack: 10

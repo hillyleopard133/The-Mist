@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: Medpack
   Icon: {fileID: 21300000, guid: 2d2ae8c18f465ca48b686bcbb441ae6a, type: 3}
   Description: A medpack that restores 10HP.
-  ItemType: 1
+  ItemType: 2
   IsConsumable: 1
   IsStackable: 1
   MaxStack: 20
