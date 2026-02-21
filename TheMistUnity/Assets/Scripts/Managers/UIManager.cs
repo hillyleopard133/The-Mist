@@ -192,9 +192,6 @@ public class UIManager : Singleton<UIManager>
         InitialiseInventory();
         InitialiseEquipmentInventory();
         InitialiseShopInventories();
-        VerifyItemsForDraw();
-        VerifyEquipmentItemsForDraw();
-        VerifyShopItemsForDraw();
         
         UnlockPartyMember(1);
         UnlockPartyMember(2);
@@ -236,11 +233,6 @@ public class UIManager : Singleton<UIManager>
             slot.Index = i;
             shopSlotList.Add(slot);
         }
-}
-
-    private void VerifyShopItemsForDraw()
-    {
-        
     }
     
     private void ExtraInteractionCallback(InteractionType type)
@@ -627,11 +619,6 @@ public class UIManager : Singleton<UIManager>
         for (int i = 0; i < items.Length; i++)
         {
             DrawItem(items[i], i);
-        }
-
-        for (int i = items.Length; i < inventorySlotList.Count; i++)
-        {
-            DrawItem(null, i);
         }
     }
     
