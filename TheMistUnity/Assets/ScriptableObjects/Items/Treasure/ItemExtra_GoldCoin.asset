@@ -16,6 +16,8 @@ MonoBehaviour:
   Name: Gold Coin
   Icon: {fileID: 21300000, guid: 9cda9828e8a9f664faf43daeb60d2551, type: 3}
   Description: A valuable golden coin.
+  SellValue: 20
+  BuyValue: 0
   ItemType: 0
   IsConsumable: 0
   IsStackable: 1

@@ -28,10 +28,10 @@ public class ShopCard : MonoBehaviour
         item = shopItem;
         itemIcon.sprite = shopItem.Item.Icon;
         itemName.text = shopItem.Item.Name;
-        itemCost.text = shopItem.Cost.ToString();
+        itemCost.text = shopItem.Item.BuyValue.ToString();
         quantity = 1;
-        initialCost = shopItem.Cost;
-        currentCost = shopItem.Cost;
+        initialCost = shopItem.Item.BuyValue;
+        currentCost = shopItem.Item.BuyValue;
     }
 
     public void BuyItem()

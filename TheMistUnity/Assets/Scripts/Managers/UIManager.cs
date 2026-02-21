@@ -42,7 +42,6 @@ public class UIManager : Singleton<UIManager>
     
     [Header("Extra Panels")]
     [SerializeField] private GameObject npcQuestPanel;
-    [SerializeField] private GameObject shopPanel;
     [SerializeField] private GameObject craftingPanel;
     
     [Header("Start Menu")]
@@ -90,12 +89,13 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Image itemIcon;
     [SerializeField] private TextMeshProUGUI itemNameTMP;
     [SerializeField] private TextMeshProUGUI itemDescriptionTMP;
+    [SerializeField] private TextMeshProUGUI itemSellValue;
     [SerializeField] private InventorySlot inventorySlotPrefab;
     [SerializeField] private Transform inventoryContainer;
     [SerializeField] private Button[] inventoryTabs;
     [SerializeField] private Button destroyButton;
     [SerializeField] private Color selectedInventoryColor;
-    public InventorySlot CurrentSlot { get; set; }
+    private InventorySlot CurrentSlot;
     private List<InventorySlot> slotList = new List<InventorySlot>(); 
     private int currentInventory = 0;
     private const int questInventoryNumber = 4;
@@ -123,7 +123,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] public Sprite[] characterIcons;
     [SerializeField] private Color selectedEquipmentColor;
     [SerializeField] private Button[] equipmentCards;
-    public EquipmentSlot CurrentEquipmentSlot { get; set; }
+    private EquipmentSlot CurrentEquipmentSlot;
     private List<EquipmentSlot> equipmentSlotList = new List<EquipmentSlot>();
     private int currentEquipment = 0;
     
@@ -144,6 +144,22 @@ public class UIManager : Singleton<UIManager>
     private float respawnTimer;
     private PlayerActions actions;
     private bool isReviving;
+    
+    [Header("Shop")]
+    [SerializeField] private GameObject shopScreen;
+    [SerializeField] private Transform shopItemContainer;
+    [SerializeField] private Transform playerShopItemContainer;
+    [SerializeField] private TextMeshProUGUI shopItemName;
+    [SerializeField] private TextMeshProUGUI shopItemDescription;
+    [SerializeField] private Image shopItemIcon;
+    [SerializeField] private TextMeshProUGUI shopItemAmount;
+    [SerializeField] private TextMeshProUGUI shopItemPrice;
+    [SerializeField] private TextMeshProUGUI buySellButtonText;
+    [SerializeField] private TextMeshProUGUI treasureSellValue;
+    [SerializeField] private TextMeshProUGUI playerCoinsAmount;
+    [SerializeField] private Button[] shopInventoryTabs;
+    private List<InventorySlot> shopSlotList = new List<InventorySlot>(); 
+    private List<InventorySlot> playerShopSlotList = new List<InventorySlot>(); 
     
     #endregion
 
@@ -169,8 +185,10 @@ public class UIManager : Singleton<UIManager>
         
         InitialiseInventory();
         InitialiseEquipmentInventory();
+        InitialiseShopInventories();
         VerifyItemsForDraw();
         VerifyEquipmentItemsForDraw();
+        VerifyShopItemsForDraw();
         
         UnlockPartyMember(1);
         UnlockPartyMember(2);
@@ -182,6 +200,48 @@ public class UIManager : Singleton<UIManager>
         //UpdateRevivingClock();
     }
     
+    #endregion
+
+
+    #region Shop
+
+    public void OpenCloseShopPanel(bool value)
+    {
+        CloseAllPanels();
+        shopScreen.SetActive(value);
+    }
+
+    private void OpenShop()
+    {
+        shopScreen.SetActive(true);
+    }
+
+    private void InitialiseShopInventories()
+    {
+        
+    }
+
+    private void VerifyShopItemsForDraw()
+    {
+        
+    }
+    
+    private void ExtraInteractionCallback(InteractionType type)
+    {
+        switch (type)
+        {
+            case InteractionType.Quest:
+                OpenCloseNPCQuestPanel(true);
+                break;
+            case InteractionType.Shop:
+                OpenCloseShopPanel(true);
+                break;
+            case InteractionType.Crafting:
+                OpenCloseCraftingPanel(true);
+                break;
+        }
+    }
+
     #endregion
 
     #region Party
@@ -596,6 +656,7 @@ public class UIManager : Singleton<UIManager>
             itemNameTMP.text = "No Item Selected";
             itemDescriptionTMP.text = "";
             destroyButton.interactable = false;
+            itemSellValue.text = "0";
         }
         else
         {
@@ -603,6 +664,7 @@ public class UIManager : Singleton<UIManager>
             itemIcon.sprite = items[index].Icon;
             itemNameTMP.text = items[index].Name;
             itemDescriptionTMP.text = items[index].Description;
+            itemSellValue.text = items[index].SellValue.ToString();
             
             if (items[index] is ItemEquipment equipment)
             {
@@ -884,7 +946,7 @@ public class UIManager : Singleton<UIManager>
     
     public bool NPCInteractionPanelOpen()
     {
-        if(npcQuestPanel.activeSelf || shopPanel.activeSelf) return true;
+        if(npcQuestPanel.activeSelf || shopScreen.activeSelf) return true;
         
         return false;
     }
@@ -970,7 +1032,7 @@ public class UIManager : Singleton<UIManager>
 
     private void CloseShopPanel()
     {
-        shopPanel.SetActive(false);
+        shopScreen.SetActive(false);
     }
 
     private void CloseNPCQuestPanel()
@@ -993,12 +1055,6 @@ public class UIManager : Singleton<UIManager>
     {
         CloseAllPanels();
         npcQuestPanel.SetActive(value);
-    }
-    
-    public void OpenCloseShopPanel(bool value)
-    {
-        CloseAllPanels();
-        shopPanel.SetActive(value);
     }
 
     public void OpenCloseCraftingPanel(bool value)
@@ -1041,22 +1097,6 @@ public class UIManager : Singleton<UIManager>
     private void UpgradeCallback()
     {
         UpdateStatsPanel();
-    }
-
-    private void ExtraInteractionCallback(InteractionType type)
-    {
-        switch (type)
-        {
-            case InteractionType.Quest:
-                OpenCloseNPCQuestPanel(true);
-                break;
-            case InteractionType.Shop:
-                OpenCloseShopPanel(true);
-                break;
-            case InteractionType.Crafting:
-                OpenCloseCraftingPanel(true);
-                break;
-        }
     }
 
     private void OnEnable()

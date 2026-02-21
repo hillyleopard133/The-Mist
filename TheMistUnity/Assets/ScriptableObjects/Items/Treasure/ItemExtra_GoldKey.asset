@@ -16,6 +16,8 @@ MonoBehaviour:
   Name: Gold Key
   Icon: {fileID: 21300000, guid: 3620d693c0563274ebfd9f8c62e16cd3, type: 3}
   Description: A shiny key made of gold.
+  SellValue: 20
+  BuyValue: 0
   ItemType: 0
   IsConsumable: 0
   IsStackable: 1

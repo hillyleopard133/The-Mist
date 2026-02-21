@@ -18,6 +18,8 @@ public class InventoryItem : ScriptableObject
     public string Name;
     public Sprite Icon;
     [TextArea] public string Description;
+    public int SellValue;
+    public int BuyValue;
 
     [Header("Info")]
     public ItemType ItemType;

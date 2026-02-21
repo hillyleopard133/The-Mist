@@ -17,10 +17,12 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 207ffa597ecde374c87892b97d868a8f, type: 3}
   Description: A fire scroll, adds burning effect to attacks. Firery heat emanates
     from within.
+  SellValue: 50
+  BuyValue: 100
   ItemType: 3
   IsConsumable: 0
   IsStackable: 0
   MaxStack: 1
   Quantity: 0
-  mana: 45
   equipped: -1
+  mana: 45

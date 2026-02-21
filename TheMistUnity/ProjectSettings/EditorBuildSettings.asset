@@ -6,25 +6,25 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/RPG/StartingScreen.unity
+    path: Assets/Scenes/RPG/StartingScreenRPG.unity
     guid: 09ccd12d3862cce4c817873fdba0e795
   - enabled: 0
     path: Assets/Scenes/RPG/Town.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
-    path: Assets/Scenes/RPG/WeaponShop.unity
+    path: Assets/Scenes/Shops/WeaponShop.unity
     guid: 167655c965542ae42bfb48c21184f441
   - enabled: 0
-    path: Assets/Scenes/RPG/MagicShop.unity
+    path: Assets/Scenes/Shops/MagicShop.unity
     guid: a1135c9b6e63cba47b69739a89238b1c
   - enabled: 0
     path: Assets/Scenes/RPG/DarkWoods.unity
     guid: 0855e4e4c7e68f84698318e2323b3f77
   - enabled: 0
-    path: Assets/Scenes/RPG/PotionShop.unity
+    path: Assets/Scenes/Shops/PotionShop.unity
     guid: daab75c857aa3474c8fa26e8b81aa834
   - enabled: 1
-    path: Assets/Scenes/TheMist.unity
+    path: Assets/Scenes/StartingScreen.unity
     guid: 9f45a1a4429182d449be835fde072735
   - enabled: 1
     path: Assets/Scenes/TownTheMist.unity

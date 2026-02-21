@@ -16,10 +16,12 @@ MonoBehaviour:
   Name: Ice Scroll
   Icon: {fileID: 21300000, guid: 9f46038650ffab749a79c02f96037738, type: 3}
   Description: An ice scroll, adds freezing effect to attacks. It feels cold to touch.
+  SellValue: 35
+  BuyValue: 80
   ItemType: 3
   IsConsumable: 0
   IsStackable: 0
   MaxStack: 1
   Quantity: 0
-  mana: 35
   equipped: -1
+  mana: 35

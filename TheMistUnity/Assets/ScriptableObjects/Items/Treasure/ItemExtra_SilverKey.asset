@@ -16,6 +16,8 @@ MonoBehaviour:
   Name: Silver Key
   Icon: {fileID: 21300000, guid: 5bc258151bc09854cba933eca57b1af1, type: 3}
   Description: A small key made of silver.
+  SellValue: 20
+  BuyValue: 0
   ItemType: 0
   IsConsumable: 0
   IsStackable: 1
