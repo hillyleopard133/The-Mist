@@ -95,8 +95,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Button[] inventoryTabs;
     [SerializeField] private Button destroyButton;
     [SerializeField] private Color selectedInventoryColor;
-    private InventorySlot CurrentSlot;
-    private List<InventorySlot> slotList = new List<InventorySlot>(); 
+    private InventorySlot CurrentInventorySlot;
+    private List<InventorySlot> inventorySlotList = new List<InventorySlot>(); 
     private int currentInventory = 0;
     private const int questInventoryNumber = 4;
     
@@ -150,14 +150,20 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Transform shopItemContainer;
     [SerializeField] private Transform playerShopItemContainer;
     [SerializeField] private TextMeshProUGUI shopItemName;
+    [SerializeField] private TextMeshProUGUI shopEquipmentStat1;
+    [SerializeField] private TextMeshProUGUI shopEquipmentStat2;
     [SerializeField] private TextMeshProUGUI shopItemDescription;
     [SerializeField] private Image shopItemIcon;
     [SerializeField] private TextMeshProUGUI shopItemAmount;
     [SerializeField] private TextMeshProUGUI shopItemPrice;
     [SerializeField] private TextMeshProUGUI buySellButtonText;
+    [SerializeField] private Button buySellButton;
     [SerializeField] private TextMeshProUGUI treasureSellValue;
+    [SerializeField] private Button treasureSellButton;
     [SerializeField] private TextMeshProUGUI playerCoinsAmount;
     [SerializeField] private Button[] shopInventoryTabs;
+    [SerializeField] private int shopInventorySize;
+    private InventorySlot CurrentShopSlot;
     private List<InventorySlot> shopSlotList = new List<InventorySlot>(); 
     private List<InventorySlot> playerShopSlotList = new List<InventorySlot>(); 
     
@@ -218,8 +224,19 @@ public class UIManager : Singleton<UIManager>
 
     private void InitialiseShopInventories()
     {
-        
-    }
+        for (int i = 0; i < Inventory.Instance.InventorySize; i++)
+        {
+            InventorySlot slot = Instantiate(inventorySlotPrefab, playerShopItemContainer);
+            slot.Index = i;
+            playerShopSlotList.Add(slot);
+        }
+        for (int i = 0; i < shopInventorySize; i++)
+        {
+            InventorySlot slot = Instantiate(inventorySlotPrefab, shopItemContainer);
+            slot.Index = i;
+            shopSlotList.Add(slot);
+        }
+}
 
     private void VerifyShopItemsForDraw()
     {
@@ -590,8 +607,8 @@ public class UIManager : Singleton<UIManager>
         cb.normalColor = selectedInventoryColor;
         SelectedTab.colors = cb;
 
-        ShowItemDescription(CurrentSlot.Index);
-        EventSystem.current.SetSelectedGameObject(CurrentSlot.gameObject);
+        ShowItemDescription(CurrentInventorySlot.Index);
+        EventSystem.current.SetSelectedGameObject(CurrentInventorySlot.gameObject);
     }
     
     private void VerifyItemsForDraw()
@@ -612,7 +629,7 @@ public class UIManager : Singleton<UIManager>
             DrawItem(items[i], i);
         }
 
-        for (int i = items.Length; i < slotList.Count; i++)
+        for (int i = items.Length; i < inventorySlotList.Count; i++)
         {
             DrawItem(null, i);
         }
@@ -624,23 +641,23 @@ public class UIManager : Singleton<UIManager>
         {
             InventorySlot slot = Instantiate(inventorySlotPrefab, inventoryContainer);
             slot.Index = i;
-            slotList.Add(slot);
+            inventorySlotList.Add(slot);
         }
     }
     
     public void RemoveItem()
     {
-        if (CurrentSlot == null)
+        if (CurrentInventorySlot == null)
         {
             return;
         }
-        Inventory.Instance.RemoveItem(Inventory.Instance.GetCurrentInventory(),CurrentSlot.Index);
-        ShowItemDescription(CurrentSlot.Index);
+        Inventory.Instance.RemoveItem(Inventory.Instance.GetCurrentInventory(),CurrentInventorySlot.Index);
+        ShowItemDescription(CurrentInventorySlot.Index);
     }
     
     public void DrawItem(InventoryItem item, int index)
     {
-        InventorySlot slot = slotList[index];
+        InventorySlot slot = inventorySlotList[index];
 
         slot.ShowSlotInformation(item != null);
         if(item != null) slot.UpdateSlot(item);
@@ -684,9 +701,9 @@ public class UIManager : Singleton<UIManager>
     
     private void SlotSelectedCallback(int slotIndex)
     {
-        CurrentSlot.SetSelected(false);
-        CurrentSlot = slotList[slotIndex];
-        CurrentSlot.SetSelected(true);
+        CurrentInventorySlot.SetSelected(false);
+        CurrentInventorySlot = inventorySlotList[slotIndex];
+        CurrentInventorySlot.SetSelected(true);
         ShowItemDescription(slotIndex);
     }
     
@@ -812,10 +829,10 @@ public class UIManager : Singleton<UIManager>
         if (currentTab == inventoryTabNumber)
         {
             DrawInventory(Inventory.Instance.GetCurrentInventory());
-            if (CurrentSlot == null)
+            if (CurrentInventorySlot == null)
             {
-                CurrentSlot = slotList[0];
-                CurrentSlot.SetSelected(true);
+                CurrentInventorySlot = inventorySlotList[0];
+                CurrentInventorySlot.SetSelected(true);
             }
             SelectInventory(currentInventory);
         }
