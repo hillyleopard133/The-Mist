@@ -16,10 +16,10 @@ MonoBehaviour:
   Name: Large Seed
   Icon: {fileID: 21300000, guid: 76cf61f55054c554b8e291752713bb31, type: 3}
   Description: A large seed. What does it grow?
-  SellValue: 15
-  BuyValue: 5
+  SellValue: 5
+  BuyValue: 10
   ItemType: 2
   IsConsumable: 0
   IsStackable: 1
-  MaxStack: 50
+  MaxStack: 30
   Quantity: 0

@@ -16,10 +16,10 @@ MonoBehaviour:
   Name: Beef
   Icon: {fileID: 21300000, guid: 4f90205e269a947448b74bdd6d390a73, type: 3}
   Description: Delicious slices of roast beef.
-  SellValue: 15
-  BuyValue: 5
+  SellValue: 5
+  BuyValue: 10
   ItemType: 2
   IsConsumable: 0
   IsStackable: 1
-  MaxStack: 50
+  MaxStack: 30
   Quantity: 0

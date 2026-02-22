@@ -58,7 +58,7 @@ public class ShopManager : Singleton<ShopManager>
         else SellItem();
     }
 
-    private void PressButton()
+    public void PressButton()
     {
         audioManager.PlayButtonPressSound();
         uIManager.RefreshShop();
@@ -71,15 +71,25 @@ public class ShopManager : Singleton<ShopManager>
             inventory.AddItem(selectedItem, shopItemAmount);
             coinManager.RemoveCoins(CalculatePrice());
             PressButton();
+            
+            if (coinManager.Coins <= CalculatePrice())
+            {
+                SetItemAmountToMax();
+            }
         }
     }
 
     private void SellItem()
     {
-        coinManager.AddCoins(CalculatePrice());
+        coinManager.AddCoins(CalculatePrice(false));
         for (int i = 0; i < shopItemAmount; i++)
         {
             inventory.ConsumeItem(selectedItem.ID);
+        }
+        
+        if (shopItemAmount > inventory.GetItemCurrentStock(selectedItem.ID))
+        {
+            SetItemAmountToMax();
         }
         PressButton();
     }
@@ -133,7 +143,8 @@ public class ShopManager : Singleton<ShopManager>
                 shopItemAmount = itemAmount;
             }
         }
-        PressButton();
+        
+        uIManager.RefreshShop();
     }
 
     public void SetItemAmountToMin()

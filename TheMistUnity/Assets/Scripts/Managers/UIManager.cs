@@ -217,11 +217,11 @@ public class UIManager : Singleton<UIManager>
     
     #endregion
 
-    public void UpdateCoinAmount(int amount)
-    {
-        playerCoinAmountShop.text = amount.ToString();
-        playerCoinAmountInventory.text = amount.ToString();
-    }
+    #region Skills
+
+    
+
+    #endregion
 
     #region Shop
 
@@ -1205,6 +1205,12 @@ public class UIManager : Singleton<UIManager>
         
         CloseTabMenu();
         CloseShop();
+    }
+    
+    public void UpdateCoinAmount(int amount)
+    {
+        playerCoinAmountShop.text = amount.ToString();
+        playerCoinAmountInventory.text = amount.ToString();
     }
 
     public void HideGameHUD()
