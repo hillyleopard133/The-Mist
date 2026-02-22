@@ -21,14 +21,12 @@ public class Quest : ScriptableObject
     [Header("Reward")]
     public int GoldReward;
     public float ExpReward;
-    public QuestItemReward ItemReward;
+    public QuestItemReward[] ItemReward;
 
     [HideInInspector] public bool QuestCompleted;
     [HideInInspector] public bool QuestAccepted;
-    
     [HideInInspector] public bool QuestClaimed;
-
-
+    
     public void AddProgress(int amount = 0)
     {
         foreach (QuestTask task in Tasks)

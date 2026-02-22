@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class QuestManager : Singleton<QuestManager>
 {
-    [HideInInspector] public Quest[] Quests { get; set; }
     public List<Quest> acceptedQuests;
     
     [SerializeField] public Quest[] AllQuests;
-    
-    [Header("NPC Quest Panel")]
-    [SerializeField] private QuestCardNPC questCardNPCPrefab;
-    [SerializeField] private Transform npcPanelContainer;
     
     private readonly string QUEST_DATA = "QUEST_DATA";
 
@@ -26,7 +21,7 @@ public class QuestManager : Singleton<QuestManager>
         AudioManager.Instance.PlayAcceptQuestSound();
         if (!quest.IsMainQuest)
         {
-            UIManager.Instance.UpdateSideQuestList();
+            UIManager.Instance.UpdateQuestList();
         }
         quest.QuestAccepted = true;
         SaveQuestData();
@@ -60,6 +55,8 @@ public class QuestManager : Singleton<QuestManager>
         {
             questToUpdate.CompleteQuest();
         }
+        
+        UIManager.Instance.UpdateQuestList();
     }
 
     private Quest QuestExists(string questID)
@@ -73,23 +70,6 @@ public class QuestManager : Singleton<QuestManager>
         }
         
         return null;
-    }
-
-    public void LoadQuestsIntoNPCPanel()
-    {
-        foreach (Transform child in npcPanelContainer)
-        {
-            Destroy(child.gameObject);
-        }
-        
-        for (int i = 0; i < Quests.Length; i++)
-        {
-            if (!Quests[i].QuestAccepted)
-            {
-                QuestCard npcCard = Instantiate(questCardNPCPrefab, npcPanelContainer);
-                npcCard.ConfigQuestUI(Quests[i]);
-            }
-        }
     }
 
     public void LoadQuestData()

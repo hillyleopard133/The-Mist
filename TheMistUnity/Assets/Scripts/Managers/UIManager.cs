@@ -11,20 +11,7 @@ public class UIManager : Singleton<UIManager>
 {
     #region Fields
     
-    [Header("Bars")]
-    [SerializeField] private Image healthBar;
-    [SerializeField] private Image manaBar;
-    [SerializeField] private Image expBar;
-    
-    [Header("Text")]
-    [SerializeField] private TextMeshProUGUI levelTMP;
-    [SerializeField] private TextMeshProUGUI healthTMP;
-    [SerializeField] private TextMeshProUGUI manaTMP;
-    [SerializeField] private TextMeshProUGUI expTMP;
-    [SerializeField] private TextMeshProUGUI coinsTMP;
-    
-    [Header("Extra Panels")]
-    [SerializeField] private GameObject npcQuestPanel;
+    [Header("Crafting")]
     [SerializeField] private GameObject craftingPanel;
     
     [Header("Start Menu")]
@@ -61,7 +48,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI questGiverName;
     [SerializeField] private Image questGiverIcon;
     [SerializeField] private GameObject taskPrefab;
-    [SerializeField] private GameObject sideQuestList;
+    [SerializeField] private GameObject[] questHeaderPrefabs;
+    [SerializeField] private Transform questListContent;
     [SerializeField] private GameObject questPrefab;
     [SerializeField] private Color completedTaskColor;
     [SerializeField] private Color currentTaskColor;
@@ -440,9 +428,6 @@ public class UIManager : Singleton<UIManager>
     {
         switch (type)
         {
-            case InteractionType.Quest:
-                OpenCloseNPCQuestPanel(true);
-                break;
             case InteractionType.SuppliesShop:
                 OpenShop(0);
                 break;
@@ -1050,23 +1035,45 @@ public class UIManager : Singleton<UIManager>
 
     public void LoadQuestsUI()
     {
-        UpdateSideQuestList();
+        UpdateQuestList();
     }
 
-    public void UpdateSideQuestList()
+    public void UpdateQuestList()
     {
-        foreach (Transform child in sideQuestList.transform)
-        {
-            Destroy(child.gameObject);
-        }
+        ClearChildren(questListContent.transform);
 
         List<Quest> questList = QuestManager.Instance.acceptedQuests;
+
+        Instantiate(questHeaderPrefabs[0], questListContent);   //main
         foreach (Quest quest in questList)
         {
-            if(quest.QuestCompleted || quest.IsMainQuest) continue;
-            
-            GameObject newQuest = Instantiate(questPrefab, sideQuestList.transform);
-            newQuest.GetComponent<Button>().onClick.AddListener(() => SelectQuest(quest));
+            if(quest.QuestCompleted) continue;
+            if (quest.IsMainQuest)
+            {
+                GameObject newQuest = Instantiate(questPrefab, questListContent);
+                newQuest.GetComponent<Button>().onClick.AddListener(() => SelectQuest(quest));
+            }
+        }
+        
+        Instantiate(questHeaderPrefabs[1], questListContent);   //side
+        foreach (Quest quest in questList)
+        {
+            if(quest.QuestCompleted) continue;
+            if (!quest.IsMainQuest)
+            {
+                GameObject newQuest = Instantiate(questPrefab, questListContent);
+                newQuest.GetComponent<Button>().onClick.AddListener(() => SelectQuest(quest));
+            }
+        }
+        
+        Instantiate(questHeaderPrefabs[2], questListContent);   //completed
+        foreach (Quest quest in questList)
+        {
+            if(quest.QuestCompleted)
+            {
+                GameObject newQuest = Instantiate(questPrefab, questListContent);
+                newQuest.GetComponent<Button>().onClick.AddListener(() => SelectQuest(quest));
+            }
         }
     }
 
@@ -1078,11 +1085,8 @@ public class UIManager : Singleton<UIManager>
         questDescription.text = quest.Description;
         questGiverIcon.sprite = quest.QuestGiverIcon;
         questGiverName.text = quest.QuestGiverName;
-
-        foreach (Transform child in taskList.transform)
-        {
-            Destroy(child.gameObject);
-        }
+        
+        ClearChildren(taskList.transform);
 
         bool currentTaskReached = false;
         TextMeshProUGUI newTaskText = null;
@@ -1377,6 +1381,14 @@ public class UIManager : Singleton<UIManager>
         playerCoinAmountShop.text = amount.ToString();
         playerCoinAmountInventory.text = amount.ToString();
     }
+    
+    private void ClearChildren(Transform parent)
+    {
+        foreach (Transform child in parent)
+        {
+            Destroy(child.gameObject);
+        }
+    }
 
     public void HideGameHUD()
     {
@@ -1392,7 +1404,6 @@ public class UIManager : Singleton<UIManager>
     {
         AudioManager.Instance.PlayButtonPressSound();
         CloseCraftingPanel();
-        CloseNPCQuestPanel();
         LootManager.Instance.ClosePanel();
         DialogueManager.Instance.CloseDialoguePanel();
     }
@@ -1400,17 +1411,6 @@ public class UIManager : Singleton<UIManager>
     private void CloseCraftingPanel()
     {
         craftingPanel.SetActive(false);
-    }
-
-    private void CloseNPCQuestPanel()
-    {
-        npcQuestPanel.SetActive(false);
-    }
-
-    public void OpenCloseNPCQuestPanel(bool value)
-    {
-        CloseAllPanels();
-        npcQuestPanel.SetActive(value);
     }
 
     public void OpenCloseCraftingPanel(bool value)

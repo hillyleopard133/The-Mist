@@ -5,7 +5,6 @@ using UnityEngine;
 
 public enum InteractionType
 {
-    Quest,
     SuppliesShop,
     EquipmentShop,
     Crafting
@@ -106,8 +105,6 @@ public class NPCInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             DialogueManager.Instance.SelectNPC(this);
-            QuestManager.Instance.Quests = quests;
-            QuestManager.Instance.LoadQuestsIntoNPCPanel();
             
             if (startDialogueOnEnter)
             {
