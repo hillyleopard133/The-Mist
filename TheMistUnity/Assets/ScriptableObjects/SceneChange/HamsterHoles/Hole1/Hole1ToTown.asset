@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b37094d6afe40408b489c7462d73c77, type: 3}
-  m_Name: WeaponShopEntranceExterior
+  m_Name: Hole1ToTown
   m_EditorClassIdentifier: 
-  SceneEntryPointName: ShopEntryPoint
-  TargetSceneName: WeaponShop
+  SceneEntryPointName: Hole1
+  TargetScene: {fileID: 102900000, guid: d2643499299bb6a4eb9296533b7d578c, type: 3}
   TargetSceneMusic: {fileID: 0}
   MusicVolume: 0

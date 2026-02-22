@@ -70,6 +70,24 @@ public class Inventory : Singleton<Inventory>
         }
         return null;
     }
+    
+    public InventoryItem[] GetInventoryByIndex(int index)
+    {
+        switch (index)
+        {
+            case 0:
+                return inventoryItemsTreasure;
+            case 1:
+                return inventoryItemsResources;
+            case 2:
+                return inventoryItemsConsumables;
+            case 3:
+                return inventoryItemsEquipment;
+            case 4:
+                return inventoryItemsQuests;
+        }
+        return null;
+    }
 
     private InventoryItem[] GetInventoryItemsByItemType(InventoryItem item)
     {

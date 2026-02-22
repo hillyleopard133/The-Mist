@@ -42,7 +42,7 @@ public class InventorySlot : MonoBehaviour, ISelectHandler
         }
     }
 
-    public void UpdateSlot(InventoryItem item)
+    public void UpdateSlot(InventoryItem item, bool isNPCShopItem = false)
     {
         if (item is ItemEquipment equipment)
         {
@@ -64,6 +64,11 @@ public class InventorySlot : MonoBehaviour, ISelectHandler
             itemQuantityTMP.text = item.Quantity.ToString();
         }
         itemIcon.sprite = item.Icon;
+
+        if (isNPCShopItem)
+        {
+            quantityContainer.gameObject.SetActive(false);
+        }
     }
 
     public void ShowSlotInformation(bool value)

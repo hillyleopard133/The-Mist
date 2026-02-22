@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -60,6 +61,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject deathScreenContent;
     [SerializeField] private Image respawnClock;
     [SerializeField] private float timeToRespawn;
+    private float respawnTimer;
+    private bool isReviving;
     
     [Header("Tab Menu")]
     [SerializeField] private GameObject tabMenu;
@@ -95,6 +98,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Button[] inventoryTabs;
     [SerializeField] private Button destroyButton;
     [SerializeField] private Color selectedInventoryColor;
+    [SerializeField] private TextMeshProUGUI playerCoinAmountInventory;
     private InventorySlot CurrentInventorySlot;
     private List<InventorySlot> inventorySlotList = new List<InventorySlot>(); 
     private int currentInventory = 0;
@@ -141,31 +145,38 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Color selectedPartyMemberColor;
     private int selectedPartyMember = 0;
     
-    private float respawnTimer;
-    private PlayerActions actions;
-    private bool isReviving;
-    
     [Header("Shop")]
     [SerializeField] private GameObject shopScreen;
+    [SerializeField] private TextMeshProUGUI shopHeading;
     [SerializeField] private Transform shopItemContainer;
     [SerializeField] private Transform playerShopItemContainer;
     [SerializeField] private TextMeshProUGUI shopItemName;
-    [SerializeField] private TextMeshProUGUI shopEquipmentStat1;
-    [SerializeField] private TextMeshProUGUI shopEquipmentStat2;
     [SerializeField] private TextMeshProUGUI shopItemDescription;
     [SerializeField] private Image shopItemIcon;
-    [SerializeField] private TextMeshProUGUI shopItemAmount;
+    [SerializeField] private TextMeshProUGUI shopItemAmountText;
     [SerializeField] private TextMeshProUGUI shopItemPrice;
     [SerializeField] private TextMeshProUGUI buySellButtonText;
     [SerializeField] private Button buySellButton;
     [SerializeField] private TextMeshProUGUI treasureSellValue;
     [SerializeField] private Button treasureSellButton;
-    [SerializeField] private TextMeshProUGUI playerCoinsAmount;
+    [SerializeField] private Button shopIncreaseAmountButton;
+    [SerializeField] private Button shopDecreaseAmountButton;
+    [SerializeField] private Button shopMaxAmountButton;
+    [SerializeField] private Button shopMinAmountButton;
+    [SerializeField] private TextMeshProUGUI playerCoinAmountShop;
     [SerializeField] private Button[] shopInventoryTabs;
     [SerializeField] private int shopInventorySize;
+    [SerializeField] private GameObject shopInventoryTabBox;
+    [SerializeField] private GameObject shopItemQuantityBox;
+    [SerializeField] private GameObject shopEquipmentStatsBox;
+    [SerializeField] private GameObject shopEquipmentInventoryHeaderBox;
+    [SerializeField] private TextMeshProUGUI shopEquipmentStat1;
+    [SerializeField] private TextMeshProUGUI shopEquipmentStat2;
     private InventorySlot CurrentShopSlot;
     private List<InventorySlot> shopSlotList = new List<InventorySlot>(); 
-    private List<InventorySlot> playerShopSlotList = new List<InventorySlot>(); 
+    private int currentShopInventory = 0;
+    
+    private PlayerActions actions;
     
     #endregion
 
@@ -182,6 +193,7 @@ public class UIManager : Singleton<UIManager>
         actions.General.Respawn.performed += ctx => SetIsReviving(true);  
         actions.General.Respawn.canceled += ctx => SetIsReviving(false); 
         actions.General.TabMenu.performed += ctx => OpenCloseTabMenu();
+        actions.General.Pause.performed += ctx => CloseMenu();
         
         actions.UI.LeftTab.performed += ctx => SwitchTab(-1);
         actions.UI.RightTab.performed += ctx => SwitchTab(1);
@@ -205,32 +217,63 @@ public class UIManager : Singleton<UIManager>
     
     #endregion
 
+    public void UpdateCoinAmount(int amount)
+    {
+        playerCoinAmountShop.text = amount.ToString();
+        playerCoinAmountInventory.text = amount.ToString();
+    }
 
     #region Shop
 
-    public void OpenCloseShopPanel(bool value)
+    private void CloseShop()
     {
-        CloseAllPanels();
-        shopScreen.SetActive(value);
+        shopScreen.SetActive(false);
+        PauseGameManager.Instance.UnPause();
     }
 
-    private void OpenShop()
+    private void OpenShop(int shopType)
     {
         shopScreen.SetActive(true);
+        if(CurrentShopSlot == null) CurrentShopSlot = shopSlotList[0];
+        
+        if (shopType == 0)
+        {
+            shopHeading.text = "Supplies Shop";
+            shopInventoryTabBox.SetActive(true);
+            shopItemQuantityBox.SetActive(true);
+            shopEquipmentInventoryHeaderBox.SetActive(false);
+            shopEquipmentStatsBox.SetActive(false);
+            treasureSellButton.gameObject.SetActive(true);
+            SelectShopInventoryTab(0);
+        }
+        else if (shopType == 1)
+        {
+            shopHeading.text = "Equipment Shop";
+            shopInventoryTabBox.SetActive(false);
+            shopItemQuantityBox.SetActive(false);
+            shopEquipmentInventoryHeaderBox.SetActive(true);
+            shopEquipmentStatsBox.SetActive(true);
+            treasureSellButton.gameObject.SetActive(false);
+            SelectShopInventoryTab(3);
+        }
+        
+        ShowShopItemDescription(CurrentShopSlot.Index);
+        PauseGameManager.Instance.PauseGame();
     }
 
     private void InitialiseShopInventories()
     {
-        for (int i = 0; i < Inventory.Instance.InventorySize; i++)
-        {
-            InventorySlot slot = Instantiate(inventorySlotPrefab, playerShopItemContainer);
-            slot.Index = i;
-            playerShopSlotList.Add(slot);
-        }
         for (int i = 0; i < shopInventorySize; i++)
         {
             InventorySlot slot = Instantiate(inventorySlotPrefab, shopItemContainer);
             slot.Index = i;
+            shopSlotList.Add(slot);
+        }
+        
+        for (int i = 0; i < Inventory.Instance.InventorySize; i++)
+        {
+            InventorySlot slot = Instantiate(inventorySlotPrefab, playerShopItemContainer);
+            slot.Index = i + shopInventorySize;
             shopSlotList.Add(slot);
         }
     }
@@ -242,12 +285,173 @@ public class UIManager : Singleton<UIManager>
             case InteractionType.Quest:
                 OpenCloseNPCQuestPanel(true);
                 break;
-            case InteractionType.Shop:
-                OpenCloseShopPanel(true);
+            case InteractionType.SuppliesShop:
+                OpenShop(0);
+                break;
+            case InteractionType.EquipmentShop:
+                OpenShop(1);
                 break;
             case InteractionType.Crafting:
                 OpenCloseCraftingPanel(true);
                 break;
+        }
+    }
+
+    public void SelectShopInventoryTab(int index)
+    {
+        currentShopInventory = index;
+        RefreshShop();
+        
+        foreach (Button tab in shopInventoryTabs)
+        {
+            ColorBlock colors = tab.colors;    
+            colors.normalColor = Color.white;
+            tab.colors = colors; 
+        }
+        Button SelectedTab = shopInventoryTabs[index];
+        ColorBlock cb = SelectedTab.colors;    
+        cb.normalColor = selectedInventoryColor;
+        SelectedTab.colors = cb;
+    }
+    
+    private void DrawPlayerShopInventory(InventoryItem[] items)
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            DrawShopItem(items[i], i + shopInventorySize);
+        }
+    }
+
+    private void DrawNPCShopInventory(InventoryItem[] items)
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            DrawShopItem(items[i], i, true);
+        }
+
+        for (int i = items.Length; i < shopInventorySize; i++)
+        {
+            DrawShopItem(null, i, true);
+        }
+    }
+    
+    private void DrawShopItem(InventoryItem item, int index, bool isNPCShopItem = false)
+    {
+        InventorySlot slot = shopSlotList[index];
+
+        slot.ShowSlotInformation(item != null);
+        if(item != null) slot.UpdateSlot(item, isNPCShopItem);
+    }
+
+    public void RefreshShop()
+    {
+        DrawPlayerShopInventory(Inventory.Instance.GetInventoryByIndex(currentShopInventory));
+        DrawNPCShopInventory(DialogueManager.Instance.NPCSelected.shop);
+        ShowShopItemDescription(CurrentShopSlot.Index);
+        EventSystem.current.SetSelectedGameObject(CurrentShopSlot.gameObject);
+    }
+
+    private void ShowShopItemDescription(int index)
+    {
+        InventoryItem[] items;
+        InventoryItem item;
+        bool isBuying = false;
+        
+        if (index >= shopInventorySize)
+        {
+            items = Inventory.Instance.GetInventoryByIndex(currentShopInventory);
+            item = items[index - shopInventorySize];
+        }
+        else
+        {
+            items = DialogueManager.Instance.NPCSelected.shop;
+            if (index >= items.Length) item = null;
+            else item = items[index];
+            isBuying = true;
+        }
+        
+        ShopManager.Instance.SelectItem(item, isBuying);
+        
+        if (item == null)
+        {
+            shopItemIcon.gameObject.SetActive(false);
+            shopItemName.text = "No Item Selected";
+            shopItemDescription.text = "";
+            shopItemAmountText.text = "0";
+            shopItemPrice.text = "0";
+            shopEquipmentStat1.text = "";
+            shopEquipmentStat2.text = "";
+            
+            buySellButton.interactable = false;
+            shopDecreaseAmountButton.interactable = false;
+            shopIncreaseAmountButton.interactable = false;
+            shopMaxAmountButton.interactable = false;
+            shopMinAmountButton.interactable = false;
+        }
+        else
+        {
+            shopItemIcon.gameObject.SetActive(true);
+            shopItemIcon.sprite = item.Icon;
+            shopItemName.text = item.Name;
+            shopItemDescription.text = item.Description;
+            shopItemAmountText.text = ShopManager.Instance.shopItemAmount.ToString();
+            shopItemPrice.text = ShopManager.Instance.CalculatePrice(isBuying).ToString();
+
+            if (item is ItemArmour armour)
+            {
+                shopEquipmentStat1.text = "Health: " + armour.health;
+                shopEquipmentStat2.text = "Defence: " + armour.defence;
+            }
+            else if (item is ItemWeapon weapon)
+            {
+                shopEquipmentStat1.text = "Damage: " + weapon.damage;
+                shopEquipmentStat2.text = "Crit: " + weapon.critChance + "%";
+            }
+            else if (item is ItemScroll scroll)
+            {
+                shopEquipmentStat1.text = "Mana: " + scroll.mana;
+                shopEquipmentStat2.text = "";
+            }
+            
+            SetShopButtons(item, isBuying);
+        }
+
+        shopMinAmountButton.interactable = ShopManager.Instance.shopItemAmount > 1;
+        
+        bool haveTreasure = Inventory.Instance.GetInventoryByIndex(0).Any(item => item != null);
+        treasureSellButton.interactable = haveTreasure;
+        if(haveTreasure) treasureSellValue.text = ShopManager.Instance.CalculateAllTreasureValue().ToString();
+        else treasureSellValue.text = "0";
+    }
+
+    private void SetShopButtons(InventoryItem item, bool isBuying)
+    {
+        int shopItemAmount = ShopManager.Instance.shopItemAmount;
+        
+        if (isBuying)
+        {
+            buySellButtonText.text = "Buy";
+            int coinsAmount = CoinManager.Instance.Coins;
+            int currentPrice = ShopManager.Instance.CalculatePrice();
+            
+            shopIncreaseAmountButton.interactable = (coinsAmount >= currentPrice + item.BuyValue) && shopItemAmount < item.MaxStack;
+            shopDecreaseAmountButton.interactable = shopItemAmount > 1;
+            buySellButton.interactable = coinsAmount >= currentPrice;
+            shopMaxAmountButton.interactable = (coinsAmount >= currentPrice + item.BuyValue) && shopItemAmount < item.MaxStack;
+        }
+        else
+        {
+            buySellButtonText.text = "Sell";
+            
+            shopIncreaseAmountButton.interactable = shopItemAmount < Inventory.Instance.GetItemCurrentStock(item.ID);
+            shopDecreaseAmountButton.interactable = shopItemAmount > 1;
+            buySellButton.interactable = true;
+            shopMaxAmountButton.interactable = shopItemAmount < Inventory.Instance.GetItemCurrentStock(item.ID);
+        }
+
+        if (item is ItemEquipment equipment)
+        {
+            buySellButton.interactable = equipment.equipped == -1;
         }
     }
 
@@ -557,17 +761,6 @@ public class UIManager : Singleton<UIManager>
         }
     }
     
-    private void VerifyEquipmentItemsForDraw()
-    {
-        for (int i = 0; i < EquipmentManager.Instance.inventorySize; i++)
-        {
-            if (EquipmentManager.Instance.SortEquipment(currentEquipment)[i] == null)
-            {
-                DrawEquipmentItem(null, i);
-            }
-        }
-    }
-    
     #endregion
 
     #region Inventory
@@ -601,17 +794,6 @@ public class UIManager : Singleton<UIManager>
 
         ShowItemDescription(CurrentInventorySlot.Index);
         EventSystem.current.SetSelectedGameObject(CurrentInventorySlot.gameObject);
-    }
-    
-    private void VerifyItemsForDraw()
-    {
-        for (int i = 0; i < Inventory.Instance.InventorySize; i++)
-        {
-            if (Inventory.Instance.GetCurrentInventory()[i] == null)
-            {
-                DrawItem(null, i);
-            }
-        }
     }
     
     private void DrawInventory(InventoryItem[] items)
@@ -688,10 +870,19 @@ public class UIManager : Singleton<UIManager>
     
     private void SlotSelectedCallback(int slotIndex)
     {
-        CurrentInventorySlot.SetSelected(false);
-        CurrentInventorySlot = inventorySlotList[slotIndex];
-        CurrentInventorySlot.SetSelected(true);
-        ShowItemDescription(slotIndex);
+        if (tabMenu.activeSelf)
+        {
+            CurrentInventorySlot.SetSelected(false);
+            CurrentInventorySlot = inventorySlotList[slotIndex];
+            CurrentInventorySlot.SetSelected(true);
+            ShowItemDescription(slotIndex);
+        }else if (shopScreen.activeSelf)
+        {
+            CurrentShopSlot.SetSelected(false);
+            CurrentShopSlot = shopSlotList[slotIndex];
+            CurrentShopSlot.SetSelected(true);
+            ShowShopItemDescription(slotIndex);
+        }
     }
     
     #endregion
@@ -763,6 +954,7 @@ public class UIManager : Singleton<UIManager>
     private void OpenCloseTabMenu()
     {
         if (!SaveLoadManager.Instance.GameIsActive()) return;
+        if (shopScreen.activeSelf) return;
         
         bool opening = !tabMenu.activeSelf;
         
@@ -778,9 +970,15 @@ public class UIManager : Singleton<UIManager>
         }
         else
         {
-            actions.UI.Disable();
-            PauseGameManager.Instance.UnPause();
+            CloseTabMenu();
         }
+    }
+
+    private void CloseTabMenu()
+    {
+        tabMenu.SetActive(false);
+        actions.UI.Disable();
+        PauseGameManager.Instance.UnPause();
     }
 
     public void SetTabMenu(int tabIndex)
@@ -947,23 +1145,6 @@ public class UIManager : Singleton<UIManager>
     }
     
     #endregion
-    
-    public bool NPCInteractionPanelOpen()
-    {
-        if(npcQuestPanel.activeSelf || shopScreen.activeSelf) return true;
-        
-        return false;
-    }
-
-    public void HideGameHUD()
-    {
-        gameHUD.SetActive(false);
-    }
-
-    public void ShowGameHUD()
-    {
-        gameHUD.SetActive(true);
-    }
 
     #region Settings
     
@@ -1013,10 +1194,32 @@ public class UIManager : Singleton<UIManager>
     
     #endregion
     
+    public bool IsInMenu()
+    {
+        return tabMenu.activeSelf || shopScreen.activeSelf;
+    }
+
+    private void CloseMenu()
+    {
+        if (!IsInMenu()) return;
+        
+        CloseTabMenu();
+        CloseShop();
+    }
+
+    public void HideGameHUD()
+    {
+        gameHUD.SetActive(false);
+    }
+
+    public void ShowGameHUD()
+    {
+        gameHUD.SetActive(true);
+    }
+    
     public void CloseAllPanels()
     {
         AudioManager.Instance.PlayButtonPressSound();
-        CloseShopPanel();
         CloseCraftingPanel();
         CloseNPCQuestPanel();
         CloseStatsPanel();
@@ -1032,11 +1235,6 @@ public class UIManager : Singleton<UIManager>
     private void CloseCraftingPanel()
     {
         craftingPanel.SetActive(false);
-    }
-
-    private void CloseShopPanel()
-    {
-        shopScreen.SetActive(false);
     }
 
     private void CloseNPCQuestPanel()

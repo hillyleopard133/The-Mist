@@ -25,6 +25,7 @@ public class PauseGameManager : Singleton<PauseGameManager>
 
     public void TogglePauseMenu()
     {
+        if (UIManager.Instance.IsInMenu()) return;
         if(!SaveLoadManager.Instance.GameIsActive()) return;
         if (UIManager.Instance.IsPlayerDead()) return;
         

@@ -6,7 +6,8 @@ using UnityEngine;
 public enum InteractionType
 {
     Quest,
-    Shop,
+    SuppliesShop,
+    EquipmentShop,
     Crafting
 }
 
@@ -26,7 +27,7 @@ public class NPCInteraction : MonoBehaviour
     
     [Header("Quests")]
     [SerializeField] private Quest[] quests;
-    [SerializeField] private ShopItem[] shop;
+    [SerializeField] public InventoryItem[] shop;
     
     [SerializeField] private GameObject interactionBox;
     private bool showInteractionBox = true;
@@ -106,9 +107,7 @@ public class NPCInteraction : MonoBehaviour
         {
             DialogueManager.Instance.SelectNPC(this);
             QuestManager.Instance.Quests = quests;
-            ShopManager.Instance.Items = shop;
             QuestManager.Instance.LoadQuestsIntoNPCPanel();
-            ShopManager.Instance.LoadShop();
             
             if (startDialogueOnEnter)
             {
@@ -129,11 +128,6 @@ public class NPCInteraction : MonoBehaviour
             DialogueManager.Instance.SelectNPC(null);
             DialogueManager.Instance.CloseDialoguePanel();
             interactionBox.SetActive(false);
-            if (UIManager.Instance.NPCInteractionPanelOpen())
-            {
-                UIManager.Instance.OpenCloseShopPanel(false);
-                UIManager.Instance.OpenCloseNPCQuestPanel(false);
-            }
         }
     }
     

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1521bdc4c1880b43b77716221978fa6, type: 3}
-  m_Name: MagicWeaponShop
+  m_Name: SupplyShop
   m_EditorClassIdentifier: 
   characterSpeakers:
-  - {fileID: 11400000, guid: 278e0c2fa08dab8458dab3cc3a42dc3d, type: 2}
+  - {fileID: 11400000, guid: 8291cee5ea15dde46b0c06aa2bee94a7, type: 2}
   nodes:
   - {fileID: 6247167351115152674}
   newNodeOffset: {x: 350, y: 0}
@@ -33,7 +33,7 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   isQuestOption: 0
   triggerInteraction: 1
-  text: Well well well.. Looking to purchase some magical weapons are we?
+  text: Hello! You look like you might need some potions!
   children: []
   rect:
     serializedVersion: 2

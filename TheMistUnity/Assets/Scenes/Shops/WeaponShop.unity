@@ -1672,21 +1672,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HasInteraction: 1
-  InteractionType: 1
-  Dialogue: {fileID: 11400000, guid: 0935900693228184ca5da7a40fa17883, type: 2}
+  InteractionType: 2
+  Dialogue: {fileID: 11400000, guid: c8b9c45764add7c4295448dc403ef927, type: 2}
   startDialogueOnEnterInitial: 0
   dialogueIsNotLeavableInitial: 0
   quests: []
   shop:
-  - Name: Pickaxe
-    Item: {fileID: 11400000, guid: 899c1877ab7080d4094536eba818e1bf, type: 2}
-    Cost: 90
-  - Name: Hammer
-    Item: {fileID: 11400000, guid: 54e3e9370d790cb4eacee8254ac80eb0, type: 2}
-    Cost: 140
-  - Name: Sword
-    Item: {fileID: 11400000, guid: 4e6eb56e5f28a6340a77a2b1109940cc, type: 2}
-    Cost: 180
+  - {fileID: 11400000, guid: 3a67c5ec41c87cc4595b7e3e59171540, type: 2}
+  - {fileID: 11400000, guid: 9ee6a04112f81db4e90fc6a83e907746, type: 2}
+  - {fileID: 11400000, guid: c140cb74975e58645bbc70444ad6e1a8, type: 2}
+  - {fileID: 11400000, guid: 0f815f7df83188d4c8817f984edf3ab2, type: 2}
+  - {fileID: 11400000, guid: 0ea3531f71fb1944b8d629d0986c6dbd, type: 2}
   interactionBox: {fileID: 1716699568}
 --- !u!212 &1049487708
 SpriteRenderer:

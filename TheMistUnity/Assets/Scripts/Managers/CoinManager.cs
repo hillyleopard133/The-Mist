@@ -3,38 +3,41 @@ using UnityEngine;
 
 public class CoinManager : Singleton<CoinManager>
 {
-    [SerializeField] float startingCoins;
-    public float Coins { get; private set; }
+    [SerializeField] int startingCoins;
+    public int Coins { get; private set; }
     private const string COIN_KEY = "Coins";
 
-    
-    protected override void Awake()
+    private void UpdateCoinAmountUI()
     {
-        base.Awake(); 
+        UIManager.Instance.UpdateCoinAmount(Coins);
     }
-
-    public void AddCoins(float amount)
+    
+    public void AddCoins(int amount)
     {
         Coins += amount;
+        UpdateCoinAmountUI();
         SaveGame.Save(COIN_KEY, Coins);
     }
 
-    public void RemoveCoins(float amount)
+    public void RemoveCoins(int amount)
     {
         if (Coins >= amount)
         {
             Coins -= amount;
+            UpdateCoinAmountUI();
             SaveGame.Save(COIN_KEY, Coins);
         }
     }
     
     public void LoadCoins(){
-        Coins = SaveGame.Load<float>(COIN_KEY);
+        Coins = SaveGame.Load<int>(COIN_KEY);
+        UpdateCoinAmountUI();
     }
 
     public void ResetCoins()
     {
         Coins = startingCoins;
+        UpdateCoinAmountUI();
         SaveGame.Save(COIN_KEY, Coins);
     }
     

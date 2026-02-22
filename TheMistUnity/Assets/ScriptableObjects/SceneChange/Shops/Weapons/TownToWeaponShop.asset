@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b37094d6afe40408b489c7462d73c77, type: 3}
-  m_Name: Hole1Ext
+  m_Name: TownToWeaponShop
   m_EditorClassIdentifier: 
-  SceneEntryPointName: Hole1
-  TargetSceneName: TownTheMist
+  SceneEntryPointName: ShopEntryPoint
+  TargetScene: {fileID: 102900000, guid: 167655c965542ae42bfb48c21184f441, type: 3}
   TargetSceneMusic: {fileID: 0}
   MusicVolume: 0

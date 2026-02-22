@@ -1693,20 +1693,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasInteraction: 1
   InteractionType: 1
-  Dialogue: {fileID: 11400000, guid: c8b9c45764add7c4295448dc403ef927, type: 2}
+  Dialogue: {fileID: 11400000, guid: a6e28869cb863104c9a2fd050d68284f, type: 2}
   startDialogueOnEnterInitial: 0
   dialogueIsNotLeavableInitial: 0
   quests: []
   shop:
-  - Name: Magic Stick
-    Item: {fileID: 11400000, guid: 7c792a92d41985a47a82063d1bc6e12c, type: 2}
-    Cost: 110
-  - Name: Spell Book
-    Item: {fileID: 11400000, guid: 1a2d62f61505b4445ba0062d0812ada4, type: 2}
-    Cost: 160
-  - Name: Wand
-    Item: {fileID: 11400000, guid: f5d10195f8a25344d884f57d9b4ec5c2, type: 2}
-    Cost: 250
+  - {fileID: 11400000, guid: b9f7f904e69178544819a18eed4fc712, type: 2}
+  - {fileID: 11400000, guid: aad6a3a55c9aca745826d3afed541d45, type: 2}
+  - {fileID: 11400000, guid: 397aa0b022b6dc94f9fe4ec43e4411c4, type: 2}
+  - {fileID: 11400000, guid: 810cdc12ef45c1644ac5ada1cb9fba3e, type: 2}
+  - {fileID: 11400000, guid: d366afa9d4f741b44a8f79f5a614556b, type: 2}
+  - {fileID: 11400000, guid: 57254d906bfe50b4fab1186fedeef4ba, type: 2}
+  - {fileID: 11400000, guid: 5e35991cbf5a54947a37e71cd9a4905a, type: 2}
+  - {fileID: 11400000, guid: 0b700b5913215d04a8f848623a3dfb26, type: 2}
+  - {fileID: 11400000, guid: 7d10bb3f0f4b959438ba9533d3d26abc, type: 2}
+  - {fileID: 11400000, guid: 9427140733188f54fa916709ad6f4ef7, type: 2}
+  - {fileID: 11400000, guid: 8c302aebfb3ca43458ddf733972534ed, type: 2}
+  - {fileID: 11400000, guid: 61fb0f712160d014092e908edc58d552, type: 2}
+  - {fileID: 11400000, guid: 05b6f15b22c7eec49be0c4ca3b92ae72, type: 2}
+  - {fileID: 11400000, guid: 1ed6eaf5351bcf04db72429c509cfb86, type: 2}
+  - {fileID: 11400000, guid: 371572504a6f7df4b99592599973a000, type: 2}
   interactionBox: {fileID: 1716699568}
 --- !u!212 &1049487708
 SpriteRenderer:

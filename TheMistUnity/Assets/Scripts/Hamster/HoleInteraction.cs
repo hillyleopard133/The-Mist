@@ -26,7 +26,7 @@ public class HoleInteraction : MonoBehaviour
     {
         if(!interactionBox.activeSelf || PauseGameManager.Instance.isPaused) return;
         
-        SceneChangeManager.Instance.LoadScene(location.TargetSceneName, location.SceneEntryPointName);
+        SceneChangeManager.Instance.LoadScene(location.TargetScene.name, location.SceneEntryPointName);
         if (location.TargetSceneMusic == null) return;
         AudioManager.Instance.PlayMusic(location.TargetSceneMusic, location.MusicVolume);
     }

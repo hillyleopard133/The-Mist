@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b37094d6afe40408b489c7462d73c77, type: 3}
-  m_Name: Hole1Int
+  m_Name: TownToHole1
   m_EditorClassIdentifier: 
   SceneEntryPointName: Hole1Entry
-  TargetSceneName: HamsterHoles
+  TargetScene: {fileID: 102900000, guid: fa608af621e19274098e4d5d15feb7e9, type: 3}
   TargetSceneMusic: {fileID: 0}
   MusicVolume: 0

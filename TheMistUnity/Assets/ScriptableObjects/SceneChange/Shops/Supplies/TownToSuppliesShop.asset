@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b37094d6afe40408b489c7462d73c77, type: 3}
-  m_Name: MagicShopEntranceInterior
+  m_Name: TownToSuppliesShop
   m_EditorClassIdentifier: 
-  SceneEntryPointName: MagicShopExitPoint
-  TargetSceneName: Town
+  SceneEntryPointName: ShopEntryPoint
+  TargetScene: {fileID: 102900000, guid: a1135c9b6e63cba47b69739a89238b1c, type: 3}
   TargetSceneMusic: {fileID: 0}
   MusicVolume: 0
