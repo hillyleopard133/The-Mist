@@ -156,6 +156,8 @@ public class UIManager : Singleton<UIManager>
     
     [Header("Skills - Attributes")]
     [SerializeField] private Image[] skillsCharacterIcons;
+    [SerializeField] private GameObject[] skillsQuestionMarks;
+    [SerializeField] private GameObject[] skillsPartyMemberShrouds;
     [SerializeField] private TextMeshProUGUI[] skillsNames;
     [SerializeField] private TextMeshProUGUI[] skillsAvailablePoints;
     [SerializeField] private TextMeshProUGUI[] skillsHealth;
@@ -296,6 +298,10 @@ public class UIManager : Singleton<UIManager>
 
                 skillsManaIncreaseAmount[i].text = (skillsManager.manaIncreasePerLevel * skillsManager.pointsToAddMana[i]) > 0 
                     ? "+" + skillsManager.manaIncreasePerLevel * skillsManager.pointsToAddMana[i] : "";
+                
+                skillsCharacterIcons[i].color = Color.white;
+                skillsQuestionMarks[i].SetActive(false);
+                skillsPartyMemberShrouds[i].SetActive(false);
             }
             else
             { 
@@ -308,11 +314,11 @@ public class UIManager : Singleton<UIManager>
                 skillsCritChance[i].text = "Crit: ???";
                 skillsMana[i].text = "Mana: ???";
 
-                skillsHealthIncrease[i].text = "?";    
-                skillsDefenceIncrease[i].text = "?";
-                skillsAttackIncrease[i].text = "?";
-                skillsCritChanceIncrease[i].text = "?";
-                skillsManaIncrease[i].text = "?";
+                skillsHealthIncrease[i].text = "0";    
+                skillsDefenceIncrease[i].text = "0";
+                skillsAttackIncrease[i].text = "0";
+                skillsCritChanceIncrease[i].text = "0";
+                skillsManaIncrease[i].text = "0";
             
                 skillsHealthIncreaseAmount[i].text = "";   
                 skillsDefenceIncreaseAmount[i].text = ""; 
@@ -320,7 +326,9 @@ public class UIManager : Singleton<UIManager>
                 skillsCritChanceIncreaseAmount[i].text = ""; 
                 skillsManaIncreaseAmount[i].text = ""; 
                 
-                //TODO shroud icon and darken whole card
+                skillsCharacterIcons[i].color = Color.black;
+                skillsQuestionMarks[i].SetActive(true);
+                skillsPartyMemberShrouds[i].SetActive(true);
             }
         }
         SetSkillsButtons();

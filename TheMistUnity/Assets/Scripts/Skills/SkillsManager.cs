@@ -130,8 +130,6 @@ public class SkillsManager : Singleton<SkillsManager>
     
     private void AttributeCallback(AttributeType attributeType, int partyMemberIndex, bool isIncrease)
     {
-        Debug.Log($"AttributeCallback called -> Attr: {attributeType}, Player: {partyMemberIndex}, Increase: {isIncrease}");
-
         switch (attributeType)
         {
             case AttributeType.Health:
