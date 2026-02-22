@@ -44,6 +44,11 @@ public class DialogueQuestManager : ScriptableObject
         }
     }
 
+    public void AddExp(int amount)
+    {
+        SkillsManager.Instance.AddExp(amount);
+    }
+
     public void DisableInteractions()
     {
         DialogueManager.Instance.NPCSelected.SetShowInteractionBox(false);

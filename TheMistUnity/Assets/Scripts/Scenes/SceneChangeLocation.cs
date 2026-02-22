@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "ScriptableObjects/SceneChangeLocation", fileName = "SceneChangeLocation")]
 public class SceneChangeLocation : ScriptableObject
 {
     [Header("Info")]

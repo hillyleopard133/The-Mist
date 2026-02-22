@@ -71,6 +71,6 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         enemySelector.NoSelectionCallback();
         rb2D.bodyType = RigidbodyType2D.Static;
         OnEnemyDeadEvent?.Invoke();
-        GameManager.Instance.AddPlayerExp(enemyLoot.ExpDrop);
+        //GameManager.Instance.AddPlayerExp(enemyLoot.ExpDrop);
     }
 }

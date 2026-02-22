@@ -13,19 +13,31 @@ MonoBehaviour:
   m_Name: PartyMember2
   m_EditorClassIdentifier: 
   Name: Raiju
+  Icon: {fileID: -1750426169, guid: 4475269bdf83ce64ea47f370b42de858, type: 3}
   Description: Raiju is a samurai prince, destined to take over his fathers realm.
+  isUnlocked: 0
   BaseMaxHealth: 80
   BaseDefence: 12
   BaseAttack: 7
   BaseCritChance: 3
   BaseMaxMana: 15
-  CurrentMaxHealth: 80
-  CurrentDefence: 12
-  CurrentAttack: 27
-  CurrentCritChance: 7
-  CurrentMaxMana: 40
+  SkillPointsHealth: 0
+  SkillPointsDefence: 0
+  SkillPointsAttack: 0
+  SkillPointsCritChance: 0
+  SkillPointsMana: 0
   EquipmentHealth: 0
   EquipmentDefence: 0
   EquipmentAttack: 20
   EquipmentCritChance: 4
   EquipmentMana: 25
+  CurrentBaseMaxHealth: 0
+  CurrentBaseDefence: 0
+  CurrentBaseAttack: 0
+  CurrentBaseCritChance: 0
+  CurrentBaseMaxMana: 0
+  CurrentMaxHealth: 80
+  CurrentDefence: 12
+  CurrentAttack: 27
+  CurrentCritChance: 7
+  CurrentMaxMana: 40

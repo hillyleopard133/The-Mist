@@ -11,9 +11,6 @@ public class UIManager : Singleton<UIManager>
 {
     #region Fields
     
-    [Header("Stats")]
-    [SerializeField] private PlayerStats stats;
-
     [Header("Bars")]
     [SerializeField] private Image healthBar;
     [SerializeField] private Image manaBar;
@@ -25,21 +22,6 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI manaTMP;
     [SerializeField] private TextMeshProUGUI expTMP;
     [SerializeField] private TextMeshProUGUI coinsTMP;
-    
-    [Header("Stats Panel")]
-    [SerializeField] private GameObject statsPanel;
-    [SerializeField] private TextMeshProUGUI statsLevelTMP;
-    [SerializeField] private TextMeshProUGUI statsDamageTMP;
-    [SerializeField] private TextMeshProUGUI statsCChanceTMP;
-    [SerializeField] private TextMeshProUGUI statsCDamageTMP;
-    [SerializeField] private TextMeshProUGUI statsTotalExpTMP;
-    [SerializeField] private TextMeshProUGUI statsCurrentExpTMP;
-    [SerializeField] private TextMeshProUGUI statsReqExpTMP;
-    
-    [SerializeField] private TextMeshProUGUI attributePointsTMP;
-    [SerializeField] private TextMeshProUGUI strengthTMP;
-    [SerializeField] private TextMeshProUGUI dexterityTMP;
-    [SerializeField] private TextMeshProUGUI intelligenceTMP;
     
     [Header("Extra Panels")]
     [SerializeField] private GameObject npcQuestPanel;
@@ -70,9 +52,6 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Button[] tabButtons;
     [SerializeField] private Color selectedTabColor;
     private int currentTab = 0;
-    private const int inventoryTabNumber = 1;
-    private const int equipmentTabNumber = 2;
-    private const int questTabNumber = 3;
     
     [Header("Quests")]
     [SerializeField] private TextMeshProUGUI mainQuestTitle;
@@ -124,7 +103,6 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Button unEquipButton;
     [SerializeField] private EquipmentSlot equipmentSlotPrefab;
     [SerializeField] private Transform equipmentInventoryContainer;
-    [SerializeField] public Sprite[] characterIcons;
     [SerializeField] private Color selectedEquipmentColor;
     [SerializeField] private Button[] equipmentCards;
     private EquipmentSlot CurrentEquipmentSlot;
@@ -139,7 +117,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI characterAttack;
     [SerializeField] private TextMeshProUGUI characterCritChance;
     [SerializeField] private TextMeshProUGUI characterMana;
-    [SerializeField] private Button[] partyMembers;
+    [SerializeField] private Button[] partyMembersButtons;
     [SerializeField] private Image[] partyMemberImages;
     [SerializeField] private GameObject[] questionMarks;
     [SerializeField] private Color selectedPartyMemberColor;
@@ -176,6 +154,41 @@ public class UIManager : Singleton<UIManager>
     private List<InventorySlot> shopSlotList = new List<InventorySlot>(); 
     private int currentShopInventory = 0;
     
+    [Header("Skills - Attributes")]
+    [SerializeField] private Image[] skillsCharacterIcons;
+    [SerializeField] private TextMeshProUGUI[] skillsNames;
+    [SerializeField] private TextMeshProUGUI[] skillsAvailablePoints;
+    [SerializeField] private TextMeshProUGUI[] skillsHealth;
+    [SerializeField] private TextMeshProUGUI[] skillsDefence;
+    [SerializeField] private TextMeshProUGUI[] skillsAttack;
+    [SerializeField] private TextMeshProUGUI[] skillsCritChance;
+    [SerializeField] private TextMeshProUGUI[] skillsMana;
+    [SerializeField] private TextMeshProUGUI[] skillsHealthIncrease;
+    [SerializeField] private TextMeshProUGUI[] skillsDefenceIncrease;
+    [SerializeField] private TextMeshProUGUI[] skillsAttackIncrease;
+    [SerializeField] private TextMeshProUGUI[] skillsCritChanceIncrease;
+    [SerializeField] private TextMeshProUGUI[] skillsManaIncrease;
+    [SerializeField] private TextMeshProUGUI[] skillsHealthIncreaseAmount;
+    [SerializeField] private TextMeshProUGUI[] skillsDefenceIncreaseAmount;
+    [SerializeField] private TextMeshProUGUI[] skillsAttackIncreaseAmount;
+    [SerializeField] private TextMeshProUGUI[] skillsCritChanceIncreaseAmount;
+    [SerializeField] private TextMeshProUGUI[] skillsManaIncreaseAmount;
+    [SerializeField] private Button[] skillsHealthIncreaseButtons;
+    [SerializeField] private Button[] skillsHealthDecreaseButtons;
+    [SerializeField] private Button[] skillsDefenceIncreaseButtons;
+    [SerializeField] private Button[] skillsDefenceDecreaseButtons;
+    [SerializeField] private Button[] skillsAttackIncreaseButtons;
+    [SerializeField] private Button[] skillsAttackDecreaseButtons;
+    [SerializeField] private Button[] skillsCritChanceIncreaseButtons;
+    [SerializeField] private Button[] skillsCritChanceDecreaseButtons;
+    [SerializeField] private Button[] skillsManaIncreaseButtons;
+    [SerializeField] private Button[] skillsManaDecreaseButtons;
+    [SerializeField] private Button[] applySkillPointsButtons;
+    [SerializeField] private TextMeshProUGUI skillsCurrentLevelText;
+    [SerializeField] private TextMeshProUGUI skillsNextLevelText;
+    [SerializeField] private RectTransform skillsExpBar;
+    private SkillsManager skillsManager;
+    
     private PlayerActions actions;
     
     #endregion
@@ -190,6 +203,8 @@ public class UIManager : Singleton<UIManager>
 
     private void Start()
     {
+        skillsManager = SkillsManager.Instance;
+        
         actions.General.Respawn.performed += ctx => SetIsReviving(true);  
         actions.General.Respawn.canceled += ctx => SetIsReviving(false); 
         actions.General.TabMenu.performed += ctx => OpenCloseTabMenu();
@@ -205,13 +220,15 @@ public class UIManager : Singleton<UIManager>
         InitialiseEquipmentInventory();
         InitialiseShopInventories();
         
+        //TODO for testing
+        skillsManager.partyMembers[0].UnlockPartyMember();
         UnlockPartyMember(1);
-        UnlockPartyMember(2);
+        //UnlockPartyMember(2);
     }
     
     private void Update()
     {
-        UpdatePlayerUI();
+        //UpdatePlayerUI();
         //UpdateRevivingClock();
     }
     
@@ -219,7 +236,140 @@ public class UIManager : Singleton<UIManager>
 
     #region Skills
 
-    
+    private void UpdateSkillsUI()
+    {
+        UpdateSkillCards();
+        UpdateLevelBar();
+    }
+
+    public void UpdateLevelBar()
+    {
+        skillsCurrentLevelText.text = skillsManager.Level.ToString();
+        skillsNextLevelText.text = (skillsManager.Level +1).ToString();
+        
+        Vector3 scale = skillsExpBar.localScale;
+        scale.x = skillsManager.GetExpBarPercentage();
+        skillsExpBar.localScale = scale;
+    }
+
+    public void UpdateSkillCards()
+    {
+        PartyMember[] partyMembers = skillsManager.partyMembers;
+
+        for (int i = 0; i < partyMembers.Length; i++)
+        {
+            partyMembers[i].CalculateBaseStats();
+            skillsCharacterIcons[i].sprite = partyMembers[i].Icon;
+            if(partyMembers[i].isUnlocked){
+                skillsNames[i].text = partyMembers[i].Name;
+                skillsAvailablePoints[i].text = "Available Points: " + (skillsManager.availableAttributePoints[i] - skillsManager.pendingAttributePoints[i]);
+            
+                skillsHealth[i].text = "Health: " + partyMembers[i].CurrentBaseMaxHealth;
+                skillsDefence[i].text = "Defence: " + partyMembers[i].CurrentBaseDefence;
+                skillsAttack[i].text = "Attack: " + partyMembers[i].CurrentBaseAttack;
+                skillsCritChance[i].text = "Crit: " + partyMembers[i].CurrentBaseCritChance + "%";
+                skillsMana[i].text = "Mana: " + partyMembers[i].CurrentBaseMaxMana;
+
+                skillsHealthIncrease[i].text = (partyMembers[i].SkillPointsHealth + skillsManager.pointsToAddHealth[i]).ToString();    
+                skillsDefenceIncrease[i].text = (partyMembers[i].SkillPointsDefence + skillsManager.pointsToAddDefence[i]).ToString();
+                skillsAttackIncrease[i].text = (partyMembers[i].SkillPointsAttack + skillsManager.pointsToAddAttack[i]).ToString();
+                skillsCritChanceIncrease[i].text = (partyMembers[i].SkillPointsCritChance + skillsManager.pointsToAddCritChance[i]).ToString();
+                skillsManaIncrease[i].text = (partyMembers[i].SkillPointsMana + skillsManager.pointsToAddMana[i]).ToString();
+            
+                skillsHealthIncreaseAmount[i].text = (skillsManager.healthIncreasePerLevel * skillsManager.pointsToAddHealth[i]).ToString();    
+                skillsDefenceIncreaseAmount[i].text = (skillsManager.defenceIncreasePerLevel * skillsManager.pointsToAddDefence[i]).ToString();
+                skillsAttackIncreaseAmount[i].text = (skillsManager.attackIncreasePerLevel * skillsManager.pointsToAddAttack[i]).ToString();
+                skillsCritChanceIncreaseAmount[i].text = (skillsManager.critIncreasePerLevel * skillsManager.pointsToAddCritChance[i]).ToString();
+                skillsManaIncreaseAmount[i].text = (skillsManager.manaIncreasePerLevel * skillsManager.pointsToAddMana[i]).ToString();
+                
+                skillsHealthIncreaseAmount[i].text = (skillsManager.healthIncreasePerLevel * skillsManager.pointsToAddHealth[i]) > 0 
+                    ? "+" + skillsManager.healthIncreasePerLevel * skillsManager.pointsToAddHealth[i] : "";
+
+                skillsDefenceIncreaseAmount[i].text = (skillsManager.defenceIncreasePerLevel * skillsManager.pointsToAddDefence[i]) > 0 
+                    ? "+" + skillsManager.defenceIncreasePerLevel * skillsManager.pointsToAddDefence[i] : "";
+
+                skillsAttackIncreaseAmount[i].text = (skillsManager.attackIncreasePerLevel * skillsManager.pointsToAddAttack[i]) > 0 
+                    ? "+" + skillsManager.attackIncreasePerLevel * skillsManager.pointsToAddAttack[i] : "";
+
+                skillsCritChanceIncreaseAmount[i].text = (skillsManager.critIncreasePerLevel * skillsManager.pointsToAddCritChance[i]) > 0 
+                    ? "+" + skillsManager.critIncreasePerLevel * skillsManager.pointsToAddCritChance[i] : "";
+
+                skillsManaIncreaseAmount[i].text = (skillsManager.manaIncreasePerLevel * skillsManager.pointsToAddMana[i]) > 0 
+                    ? "+" + skillsManager.manaIncreasePerLevel * skillsManager.pointsToAddMana[i] : "";
+            }
+            else
+            { 
+                skillsNames[i].text = "Unknown";
+                skillsAvailablePoints[i].text = "Available Points: 0";
+            
+                skillsHealth[i].text = "Health: ???";
+                skillsDefence[i].text = "Defence: ???";
+                skillsAttack[i].text = "Attack: ???";
+                skillsCritChance[i].text = "Crit: ???";
+                skillsMana[i].text = "Mana: ???";
+
+                skillsHealthIncrease[i].text = "?";    
+                skillsDefenceIncrease[i].text = "?";
+                skillsAttackIncrease[i].text = "?";
+                skillsCritChanceIncrease[i].text = "?";
+                skillsManaIncrease[i].text = "?";
+            
+                skillsHealthIncreaseAmount[i].text = "";   
+                skillsDefenceIncreaseAmount[i].text = ""; 
+                skillsAttackIncreaseAmount[i].text = ""; 
+                skillsCritChanceIncreaseAmount[i].text = ""; 
+                skillsManaIncreaseAmount[i].text = ""; 
+                
+                //TODO shroud icon and darken whole card
+            }
+        }
+        SetSkillsButtons();
+    }
+
+    private void SetSkillsButtons()
+    {
+        PartyMember[] partyMembers = skillsManager.partyMembers;
+
+        for (int i = 0; i < partyMembers.Length; i++)
+        {
+            if (partyMembers[i].isUnlocked)
+            {
+                SetAllIncreaseButtons(skillsManager.HasSkillPointsLeft(i), i);
+                
+                skillsHealthDecreaseButtons[i].interactable = skillsManager.pointsToAddHealth[i] > 0;
+                skillsDefenceDecreaseButtons[i].interactable = skillsManager.pointsToAddDefence[i] > 0;
+                skillsAttackDecreaseButtons[i].interactable = skillsManager.pointsToAddAttack[i] > 0;
+                skillsCritChanceDecreaseButtons[i].interactable = skillsManager.pointsToAddCritChance[i] > 0;
+                skillsManaDecreaseButtons[i].interactable = skillsManager.pointsToAddMana[i] > 0;
+                
+                applySkillPointsButtons[i].interactable = skillsManager.pendingAttributePoints[i] > 0;
+            }
+            else
+            {
+                SetAllIncreaseButtons(false, i);
+                SetAllDecreaseButtons(false, i);
+                applySkillPointsButtons[i].interactable = false;
+            }
+        }
+    }
+
+    private void SetAllIncreaseButtons(bool value, int partyMemberIndex)
+    {
+        skillsHealthIncreaseButtons[partyMemberIndex].interactable = value;
+        skillsDefenceIncreaseButtons[partyMemberIndex].interactable = value;
+        skillsAttackIncreaseButtons[partyMemberIndex].interactable = value;
+        skillsCritChanceIncreaseButtons[partyMemberIndex].interactable = value;
+        skillsManaIncreaseButtons[partyMemberIndex].interactable = value;
+    }
+
+    private void SetAllDecreaseButtons(bool value, int partyMemberIndex)
+    {
+        skillsHealthDecreaseButtons[partyMemberIndex].interactable = value;
+        skillsDefenceDecreaseButtons[partyMemberIndex].interactable = value;
+        skillsAttackDecreaseButtons[partyMemberIndex].interactable = value;
+        skillsCritChanceDecreaseButtons[partyMemberIndex].interactable = value;
+        skillsManaDecreaseButtons[partyMemberIndex].interactable = value;
+    }
 
     #endregion
 
@@ -461,7 +611,7 @@ public class UIManager : Singleton<UIManager>
     
     public void UnlockPartyMember(int index)
     {
-        partyMembers[index].interactable = true;
+        partyMembersButtons[index].interactable = true;
         partyMemberImages[index].color = Color.white;
         questionMarks[index - 1].SetActive(false);
         EquipmentManager.Instance.partyMembers[index].UnlockPartyMember();
@@ -469,8 +619,8 @@ public class UIManager : Singleton<UIManager>
 
     public void ResetPartyUnlocks()
     {
-        partyMembers[1].interactable = false;
-        partyMembers[2].interactable = false;
+        partyMembersButtons[1].interactable = false;
+        partyMembersButtons[2].interactable = false;
         partyMemberImages[1].color = Color.black;
         partyMemberImages[2].color = Color.black;
         questionMarks[0].SetActive(true);
@@ -483,13 +633,13 @@ public class UIManager : Singleton<UIManager>
         UpdateEquipmentList();
         FilterEquipment(currentEquipment);
         
-        foreach (Button partyMember in partyMembers)
+        foreach (Button partyMember in partyMembersButtons)
         {
             ColorBlock colors = partyMember.colors;    
             colors.normalColor = Color.white;
             partyMember.colors = colors; 
         }
-        Button SelectedMember = partyMembers[memberIndex];
+        Button SelectedMember = partyMembersButtons[memberIndex];
         ColorBlock cb = SelectedMember.colors;    
         cb.normalColor = selectedPartyMemberColor;
         SelectedMember.colors = cb;
@@ -698,7 +848,7 @@ public class UIManager : Singleton<UIManager>
         {
             if (armour.equipped != -1)
             {
-                slot.UpdateSlot(item, characterIcons[armour.equipped]);
+                slot.UpdateSlot(item, skillsManager.partyMembers[armour.equipped].Icon);
             }
             else
             {
@@ -709,7 +859,7 @@ public class UIManager : Singleton<UIManager>
         {
             if (weapon.equipped != -1)
             {
-                slot.UpdateSlot(item, characterIcons[weapon.equipped]);
+                slot.UpdateSlot(item, skillsManager.partyMembers[weapon.equipped].Icon);
             }
             else
             {
@@ -720,7 +870,7 @@ public class UIManager : Singleton<UIManager>
         {
             if (scroll.equipped != -1)
             {
-                slot.UpdateSlot(item, characterIcons[scroll.equipped]);
+                slot.UpdateSlot(item, skillsManager.partyMembers[scroll.equipped].Icon);
             }
             else
             {
@@ -876,7 +1026,8 @@ public class UIManager : Singleton<UIManager>
             CurrentInventorySlot = inventorySlotList[slotIndex];
             CurrentInventorySlot.SetSelected(true);
             ShowItemDescription(slotIndex);
-        }else if (shopScreen.activeSelf)
+        }
+        else if (shopScreen.activeSelf)
         {
             CurrentShopSlot.SetSelected(false);
             CurrentShopSlot = shopSlotList[slotIndex];
@@ -996,30 +1147,36 @@ public class UIManager : Singleton<UIManager>
         }
         
         tabs[tabIndex].SetActive(true);
-        currentTab = tabIndex;
 
-        if (currentTab == questTabNumber && currentlySelectedQuest != null)
+        switch (tabIndex)
         {
-            LoadQuestsUI();
-            SelectQuest(currentlySelectedQuest);
-        }
-
-        if (currentTab == equipmentTabNumber)
-        {
-            FilterEquipment(0);
-            UpdateEquippedItems();
-            SelectPartyMember(selectedPartyMember);
-        }
-
-        if (currentTab == inventoryTabNumber)
-        {
-            DrawInventory(Inventory.Instance.GetCurrentInventory());
-            if (CurrentInventorySlot == null)
-            {
-                CurrentInventorySlot = inventorySlotList[0];
-                CurrentInventorySlot.SetSelected(true);
-            }
-            SelectInventory(currentInventory);
+            case 0:
+                skillsManager.ClearPendingPoints();
+                UpdateSkillsUI();
+                break;
+            case 1:
+                DrawInventory(Inventory.Instance.GetCurrentInventory());
+                if (CurrentInventorySlot == null)
+                {
+                    CurrentInventorySlot = inventorySlotList[0];
+                    CurrentInventorySlot.SetSelected(true);
+                }
+                SelectInventory(currentInventory);
+                break;
+            case 2:
+                FilterEquipment(0);
+                UpdateEquippedItems();
+                SelectPartyMember(selectedPartyMember);
+                break;
+            case 3:
+                if (currentlySelectedQuest != null)
+                {
+                    LoadQuestsUI();
+                    SelectQuest(currentlySelectedQuest);
+                }
+                //TODO set default to main quest
+                break;
+                
         }
         
         Button SelectedTab = tabButtons[tabIndex];
@@ -1228,14 +1385,8 @@ public class UIManager : Singleton<UIManager>
         AudioManager.Instance.PlayButtonPressSound();
         CloseCraftingPanel();
         CloseNPCQuestPanel();
-        CloseStatsPanel();
         LootManager.Instance.ClosePanel();
         DialogueManager.Instance.CloseDialoguePanel();
-    }
-
-    private void CloseStatsPanel()
-    {
-        statsPanel.SetActive(false);
     }
     
     private void CloseCraftingPanel()
@@ -1246,17 +1397,6 @@ public class UIManager : Singleton<UIManager>
     private void CloseNPCQuestPanel()
     {
         npcQuestPanel.SetActive(false);
-    }
-
-    public void OpenCloseStatsPanel()
-    {
-        bool isActive = statsPanel.activeSelf;
-        CloseAllPanels();
-        statsPanel.SetActive(!isActive);
-        if (isActive == false)
-        {
-            UpdateStatsPanel();
-        }
     }
 
     public void OpenCloseNPCQuestPanel(bool value)
@@ -1272,41 +1412,6 @@ public class UIManager : Singleton<UIManager>
         CraftingManager.Instance.HideRecipe();
     }
     
-    private void UpdatePlayerUI()
-    {
-        healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount, stats.Health / stats.MaxHealth, 10f * Time.deltaTime);
-        manaBar.fillAmount = Mathf.Lerp(manaBar.fillAmount, stats.Mana / stats.MaxMana, 10f * Time.deltaTime);
-        expBar.fillAmount = Mathf.Lerp(expBar.fillAmount, stats.CurrentExp / stats.NextLevelExp, 10f * Time.deltaTime);
-        
-        levelTMP.text = $"Level {stats.Level}";
-        healthTMP.text = $"{stats.Health} / {stats.MaxHealth}";
-        manaTMP.text = $"{stats.Mana} / {stats.MaxMana}";
-        expTMP.text = $"{stats.CurrentExp} / {stats.NextLevelExp}";
-        coinsTMP.text = CoinManager.Instance.Coins.ToString();
-    }
-
-    private void UpdateStatsPanel()
-    {
-        statsLevelTMP.text = stats.Level.ToString();
-        statsDamageTMP.text = stats.TotalDamage.ToString();
-        statsCChanceTMP.text = stats.CriticalChance.ToString();
-        statsCDamageTMP.text = stats.CriticalDamage.ToString();
-        statsTotalExpTMP.text = stats.TotalExp.ToString();
-        statsCurrentExpTMP.text = stats.CurrentExp.ToString();
-        statsReqExpTMP.text = stats.NextLevelExp.ToString();
-
-        attributePointsTMP.text = $"Points: {stats.AttributePoints}";
-        strengthTMP.text = stats.Strength.ToString();
-        dexterityTMP.text = stats.Dexterity.ToString();
-        intelligenceTMP.text = stats.Intelligence.ToString();
-    
-    }
-
-    private void UpgradeCallback()
-    {
-        UpdateStatsPanel();
-    }
-
     private void OnEnable()
     {
         if (Instance != this) return;
@@ -1314,7 +1419,6 @@ public class UIManager : Singleton<UIManager>
         actions.General.Enable();
         actions.UI.Disable();
         
-        PlayerUpgrade.OnPlayerUpgradeEvent += UpgradeCallback;
         DialogueManager.OnExtraInteractionEvent += ExtraInteractionCallback;
         InventorySlot.OnSlotSelectedEvent += SlotSelectedCallback;
         EquipmentSlot.OnSlotSelectedEvent += EquipmentSlotSelectedCallback;
@@ -1327,7 +1431,6 @@ public class UIManager : Singleton<UIManager>
         actions.General.Enable();
         actions.UI.Disable();
         
-        PlayerUpgrade.OnPlayerUpgradeEvent -= UpgradeCallback;
         DialogueManager.OnExtraInteractionEvent -= ExtraInteractionCallback;
         InventorySlot.OnSlotSelectedEvent -= SlotSelectedCallback;
         EquipmentSlot.OnSlotSelectedEvent -= EquipmentSlotSelectedCallback;

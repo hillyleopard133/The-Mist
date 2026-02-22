@@ -4,13 +4,13 @@ using UnityEngine;
 public class Player : Singleton<Player>
 {
     [Header("Config")]
-    [SerializeField] private PlayerStats stats;
+    //[SerializeField] private PlayerStats stats;
     
     [Header("Test")]
     public ItemHealthPotion HealthPotion;
     public ItemManaPotion ManaPotion;
     
-    public PlayerStats Stats => stats;
+    //public PlayerStats Stats => stats;
     public PlayerMana PlayerMana { get; private set; }
     public PlayerHealth PlayerHealth {get; private set;}
 
@@ -27,6 +27,7 @@ public class Player : Singleton<Player>
         animations = GetComponent<PlayerAnimations>();
     }
 
+    /*
     public void SavePlayerStats()
     {
         stats.SavePlayerStats();
@@ -43,12 +44,13 @@ public class Player : Singleton<Player>
         animations.ResetPlayer();
         PlayerMana.ResetMana();
     }
+    */
 
     public void RespawnPlayer()
     {
         SceneChangeManager.Instance.LoadCheckpoint();
-        PlayerMana.ResetMana();
-        PlayerHealth.ResetHealth();
+        //PlayerMana.ResetMana();
+        //PlayerHealth.ResetHealth();
         animations.ResetPlayer();
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour, IDamageable
 {
     [Header("Config")]
-    [SerializeField] private PlayerStats stats;
 
     private PlayerAnimations playerAnimations;
 
@@ -14,8 +13,10 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         playerAnimations = GetComponent<PlayerAnimations>();
     }
 
+    
     public void TakeDamage(float amount)
     {
+        /*
         if (stats.Health <= 0)
         {
             return;
@@ -28,8 +29,10 @@ public class PlayerHealth : MonoBehaviour, IDamageable
             stats.Health = 0f;
             PlayerDeath();
         }
+        */
     }
 
+    /*
     public void RestoreHealth(float amount)
     {
         stats.Health += amount;
@@ -42,6 +45,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public bool CanRestoreHealth()
     {
         return stats.Health > 0 && stats.Health < stats.MaxHealth;
+        return true;
     }
 
     private void PlayerDeath()
@@ -55,5 +59,6 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     {
         stats.Health = stats.MaxHealth;
     }
+    */
     
 }

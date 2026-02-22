@@ -59,11 +59,13 @@ public class GameManager : Singleton<GameManager>
               SaveTimer();
        }
 
+       /*
        public void AddPlayerExp(float expAmount)
        {
               PlayerExp playerExp = player.GetComponent<PlayerExp>();
               playerExp.AddExp(expAmount);
        }
+       */
 
        public void DisablePlayerMovement()
        {

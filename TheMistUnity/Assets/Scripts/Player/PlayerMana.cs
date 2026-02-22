@@ -2,11 +2,9 @@ using UnityEngine;
 
 public class PlayerMana : MonoBehaviour
 {
-    [Header("Config")]
-    [SerializeField] private PlayerStats stats;
-    
     public float CurrentMana {get; private set;}
 
+    /*
     private void Start()
     {
         ResetMana();
@@ -42,5 +40,6 @@ public class PlayerMana : MonoBehaviour
     {
         CurrentMana = stats.MaxMana;
     }
+    */
 
 }

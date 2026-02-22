@@ -9,6 +9,17 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
     private Player player;
     private UIManager uIManager;
     private Inventory inventory;
+    private NPCFollowerManager npcFollowerManager;
+    private GameManager gameManager;
+    private CameraManager cameraManager;
+    private PauseGameManager pauseGameManager;
+    private EquipmentManager equipmentManager;
+    private QuestManager questManager;
+    private DialogueManager dialogueManager;
+    private SceneChangeManager sceneChangeManager;
+    private CoinManager coinManager;
+    private AudioManager audioManager;
+    private SkillsManager skillsManager;
 
     private bool gameIsActive;
     
@@ -27,6 +38,18 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         player = Player.Instance;
         uIManager = UIManager.Instance;
         inventory = Inventory.Instance;
+        npcFollowerManager = NPCFollowerManager.Instance;
+        gameManager = GameManager.Instance;
+        cameraManager = CameraManager.Instance;
+        pauseGameManager = PauseGameManager.Instance;
+        equipmentManager = EquipmentManager.Instance;
+        questManager = QuestManager.Instance;
+        dialogueManager = DialogueManager.Instance;
+        sceneChangeManager = SceneChangeManager.Instance;
+        coinManager = CoinManager.Instance;
+        audioManager = AudioManager.Instance;
+        skillsManager = SkillsManager.Instance;
+        
         DeactivateGame();    
         
         //TODO add this, run it and then remove it before building game!
@@ -55,22 +78,22 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
 
     private void ActivateGame()
     {
-        NPCFollowerManager.Instance.gameObject.SetActive(true);
+        npcFollowerManager.gameObject.SetActive(true);
         uIManager.ShowGameHUD();
         uIManager.HideStartMenu();
-        GameManager.Instance.EnablePlayerMovement();
-        CameraManager.Instance.SetCameraSize(6);
+        gameManager.EnablePlayerMovement();
+        cameraManager.SetCameraSize(6);
         gameIsActive = true;
     }
 
     private void DeactivateGame()
     {
-        NPCFollowerManager.Instance.gameObject.SetActive(false);
+        npcFollowerManager.gameObject.SetActive(false);
         uIManager.HideGameHUD();
         uIManager.ShowStartMenu();
-        GameManager.Instance.DisablePlayerMovement();
+        gameManager.DisablePlayerMovement();
         player.GetComponent<PlayerAnimations>().ResetPlayer();
-        CameraManager.Instance.SetCameraSize(8);
+        cameraManager.SetCameraSize(8);
         gameIsActive = false;
     }
     
@@ -81,48 +104,50 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         SceneManager.LoadScene(0);
         DeactivateGame();
         player.gameObject.transform.position = startScreenPosition;
-        PauseGameManager.Instance.UnPause();
+        pauseGameManager.UnPause();
         uIManager.CloseAllPanels();
     }
 
     //Save Game data here
     public void SaveGameData()
     {
-        SceneChangeManager.Instance.SaveGameLocation();
-        QuestManager.Instance.SaveQuestData();
-        EquipmentManager.Instance.SaveEquipment();
+        sceneChangeManager.SaveGameLocation();
+        questManager.SaveQuestData();
+        equipmentManager.SaveEquipment();
         inventory.SaveInventory();
-        player.SavePlayerStats();
-        GameManager.Instance.SaveTimer();
+        skillsManager.SaveSkills();
+        //player.SavePlayerStats();
+        gameManager.SaveTimer();
     }
 
     //Reset game data here
     public void StartNewGame()
     {
-        UIManager.Instance.HideNewGameWarning();
-        PauseGameManager.Instance.UnPause();
+        uIManager.HideNewGameWarning();
+        pauseGameManager.UnPause();
         StartCoroutine(LoadSceneCoroutine());
         ActivateGame();
         ResetGameData();
         //TODO AudioManager.Instance.NewGameMusic();
         SetCheckpoint(startingCheckpoint);
-        UIManager.Instance.EnableLoadButton();
+        uIManager.EnableLoadButton();
         SaveGame.Save(FIRST_START, false);
     }
 
     private void ResetGameData()
     {
-        player.ResetPlayer();
+        //player.ResetPlayer();
         inventory.ResetInventory();
-        QuestManager.Instance.ResetQuests();
-        EquipmentManager.Instance.ResetEquipment();
-        CoinManager.Instance.ResetCoins();
-        DialogueManager.Instance.GetDialogueQuestManager().ResetDialogueTriggers();
-        DialogueManager.Instance.ResetNPCs();
-        NPCFollowerManager.Instance.ResetFollowing();
-        GameManager.Instance.ResetTimer();
-        SceneChangeManager.Instance.ResetVisitedScenes();
-        UIManager.Instance.ResetPartyUnlocks();
+        questManager.ResetQuests();
+        equipmentManager.ResetEquipment();
+        coinManager.ResetCoins();
+        dialogueManager.GetDialogueQuestManager().ResetDialogueTriggers();
+        dialogueManager.ResetNPCs();
+        npcFollowerManager.ResetFollowing();
+        gameManager.ResetTimer();
+        sceneChangeManager.ResetVisitedScenes();
+        uIManager.ResetPartyUnlocks();
+        skillsManager.ResetSkills();
     }
     
     private IEnumerator LoadSceneCoroutine()
@@ -145,20 +170,21 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         {
             SceneData data = SaveGame.Load<SceneData>(GAME_LOCATION);
             SceneManager.LoadScene(data.sceneName);
-            AudioManager.Instance.LoadCurrentMusic();
+            audioManager.LoadCurrentMusic();
             Vector3 newPosition = new Vector3(data.playerPosX, data.playerPosY, 0);
-            PauseGameManager.Instance.UnPause();
+            pauseGameManager.UnPause();
             ActivateGame();
             player.gameObject.transform.position = newPosition;
-            player.LoadPlayerStats();
+            //player.LoadPlayerStats();
             inventory.LoadInventory();
-            EquipmentManager.Instance.LoadEquipment();
-            QuestManager.Instance.LoadQuestData();
-            CoinManager.Instance.LoadCoins();
-            DialogueManager.Instance.GetDialogueQuestManager().LoadDialogueTriggers();
-            if (NPCFollowerManager.Instance.gameObject.transform.childCount == 0)
+            skillsManager.LoadSkills();
+            equipmentManager.LoadEquipment();
+            questManager.LoadQuestData();
+            coinManager.LoadCoins();
+            dialogueManager.GetDialogueQuestManager().LoadDialogueTriggers();
+            if (npcFollowerManager.gameObject.transform.childCount == 0)
             {
-                NPCFollowerManager.Instance.InstantiateAppropriateNPCPrefabs();
+                npcFollowerManager.InstantiateAppropriateNPCPrefabs();
             }
         }
     }

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TownToSuppliesShop
   m_EditorClassIdentifier: 
   SceneEntryPointName: ShopEntryPoint
-  TargetScene: {fileID: 102900000, guid: a1135c9b6e63cba47b69739a89238b1c, type: 3}
+  TargetScene: {fileID: 102900000, guid: daab75c857aa3474c8fa26e8b81aa834, type: 3}
   TargetSceneMusic: {fileID: 0}
   MusicVolume: 0

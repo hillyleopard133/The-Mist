@@ -8,10 +8,10 @@ public class ItemHealthPotion : InventoryItem
 
     public override bool UseItem()
     {
-        if (GameManager.Instance.Player.PlayerHealth.CanRestoreHealth())
+        //if (GameManager.Instance.Player.PlayerHealth.CanRestoreHealth())
         {
-            GameManager.Instance.Player.PlayerHealth.RestoreHealth(HealthValue);
-            return true;
+            //GameManager.Instance.Player.PlayerHealth.RestoreHealth(HealthValue);
+            //return true;
         }
         
         return false;

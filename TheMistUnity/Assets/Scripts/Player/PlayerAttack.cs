@@ -7,7 +7,6 @@ using Random = UnityEngine.Random;
 public class PlayerAttack : MonoBehaviour
 {
     [Header("Config")] 
-    [SerializeField] private PlayerStats stats;
     [SerializeField] private Weapon initialWeapon;
     [SerializeField] private Transform[] attackPositions;
     
@@ -88,8 +87,8 @@ public class PlayerAttack : MonoBehaviour
         Quaternion rotation = Quaternion.Euler(new Vector3(0f, 0f, currentAttackRotation));
         Projectile projectile = Instantiate(CurrentWeapon.ProjectilePrefab, currentAttackPosition.position, rotation);
         projectile.Direction = Vector3.up;
-        projectile.Damage = GetAttackDamage();
-        playerMana.UseMana(CurrentWeapon.RequiredMana);
+        //projectile.Damage = GetAttackDamage();
+        //playerMana.UseMana(CurrentWeapon.RequiredMana);
     }
 
     private void MeleeAttack()
@@ -101,16 +100,11 @@ public class PlayerAttack : MonoBehaviour
         Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, minDistanceMeleeAttack, enemyLayer);
         foreach (Collider2D enemy in enemiesInRange)
         {
-            enemy.GetComponent<IDamageable>()?.TakeDamage(GetAttackDamage());
+            //enemy.GetComponent<IDamageable>()?.TakeDamage(GetAttackDamage());
         }
     }
 
-    public void EquipWeapon(Weapon newWeapon)
-    {
-        CurrentWeapon = newWeapon;
-        stats.TotalDamage = stats.BaseDamage + CurrentWeapon.Damage;
-    }
-
+    /*
     private float GetAttackDamage()
     {
         float damage = stats.BaseDamage;
@@ -124,6 +118,7 @@ public class PlayerAttack : MonoBehaviour
         
         return damage;
     }
+    */
 
     private void GetFirePosition()
     {

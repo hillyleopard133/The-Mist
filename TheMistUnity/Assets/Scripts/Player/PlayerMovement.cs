@@ -84,10 +84,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        if(player.Stats.Health <= 0)
-        {
-            return;
-        }
+        //if(player.Stats.Health <= 0)
+        //{
+        //   return;
+        //}
         float speed = walkSpeed;
         if(isSprinting) speed = sprintSpeed;
         rb2D.MovePosition(rb2D.position + moveDirection * (speed * Time.fixedDeltaTime));

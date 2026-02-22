@@ -15,13 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/RPG/DarkWoods.unity
     guid: 0855e4e4c7e68f84698318e2323b3f77
   - enabled: 0
-    path: Assets/Scenes/Shops/PotionShop.unity
-    guid: daab75c857aa3474c8fa26e8b81aa834
-  - enabled: 1
-    path: Assets/Scenes/Shops/WeaponShop.unity
-    guid: 167655c965542ae42bfb48c21184f441
-  - enabled: 1
-    path: Assets/Scenes/Shops/SuppliesShop.unity
+    path: Assets/Scenes/Shops/MagicShop.unity
     guid: a1135c9b6e63cba47b69739a89238b1c
   - enabled: 1
     path: Assets/Scenes/StartingScreen.unity
@@ -32,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TheMistTemple.unity
     guid: ce5daf11e53e7d1488f67b89a3a090de
+  - enabled: 1
+    path: Assets/Scenes/Shops/WeaponShop.unity
+    guid: 167655c965542ae42bfb48c21184f441
+  - enabled: 1
+    path: Assets/Scenes/Shops/SuppliesShop.unity
+    guid: daab75c857aa3474c8fa26e8b81aa834
   - enabled: 1
     path: Assets/Scenes/HamsterHoles.unity
     guid: fa608af621e19274098e4d5d15feb7e9

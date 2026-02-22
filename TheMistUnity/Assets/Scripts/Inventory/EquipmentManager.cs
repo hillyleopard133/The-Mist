@@ -10,8 +10,6 @@ public class EquipmentManager : Singleton<EquipmentManager>
     private ItemArmour[] equippedArmour;
     private ItemWeapon[] equippedWeapons;
     private ItemScroll[] equippedScrolls;
-
-    private const int partySize = 3;
     
     private const string EQUIPMENT_ARMOUR = "EQUIPMENT_ARMOUR";
     private const string EQUIPMENT_WEAPONS = "EQUIPMENT_WEAPONS";
@@ -25,10 +23,14 @@ public class EquipmentManager : Singleton<EquipmentManager>
     private int currentType;
     
     [SerializeField] public int inventorySize = 9;
-    [SerializeField] public PartyMember[] partyMembers;
+    [HideInInspector] public PartyMember[] partyMembers;
+    private int partySize;
 
     private void Start()
     {
+        partyMembers = SkillsManager.Instance.partyMembers;
+        partySize = partyMembers.Length;
+        
         equippedArmour = new ItemArmour[partySize];
         equippedWeapons = new ItemWeapon[partySize];
         equippedScrolls = new ItemScroll[partySize];
@@ -195,12 +197,7 @@ public class EquipmentManager : Singleton<EquipmentManager>
             equippedArmour[i] = null;
             equippedScrolls[i] = null;
         }
-
-        foreach (PartyMember partyMember in partyMembers)
-        {
-            partyMember.ResetPartyMember();
-        }
-        partyMembers[0].UnlockPartyMember();
+        
         SaveEquipment();
     }
 

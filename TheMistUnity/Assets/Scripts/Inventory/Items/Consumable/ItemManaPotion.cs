@@ -10,10 +10,10 @@ public class ItemManaPotion : InventoryItem
 
     public override bool UseItem()
     {
-        if (GameManager.Instance.Player.PlayerMana.CanRecoverMana())
+        //if (GameManager.Instance.Player.PlayerMana.CanRecoverMana())
         {
-            GameManager.Instance.Player.PlayerMana.RecoverMana(ManaValue);
-            return true;
+            //GameManager.Instance.Player.PlayerMana.RecoverMana(ManaValue);
+            //return true;
         }
         
         return false;
