@@ -21,7 +21,7 @@ public class QuestManager : Singleton<QuestManager>
         AudioManager.Instance.PlayAcceptQuestSound();
         if (!quest.IsMainQuest)
         {
-            UIManager.Instance.UpdateQuestList();
+            UIManager.Instance.LoadQuestsUI();
         }
         quest.QuestAccepted = true;
         SaveQuestData();
@@ -41,22 +41,6 @@ public class QuestManager : Singleton<QuestManager>
         }
         
         SaveQuestData();
-    }
-
-    public void CompleteQuest(string questID)
-    {
-        Quest questToUpdate = QuestExists(questID);
-        if (questToUpdate == null)
-        {
-            return;
-        }
-
-        if (questToUpdate.QuestAccepted)
-        {
-            questToUpdate.CompleteQuest();
-        }
-        
-        UIManager.Instance.UpdateQuestList();
     }
 
     private Quest QuestExists(string questID)
@@ -82,9 +66,8 @@ public class QuestManager : Singleton<QuestManager>
             {
                 AllQuests[i].QuestAccepted = questData.QuestAccepted[i];
                 AllQuests[i].QuestCompleted = questData.QuestCompleted[i];
-                AllQuests[i].QuestClaimed = questData.QuestClaimed[i];
                 
-                if (AllQuests[i].QuestAccepted && !AllQuests[i].QuestClaimed)
+                if (AllQuests[i].QuestAccepted)
                 {
                     acceptedQuests.Add(AllQuests[i]);
                 }
@@ -98,14 +81,11 @@ public class QuestManager : Singleton<QuestManager>
         QuestData questData = new QuestData();
         questData.QuestAccepted = new bool[AllQuests.Length];
         questData.QuestCompleted = new bool[AllQuests.Length];
-        questData.CurrentStatus = new int[AllQuests.Length];
-        questData.QuestClaimed = new bool[AllQuests.Length];
 
         for (int i = 0; i < AllQuests.Length; i++)
         {
             questData.QuestAccepted[i] = AllQuests[i].QuestAccepted;
             questData.QuestCompleted[i] = AllQuests[i].QuestCompleted;
-            questData.QuestClaimed[i] = AllQuests[i].QuestClaimed;
         }
         SaveGame.Save(QUEST_DATA, questData);
     }

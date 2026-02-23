@@ -97,7 +97,6 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         gameIsActive = false;
     }
     
-    //Save Game data here
     public void QuitToMenu()
     {
         SaveGameData();
@@ -135,7 +134,6 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
 
     private void ResetGameData()
     {
-        //player.ResetPlayer();
         inventory.ResetInventory();
         questManager.ResetQuests();
         equipmentManager.ResetEquipment();
@@ -174,7 +172,6 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
             pauseGameManager.UnPause();
             ActivateGame();
             player.gameObject.transform.position = newPosition;
-            //player.LoadPlayerStats();
             inventory.LoadInventory();
             skillsManager.LoadSkills();
             equipmentManager.LoadEquipment();

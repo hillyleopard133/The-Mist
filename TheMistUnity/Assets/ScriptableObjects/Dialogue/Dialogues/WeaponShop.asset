@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WeaponShop
   m_EditorClassIdentifier: 
   characterSpeakers:
-  - {fileID: 11400000, guid: 278e0c2fa08dab8458dab3cc3a42dc3d, type: 2}
+  - {fileID: 11400000, guid: 949442375859ba74d845783f6b433e40, type: 2}
   nodes:
   - {fileID: 6247167351115152674}
   newNodeOffset: {x: 350, y: 0}

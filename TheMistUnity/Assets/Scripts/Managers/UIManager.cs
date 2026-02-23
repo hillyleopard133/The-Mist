@@ -53,6 +53,10 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject questPrefab;
     [SerializeField] private Color completedTaskColor;
     [SerializeField] private Color currentTaskColor;
+    [SerializeField] private GameObject questRewardsList;
+    [SerializeField] private GameObject questRewardPrefab;
+    [SerializeField] private Sprite coinIcon;
+    [SerializeField] private Sprite expIcon;
     private Quest currentlySelectedQuest;
     
     [Header("Inventory")]
@@ -605,7 +609,7 @@ public class UIManager : Singleton<UIManager>
         partyMembersButtons[index].interactable = true;
         partyMemberImages[index].color = Color.white;
         questionMarks[index].SetActive(false);
-        EquipmentManager.Instance.partyMembers[index].UnlockPartyMember();
+        skillsManager.partyMembers[index].UnlockPartyMember();
     }
 
     public void ResetPartyUnlocks()
@@ -654,7 +658,7 @@ public class UIManager : Singleton<UIManager>
 
     private void UpdateCharacterStats()
     {
-        PartyMember partyMember = EquipmentManager.Instance.partyMembers[selectedPartyMember];
+        PartyMember partyMember = skillsManager.partyMembers[selectedPartyMember];
         characterName.text = partyMember.Name;
         characterDescription.text = partyMember.Description;
         characterHealth.text = "Health: " + partyMember.CurrentMaxHealth;
@@ -1052,7 +1056,7 @@ public class UIManager : Singleton<UIManager>
         UpdateQuestList();
     }
 
-    public void UpdateQuestList()
+    private void UpdateQuestList()
     {
         ClearChildren(questListContent.transform);
 
@@ -1122,6 +1126,36 @@ public class UIManager : Singleton<UIManager>
                 currentTaskReached = true;
             }
         }
+        
+        UpdateQuestRewards(quest);
+    }
+    
+    private void UpdateQuestRewards(Quest quest)
+    {
+        ClearChildren(questRewardsList.transform);
+         int coinReward = quest.CoinReward;
+         int expReward = quest.ExpReward;
+         QuestItemReward[] itemRewards = quest.ItemRewards;
+
+         if (coinReward > 0)
+         {
+             GameObject coinRewardObject = Instantiate(questRewardPrefab, questRewardsList.transform);
+             coinRewardObject.GetComponentInChildren<TextMeshProUGUI>().text = "Coins x" + coinReward;
+             coinRewardObject.GetComponentInChildren<Image>().sprite = coinIcon;
+         }
+         if (expReward > 0)
+         {
+             GameObject expRewardObject = Instantiate(questRewardPrefab, questRewardsList.transform);
+             expRewardObject.GetComponentInChildren<TextMeshProUGUI>().text = "Exp x" + expReward;
+             expRewardObject.GetComponentInChildren<Image>().sprite = expIcon;
+         }
+         foreach (QuestItemReward questItemReward in itemRewards)
+         {
+             InventoryItem item = questItemReward.Item;
+             GameObject itemRewardObject = Instantiate(questRewardPrefab, questRewardsList.transform);
+             itemRewardObject.GetComponentInChildren<TextMeshProUGUI>().text = item.Name + " x" + questItemReward.Quantity;
+             itemRewardObject.GetComponentInChildren<Image>().sprite = item.Icon;
+         }
     }
     
     #endregion

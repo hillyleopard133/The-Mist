@@ -97,7 +97,6 @@ public class NPCFollowPlayer : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("Scene Loaded");
         if (hasDestination)
         {
             if (scene.name == destinationScene)

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu]
 public class Quest : ScriptableObject
@@ -19,13 +20,12 @@ public class Quest : ScriptableObject
     public QuestTask[] Tasks;
 
     [Header("Reward")]
-    public int GoldReward;
-    public float ExpReward;
-    public QuestItemReward[] ItemReward;
+    public int CoinReward;
+    public int ExpReward;
+    public QuestItemReward[] ItemRewards;
 
     [HideInInspector] public bool QuestCompleted;
     [HideInInspector] public bool QuestAccepted;
-    [HideInInspector] public bool QuestClaimed;
     
     public void AddProgress(int amount = 0)
     {
@@ -52,13 +52,27 @@ public class Quest : ScriptableObject
             return;
         }
         QuestCompleted = true;
+        GiveQuestRewards();
+        
+        QuestManager.Instance.SaveQuestData();
+        UIManager.Instance.LoadQuestsUI();
+    }
+
+    public void GiveQuestRewards()
+    {
+        SkillsManager.Instance.AddExp(ExpReward);
+        CoinManager.Instance.AddCoins(CoinReward);
+
+        foreach (QuestItemReward itemReward in ItemRewards)
+        {
+            Inventory.Instance.AddItem(itemReward.Item, itemReward.Quantity);
+        }
     }
 
     public void ResetQuest()
     {
         QuestAccepted = false;
         QuestCompleted = false;
-        QuestClaimed = false;
         
         ResetTasks();
     }

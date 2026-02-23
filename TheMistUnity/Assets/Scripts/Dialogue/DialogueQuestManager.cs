@@ -13,12 +13,7 @@ public class DialogueQuestManager : ScriptableObject
         QuestManager.Instance.AcceptQuest(quest);
         quest.QuestAccepted = true;
     }
-
-    public void CompleteQuest(Quest quest)
-    {
-        QuestManager.Instance.CompleteQuest(quest.ID);    
-    }
-
+    
     public void AddQuestProgress(Quest quest)
     {
         quest.AddProgress(1);

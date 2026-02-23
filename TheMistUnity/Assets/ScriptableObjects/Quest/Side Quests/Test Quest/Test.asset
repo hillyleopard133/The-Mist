@@ -22,13 +22,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 12bcce83440e94c46833ad1d3863a827, type: 2}
   - {fileID: 11400000, guid: bbfa7d19706537847acbe9586b9e179c, type: 2}
   - {fileID: 11400000, guid: 48cc6651b44b46446945f3b5797ab010, type: 2}
-  GoldReward: 0
-  ExpReward: 0
-  ItemReward:
-  - Item: {fileID: 0}
-    Quantity: 0
-  - Item: {fileID: 0}
-    Quantity: 0
-  QuestCompleted: 0
+  CoinReward: 100
+  ExpReward: 700
+  ItemRewards:
+  - Item: {fileID: 11400000, guid: c140cb74975e58645bbc70444ad6e1a8, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 57254d906bfe50b4fab1186fedeef4ba, type: 2}
+    Quantity: 5
+  - Item: {fileID: 11400000, guid: c30386ce42986744fbc0b86f997aa5ae, type: 2}
+    Quantity: 3
+  QuestCompleted: 1
   QuestAccepted: 1
-  QuestClaimed: 0
