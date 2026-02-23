@@ -1895,7 +1895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HasInteraction: 1
-  InteractionType: 1
+  InteractionType: 0
   Dialogue: {fileID: 11400000, guid: a6e28869cb863104c9a2fd050d68284f, type: 2}
   startDialogueOnEnterInitial: 0
   dialogueIsNotLeavableInitial: 0

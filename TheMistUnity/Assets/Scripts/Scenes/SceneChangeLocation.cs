@@ -6,7 +6,7 @@ public class SceneChangeLocation : ScriptableObject
 {
     [Header("Info")]
     public string SceneEntryPointName;
-    public SceneAsset TargetScene;
+    public string TargetScene;
     public AudioClip TargetSceneMusic;
     public float MusicVolume;
 }

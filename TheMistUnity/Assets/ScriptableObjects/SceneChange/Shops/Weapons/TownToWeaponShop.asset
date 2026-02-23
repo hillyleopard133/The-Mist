@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TownToWeaponShop
   m_EditorClassIdentifier: 
   SceneEntryPointName: ShopEntryPoint
-  TargetScene: {fileID: 102900000, guid: 167655c965542ae42bfb48c21184f441, type: 3}
+  TargetScene: WeaponShop
   TargetSceneMusic: {fileID: 0}
   MusicVolume: 0

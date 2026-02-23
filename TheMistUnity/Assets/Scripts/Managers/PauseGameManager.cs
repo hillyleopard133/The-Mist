@@ -80,7 +80,7 @@ public class PauseGameManager : Singleton<PauseGameManager>
     {
         if (actions != null)
         {
-            actions.Enable();
+            actions.General.Pause.Enable();
         }
     }
 
@@ -88,7 +88,7 @@ public class PauseGameManager : Singleton<PauseGameManager>
     {
         if (actions != null)
         {
-            actions.Disable();
+            actions.General.Pause.Disable();
         }
     }
     

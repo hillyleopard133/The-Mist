@@ -121,11 +121,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnEnable()
     {
-        actions.Enable();
+        EnableMovement();
     }
 
     private void OnDisable()
     {
-        actions.Disable();
+        DisableMovement();
     }
 }

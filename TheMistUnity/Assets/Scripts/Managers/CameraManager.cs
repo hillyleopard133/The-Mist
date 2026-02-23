@@ -39,7 +39,7 @@ public class CameraManager : Singleton<CameraManager>
     {
         if (actions != null)
         {
-            actions.Enable();
+            actions.BSP.Enable();
         }
     }
 
@@ -47,7 +47,7 @@ public class CameraManager : Singleton<CameraManager>
     {
         if (actions != null)
         {
-            actions.Disable();
+            actions.BSP.Disable();
         }
     }
 }

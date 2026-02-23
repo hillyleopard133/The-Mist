@@ -1498,7 +1498,6 @@ public class UIManager : Singleton<UIManager>
         if (Instance != this) return;
         
         actions.General.Enable();
-        actions.UI.Disable();
         
         DialogueManager.OnExtraInteractionEvent += ExtraInteractionCallback;
         InventorySlot.OnSlotSelectedEvent += SlotSelectedCallback;

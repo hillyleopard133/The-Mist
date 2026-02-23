@@ -151,12 +151,12 @@ public class PlayerAttack : MonoBehaviour
 
     private void OnEnable()
     {
-        actions.Enable();
+        actions.Attack.Enable();
     }
 
     private void OnDisable()
     {
-        actions.Disable();
+        actions.Attack.Disable();
     }
 
 }

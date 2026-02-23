@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: WeaponShopToTown
   m_EditorClassIdentifier: 
   SceneEntryPointName: WeaponShopExitPoint
-  TargetScene: {fileID: 102900000, guid: d2643499299bb6a4eb9296533b7d578c, type: 3}
+  TargetScene: TownTheMist
   TargetSceneMusic: {fileID: 0}
   MusicVolume: 0

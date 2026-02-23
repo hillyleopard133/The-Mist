@@ -51,16 +51,17 @@ public class DialogueManager : Singleton<DialogueManager>
         actions.Dialogue.Interact.performed += ctx => StartDialogue();
         actions.Dialogue.Continue.performed += ctx => Next();
         LoadNPCs();
+        actions.Dialogue.Continue.Disable();
     }
 
     public void EnableActions()
     {
-        actions.Dialogue.Enable();
+        actions.Dialogue.Interact.Enable();
     }
     
     public void DisableActions()
     {
-        actions.Dialogue.Disable();
+        actions.Dialogue.Interact.Disable();
     }
     
 
@@ -115,17 +116,17 @@ public class DialogueManager : Singleton<DialogueManager>
         }
     }
 
-    public CharacterSpeaker GetCurrentSpeaker()
+    private CharacterSpeaker GetCurrentSpeaker()
     {
         return currentDialogue.GetCharacterSpeakers()[currentNode.speakerIndex];
     }
 
-    public IEnumerable<DialogueNode> GetChoices()
+    private IEnumerable<DialogueNode> GetChoices()
     {
         return FilterOnCondition(currentDialogue.GetPlayerChildren(currentNode));
     }
 
-    public void SelectChoice(DialogueNode chosenNode)
+    private void SelectChoice(DialogueNode chosenNode)
     {
         currentNode = chosenNode;
         TriggerAction();
@@ -142,14 +143,16 @@ public class DialogueManager : Singleton<DialogueManager>
         TriggerAction();
         UpdateUI();
         dialogueStarted = true;
+        actions.Dialogue.Continue.Enable();
         if (NPCSelected.GetDialogueIsNotLeavable())
         {
             GameManager.Instance.DisablePlayerMovement();
         }
     }
     
-    public void Next()
+    private void Next()
     {
+        if (isChoosing) return;
         if (currentNode.IsTriggerInteraction())
         {
             InvokeInteraction();
@@ -175,7 +178,7 @@ public class DialogueManager : Singleton<DialogueManager>
         UpdateUI();
     }
     
-    public bool HasNext()
+    private bool HasNext()
     {
         return FilterOnCondition(currentDialogue.GetAllChildren(currentNode)).Count() > 0;
     }
@@ -248,9 +251,10 @@ public class DialogueManager : Singleton<DialogueManager>
         isChoosing = false;
         dialoguePanel.SetActive(false);
         dialogueStarted = false;
+        actions.Dialogue.Continue.Disable();
     }
 
-    public void InvokeInteraction()
+    private void InvokeInteraction()
     {
         CloseDialoguePanel();
         if (NPCSelected.HasInteraction)
@@ -263,7 +267,7 @@ public class DialogueManager : Singleton<DialogueManager>
     {
         if (actions != null)
         {
-            actions.Enable();
+            actions.Dialogue.Interact.Enable();
         }
     }
 
@@ -271,7 +275,7 @@ public class DialogueManager : Singleton<DialogueManager>
     {
         if (actions != null)
         {
-            actions.Disable();
+            actions.Dialogue.Interact.Disable();
         }
     }
 }

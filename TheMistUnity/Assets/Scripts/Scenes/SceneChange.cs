@@ -7,7 +7,7 @@ public class SceneChange : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneChangeManager.Instance.LoadScene(location.TargetScene.name, location.SceneEntryPointName);
+            SceneChangeManager.Instance.LoadScene(location.TargetScene, location.SceneEntryPointName);
             if (location.TargetSceneMusic == null) return;
             AudioManager.Instance.PlayMusic(location.TargetSceneMusic, location.MusicVolume);
         }

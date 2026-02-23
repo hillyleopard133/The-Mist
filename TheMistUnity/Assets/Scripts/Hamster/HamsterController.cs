@@ -94,11 +94,11 @@ public class HamsterController : MonoBehaviour
 
     private void OnEnable()
     {
-        actions.Enable();
+        actions.Hamster.Enable();
     }
 
     private void OnDisable()
     {
-        actions.Disable();
+        actions.Hamster.Disable();
     }
 }

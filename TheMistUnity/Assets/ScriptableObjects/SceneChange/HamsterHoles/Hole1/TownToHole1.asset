@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TownToHole1
   m_EditorClassIdentifier: 
   SceneEntryPointName: Hole1Entry
-  TargetScene: {fileID: 102900000, guid: fa608af621e19274098e4d5d15feb7e9, type: 3}
+  TargetScene: HamsterHoles
   TargetSceneMusic: {fileID: 0}
   MusicVolume: 0

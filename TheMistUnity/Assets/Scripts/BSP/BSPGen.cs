@@ -143,12 +143,12 @@ public class BSPGen: MonoBehaviour
     
     private void OnEnable()
     {
-        actions.Enable();
+        actions.BSP.Enable();
     }
 
     private void OnDisable()
     {
-        actions.Disable();
+        actions.BSP.Disable();
     }
     
 }

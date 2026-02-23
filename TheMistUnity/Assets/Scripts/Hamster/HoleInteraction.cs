@@ -26,7 +26,7 @@ public class HoleInteraction : MonoBehaviour
     {
         if(!interactionBox.activeSelf || PauseGameManager.Instance.isPaused) return;
         
-        SceneChangeManager.Instance.LoadScene(location.TargetScene.name, location.SceneEntryPointName);
+        SceneChangeManager.Instance.LoadScene(location.TargetScene, location.SceneEntryPointName);
         if (location.TargetSceneMusic == null) return;
         AudioManager.Instance.PlayMusic(location.TargetSceneMusic, location.MusicVolume);
     }
@@ -51,7 +51,7 @@ public class HoleInteraction : MonoBehaviour
     {
         if (actions != null)
         {
-            actions.Enable();
+            actions.Hamster.Enable();
         }
     }
 
@@ -59,7 +59,7 @@ public class HoleInteraction : MonoBehaviour
     {
         if (actions != null)
         {
-            actions.Disable();
+            actions.Hamster.Disable();
         }
     }
 }
