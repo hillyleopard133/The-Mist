@@ -33,6 +33,11 @@ public class UIManager : Singleton<UIManager>
     private float respawnTimer;
     private bool isReviving;
     
+    [Header("Loading Screen")]
+    [SerializeField] private GameObject loadingScreen;
+    [SerializeField] private TextMeshProUGUI loadingText;
+    [SerializeField] private RectTransform loadingProgressBar;
+    
     [Header("Tab Menu")]
     [SerializeField] private GameObject tabMenu;
     [SerializeField] private GameObject[] tabs;
@@ -1362,6 +1367,25 @@ public class UIManager : Singleton<UIManager>
         ShowGameHUD();
     }
     
+    #endregion
+
+    #region Loading
+
+    public void ActivateLoadingScreen(bool isActive)
+    {
+        loadingScreen.SetActive(isActive);
+        Debug.Log("Loading screen: " + isActive);
+    }
+
+    public void UpdateLoadingProgress(float progress)
+    {
+        Vector3 scale = loadingProgressBar.localScale;
+        scale.x = progress;
+        loadingProgressBar.localScale = scale;
+        
+        loadingText.text = "Loading - " + (progress * 100) + "%";
+    }
+
     #endregion
 
     #region Settings

@@ -90,20 +90,27 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
     private IEnumerator LoadSceneCoroutine(string sceneName, string spawnLocation)
     {
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName);
-
-        while (!asyncOperation.isDone)
+        
+        UIManager.Instance.ActivateLoadingScreen(true);
+        
+        float minimumDisplayTime = 0.3f;
+        float timer = 0f;
+        
+        while (!asyncOperation.isDone || timer < minimumDisplayTime)
         {
-            //TODO create loading screen
-            //float progress = Mathf.Clamp01(asyncOperation.progress / 0.9f);
-            //Debug.Log("Loading Progress: " + (progress * 100) + "%");
-
+            timer += Time.deltaTime;
+            float progress = Mathf.Clamp01(asyncOperation.progress / 0.9f);
+            UIManager.Instance.UpdateLoadingProgress(progress);
             yield return null;
         }
+        yield return null;
         
         SaveGame.Save(CHECKPOINT, spawnLocation);
         SaveGameLocation();
         PositionPlayer(spawnLocation);
         GameManager.Instance.SaveTimer();
+        
+        UIManager.Instance.ActivateLoadingScreen(false);
     }
 
     public void LoadCheckpoint()

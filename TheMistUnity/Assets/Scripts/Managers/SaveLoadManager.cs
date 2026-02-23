@@ -123,7 +123,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
     {
         uIManager.HideNewGameWarning();
         pauseGameManager.UnPause();
-        StartCoroutine(LoadSceneCoroutine());
+        StartCoroutine(LoadNewGameSceneCoroutine());
         ActivateGame();
         ResetGameData();
         //TODO AudioManager.Instance.NewGameMusic();
@@ -147,15 +147,18 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         skillsManager.ResetSkills();
     }
     
-    private IEnumerator LoadSceneCoroutine()
+    private IEnumerator LoadNewGameSceneCoroutine()
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         
-        // Wait until the scene is fully loaded
+        UIManager.Instance.ActivateLoadingScreen(true);
         while (!asyncLoad.isDone)
         {
+            float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
+            UIManager.Instance.UpdateLoadingProgress(progress);
             yield return null;
         }
+        UIManager.Instance.ActivateLoadingScreen(false);
         
         SaveGameData();
     }
@@ -165,23 +168,43 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
     {
         if (SaveGame.Exists(GAME_LOCATION))
         {
-            SceneData data = SaveGame.Load<SceneData>(GAME_LOCATION);
-            SceneManager.LoadScene(data.sceneName);
-            audioManager.LoadCurrentMusic();
-            Vector3 newPosition = new Vector3(data.playerPosX, data.playerPosY, 0);
-            pauseGameManager.UnPause();
-            ActivateGame();
-            player.gameObject.transform.position = newPosition;
-            inventory.LoadInventory();
-            skillsManager.LoadSkills();
-            equipmentManager.LoadEquipment();
-            questManager.LoadQuestData();
-            coinManager.LoadCoins();
-            dialogueManager.GetDialogueQuestManager().LoadDialogueTriggers();
-            if (npcFollowerManager.gameObject.transform.childCount == 0)
-            {
-                npcFollowerManager.InstantiateAppropriateNPCPrefabs();
-            }
+            StartCoroutine(LoadSaveGameCoroutine());
         }
+    }
+    
+    private IEnumerator LoadSaveGameCoroutine()
+    {
+        SceneData data = SaveGame.Load<SceneData>(GAME_LOCATION);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(data.sceneName);
+        
+        UIManager.Instance.ActivateLoadingScreen(true);
+        while (!asyncLoad.isDone)
+        {
+            float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
+            UIManager.Instance.UpdateLoadingProgress(progress);
+            yield return null;
+        }
+        
+        yield return null;
+        
+        audioManager.LoadCurrentMusic();
+        Vector3 newPosition = new Vector3(data.playerPosX, data.playerPosY, 0);
+        pauseGameManager.UnPause();
+        ActivateGame();
+        player.gameObject.transform.position = newPosition;
+        inventory.LoadInventory();
+        skillsManager.LoadSkills();
+        equipmentManager.LoadEquipment();
+        questManager.LoadQuestData();
+        coinManager.LoadCoins();
+        dialogueManager.GetDialogueQuestManager().LoadDialogueTriggers();
+        if (npcFollowerManager.gameObject.transform.childCount == 0)
+        {
+            npcFollowerManager.InstantiateAppropriateNPCPrefabs();
+        }
+        
+        UIManager.Instance.UpdateLoadingProgress(1f);
+        yield return new WaitForSeconds(0.1f);
+        UIManager.Instance.ActivateLoadingScreen(false);
     }
 }
