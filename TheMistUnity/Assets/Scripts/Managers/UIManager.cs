@@ -117,6 +117,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Button[] partyMembersButtons;
     [SerializeField] private Image[] partyMemberImages;
     [SerializeField] private GameObject[] questionMarks;
+    [SerializeField] private GameObject[] partyMemberShrouds;
     [SerializeField] private Color selectedPartyMemberColor;
     private int selectedPartyMember = 0;
     
@@ -218,15 +219,6 @@ public class UIManager : Singleton<UIManager>
         InitialiseInventory();
         InitialiseEquipmentInventory();
         InitialiseShopInventories();
-        
-        //TODO for testing
-        //skillsManager.partyMembers[0].UnlockPartyMember();
-    }
-    
-    private void Update()
-    {
-        //UpdatePlayerUI();
-        //UpdateRevivingClock();
     }
     
     #endregion
@@ -632,16 +624,24 @@ public class UIManager : Singleton<UIManager>
         selectedPartyMember = memberIndex;
         UpdateEquipmentList();
         FilterEquipment(currentEquipment);
+
+        foreach (GameObject shroud in partyMemberShrouds)
+        {
+            shroud.SetActive(true);
+        }
+        partyMemberShrouds[selectedPartyMember].SetActive(false);
         
         foreach (Button partyMember in partyMembersButtons)
         {
             ColorBlock colors = partyMember.colors;    
-            colors.normalColor = Color.white;
+            //colors.normalColor = Color.white;
+            colors.normalColor = selectedPartyMemberColor;
             partyMember.colors = colors; 
         }
         Button SelectedMember = partyMembersButtons[memberIndex];
         ColorBlock cb = SelectedMember.colors;    
-        cb.normalColor = selectedPartyMemberColor;
+        //cb.normalColor = selectedPartyMemberColor;
+        cb.normalColor = Color.white;
         SelectedMember.colors = cb;
     }
 
@@ -931,7 +931,7 @@ public class UIManager : Singleton<UIManager>
 
     #region Inventory
 
-    private void SwitchInventory(int direction)
+    public void SwitchInventory(int direction)
     {
         currentInventory += direction;
         if(currentInventory < 0) currentInventory = inventoryTabs.Length - 1;
@@ -1251,7 +1251,7 @@ public class UIManager : Singleton<UIManager>
         SelectedTab.colors = cb;   
     }
 
-    private void SwitchTab(int direction)
+    public void SwitchTab(int direction)
     {
         if (!tabMenu.activeSelf) return;
         
@@ -1277,6 +1277,11 @@ public class UIManager : Singleton<UIManager>
 
     public void ActivateNewGameWarning()
     {
+        if (SaveLoadManager.Instance.isFirstTimeStartingGame)
+        {
+            SaveLoadManager.Instance.StartNewGame();
+            return;
+        }
         HideStartMenu();
         newGameWarning.SetActive(true);
     }
@@ -1374,7 +1379,6 @@ public class UIManager : Singleton<UIManager>
     public void ActivateLoadingScreen(bool isActive)
     {
         loadingScreen.SetActive(isActive);
-        Debug.Log("Loading screen: " + isActive);
     }
 
     public void UpdateLoadingProgress(float progress)

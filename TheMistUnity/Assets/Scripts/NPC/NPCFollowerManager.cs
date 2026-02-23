@@ -6,15 +6,6 @@ using UnityEngine;
 public class NPCFollowerManager : Singleton<NPCFollowerManager>
 {
     [SerializeField] private GameObject[] npcs;
-    protected override void Awake()
-    {
-        base.Awake(); 
-    }
-
-    private void Start()
-    {
-        //InstantiateAppropriatePrefabs();
-    }
 
     public void ResetFollowing()
     {

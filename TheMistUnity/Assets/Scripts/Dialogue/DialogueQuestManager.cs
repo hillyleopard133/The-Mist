@@ -43,6 +43,7 @@ public class DialogueQuestManager : ScriptableObject
             followPlayer.enabled = true;
             followPlayer.StartFollowing();
         }
+        DialogueManager.Instance.SelectNPC(null);
     }
 
     public void AddExp(int amount)

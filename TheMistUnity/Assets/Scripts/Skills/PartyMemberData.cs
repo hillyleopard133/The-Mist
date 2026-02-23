@@ -14,4 +14,6 @@ public class PartyMemberData
     public int SkillPointsAttack;
     public int SkillPointsCritChance;
     public int SkillPointsMana;
+
+    public bool isUnlocked;
 }

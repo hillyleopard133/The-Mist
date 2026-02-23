@@ -27,7 +27,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
     private Vector3 startScreenPosition = new Vector3(0, -0.5f, 0);
     
     [SerializeField] private string startingCheckpoint;
-    [SerializeField] private bool isFirstTimeStartingGame;
+    [SerializeField] public bool isFirstTimeStartingGame;
     
     private readonly string GAME_LOCATION = "MY_LOCATION";
     private readonly string CHECKPOINT = "CHECKPOINT";
@@ -129,6 +129,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         //TODO AudioManager.Instance.NewGameMusic();
         SetCheckpoint(startingCheckpoint);
         uIManager.EnableLoadButton();
+        SaveGameData();
         SaveGame.Save(FIRST_START, false);
     }
 

@@ -174,6 +174,8 @@ public class PartyMember : ScriptableObject
         partyMemberData.SkillPointsAttack = SkillPointsAttack;
         partyMemberData.SkillPointsCritChance = SkillPointsCritChance;
         partyMemberData.SkillPointsMana = SkillPointsMana;
+        
+        partyMemberData.isUnlocked = isUnlocked;
 
         return partyMemberData;
     }
@@ -191,5 +193,7 @@ public class PartyMember : ScriptableObject
         SkillPointsAttack = partyMemberData.SkillPointsAttack;
         SkillPointsCritChance = partyMemberData.SkillPointsCritChance;
         SkillPointsMana = partyMemberData.SkillPointsMana;
+        
+        isUnlocked = partyMemberData.isUnlocked;
     }
 }

@@ -61,7 +61,7 @@ public class PauseGameManager : Singleton<PauseGameManager>
 
     public void PauseGame()
     {
-        DialogueManager.Instance.DisableActions();
+        DialogueManager.Instance.DisableDialogueActions();
         GameManager.Instance.DisablePlayerMovement();
         Time.timeScale = 0f;
         isPaused = true;
@@ -69,7 +69,7 @@ public class PauseGameManager : Singleton<PauseGameManager>
 
     public void UnPause()
     {
-        DialogueManager.Instance.EnableActions();
+        DialogueManager.Instance.EnableDialogueActions();
         pauseMenu.SetActive(false);
         GameManager.Instance.EnablePlayerMovement();
         Time.timeScale = 1f;

@@ -388,7 +388,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 6200000, guid: 71d717832d74cc14598fb4a7899f7bf5, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -506,7 +506,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 2048
-  jumpForce: 7
+  jumpForce: 12
 --- !u!1 &875810175
 GameObject:
   m_ObjectHideFlags: 0

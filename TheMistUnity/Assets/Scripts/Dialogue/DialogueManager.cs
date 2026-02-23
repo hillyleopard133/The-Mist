@@ -54,12 +54,12 @@ public class DialogueManager : Singleton<DialogueManager>
         actions.Dialogue.Continue.Disable();
     }
 
-    public void EnableActions()
+    public void EnableDialogueActions()
     {
         actions.Dialogue.Interact.Enable();
     }
     
-    public void DisableActions()
+    public void DisableDialogueActions()
     {
         actions.Dialogue.Interact.Disable();
     }
