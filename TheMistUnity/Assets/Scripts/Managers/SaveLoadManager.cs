@@ -116,7 +116,6 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         equipmentManager.SaveEquipment();
         inventory.SaveInventory();
         skillsManager.SaveSkills();
-        //player.SavePlayerStats();
         gameManager.SaveTimer();
     }
 

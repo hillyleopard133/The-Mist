@@ -35,15 +35,19 @@ public class NPCFollowerManager : Singleton<NPCFollowerManager>
 
     public void InstantiateAppropriateNPCPrefabs()
     {
-        foreach (GameObject npc in npcs)
+        for(int i = 0; i < npcs.Length; i++)
         {
-            string isFollowing = "IS_FOLLOWING" + npc.name;
+            string isFollowing = "IS_FOLLOWING" + npcs[i].name;
             if (SaveGame.Exists(isFollowing))
             {
                 if (SaveGame.Load<bool>(isFollowing))
                 {
-                    GameObject newNpc = Instantiate(npc, transform);
-                    newNpc.name = npc.name;
+                    GameObject newNpc = Instantiate(npcs[i], transform);
+                    newNpc.name = npcs[i].name;
+                    if (i < 2)
+                    {
+                        SkillsManager.Instance.partyMembers[i + 1].UnlockPartyMember();
+                    }
                 }
             }
         }

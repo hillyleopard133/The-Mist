@@ -34,6 +34,12 @@ public class DialogueQuestManager : ScriptableObject
         SaveDialogueTriggers();
     }
 
+    public void UnlockPartyMember(PartyMember partyMember)
+    {
+        StartFollowingPlayer();
+        partyMember.UnlockPartyMember();
+    }
+
     public void StartFollowingPlayer()
     {
         NPCFollowPlayer followPlayer = DialogueManager.Instance.NPCSelected.GetComponent<NPCFollowPlayer>();

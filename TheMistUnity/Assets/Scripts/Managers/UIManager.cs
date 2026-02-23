@@ -211,9 +211,7 @@ public class UIManager : Singleton<UIManager>
         InitialiseShopInventories();
         
         //TODO for testing
-        skillsManager.partyMembers[0].UnlockPartyMember();
-        UnlockPartyMember(1);
-        //UnlockPartyMember(2);
+        //skillsManager.partyMembers[0].UnlockPartyMember();
     }
     
     private void Update()
@@ -606,7 +604,7 @@ public class UIManager : Singleton<UIManager>
     {
         partyMembersButtons[index].interactable = true;
         partyMemberImages[index].color = Color.white;
-        questionMarks[index - 1].SetActive(false);
+        questionMarks[index].SetActive(false);
         EquipmentManager.Instance.partyMembers[index].UnlockPartyMember();
     }
 
@@ -636,6 +634,22 @@ public class UIManager : Singleton<UIManager>
         ColorBlock cb = SelectedMember.colors;    
         cb.normalColor = selectedPartyMemberColor;
         SelectedMember.colors = cb;
+    }
+
+    private void SetPartyMemberImages()
+    {
+        for (int i = 0; i < partyMemberImages.Length; i++)
+        {
+            partyMemberImages[i].sprite = skillsManager.partyMembers[i].Icon;
+        }
+
+        for (int i = 0; i < skillsManager.partyMembers.Length; i++)
+        {
+            if (skillsManager.partyMembers[i].isUnlocked)
+            {
+                UnlockPartyMember(i);
+            }
+        }
     }
 
     private void UpdateCharacterStats()
@@ -1179,6 +1193,7 @@ public class UIManager : Singleton<UIManager>
                 FilterEquipment(0);
                 UpdateEquippedItems();
                 SelectPartyMember(selectedPartyMember);
+                SetPartyMemberImages();
                 break;
             case 3:
                 if (currentlySelectedQuest != null)

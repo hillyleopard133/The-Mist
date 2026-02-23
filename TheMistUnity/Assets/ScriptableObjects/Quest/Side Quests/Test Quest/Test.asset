@@ -25,8 +25,10 @@ MonoBehaviour:
   GoldReward: 0
   ExpReward: 0
   ItemReward:
-    Item: {fileID: 0}
+  - Item: {fileID: 0}
     Quantity: 0
-  QuestCompleted: 1
+  - Item: {fileID: 0}
+    Quantity: 0
+  QuestCompleted: 0
   QuestAccepted: 1
   QuestClaimed: 0

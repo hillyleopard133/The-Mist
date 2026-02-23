@@ -81,7 +81,7 @@ MonoBehaviour:
         m_MethodName: PassDialogueTrigger
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 04af328f99011b14b9a4be5105d04794, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 0bd2b5fa24e9348448a1e645c394e94d, type: 2}
           m_ObjectArgumentAssemblyTypeName: DialogueTrigger, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -102,12 +102,12 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
         m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
-        m_MethodName: StartFollowingPlayer
-        m_Mode: 1
+        m_MethodName: UnlockPartyMember
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 11400000, guid: 9e184f684ecb4374fbab1ab1881445ad, type: 2}
+          m_ObjectArgumentAssemblyTypeName: PartyMember, Assembly-CSharp
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   isQuestOption: 0
   triggerInteraction: 0
-  text: Follow me!
+  text: Join my party!
   children:
   - da3f789b-4375-45c9-a4a9-5325d59a761d
   rect:
