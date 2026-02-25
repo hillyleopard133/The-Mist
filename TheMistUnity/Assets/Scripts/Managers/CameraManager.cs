@@ -7,6 +7,7 @@ using UnityEngine.Serialization;
 public class CameraManager : Singleton<CameraManager>
 {
     [SerializeField] private CinemachineVirtualCamera followPlayerCamera;
+    [SerializeField] private CinemachineVirtualCamera combatCamera;
     [SerializeField] private CinemachineVirtualCamera BSPCamera;
 
     private PlayerActions actions;
@@ -28,6 +29,11 @@ public class CameraManager : Singleton<CameraManager>
     public void SetCameraSize(float size)
     {
         followPlayerCamera.m_Lens.OrthographicSize = size;
+    }
+
+    public void ToggleCombatCamera()
+    {
+        combatCamera.gameObject.SetActive(!combatCamera.gameObject.activeSelf);
     }
 
     private void ToggleBSPCam()

@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyCombat : MonoBehaviour
 {
     [SerializeField] private Sprite sprite;
-    [SerializeField] private List<SandwichMonsterAttackMove> attackMoves;
+    [SerializeField] private List<AttackMove> attackMoves;
     [SerializeField] private List<AttackEffect> inflictedEffects = new List<AttackEffect>();
 
     private EnemyHealth enemyHealth;
@@ -28,12 +28,12 @@ public class EnemyCombat : MonoBehaviour
         return false;
     }
     
-    public void AddAttackMove(SandwichMonsterAttackMove attack)
+    public void AddAttackMove(AttackMove attack)
     {
         attackMoves.Add(attack);
     }
 
-    public SandwichMonsterAttackMove Attack()
+    public AttackMove Attack()
     {
         if (HasEffect(AttackEffectType.Stun))
         {
@@ -74,7 +74,7 @@ public class EnemyCombat : MonoBehaviour
         inflictedEffects.Add(effect);
     }
     
-    public List<SandwichMonsterAttackMove> GetAttacks()
+    public List<AttackMove> GetAttacks()
     {
         return attackMoves;
     }

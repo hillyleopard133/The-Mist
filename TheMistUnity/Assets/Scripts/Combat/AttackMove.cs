@@ -2,8 +2,20 @@ using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-[CreateAssetMenu (menuName = "Sandwich/AttackMove")]
-public class SandwichMonsterAttackMove: ScriptableObject
+
+public enum DamageTypes
+{
+    Fire,
+    Ice,
+    Wind,
+    Blunt,
+    Sharp,
+    Magic
+}
+
+
+[CreateAssetMenu (menuName = "ScriptableObjects/Combat/AttackMove", fileName = "AttackMove")]
+public class AttackMove: ScriptableObject
 {
     [SerializeField] private float damage;
     [SerializeField] private bool hasEffect;

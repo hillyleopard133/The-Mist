@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "ScriptableObjects/Quest", fileName = "Quest")]
 public class Quest : ScriptableObject
 {
     [Header("Info")]

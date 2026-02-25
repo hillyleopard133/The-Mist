@@ -7,15 +7,18 @@ using UnityEngine.UI;
 
 public class SandwichFightManager : Singleton<SandwichFightManager>
 {
+    
+    /*
+
     [SerializeField] private float timeBetweenTurns;
     private Player player;
 
-    [Header("Effect Config")] 
+    [Header("Effect Config")]
     [SerializeField] private int poisonDamageAmount = 6;
     [SerializeField] private Transform playerInflictedEffectsContainer;
     [SerializeField] private Transform enemyInflictedEffectsContainer;
     [SerializeField] private GameObject inflictedEffectPrefab;
-    
+
     [Header("UI Elements")]
     [SerializeField] private GameObject playerAttackButtonsContent;
     [SerializeField] private GameObject playerAttackButtonsPanelBlocker;
@@ -33,7 +36,7 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
     [SerializeField] private TextMeshProUGUI playerRarity;
     [SerializeField] private TextMeshProUGUI playerName;
     [SerializeField] private TextMeshProUGUI enemyName;
-    
+
     [Header("Attack move description")]
     [SerializeField] private GameObject descriptionPanel;
     [SerializeField] private TextMeshProUGUI moveName;
@@ -43,15 +46,14 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
     [SerializeField] private Image effectIcon;
     [SerializeField] private TextMeshProUGUI damageAmount;
     [SerializeField] private TextMeshProUGUI hitChance;
-    
+
     [Header("Battle log")]
     [SerializeField] private Transform battleLogContainer;
     [SerializeField] private GameObject battleLogPrefab;
     [SerializeField] private ScrollRect battleLogScrollRect;
-    
+
     private EnemyCombat enemy;
 
-    private bool turnInProgress;
     private bool isPlayerTurn;
     [HideInInspector] public bool isFighting;
 
@@ -62,7 +64,7 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
         descriptionPanel.SetActive(false);
     }
 
-    /*
+
     private void UpdateInflictedEffectsUI()
     {
         UpdateInflictedEffectsUI(player, playerInflictedEffectsContainer);
@@ -75,11 +77,11 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
         {
             Destroy(child.gameObject);
         }
-        
+
         foreach (AttackEffect effect in sandwich.GetInflictedEffects())
         {
             if (effect == null) continue;
-            
+
             GameObject instantiatedEffect = Instantiate(inflictedEffectPrefab, container);
             instantiatedEffect.GetComponent<Image>().sprite = effect.GetIcon();
             instantiatedEffect.GetComponentInChildren<TextMeshProUGUI>().text = effect.GetEffectDuration().ToString();
@@ -102,13 +104,13 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
         BuildPlayerAttackButtons();
     }
 
-    public void ShowAttackMoveDescription(SandwichMonsterAttackMove attack)
+    public void ShowAttackMoveDescription(AttackMove attack)
     {
         descriptionPanel.SetActive(true);
         moveName.text = attack.GetMoveName();
         damageAmount.text = attack.GetDamage().ToString();
         hitChance.text = attack.GetHitChance().ToString();
-        
+
         if (attack.HasEffect())
         {
             effectIcon.gameObject.SetActive(true);
@@ -119,7 +121,7 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
             effectIcon.sprite = effect.GetIcon();
             effectDuration.text = "Duration: " + effect.GetEffectDuration();
             effectChance.text = "Chance: " + attack.GetEffectChance() + "%";
-            
+
         }
         else
         {
@@ -152,7 +154,7 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
             {
                 EndBattle();
             }
-            
+
         }
     }
 
@@ -272,7 +274,7 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
         playerName.text = player.GetMonsterName();
         enemyName.text = enemy.GetMonsterName();
     }
-    
+
     public void StartBattle(SandwichMonster enemyMonster)
     {
         player = PlayerSandwichTeam.Instance.GetFirstLiveSandwich();
@@ -323,7 +325,7 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
     private void ReduceEffects(SandwichMonster sandwich)
     {
         if (enemy == null || player == null) return;
-        
+
         List<AttackEffect> effectsToRemove = new List<AttackEffect>();
         foreach (AttackEffect effect in sandwich.GetInflictedEffects())
         {
@@ -333,7 +335,7 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
                 continue;
             }
             effect.ReduceEffectDuration();
-            
+
             if (effect.GetEffectType() == AttackEffectType.Poison)
             {
                 sandwich.TakeDamage(poisonDamageAmount);
@@ -346,7 +348,7 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
                     AddToBattleLog(enemy.GetMonsterName() + " is poisoned!");
                 }
             }
-            
+
             if (effect.GetEffectDuration() <= 0)
             {
                 effectsToRemove.Add(effect);
@@ -378,25 +380,25 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
             isPlayerTurn = true;
             playerAttackButtonsPanelBlocker.SetActive(false);
         }
-        
+
         ReduceEffects();
     }
 
-    private void SelectPlayerAttack(SandwichMonsterAttackMove attackMove)
+    private void SelectPlayerAttack(AttackMove attackMove)
     {
         playerAttackButtonsPanelBlocker.SetActive(true);
         CheckHitChance(enemy, attackMove);
         StartCoroutine(TimeBetweenTurns());
     }
 
-    private void CheckHitChance(SandwichMonster monster, SandwichMonsterAttackMove attack)
+    private void CheckHitChance(SandwichMonster monster, AttackMove attack)
     {
-        
+
         if (enemy == null)
         {
             return;
         }
-        
+
         if (attack == null)
         {
             if (!isPlayerTurn)
@@ -405,7 +407,7 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
             }
             return;
         }
-        
+
         int random = Random.Range(0, 100);
         if (random <= attack.GetHitChance())
         {
@@ -462,7 +464,7 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
             Destroy(child.gameObject);
         }
 
-        foreach (SandwichMonsterAttackMove attack in player.GetAttacks())
+        foreach (AttackMove attack in player.GetAttacks())
         {
             GameObject choice = Instantiate(attackButtonPrefab, playerAttackButtonsContent.transform);
             choice.GetComponentInChildren<TextMeshProUGUI>().text = attack.GetMoveName();
@@ -474,6 +476,6 @@ public class SandwichFightManager : Singleton<SandwichFightManager>
             choice.GetComponent<ShowAttackMoveDescription>().SetAttack(attack);
         }
     }
-    
     */
+    
 }

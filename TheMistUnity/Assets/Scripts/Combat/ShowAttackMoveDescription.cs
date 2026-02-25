@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ShowAttackMoveDescription : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    private SandwichMonsterAttackMove attack;
+    private AttackMove attack;
     
     public void OnPointerEnter(PointerEventData eventData)
     {
@@ -18,7 +18,7 @@ public class ShowAttackMoveDescription : MonoBehaviour, IPointerEnterHandler, IP
         //SandwichFightManager.Instance.HideAttackMoveDescription();
     }
     
-    public void SetAttack(SandwichMonsterAttackMove attackMove)
+    public void SetAttack(AttackMove attackMove)
     {
         attack = attackMove;
     }

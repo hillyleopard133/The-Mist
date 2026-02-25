@@ -223,6 +223,41 @@ public class UIManager : Singleton<UIManager>
     
     #endregion
 
+    #region Combat
+    
+    [SerializeField] private GameObject combatScreen;
+    [SerializeField] private GameObject[] combatEnemyLocations;
+    [FormerlySerializedAs("combatEnemySprites")] [SerializeField] private Image[] combatEnemyImages;
+    [SerializeField] private GameObject[] combatPartyMemberLocations;
+
+    public void ActivateCombatScreen(List<EnemyDetails> enemies)
+    {
+        combatScreen.SetActive(true);
+
+        foreach (GameObject location in combatEnemyLocations)
+        {
+            location.SetActive(false);
+        }
+
+        for (int i = 0; i < enemies.Count; i++)
+        {
+            combatEnemyLocations[i].SetActive(true);
+            FillEnemyLocation(enemies[i], i);
+        }
+    }
+
+    private void FillEnemyLocation(EnemyDetails enemy, int index)
+    {
+        combatEnemyImages[index].sprite = enemy.EnemySprite;
+    }
+
+    public void DeactivateCombatScreen()
+    {
+        combatScreen.SetActive(false);
+    }
+
+    #endregion
+
     #region Skills
 
     private void UpdateSkillsUI()
@@ -1512,7 +1547,7 @@ public class UIManager : Singleton<UIManager>
     {
         if (Instance != this) return;
         
-        actions.General.Enable();
+        actions.General.Disable();
         actions.UI.Disable();
         
         DialogueManager.OnExtraInteractionEvent -= ExtraInteractionCallback;

@@ -83,7 +83,6 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
             //CameraManager.Instance.ToggleHamsterCamera();
         }
         
-        // Start loading the scene asynchronously and show the loading screen
         StartCoroutine(LoadSceneCoroutine(sceneName, spawnLocation));
     }
 

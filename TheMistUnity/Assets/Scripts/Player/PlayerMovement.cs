@@ -51,7 +51,6 @@ public class PlayerMovement : MonoBehaviour
         sprintToggle.onValueChanged.AddListener(ToggleSprint);
     }
 
-    // Update is called once per frame
     void Update()
     {
         ReadMovement();
