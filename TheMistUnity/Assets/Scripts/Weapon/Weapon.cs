@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum WeaponType
+public enum RPGWeaponType
 {
     Magic,
     Melee
@@ -13,7 +13,7 @@ public class Weapon : ScriptableObject
 {
     [Header("Config")]
     public Sprite Icon;
-    public WeaponType WeaponType;
+    public RPGWeaponType WeaponType;
     public float Damage;
 
     [Header("Projectile")]

@@ -343,12 +343,113 @@ public class UIManager : Singleton<UIManager>
 
     #endregion
 
+    #region Skills - Skill Tree
+
+    [Header("Skills - Skill Tree")]
+    [SerializeField] private GameObject skillTreeScreen;
+    [SerializeField] private GameObject[] skillTreeButtonShrouds;
+    [SerializeField] private GameObject[] skillSelectionBorders;
+    [SerializeField] private Image selectedSkillImage;
+    [SerializeField] private TextMeshProUGUI selectedSkillName;
+    [SerializeField] private TextMeshProUGUI selectedSkillDescription;
+    [SerializeField] private TextMeshProUGUI selectedSkillRequirements;
+    [SerializeField] private TextMeshProUGUI[] skillLevelRequirements;
+    [SerializeField] private Color skillLockedLevelRequirementColor;
+    [SerializeField] private Color skillUnlockedLevelRequirementColor;
+    [SerializeField] private Button unlockSelectedSkillButton;
+    [SerializeField] private TextMeshProUGUI skillTreeOrbsAmount;
+    [SerializeField] private TextMeshProUGUI skillTreeCardOrbsAmount;
+    [SerializeField] private int levelRequirementIntervals;
+    private Skill selectedSkill;
+
+    public void OpenSkillTreeScreen()
+    {
+        skillTreeScreen.SetActive(true);
+        SelectSkill(selectedSkill);
+        SetSkillsAvailable();
+        UpdateLevelRequirements();
+        UpdateSkillOrbsAmount();
+    }
+
+    public void CloseSkillTreeScreen()
+    {
+        skillTreeScreen.SetActive(false);
+    }
+    
+    private void SetSkillsAvailable()
+    {
+        for (int i = 0; i < skillTreeButtonShrouds.Length; i++)
+        {
+            skillTreeButtonShrouds[i].SetActive(skillsManager.skills[i].IsAvailable());
+        }
+    }
+
+    public void SelectSkill(Skill skill)
+    {
+        selectedSkill = skill;
+        UpdateSelectedSkill(skill);
+
+        foreach (GameObject selection in skillSelectionBorders)
+        {
+            selection.SetActive(false);
+        }
+        skillSelectionBorders[skillsManager.GetSkillIndex(skill)].SetActive(true);
+    }
+
+    private void UpdateSelectedSkill(Skill skill)
+    {
+        selectedSkillImage.sprite = skill.SkillIcon;
+        selectedSkillName.text = skill.SkillName;
+        selectedSkillDescription.text = skill.SkillDescription;
+
+        if (skill.RequiredSkill.IsUnlocked)
+        {
+            selectedSkillRequirements.text = "";
+            if (!skill.IsAvailable())
+            {
+                selectedSkillRequirements.text = "Level " + skill.LevelRequired + " required";
+            }
+        }
+        else
+        {
+            selectedSkillRequirements.text = skill.RequiredSkill.SkillName + " required";
+        }
+        
+        unlockSelectedSkillButton.interactable = (skill.IsAvailable() && skill.CanAffordSkill());
+        if(skill.IsUnlocked) unlockSelectedSkillButton.interactable = false;
+    }
+
+    public void UnlockSelectedSkill()
+    {
+        skillsManager.UnlockSkill(selectedSkill);
+        SetSkillsAvailable();
+        UpdateSelectedSkill(selectedSkill);
+        UpdateSkillOrbsAmount();
+    }
+
+    public void UpdateSkillOrbsAmount()
+    {
+        skillTreeOrbsAmount.text = skillsManager.skillOrbs.ToString();
+        skillTreeCardOrbsAmount.text = skillsManager.skillOrbs.ToString();
+    }
+
+    private void UpdateLevelRequirements()
+    {
+        for (int i = 0; i < skillLevelRequirements.Length; i++)
+        {
+            skillLevelRequirements[i].color = i * levelRequirementIntervals >= skillsManager.Level ? skillUnlockedLevelRequirementColor : skillLockedLevelRequirementColor;
+        }
+    }
+
+    #endregion
+
     #region Skills - Attributes
 
     private void UpdateSkillsUI()
     {
         UpdateSkillCards();
         UpdateLevelBar();
+        UpdateSkillOrbsAmount();
     }
 
     public void UpdateLevelBar()
@@ -1337,6 +1438,7 @@ public class UIManager : Singleton<UIManager>
         {
             case 0:
                 skillsManager.ClearPendingPoints();
+                CloseSkillTreeScreen();
                 UpdateSkillsUI();
                 break;
             case 1:
@@ -1473,7 +1575,7 @@ public class UIManager : Singleton<UIManager>
         deathScreen.GetComponent<Animator>().SetTrigger("Death");
     }
 
-    public void PlayerRespawned()
+    private void PlayerRespawned()
     {
         AudioManager.Instance.LoadCurrentMusic();
         deathScreenContent.SetActive(false);

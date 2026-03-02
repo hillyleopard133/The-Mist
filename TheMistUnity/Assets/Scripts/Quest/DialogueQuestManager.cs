@@ -35,6 +35,11 @@ public class DialogueQuestManager : ScriptableObject
         partyMember.UnlockPartyMember();
     }
 
+    public void AddSkillOrb(int amount)
+    {
+        SkillsManager.Instance.AddSkillOrb(amount);
+    }
+
     public void StartFollowingPlayer()
     {
         NPCFollowPlayer followPlayer = DialogueManager.Instance.NPCSelected.GetComponent<NPCFollowPlayer>();

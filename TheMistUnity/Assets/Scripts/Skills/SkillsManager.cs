@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using BayatGames.SaveGameFree;
@@ -37,10 +38,15 @@ public class SkillsManager : Singleton<SkillsManager>
     [HideInInspector] public int[] pointsToAddCritChance;
     [HideInInspector] public int[] pointsToAddMana;
     
+    [SerializeField] public Skill[] skills;
+    [HideInInspector] public int skillOrbs;
+    
     private UIManager uIManager;
     
     private readonly string PARTY_DATA = "PARTY_DATA";
     private readonly string ATTRIBUTE_POINTS = "ATTRIBUTE_POINTS";
+    private readonly string SKILL_ORBS = "SKILL_ORBS";
+    private readonly string SKILLS_UNLOCKED = "SKILLS_UNLOCKED";
     private readonly string PLAYER_LEVEL_DATA = "PLAYER_LEVEL_DATA";
 
     private void Start()
@@ -56,6 +62,33 @@ public class SkillsManager : Singleton<SkillsManager>
         pointsToAddAttack = new int[partyMembers.Length];
         pointsToAddCritChance = new int[partyMembers.Length];
         pointsToAddMana = new int[partyMembers.Length];
+    }
+
+    public Skill GetSkill(SkillTreeSkills skillTreeSkill)
+    {
+        foreach (Skill skill in skills)
+        {
+            if(skill.SkillTreeSkill == skillTreeSkill) return skill;
+        }
+        return null;
+    }
+
+    public int GetSkillIndex(Skill skill)
+    {
+        return Array.IndexOf(skills,skill);
+    }
+
+    public void UnlockSkill(Skill skill)
+    {
+        skill.IsUnlocked = true;
+        skillOrbs -= skill.OrbCost;
+        SaveSkills();
+    }
+
+    public void AddSkillOrb(int amount)
+    {
+        skillOrbs += amount;
+        uIManager.UpdateSkillOrbsAmount();
     }
 
     public float GetExpBarPercentage()
@@ -165,6 +198,14 @@ public class SkillsManager : Singleton<SkillsManager>
         Level = 0;
         currentExp = 0;
         nextLevelExp = firstLevelExp;
+
+        foreach (Skill skill in skills)
+        {
+            skill.IsUnlocked = false;
+        }
+        skillOrbs = 0;
+        
+        SaveSkills();
     }
 
     public void LoadSkills()
@@ -180,6 +221,17 @@ public class SkillsManager : Singleton<SkillsManager>
         }
 
         if (SaveGame.Exists(ATTRIBUTE_POINTS)) availableAttributePoints = SaveGame.Load<int[]>(ATTRIBUTE_POINTS);
+        if (SaveGame.Exists(SKILL_ORBS)) skillOrbs = SaveGame.Load<int>(SKILL_ORBS);
+
+        if (SaveGame.Exists(SKILLS_UNLOCKED))
+        {
+            bool[] skillsUnlocked = SaveGame.Load<bool[]>(SKILLS_UNLOCKED);
+            for (int i = 0; i < skillsUnlocked.Length; i++)
+            {
+                skills[i].IsUnlocked = skillsUnlocked[i];
+            }
+        }
+        
         if (SaveGame.Exists(PLAYER_LEVEL_DATA))
         {
             PlayerLevelData levelData = SaveGame.Load<PlayerLevelData>(PLAYER_LEVEL_DATA);
@@ -197,10 +249,18 @@ public class SkillsManager : Singleton<SkillsManager>
         {
             partyData[i] = partyMembers[i].GetData();
         }
-        
         SaveGame.Save(PARTY_DATA, partyData);
         
         SaveGame.Save(ATTRIBUTE_POINTS, availableAttributePoints);
+        SaveGame.Save(SKILL_ORBS, skillOrbs);
+        
+        bool[] isSkillUnlocked = new bool[skills.Length];
+        for (int i = 0; i < skills.Length; i++)
+        {
+            isSkillUnlocked[i] = skills[i].IsUnlocked;
+        }
+        SaveGame.Save(SKILLS_UNLOCKED, isSkillUnlocked);
+        
         SaveGame.Save(PLAYER_LEVEL_DATA, new PlayerLevelData(Level, currentExp, nextLevelExp));
     }
 

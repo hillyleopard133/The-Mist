@@ -63,7 +63,7 @@ public class PlayerAttack : MonoBehaviour
             yield break;    //IEnumerator version of return;
         }
         
-        if (CurrentWeapon.WeaponType == WeaponType.Magic)
+        if (CurrentWeapon.WeaponType == RPGWeaponType.Magic)
         {
             if (playerMana.CurrentMana < CurrentWeapon.RequiredMana)
             {
