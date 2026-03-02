@@ -22,10 +22,12 @@ public enum SkillTreeSkills
     MakeConsumablesMoreEffective
 }
 
+
+[CreateAssetMenu(menuName = "ScriptableObjects/Skill", fileName = "Skill")]
 public class Skill : ScriptableObject
 {
     public string SkillName;
-    public string SkillDescription;
+    [TextArea] public string SkillDescription;
     public Sprite SkillIcon;
     public SkillTreeSkills SkillTreeSkill;
     public Skill RequiredSkill;

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c37548fcbd5220b4ca042cf87366edc0, type: 3}
+  m_Name: SkillIncreaseSprintSpeed
+  m_EditorClassIdentifier: 
+  SkillName: Increase Sprint Speed
+  SkillDescription: Zoom through the world with a 20% increased sprint speed!
+  SkillIcon: {fileID: 120962152, guid: 92de4ea736f28c449aa58fadcb53f330, type: 3}
+  SkillTreeSkill: 2
+  RequiredSkill: {fileID: 0}
+  LevelRequired: 0
+  OrbCost: 2
+  IsUnlocked: 0
