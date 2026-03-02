@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyArea : MonoBehaviour
 {
     [SerializeField] private float padding;
+    [SerializeField] private CombatGridType gridType;
     private BoxCollider2D spawnArea;
     private List<EnemyDetails> enemies = new List<EnemyDetails>();
     
@@ -33,7 +34,7 @@ public class EnemyArea : MonoBehaviour
     
     private void StartCombat()
     {
-        combatManager.EnterCombat(enemies);
+        combatManager.EnterCombat(enemies, gridType);
     }
 
     private void SpawnEnemies()

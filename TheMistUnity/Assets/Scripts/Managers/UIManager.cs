@@ -187,9 +187,12 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI skillsCurrentLevelText;
     [SerializeField] private TextMeshProUGUI skillsNextLevelText;
     [SerializeField] private RectTransform skillsExpBar;
-    private SkillsManager skillsManager;
     
     private PlayerActions actions;
+    
+    // Managers
+    private SkillsManager skillsManager;
+    private CombatManager combatManager;
     
     #endregion
 
@@ -204,6 +207,7 @@ public class UIManager : Singleton<UIManager>
     private void Start()
     {
         skillsManager = SkillsManager.Instance;
+        combatManager = CombatManager.Instance;
         
         actions.General.Respawn.performed += ctx => SetIsReviving(true);  
         actions.General.Respawn.canceled += ctx => SetIsReviving(false); 
@@ -225,11 +229,45 @@ public class UIManager : Singleton<UIManager>
 
     #region Combat
     
+    [Header("Combat")]
     [SerializeField] private GameObject combatScreen;
     [SerializeField] private GameObject[] combatEnemyLocations;
-    [FormerlySerializedAs("combatEnemySprites")] [SerializeField] private Image[] combatEnemyImages;
+    [SerializeField] private Image[] combatEnemyImages;
+    [SerializeField] private Image[] combatEnemySelectionImages;
     [SerializeField] private GameObject[] combatPartyMemberLocations;
-
+    [SerializeField] private Image[] combatPartyMemberImages;
+    [SerializeField] private Image[] combatPartyMemberSelectionImages;
+    
+    [SerializeField] private Button[] combatNavigationQE;
+    [SerializeField] private Button[] combatNavigationAD;
+    
+    [SerializeField] private GameObject[] combatPartyMemberInfo;
+    [SerializeField] private Image[] combatPartyMemberInfoImages;
+    [SerializeField] private TextMeshProUGUI[] combatPartyMemberInfoNames;
+    [SerializeField] private TextMeshProUGUI[] combatPartyMemberInfoHealthAmount;
+    [SerializeField] private TextMeshProUGUI[] combatPartyMemberInfoManaAmount;
+    [SerializeField] private RectTransform[] combatPartyMemberInfoHealthBars;
+    [SerializeField] private RectTransform[] combatPartyMemberInfoManaBars;
+    
+    [SerializeField] private Button combatInventoryButton;
+    [SerializeField] private Button combatAttackMovesButton;
+    
+    [SerializeField] private Image combatUltimateChargeWheel;
+    [SerializeField] private Image[] combatUltimateCharges;
+    
+    [SerializeField] private Image combatEnemyInfoIcon;
+    [SerializeField] private TextMeshProUGUI combatEnemyInfoName;
+    [SerializeField] private TextMeshProUGUI combatEnemyInfoHealthAmount;
+    [SerializeField] private RectTransform combatEnemyInfoHealthBar;
+    [SerializeField] private Image[] combatEnemyInfoWeaknesses;
+    [SerializeField] private Image[] combatEnemyInfoResistances;
+    
+    [SerializeField] private TextMeshProUGUI combatSelectedPlayerName;
+    [SerializeField] private GameObject combatMovesList;
+    [SerializeField] private GameObject normalAttackPrefab;
+    [SerializeField] private GameObject skillAttackPrefab;
+    [SerializeField] private GameObject ultimateAttackPrefab;
+    
     public void ActivateCombatScreen(List<EnemyDetails> enemies)
     {
         combatScreen.SetActive(true);
@@ -243,7 +281,54 @@ public class UIManager : Singleton<UIManager>
         {
             combatEnemyLocations[i].SetActive(true);
             FillEnemyLocation(enemies[i], i);
+            
+            foreach (Button button in combatNavigationQE)
+            {
+                button.gameObject.SetActive(enemies.Count > 1);
+            }
         }
+
+        int unlockedPartyMembers = 0;
+        for (int i = 0; i < skillsManager.partyMembers.Length; i++)
+        {
+            if (skillsManager.partyMembers[i].isUnlocked)
+            {
+                unlockedPartyMembers++;
+                combatPartyMemberLocations[i].SetActive(true);
+                FillPartyMemberLocation(skillsManager.partyMembers[i], i);
+            }
+        }
+        foreach (Button button in combatNavigationAD)
+        {
+            button.gameObject.SetActive(unlockedPartyMembers > 1);
+        }
+    }
+
+    private void SelectEnemy(int index)
+    {
+        combatManager.selectedEnemy = index;
+        EnemyDetails selectedEnemy = combatManager.GetSelectedEnemy();
+
+        combatEnemyInfoIcon.sprite = selectedEnemy.EnemySprite;
+        combatEnemyInfoName.text = selectedEnemy.EnemyName;
+        
+        //TODO if skillsManager.HasSkill(Can see enemy details)
+        UpdateEnemyHealthBar();
+    }
+
+    private void UpdateEnemyHealthBar()
+    {
+        EnemyDetails selectedEnemy = combatManager.GetSelectedEnemy();
+        combatEnemyInfoHealthAmount.text = selectedEnemy.CurrentHealth.ToString();
+        
+        Vector3 scale = combatEnemyInfoHealthBar.localScale;
+        scale.x = selectedEnemy.GetHealthBarPercentage();
+        combatEnemyInfoHealthBar.localScale = scale;
+    }
+
+    private void FillPartyMemberLocation(PartyMember partyMember, int index)
+    {
+        combatPartyMemberImages[index].sprite = partyMember.Icon;
     }
 
     private void FillEnemyLocation(EnemyDetails enemy, int index)
@@ -258,7 +343,7 @@ public class UIManager : Singleton<UIManager>
 
     #endregion
 
-    #region Skills
+    #region Skills - Attributes
 
     private void UpdateSkillsUI()
     {

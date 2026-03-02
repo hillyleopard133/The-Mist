@@ -3,9 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+public enum CombatGridType
+{
+    DarkGrass,
+    Bedroom,
+    Temple
+}
+
 public class CombatManager : Singleton<CombatManager>
 {
-    [SerializeField] private GameObject combatTilemap;
+    [SerializeField] private GameObject[] combatTilemaps;
     [SerializeField] private float timeBetweenTurns;
 
     private List<InventoryItem> usedItems = new List<InventoryItem>();
@@ -19,6 +26,8 @@ public class CombatManager : Singleton<CombatManager>
     private Inventory inventory;
     private CoinManager coinManager;
 
+    [HideInInspector] public int selectedEnemy;
+
     private void Start()
     {
         cameraManager = CameraManager.Instance;
@@ -28,14 +37,19 @@ public class CombatManager : Singleton<CombatManager>
         inventory = Inventory.Instance;
     }
 
-    public void EnterCombat(List<EnemyDetails> enemies)
+    public EnemyDetails GetSelectedEnemy()
+    {
+        return enemies[selectedEnemy];
+    }
+
+    public void EnterCombat(List<EnemyDetails> enemies, CombatGridType gridType)
     {
         this.enemies = enemies;
         gameManager.DisablePlayerMovement();
         gameManager.Player.gameObject.SetActive(false);
         uIManager.ActivateCombatScreen(enemies);
         cameraManager.ToggleCombatCamera();
-        combatTilemap.SetActive(true);
+        combatTilemaps[(int)gridType].SetActive(true);
         isFighting = true;
     }
 
@@ -67,8 +81,16 @@ public class CombatManager : Singleton<CombatManager>
         gameManager.Player.gameObject.SetActive(true);
         uIManager.DeactivateCombatScreen();
         cameraManager.ToggleCombatCamera();
-        combatTilemap.SetActive(false);
+        DeactivateTilemaps();
         isFighting = false;
+    }
+
+    private void DeactivateTilemaps()
+    {
+        foreach (GameObject tilemap in combatTilemaps)
+        {
+            tilemap.SetActive(false);
+        }
     }
 
     private void UseItems()

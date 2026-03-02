@@ -49,9 +49,7 @@ GameObject:
   - component: {fileID: 4612472204103580026}
   - component: {fileID: 4612472204103580027}
   - component: {fileID: 4612472204103580024}
-  - component: {fileID: 4612472204103580025}
   - component: {fileID: 4612472204103580030}
-  - component: {fileID: 4612472204103580031}
   m_Layer: 7
   m_Name: Player_Ninja
   m_TagString: Player
@@ -201,7 +199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb8ee4e94e4426b4b91c771851fc7d31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: 8044569d57f8f1f409f0b4e4d6a2ed0d, type: 2}
   HealthPotion: {fileID: 11400000, guid: aad6a3a55c9aca745826d3afed541d45, type: 2}
   ManaPotion: {fileID: 11400000, guid: 810cdc12ef45c1644ac5ada1cb9fba3e, type: 2}
 --- !u!114 &4612472204103580021
@@ -243,7 +240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a49202802586f2c4198d74de92a406ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: 8044569d57f8f1f409f0b4e4d6a2ed0d, type: 2}
 --- !u!114 &4612472204103580024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,20 +252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffe91acf85899ad459c9d02b4d6809cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: 8044569d57f8f1f409f0b4e4d6a2ed0d, type: 2}
---- !u!114 &4612472204103580025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4612472204103580029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99df516454ff48f9af33ca32e21814d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: 8044569d57f8f1f409f0b4e4d6a2ed0d, type: 2}
 --- !u!114 &4612472204103580030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82bcd120c687487095ed6645e1ff282f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: 8044569d57f8f1f409f0b4e4d6a2ed0d, type: 2}
   initialWeapon: {fileID: 11400000, guid: a21de11c32f142f479c9b94c070d3267, type: 2}
   attackPositions:
   - {fileID: 4612472205176737198}
@@ -294,38 +275,6 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
---- !u!114 &4612472204103580031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4612472204103580029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e31c03904a8b444fbfc89d6fd15f458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: 8044569d57f8f1f409f0b4e4d6a2ed0d, type: 2}
-  settings:
-  - Name: Stength
-    DamageUpgrade: 2
-    HealthUpgrade: 1
-    ManaUpgrade: 1
-    CChanceUpgrade: 0.2
-    CDamageUpgrade: 1
-  - Name: Dexterity
-    DamageUpgrade: 1
-    HealthUpgrade: 2
-    ManaUpgrade: 2
-    CChanceUpgrade: 0.5
-    CDamageUpgrade: 0.5
-  - Name: Intelligence
-    DamageUpgrade: 1
-    HealthUpgrade: 1
-    ManaUpgrade: 4
-    CChanceUpgrade: 1
-    CDamageUpgrade: 0.5
 --- !u!1 &4612472204518894724
 GameObject:
   m_ObjectHideFlags: 0

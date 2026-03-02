@@ -11,12 +11,18 @@ public class EnemyDetails : ScriptableObject
     public int CoinsReward;
     public int ExpReward;
 
-    public int Health;
+    public int MaxHealth;
+    public int CurrentHealth;
     public AttackMove[] attackMoves;
     
     public EnemyDetails CopyEnemy()
     {
         EnemyDetails instance = Instantiate(this);
         return instance;
+    }
+
+    public float GetHealthBarPercentage()
+    {
+        return CurrentHealth / MaxHealth;
     }
 }
