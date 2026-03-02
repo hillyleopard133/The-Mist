@@ -46,4 +46,9 @@ public class Skill : ScriptableObject
         
         return true;
     }
+
+    public bool HasRequiredSkill()
+    {
+        return RequiredSkill != null;
+    }
 }

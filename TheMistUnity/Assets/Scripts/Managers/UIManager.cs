@@ -360,6 +360,16 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI skillTreeOrbsAmount;
     [SerializeField] private TextMeshProUGUI skillTreeCardOrbsAmount;
     [SerializeField] private int levelRequirementIntervals;
+
+    [SerializeField] private Image[] skillTreeLinkViewEnemyWeaknesses;
+    [SerializeField] private Image[] skillTreeLinkViewEnemyResistances;
+    [SerializeField] private Image[] skillTreeLinkIncreaseUltimateCharge2;
+    [SerializeField] private Image[] skillTreeLinkIncreaseUltimateCharge3;
+    [SerializeField] private Image[] skillTreeLinkUltimateChargeSpeed;
+    [SerializeField] private Image[] skillTreeLinkTimingWindow;
+    [SerializeField] private Color skillTreeLinkCompleteColour;
+    [SerializeField] private Color skillTreeLinkNotCompleteColour;
+    
     private Skill selectedSkill;
 
     public void OpenSkillTreeScreen()
@@ -369,6 +379,7 @@ public class UIManager : Singleton<UIManager>
         SetSkillsAvailable();
         UpdateLevelRequirements();
         UpdateSkillOrbsAmount();
+        UpdateSkillLinks();
     }
 
     public void CloseSkillTreeScreen()
@@ -425,6 +436,7 @@ public class UIManager : Singleton<UIManager>
         SetSkillsAvailable();
         UpdateSelectedSkill(selectedSkill);
         UpdateSkillOrbsAmount();
+        UpdateSkillLinks();
     }
 
     public void UpdateSkillOrbsAmount()
@@ -438,6 +450,50 @@ public class UIManager : Singleton<UIManager>
         for (int i = 0; i < skillLevelRequirements.Length; i++)
         {
             skillLevelRequirements[i].color = i * levelRequirementIntervals >= skillsManager.Level ? skillUnlockedLevelRequirementColor : skillLockedLevelRequirementColor;
+        }
+    }
+
+    private void UpdateSkillLinks()
+    {
+        foreach (Skill skill in skillsManager.skills)
+        {
+            if (skill.HasRequiredSkill())
+            {
+                Color targetColor = skill.IsUnlocked ? skillTreeLinkCompleteColour : skillTreeLinkNotCompleteColour;
+                switch (skill.SkillTreeSkill)
+                {
+                    case SkillTreeSkills.ExtraUltimateCharge2:
+                        foreach (Image link in skillTreeLinkIncreaseUltimateCharge2)
+                            link.color = targetColor;
+                        break;
+
+                    case SkillTreeSkills.ExtraUltimateCharge3:
+                        foreach (Image link in skillTreeLinkIncreaseUltimateCharge3)
+                            link.color = targetColor;
+                        break;
+
+                    case SkillTreeSkills.IncreaseUltimateChargeSpeed:
+                        foreach (Image link in skillTreeLinkUltimateChargeSpeed)
+                            link.color = targetColor;
+                        break;
+
+                    case SkillTreeSkills.IncreaseBlockTimingWindow:
+                        foreach (Image link in skillTreeLinkTimingWindow)
+                            link.color = targetColor;
+                        break;
+
+                    case SkillTreeSkills.MakeEnemyResistancesVisible:
+                        foreach (Image link in skillTreeLinkViewEnemyResistances)
+                            link.color = targetColor;
+                        break;
+
+                    case SkillTreeSkills.MakeEnemyWeaknessesVisible:
+                        foreach (Image link in skillTreeLinkViewEnemyWeaknesses)
+                            link.color = targetColor;
+                        break;
+                }
+                
+            }
         }
     }
 
