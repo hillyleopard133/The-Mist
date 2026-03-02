@@ -206,7 +206,6 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private int levelRequirementIntervals;
     [SerializeField] private Color skillTreeSelectedSkillBorderColour;
     [SerializeField] private Color skillTreeUnlockedSkillBorderColour;
-
     [SerializeField] private Image[] skillTreeLinkViewEnemyWeaknesses;
     [SerializeField] private Image[] skillTreeLinkViewEnemyResistances;
     [SerializeField] private Image[] skillTreeLinkIncreaseUltimateCharge2;
@@ -215,7 +214,6 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Image[] skillTreeLinkTimingWindow;
     [SerializeField] private Color skillTreeLinkCompleteColour;
     [SerializeField] private Color skillTreeLinkNotCompleteColour;
-    
     private Skill selectedSkill;
     
     private PlayerActions actions;
@@ -290,7 +288,9 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI combatEnemyInfoHealthAmount;
     [SerializeField] private RectTransform combatEnemyInfoHealthBar;
     [SerializeField] private Image[] combatEnemyInfoWeaknesses;
+    [SerializeField] private TextMeshProUGUI combatEnemyInfoUnknownWeakness;
     [SerializeField] private Image[] combatEnemyInfoResistances;
+    [SerializeField] private TextMeshProUGUI combatEnemyInfoUnknownResistance;
     
     [SerializeField] private TextMeshProUGUI combatSelectedPlayerName;
     [SerializeField] private GameObject combatMovesList;
@@ -341,19 +341,98 @@ public class UIManager : Singleton<UIManager>
 
         combatEnemyInfoIcon.sprite = selectedEnemy.EnemySprite;
         combatEnemyInfoName.text = selectedEnemy.EnemyName;
-        
-        //TODO if skillsManager.HasSkill(Can see enemy details)
+
         UpdateEnemyHealthBar();
+        UpdateEnemyWeaknesses();
+        UpdateEnemyResistances();
+    }
+    
+    private void UpdateEnemyResistances()
+    {
+        EnemyDetails selectedEnemy = combatManager.GetSelectedEnemy();
+
+        foreach (Image resistance in combatEnemyInfoResistances)
+        {
+            resistance.gameObject.SetActive(false);
+        }
+        
+        if (skillsManager.GetSkill(SkillTreeSkills.MakeEnemyResistancesVisible).IsUnlocked)
+        {
+            if (selectedEnemy.resistances.Length > 0)
+            {
+                combatEnemyInfoUnknownResistance.gameObject.SetActive(false);
+                for (int i = 0; i < selectedEnemy.resistances.Length; i++)
+                {
+                    combatEnemyInfoResistances[i].gameObject.SetActive(true);
+                    combatEnemyInfoResistances[i].sprite = selectedEnemy.resistances[i].icon;
+                }
+            }
+            else
+            {
+                combatEnemyInfoUnknownResistance.gameObject.SetActive(true);
+                combatEnemyInfoUnknownResistance.text = "None";
+            }
+        }
+        else
+        {
+            combatEnemyInfoUnknownResistance.gameObject.SetActive(true);
+            combatEnemyInfoUnknownResistance.text = "?";
+        }
+    }
+
+    private void UpdateEnemyWeaknesses()
+    {
+        EnemyDetails selectedEnemy = combatManager.GetSelectedEnemy();
+
+        foreach (Image weakness in combatEnemyInfoWeaknesses)
+        {
+            weakness.gameObject.SetActive(false);
+        }
+        
+        if (skillsManager.GetSkill(SkillTreeSkills.MakeEnemyWeaknessesVisible).IsUnlocked)
+        {
+            if (selectedEnemy.weaknesses.Length > 0)
+            {
+                combatEnemyInfoUnknownWeakness.gameObject.SetActive(false);
+                for (int i = 0; i < selectedEnemy.weaknesses.Length; i++)
+                {
+                    combatEnemyInfoWeaknesses[i].gameObject.SetActive(true);
+                    combatEnemyInfoWeaknesses[i].sprite = selectedEnemy.weaknesses[i].icon;
+                }
+            }
+            else
+            {
+                combatEnemyInfoUnknownWeakness.gameObject.SetActive(true);
+                combatEnemyInfoUnknownWeakness.text = "None";
+            }
+        }
+        else
+        {
+            combatEnemyInfoUnknownWeakness.gameObject.SetActive(true);
+            combatEnemyInfoUnknownWeakness.text = "?";
+        }
     }
 
     private void UpdateEnemyHealthBar()
     {
         EnemyDetails selectedEnemy = combatManager.GetSelectedEnemy();
-        combatEnemyInfoHealthAmount.text = selectedEnemy.CurrentHealth.ToString();
-        
-        Vector3 scale = combatEnemyInfoHealthBar.localScale;
-        scale.x = selectedEnemy.GetHealthBarPercentage();
-        combatEnemyInfoHealthBar.localScale = scale;
+
+        if (skillsManager.GetSkill(SkillTreeSkills.MakeEnemyHealthVisible).IsUnlocked)
+        {
+            combatEnemyInfoHealthAmount.text = selectedEnemy.CurrentHealth.ToString();
+
+            Vector3 scale = combatEnemyInfoHealthBar.localScale;
+            scale.x = selectedEnemy.GetHealthBarPercentage();
+            combatEnemyInfoHealthBar.localScale = scale;
+        }
+        else
+        {
+            combatEnemyInfoHealthAmount.text = "???";
+            
+            Vector3 scale = combatEnemyInfoHealthBar.localScale;
+            scale.x = 0f; 
+            combatEnemyInfoHealthBar.localScale = scale;
+        }
     }
 
     private void FillPartyMemberLocation(PartyMember partyMember, int index)

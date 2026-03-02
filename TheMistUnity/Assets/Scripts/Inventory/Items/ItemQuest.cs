@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ItemQuest", menuName = "Items/Quest Item")]
+[CreateAssetMenu(menuName = "ScriptableObjects/Items/Quest Item", fileName = "ItemQuest")]
 public class ItemQuest : InventoryItem
 {
     

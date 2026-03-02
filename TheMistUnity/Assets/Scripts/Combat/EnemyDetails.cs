@@ -14,6 +14,9 @@ public class EnemyDetails : ScriptableObject
     public int MaxHealth;
     public int CurrentHealth;
     public AttackMove[] attackMoves;
+
+    public DamageType[] weaknesses;
+    public DamageType[] resistances;
     
     public EnemyDetails CopyEnemy()
     {

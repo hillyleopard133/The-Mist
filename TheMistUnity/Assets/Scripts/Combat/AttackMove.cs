@@ -2,18 +2,6 @@ using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-
-public enum DamageTypes
-{
-    Fire,
-    Ice,
-    Wind,
-    Blunt,
-    Sharp,
-    Magic
-}
-
-
 [CreateAssetMenu (menuName = "ScriptableObjects/Combat/AttackMove", fileName = "AttackMove")]
 public class AttackMove: ScriptableObject
 {

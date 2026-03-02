@@ -9,7 +9,7 @@ public class PartyMember : ScriptableObject
     public Sprite Icon;
     [TextArea] public string Description;
     [HideInInspector] public bool isUnlocked;
-    public WeaponType weaponType;
+    public DamageType weaponDamageType;
     
     [Header("Stats")]
     public int BaseMaxHealth = 100;
