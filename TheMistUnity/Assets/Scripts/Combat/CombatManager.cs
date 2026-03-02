@@ -1,14 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using BayatGames.SaveGameFree;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-
-public enum CombatGridType
-{
-    DarkGrass,
-    Bedroom,
-    Temple
-}
 
 public class CombatManager : Singleton<CombatManager>
 {
@@ -28,6 +22,14 @@ public class CombatManager : Singleton<CombatManager>
 
     [HideInInspector] public int selectedEnemy;
 
+    [HideInInspector] public int ultimateCharges;
+    [HideInInspector] public int maxUltimateCharges;
+    [HideInInspector] public int ultimateChargeProgress;
+    [SerializeField] private int ultimateFullChargeAmount;
+    
+    private readonly string ULTIMATE_CHARGES = "ULTIMATE_CHARGES";
+    private readonly string ULTIMATE_CHARGE_PROGRESS = "ULTIMATE_CHARGE_PROGRESS";
+
     private void Start()
     {
         cameraManager = CameraManager.Instance;
@@ -35,6 +37,46 @@ public class CombatManager : Singleton<CombatManager>
         uIManager = UIManager.Instance;
         gameManager = GameManager.Instance;
         inventory = Inventory.Instance;
+    }
+
+    public float GetUltimateChargeProgressPercentage()
+    {
+        return ultimateChargeProgress / ultimateFullChargeAmount;
+    }
+
+    private void UseUltimateCharge()
+    {
+        ultimateCharges--;
+        uIManager.UpdateUltimateCharges();
+    }
+
+    private void AddUltimateCharge(int chargeAmount)
+    {
+        ultimateChargeProgress += chargeAmount;
+
+        if (ultimateChargeProgress < ultimateFullChargeAmount) return;
+        
+        if (ultimateCharges < maxUltimateCharges)
+        {
+            ultimateCharges++;
+            ultimateChargeProgress -= ultimateFullChargeAmount;
+        }
+        else
+        {
+            ultimateChargeProgress = ultimateFullChargeAmount;
+        }
+    }
+
+    public int GetMaxUltimateCharges()
+    {
+        int chargeAmount = 1;
+        
+        if(skillsManager.GetSkill(SkillTreeSkills.ExtraUltimateCharge1)) chargeAmount++;
+        if(skillsManager.GetSkill(SkillTreeSkills.ExtraUltimateCharge2)) chargeAmount++;
+        if(skillsManager.GetSkill(SkillTreeSkills.ExtraUltimateCharge3)) chargeAmount++;
+        
+        maxUltimateCharges = chargeAmount;
+        return chargeAmount;
     }
 
     public EnemyDetails GetSelectedEnemy()
@@ -100,5 +142,25 @@ public class CombatManager : Singleton<CombatManager>
             inventory.ConsumeItem(item.ID);
         }
         usedItems.Clear();
+    }
+
+    public void SaveCombatData()
+    {
+        SaveGame.Save(ULTIMATE_CHARGES, ultimateCharges);
+        SaveGame.Save(ULTIMATE_CHARGE_PROGRESS, ultimateChargeProgress);
+    }
+
+    public void LoadCombatData()
+    {
+        if (SaveGame.Exists(ULTIMATE_CHARGES)) ultimateCharges = SaveGame.Load<int>(ULTIMATE_CHARGES);
+        if (SaveGame.Exists(ULTIMATE_CHARGE_PROGRESS)) ultimateChargeProgress = SaveGame.Load<int>(ULTIMATE_CHARGE_PROGRESS);
+    }
+
+    public void ResetCombatData()
+    {
+        ultimateCharges = 0;
+        ultimateChargeProgress = 0;
+        
+        SaveCombatData();
     }
 }

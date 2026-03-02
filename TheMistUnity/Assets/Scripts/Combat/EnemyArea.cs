@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum CombatGridType
+{
+    DarkGrass,
+    Bedroom,
+    Temple
+}
+
 public class EnemyArea : MonoBehaviour
 {
     [SerializeField] private float padding;

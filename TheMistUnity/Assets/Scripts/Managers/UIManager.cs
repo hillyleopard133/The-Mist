@@ -215,6 +215,49 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Color skillTreeLinkCompleteColour;
     [SerializeField] private Color skillTreeLinkNotCompleteColour;
     private Skill selectedSkill;
+        
+    [Header("Combat")]
+    [SerializeField] private GameObject combatScreen;
+    [SerializeField] private GameObject[] combatEnemyLocations;
+    [SerializeField] private Image[] combatEnemyImages;
+    [SerializeField] private GameObject[] combatEnemySelections;
+    [SerializeField] private GameObject[] combatPartyMemberLocations;
+    [SerializeField] private Image[] combatPartyMemberImages;
+    [SerializeField] private GameObject[] combatPartyMemberSelections;
+    
+    [SerializeField] private Button[] combatNavigationQE;
+    [SerializeField] private Button[] combatNavigationAD;
+    
+    [SerializeField] private GameObject[] combatPartyMemberInfo;
+    [SerializeField] private Image[] combatPartyMemberInfoImages;
+    [SerializeField] private TextMeshProUGUI[] combatPartyMemberInfoNames;
+    [SerializeField] private TextMeshProUGUI[] combatPartyMemberInfoHealthAmount;
+    [SerializeField] private TextMeshProUGUI[] combatPartyMemberInfoManaAmount;
+    [SerializeField] private RectTransform[] combatPartyMemberInfoHealthBars;
+    [SerializeField] private RectTransform[] combatPartyMemberInfoManaBars;
+    
+    [SerializeField] private Button combatInventoryButton;
+    [SerializeField] private Button combatAttackMovesButton;
+    
+    [SerializeField] private Image combatUltimateChargeWheel;
+    [SerializeField] private GameObject[] combatUltimateCharges;
+    [SerializeField] private GameObject[] combatUltimateChargeFills;
+    
+    [SerializeField] private Image combatEnemyInfoIcon;
+    [SerializeField] private TextMeshProUGUI combatEnemyInfoName;
+    [SerializeField] private TextMeshProUGUI combatEnemyInfoHealthAmount;
+    [SerializeField] private RectTransform combatEnemyInfoHealthBar;
+    [SerializeField] private Image[] combatEnemyInfoWeaknesses;
+    [SerializeField] private TextMeshProUGUI combatEnemyInfoUnknownWeakness;
+    [SerializeField] private Image[] combatEnemyInfoResistances;
+    [SerializeField] private TextMeshProUGUI combatEnemyInfoUnknownResistance;
+    
+    [SerializeField] private TextMeshProUGUI combatSelectedPlayerName;
+    [SerializeField] private GameObject combatMovesList;
+    [SerializeField] private GameObject normalAttackPrefab;
+    [SerializeField] private GameObject skillAttackPrefab;
+    [SerializeField] private GameObject ultimateAttackPrefab;
+    
     
     private PlayerActions actions;
     
@@ -256,48 +299,7 @@ public class UIManager : Singleton<UIManager>
     #endregion
 
     #region Combat
-    
-    [Header("Combat")]
-    [SerializeField] private GameObject combatScreen;
-    [SerializeField] private GameObject[] combatEnemyLocations;
-    [SerializeField] private Image[] combatEnemyImages;
-    [SerializeField] private Image[] combatEnemySelectionImages;
-    [SerializeField] private GameObject[] combatPartyMemberLocations;
-    [SerializeField] private Image[] combatPartyMemberImages;
-    [SerializeField] private Image[] combatPartyMemberSelectionImages;
-    
-    [SerializeField] private Button[] combatNavigationQE;
-    [SerializeField] private Button[] combatNavigationAD;
-    
-    [SerializeField] private GameObject[] combatPartyMemberInfo;
-    [SerializeField] private Image[] combatPartyMemberInfoImages;
-    [SerializeField] private TextMeshProUGUI[] combatPartyMemberInfoNames;
-    [SerializeField] private TextMeshProUGUI[] combatPartyMemberInfoHealthAmount;
-    [SerializeField] private TextMeshProUGUI[] combatPartyMemberInfoManaAmount;
-    [SerializeField] private RectTransform[] combatPartyMemberInfoHealthBars;
-    [SerializeField] private RectTransform[] combatPartyMemberInfoManaBars;
-    
-    [SerializeField] private Button combatInventoryButton;
-    [SerializeField] private Button combatAttackMovesButton;
-    
-    [SerializeField] private Image combatUltimateChargeWheel;
-    [SerializeField] private Image[] combatUltimateCharges;
-    
-    [SerializeField] private Image combatEnemyInfoIcon;
-    [SerializeField] private TextMeshProUGUI combatEnemyInfoName;
-    [SerializeField] private TextMeshProUGUI combatEnemyInfoHealthAmount;
-    [SerializeField] private RectTransform combatEnemyInfoHealthBar;
-    [SerializeField] private Image[] combatEnemyInfoWeaknesses;
-    [SerializeField] private TextMeshProUGUI combatEnemyInfoUnknownWeakness;
-    [SerializeField] private Image[] combatEnemyInfoResistances;
-    [SerializeField] private TextMeshProUGUI combatEnemyInfoUnknownResistance;
-    
-    [SerializeField] private TextMeshProUGUI combatSelectedPlayerName;
-    [SerializeField] private GameObject combatMovesList;
-    [SerializeField] private GameObject normalAttackPrefab;
-    [SerializeField] private GameObject skillAttackPrefab;
-    [SerializeField] private GameObject ultimateAttackPrefab;
-    
+
     public void ActivateCombatScreen(List<EnemyDetails> enemies)
     {
         combatScreen.SetActive(true);
@@ -332,6 +334,34 @@ public class UIManager : Singleton<UIManager>
         {
             button.gameObject.SetActive(unlockedPartyMembers > 1);
         }
+        
+        SelectEnemy(0);
+        UpdateUltimateCharges();
+    }
+
+    public void UpdateUltimateCharges()
+    {
+        combatUltimateChargeWheel.fillAmount = combatManager.GetUltimateChargeProgressPercentage();
+        
+        int maxCharges = combatManager.GetMaxUltimateCharges();
+        foreach (GameObject ultimateCharge in combatUltimateCharges)
+        {
+            ultimateCharge.gameObject.SetActive(false);
+        }
+        for (int i = 1; i < maxCharges; i++)
+        {
+            combatUltimateCharges[i - 1].gameObject.SetActive(true);
+        }
+
+        int ultimateCharges = combatManager.ultimateCharges;
+        foreach (GameObject ultimateCharge in combatUltimateChargeFills)
+        {
+            ultimateCharge.gameObject.SetActive(false);
+        }
+        for (int i = 0; i < ultimateCharges; i++)
+        {
+            combatUltimateChargeFills[i].gameObject.SetActive(true);
+        }
     }
 
     private void SelectEnemy(int index)
@@ -345,6 +375,13 @@ public class UIManager : Singleton<UIManager>
         UpdateEnemyHealthBar();
         UpdateEnemyWeaknesses();
         UpdateEnemyResistances();
+
+        foreach (GameObject selection in combatEnemySelections)
+        {
+            selection.SetActive(false);
+        }
+        
+        combatEnemySelections[index].SetActive(true);
     }
     
     private void UpdateEnemyResistances()
