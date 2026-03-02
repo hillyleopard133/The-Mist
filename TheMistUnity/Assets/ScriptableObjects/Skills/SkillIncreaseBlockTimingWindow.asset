@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37548fcbd5220b4ca042cf87366edc0, type: 3}
   m_Name: SkillIncreaseBlockTimingWindow
   m_EditorClassIdentifier: 
-  SkillName: Increase Block Timing Window
+  SkillName: Block Timing Window
   SkillDescription: Increase the timing window for performing a perfect block.
   SkillIcon: {fileID: 21300000, guid: b9860caa293d6cd45b3b93051aa4e627, type: 3}
   SkillTreeSkill: 8

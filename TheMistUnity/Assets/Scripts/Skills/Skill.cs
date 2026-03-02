@@ -38,8 +38,8 @@ public class Skill : ScriptableObject
     public bool IsAvailable()
     {
         if(SkillsManager.Instance.Level < LevelRequired) return false;
-        
-        return RequiredSkill.IsUnlocked;
+        if(HasRequiredSkill()) return RequiredSkill.IsUnlocked;
+        return true;
     }
 
     public bool CanAffordSkill()

@@ -188,6 +188,36 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI skillsNextLevelText;
     [SerializeField] private RectTransform skillsExpBar;
     
+    [Header("Skills - Skill Tree")]
+    [SerializeField] private GameObject skillTreeScreen;
+    [SerializeField] private GameObject[] skillTreeButtonShrouds;
+    [SerializeField] private GameObject[] skillSelectionBorders;
+    [SerializeField] private Image selectedSkillImage;
+    [SerializeField] private TextMeshProUGUI selectedSkillName;
+    [SerializeField] private TextMeshProUGUI selectedSkillDescription;
+    [SerializeField] private TextMeshProUGUI selectedSkillRequirements;
+    [SerializeField] private TextMeshProUGUI selectedSkillUnlockCost;
+    [SerializeField] private TextMeshProUGUI[] skillLevelRequirements;
+    [SerializeField] private Color skillLockedLevelRequirementColor;
+    [SerializeField] private Color skillUnlockedLevelRequirementColor;
+    [SerializeField] private Button unlockSelectedSkillButton;
+    [SerializeField] private TextMeshProUGUI skillTreeOrbsAmount;
+    [SerializeField] private TextMeshProUGUI skillTreeCardOrbsAmount;
+    [SerializeField] private int levelRequirementIntervals;
+    [SerializeField] private Color skillTreeSelectedSkillBorderColour;
+    [SerializeField] private Color skillTreeUnlockedSkillBorderColour;
+
+    [SerializeField] private Image[] skillTreeLinkViewEnemyWeaknesses;
+    [SerializeField] private Image[] skillTreeLinkViewEnemyResistances;
+    [SerializeField] private Image[] skillTreeLinkIncreaseUltimateCharge2;
+    [SerializeField] private Image[] skillTreeLinkIncreaseUltimateCharge3;
+    [SerializeField] private Image[] skillTreeLinkUltimateChargeSpeed;
+    [SerializeField] private Image[] skillTreeLinkTimingWindow;
+    [SerializeField] private Color skillTreeLinkCompleteColour;
+    [SerializeField] private Color skillTreeLinkNotCompleteColour;
+    
+    private Skill selectedSkill;
+    
     private PlayerActions actions;
     
     // Managers
@@ -345,33 +375,6 @@ public class UIManager : Singleton<UIManager>
 
     #region Skills - Skill Tree
 
-    [Header("Skills - Skill Tree")]
-    [SerializeField] private GameObject skillTreeScreen;
-    [SerializeField] private GameObject[] skillTreeButtonShrouds;
-    [SerializeField] private GameObject[] skillSelectionBorders;
-    [SerializeField] private Image selectedSkillImage;
-    [SerializeField] private TextMeshProUGUI selectedSkillName;
-    [SerializeField] private TextMeshProUGUI selectedSkillDescription;
-    [SerializeField] private TextMeshProUGUI selectedSkillRequirements;
-    [SerializeField] private TextMeshProUGUI[] skillLevelRequirements;
-    [SerializeField] private Color skillLockedLevelRequirementColor;
-    [SerializeField] private Color skillUnlockedLevelRequirementColor;
-    [SerializeField] private Button unlockSelectedSkillButton;
-    [SerializeField] private TextMeshProUGUI skillTreeOrbsAmount;
-    [SerializeField] private TextMeshProUGUI skillTreeCardOrbsAmount;
-    [SerializeField] private int levelRequirementIntervals;
-
-    [SerializeField] private Image[] skillTreeLinkViewEnemyWeaknesses;
-    [SerializeField] private Image[] skillTreeLinkViewEnemyResistances;
-    [SerializeField] private Image[] skillTreeLinkIncreaseUltimateCharge2;
-    [SerializeField] private Image[] skillTreeLinkIncreaseUltimateCharge3;
-    [SerializeField] private Image[] skillTreeLinkUltimateChargeSpeed;
-    [SerializeField] private Image[] skillTreeLinkTimingWindow;
-    [SerializeField] private Color skillTreeLinkCompleteColour;
-    [SerializeField] private Color skillTreeLinkNotCompleteColour;
-    
-    private Skill selectedSkill;
-
     public void OpenSkillTreeScreen()
     {
         skillTreeScreen.SetActive(true);
@@ -382,7 +385,7 @@ public class UIManager : Singleton<UIManager>
         UpdateSkillLinks();
     }
 
-    public void CloseSkillTreeScreen()
+    private void CloseSkillTreeScreen()
     {
         skillTreeScreen.SetActive(false);
     }
@@ -391,20 +394,29 @@ public class UIManager : Singleton<UIManager>
     {
         for (int i = 0; i < skillTreeButtonShrouds.Length; i++)
         {
-            skillTreeButtonShrouds[i].SetActive(skillsManager.skills[i].IsAvailable());
+            skillTreeButtonShrouds[i].SetActive(!skillsManager.skills[i].IsAvailable());
         }
     }
 
-    public void SelectSkill(Skill skill)
+    public void SelectSkill(Skill selectedSkill)
     {
-        selectedSkill = skill;
-        UpdateSelectedSkill(skill);
+        this.selectedSkill = selectedSkill;
+        UpdateSelectedSkill(selectedSkill);
 
-        foreach (GameObject selection in skillSelectionBorders)
+        foreach (Skill skill in skillsManager.skills)
         {
-            selection.SetActive(false);
+            if (skill.IsUnlocked)
+            {
+                skillSelectionBorders[skillsManager.GetSkillIndex(skill)].SetActive(true);
+                skillSelectionBorders[skillsManager.GetSkillIndex(skill)].GetComponent<Image>().color = skillTreeUnlockedSkillBorderColour;
+            }
+            else
+            {
+                skillSelectionBorders[skillsManager.GetSkillIndex(skill)].SetActive(false);
+            }
         }
-        skillSelectionBorders[skillsManager.GetSkillIndex(skill)].SetActive(true);
+        skillSelectionBorders[skillsManager.GetSkillIndex(selectedSkill)].SetActive(true);
+        skillSelectionBorders[skillsManager.GetSkillIndex(selectedSkill)].GetComponent<Image>().color = skillTreeSelectedSkillBorderColour;
     }
 
     private void UpdateSelectedSkill(Skill skill)
@@ -413,21 +425,23 @@ public class UIManager : Singleton<UIManager>
         selectedSkillName.text = skill.SkillName;
         selectedSkillDescription.text = skill.SkillDescription;
 
-        if (skill.RequiredSkill.IsUnlocked)
-        {
-            selectedSkillRequirements.text = "";
-            if (!skill.IsAvailable())
-            {
-                selectedSkillRequirements.text = "Level " + skill.LevelRequired + " required";
-            }
-        }
-        else
+        if (skill.HasRequiredSkill() && !skill.RequiredSkill.IsUnlocked)
         {
             selectedSkillRequirements.text = skill.RequiredSkill.SkillName + " required";
         }
-        
+        else if (!skill.IsAvailable())
+        {
+            selectedSkillRequirements.text = "Level " + skill.LevelRequired + " required";
+        }
+        else
+        {
+            selectedSkillRequirements.text = "";
+        }
+
         unlockSelectedSkillButton.interactable = (skill.IsAvailable() && skill.CanAffordSkill());
         if(skill.IsUnlocked) unlockSelectedSkillButton.interactable = false;
+        
+        selectedSkillUnlockCost.text = skill.OrbCost.ToString();
     }
 
     public void UnlockSelectedSkill()
@@ -449,7 +463,7 @@ public class UIManager : Singleton<UIManager>
     {
         for (int i = 0; i < skillLevelRequirements.Length; i++)
         {
-            skillLevelRequirements[i].color = i * levelRequirementIntervals >= skillsManager.Level ? skillUnlockedLevelRequirementColor : skillLockedLevelRequirementColor;
+            skillLevelRequirements[i].color = i * levelRequirementIntervals > skillsManager.Level ? skillLockedLevelRequirementColor : skillUnlockedLevelRequirementColor;
         }
     }
 
@@ -1495,6 +1509,7 @@ public class UIManager : Singleton<UIManager>
             case 0:
                 skillsManager.ClearPendingPoints();
                 CloseSkillTreeScreen();
+                if (selectedSkill == null) selectedSkill = skillsManager.skills[0];
                 UpdateSkillsUI();
                 break;
             case 1:

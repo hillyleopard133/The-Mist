@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37548fcbd5220b4ca042cf87366edc0, type: 3}
   m_Name: SkillIncreaseAttackTimingWindow
   m_EditorClassIdentifier: 
-  SkillName: Increase Attack Timing Window
+  SkillName: Attack Timing Window
   SkillDescription: Increase the timing window for landing a perfect hit.
   SkillIcon: {fileID: 21300000, guid: 8223c06cb99aff8418d71db28274832d, type: 3}
   SkillTreeSkill: 9
