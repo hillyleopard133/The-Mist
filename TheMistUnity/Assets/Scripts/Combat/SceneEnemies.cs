@@ -15,7 +15,7 @@ public class SceneEnemies : MonoBehaviour
 
     private void InitiateEnemyAreas()
     {
-        enemyAreas = FindObjectsOfType<EnemyArea>();
+        enemyAreas = FindObjectsByType<EnemyArea>(FindObjectsInactive.Include, FindObjectsSortMode.None);
         foreach (EnemyArea area in enemyAreas)
         {
             area.ClearEnemies();

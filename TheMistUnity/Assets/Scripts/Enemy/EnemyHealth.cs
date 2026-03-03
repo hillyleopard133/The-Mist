@@ -59,7 +59,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
     private void SetEnemyRespawnTime()
     {
-        FindObjectOfType<EnemySpawner>().SetRespawnTime(this, 30);
+        FindFirstObjectByType<EnemySpawner>().SetRespawnTime(this, 30);
     }
 
     private void DisableEnemy()

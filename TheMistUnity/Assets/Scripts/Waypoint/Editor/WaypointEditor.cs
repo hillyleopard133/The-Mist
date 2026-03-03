@@ -19,7 +19,7 @@ public class WaypointEditor : Editor
             EditorGUI.BeginChangeCheck();
             
             Vector3 currentPoint = WaypointTarget.EntityPosition + WaypointTarget.Points[i];
-            Vector3 newPosition = Handles.FreeMoveHandle(currentPoint,Quaternion.identity , 0.5f, 
+            var fmh_22_71_639081641253601796 = Quaternion.identity; Vector3 newPosition = Handles.FreeMoveHandle(currentPoint , 0.5f, 
                 Vector3.one * 0.5f, Handles.SphereHandleCap);
 
             GUIStyle text = new GUIStyle();

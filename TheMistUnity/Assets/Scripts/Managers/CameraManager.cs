@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-using Cinemachine;
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 public class CameraManager : Singleton<CameraManager>
 {
-    [SerializeField] private CinemachineVirtualCamera followPlayerCamera;
-    [SerializeField] private CinemachineVirtualCamera combatCamera;
-    [SerializeField] private CinemachineVirtualCamera BSPCamera;
+    [SerializeField] private CinemachineCamera followPlayerCamera;
+    [SerializeField] private CinemachineCamera combatCamera;
+    [SerializeField] private CinemachineCamera BSPCamera;
 
     private PlayerActions actions;
     
@@ -28,7 +28,7 @@ public class CameraManager : Singleton<CameraManager>
 
     public void SetCameraSize(float size)
     {
-        followPlayerCamera.m_Lens.OrthographicSize = size;
+        followPlayerCamera.Lens.OrthographicSize = size;
     }
 
     public void ToggleCombatCamera()

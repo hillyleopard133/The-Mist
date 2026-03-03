@@ -56,15 +56,15 @@ public class HamsterController : MonoBehaviour
     {
         if (!isGrounded) return;
 
-        rb2D.velocity = new Vector2(
-            rb2D.velocity.x,
+        rb2D.linearVelocity = new Vector2(
+            rb2D.linearVelocity.x,
             jumpForce
         );
     }
     
     private void Move()
     {
-        rb2D.velocity = new Vector2(horizontalInput * walkSpeed, rb2D.velocity.y);
+        rb2D.linearVelocity = new Vector2(horizontalInput * walkSpeed, rb2D.linearVelocity.y);
     }
 
     private void ReadMovement()

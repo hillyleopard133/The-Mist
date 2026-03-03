@@ -154,7 +154,7 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
             Rigidbody2D rb = npc.GetComponent<Rigidbody2D>(); 
             if (rb != null)
             {
-                rb.velocity = Vector2.zero;
+                rb.linearVelocity = Vector2.zero;
             }
         }
     }

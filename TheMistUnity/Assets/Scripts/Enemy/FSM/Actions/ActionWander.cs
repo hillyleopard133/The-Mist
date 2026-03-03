@@ -27,7 +27,7 @@ public class ActionWander : FSMAction
 
     private void Start()
     {
-        area = FindObjectOfType<AStarArea>();
+        area = FindFirstObjectByType<AStarArea>();
         updateFrameNumber = enemyBrain.updateFrameNumber;
     }
     

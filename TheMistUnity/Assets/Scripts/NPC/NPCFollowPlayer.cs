@@ -66,7 +66,7 @@ public class NPCFollowPlayer : MonoBehaviour
         }
         else
         {
-            rb.velocity = Vector2.zero; 
+            rb.linearVelocity = Vector2.zero; 
         }
     }
 
@@ -125,11 +125,11 @@ public class NPCFollowPlayer : MonoBehaviour
         while (Vector2.Distance(transform.position, destination) > stopThreshold)
         {
             Vector2 direction = (destination - (Vector2)transform.position).normalized;
-            rb.velocity = direction * chaseSpeed;
+            rb.linearVelocity = direction * chaseSpeed;
             yield return null;
         }
     
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
     }
     
     private IEnumerator MoveToDestination()
@@ -154,11 +154,11 @@ public class NPCFollowPlayer : MonoBehaviour
         
         if (distanceToPlayer >= followDistance)
         {
-            rb.velocity = dirToPlayer * chaseSpeed;
+            rb.linearVelocity = dirToPlayer * chaseSpeed;
         }
         else
         {
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
         }
         
         SetAnimations(dirToPlayer);
@@ -175,13 +175,13 @@ public class NPCFollowPlayer : MonoBehaviour
         {
             rb = GetComponent<Rigidbody2D>();
         }
-        rb.isKinematic = true;
+        rb.bodyType = RigidbodyType2D.Kinematic;
     }
 
     public void ReviveNPC()
     {
         animator.SetTrigger(revive);
-        rb.isKinematic = false;
+        rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
     private void SetAnimations(Vector2 dir)
@@ -189,7 +189,7 @@ public class NPCFollowPlayer : MonoBehaviour
         animator.SetFloat(moveX, dir.x);
         animator.SetFloat(moveY, dir.y);
         
-        if (rb.velocity == Vector2.zero)
+        if (rb.linearVelocity == Vector2.zero)
         {
             animator.SetBool(moving, false);
         }

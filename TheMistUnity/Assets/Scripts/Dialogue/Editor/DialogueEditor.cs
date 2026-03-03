@@ -37,7 +37,7 @@ using UnityEngine;
         [OnOpenAsset(1)]
         public static bool OnOpenAsset(int instanceID, int line)
         {
-            Dialogue dialogue = EditorUtility.InstanceIDToObject(instanceID) as Dialogue;
+            Dialogue dialogue = EditorUtility.EntityIdToObject(instanceID) as Dialogue;
             if(dialogue == null) return false;
             
             ShowEditorWindow();
