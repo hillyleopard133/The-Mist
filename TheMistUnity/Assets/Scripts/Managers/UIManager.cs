@@ -224,25 +224,12 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject[] combatPartyMemberLocations;
     [SerializeField] private Image[] combatPartyMemberImages;
     [SerializeField] private GameObject[] combatPartyMemberSelections;
-    
-    [SerializeField] private Button[] combatNavigationQE;
-    [SerializeField] private Button[] combatNavigationAD;
-    
-    [SerializeField] private GameObject[] combatPartyMemberInfo;
-    [SerializeField] private Image[] combatPartyMemberInfoImages;
-    [SerializeField] private TextMeshProUGUI[] combatPartyMemberInfoNames;
-    [SerializeField] private TextMeshProUGUI[] combatPartyMemberInfoHealthAmount;
-    [SerializeField] private TextMeshProUGUI[] combatPartyMemberInfoManaAmount;
-    [SerializeField] private RectTransform[] combatPartyMemberInfoHealthBars;
-    [SerializeField] private RectTransform[] combatPartyMemberInfoManaBars;
-    
-    [SerializeField] private Button combatInventoryButton;
-    [SerializeField] private Button combatAttackMovesButton;
-    
+    [SerializeField] private GameObject[] combatNavigationQE;
+    [SerializeField] private GameObject[] combatNavigationAD;
     [SerializeField] private Image combatUltimateChargeWheel;
     [SerializeField] private GameObject[] combatUltimateCharges;
     [SerializeField] private GameObject[] combatUltimateChargeFills;
-    
+    [SerializeField] private Button ultimateAttackButton;
     [SerializeField] private Image combatEnemyInfoIcon;
     [SerializeField] private TextMeshProUGUI combatEnemyInfoName;
     [SerializeField] private TextMeshProUGUI combatEnemyInfoHealthAmount;
@@ -252,11 +239,18 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Image[] combatEnemyInfoResistances;
     [SerializeField] private TextMeshProUGUI combatEnemyInfoUnknownResistance;
     
+    [SerializeField] private Button combatInventoryButton;
+    [SerializeField] private Button combatAttackMovesButton;
+    
     [SerializeField] private TextMeshProUGUI combatSelectedPlayerName;
-    [SerializeField] private GameObject combatMovesList;
+    [SerializeField] private Transform combatMovesList;
     [SerializeField] private GameObject normalAttackPrefab;
     [SerializeField] private GameObject skillAttackPrefab;
     [SerializeField] private GameObject ultimateAttackPrefab;
+
+    private int combatSelectedEnemyIndex;
+    private int combatSelectedPartyMemberIndex;
+    int unlockedPartyMembers;
     
     
     private PlayerActions actions;
@@ -287,9 +281,14 @@ public class UIManager : Singleton<UIManager>
         
         actions.UI.LeftTab.performed += ctx => SwitchTab(-1);
         actions.UI.RightTab.performed += ctx => SwitchTab(1);
-        
         actions.UI.LeftInv.performed += ctx => SwitchInventory(-1);
         actions.UI.RightInv.performed += ctx => SwitchInventory(1);
+
+        actions.Combat.SelectEnemyLeft.performed += ctx => SwitchSelectedEnemy(-1);
+        actions.Combat.SelectEnemyRight.performed += ctx => SwitchSelectedEnemy(1);
+        actions.Combat.SelectPartyMemberLeft.performed += ctx => SwitchSelectedPartyMember(-1);
+        actions.Combat.SelectPartyMemberRight.performed += ctx => SwitchSelectedPartyMember(1);
+        actions.Combat.UltimateAttack.performed += ctx => ActivateUltimateAttack();
         
         InitialiseInventory();
         InitialiseEquipmentInventory();
@@ -298,11 +297,26 @@ public class UIManager : Singleton<UIManager>
     
     #endregion
 
-    #region Combat
+    #region PartyInfo
+    
+    [Header("Party Info")]
+    [SerializeField] private GameObject[] partyMemberInfo;
+    [SerializeField] private Image[] partyMemberInfoImages;
+    [SerializeField] private TextMeshProUGUI[] partyMemberInfoNames;
+    [SerializeField] private TextMeshProUGUI[] partyMemberInfoHealthAmount;
+    [SerializeField] private TextMeshProUGUI[] partyMemberInfoManaAmount;
+    [SerializeField] private RectTransform[] partyMemberInfoHealthBars;
+    [SerializeField] private RectTransform[] partyMemberInfoManaBars;
 
+
+    #endregion
+
+    #region Combat
+    
     public void ActivateCombatScreen(List<EnemyDetails> enemies)
     {
         combatScreen.SetActive(true);
+        actions.Combat.Enable();
 
         foreach (GameObject location in combatEnemyLocations)
         {
@@ -313,14 +327,13 @@ public class UIManager : Singleton<UIManager>
         {
             combatEnemyLocations[i].SetActive(true);
             FillEnemyLocation(enemies[i], i);
-            
-            foreach (Button button in combatNavigationQE)
-            {
-                button.gameObject.SetActive(enemies.Count > 1);
-            }
+        }
+        foreach (GameObject navigation in combatNavigationQE)
+        {
+            navigation.SetActive(enemies.Count > 1);
         }
 
-        int unlockedPartyMembers = 0;
+        unlockedPartyMembers = 0;
         for (int i = 0; i < skillsManager.partyMembers.Length; i++)
         {
             if (skillsManager.partyMembers[i].isUnlocked)
@@ -330,15 +343,87 @@ public class UIManager : Singleton<UIManager>
                 FillPartyMemberLocation(skillsManager.partyMembers[i], i);
             }
         }
-        foreach (Button button in combatNavigationAD)
+        foreach (GameObject navigation in combatNavigationAD)
         {
-            button.gameObject.SetActive(unlockedPartyMembers > 1);
+            navigation.SetActive(unlockedPartyMembers > 1);
         }
         
         SelectEnemy(0);
+        SelectCombatPartyMember(0);
         UpdateUltimateCharges();
     }
 
+    public void ActivateUltimateAttack()
+    {
+        
+    }
+
+    private void EnterCombatSelectionScreen()
+    {
+        
+    }
+    
+    public void SwitchSelectedEnemy(int direction)
+    {
+        combatSelectedEnemyIndex += direction;
+
+        if (combatSelectedEnemyIndex < 0) combatSelectedEnemyIndex = combatManager.NumberOfEnemies() - 1;
+        else if (combatSelectedEnemyIndex >= combatManager.NumberOfEnemies()) combatSelectedEnemyIndex = 0;
+        
+        SelectEnemy(combatSelectedEnemyIndex);
+    }
+    
+    public void SwitchSelectedPartyMember(int direction)
+    {
+        if(unlockedPartyMembers == 1) return;
+        
+        combatSelectedPartyMemberIndex += direction;
+        while (!skillsManager.partyMembers[combatSelectedPartyMemberIndex].isUnlocked)
+        {
+            combatSelectedPartyMemberIndex += direction;
+            if(combatSelectedPartyMemberIndex < 0) combatSelectedPartyMemberIndex = skillsManager.partyMembers.Length - 1;
+            else if(combatSelectedPartyMemberIndex >= skillsManager.partyMembers.Length) combatSelectedPartyMemberIndex = 0;
+        }
+        
+        SelectCombatPartyMember(combatSelectedPartyMemberIndex);
+    }
+
+    public void SelectCombatPartyMember(int index)
+    {
+        combatSelectedPartyMemberIndex = index;
+        combatManager.selectedPartyMember = index;
+        
+        PartyMember combatSelectedPartyMember = skillsManager.partyMembers[index];
+        
+        //TODO fill attack moves
+
+        foreach (GameObject selection in combatPartyMemberSelections)
+        {
+            selection.SetActive(false);
+        }
+        combatPartyMemberSelections[index].SetActive(true);
+    }
+
+    public void SelectEnemy(int index)
+    {
+        combatSelectedEnemyIndex = index;
+        combatManager.selectedEnemy = index;
+        EnemyDetails selectedEnemy = combatManager.GetSelectedEnemy();
+
+        combatEnemyInfoIcon.sprite = selectedEnemy.EnemySprite;
+        combatEnemyInfoName.text = selectedEnemy.EnemyName;
+
+        UpdateEnemyHealthBar();
+        UpdateEnemyWeaknesses();
+        UpdateEnemyResistances();
+
+        foreach (GameObject selection in combatEnemySelections)
+        {
+            selection.SetActive(false);
+        }
+        combatEnemySelections[index].SetActive(true);
+    }
+    
     public void UpdateUltimateCharges()
     {
         combatUltimateChargeWheel.fillAmount = combatManager.GetUltimateChargeProgressPercentage();
@@ -358,30 +443,12 @@ public class UIManager : Singleton<UIManager>
         {
             ultimateCharge.gameObject.SetActive(false);
         }
-        for (int i = 0; i < ultimateCharges; i++)
+        for (int i = 1; i < ultimateCharges; i++)
         {
-            combatUltimateChargeFills[i].gameObject.SetActive(true);
-        }
-    }
-
-    private void SelectEnemy(int index)
-    {
-        combatManager.selectedEnemy = index;
-        EnemyDetails selectedEnemy = combatManager.GetSelectedEnemy();
-
-        combatEnemyInfoIcon.sprite = selectedEnemy.EnemySprite;
-        combatEnemyInfoName.text = selectedEnemy.EnemyName;
-
-        UpdateEnemyHealthBar();
-        UpdateEnemyWeaknesses();
-        UpdateEnemyResistances();
-
-        foreach (GameObject selection in combatEnemySelections)
-        {
-            selection.SetActive(false);
+            combatUltimateChargeFills[i - 1].gameObject.SetActive(true);
         }
         
-        combatEnemySelections[index].SetActive(true);
+        ultimateAttackButton.interactable = ultimateCharges > 0;
     }
     
     private void UpdateEnemyResistances()
@@ -485,6 +552,7 @@ public class UIManager : Singleton<UIManager>
     public void DeactivateCombatScreen()
     {
         combatScreen.SetActive(false);
+        actions.Combat.Disable();
     }
 
     #endregion

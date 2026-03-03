@@ -605,6 +605,134 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Combat"",
+            ""id"": ""d18a962f-90ba-4919-9bde-905c5761bd7b"",
+            ""actions"": [
+                {
+                    ""name"": ""SelectEnemyLeft"",
+                    ""type"": ""Button"",
+                    ""id"": ""b510b607-471a-4c70-84a2-250e48fb60a8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SelectEnemyRight"",
+                    ""type"": ""Button"",
+                    ""id"": ""c52ac59f-4902-4f25-afd8-996a699dc75a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SelectPartyMemberLeft"",
+                    ""type"": ""Button"",
+                    ""id"": ""2d18de1d-d3f2-4bdb-bc61-7757cc339b62"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SelectPartyMemberRight"",
+                    ""type"": ""Button"",
+                    ""id"": ""9406bbe3-8e61-4af0-8415-6b036cce8bca"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UltimateAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""905a8e03-8ae8-45a6-91d2-819ebeb54157"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SelectUltimateParty"",
+                    ""type"": ""Button"",
+                    ""id"": ""774318e0-12c3-4dc7-ae7a-7a232258cf9f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""260ce386-b1b3-4a1b-a4c2-5a1a997329e7"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SelectEnemyLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ab14fc7d-57eb-4d90-a4ba-66122f8336c0"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SelectEnemyRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""badf2a4a-157e-4628-b7d4-ac8c4690aa82"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SelectPartyMemberLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""372b8ebf-462c-40b8-86a4-d6f4303e1e39"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SelectPartyMemberRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a9d14b89-487b-4ebc-a759-613a4a268b54"",
+                    ""path"": ""<Keyboard>/u"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UltimateAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f8312eaa-a2d4-4aab-bc55-84ef0bc35162"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SelectUltimateParty"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -646,6 +774,14 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         m_UI_RightTab = m_UI.FindAction("RightTab", throwIfNotFound: true);
         m_UI_LeftInv = m_UI.FindAction("LeftInv", throwIfNotFound: true);
         m_UI_RightInv = m_UI.FindAction("RightInv", throwIfNotFound: true);
+        // Combat
+        m_Combat = asset.FindActionMap("Combat", throwIfNotFound: true);
+        m_Combat_SelectEnemyLeft = m_Combat.FindAction("SelectEnemyLeft", throwIfNotFound: true);
+        m_Combat_SelectEnemyRight = m_Combat.FindAction("SelectEnemyRight", throwIfNotFound: true);
+        m_Combat_SelectPartyMemberLeft = m_Combat.FindAction("SelectPartyMemberLeft", throwIfNotFound: true);
+        m_Combat_SelectPartyMemberRight = m_Combat.FindAction("SelectPartyMemberRight", throwIfNotFound: true);
+        m_Combat_UltimateAttack = m_Combat.FindAction("UltimateAttack", throwIfNotFound: true);
+        m_Combat_SelectUltimateParty = m_Combat.FindAction("SelectUltimateParty", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1069,6 +1205,79 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         }
     }
     public UIActions @UI => new UIActions(this);
+
+    // Combat
+    private readonly InputActionMap m_Combat;
+    private ICombatActions m_CombatActionsCallbackInterface;
+    private readonly InputAction m_Combat_SelectEnemyLeft;
+    private readonly InputAction m_Combat_SelectEnemyRight;
+    private readonly InputAction m_Combat_SelectPartyMemberLeft;
+    private readonly InputAction m_Combat_SelectPartyMemberRight;
+    private readonly InputAction m_Combat_UltimateAttack;
+    private readonly InputAction m_Combat_SelectUltimateParty;
+    public struct CombatActions
+    {
+        private @PlayerActions m_Wrapper;
+        public CombatActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @SelectEnemyLeft => m_Wrapper.m_Combat_SelectEnemyLeft;
+        public InputAction @SelectEnemyRight => m_Wrapper.m_Combat_SelectEnemyRight;
+        public InputAction @SelectPartyMemberLeft => m_Wrapper.m_Combat_SelectPartyMemberLeft;
+        public InputAction @SelectPartyMemberRight => m_Wrapper.m_Combat_SelectPartyMemberRight;
+        public InputAction @UltimateAttack => m_Wrapper.m_Combat_UltimateAttack;
+        public InputAction @SelectUltimateParty => m_Wrapper.m_Combat_SelectUltimateParty;
+        public InputActionMap Get() { return m_Wrapper.m_Combat; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(CombatActions set) { return set.Get(); }
+        public void SetCallbacks(ICombatActions instance)
+        {
+            if (m_Wrapper.m_CombatActionsCallbackInterface != null)
+            {
+                @SelectEnemyLeft.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectEnemyLeft;
+                @SelectEnemyLeft.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectEnemyLeft;
+                @SelectEnemyLeft.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectEnemyLeft;
+                @SelectEnemyRight.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectEnemyRight;
+                @SelectEnemyRight.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectEnemyRight;
+                @SelectEnemyRight.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectEnemyRight;
+                @SelectPartyMemberLeft.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectPartyMemberLeft;
+                @SelectPartyMemberLeft.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectPartyMemberLeft;
+                @SelectPartyMemberLeft.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectPartyMemberLeft;
+                @SelectPartyMemberRight.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectPartyMemberRight;
+                @SelectPartyMemberRight.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectPartyMemberRight;
+                @SelectPartyMemberRight.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectPartyMemberRight;
+                @UltimateAttack.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnUltimateAttack;
+                @UltimateAttack.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnUltimateAttack;
+                @UltimateAttack.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnUltimateAttack;
+                @SelectUltimateParty.started -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectUltimateParty;
+                @SelectUltimateParty.performed -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectUltimateParty;
+                @SelectUltimateParty.canceled -= m_Wrapper.m_CombatActionsCallbackInterface.OnSelectUltimateParty;
+            }
+            m_Wrapper.m_CombatActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @SelectEnemyLeft.started += instance.OnSelectEnemyLeft;
+                @SelectEnemyLeft.performed += instance.OnSelectEnemyLeft;
+                @SelectEnemyLeft.canceled += instance.OnSelectEnemyLeft;
+                @SelectEnemyRight.started += instance.OnSelectEnemyRight;
+                @SelectEnemyRight.performed += instance.OnSelectEnemyRight;
+                @SelectEnemyRight.canceled += instance.OnSelectEnemyRight;
+                @SelectPartyMemberLeft.started += instance.OnSelectPartyMemberLeft;
+                @SelectPartyMemberLeft.performed += instance.OnSelectPartyMemberLeft;
+                @SelectPartyMemberLeft.canceled += instance.OnSelectPartyMemberLeft;
+                @SelectPartyMemberRight.started += instance.OnSelectPartyMemberRight;
+                @SelectPartyMemberRight.performed += instance.OnSelectPartyMemberRight;
+                @SelectPartyMemberRight.canceled += instance.OnSelectPartyMemberRight;
+                @UltimateAttack.started += instance.OnUltimateAttack;
+                @UltimateAttack.performed += instance.OnUltimateAttack;
+                @UltimateAttack.canceled += instance.OnUltimateAttack;
+                @SelectUltimateParty.started += instance.OnSelectUltimateParty;
+                @SelectUltimateParty.performed += instance.OnSelectUltimateParty;
+                @SelectUltimateParty.canceled += instance.OnSelectUltimateParty;
+            }
+        }
+    }
+    public CombatActions @Combat => new CombatActions(this);
     public interface IMovementActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -1113,5 +1322,14 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         void OnRightTab(InputAction.CallbackContext context);
         void OnLeftInv(InputAction.CallbackContext context);
         void OnRightInv(InputAction.CallbackContext context);
+    }
+    public interface ICombatActions
+    {
+        void OnSelectEnemyLeft(InputAction.CallbackContext context);
+        void OnSelectEnemyRight(InputAction.CallbackContext context);
+        void OnSelectPartyMemberLeft(InputAction.CallbackContext context);
+        void OnSelectPartyMemberRight(InputAction.CallbackContext context);
+        void OnUltimateAttack(InputAction.CallbackContext context);
+        void OnSelectUltimateParty(InputAction.CallbackContext context);
     }
 }

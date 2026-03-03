@@ -21,15 +21,20 @@ public class CombatManager : Singleton<CombatManager>
     private CoinManager coinManager;
 
     [HideInInspector] public int selectedEnemy;
+    [HideInInspector] public int selectedPartyMember;
 
     [HideInInspector] public int ultimateCharges;
     [HideInInspector] public int maxUltimateCharges;
     [HideInInspector] public int ultimateChargeProgress;
     [SerializeField] private int ultimateFullChargeAmount;
+
+    //To update and save after each combat win
+    private int[] partyMembersCurrentHealth;
+    private int[] partyMembersCurrentMana;
     
     private readonly string ULTIMATE_CHARGES = "ULTIMATE_CHARGES";
     private readonly string ULTIMATE_CHARGE_PROGRESS = "ULTIMATE_CHARGE_PROGRESS";
-
+    
     private void Start()
     {
         cameraManager = CameraManager.Instance;
@@ -37,6 +42,11 @@ public class CombatManager : Singleton<CombatManager>
         uIManager = UIManager.Instance;
         gameManager = GameManager.Instance;
         inventory = Inventory.Instance;
+    }
+
+    public int NumberOfEnemies()
+    {
+        return enemies.Count;
     }
 
     public float GetUltimateChargeProgressPercentage()
@@ -76,6 +86,8 @@ public class CombatManager : Singleton<CombatManager>
         if(skillsManager.GetSkill(SkillTreeSkills.ExtraUltimateCharge3)) chargeAmount++;
         
         maxUltimateCharges = chargeAmount;
+        AddUltimateCharge(0);
+        
         return chargeAmount;
     }
 

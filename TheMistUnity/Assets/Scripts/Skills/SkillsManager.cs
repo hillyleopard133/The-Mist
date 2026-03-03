@@ -64,6 +64,18 @@ public class SkillsManager : Singleton<SkillsManager>
         pointsToAddMana = new int[partyMembers.Length];
     }
 
+    public List<PartyMember> GetUnlockedPartyMembers()
+    {
+        List<PartyMember> unlockedPartyMembers = new List<PartyMember>();
+
+        foreach (PartyMember partyMember in partyMembers)
+        {
+            if (partyMember.isUnlocked) unlockedPartyMembers.Add(partyMember);
+        }
+        
+        return unlockedPartyMembers;
+    }
+
     public Skill GetSkill(SkillTreeSkills skillTreeSkill)
     {
         foreach (Skill skill in skills)
