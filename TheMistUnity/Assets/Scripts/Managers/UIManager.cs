@@ -246,7 +246,10 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Transform combatMovesList;
     [SerializeField] private GameObject normalAttackPrefab;
     [SerializeField] private GameObject skillAttackPrefab;
-    [SerializeField] private GameObject ultimateAttackPrefab;
+    
+    [SerializeField] private Material combatSelectionMaterial;
+    [SerializeField] private GameObject combatSelectionScreen;
+    [SerializeField] private RectTransform combatSelectionScreenBackground;
 
     private int combatSelectedEnemyIndex;
     private int combatSelectedPartyMemberIndex;
@@ -312,6 +315,11 @@ public class UIManager : Singleton<UIManager>
     #endregion
 
     #region Combat
+
+    public void TestCombatScreen()
+    {
+        ActivateCombatScreen(new List<EnemyDetails>());
+    }
     
     public void ActivateCombatScreen(List<EnemyDetails> enemies)
     {
@@ -342,25 +350,80 @@ public class UIManager : Singleton<UIManager>
                 combatPartyMemberLocations[i].SetActive(true);
                 FillPartyMemberLocation(skillsManager.partyMembers[i], i);
             }
+            else
+            {
+                combatPartyMemberLocations[i].SetActive(false);
+            }
         }
         foreach (GameObject navigation in combatNavigationAD)
         {
             navigation.SetActive(unlockedPartyMembers > 1);
         }
         
-        SelectEnemy(0);
+        //SelectEnemy(0);
         SelectCombatPartyMember(0);
         UpdateUltimateCharges();
+        Canvas.ForceUpdateCanvases();
+        SetCombatSelectionHoles();
     }
 
     public void ActivateUltimateAttack()
     {
-        
+        EnterCombatSelectionScreen();
     }
-
+    
     private void EnterCombatSelectionScreen()
     {
+        combatSelectionScreen.SetActive(true);
+    }
+
+    private void ExitCombatSelectionScreen()
+    {
+        combatSelectionScreen.SetActive(false);
+    }
+
+    [SerializeField] private float holeRadius = 0.15f;
+    
+    private void SetCombatSelectionHoles()
+    {
+        for (int i = 0; i < skillsManager.partyMembers.Length; i++)
+        {
+            if (skillsManager.partyMembers[i].isUnlocked)
+            {
+                SetCombatSelectionHole(i, combatPartyMemberLocations[i].GetComponent<RectTransform>());
+
+            }
+            else
+            {
+                combatSelectionMaterial.SetVector($"_Hole{i}Pos", new Vector2(-1000, -1000));
+            }
+        }
         
+        float width = combatSelectionScreenBackground.rect.width;
+        float height = combatSelectionScreenBackground.rect.height;
+        Vector2 overlayScaleFactor = new Vector2(width/height, 1f);
+
+        combatSelectionMaterial.SetVector("_OverlayScale", overlayScaleFactor);
+        combatSelectionMaterial.SetFloat($"_HoleRadius", holeRadius);
+    }
+    
+    private void SetCombatSelectionHole(int index, RectTransform targetRect)
+    {
+        // Convert UI element position to overlay local space
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            combatSelectionScreenBackground,
+            RectTransformUtility.WorldToScreenPoint(null, targetRect.position),
+            null, 
+            out Vector2 localPos
+        );
+
+        // Convert local position to UV (0-1)
+        Vector2 uvPos = new Vector2(
+            (localPos.x / combatSelectionScreenBackground.rect.width) + 0.5f,
+            (localPos.y / combatSelectionScreenBackground.rect.height) + 0.5f
+        );
+        
+        combatSelectionMaterial.SetVector($"_Hole{index}Pos", uvPos);
     }
     
     public void SwitchSelectedEnemy(int direction)
