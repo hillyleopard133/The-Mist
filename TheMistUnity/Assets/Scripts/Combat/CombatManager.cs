@@ -43,6 +43,11 @@ public class CombatManager : Singleton<CombatManager>
         gameManager = GameManager.Instance;
         inventory = Inventory.Instance;
     }
+    
+    public void TestUltimateCharge()
+    {
+        AddUltimateCharge(120);
+    }
 
     public int NumberOfEnemies()
     {
@@ -51,12 +56,12 @@ public class CombatManager : Singleton<CombatManager>
 
     public float GetUltimateChargeProgressPercentage()
     {
-        return ultimateChargeProgress / ultimateFullChargeAmount;
+        return (float) ultimateChargeProgress / ultimateFullChargeAmount;
     }
 
-    private void UseUltimateCharge()
+    private void UseUltimateCharges(int amount)
     {
-        ultimateCharges--;
+        ultimateCharges -= amount;
         uIManager.UpdateUltimateCharges();
     }
 
@@ -66,27 +71,29 @@ public class CombatManager : Singleton<CombatManager>
 
         if (ultimateChargeProgress < ultimateFullChargeAmount) return;
         
-        if (ultimateCharges < maxUltimateCharges)
+        if (ultimateCharges < maxUltimateCharges - 1)
         {
             ultimateCharges++;
             ultimateChargeProgress -= ultimateFullChargeAmount;
         }
         else
         {
+            if (ultimateCharges < maxUltimateCharges) ultimateCharges++; 
             ultimateChargeProgress = ultimateFullChargeAmount;
         }
+        
+        uIManager.UpdateUltimateCharges();
     }
 
     public int GetMaxUltimateCharges()
     {
         int chargeAmount = 1;
         
-        if(skillsManager.GetSkill(SkillTreeSkills.ExtraUltimateCharge1)) chargeAmount++;
-        if(skillsManager.GetSkill(SkillTreeSkills.ExtraUltimateCharge2)) chargeAmount++;
-        if(skillsManager.GetSkill(SkillTreeSkills.ExtraUltimateCharge3)) chargeAmount++;
+        if(skillsManager.GetSkill(SkillTreeSkills.ExtraUltimateCharge1).IsUnlocked) chargeAmount++;
+        if(skillsManager.GetSkill(SkillTreeSkills.ExtraUltimateCharge2).IsUnlocked) chargeAmount++;
+        if(skillsManager.GetSkill(SkillTreeSkills.ExtraUltimateCharge3).IsUnlocked) chargeAmount++;
         
         maxUltimateCharges = chargeAmount;
-        AddUltimateCharge(0);
         
         return chargeAmount;
     }
@@ -105,6 +112,7 @@ public class CombatManager : Singleton<CombatManager>
         cameraManager.ToggleCombatCamera();
         combatTilemaps[(int)gridType].SetActive(true);
         isFighting = true;
+        AddUltimateCharge(0);
     }
 
     private void CombatLose()

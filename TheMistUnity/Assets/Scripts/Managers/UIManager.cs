@@ -250,6 +250,16 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Material combatSelectionMaterial;
     [SerializeField] private GameObject combatSelectionScreen;
     [SerializeField] private RectTransform combatSelectionScreenBackground;
+    [SerializeField] private float combatSelectionHoleRadius = 0.08f;
+    [SerializeField] private GameObject[] combatSelectionRings;
+    [SerializeField] private GameObject[] combatSelectionButtons;
+    [SerializeField] private GameObject[] ultimateAttackCost;
+    [SerializeField] private Button castUltimateButton;
+    [SerializeField] private TextMeshProUGUI teamUpBonusText;
+    private bool[] combatSelections;
+    private int numberOfSelectedPartyMembers;
+    private int maxNumberOfCombatSelections;
+    private bool isUltimateAttackSelection;
 
     private int combatSelectedEnemyIndex;
     private int combatSelectedPartyMemberIndex;
@@ -291,7 +301,9 @@ public class UIManager : Singleton<UIManager>
         actions.Combat.SelectEnemyRight.performed += ctx => SwitchSelectedEnemy(1);
         actions.Combat.SelectPartyMemberLeft.performed += ctx => SwitchSelectedPartyMember(-1);
         actions.Combat.SelectPartyMemberRight.performed += ctx => SwitchSelectedPartyMember(1);
-        actions.Combat.UltimateAttack.performed += ctx => ActivateUltimateAttack();
+        actions.Combat.UltimateAttack.performed += ctx => CombatSelection(true);
+        
+        combatSelections = new bool[combatSelectionRings.Length];
         
         InitialiseInventory();
         InitialiseEquipmentInventory();
@@ -318,6 +330,7 @@ public class UIManager : Singleton<UIManager>
 
     public void TestCombatScreen()
     {
+        isUltimateAttackSelection = true;
         ActivateCombatScreen(new List<EnemyDetails>());
     }
     
@@ -367,22 +380,90 @@ public class UIManager : Singleton<UIManager>
         SetCombatSelectionHoles();
     }
 
-    public void ActivateUltimateAttack()
+    public void MakeCombatSelection(int index)
+    {
+        if (isUltimateAttackSelection)
+        {
+            bool isSelected = combatSelections[index];
+            
+            if (isSelected)
+            {
+                combatSelections[index] = false;
+                numberOfSelectedPartyMembers--;
+                combatSelectionRings[index].SetActive(false);
+            }
+            else if (numberOfSelectedPartyMembers < maxNumberOfCombatSelections)
+            {
+                combatSelections[index] = true;
+                numberOfSelectedPartyMembers++;
+                combatSelectionRings[index].SetActive(true);
+            }
+            
+            UpdateCombatSelectionInfo();
+        }
+        else
+        {
+            for (int i = 0; i < combatSelections.Length; i++)
+            {
+                combatSelections[i] = false;
+                combatSelectionRings[i].SetActive(false);
+            }
+            
+            combatSelections[index] = true;
+            combatSelectionRings[index].SetActive(true);
+            castUltimateButton.gameObject.SetActive(true);
+        }
+    }
+
+    private void UpdateCombatSelectionInfo()
+    {
+        castUltimateButton.gameObject.SetActive(true);
+        castUltimateButton.interactable = numberOfSelectedPartyMembers > 0;
+        SetUltimateAttackCost();
+
+        teamUpBonusText.gameObject.SetActive(false);
+        string teamUpText = "+ Team Up Bonus ";
+        if (numberOfSelectedPartyMembers > 1)
+        {
+            teamUpText += "I";
+            teamUpBonusText.gameObject.SetActive(true);
+        }
+        if (numberOfSelectedPartyMembers > 2) teamUpText += "I";
+        teamUpBonusText.text = teamUpText;
+    }
+
+    private void SetUltimateAttackCost()
+    {
+        for (int i = 0; i < ultimateAttackCost.Length; i++)
+        {
+            ultimateAttackCost[i].SetActive(combatSelections[i]);
+        }
+    }
+    
+    public void CombatSelection(bool isUltimate)
     {
         EnterCombatSelectionScreen();
+        isUltimateAttackSelection = isUltimate;
     }
     
     private void EnterCombatSelectionScreen()
     {
         combatSelectionScreen.SetActive(true);
+        for (int i = 0; i < combatSelections.Length; i++)
+        {
+            combatSelections[i] = false;
+            combatSelectionRings[i].SetActive(false);
+        }
+        numberOfSelectedPartyMembers = 0;
+        maxNumberOfCombatSelections = combatManager.ultimateCharges;
+        
+        UpdateCombatSelectionInfo();
     }
 
-    private void ExitCombatSelectionScreen()
+    public void ExitCombatSelectionScreen()
     {
         combatSelectionScreen.SetActive(false);
     }
-
-    [SerializeField] private float holeRadius = 0.15f;
     
     private void SetCombatSelectionHoles()
     {
@@ -391,11 +472,12 @@ public class UIManager : Singleton<UIManager>
             if (skillsManager.partyMembers[i].isUnlocked)
             {
                 SetCombatSelectionHole(i, combatPartyMemberLocations[i].GetComponent<RectTransform>());
-
+                combatSelectionButtons[i].SetActive(true);
             }
             else
             {
                 combatSelectionMaterial.SetVector($"_Hole{i}Pos", new Vector2(-1000, -1000));
+                combatSelectionButtons[i].SetActive(false);
             }
         }
         
@@ -404,7 +486,7 @@ public class UIManager : Singleton<UIManager>
         Vector2 overlayScaleFactor = new Vector2(width/height, 1f);
 
         combatSelectionMaterial.SetVector("_OverlayScale", overlayScaleFactor);
-        combatSelectionMaterial.SetFloat($"_HoleRadius", holeRadius);
+        combatSelectionMaterial.SetFloat($"_HoleRadius", combatSelectionHoleRadius);
     }
     
     private void SetCombatSelectionHole(int index, RectTransform targetRect)
@@ -438,15 +520,15 @@ public class UIManager : Singleton<UIManager>
     
     public void SwitchSelectedPartyMember(int direction)
     {
-        if(unlockedPartyMembers == 1) return;
-        
-        combatSelectedPartyMemberIndex += direction;
-        while (!skillsManager.partyMembers[combatSelectedPartyMemberIndex].isUnlocked)
+        if(unlockedPartyMembers <= 1) return;
+
+        do
         {
             combatSelectedPartyMemberIndex += direction;
-            if(combatSelectedPartyMemberIndex < 0) combatSelectedPartyMemberIndex = skillsManager.partyMembers.Length - 1;
-            else if(combatSelectedPartyMemberIndex >= skillsManager.partyMembers.Length) combatSelectedPartyMemberIndex = 0;
-        }
+            if (combatSelectedPartyMemberIndex < 0) combatSelectedPartyMemberIndex = skillsManager.partyMembers.Length - 1;
+            else if (combatSelectedPartyMemberIndex >= skillsManager.partyMembers.Length) combatSelectedPartyMemberIndex = 0;
+        } 
+        while (!skillsManager.partyMembers[combatSelectedPartyMemberIndex].isUnlocked);
         
         SelectCombatPartyMember(combatSelectedPartyMemberIndex);
     }
@@ -506,11 +588,15 @@ public class UIManager : Singleton<UIManager>
         {
             ultimateCharge.gameObject.SetActive(false);
         }
-        for (int i = 1; i < ultimateCharges; i++)
+
+        if (maxCharges > 1)
         {
-            combatUltimateChargeFills[i - 1].gameObject.SetActive(true);
+            for (int i = 0; i < ultimateCharges; i++)
+            {
+                combatUltimateChargeFills[i].gameObject.SetActive(true);
+            }
         }
-        
+
         ultimateAttackButton.interactable = ultimateCharges > 0;
     }
     
@@ -2021,7 +2107,6 @@ public class UIManager : Singleton<UIManager>
     {
         AudioManager.Instance.PlayButtonPressSound();
         CloseCraftingPanel();
-        LootManager.Instance.ClosePanel();
         DialogueManager.Instance.CloseDialoguePanel();
     }
     
