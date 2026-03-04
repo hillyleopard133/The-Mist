@@ -5,7 +5,7 @@ public enum DamageTypes
     None,
     Fire,
     Ice,
-    Wind,
+    Storm,
     
     Blunt,
     Sharp,

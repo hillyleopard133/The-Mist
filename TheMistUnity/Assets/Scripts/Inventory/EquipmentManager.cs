@@ -46,9 +46,9 @@ public class EquipmentManager : Singleton<EquipmentManager>
         LoadEquipment();
     }
 
-    public InventoryItem[] GetCharacterEquipment(int characterIndex)
+    public ItemEquipment[] GetCharacterEquipment(int characterIndex)
     {
-        InventoryItem[] equippedItems = new InventoryItem[3];
+        ItemEquipment[] equippedItems = new ItemEquipment[partySize];
         equippedItems[0] = equippedArmour[characterIndex];
         equippedItems[1] = equippedWeapons[characterIndex];
         equippedItems[2] = equippedScrolls[characterIndex];

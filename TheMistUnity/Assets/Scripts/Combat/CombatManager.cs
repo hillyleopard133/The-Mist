@@ -59,6 +59,12 @@ public class CombatManager : Singleton<CombatManager>
         return (float) ultimateChargeProgress / ultimateFullChargeAmount;
     }
 
+    public void UseUltimateAttack()
+    {
+        bool[] combatSelections = uIManager.combatSelections;
+        
+    }
+
     private void UseUltimateCharges(int amount)
     {
         ultimateCharges -= amount;

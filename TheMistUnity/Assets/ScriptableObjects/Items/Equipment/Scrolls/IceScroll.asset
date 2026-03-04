@@ -25,3 +25,4 @@ MonoBehaviour:
   Quantity: 0
   equipped: -1
   mana: 35
+  scrollDamageType: {fileID: 11400000, guid: 391aec18d3b6d0748a6e767def43a0ac, type: 2}

@@ -26,3 +26,4 @@ MonoBehaviour:
   equipped: -1
   damage: 20
   critChance: 4
+  weaponDamageType: {fileID: 11400000, guid: 113ce3f55f1333247885a775164dcb86, type: 2}

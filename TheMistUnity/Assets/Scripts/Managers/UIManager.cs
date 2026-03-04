@@ -256,7 +256,9 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject[] ultimateAttackCost;
     [SerializeField] private Button castUltimateButton;
     [SerializeField] private TextMeshProUGUI teamUpBonusText;
-    private bool[] combatSelections;
+    [SerializeField] private Transform ultimateAttackEffectsList;
+    [SerializeField] private GameObject ultimateAttackDamageTypePrefab;
+    [HideInInspector] public bool[] combatSelections;
     private int numberOfSelectedPartyMembers;
     private int maxNumberOfCombatSelections;
     private bool isUltimateAttackSelection;
@@ -271,6 +273,7 @@ public class UIManager : Singleton<UIManager>
     // Managers
     private SkillsManager skillsManager;
     private CombatManager combatManager;
+    private EquipmentManager equipmentManager;
     
     #endregion
 
@@ -286,6 +289,7 @@ public class UIManager : Singleton<UIManager>
     {
         skillsManager = SkillsManager.Instance;
         combatManager = CombatManager.Instance;
+        equipmentManager = EquipmentManager.Instance;
         
         actions.General.Respawn.performed += ctx => SetIsReviving(true);  
         actions.General.Respawn.canceled += ctx => SetIsReviving(false); 
@@ -330,7 +334,6 @@ public class UIManager : Singleton<UIManager>
 
     public void TestCombatScreen()
     {
-        isUltimateAttackSelection = true;
         ActivateCombatScreen(new List<EnemyDetails>());
     }
     
@@ -430,6 +433,33 @@ public class UIManager : Singleton<UIManager>
         }
         if (numberOfSelectedPartyMembers > 2) teamUpText += "I";
         teamUpBonusText.text = teamUpText;
+        
+        ClearChildren(ultimateAttackEffectsList);
+        for (int i = 0; i < combatSelections.Length; i++)
+        {
+            if (combatSelections[i])
+            {
+                ItemEquipment[] equipment = equipmentManager.GetCharacterEquipment(i);
+                foreach (ItemEquipment item in equipment)
+                {
+                    if(item == null) continue;
+                    GameObject attackEffect;
+                    switch (item)
+                    {
+                        case ItemWeapon weapon:
+                            if(weapon.weaponDamageType.damageType == DamageTypes.None) break;
+                            attackEffect = Instantiate(ultimateAttackDamageTypePrefab, ultimateAttackEffectsList);
+                            attackEffect.GetComponent<Image>().sprite = weapon.weaponDamageType.icon;
+                            break;
+                        case ItemScroll scroll:
+                            if(scroll.scrollDamageType.damageType == DamageTypes.None) break;
+                            attackEffect = Instantiate(ultimateAttackDamageTypePrefab, ultimateAttackEffectsList);
+                            attackEffect.GetComponent<Image>().sprite = scroll.scrollDamageType.icon;
+                            break;
+                    }
+                }
+            }
+        }
     }
 
     private void SetUltimateAttackCost()
@@ -1328,7 +1358,7 @@ public class UIManager : Singleton<UIManager>
 
     private void UpdateEquippedItems()
     {
-        InventoryItem[] equippedItems = EquipmentManager.Instance.GetCharacterEquipment(selectedPartyMember);
+        ItemEquipment[] equippedItems = EquipmentManager.Instance.GetCharacterEquipment(selectedPartyMember);
         ItemArmour armour = (ItemArmour) equippedItems[0];
         ItemWeapon weapon = (ItemWeapon) equippedItems[1];
         ItemScroll scroll = (ItemScroll) equippedItems[2];
