@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e50d1ad5acb8744aa58de97af30385, type: 3}
+  m_Name: AttackMoveFireball
+  m_EditorClassIdentifier: Assembly-CSharp::AttackMove
+  MoveName: Fireball
+  Description: Conjure a flaming ball into your hands and fling it at target enemy.
+  Type: 1
+  MoveType: 0
+  DamageType: {fileID: 11400000, guid: d48698e194792824ea13b765c3823e89, type: 2}
+  DamageMultiplier: 1.2
+  MPCost: 5
+  HasEffect: 0
+  Effect: {fileID: 0}
+  EffectChance: 0

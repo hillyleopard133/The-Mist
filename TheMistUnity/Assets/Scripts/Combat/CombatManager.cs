@@ -9,17 +9,9 @@ public class CombatManager : Singleton<CombatManager>
     [SerializeField] private GameObject[] combatTilemaps;
     [SerializeField] private float timeBetweenTurns;
 
-    private List<InventoryItem> usedItems = new List<InventoryItem>();
     private List<EnemyDetails> enemies = new List<EnemyDetails>();
     private bool isFighting;
     
-    private CameraManager cameraManager;
-    private SkillsManager skillsManager;
-    private UIManager uIManager;
-    private GameManager gameManager;
-    private Inventory inventory;
-    private CoinManager coinManager;
-
     [HideInInspector] public int selectedEnemy;
     [HideInInspector] public int selectedPartyMember;
 
@@ -27,13 +19,26 @@ public class CombatManager : Singleton<CombatManager>
     [HideInInspector] public int maxUltimateCharges;
     [HideInInspector] public int ultimateChargeProgress;
     [SerializeField] private int ultimateFullChargeAmount;
+    
+    private List<InventoryItem> usedItems = new List<InventoryItem>();
+    private const int consumableInventoryIndex = 2;
 
     //To update and save after each combat win
     private int[] partyMembersCurrentHealth;
     private int[] partyMembersCurrentMana;
     
+    private CameraManager cameraManager;
+    private SkillsManager skillsManager;
+    private UIManager uIManager;
+    private GameManager gameManager;
+    private Inventory inventory;
+    private CoinManager coinManager;
+    private EquipmentManager equipmentManager;
+    
     private readonly string ULTIMATE_CHARGES = "ULTIMATE_CHARGES";
     private readonly string ULTIMATE_CHARGE_PROGRESS = "ULTIMATE_CHARGE_PROGRESS";
+    private readonly string PARTY_MEMBER_CURRENT_HEALTH = "PARTY_MEMBER_CURRENT_HEALTH";
+    private readonly string PARTY_MEMBER_CURRENT_MANA= "PARTY_MEMBER_CURRENT_MANA";
     
     private void Start()
     {
@@ -42,11 +47,109 @@ public class CombatManager : Singleton<CombatManager>
         uIManager = UIManager.Instance;
         gameManager = GameManager.Instance;
         inventory = Inventory.Instance;
+        equipmentManager = EquipmentManager.Instance;
+        
+        partyMembersCurrentHealth = new int[skillsManager.partyMembers.Length];
+        partyMembersCurrentMana = new int[skillsManager.partyMembers.Length];
+    }
+
+    public int GetPartyMemberCurrentHealth(int index)
+    {
+        return partyMembersCurrentHealth[index];
+    }
+    
+    public float GetPartyMemberCurrentHealthPercentage(int index)
+    {
+        return (float) partyMembersCurrentHealth[index] / skillsManager.partyMembers[index].CurrentMaxHealth;
+    }
+    
+    public float GetPartyMemberHealthRecoveryPercentage(int index, ItemConsumable consumable)
+    {
+        int healthTotal = partyMembersCurrentHealth[index] + consumable.GetHealthValue();
+        int maxHealth = skillsManager.partyMembers[index].CurrentMaxHealth;
+        
+        if(healthTotal >= maxHealth) return 1;
+        
+        return (float) healthTotal / maxHealth;
+    }
+    
+    public int GetPartyMemberCurrentMana(int index)
+    {
+        return partyMembersCurrentMana[index];
+    }
+    
+    public float GetPartyMemberCurrentManaPercentage(int index)
+    {
+        return (float) partyMembersCurrentMana[index] / skillsManager.partyMembers[index].CurrentMaxMana;
+    }
+    
+    public float GetPartyMemberManaRecoveryPercentage(int index, ItemConsumable consumable)
+    {
+        int manaTotal = partyMembersCurrentMana[index] + consumable.GetManaValue();
+        int maxMana = skillsManager.partyMembers[index].CurrentMaxMana;
+        
+        if(manaTotal >= maxMana) return 1;
+        
+        return (float) manaTotal / maxMana;
+    }
+
+    public AttackMove[] GetAllPartyMemberAttacks(int partyMemberIndex)
+    {
+        ItemEquipment[] equipmentList = equipmentManager.GetCharacterEquipment(partyMemberIndex);
+        List<AttackMove> unlockedAttacks = skillsManager.partyMembers[partyMemberIndex].GetUnlockedAttacks();
+
+        List<AttackMove> attacks = new List<AttackMove>();
+        attacks.AddRange(unlockedAttacks);
+
+        ItemWeapon weapon = null;
+        ItemScroll scroll = null;
+        foreach (ItemEquipment equipment in equipmentList)
+        {
+            if(equipment == null) continue;
+            if (equipment is ItemWeapon w) weapon = w;
+            else if (equipment is ItemScroll s) scroll = s;
+        }
+        
+        if(weapon != null) attacks.AddRange(weapon.Attacks);
+        if (scroll != null) attacks.AddRange(scroll.Attacks);
+        
+        return attacks.ToArray();
     }
     
     public void TestUltimateCharge()
     {
         AddUltimateCharge(120);
+    }
+
+    public int GetItemAmountLeft(string itemID)
+    {
+        int amount = inventory.GetItemCurrentStock(itemID);
+
+        foreach (InventoryItem item in usedItems)
+        {
+            if(itemID == item.ID) amount--;
+        }
+        
+        return amount;
+    }
+
+    public void UseItem()
+    {
+        ItemConsumable item = uIManager.selectedCombatItem;
+        usedItems.Add(item);
+
+        if (item.IsWholeParty)
+        {
+            //TODO add items effect
+            // uiManager.combatSelections[]
+        }
+        else
+        {
+            
+        }
+        
+        uIManager.OpenCombatInventory();
+        uIManager.ExitCombatSelectionScreen();
     }
 
     public int NumberOfEnemies()
@@ -151,6 +254,7 @@ public class CombatManager : Singleton<CombatManager>
         cameraManager.ToggleCombatCamera();
         DeactivateTilemaps();
         isFighting = false;
+        SaveCombatData();
     }
 
     private void DeactivateTilemaps()
@@ -172,12 +276,16 @@ public class CombatManager : Singleton<CombatManager>
 
     public void SaveCombatData()
     {
+        SaveGame.Save(PARTY_MEMBER_CURRENT_MANA, partyMembersCurrentMana);
+        SaveGame.Save(PARTY_MEMBER_CURRENT_HEALTH, partyMembersCurrentHealth);
         SaveGame.Save(ULTIMATE_CHARGES, ultimateCharges);
         SaveGame.Save(ULTIMATE_CHARGE_PROGRESS, ultimateChargeProgress);
     }
 
     public void LoadCombatData()
     {
+        if(SaveGame.Exists(PARTY_MEMBER_CURRENT_MANA)) partyMembersCurrentMana = SaveGame.Load<int[]>(PARTY_MEMBER_CURRENT_MANA);
+        if(SaveGame.Exists(PARTY_MEMBER_CURRENT_HEALTH)) partyMembersCurrentHealth = SaveGame.Load<int[]>(PARTY_MEMBER_CURRENT_HEALTH);
         if (SaveGame.Exists(ULTIMATE_CHARGES)) ultimateCharges = SaveGame.Load<int>(ULTIMATE_CHARGES);
         if (SaveGame.Exists(ULTIMATE_CHARGE_PROGRESS)) ultimateChargeProgress = SaveGame.Load<int>(ULTIMATE_CHARGE_PROGRESS);
     }
@@ -186,6 +294,13 @@ public class CombatManager : Singleton<CombatManager>
     {
         ultimateCharges = 0;
         ultimateChargeProgress = 0;
+
+        PartyMember[] partyMembers = skillsManager.partyMembers;
+        for (int i = 0; i < partyMembers.Length; i++)
+        {
+            partyMembersCurrentHealth[i] = partyMembers[i].BaseMaxHealth;
+            partyMembersCurrentMana[i] = partyMembers[i].BaseMaxMana;
+        }
         
         SaveCombatData();
     }

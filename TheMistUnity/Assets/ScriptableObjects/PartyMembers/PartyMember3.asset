@@ -15,7 +15,11 @@ MonoBehaviour:
   Name: Curtis
   Icon: {fileID: 274143192, guid: d47c533dd6617fa48b143dece7cab110, type: 3}
   Description: Curtis is a dumb caveman.
-  isUnlocked: 0
+  IsUnlocked: 0
+  WeaponDamageType: {fileID: 0}
+  Attacks:
+  - {fileID: 11400000, guid: 0029e5d66733f90408e945cbe9b5cca0, type: 2}
+  AttackIsUnlocked: 01
   BaseMaxHealth: 130
   BaseDefence: 15
   BaseAttack: 6
@@ -30,14 +34,14 @@ MonoBehaviour:
   EquipmentDefence: 0
   EquipmentAttack: 0
   EquipmentCritChance: 0
-  EquipmentMana: 25
-  CurrentBaseMaxHealth: 0
-  CurrentBaseDefence: 0
-  CurrentBaseAttack: 0
-  CurrentBaseCritChance: 0
-  CurrentBaseMaxMana: 0
+  EquipmentMana: 0
+  CurrentBaseMaxHealth: 130
+  CurrentBaseDefence: 15
+  CurrentBaseAttack: 6
+  CurrentBaseCritChance: 2
+  CurrentBaseMaxMana: 10
   CurrentMaxHealth: 130
   CurrentDefence: 15
   CurrentAttack: 6
   CurrentCritChance: 2
-  CurrentMaxMana: 35
+  CurrentMaxMana: 10

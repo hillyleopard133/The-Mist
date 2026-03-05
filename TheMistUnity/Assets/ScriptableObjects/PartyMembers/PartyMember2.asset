@@ -15,7 +15,11 @@ MonoBehaviour:
   Name: Raiju
   Icon: {fileID: -1750426169, guid: 4475269bdf83ce64ea47f370b42de858, type: 3}
   Description: Raiju is a samurai prince, destined to take over his fathers realm.
-  isUnlocked: 0
+  IsUnlocked: 0
+  WeaponDamageType: {fileID: 0}
+  Attacks:
+  - {fileID: 11400000, guid: 0029e5d66733f90408e945cbe9b5cca0, type: 2}
+  AttackIsUnlocked: 
   BaseMaxHealth: 80
   BaseDefence: 12
   BaseAttack: 7

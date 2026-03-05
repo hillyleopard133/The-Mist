@@ -11,4 +11,5 @@ public class ItemWeapon : ItemEquipment
     public int damage;
     public int critChance;
     public DamageType weaponDamageType;
+    public AttackMove[] Attacks;
 }

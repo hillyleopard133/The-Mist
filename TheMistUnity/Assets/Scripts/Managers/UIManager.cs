@@ -238,35 +238,62 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI combatEnemyInfoUnknownWeakness;
     [SerializeField] private Image[] combatEnemyInfoResistances;
     [SerializeField] private TextMeshProUGUI combatEnemyInfoUnknownResistance;
-    
     [SerializeField] private Button combatInventoryButton;
     [SerializeField] private Button combatAttackMovesButton;
-    
+    [SerializeField] private Color selectedActionButtonColor;
+    [SerializeField] private Color notSelectedActionButtonColor;
     [SerializeField] private TextMeshProUGUI combatSelectedPlayerName;
-    [SerializeField] private Transform combatMovesList;
+    [SerializeField] private Transform combatActionsList;
     [SerializeField] private GameObject normalAttackPrefab;
     [SerializeField] private GameObject skillAttackPrefab;
+    [SerializeField] private GameObject combatItemPrefab;
+    [SerializeField] private GameObject combatSelectedItemInfo;
+    [SerializeField] private GameObject combatSelectedAttackInfo;
+    [SerializeField] private GameObject combatNoSelectedActionInfo;
+    [SerializeField] private TextMeshProUGUI combatItemName;
+    [SerializeField] private TextMeshProUGUI combatItemDescription;
+    [SerializeField] private Image combatItemIcon;
+    [SerializeField] private TextMeshProUGUI selectedAttackName;
+    [SerializeField] private TextMeshProUGUI selectedAttackDescription;
+    [SerializeField] private TextMeshProUGUI selectedAttackMPCost;
+    [SerializeField] private GameObject selectedAttackDamageTypeBox;
+    [SerializeField] private Image selectedAttackDamageTypeIcon;
+    private int combatSelectedEnemyIndex;
+    private int combatSelectedPartyMemberIndex;
+    private int unlockedPartyMembers;
+    private bool isAttackListOpen;
     
+    [Header("Combat - Selection")]
     [SerializeField] private Material combatSelectionMaterial;
     [SerializeField] private GameObject combatSelectionScreen;
     [SerializeField] private RectTransform combatSelectionScreenBackground;
     [SerializeField] private float combatSelectionHoleRadius = 0.08f;
     [SerializeField] private GameObject[] combatSelectionRings;
     [SerializeField] private GameObject[] combatSelectionButtons;
+    [SerializeField] private GameObject ultimateAttackCostBox;
     [SerializeField] private GameObject[] ultimateAttackCost;
     [SerializeField] private Button castUltimateButton;
     [SerializeField] private TextMeshProUGUI teamUpBonusText;
     [SerializeField] private Transform ultimateAttackEffectsList;
     [SerializeField] private GameObject ultimateAttackDamageTypePrefab;
+    [SerializeField] private GameObject useItemSelectionButton;
+    [SerializeField] private GameObject useItemPartyMemberInfoBox;
+    [SerializeField] private GameObject[] useItemPartyMemberInfo;
+    [SerializeField] private Image[] useItemPartyMemberInfoImages;
+    [SerializeField] private TextMeshProUGUI[] useItemPartyMemberInfoNames;
+    [SerializeField] private TextMeshProUGUI[] useItemPartyMemberInfoHealthAmount;
+    [SerializeField] private TextMeshProUGUI[] useItemPartyMemberInfoHealthRecoveryAmount;
+    [SerializeField] private TextMeshProUGUI[] useItemPartyMemberInfoManaAmount;
+    [SerializeField] private TextMeshProUGUI[] useItemPartyMemberInfoManaRecoveryAmount;
+    [SerializeField] private RectTransform[] useItemPartyMemberInfoHealthBars;
+    [SerializeField] private RectTransform[] useItemPartyMemberInfoHealthRecoveryBars;
+    [SerializeField] private RectTransform[] useItemPartyMemberInfoManaBars;
+    [SerializeField] private RectTransform[] useItemPartyMemberInfoManaRecoveryBars;
+    [HideInInspector] public ItemConsumable selectedCombatItem;
     [HideInInspector] public bool[] combatSelections;
     private int numberOfSelectedPartyMembers;
     private int maxNumberOfCombatSelections;
     private bool isUltimateAttackSelection;
-
-    private int combatSelectedEnemyIndex;
-    private int combatSelectedPartyMemberIndex;
-    int unlockedPartyMembers;
-    
     
     private PlayerActions actions;
     
@@ -274,6 +301,7 @@ public class UIManager : Singleton<UIManager>
     private SkillsManager skillsManager;
     private CombatManager combatManager;
     private EquipmentManager equipmentManager;
+    private Inventory inventory;
     
     #endregion
 
@@ -290,6 +318,7 @@ public class UIManager : Singleton<UIManager>
         skillsManager = SkillsManager.Instance;
         combatManager = CombatManager.Instance;
         equipmentManager = EquipmentManager.Instance;
+        inventory = Inventory.Instance;
         
         actions.General.Respawn.performed += ctx => SetIsReviving(true);  
         actions.General.Respawn.canceled += ctx => SetIsReviving(false); 
@@ -317,8 +346,9 @@ public class UIManager : Singleton<UIManager>
     #endregion
 
     #region PartyInfo
-    
-    [Header("Party Info")]
+
+    [Header("Party Info")] 
+    [SerializeField] private GameObject partyMemberInfoBox;
     [SerializeField] private GameObject[] partyMemberInfo;
     [SerializeField] private Image[] partyMemberInfoImages;
     [SerializeField] private TextMeshProUGUI[] partyMemberInfoNames;
@@ -330,57 +360,19 @@ public class UIManager : Singleton<UIManager>
 
     #endregion
 
-    #region Combat
-
-    public void TestCombatScreen()
-    {
-        ActivateCombatScreen(new List<EnemyDetails>());
-    }
+    #region CombatSelection
     
-    public void ActivateCombatScreen(List<EnemyDetails> enemies)
+    private void SelectCombatItem(ItemConsumable item)
     {
-        combatScreen.SetActive(true);
-        actions.Combat.Enable();
+        selectedCombatItem = item;
+        CombatSelection(false);
+        MakeCombatSelection(combatSelectedPartyMemberIndex);
+    }
 
-        foreach (GameObject location in combatEnemyLocations)
-        {
-            location.SetActive(false);
-        }
-
-        for (int i = 0; i < enemies.Count; i++)
-        {
-            combatEnemyLocations[i].SetActive(true);
-            FillEnemyLocation(enemies[i], i);
-        }
-        foreach (GameObject navigation in combatNavigationQE)
-        {
-            navigation.SetActive(enemies.Count > 1);
-        }
-
-        unlockedPartyMembers = 0;
-        for (int i = 0; i < skillsManager.partyMembers.Length; i++)
-        {
-            if (skillsManager.partyMembers[i].isUnlocked)
-            {
-                unlockedPartyMembers++;
-                combatPartyMemberLocations[i].SetActive(true);
-                FillPartyMemberLocation(skillsManager.partyMembers[i], i);
-            }
-            else
-            {
-                combatPartyMemberLocations[i].SetActive(false);
-            }
-        }
-        foreach (GameObject navigation in combatNavigationAD)
-        {
-            navigation.SetActive(unlockedPartyMembers > 1);
-        }
-        
-        //SelectEnemy(0);
-        SelectCombatPartyMember(0);
-        UpdateUltimateCharges();
-        Canvas.ForceUpdateCanvases();
-        SetCombatSelectionHoles();
+    public void CombatSelection(bool isUltimate)
+    {
+        isUltimateAttackSelection = isUltimate;
+        EnterCombatSelectionScreen();
     }
 
     public void MakeCombatSelection(int index)
@@ -402,29 +394,104 @@ public class UIManager : Singleton<UIManager>
                 combatSelectionRings[index].SetActive(true);
             }
             
-            UpdateCombatSelectionInfo();
+            UpdateCombatUltimateSelectionInfo();
         }
         else
         {
-            for (int i = 0; i < combatSelections.Length; i++)
+            if (selectedCombatItem.IsWholeParty)
             {
-                combatSelections[i] = false;
-                combatSelectionRings[i].SetActive(false);
+                for (int i = 0; i < combatSelections.Length; i++)
+                {
+                    bool partyMemberIsUnlocked = skillsManager.partyMembers[i].IsUnlocked;
+                    combatSelections[i] = partyMemberIsUnlocked;
+                    combatSelectionRings[i].SetActive(partyMemberIsUnlocked);
+                }
             }
-            
-            combatSelections[index] = true;
-            combatSelectionRings[index].SetActive(true);
-            castUltimateButton.gameObject.SetActive(true);
+            else
+            {
+                for (int i = 0; i < combatSelections.Length; i++)
+                {
+                    combatSelections[i] = false;
+                    combatSelectionRings[i].SetActive(false);
+                }
+
+                combatSelections[index] = true;
+                combatSelectionRings[index].SetActive(true);
+            }
+
+            UpdateUseItemSelectionInfo(index);
+        }
+    }
+    
+    private void UpdateUseItemSelectionInfo(int selectedIndex)
+    {
+        ClearCombatSelectionScreenInfo();
+        
+        useItemSelectionButton.SetActive(true);
+        useItemPartyMemberInfoBox.SetActive(true);
+        
+        foreach (GameObject info in useItemPartyMemberInfo)
+        {
+            info.SetActive(false);
+        }
+
+        if (selectedCombatItem.IsWholeParty)
+        {
+            for (int i = 0; i < useItemPartyMemberInfo.Length; i++)
+            {
+                FillUseItemPartyInfo(i);
+            }
+        }
+        else
+        {
+            FillUseItemPartyInfo(selectedIndex);
         }
     }
 
-    private void UpdateCombatSelectionInfo()
+    private void FillUseItemPartyInfo(int index)
     {
+        useItemPartyMemberInfo[index].gameObject.SetActive(true);
+        useItemPartyMemberInfoNames[index].text = skillsManager.partyMembers[index].Name;
+        useItemPartyMemberInfoImages[index].sprite = skillsManager.partyMembers[index].Icon;
+
+        useItemPartyMemberInfoHealthAmount[index].text = combatManager.GetPartyMemberCurrentHealth(index).ToString();
+        useItemPartyMemberInfoManaAmount[index].text = combatManager.GetPartyMemberCurrentMana(index).ToString();
+
+        if (selectedCombatItem.GetHealthValue() > 0) useItemPartyMemberInfoHealthRecoveryAmount[index].text = "+" + selectedCombatItem.GetHealthValue();
+        else useItemPartyMemberInfoHealthRecoveryAmount[index].text = "";
+
+        if (selectedCombatItem.GetManaValue() > 0) useItemPartyMemberInfoManaRecoveryAmount[index].text = "+" +  selectedCombatItem.GetManaValue();
+        else useItemPartyMemberInfoManaRecoveryAmount[index].text = "";
+
+        Vector3 scale = useItemPartyMemberInfoHealthBars[index].localScale;
+        scale.x = combatManager.GetPartyMemberCurrentHealthPercentage(index);
+        useItemPartyMemberInfoHealthBars[index].localScale = scale;
+        scale.x = combatManager.GetPartyMemberHealthRecoveryPercentage(index, selectedCombatItem);
+        useItemPartyMemberInfoHealthRecoveryBars[index].localScale = scale;
+        scale.x = combatManager.GetPartyMemberCurrentManaPercentage(index);
+        useItemPartyMemberInfoManaBars[index].localScale = scale;
+        scale.x = combatManager.GetPartyMemberManaRecoveryPercentage(index, selectedCombatItem);
+        useItemPartyMemberInfoManaRecoveryBars[index].localScale = scale;
+    }
+
+    private void ClearCombatSelectionScreenInfo()
+    {
+        castUltimateButton.gameObject.SetActive(false);
+        teamUpBonusText.gameObject.SetActive(false);
+        ClearChildren(ultimateAttackEffectsList);
+        ultimateAttackCostBox.gameObject.SetActive(false);
+        useItemSelectionButton.SetActive(false);
+        useItemPartyMemberInfoBox.SetActive(false);
+    }
+
+    private void UpdateCombatUltimateSelectionInfo()
+    {
+        ClearCombatSelectionScreenInfo();
+        
         castUltimateButton.gameObject.SetActive(true);
         castUltimateButton.interactable = numberOfSelectedPartyMembers > 0;
         SetUltimateAttackCost();
 
-        teamUpBonusText.gameObject.SetActive(false);
         string teamUpText = "+ Team Up Bonus ";
         if (numberOfSelectedPartyMembers > 1)
         {
@@ -434,7 +501,6 @@ public class UIManager : Singleton<UIManager>
         if (numberOfSelectedPartyMembers > 2) teamUpText += "I";
         teamUpBonusText.text = teamUpText;
         
-        ClearChildren(ultimateAttackEffectsList);
         for (int i = 0; i < combatSelections.Length; i++)
         {
             if (combatSelections[i])
@@ -464,16 +530,11 @@ public class UIManager : Singleton<UIManager>
 
     private void SetUltimateAttackCost()
     {
+        ultimateAttackCostBox.gameObject.SetActive(true);
         for (int i = 0; i < ultimateAttackCost.Length; i++)
         {
             ultimateAttackCost[i].SetActive(combatSelections[i]);
         }
-    }
-    
-    public void CombatSelection(bool isUltimate)
-    {
-        EnterCombatSelectionScreen();
-        isUltimateAttackSelection = isUltimate;
     }
     
     private void EnterCombatSelectionScreen()
@@ -487,19 +548,20 @@ public class UIManager : Singleton<UIManager>
         numberOfSelectedPartyMembers = 0;
         maxNumberOfCombatSelections = combatManager.ultimateCharges;
         
-        UpdateCombatSelectionInfo();
+        if(isUltimateAttackSelection) UpdateCombatUltimateSelectionInfo();
     }
 
     public void ExitCombatSelectionScreen()
     {
         combatSelectionScreen.SetActive(false);
+        HideCombatActionInfo();
     }
     
     private void SetCombatSelectionHoles()
     {
         for (int i = 0; i < skillsManager.partyMembers.Length; i++)
         {
-            if (skillsManager.partyMembers[i].isUnlocked)
+            if (skillsManager.partyMembers[i].IsUnlocked)
             {
                 SetCombatSelectionHole(i, combatPartyMemberLocations[i].GetComponent<RectTransform>());
                 combatSelectionButtons[i].SetActive(true);
@@ -516,7 +578,7 @@ public class UIManager : Singleton<UIManager>
         Vector2 overlayScaleFactor = new Vector2(width/height, 1f);
 
         combatSelectionMaterial.SetVector("_OverlayScale", overlayScaleFactor);
-        combatSelectionMaterial.SetFloat($"_HoleRadius", combatSelectionHoleRadius);
+        combatSelectionMaterial.SetFloat("_HoleRadius", combatSelectionHoleRadius);
     }
     
     private void SetCombatSelectionHole(int index, RectTransform targetRect)
@@ -536,6 +598,189 @@ public class UIManager : Singleton<UIManager>
         );
         
         combatSelectionMaterial.SetVector($"_Hole{index}Pos", uvPos);
+    }
+
+    #endregion
+
+    #region Combat
+
+    public void TestCombatScreen()
+    {
+        ActivateCombatScreen(new List<EnemyDetails>());
+    }
+    
+    public void ActivateCombatScreen(List<EnemyDetails> enemies)
+    {
+        combatScreen.SetActive(true);
+        actions.Combat.Enable();
+
+        foreach (GameObject location in combatEnemyLocations)
+        {
+            location.SetActive(false);
+        }
+
+        for (int i = 0; i < enemies.Count; i++)
+        {
+            combatEnemyLocations[i].SetActive(true);
+            combatEnemyImages[i].sprite = enemies[i].EnemySprite;
+        }
+        foreach (GameObject navigation in combatNavigationQE)
+        {
+            navigation.SetActive(enemies.Count > 1);
+        }
+
+        unlockedPartyMembers = 0;
+        for (int i = 0; i < skillsManager.partyMembers.Length; i++)
+        {
+            if (skillsManager.partyMembers[i].IsUnlocked)
+            {
+                unlockedPartyMembers++;
+                combatPartyMemberLocations[i].SetActive(true);
+                combatPartyMemberImages[i].sprite = skillsManager.partyMembers[i].Icon;
+            }
+            else
+            {
+                combatPartyMemberLocations[i].SetActive(false);
+            }
+        }
+        foreach (GameObject navigation in combatNavigationAD)
+        {
+            navigation.SetActive(unlockedPartyMembers > 1);
+        }
+        
+        //TODO
+        //SelectEnemy(0);
+        SelectCombatPartyMember(0);
+        UpdateUltimateCharges();
+        Canvas.ForceUpdateCanvases();
+        SetCombatSelectionHoles();
+        HideCombatActionInfo();
+        OpenAttackMovesList();
+    }
+    
+    private void SelectAttackMove(AttackMove attack)
+    {
+        //TODO send to combat manager
+    }
+
+    public void OpenCombatInventory()
+    {
+        FillCombatItems();
+        
+        ColorBlock invColors = combatInventoryButton.colors;
+        invColors.normalColor = selectedActionButtonColor;
+        combatInventoryButton.colors = invColors;
+        
+        ColorBlock attColors = combatAttackMovesButton.colors;
+        attColors.normalColor = notSelectedActionButtonColor;
+        combatAttackMovesButton.colors = attColors;
+        
+        isAttackListOpen = false;
+    }
+
+    public void OpenAttackMovesList()
+    {
+        FillAttackMoves();
+        
+        ColorBlock invColors = combatInventoryButton.colors;
+        invColors.normalColor = notSelectedActionButtonColor;
+        combatInventoryButton.colors = invColors;
+        
+        ColorBlock attColors = combatAttackMovesButton.colors;
+        attColors.normalColor = selectedActionButtonColor;
+        combatAttackMovesButton.colors = attColors;
+
+        isAttackListOpen = true;
+    }
+
+    private void FillCombatItems()
+    {
+        ClearChildren(combatActionsList);
+        ItemConsumable[] consumables = inventory.InventoryItemsConsumables;
+        
+        foreach (ItemConsumable item in consumables)
+        {
+            if(item == null) continue;
+            
+            int amount = combatManager.GetItemAmountLeft(item.ID);
+
+            if (amount > 0)
+            {
+                GameObject combatItem = Instantiate(combatItemPrefab, combatActionsList);
+                combatItem.GetComponent<CombatItemButton>().FillDetails(item, amount);
+                
+                ItemConsumable itemCopy = item;
+                combatItem.GetComponent<Button>().onClick.AddListener(() => SelectCombatItem(itemCopy));
+            }
+        }
+    }
+
+    private void FillAttackMoves()
+    {
+        ClearChildren(combatActionsList);
+        AttackMove[] attacks = combatManager.GetAllPartyMemberAttacks(combatSelectedPartyMemberIndex);
+
+        foreach (AttackMove attack in attacks)
+        {
+            GameObject attackMoveButton;
+            attackMoveButton = Instantiate(attack.Type == AttackType.Basic ? normalAttackPrefab : skillAttackPrefab, combatActionsList);
+
+            attackMoveButton.GetComponent<AttackMoveButton>().Instantiate(attack);
+            Button button = attackMoveButton.GetComponent<Button>();
+            button.onClick.AddListener(() => SelectAttackMove(attack));
+            
+            if(attack.Type == AttackType.Skill && combatManager.GetPartyMemberCurrentMana(combatSelectedPartyMemberIndex) > attack.MPCost) button.interactable = false;
+            attackMoveButton.GetComponentInChildren<TextMeshProUGUI>().text = attack.MoveName;
+        }
+    }
+    
+    public void ShowCombatMoveInfo(AttackMove attackMove)
+    {
+        selectedAttackName.text = attackMove.MoveName;
+        selectedAttackDescription.text = attackMove.Description;
+
+        selectedAttackMPCost.gameObject.SetActive(false);
+        if (attackMove.Type == AttackType.Skill)
+        {
+            selectedAttackMPCost.gameObject.SetActive(true);
+            selectedAttackMPCost.text = attackMove.MPCost + "MP";
+        }
+        
+        DamageType damageType = attackMove.DamageType;
+        if (damageType.damageType == DamageTypes.None)
+        {
+            selectedAttackDamageTypeBox.gameObject.SetActive(false);
+        }
+        else
+        {
+            selectedAttackDamageTypeBox.gameObject.SetActive(true);
+            selectedAttackDamageTypeIcon.sprite = damageType.icon;
+        }
+        
+        combatNoSelectedActionInfo.SetActive(false);
+        combatSelectedAttackInfo.SetActive(true);
+        combatSelectedItemInfo.SetActive(false);
+    }
+
+    public void ShowCombatItemInfo(InventoryItem item)
+    {
+        combatItemName.text = item.Name;
+        combatItemDescription.text = item.Description;
+        combatItemIcon.gameObject.SetActive(true);
+        combatItemIcon.sprite = item.Icon;
+        
+        combatNoSelectedActionInfo.SetActive(false);
+        combatSelectedAttackInfo.SetActive(false);
+        combatSelectedItemInfo.SetActive(true);
+    }
+    
+    public void HideCombatActionInfo()
+    {
+        if (combatSelectionScreen.activeSelf) return;
+        
+        combatNoSelectedActionInfo.SetActive(true);
+        combatSelectedAttackInfo.SetActive(false);
+        combatSelectedItemInfo.SetActive(false);
     }
     
     public void SwitchSelectedEnemy(int direction)
@@ -558,7 +803,7 @@ public class UIManager : Singleton<UIManager>
             if (combatSelectedPartyMemberIndex < 0) combatSelectedPartyMemberIndex = skillsManager.partyMembers.Length - 1;
             else if (combatSelectedPartyMemberIndex >= skillsManager.partyMembers.Length) combatSelectedPartyMemberIndex = 0;
         } 
-        while (!skillsManager.partyMembers[combatSelectedPartyMemberIndex].isUnlocked);
+        while (!skillsManager.partyMembers[combatSelectedPartyMemberIndex].IsUnlocked);
         
         SelectCombatPartyMember(combatSelectedPartyMemberIndex);
     }
@@ -568,15 +813,16 @@ public class UIManager : Singleton<UIManager>
         combatSelectedPartyMemberIndex = index;
         combatManager.selectedPartyMember = index;
         
-        PartyMember combatSelectedPartyMember = skillsManager.partyMembers[index];
-        
-        //TODO fill attack moves
+        combatSelectedPlayerName.text = skillsManager.partyMembers[index].Name;
 
         foreach (GameObject selection in combatPartyMemberSelections)
         {
             selection.SetActive(false);
         }
         combatPartyMemberSelections[index].SetActive(true);
+
+        if (isAttackListOpen) OpenAttackMovesList();
+        else OpenCombatInventory();
     }
 
     public void SelectEnemy(int index)
@@ -718,16 +964,6 @@ public class UIManager : Singleton<UIManager>
         }
     }
 
-    private void FillPartyMemberLocation(PartyMember partyMember, int index)
-    {
-        combatPartyMemberImages[index].sprite = partyMember.Icon;
-    }
-
-    private void FillEnemyLocation(EnemyDetails enemy, int index)
-    {
-        combatEnemyImages[index].sprite = enemy.EnemySprite;
-    }
-
     public void DeactivateCombatScreen()
     {
         combatScreen.SetActive(false);
@@ -761,10 +997,10 @@ public class UIManager : Singleton<UIManager>
         }
     }
 
-    public void SelectSkill(Skill selectedSkill)
+    public void SelectSkill(Skill newSelectedSkill)
     {
-        this.selectedSkill = selectedSkill;
-        UpdateSelectedSkill(selectedSkill);
+        this.selectedSkill = newSelectedSkill;
+        UpdateSelectedSkill(newSelectedSkill);
 
         foreach (Skill skill in skillsManager.skills)
         {
@@ -778,8 +1014,8 @@ public class UIManager : Singleton<UIManager>
                 skillSelectionBorders[skillsManager.GetSkillIndex(skill)].SetActive(false);
             }
         }
-        skillSelectionBorders[skillsManager.GetSkillIndex(selectedSkill)].SetActive(true);
-        skillSelectionBorders[skillsManager.GetSkillIndex(selectedSkill)].GetComponent<Image>().color = skillTreeSelectedSkillBorderColour;
+        skillSelectionBorders[skillsManager.GetSkillIndex(newSelectedSkill)].SetActive(true);
+        skillSelectionBorders[skillsManager.GetSkillIndex(newSelectedSkill)].GetComponent<Image>().color = skillTreeSelectedSkillBorderColour;
     }
 
     private void UpdateSelectedSkill(Skill skill)
@@ -903,7 +1139,7 @@ public class UIManager : Singleton<UIManager>
         {
             partyMembers[i].CalculateBaseStats();
             skillsCharacterIcons[i].sprite = partyMembers[i].Icon;
-            if(partyMembers[i].isUnlocked){
+            if(partyMembers[i].IsUnlocked){
                 skillsNames[i].text = partyMembers[i].Name;
                 skillsAvailablePoints[i].text = "Available Points: " + (skillsManager.availableAttributePoints[i] - skillsManager.pendingAttributePoints[i]);
             
@@ -981,7 +1217,7 @@ public class UIManager : Singleton<UIManager>
 
         for (int i = 0; i < partyMembers.Length; i++)
         {
-            if (partyMembers[i].isUnlocked)
+            if (partyMembers[i].IsUnlocked)
             {
                 SetAllIncreaseButtons(skillsManager.HasSkillPointsLeft(i), i);
                 
@@ -1214,7 +1450,7 @@ public class UIManager : Singleton<UIManager>
 
         shopMinAmountButton.interactable = ShopManager.Instance.shopItemAmount > 1;
         
-        bool haveTreasure = Inventory.Instance.GetInventoryByIndex(0).Any(item => item != null);
+        bool haveTreasure = inventory.InventoryItemsTreasure.Any(item => item != null);
         treasureSellButton.interactable = haveTreasure;
         if(haveTreasure) treasureSellValue.text = ShopManager.Instance.CalculateAllTreasureValue().ToString();
         else treasureSellValue.text = "0";
@@ -1288,13 +1524,11 @@ public class UIManager : Singleton<UIManager>
         foreach (Button partyMember in partyMembersButtons)
         {
             ColorBlock colors = partyMember.colors;    
-            //colors.normalColor = Color.white;
             colors.normalColor = selectedPartyMemberColor;
             partyMember.colors = colors; 
         }
         Button SelectedMember = partyMembersButtons[memberIndex];
         ColorBlock cb = SelectedMember.colors;    
-        //cb.normalColor = selectedPartyMemberColor;
         cb.normalColor = Color.white;
         SelectedMember.colors = cb;
     }
@@ -1308,7 +1542,7 @@ public class UIManager : Singleton<UIManager>
 
         for (int i = 0; i < skillsManager.partyMembers.Length; i++)
         {
-            if (skillsManager.partyMembers[i].isUnlocked)
+            if (skillsManager.partyMembers[i].IsUnlocked)
             {
                 UnlockPartyMember(i);
             }

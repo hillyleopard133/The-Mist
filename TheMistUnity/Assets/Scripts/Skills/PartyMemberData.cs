@@ -1,4 +1,5 @@
 using System;
+using UnityEngine.Serialization;
 
 [Serializable]
 public class PartyMemberData
@@ -15,5 +16,7 @@ public class PartyMemberData
     public int SkillPointsCritChance;
     public int SkillPointsMana;
 
-    public bool isUnlocked;
+    public bool IsUnlocked;
+
+    public bool[] IsAttackMoveUnlocked;
 }

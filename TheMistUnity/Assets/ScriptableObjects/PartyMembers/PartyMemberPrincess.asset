@@ -16,7 +16,11 @@ MonoBehaviour:
   Icon: {fileID: 1885454505, guid: 0e2e5550dba572d419e5c5911cd634a5, type: 3}
   Description: Catarina is a princess who's run away in search of adventure, tired
     of being locked up in the castle.
-  isUnlocked: 0
+  IsUnlocked: 1
+  WeaponDamageType: {fileID: 0}
+  Attacks:
+  - {fileID: 11400000, guid: 0029e5d66733f90408e945cbe9b5cca0, type: 2}
+  AttackIsUnlocked: 01
   BaseMaxHealth: 80
   BaseDefence: 10
   BaseAttack: 5
@@ -29,16 +33,16 @@ MonoBehaviour:
   SkillPointsMana: 0
   EquipmentHealth: 0
   EquipmentDefence: 0
-  EquipmentAttack: 20
-  EquipmentCritChance: 4
-  EquipmentMana: 25
-  CurrentBaseMaxHealth: 0
-  CurrentBaseDefence: 0
-  CurrentBaseAttack: 0
-  CurrentBaseCritChance: 0
-  CurrentBaseMaxMana: 0
+  EquipmentAttack: 0
+  EquipmentCritChance: 0
+  EquipmentMana: 0
+  CurrentBaseMaxHealth: 80
+  CurrentBaseDefence: 10
+  CurrentBaseAttack: 5
+  CurrentBaseCritChance: 10
+  CurrentBaseMaxMana: 20
   CurrentMaxHealth: 80
-  CurrentDefence: 12
-  CurrentAttack: 27
-  CurrentCritChance: 7
-  CurrentMaxMana: 40
+  CurrentDefence: 10
+  CurrentAttack: 5
+  CurrentCritChance: 10
+  CurrentMaxMana: 20

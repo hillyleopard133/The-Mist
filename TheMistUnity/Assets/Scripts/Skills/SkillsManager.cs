@@ -69,7 +69,7 @@ public class SkillsManager : Singleton<SkillsManager>
 
         foreach (PartyMember partyMember in partyMembers)
         {
-            if (partyMember.isUnlocked) unlockedPartyMembers.Add(partyMember);
+            if (partyMember.IsUnlocked) unlockedPartyMembers.Add(partyMember);
         }
         
         return unlockedPartyMembers;

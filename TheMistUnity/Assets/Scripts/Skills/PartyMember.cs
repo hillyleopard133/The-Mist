@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/PartyMember", fileName = "PartyMember")]
 public class PartyMember : ScriptableObject
@@ -8,8 +10,11 @@ public class PartyMember : ScriptableObject
     public string Name;
     public Sprite Icon;
     [TextArea] public string Description;
-    [HideInInspector] public bool isUnlocked;
-    public DamageType weaponDamageType;
+    [HideInInspector] public bool IsUnlocked;
+    public DamageType WeaponDamageType;
+    
+    public AttackMove[] Attacks;
+    [SerializeField, HideInInspector] bool[] AttackIsUnlocked;
     
     [Header("Stats")]
     public int BaseMaxHealth = 100;
@@ -46,7 +51,17 @@ public class PartyMember : ScriptableObject
 
     public void UnlockPartyMember()
     {
-        isUnlocked = true;
+        IsUnlocked = true;
+    }
+
+    public List<AttackMove> GetUnlockedAttacks()
+    {
+        List<AttackMove> unlockedAttacks = new List<AttackMove>();
+        for (int i = 0; i < Attacks.Length; i++)
+        {
+            if(AttackIsUnlocked[i]) unlockedAttacks.Add(Attacks[i]);
+        }
+        return unlockedAttacks;
     }
 
     public void IncreaseSkillPoints(AttributeType attributeType, int amount)
@@ -152,12 +167,19 @@ public class PartyMember : ScriptableObject
         SkillPointsMana = 0;
     }
 
+    private void ClearUnlockedAttacks()
+    {
+        AttackIsUnlocked = new bool[Attacks.Length];
+        AttackIsUnlocked[0] = true;
+    }
+
     public void ResetPartyMember()
     {
         ClearEquipment();
         ClearSkillPoints();
-        isUnlocked = false;
+        IsUnlocked = false;
         CalculateBaseStats();
+        ClearUnlockedAttacks();
     }
 
     public PartyMemberData GetData()
@@ -176,7 +198,8 @@ public class PartyMember : ScriptableObject
         partyMemberData.SkillPointsCritChance = SkillPointsCritChance;
         partyMemberData.SkillPointsMana = SkillPointsMana;
         
-        partyMemberData.isUnlocked = isUnlocked;
+        partyMemberData.IsUnlocked = IsUnlocked;
+        partyMemberData.IsAttackMoveUnlocked = AttackIsUnlocked;
 
         return partyMemberData;
     }
@@ -195,6 +218,7 @@ public class PartyMember : ScriptableObject
         SkillPointsCritChance = partyMemberData.SkillPointsCritChance;
         SkillPointsMana = partyMemberData.SkillPointsMana;
         
-        isUnlocked = partyMemberData.isUnlocked;
+        IsUnlocked = partyMemberData.IsUnlocked;
+        AttackIsUnlocked = partyMemberData.IsAttackMoveUnlocked;
     }
 }

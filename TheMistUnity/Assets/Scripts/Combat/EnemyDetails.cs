@@ -26,6 +26,6 @@ public class EnemyDetails : ScriptableObject
 
     public float GetHealthBarPercentage()
     {
-        return CurrentHealth / MaxHealth;
+        return (float) CurrentHealth / MaxHealth;
     }
 }

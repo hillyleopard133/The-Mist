@@ -16,14 +16,14 @@ public class Inventory : Singleton<Inventory>
     
     private InventoryItem[] inventoryItemsTreasure;
     private InventoryItem[] inventoryItemsResources;
-    private InventoryItem[] inventoryItemsConsumables;
+    private ItemConsumable[] inventoryItemsConsumables;
     private ItemEquipment[] inventoryItemsEquipment;
     private InventoryItem[] inventoryItemsQuests;
 
     public int InventorySize => inventorySize;
     public InventoryItem[] InventoryItemsTreasure => inventoryItemsTreasure;
     public InventoryItem[] InventoryItemsResources => inventoryItemsResources;
-    public InventoryItem[] InventoryItemsConsumables => inventoryItemsConsumables;
+    public ItemConsumable[] InventoryItemsConsumables => inventoryItemsConsumables;
     public ItemEquipment[] InventoryItemsEquipment => inventoryItemsEquipment;
     public InventoryItem[] InventoryItemsQuests => inventoryItemsQuests;
     
@@ -41,7 +41,7 @@ public class Inventory : Singleton<Inventory>
     {
         inventoryItemsTreasure = new InventoryItem[inventorySize];
         inventoryItemsResources = new InventoryItem[inventorySize];
-        inventoryItemsConsumables = new InventoryItem[inventorySize];
+        inventoryItemsConsumables = new ItemConsumable[inventorySize];
         inventoryItemsEquipment = new ItemEquipment[inventorySize];
         inventoryItemsQuests = new InventoryItem[inventorySize];
         
@@ -206,7 +206,7 @@ public class Inventory : Singleton<Inventory>
         }
     }
 
-    public List<int> CheckItemStockIndexes(string itemID)
+    private List<int> CheckItemStockIndexes(string itemID)
     {
         InventoryItem[] items = GetInventoryItemsByItemType(ItemExistsInGameContent(itemID));
         

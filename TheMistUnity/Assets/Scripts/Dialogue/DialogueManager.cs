@@ -249,7 +249,10 @@ public class DialogueManager : Singleton<DialogueManager>
     {
         GameManager.Instance.EnablePlayerMovement();
         isChoosing = false;
-        dialoguePanel.SetActive(false);
+        if (dialoguePanel) 
+        {
+            dialoguePanel.SetActive(false);
+        }
         dialogueStarted = false;
         actions.Dialogue.Continue.Disable();
     }

@@ -29,7 +29,7 @@ public class ShopManager : Singleton<ShopManager>
 
     public int CalculateAllTreasureValue()
     {
-        InventoryItem[] treasures = inventory.GetInventoryByIndex(0);
+        InventoryItem[] treasures = inventory.InventoryItemsTreasure;
         int treasuresValue = 0;
         treasureIndexes.Clear();
         
@@ -97,7 +97,7 @@ public class ShopManager : Singleton<ShopManager>
     public void SellAllTreasure()
     {
         coinManager.AddCoins(CalculateAllTreasureValue());
-        InventoryItem[] treasures = inventory.GetInventoryByIndex(0);
+        InventoryItem[] treasures = inventory.InventoryItemsTreasure;
         foreach (int index in treasureIndexes)
         {
             inventory.RemoveItem(treasures, index);

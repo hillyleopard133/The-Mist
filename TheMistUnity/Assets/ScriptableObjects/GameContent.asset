@@ -13,23 +13,6 @@ MonoBehaviour:
   m_Name: GameContent
   m_EditorClassIdentifier: 
   GameItems:
-  - {fileID: 11400000, guid: d366afa9d4f741b44a8f79f5a614556b, type: 2}
-  - {fileID: 11400000, guid: 57254d906bfe50b4fab1186fedeef4ba, type: 2}
-  - {fileID: 11400000, guid: 5e35991cbf5a54947a37e71cd9a4905a, type: 2}
-  - {fileID: 11400000, guid: 0b700b5913215d04a8f848623a3dfb26, type: 2}
-  - {fileID: 11400000, guid: 7d10bb3f0f4b959438ba9533d3d26abc, type: 2}
-  - {fileID: 11400000, guid: 9427140733188f54fa916709ad6f4ef7, type: 2}
-  - {fileID: 11400000, guid: 8c302aebfb3ca43458ddf733972534ed, type: 2}
-  - {fileID: 11400000, guid: 61fb0f712160d014092e908edc58d552, type: 2}
-  - {fileID: 11400000, guid: 05b6f15b22c7eec49be0c4ca3b92ae72, type: 2}
-  - {fileID: 11400000, guid: 1ed6eaf5351bcf04db72429c509cfb86, type: 2}
-  - {fileID: 11400000, guid: 371572504a6f7df4b99592599973a000, type: 2}
-  - {fileID: 11400000, guid: f316c2f81fdbfa44d8c83bad0ecf13b4, type: 2}
-  - {fileID: 11400000, guid: 025981c611917f34cbab876878b9cdee, type: 2}
-  - {fileID: 11400000, guid: d0ce1819c8624c14bbf5df765d7fc5f1, type: 2}
-  - {fileID: 11400000, guid: f04414a9b08a26e4aa1c051c76a85d99, type: 2}
-  - {fileID: 11400000, guid: 1193c545b836f2d44a97bfef53ad806a, type: 2}
-  - {fileID: 11400000, guid: 6d22807872b87b7458ca6d4910c6db9f, type: 2}
   - {fileID: 11400000, guid: 49ad873010116424c9c51f9036b89515, type: 2}
   - {fileID: 11400000, guid: 333d5780fa9d3be4cabfb821a9b35b83, type: 2}
   - {fileID: 11400000, guid: 1d8af6f3e5e9baf4fa99bda27ba8db31, type: 2}
@@ -39,7 +22,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: aad6a3a55c9aca745826d3afed541d45, type: 2}
   - {fileID: 11400000, guid: 810cdc12ef45c1644ac5ada1cb9fba3e, type: 2}
   - {fileID: 11400000, guid: 397aa0b022b6dc94f9fe4ec43e4411c4, type: 2}
-  - {fileID: 11400000, guid: b9f7f904e69178544819a18eed4fc712, type: 2}
   - {fileID: 11400000, guid: d44d9c5ad5587284997497acee7416cc, type: 2}
   - {fileID: 11400000, guid: 9ee6a04112f81db4e90fc6a83e907746, type: 2}
   - {fileID: 11400000, guid: c140cb74975e58645bbc70444ad6e1a8, type: 2}

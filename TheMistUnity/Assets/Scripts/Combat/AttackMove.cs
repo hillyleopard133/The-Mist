@@ -2,52 +2,41 @@ using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+public enum AttackType
+{
+    Basic,
+    Skill
+}
+
+public enum AttackMoveType
+{
+    SingleTarget,
+    AOE,
+    MultiHit
+}
+
 [CreateAssetMenu (menuName = "ScriptableObjects/Combat/AttackMove", fileName = "AttackMove")]
 public class AttackMove: ScriptableObject
 {
-    [SerializeField] private float damage;
-    [SerializeField] private bool hasEffect;
-    [SerializeField] private AttackEffect effect;
-    [SerializeField] private float effectChance;
-    [SerializeField] private float hitChance;
-    [SerializeField] private string moveName;
-
-    public string GetMoveName()
-    {
-        return moveName;
-    }
-
-    public float GetDamage()
-    {
-        return damage;
-    }
-
+    public string MoveName;
+    [TextArea] public string Description;
+    public AttackType Type;
+    public AttackMoveType MoveType;
+    public DamageType DamageType;
+    public float DamageMultiplier;
+    public int MPCost;
+    
+    public bool HasEffect;
+    public AttackEffect Effect;
+    public float EffectChance;
+    
     public void InflictEffect(EnemyCombat enemyCombat)
     {
         int random = Random.Range(0, 100);
-        if (random <= effectChance)
+        if (random <= EffectChance)
         {
-            if(hasEffect) enemyCombat.AddEffect(effect.CopyEffect());
+            if(HasEffect) enemyCombat.AddEffect(Effect.CopyEffect());
         }
     }
 
-    public float GetHitChance()
-    {
-        return hitChance;
-    }
-
-    public float GetEffectChance()
-    {
-        return effectChance;
-    }
-
-    public bool HasEffect()
-    {
-        return hasEffect;
-    }
-
-    public AttackEffect GetEffect()
-    {
-        return effect;
-    }
 }

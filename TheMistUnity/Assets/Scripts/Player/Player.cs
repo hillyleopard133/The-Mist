@@ -6,10 +6,6 @@ public class Player : Singleton<Player>
     [Header("Config")]
     //[SerializeField] private PlayerStats stats;
     
-    [Header("Test")]
-    public ItemHealthPotion HealthPotion;
-    public ItemManaPotion ManaPotion;
-    
     //public PlayerStats Stats => stats;
     public PlayerMana PlayerMana { get; private set; }
     public PlayerHealth PlayerHealth {get; private set;}
