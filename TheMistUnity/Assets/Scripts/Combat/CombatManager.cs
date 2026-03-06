@@ -26,6 +26,7 @@ public class CombatManager : Singleton<CombatManager>
     //To update and save after each combat win
     private int[] partyMembersCurrentHealth;
     private int[] partyMembersCurrentMana;
+    private bool[] partyMemberIsDead;
     
     private CameraManager cameraManager;
     private SkillsManager skillsManager;
@@ -51,6 +52,33 @@ public class CombatManager : Singleton<CombatManager>
         
         partyMembersCurrentHealth = new int[skillsManager.partyMembers.Length];
         partyMembersCurrentMana = new int[skillsManager.partyMembers.Length];
+        partyMemberIsDead = new bool[skillsManager.partyMembers.Length];
+    }
+
+    public void TestEndCombat()
+    {
+        CombatLose();
+    }
+    
+    public void TestUltimateCharge()
+    {
+        AddUltimateCharge(120);
+    }
+
+    public void LevelUp()
+    {
+        for (int i = 0; i < partyMembersCurrentHealth.Length; i++)
+        {
+            partyMembersCurrentHealth[i] = skillsManager.partyMembers[i].CurrentMaxHealth;
+            partyMembersCurrentMana[i] = skillsManager.partyMembers[i].CurrentMaxMana;
+            partyMemberIsDead[i] = false;
+        }
+        uIManager.UpdatePartyMemberInfo();
+    }
+
+    public bool IsPartyMemberDead(int index)
+    {
+        return partyMemberIsDead[index];
     }
 
     public int GetPartyMemberCurrentHealth(int index)
@@ -115,11 +143,6 @@ public class CombatManager : Singleton<CombatManager>
         
         return attacks.ToArray();
     }
-    
-    public void TestUltimateCharge()
-    {
-        AddUltimateCharge(120);
-    }
 
     public int GetItemAmountLeft(string itemID)
     {
@@ -138,16 +161,23 @@ public class CombatManager : Singleton<CombatManager>
         ItemConsumable item = uIManager.selectedCombatItem;
         usedItems.Add(item);
 
-        if (item.IsWholeParty)
+        bool[] selectedParty = uIManager.combatSelections;
+
+        for (int i = 0; i < selectedParty.Length; i++)
         {
-            //TODO add items effect
-            // uiManager.combatSelections[]
+            if (selectedParty[i])
+            {
+                if(partyMemberIsDead[i] && !item.IsRevive) continue;
+
+                if(item.IsRevive) partyMemberIsDead[i] = false;
+                
+                partyMembersCurrentHealth[i] += item.HealthValue;
+                if(partyMembersCurrentHealth[i] >= skillsManager.partyMembers[i].CurrentMaxHealth) partyMembersCurrentHealth[i] = skillsManager.partyMembers[i].CurrentMaxHealth;
+                partyMembersCurrentMana[i] += item.ManaValue;
+                if(partyMembersCurrentMana[i] >= skillsManager.partyMembers[i].CurrentMaxMana) partyMembersCurrentMana[i] = skillsManager.partyMembers[i].CurrentMaxMana;
+            }
         }
-        else
-        {
-            
-        }
-        
+        uIManager.UpdatePartyMemberInfo();
         uIManager.OpenCombatInventory();
         uIManager.ExitCombatSelectionScreen();
     }

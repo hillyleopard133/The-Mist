@@ -15,6 +15,8 @@ public class EnemyArea : MonoBehaviour
     [SerializeField] private CombatGridType gridType;
     private BoxCollider2D spawnArea;
     private List<EnemyDetails> enemies = new List<EnemyDetails>();
+
+    [HideInInspector] public bool hasEntered;
     
     private CombatManager combatManager;
 
@@ -26,7 +28,6 @@ public class EnemyArea : MonoBehaviour
     private void Start()
     {
         combatManager = CombatManager.Instance;
-        SpawnEnemies();
     }
 
     public void ClearEnemies()
@@ -42,9 +43,10 @@ public class EnemyArea : MonoBehaviour
     private void StartCombat()
     {
         combatManager.EnterCombat(enemies, gridType);
+        hasEntered = true;
     }
 
-    private void SpawnEnemies()
+    public void SpawnEnemies()
     {
         foreach (EnemyDetails enemy in enemies)
         {
@@ -67,5 +69,13 @@ public class EnemyArea : MonoBehaviour
         float randomY = Random.Range(minY, maxY);
 
         return new Vector2(randomX, randomY);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if(!hasEntered) StartCombat();
+        }
     }
 }

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adfbb9c3adc045f3bcffd959dbbfcc45, type: 3}
-  m_Name: ItemMedpack
+  m_Name: ItemMilkParty
   m_EditorClassIdentifier: 
-  ID: Medpack
-  Name: Medpack
-  Icon: {fileID: 21300000, guid: 2d2ae8c18f465ca48b686bcbb441ae6a, type: 3}
-  Description: Whole party recovers 50HP
+  ID: SuperMilk
+  Name: SuperMilk
+  Icon: {fileID: 21300000, guid: 05f878cea64ea13449c8eb207d3e97ab, type: 3}
+  Description: Revive all downed party members to 30HP
   SellValue: 20
   BuyValue: 60
   ItemType: 2
@@ -23,7 +23,7 @@ MonoBehaviour:
   IsStackable: 1
   MaxStack: 10
   Quantity: 0
-  HealthValue: 50
+  HealthValue: 30
   ManaValue: 0
   IsWholeParty: 1
-  IsRevive: 0
+  IsRevive: 1

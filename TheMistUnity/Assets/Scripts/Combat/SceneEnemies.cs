@@ -20,6 +20,7 @@ public class SceneEnemies : MonoBehaviour
         {
             area.ClearEnemies();
             FillEnemyArea(area);
+            area.SpawnEnemies();
         }
     }
 

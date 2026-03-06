@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fefaef3d124ceef4f97f33a8a5ab4742, type: 3}
+  m_Name: EnemyChicken
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDetails
+  EnemyName: Chicken
+  EnemySprite: {fileID: -855322296, guid: 34fd48863f97b7a45abae73a2f93a98f, type: 3}
+  enemyPrefab: {fileID: 9185471420396107289, guid: fa7950473c3e5834f9dd78ac04ef7b72, type: 3}
+  CoinsReward: 5
+  ExpReward: 200
+  MaxHealth: 40
+  CurrentHealth: 40
+  attackMoves:
+  - {fileID: 11400000, guid: 0029e5d66733f90408e945cbe9b5cca0, type: 2}
+  weaknesses: []
+  resistances: []

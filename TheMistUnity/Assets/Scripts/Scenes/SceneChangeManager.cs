@@ -105,8 +105,8 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
         yield return null;
         
         SaveGame.Save(CHECKPOINT, spawnLocation);
-        SaveGameLocation();
         PositionPlayer(spawnLocation);
+        SaveGameLocation();
         GameManager.Instance.SaveTimer();
         
         UIManager.Instance.ActivateLoadingScreen(false);

@@ -41,6 +41,7 @@ public class SkillsManager : Singleton<SkillsManager>
     [HideInInspector] public int skillOrbs;
     
     private UIManager uIManager;
+    private CombatManager combatManager;
     
     private readonly string PARTY_DATA = "PARTY_DATA";
     private readonly string ATTRIBUTE_POINTS = "ATTRIBUTE_POINTS";
@@ -51,6 +52,7 @@ public class SkillsManager : Singleton<SkillsManager>
     private void Start()
     {
         uIManager = UIManager.Instance;
+        combatManager = CombatManager.Instance;
         nextLevelExp = firstLevelExp;
         
         availableAttributePoints = new int[partyMembers.Length];
@@ -132,6 +134,8 @@ public class SkillsManager : Singleton<SkillsManager>
         
         int newNextLevelExp = (int)Mathf.Round(nextLevelExp * (1 + ExpMultiplier / 100f));
         nextLevelExp = newNextLevelExp;
+
+        combatManager.LevelUp();
     }
 
     public bool HasSkillPointsLeft(int partyMemberIndex)

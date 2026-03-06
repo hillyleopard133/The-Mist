@@ -52,6 +52,7 @@ public class PartyMember : ScriptableObject
     public void UnlockPartyMember()
     {
         IsUnlocked = true;
+        UIManager.Instance.UpdatePartyMemberInfo();
     }
 
     public List<AttackMove> GetUnlockedAttacks()
@@ -66,6 +67,7 @@ public class PartyMember : ScriptableObject
 
     public void IncreaseSkillPoints(AttributeType attributeType, int amount)
     {
+        //TODO add the health and mana to combatManager current values
         switch (attributeType)
         {
             case AttributeType.Health:
@@ -220,5 +222,7 @@ public class PartyMember : ScriptableObject
         
         IsUnlocked = partyMemberData.IsUnlocked;
         AttackIsUnlocked = partyMemberData.IsAttackMoveUnlocked;
+        
+        CalculateBaseStats();
     }
 }
