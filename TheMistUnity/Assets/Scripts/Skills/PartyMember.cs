@@ -67,7 +67,6 @@ public class PartyMember : ScriptableObject
 
     public void IncreaseSkillPoints(AttributeType attributeType, int amount)
     {
-        //TODO add the health and mana to combatManager current values
         switch (attributeType)
         {
             case AttributeType.Health:

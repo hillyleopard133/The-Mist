@@ -103788,6 +103788,7 @@ MonoBehaviour:
   - {fileID: 932250234}
   - {fileID: 1652742041}
   - {fileID: 1019330772}
+  deadEnemySprite: {fileID: -1157033095, guid: 75cfa750fa80624499a31802d1bceb06, type: 3}
 --- !u!4 &1683219268
 Transform:
   m_ObjectHideFlags: 0

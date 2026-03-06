@@ -258,6 +258,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI selectedAttackMPCost;
     [SerializeField] private GameObject selectedAttackDamageTypeBox;
     [SerializeField] private Image selectedAttackDamageTypeIcon;
+    [SerializeField] private Sprite deadEnemySprite;
     private int combatSelectedEnemyIndex;
     private int combatSelectedPartyMemberIndex;
     private int unlockedPartyMembers;
@@ -733,9 +734,14 @@ public class UIManager : Singleton<UIManager>
         ExitCombatSelectionScreen();
     }
     
+    public void KillEnemy(int enemy)
+    {
+        combatEnemyImages[enemy].sprite = deadEnemySprite;
+    }
+    
     private void SelectAttackMove(AttackMove attack)
     {
-        //TODO send to combat manager
+        if(attack.MoveType == AttackMoveType.SingleTarget) combatManager.AttackTargetEnemy(attack);
     }
 
     public void OpenCombatInventory()
@@ -860,10 +866,20 @@ public class UIManager : Singleton<UIManager>
     
     public void SwitchSelectedEnemy(int direction)
     {
-        combatSelectedEnemyIndex += direction;
+        int enemyCount = combatManager.NumberOfEnemies();
+        if (enemyCount <= 1) return;
 
-        if (combatSelectedEnemyIndex < 0) combatSelectedEnemyIndex = combatManager.NumberOfEnemies() - 1;
-        else if (combatSelectedEnemyIndex >= combatManager.NumberOfEnemies()) combatSelectedEnemyIndex = 0;
+        int attempts = enemyCount;
+        
+        do
+        {
+            combatSelectedEnemyIndex += direction;
+            if (combatSelectedEnemyIndex < 0) combatSelectedEnemyIndex = combatManager.NumberOfEnemies() - 1;
+            else if (combatSelectedEnemyIndex >= combatManager.NumberOfEnemies()) combatSelectedEnemyIndex = 0;
+            
+            attempts--;
+        } 
+        while (combatManager.IsEnemyDead(combatSelectedEnemyIndex) && attempts > 0);
         
         SelectEnemy(combatSelectedEnemyIndex);
     }
@@ -902,6 +918,8 @@ public class UIManager : Singleton<UIManager>
 
     public void SelectEnemy(int index)
     {
+        if(combatManager.IsEnemyDead(index)) return;
+        
         combatSelectedEnemyIndex = index;
         combatManager.selectedEnemy = index;
         EnemyDetails selectedEnemy = combatManager.GetSelectedEnemy();

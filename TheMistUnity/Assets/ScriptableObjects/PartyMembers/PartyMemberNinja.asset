@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6155aca001b63d841a58100acf16f387, type: 3}
-  m_Name: PartyMember3
+  m_Name: PartyMemberNinja
   m_EditorClassIdentifier: 
-  Name: Curtis
-  Icon: {fileID: 274143192, guid: d47c533dd6617fa48b143dece7cab110, type: 3}
-  Description: Curtis is a dumb caveman.
-  IsUnlocked: 0
+  Name: Pablo
+  Icon: {fileID: -1890032406, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
+  Description: Pablo is a green ninja who enjoys fishing.
+  IsUnlocked: 1
   WeaponDamageType: {fileID: 0}
   Attacks:
   - {fileID: 11400000, guid: 0029e5d66733f90408e945cbe9b5cca0, type: 2}
-  AttackIsUnlocked: 01
-  BaseMaxHealth: 130
-  BaseDefence: 15
-  BaseAttack: 6
-  BaseCritChance: 2
-  BaseMaxMana: 10
+  AttackIsUnlocked: 00
+  BaseMaxHealth: 100
+  BaseDefence: 10
+  BaseAttack: 5
+  BaseCritChance: 5
+  BaseMaxMana: 20
   SkillPointsHealth: 0
   SkillPointsDefence: 0
   SkillPointsAttack: 0
@@ -34,14 +34,14 @@ MonoBehaviour:
   EquipmentDefence: 0
   EquipmentAttack: 0
   EquipmentCritChance: 0
-  EquipmentMana: 0
-  CurrentBaseMaxHealth: 130
-  CurrentBaseDefence: 15
-  CurrentBaseAttack: 6
-  CurrentBaseCritChance: 2
-  CurrentBaseMaxMana: 10
-  CurrentMaxHealth: 130
-  CurrentDefence: 15
-  CurrentAttack: 6
-  CurrentCritChance: 2
-  CurrentMaxMana: 10
+  EquipmentMana: 45
+  CurrentBaseMaxHealth: 100
+  CurrentBaseDefence: 10
+  CurrentBaseAttack: 5
+  CurrentBaseCritChance: 5
+  CurrentBaseMaxMana: 20
+  CurrentMaxHealth: 100
+  CurrentDefence: 10
+  CurrentAttack: 5
+  CurrentCritChance: 5
+  CurrentMaxMana: 65

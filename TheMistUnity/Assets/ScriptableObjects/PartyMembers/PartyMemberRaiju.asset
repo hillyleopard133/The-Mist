@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6155aca001b63d841a58100acf16f387, type: 3}
-  m_Name: PartyMember2
+  m_Name: PartyMemberRaiju
   m_EditorClassIdentifier: 
   Name: Raiju
   Icon: {fileID: -1750426169, guid: 4475269bdf83ce64ea47f370b42de858, type: 3}

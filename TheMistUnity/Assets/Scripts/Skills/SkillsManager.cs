@@ -150,6 +150,10 @@ public class SkillsManager : Singleton<SkillsManager>
         partyMembers[partyMemberIndex].IncreaseSkillPoints(AttributeType.Attack, pointsToAddAttack[partyMemberIndex]);
         partyMembers[partyMemberIndex].IncreaseSkillPoints(AttributeType.CritChance, pointsToAddCritChance[partyMemberIndex]);
         partyMembers[partyMemberIndex].IncreaseSkillPoints(AttributeType.Mana, pointsToAddMana[partyMemberIndex]);
+        
+        combatManager.AddHealth(partyMemberIndex, pointsToAddHealth[partyMemberIndex] * healthIncreasePerLevel);
+        combatManager.AddMana(partyMemberIndex, pointsToAddMana[partyMemberIndex] * manaIncreasePerLevel);
+        uIManager.UpdatePartyMemberInfo();
 
         availableAttributePoints[partyMemberIndex] -= pendingAttributePoints[partyMemberIndex];
         pendingAttributePoints[partyMemberIndex] = 0;

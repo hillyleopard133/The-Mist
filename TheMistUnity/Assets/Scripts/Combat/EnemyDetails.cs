@@ -12,15 +12,20 @@ public class EnemyDetails : ScriptableObject
     public int ExpReward;
 
     public int MaxHealth;
-    public int CurrentHealth;
+    [HideInInspector] public int CurrentHealth;
+    public bool IsDead;
+    
     public AttackMove[] attackMoves;
-
     public DamageType[] weaknesses;
     public DamageType[] resistances;
+
+    [SerializeField] private float weaknessMultiplier = 1.3f;
+    [SerializeField] private float resistanceMultiplier = 0.75f;
     
     public EnemyDetails CopyEnemy()
     {
         EnemyDetails instance = Instantiate(this);
+        instance.CurrentHealth = MaxHealth;
         return instance;
     }
 
@@ -28,4 +33,25 @@ public class EnemyDetails : ScriptableObject
     {
         return (float) CurrentHealth / MaxHealth;
     }
+
+    public bool TakeDamage(float damage, DamageType damageType)
+    {
+        foreach (DamageType weakness in weaknesses)
+        {
+            if(weakness == damageType) damage *= weaknessMultiplier;
+        }
+        foreach (DamageType resistance in resistances)
+        {
+            if (resistance == damageType) damage *= resistanceMultiplier;
+        }
+        
+        CurrentHealth -= Mathf.RoundToInt(damage);
+        if (CurrentHealth <= 0)
+        {
+            CurrentHealth = 0;
+            IsDead = true;
+        }
+        return IsDead;
+    }
+    
 }

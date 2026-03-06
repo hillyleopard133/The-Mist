@@ -22,7 +22,7 @@ public class CombatManager : Singleton<CombatManager>
     
     private List<InventoryItem> usedItems = new List<InventoryItem>();
     private const int consumableInventoryIndex = 2;
-
+    
     //To update and save after each combat win
     private int[] partyMembersCurrentHealth;
     private int[] partyMembersCurrentMana;
@@ -48,6 +48,7 @@ public class CombatManager : Singleton<CombatManager>
         uIManager = UIManager.Instance;
         gameManager = GameManager.Instance;
         inventory = Inventory.Instance;
+        coinManager = CoinManager.Instance;
         equipmentManager = EquipmentManager.Instance;
         
         partyMembersCurrentHealth = new int[skillsManager.partyMembers.Length];
@@ -65,6 +66,30 @@ public class CombatManager : Singleton<CombatManager>
         AddUltimateCharge(120);
     }
 
+    public void AttackTargetEnemy(AttackMove attackMove)
+    {
+        float damage = skillsManager.partyMembers[selectedPartyMember].CurrentAttack * attackMove.DamageMultiplier;
+        enemies[selectedEnemy].TakeDamage(damage, attackMove.DamageType);
+
+        if (enemies[selectedEnemy].IsDead)
+        {
+            uIManager.KillEnemy(selectedEnemy);
+            for(int i = 0; i < enemies.Count; i++)
+            {
+                if (!enemies[i].IsDead)
+                {
+                    uIManager.SelectEnemy(i);
+                    return;
+                }
+            }
+            CombatWin();
+        }
+        else
+        {
+            uIManager.SelectEnemy(selectedEnemy);
+        }
+    }
+
     public void LevelUp()
     {
         for (int i = 0; i < partyMembersCurrentHealth.Length; i++)
@@ -74,11 +99,33 @@ public class CombatManager : Singleton<CombatManager>
             partyMemberIsDead[i] = false;
         }
         uIManager.UpdatePartyMemberInfo();
+        SaveCombatData();
+    }
+
+    public void AddHealth(int partyMemberIndex, int amount)
+    {
+        partyMembersCurrentHealth[partyMemberIndex] += amount;
+        if(partyMembersCurrentHealth[partyMemberIndex] >= skillsManager.partyMembers[partyMemberIndex].CurrentMaxHealth)
+            partyMembersCurrentHealth[partyMemberIndex] = skillsManager.partyMembers[partyMemberIndex].CurrentMaxHealth;
+        SaveCombatData();
+    }
+    
+    public void AddMana(int partyMemberIndex, int amount)
+    {
+        partyMembersCurrentMana[partyMemberIndex] += amount;
+        if(partyMembersCurrentMana[partyMemberIndex] >= skillsManager.partyMembers[partyMemberIndex].CurrentMaxMana) 
+            partyMembersCurrentMana[partyMemberIndex] = skillsManager.partyMembers[partyMemberIndex].CurrentMaxMana;
+        SaveCombatData();
     }
 
     public bool IsPartyMemberDead(int index)
     {
         return partyMemberIsDead[index];
+    }
+
+    public bool IsEnemyDead(int index)
+    {
+        return enemies[index].IsDead;
     }
 
     public int GetPartyMemberCurrentHealth(int index)
@@ -171,10 +218,13 @@ public class CombatManager : Singleton<CombatManager>
 
                 if(item.IsRevive) partyMemberIsDead[i] = false;
                 
-                partyMembersCurrentHealth[i] += item.HealthValue;
-                if(partyMembersCurrentHealth[i] >= skillsManager.partyMembers[i].CurrentMaxHealth) partyMembersCurrentHealth[i] = skillsManager.partyMembers[i].CurrentMaxHealth;
-                partyMembersCurrentMana[i] += item.ManaValue;
-                if(partyMembersCurrentMana[i] >= skillsManager.partyMembers[i].CurrentMaxMana) partyMembersCurrentMana[i] = skillsManager.partyMembers[i].CurrentMaxMana;
+                partyMembersCurrentHealth[i] += item.GetHealthValue();
+                if(partyMembersCurrentHealth[i] >= skillsManager.partyMembers[i].CurrentMaxHealth) 
+                    partyMembersCurrentHealth[i] = skillsManager.partyMembers[i].CurrentMaxHealth;
+                
+                partyMembersCurrentMana[i] += item.GetManaValue();
+                if(partyMembersCurrentMana[i] >= skillsManager.partyMembers[i].CurrentMaxMana) 
+                    partyMembersCurrentMana[i] = skillsManager.partyMembers[i].CurrentMaxMana;
             }
         }
         uIManager.UpdatePartyMemberInfo();
@@ -244,6 +294,7 @@ public class CombatManager : Singleton<CombatManager>
 
     public void EnterCombat(List<EnemyDetails> enemies, CombatGridType gridType)
     {
+        SaveCombatData();
         this.enemies = enemies;
         gameManager.DisablePlayerMovement();
         gameManager.Player.gameObject.SetActive(false);
@@ -258,13 +309,15 @@ public class CombatManager : Singleton<CombatManager>
     {
         EndCombat();
         usedItems.Clear();
+        LoadCombatData();
     }
 
     private void CombatWin()
     {
-        EndCombat();
         UseItems();
         AddRewards();
+        EndCombat();
+        SaveCombatData();
     }
 
     private void AddRewards()
@@ -284,7 +337,6 @@ public class CombatManager : Singleton<CombatManager>
         cameraManager.ToggleCombatCamera();
         DeactivateTilemaps();
         isFighting = false;
-        SaveCombatData();
     }
 
     private void DeactivateTilemaps()

@@ -3,8 +3,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/Items/Consumable", fileName = "ItemConsumable")]
 public class ItemConsumable: InventoryItem
 {
-    public int HealthValue;
-    public int ManaValue;
+    [SerializeField] private int HealthValue;
+    [SerializeField] private int ManaValue;
     public bool IsWholeParty;
     public bool IsRevive;
 
