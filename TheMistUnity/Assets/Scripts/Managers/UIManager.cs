@@ -296,7 +296,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI useItemDescription;
     [HideInInspector] public ItemConsumable selectedCombatItem;
     [HideInInspector] public bool[] combatSelections;
-    private int numberOfSelectedPartyMembers;
+    [HideInInspector] public int numberOfSelectedPartyMembers;
     private int maxNumberOfCombatSelections;
     private bool isUltimateAttackSelection;
     
@@ -309,7 +309,14 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI[] partyMemberInfoManaAmount;
     [SerializeField] private RectTransform[] partyMemberInfoHealthBars;
     [SerializeField] private RectTransform[] partyMemberInfoManaBars;
-
+    
+    [Header("Damage Text")]
+    [SerializeField] private GameObject combatTextPrefab;
+    [SerializeField] private Transform combatTextsParent;
+    [SerializeField] private int combatTextPoolSize = 15;
+    private int combatTextNextPoolNumber;
+    private CombatText[] combatTextPool;
+    
     
     private PlayerActions actions;
     
@@ -357,6 +364,7 @@ public class UIManager : Singleton<UIManager>
         InitialiseInventory();
         InitialiseEquipmentInventory();
         InitialiseShopInventories();
+        InstantiateCombatTextPool();
     }
     
     #endregion
@@ -396,6 +404,59 @@ public class UIManager : Singleton<UIManager>
     private void HidePartyMemberInfo()
     {
         partyMemberInfoBox.SetActive(false);
+    }
+
+    #endregion
+
+    #region DamageText
+
+    private void InstantiateCombatTextPool()
+    {
+        combatTextPool = new CombatText[combatTextPoolSize];
+
+        for (int i = 0; i < combatTextPoolSize; i++)
+        {
+            combatTextPool[i] = Instantiate(combatTextPrefab, combatTextsParent).GetComponent<CombatText>();
+            combatTextPool[i].DisableText();
+        }
+        
+        combatTextNextPoolNumber = 0;
+    }
+
+    public void ShowEnemyCombatText(int enemyIndex, int damageAmount, CombatTextType type)
+    {
+        //Transform enemy = combatEnemyLocations[enemyIndex].transform;
+        RectTransform rect = combatEnemyLocations[enemyIndex].GetComponent<RectTransform>();
+        ShowCombatText(damageAmount, rect, type);
+    }
+
+    public void ShowPartyMemberCombatText(int partyMemberIndex, int damageAmount, CombatTextType type)
+    {
+        Transform partymember = combatPartyMemberLocations[partyMemberIndex].transform;
+        //ShowCombatText(damageAmount, partymember, type);
+    }
+    
+    private void ShowCombatText(int damageAmount, RectTransform parent, CombatTextType type)
+    {
+        Vector3 topRightLocal = new Vector3(parent.rect.width / 2f, parent.rect.height / 2f, 0f);
+        Vector3 topRightWorld = parent.TransformPoint(topRightLocal);
+        
+        CombatText text = combatTextPool[combatTextNextPoolNumber];
+        text.gameObject.SetActive(true);
+        //text.transform.position = parent.position + Vector3.right;
+        text.transform.position = topRightWorld;
+        text.SetDamageText(damageAmount, type);
+        
+        combatTextNextPoolNumber++;
+        if(combatTextNextPoolNumber >= combatTextPool.Length) combatTextNextPoolNumber = 0;
+    }
+
+    private void DisableAllCombatText()
+    {
+        foreach (CombatText text in combatTextPool)
+        {
+            text.DisableText();
+        }
     }
 
     #endregion
@@ -1061,6 +1122,7 @@ public class UIManager : Singleton<UIManager>
     {
         combatScreen.SetActive(false);
         actions.Combat.Disable();
+        DisableAllCombatText();
     }
 
     #endregion

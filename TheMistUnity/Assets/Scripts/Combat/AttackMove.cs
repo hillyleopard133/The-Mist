@@ -25,6 +25,8 @@ public class AttackMove: ScriptableObject
     public DamageType DamageType;
     public float DamageMultiplier;
     public int MPCost;
+
+    public bool IsHitAll;
     
     public bool HasEffect;
     public AttackEffect Effect;

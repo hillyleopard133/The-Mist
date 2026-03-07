@@ -53,7 +53,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         else
         {
             AudioManager.Instance.PlayEnemyDamageSound();
-            DamageManager.Instance.ShowDamageText(amount, transform);
+            //DamageManager.Instance.ShowDamageText(amount, transform);
         }
     }
 

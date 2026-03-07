@@ -14,6 +14,8 @@ public class EnemyDetails : ScriptableObject
     public int MaxHealth;
     [HideInInspector] public int CurrentHealth;
     public bool IsDead;
+
+    [HideInInspector] public int Index;
     
     public AttackMove[] attackMoves;
     public DamageType[] weaknesses;
@@ -45,7 +47,10 @@ public class EnemyDetails : ScriptableObject
             if (resistance == damageType) damage *= resistanceMultiplier;
         }
         
-        CurrentHealth -= Mathf.RoundToInt(damage);
+        int roundedDamage = Mathf.RoundToInt(damage);
+        CurrentHealth -= roundedDamage;
+        UIManager.Instance.ShowEnemyCombatText(Index, roundedDamage, CombatTextType.Damage);
+        
         if (CurrentHealth <= 0)
         {
             CurrentHealth = 0;

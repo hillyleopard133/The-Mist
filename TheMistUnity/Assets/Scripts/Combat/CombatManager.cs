@@ -21,7 +21,6 @@ public class CombatManager : Singleton<CombatManager>
     [SerializeField] private int ultimateFullChargeAmount;
     
     private List<InventoryItem> usedItems = new List<InventoryItem>();
-    private const int consumableInventoryIndex = 2;
     
     //To update and save after each combat win
     private int[] partyMembersCurrentHealth;
@@ -69,9 +68,8 @@ public class CombatManager : Singleton<CombatManager>
     public void AttackTargetEnemy(AttackMove attackMove)
     {
         float damage = skillsManager.partyMembers[selectedPartyMember].CurrentAttack * attackMove.DamageMultiplier;
-        enemies[selectedEnemy].TakeDamage(damage, attackMove.DamageType);
 
-        if (enemies[selectedEnemy].IsDead)
+        if (enemies[selectedEnemy].TakeDamage(damage, attackMove.DamageType))
         {
             uIManager.KillEnemy(selectedEnemy);
             for(int i = 0; i < enemies.Count; i++)
@@ -218,18 +216,34 @@ public class CombatManager : Singleton<CombatManager>
 
                 if(item.IsRevive) partyMemberIsDead[i] = false;
                 
-                partyMembersCurrentHealth[i] += item.GetHealthValue();
+                int healthValue = item.GetHealthValue();
+                partyMembersCurrentHealth[i] += healthValue;
                 if(partyMembersCurrentHealth[i] >= skillsManager.partyMembers[i].CurrentMaxHealth) 
                     partyMembersCurrentHealth[i] = skillsManager.partyMembers[i].CurrentMaxHealth;
                 
-                partyMembersCurrentMana[i] += item.GetManaValue();
+                int manaValue = item.GetManaValue();
+                partyMembersCurrentMana[i] += manaValue;
                 if(partyMembersCurrentMana[i] >= skillsManager.partyMembers[i].CurrentMaxMana) 
                     partyMembersCurrentMana[i] = skillsManager.partyMembers[i].CurrentMaxMana;
+
+                if (manaValue > 0 && healthValue > 0)
+                {
+                    StartCoroutine(QueueRecoveryText(i, manaValue, healthValue));
+                }
+                else if (manaValue > 0) uIManager.ShowPartyMemberCombatText(i, manaValue, CombatTextType.ManaRecovery);
+                else if (healthValue > 0) uIManager.ShowPartyMemberCombatText(i, healthValue, CombatTextType.HealthRecovery);
             }
         }
         uIManager.UpdatePartyMemberInfo();
         uIManager.OpenCombatInventory();
         uIManager.ExitCombatSelectionScreen();
+    }
+
+    private IEnumerator QueueRecoveryText(int partyMemberIndex, int manaValue, int healthValue)
+    {
+        uIManager.ShowPartyMemberCombatText(partyMemberIndex, healthValue, CombatTextType.HealthRecovery);
+        yield return new WaitForSeconds(0.3f);
+        uIManager.ShowPartyMemberCombatText(partyMemberIndex, manaValue, CombatTextType.ManaRecovery);
     }
 
     public int NumberOfEnemies()
@@ -245,7 +259,9 @@ public class CombatManager : Singleton<CombatManager>
     public void UseUltimateAttack()
     {
         bool[] combatSelections = uIManager.combatSelections;
-        
+        int amountSelected = uIManager.numberOfSelectedPartyMembers;
+
+        UseUltimateCharges(amountSelected);
     }
 
     private void UseUltimateCharges(int amount)
@@ -370,6 +386,8 @@ public class CombatManager : Singleton<CombatManager>
         if(SaveGame.Exists(PARTY_MEMBER_CURRENT_HEALTH)) partyMembersCurrentHealth = SaveGame.Load<int[]>(PARTY_MEMBER_CURRENT_HEALTH);
         if (SaveGame.Exists(ULTIMATE_CHARGES)) ultimateCharges = SaveGame.Load<int>(ULTIMATE_CHARGES);
         if (SaveGame.Exists(ULTIMATE_CHARGE_PROGRESS)) ultimateChargeProgress = SaveGame.Load<int>(ULTIMATE_CHARGE_PROGRESS);
+        
+        uIManager.UpdatePartyMemberInfo();
     }
 
     public void ResetCombatData()

@@ -31,7 +31,9 @@ public class SceneEnemies : MonoBehaviour
         for (int i = 0; i < randomNumber; i++)
         {
             int randomEnemy = Random.Range(0, enemies.Length);
-            area.AddEnemy(enemies[randomEnemy].CopyEnemy());
+            EnemyDetails enemy = enemies[randomEnemy].CopyEnemy();
+            enemy.Index = i;
+            area.AddEnemy(enemy);
         }
     }
 }

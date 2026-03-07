@@ -3413,7 +3413,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 820, y: -325}
-  m_SizeDelta: {x: 200, y: 100}
+  m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &99631985
 MonoBehaviour:
@@ -5178,6 +5178,7 @@ RectTransform:
   - {fileID: 627242566}
   - {fileID: 1952812142}
   - {fileID: 1270831899}
+  - {fileID: 501795541}
   - {fileID: 1523721959}
   m_Father: {fileID: 1834887120}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16532,7 +16533,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 960, y: -100}
-  m_SizeDelta: {x: 200, y: 100}
+  m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &378593343
 MonoBehaviour:
@@ -21397,6 +21398,37 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &501795540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 501795541}
+  m_Layer: 0
+  m_Name: CombatTextPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &501795541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501795540}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -535.8197, y: 88.6356, z: -6412.5}
+  m_LocalScale: {x: 67.5, y: 67.5, z: 67.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 120805049}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &503357263
 GameObject:
   m_ObjectHideFlags: 0
@@ -25061,7 +25093,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 1100, y: -325}
-  m_SizeDelta: {x: 200, y: 100}
+  m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &599759963
 MonoBehaviour:
@@ -45383,7 +45415,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 540, y: -325}
-  m_SizeDelta: {x: 200, y: 100}
+  m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &953250674
 MonoBehaviour:
@@ -58972,7 +59004,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 680, y: -100}
-  m_SizeDelta: {x: 200, y: 100}
+  m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1215629352
 MonoBehaviour:
@@ -70838,7 +70870,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 1380, y: -325}
-  m_SizeDelta: {x: 200, y: 100}
+  m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1466575347
 MonoBehaviour:
@@ -72099,7 +72131,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 1240, y: -100}
-  m_SizeDelta: {x: 200, y: 100}
+  m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1493498032
 MonoBehaviour:
@@ -73800,7 +73832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1523721959
 RectTransform:
   m_ObjectHideFlags: 0
@@ -103686,6 +103718,7 @@ MonoBehaviour:
   selectedAttackMPCost: {fileID: 1327262890}
   selectedAttackDamageTypeBox: {fileID: 521067002}
   selectedAttackDamageTypeIcon: {fileID: 1252974041}
+  deadEnemySprite: {fileID: -1157033095, guid: 75cfa750fa80624499a31802d1bceb06, type: 3}
   combatSelectionMaterial: {fileID: -876546973899608171, guid: b9dc5483182f3114e96020f796296bea, type: 3}
   combatSelectionScreen: {fileID: 1523721958}
   combatSelectionScreenBackground: {fileID: 612171415}
@@ -103759,6 +103792,7 @@ MonoBehaviour:
   useItemDescription: {fileID: 261744310}
   selectedCombatItem: {fileID: 0}
   combatSelections: 
+  numberOfSelectedPartyMembers: 0
   partyMemberInfoBox: {fileID: 938257340}
   partyMemberInfo:
   - {fileID: 2113332767}
@@ -103788,7 +103822,9 @@ MonoBehaviour:
   - {fileID: 932250234}
   - {fileID: 1652742041}
   - {fileID: 1019330772}
-  deadEnemySprite: {fileID: -1157033095, guid: 75cfa750fa80624499a31802d1bceb06, type: 3}
+  combatTextPrefab: {fileID: 1824938428080706179, guid: bc64d0e20669456439bbce8e86720fdf, type: 3}
+  combatTextsParent: {fileID: 501795541}
+  combatTextPoolSize: 15
 --- !u!4 &1683219268
 Transform:
   m_ObjectHideFlags: 0
@@ -110463,7 +110499,6 @@ RectTransform:
   - {fileID: 2024382950}
   - {fileID: 1547953080}
   - {fileID: 1489518648}
-  - {fileID: 77570796}
   - {fileID: 276766631}
   - {fileID: 1790913716}
   - {fileID: 938257341}
@@ -110471,6 +110506,7 @@ RectTransform:
   - {fileID: 120805049}
   - {fileID: 1862565426}
   - {fileID: 1025755703}
+  - {fileID: 77570796}
   - {fileID: 1126502817}
   - {fileID: 1944487096}
   - {fileID: 1299516704}

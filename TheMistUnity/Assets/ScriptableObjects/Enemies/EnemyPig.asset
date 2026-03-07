@@ -15,7 +15,7 @@ MonoBehaviour:
   EnemyName: Pig
   EnemySprite: {fileID: -1438486952, guid: 6ac17860418c6d649b9621761aff208a, type: 3}
   enemyPrefab: {fileID: 9185471420396107289, guid: 89a899ab05e241740a4af7246556547c, type: 3}
-  CoinsReward: 5
+  CoinsReward: 8
   ExpReward: 200
   MaxHealth: 35
   CurrentHealth: 40
