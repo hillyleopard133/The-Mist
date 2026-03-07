@@ -259,6 +259,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject selectedAttackDamageTypeBox;
     [SerializeField] private Image selectedAttackDamageTypeIcon;
     [SerializeField] private Sprite deadEnemySprite;
+    [SerializeField] private GameObject playerActionsBlocker;
     private int combatSelectedEnemyIndex;
     private int combatSelectedPartyMemberIndex;
     private int unlockedPartyMembers;
@@ -313,7 +314,7 @@ public class UIManager : Singleton<UIManager>
     [Header("Damage Text")]
     [SerializeField] private GameObject combatTextPrefab;
     [SerializeField] private Transform combatTextsParent;
-    [SerializeField] private int combatTextPoolSize = 15;
+    [SerializeField] private int combatTextPoolSize = 30;
     private int combatTextNextPoolNumber;
     private CombatText[] combatTextPool;
     
@@ -425,15 +426,14 @@ public class UIManager : Singleton<UIManager>
 
     public void ShowEnemyCombatText(int enemyIndex, int damageAmount, CombatTextType type)
     {
-        //Transform enemy = combatEnemyLocations[enemyIndex].transform;
-        RectTransform rect = combatEnemyLocations[enemyIndex].GetComponent<RectTransform>();
-        ShowCombatText(damageAmount, rect, type);
+        RectTransform enemy = combatEnemyLocations[enemyIndex].GetComponent<RectTransform>();
+        ShowCombatText(damageAmount, enemy, type);
     }
 
     public void ShowPartyMemberCombatText(int partyMemberIndex, int damageAmount, CombatTextType type)
     {
-        Transform partymember = combatPartyMemberLocations[partyMemberIndex].transform;
-        //ShowCombatText(damageAmount, partymember, type);
+        RectTransform partymember = combatPartyMemberLocations[partyMemberIndex].GetComponent<RectTransform>();
+        ShowCombatText(damageAmount, partymember, type);
     }
     
     private void ShowCombatText(int damageAmount, RectTransform parent, CombatTextType type)
@@ -443,7 +443,6 @@ public class UIManager : Singleton<UIManager>
         
         CombatText text = combatTextPool[combatTextNextPoolNumber];
         text.gameObject.SetActive(true);
-        //text.transform.position = parent.position + Vector3.right;
         text.transform.position = topRightWorld;
         text.SetDamageText(damageAmount, type);
         
@@ -795,6 +794,16 @@ public class UIManager : Singleton<UIManager>
         ExitCombatSelectionScreen();
     }
     
+    public void StartPlayersTurn()
+    {
+        playerActionsBlocker.SetActive(false);
+    }
+
+    public void StartEnemyTurn()
+    {
+        playerActionsBlocker.SetActive(true);
+    }
+    
     public void KillEnemy(int enemy)
     {
         combatEnemyImages[enemy].sprite = deadEnemySprite;
@@ -802,7 +811,7 @@ public class UIManager : Singleton<UIManager>
     
     private void SelectAttackMove(AttackMove attack)
     {
-        if(attack.MoveType == AttackMoveType.SingleTarget) combatManager.AttackTargetEnemy(attack);
+        combatManager.AttackEnemy(attack);
     }
 
     public void OpenCombatInventory()
@@ -947,7 +956,7 @@ public class UIManager : Singleton<UIManager>
     
     public void SwitchSelectedPartyMember(int direction)
     {
-        if(unlockedPartyMembers <= 1) return;
+        if (unlockedPartyMembers <= 1) return;
 
         do
         {
@@ -955,13 +964,17 @@ public class UIManager : Singleton<UIManager>
             if (combatSelectedPartyMemberIndex < 0) combatSelectedPartyMemberIndex = skillsManager.partyMembers.Length - 1;
             else if (combatSelectedPartyMemberIndex >= skillsManager.partyMembers.Length) combatSelectedPartyMemberIndex = 0;
         } 
-        while (!skillsManager.partyMembers[combatSelectedPartyMemberIndex].IsUnlocked);
+        while (!skillsManager.partyMembers[combatSelectedPartyMemberIndex].IsUnlocked && 
+               !combatManager.IsPartyMemberDead(combatSelectedPartyMemberIndex) &&
+               !combatManager.HasTakenTurn(combatSelectedPartyMemberIndex));
         
         SelectCombatPartyMember(combatSelectedPartyMemberIndex);
     }
 
     public void SelectCombatPartyMember(int index)
     {
+        if (combatManager.IsPartyMemberDead(index) || combatManager.HasTakenTurn(index)) return;
+        
         combatSelectedPartyMemberIndex = index;
         combatManager.selectedPartyMember = index;
         
@@ -2212,6 +2225,7 @@ public class UIManager : Singleton<UIManager>
     
     private void OpenCloseTabMenu()
     {
+        if(combatManager.isFighting) return;
         if (!SaveLoadManager.Instance.GameIsActive()) return;
         if (shopScreen.activeSelf) return;
         

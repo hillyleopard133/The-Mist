@@ -17,23 +17,23 @@ public class ActionChase : FSMAction
     private WaitForFixedUpdate waitForFixedUpdate;
     private List<Vector2Int> surroundingPositionList = new List<Vector2Int>();
 
-    private EnemyBrain enemyBrain;
+    private EnemyBrainRPG _enemyBrainRpg;
     private AStarArea area;
 
     private void Awake()
     {
-        enemyBrain = GetComponent<EnemyBrain>();
+        _enemyBrainRpg = GetComponent<EnemyBrainRPG>();
     }
 
     private void Start()
     {
         area = FindFirstObjectByType<AStarArea>();
-        updateFrameNumber = enemyBrain.updateFrameNumber;
+        updateFrameNumber = _enemyBrainRpg.updateFrameNumber;
     }
     
     public override void Act()
     {
-        if (!enemyBrain.isAlive) return;
+        if (!_enemyBrainRpg.isAlive) return;
         ChasePlayer();
     }
     
@@ -49,7 +49,7 @@ public class ActionChase : FSMAction
 
     private void ChasePlayer()
     {
-        if (enemyBrain.Player == null) return;
+        if (_enemyBrainRpg.Player == null) return;
         
         MoveEnemy();
     }
@@ -81,16 +81,16 @@ public class ActionChase : FSMAction
     
     private IEnumerator MoveEnemyRoutine(Stack<Vector3> movementSteps)
     {
-        enemyBrain.animations.SetMoveBoolTransition(true);
+        _enemyBrainRpg.animations.SetMoveBoolTransition(true);
         while (movementSteps.Count > 0)
         {
             Vector3 nextPosition = movementSteps.Pop();
             Vector2 direction = (nextPosition - transform.position).normalized;
-            enemyBrain.animations.SetMoveAnimation(direction);
+            _enemyBrainRpg.animations.SetMoveAnimation(direction);
 
             while (Vector3.Distance(nextPosition, transform.position) > 1f)
             {
-                if (!enemyBrain.isAlive) yield break;
+                if (!_enemyBrainRpg.isAlive) yield break;
                 MoveRigidBody(nextPosition, chaseSpeed);
                 
                 yield return waitForFixedUpdate;
@@ -102,8 +102,8 @@ public class ActionChase : FSMAction
     private void MoveRigidBody(Vector3 destination, float moveSpeed)
     {
         Vector2 direction = (destination - transform.position).normalized;
-        enemyBrain.animations.SetMoveAnimation(direction);
-        enemyBrain.rb.MovePosition(enemyBrain.rb.position + (direction * (moveSpeed * Time.fixedDeltaTime)));
+        _enemyBrainRpg.animations.SetMoveAnimation(direction);
+        _enemyBrainRpg.rb.MovePosition(_enemyBrainRpg.rb.position + (direction * (moveSpeed * Time.fixedDeltaTime)));
     }
     
     private void CreatePath()

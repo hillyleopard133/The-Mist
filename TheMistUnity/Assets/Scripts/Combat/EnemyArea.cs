@@ -51,7 +51,9 @@ public class EnemyArea : MonoBehaviour
         foreach (EnemyDetails enemy in enemies)
         {
             Vector2 randomPos = GetRandomPositionInsideBox();
-            Instantiate(enemy.enemyPrefab, randomPos, Quaternion.identity, transform);
+            GameObject enemyObject = Instantiate(enemy.enemyPrefab, randomPos, Quaternion.identity, transform);
+            enemy.enemyCombatBrain = enemyObject.GetComponent<EnemyCombatBrain>();
+            enemy.enemyCombatBrain.enemyDetails = enemy;
         }
     }
     

@@ -7,13 +7,13 @@ public class FSMState
     public FSMAction[] Actions; 
     public FSMTransition[] Transitions;
 
-    public void UpdateState(EnemyBrain enemyBrain)
+    public void UpdateState(EnemyBrainRPG enemyBrainRpg)
     {
         ExecuteActions();
-        ExecuteTransitions(enemyBrain);
+        ExecuteTransitions(enemyBrainRpg);
     }
 
-    private void ExecuteTransitions(EnemyBrain enemyBrain)
+    private void ExecuteTransitions(EnemyBrainRPG enemyBrainRpg)
     {
         if (Transitions == null || Transitions.Length <= 0)
         {
@@ -25,11 +25,11 @@ public class FSMState
             bool value = Transitions[i].Decision.Decide();
             if (value)
             {
-                enemyBrain.ChangeState(Transitions[i].TrueState);
+                enemyBrainRpg.ChangeState(Transitions[i].TrueState);
             }
             else
             {
-                enemyBrain.ChangeState(Transitions[i].FalseState);
+                enemyBrainRpg.ChangeState(Transitions[i].FalseState);
             }
         }
     }

@@ -72,7 +72,7 @@ public class EnemySpawner : MonoBehaviour
     {
         for (int i = 0; i < enemies.Length; i++)
         {
-            enemies[i].GetComponent<EnemyBrain>().updateFrameNumber = i;
+            enemies[i].GetComponent<EnemyBrainRPG>().updateFrameNumber = i;
         }
     }
 

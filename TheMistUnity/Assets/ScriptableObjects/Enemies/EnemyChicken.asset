@@ -17,9 +17,11 @@ MonoBehaviour:
   enemyPrefab: {fileID: 9185471420396107289, guid: fa7950473c3e5834f9dd78ac04ef7b72, type: 3}
   CoinsReward: 5
   ExpReward: 200
+  AttackDamage: 5
   MaxHealth: 20
   CurrentHealth: 40
   IsDead: 0
+  Index: 0
   attackMoves:
   - {fileID: 11400000, guid: 0029e5d66733f90408e945cbe9b5cca0, type: 2}
   weaknesses:
@@ -27,3 +29,4 @@ MonoBehaviour:
   resistances: []
   weaknessMultiplier: 1.3
   resistanceMultiplier: 0.75
+  enemyCombatBrain: {fileID: 0}

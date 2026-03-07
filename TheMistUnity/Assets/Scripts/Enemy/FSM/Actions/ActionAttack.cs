@@ -8,12 +8,12 @@ public class ActionAttack : FSMAction
     [SerializeField] public float damage;
     [SerializeField] private float timeBtwAttacks;  //time between attacks
 
-    private EnemyBrain enemyBrain;
+    private EnemyBrainRPG _enemyBrainRpg;
     private float timer;
 
     private void Awake()
     {
-        enemyBrain = GetComponent<EnemyBrain>();
+        _enemyBrainRpg = GetComponent<EnemyBrainRPG>();
     }
     
     public override void Act()
@@ -23,7 +23,7 @@ public class ActionAttack : FSMAction
 
     private void AttackPlayer()
     {
-        if (enemyBrain.Player == null)
+        if (_enemyBrainRpg.Player == null)
         {
             return;
         }
@@ -31,7 +31,7 @@ public class ActionAttack : FSMAction
         timer -= Time.deltaTime;
         if (timer <= 0f)
         {
-            enemyBrain.animations.SetMoveBoolTransition(false);
+            _enemyBrainRpg.animations.SetMoveBoolTransition(false);
             //IDamageable player = enemyBrain.Player.GetComponent<IDamageable>();
             //player.TakeDamage(damage);
             timer = timeBtwAttacks;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu (menuName = "ScriptableObjects/Combat/Enemy", fileName = "Enemy")]
 public class EnemyDetails : ScriptableObject
@@ -10,10 +11,11 @@ public class EnemyDetails : ScriptableObject
     public GameObject enemyPrefab;
     public int CoinsReward;
     public int ExpReward;
-
+    
+    public int AttackDamage;
     public int MaxHealth;
     [HideInInspector] public int CurrentHealth;
-    public bool IsDead;
+    [HideInInspector] public bool IsDead;
 
     [HideInInspector] public int Index;
     
@@ -23,6 +25,8 @@ public class EnemyDetails : ScriptableObject
 
     [SerializeField] private float weaknessMultiplier = 1.3f;
     [SerializeField] private float resistanceMultiplier = 0.75f;
+    
+    [HideInInspector] public EnemyCombatBrain enemyCombatBrain;
     
     public EnemyDetails CopyEnemy()
     {

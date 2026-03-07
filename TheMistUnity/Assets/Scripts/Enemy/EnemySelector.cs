@@ -5,17 +5,17 @@ public class EnemySelector : MonoBehaviour
     [Header("Config")]
     [SerializeField] private GameObject selectorSprite;
 
-    private EnemyBrain enemyBrain;
+    private EnemyBrainRPG _enemyBrainRpg;
 
     private void Awake()
     {
-        enemyBrain = GetComponent<EnemyBrain>();
+        _enemyBrainRpg = GetComponent<EnemyBrainRPG>();
     }
 
-    private void EnemySelectedCallback(EnemyBrain enemySelected)
+    private void EnemySelectedCallback(EnemyBrainRPG enemySelected)
     {
         //enemyBrain.GetComponent<EnemyHealth>().UpdateSelectedEnemy(enemySelected);
-        if (enemySelected == enemyBrain)
+        if (enemySelected == _enemyBrainRpg)
         {
             selectorSprite.SetActive(true);
             //UIManager.Instance.UpdateEnemyInfoPanel(enemySelected);

@@ -5,7 +5,7 @@ public enum EnemyMovementType
         Wander,
         Patrol
 }
-public class EnemyBrain : MonoBehaviour
+public class EnemyBrainRPG : MonoBehaviour
 {
         [Header("Config")]
         [SerializeField] public Sprite Icon;
@@ -45,7 +45,7 @@ public class EnemyBrain : MonoBehaviour
                 //Alternative way to do the above (using a ?)
                 CurrentState?.UpdateState(this);
         }
-
+        
         public void ChangeState(string newStateID)
         {
                 FSMState newState = GetState(newStateID);

@@ -9,12 +9,12 @@ public class DecisionAttackRange : FSMDecision
 
     [SerializeField] private LayerMask playerMask;
 
-    private EnemyBrain enemy;
+    private EnemyBrainRPG enemy;
     private ActionChase chase;
 
     private void Awake()
     {
-        enemy = GetComponent<EnemyBrain>();
+        enemy = GetComponent<EnemyBrainRPG>();
         chase = GetComponent<ActionChase>();
     }
 

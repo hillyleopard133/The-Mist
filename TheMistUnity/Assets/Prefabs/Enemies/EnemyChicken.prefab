@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7593132268263091308}
   - component: {fileID: 7737452261533996573}
   - component: {fileID: 2522792415775562133}
+  - component: {fileID: 1524918951551474251}
   m_Layer: 0
   m_Name: EnemyChicken
   m_TagString: Untagged
@@ -119,3 +120,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1524918951551474251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9185471420396107289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c3d031862749738218f51069978906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyCombatBrain
+  enemyDetails: {fileID: 0}

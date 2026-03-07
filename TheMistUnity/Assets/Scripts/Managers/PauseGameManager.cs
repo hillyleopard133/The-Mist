@@ -9,6 +9,13 @@ public class PauseGameManager : Singleton<PauseGameManager>
 
     public bool isPaused;
     
+    UIManager uIManager;
+    SaveLoadManager saveLoadManager;
+    CombatManager combatManager;
+    GameManager gameManager;
+    AudioManager audioManager;
+    DialogueManager dialogueManager;
+    
     protected override void Awake()
     {
         base.Awake();
@@ -21,28 +28,36 @@ public class PauseGameManager : Singleton<PauseGameManager>
     private void Start()
     {
         actions.General.Pause.performed += ctx => TogglePauseMenu();
+        
+        uIManager = UIManager.Instance;
+        saveLoadManager = SaveLoadManager.Instance;
+        combatManager = CombatManager.Instance;
+        gameManager = GameManager.Instance;
+        audioManager = AudioManager.Instance;
+        dialogueManager = DialogueManager.Instance;
     }
 
     public void TogglePauseMenu()
     {
-        if (UIManager.Instance.IsInMenu()) return;
-        if(!SaveLoadManager.Instance.GameIsActive()) return;
-        if (UIManager.Instance.IsPlayerDead()) return;
+        if (uIManager.IsInMenu()) return;
+        if(!saveLoadManager.GameIsActive()) return;
+        if (uIManager.IsPlayerDead()) return;
+        if(combatManager.isFighting) return;
         
-        UIManager.Instance.CloseAllPanels();
+        uIManager.CloseAllPanels();
         pauseMenu.SetActive(!pauseMenu.activeSelf);
         isPaused = pauseMenu.activeSelf;
         
         if (pauseMenu.activeSelf)
         {
-            UIManager.Instance.HideGameHUD();
-            GameManager.Instance.DisablePlayerMovement();
-            AudioManager.Instance.PlayMenuMusic();
+            uIManager.HideGameHUD();
+            gameManager.DisablePlayerMovement();
+            audioManager.PlayMenuMusic();
         }
         else
         {
-            UIManager.Instance.ShowGameHUD();
-            GameManager.Instance.EnablePlayerMovement();
+            uIManager.ShowGameHUD();
+            gameManager.EnablePlayerMovement();
             //TODO AudioManager.Instance.LoadCurrentMusic();
         }
 
@@ -61,17 +76,17 @@ public class PauseGameManager : Singleton<PauseGameManager>
 
     public void PauseGame()
     {
-        DialogueManager.Instance.DisableDialogueActions();
-        GameManager.Instance.DisablePlayerMovement();
+        dialogueManager.DisableDialogueActions();
+        gameManager.DisablePlayerMovement();
         Time.timeScale = 0f;
         isPaused = true;
     }
 
     public void UnPause()
     {
-        DialogueManager.Instance.EnableDialogueActions();
+        dialogueManager.EnableDialogueActions();
         pauseMenu.SetActive(false);
-        GameManager.Instance.EnablePlayerMovement();
+        gameManager.EnablePlayerMovement();
         Time.timeScale = 1f;
         isPaused = false;
     }

@@ -13106,8 +13106,8 @@ MonoBehaviour:
   enemies:
   - {fileID: 11400000, guid: b4cb8ca8f80fcdc43a406edc65bc8142, type: 2}
   - {fileID: 11400000, guid: b704c70810a85be40826914e9663f26b, type: 2}
-  minEnemies: 2
-  maxEnemies: 4
+  minEnemies: 1
+  maxEnemies: 3
 --- !u!4 &1663222866
 Transform:
   m_ObjectHideFlags: 0

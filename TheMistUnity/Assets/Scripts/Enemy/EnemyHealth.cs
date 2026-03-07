@@ -13,7 +13,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     [HideInInspector] public float CurrentHealth { get; private set; }
     
     private Rigidbody2D rb2D;
-    private EnemyBrain enemyBrain;
+    private EnemyBrainRPG _enemyBrainRpg;
     private EnemyLoot enemyLoot;
     private EnemySelector enemySelector;
     private EnemyAnimations enemyAnimations;
@@ -21,7 +21,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        enemyBrain = GetComponent<EnemyBrain>();
+        _enemyBrainRpg = GetComponent<EnemyBrainRPG>();
         enemyLoot = GetComponent<EnemyLoot>();
         enemySelector = GetComponent<EnemySelector>();
         enemyAnimations = GetComponent<EnemyAnimations>();
@@ -30,7 +30,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     private void Start()
     {
         CurrentHealth = health;
-        enemyBrain.isAlive = true;
+        _enemyBrainRpg.isAlive = true;
     }
 
     public void Heal(float amount)
@@ -66,8 +66,8 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     {
         AudioManager.Instance.PlayEnemyDeathSound();
         enemyAnimations.SetDeadAnimation();
-        enemyBrain.enabled = false;
-        enemyBrain.isAlive = false;
+        _enemyBrainRpg.enabled = false;
+        _enemyBrainRpg.isAlive = false;
         enemySelector.NoSelectionCallback();
         rb2D.bodyType = RigidbodyType2D.Static;
         OnEnemyDeadEvent?.Invoke();
