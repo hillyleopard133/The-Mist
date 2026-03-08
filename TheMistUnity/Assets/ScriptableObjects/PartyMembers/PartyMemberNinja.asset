@@ -13,13 +13,18 @@ MonoBehaviour:
   m_Name: PartyMemberNinja
   m_EditorClassIdentifier: 
   Name: Pablo
-  Icon: {fileID: -1890032406, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
+  IconFront: {fileID: -1890032406, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
+  IconBack: {fileID: 2026818590, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
+  IconItem: {fileID: 1214651694, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
+  IconUltimate: {fileID: -1638547310, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
+  IconDead: {fileID: 2120524158, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
+  IconSkill: {fileID: -862369976, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
   Description: Pablo is a green ninja who enjoys fishing.
   IsUnlocked: 1
   WeaponDamageType: {fileID: 0}
   Attacks:
   - {fileID: 11400000, guid: 0029e5d66733f90408e945cbe9b5cca0, type: 2}
-  AttackIsUnlocked: 00
+  AttackIsUnlocked: 01
   BaseMaxHealth: 100
   BaseDefence: 10
   BaseAttack: 5
@@ -34,7 +39,7 @@ MonoBehaviour:
   EquipmentDefence: 0
   EquipmentAttack: 0
   EquipmentCritChance: 0
-  EquipmentMana: 45
+  EquipmentMana: 0
   CurrentBaseMaxHealth: 100
   CurrentBaseDefence: 10
   CurrentBaseAttack: 5
@@ -44,4 +49,4 @@ MonoBehaviour:
   CurrentDefence: 10
   CurrentAttack: 5
   CurrentCritChance: 5
-  CurrentMaxMana: 65
+  CurrentMaxMana: 20

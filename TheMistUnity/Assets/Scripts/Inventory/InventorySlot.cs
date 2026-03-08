@@ -50,7 +50,7 @@ public class InventorySlot : MonoBehaviour, ISelectHandler
             if (equipment.equipped != -1)
             {
                 equippedCharacterIcon.gameObject.SetActive(true);
-                equippedCharacterIcon.sprite = SkillsManager.Instance.partyMembers[equipment.equipped].Icon;
+                equippedCharacterIcon.sprite = SkillsManager.Instance.partyMembers[equipment.equipped].IconFront;
             }
             else
             {

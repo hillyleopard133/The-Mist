@@ -22,7 +22,6 @@ public enum SkillTreeSkills
     MakeConsumablesMoreEffective
 }
 
-
 [CreateAssetMenu(menuName = "ScriptableObjects/Skill", fileName = "Skill")]
 public class Skill : ScriptableObject
 {

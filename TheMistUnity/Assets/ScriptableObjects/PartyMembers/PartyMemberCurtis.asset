@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: PartyMemberCurtis
   m_EditorClassIdentifier: 
   Name: Curtis
-  Icon: {fileID: 274143192, guid: d47c533dd6617fa48b143dece7cab110, type: 3}
+  IconFront: {fileID: 274143192, guid: d47c533dd6617fa48b143dece7cab110, type: 3}
+  IconBack: {fileID: 256935266, guid: d47c533dd6617fa48b143dece7cab110, type: 3}
+  IconItem: {fileID: 608365196, guid: d47c533dd6617fa48b143dece7cab110, type: 3}
+  IconUltimate: {fileID: -2133049639, guid: d47c533dd6617fa48b143dece7cab110, type: 3}
+  IconDead: {fileID: -33701553, guid: d47c533dd6617fa48b143dece7cab110, type: 3}
+  IconSkill: {fileID: 1963348711, guid: d47c533dd6617fa48b143dece7cab110, type: 3}
   Description: Curtis is a dumb caveman.
   IsUnlocked: 0
   WeaponDamageType: {fileID: 0}

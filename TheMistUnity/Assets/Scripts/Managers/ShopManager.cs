@@ -12,6 +12,7 @@ public class ShopManager : Singleton<ShopManager>
     private CoinManager coinManager;
     private AudioManager audioManager;
     private UIManager uIManager;
+    private SkillsManager skillsManager;
 
     private void Start()
     {
@@ -19,11 +20,23 @@ public class ShopManager : Singleton<ShopManager>
         coinManager = CoinManager.Instance;
         audioManager = AudioManager.Instance;
         uIManager = UIManager.Instance;
+        skillsManager = SkillsManager.Instance;
     }
     
     public int CalculatePrice(bool isBuying = true)
     {
-        if(isBuying) return selectedItem.BuyValue * shopItemAmount;
+        if (isBuying)
+        {
+            float buyValue = selectedItem.BuyValue * shopItemAmount;
+            
+            if (skillsManager.GetSkill(SkillTreeSkills.ShopDiscount).IsUnlocked)
+            {
+                buyValue *= skillsManager.shopDiscountMultiplier;
+            }
+            
+            return Mathf.RoundToInt(buyValue);
+        }
+        
         return selectedItem.SellValue * shopItemAmount;
     }
 

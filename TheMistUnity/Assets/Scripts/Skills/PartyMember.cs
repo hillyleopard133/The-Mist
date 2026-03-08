@@ -8,7 +8,12 @@ using UnityEngine.Serialization;
 public class PartyMember : ScriptableObject
 {
     public string Name;
-    public Sprite Icon;
+    public Sprite IconFront;
+    public Sprite IconBack;
+    public Sprite IconItem;
+    public Sprite IconUltimate;
+    public Sprite IconDead;
+    public Sprite IconSkill;
     [TextArea] public string Description;
     [HideInInspector] public bool IsUnlocked;
     public DamageType WeaponDamageType;

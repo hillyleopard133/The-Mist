@@ -17,6 +17,6 @@ MonoBehaviour:
   SkillIcon: {fileID: 21300000, guid: b9860caa293d6cd45b3b93051aa4e627, type: 3}
   SkillTreeSkill: 8
   RequiredSkill: {fileID: 11400000, guid: 7fa325694daab03488f9605fbfb396a8, type: 2}
-  LevelRequired: 20
+  LevelRequired: 15
   OrbCost: 2
   IsUnlocked: 0

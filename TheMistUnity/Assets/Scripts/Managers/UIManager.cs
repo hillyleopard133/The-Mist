@@ -295,6 +295,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Image useItemIcon;
     [SerializeField] private TextMeshProUGUI useItemName;
     [SerializeField] private TextMeshProUGUI useItemDescription;
+    [SerializeField] private Image[] useItemPartyMemberIcons;
     [HideInInspector] public ItemConsumable selectedCombatItem;
     [HideInInspector] public bool[] combatSelections;
     [HideInInspector] public int numberOfSelectedPartyMembers;
@@ -384,7 +385,7 @@ public class UIManager : Singleton<UIManager>
     {
         partyMemberInfo[index].gameObject.SetActive(true);
         partyMemberInfoNames[index].text = skillsManager.partyMembers[index].Name;
-        partyMemberInfoImages[index].sprite = skillsManager.partyMembers[index].Icon;
+        partyMemberInfoImages[index].sprite = skillsManager.partyMembers[index].IconFront;
 
         partyMemberInfoHealthAmount[index].text = combatManager.GetPartyMemberCurrentHealth(index).ToString();
         partyMemberInfoManaAmount[index].text = combatManager.GetPartyMemberCurrentMana(index).ToString();
@@ -479,21 +480,26 @@ public class UIManager : Singleton<UIManager>
     {
         if (isUltimateAttackSelection)
         {
-            bool isSelected = combatSelections[index];
-            
-            if (isSelected)
+            if (!combatManager.IsPartyMemberDead(index))
             {
-                combatSelections[index] = false;
-                numberOfSelectedPartyMembers--;
-                combatSelectionRings[index].SetActive(false);
+                bool isSelected = combatSelections[index];
+
+                if (isSelected)
+                {
+                    combatSelections[index] = false;
+                    numberOfSelectedPartyMembers--;
+                    combatSelectionRings[index].SetActive(false);
+                    combatPartyMemberImages[index].sprite = skillsManager.partyMembers[index].IconBack;
+                }
+                else if (numberOfSelectedPartyMembers < maxNumberOfCombatSelections)
+                {
+                    combatSelections[index] = true;
+                    numberOfSelectedPartyMembers++;
+                    combatSelectionRings[index].SetActive(true);
+                    combatPartyMemberImages[index].sprite = skillsManager.partyMembers[index].IconUltimate;
+                }
             }
-            else if (numberOfSelectedPartyMembers < maxNumberOfCombatSelections)
-            {
-                combatSelections[index] = true;
-                numberOfSelectedPartyMembers++;
-                combatSelectionRings[index].SetActive(true);
-            }
-            
+
             UpdateCombatUltimateSelectionInfo();
         }
         else
@@ -510,6 +516,13 @@ public class UIManager : Singleton<UIManager>
                     } 
                     combatSelections[i] = isSelected;
                     combatSelectionRings[i].SetActive(isSelected);
+
+                    if (isSelected)
+                    {
+                        combatPartyMemberImages[i].sprite = skillsManager.partyMembers[i].IconItem;
+                        useItemPartyMemberIcons[i].gameObject.SetActive(true);
+                        useItemPartyMemberIcons[i].sprite = selectedCombatItem.Icon;
+                    }
                 }
             }
             else
@@ -518,10 +531,15 @@ public class UIManager : Singleton<UIManager>
                 {
                     combatSelections[i] = false;
                     combatSelectionRings[i].SetActive(false);
+                    combatPartyMemberImages[i].sprite = skillsManager.partyMembers[i].IconBack;
+                    useItemPartyMemberIcons[i].gameObject.SetActive(false);
                 }
 
                 combatSelections[index] = true;
                 combatSelectionRings[index].SetActive(true);
+                combatPartyMemberImages[index].sprite = skillsManager.partyMembers[index].IconItem;
+                useItemPartyMemberIcons[index].gameObject.SetActive(true);
+                useItemPartyMemberIcons[index].sprite = selectedCombatItem.Icon;
             }
 
             UpdateUseItemSelectionInfo(index);
@@ -575,7 +593,7 @@ public class UIManager : Singleton<UIManager>
     {
         useItemPartyMemberInfo[index].gameObject.SetActive(true);
         useItemPartyMemberInfoNames[index].text = skillsManager.partyMembers[index].Name;
-        useItemPartyMemberInfoImages[index].sprite = skillsManager.partyMembers[index].Icon;
+        useItemPartyMemberInfoImages[index].sprite = skillsManager.partyMembers[index].IconFront;
 
         useItemPartyMemberInfoHealthAmount[index].text = combatManager.GetPartyMemberCurrentHealth(index).ToString();
         useItemPartyMemberInfoManaAmount[index].text = combatManager.GetPartyMemberCurrentMana(index).ToString();
@@ -645,24 +663,14 @@ public class UIManager : Singleton<UIManager>
         {
             if (combatSelections[i])
             {
-                ItemEquipment[] equipment = equipmentManager.GetCharacterEquipment(i);
-                foreach (ItemEquipment item in equipment)
+                List<DamageType> damageTypes = equipmentManager.GetPartyMemberDamageTypes(i);
+
+                foreach (DamageType damageType in damageTypes)
                 {
-                    if(item == null) continue;
+                    if(damageType.damageType == DamageTypes.None) continue;
                     GameObject attackEffect;
-                    switch (item)
-                    {
-                        case ItemWeapon weapon:
-                            if(weapon.weaponDamageType.damageType == DamageTypes.None) break;
-                            attackEffect = Instantiate(ultimateAttackDamageTypePrefab, ultimateAttackEffectsList);
-                            attackEffect.GetComponent<Image>().sprite = weapon.weaponDamageType.icon;
-                            break;
-                        case ItemScroll scroll:
-                            if(scroll.scrollDamageType.damageType == DamageTypes.None) break;
-                            attackEffect = Instantiate(ultimateAttackDamageTypePrefab, ultimateAttackEffectsList);
-                            attackEffect.GetComponent<Image>().sprite = scroll.scrollDamageType.icon;
-                            break;
-                    }
+                    attackEffect = Instantiate(ultimateAttackDamageTypePrefab, ultimateAttackEffectsList);
+                    attackEffect.GetComponent<Image>().sprite = damageType.icon;
                 }
             }
         }
@@ -694,6 +702,11 @@ public class UIManager : Singleton<UIManager>
     public void ExitCombatSelectionScreen()
     {
         combatSelectionScreen.SetActive(false);
+        for (int i = 0; i < combatPartyMemberImages.Length; i++)
+        {
+            combatPartyMemberImages[i].sprite = skillsManager.partyMembers[i].IconBack;
+            useItemPartyMemberIcons[i].gameObject.SetActive(false);
+        }
         HideCombatActionInfo();
     }
     
@@ -772,7 +785,7 @@ public class UIManager : Singleton<UIManager>
             {
                 unlockedPartyMembers++;
                 combatPartyMemberLocations[i].SetActive(true);
-                combatPartyMemberImages[i].sprite = skillsManager.partyMembers[i].Icon;
+                combatPartyMemberImages[i].sprite = skillsManager.partyMembers[i].IconBack;
             }
             else
             {
@@ -792,6 +805,16 @@ public class UIManager : Singleton<UIManager>
         HideCombatActionInfo();
         OpenAttackMovesList();
         ExitCombatSelectionScreen();
+    }
+    
+    public void RevivePartyMember(int partyMemberIndex)
+    {
+        combatPartyMemberImages[partyMemberIndex].sprite = skillsManager.partyMembers[partyMemberIndex].IconBack;
+    }
+
+    public void KillPartyMember(int partyMemberIndex)
+    {
+        combatPartyMemberImages[partyMemberIndex].sprite = skillsManager.partyMembers[partyMemberIndex].IconDead;
     }
     
     public void StartPlayersTurn()
@@ -1109,7 +1132,7 @@ public class UIManager : Singleton<UIManager>
         }
     }
 
-    private void UpdateEnemyHealthBar()
+    public void UpdateEnemyHealthBar()
     {
         EnemyDetails selectedEnemy = combatManager.GetSelectedEnemy();
 
@@ -1306,7 +1329,7 @@ public class UIManager : Singleton<UIManager>
         for (int i = 0; i < partyMembers.Length; i++)
         {
             partyMembers[i].CalculateBaseStats();
-            skillsCharacterIcons[i].sprite = partyMembers[i].Icon;
+            skillsCharacterIcons[i].sprite = partyMembers[i].IconFront;
             if(partyMembers[i].IsUnlocked){
                 skillsNames[i].text = partyMembers[i].Name;
                 skillsAvailablePoints[i].text = "Available Points: " + (skillsManager.availableAttributePoints[i] - skillsManager.pendingAttributePoints[i]);
@@ -1705,7 +1728,7 @@ public class UIManager : Singleton<UIManager>
     {
         for (int i = 0; i < partyMemberImages.Length; i++)
         {
-            partyMemberImages[i].sprite = skillsManager.partyMembers[i].Icon;
+            partyMemberImages[i].sprite = skillsManager.partyMembers[i].IconFront;
         }
 
         for (int i = 0; i < skillsManager.partyMembers.Length; i++)
@@ -1760,7 +1783,7 @@ public class UIManager : Singleton<UIManager>
 
     private void UpdateEquippedItems()
     {
-        ItemEquipment[] equippedItems = EquipmentManager.Instance.GetCharacterEquipment(selectedPartyMember);
+        ItemEquipment[] equippedItems = EquipmentManager.Instance.GetPartyMemberEquipment(selectedPartyMember);
         ItemArmour armour = (ItemArmour) equippedItems[0];
         ItemWeapon weapon = (ItemWeapon) equippedItems[1];
         ItemScroll scroll = (ItemScroll) equippedItems[2];
@@ -1920,7 +1943,7 @@ public class UIManager : Singleton<UIManager>
         {
             if (armour.equipped != -1)
             {
-                slot.UpdateSlot(item, skillsManager.partyMembers[armour.equipped].Icon);
+                slot.UpdateSlot(item, skillsManager.partyMembers[armour.equipped].IconFront);
             }
             else
             {
@@ -1931,7 +1954,7 @@ public class UIManager : Singleton<UIManager>
         {
             if (weapon.equipped != -1)
             {
-                slot.UpdateSlot(item, skillsManager.partyMembers[weapon.equipped].Icon);
+                slot.UpdateSlot(item, skillsManager.partyMembers[weapon.equipped].IconFront);
             }
             else
             {
@@ -1942,7 +1965,7 @@ public class UIManager : Singleton<UIManager>
         {
             if (scroll.equipped != -1)
             {
-                slot.UpdateSlot(item, skillsManager.partyMembers[scroll.equipped].Icon);
+                slot.UpdateSlot(item, skillsManager.partyMembers[scroll.equipped].IconFront);
             }
             else
             {

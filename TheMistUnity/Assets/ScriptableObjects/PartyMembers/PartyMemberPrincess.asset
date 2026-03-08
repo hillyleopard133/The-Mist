@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: PartyMemberPrincess
   m_EditorClassIdentifier: 
   Name: Catarina
-  Icon: {fileID: 1885454505, guid: 0e2e5550dba572d419e5c5911cd634a5, type: 3}
+  IconFront: {fileID: 1885454505, guid: 0e2e5550dba572d419e5c5911cd634a5, type: 3}
+  IconBack: {fileID: 1686052632, guid: 0e2e5550dba572d419e5c5911cd634a5, type: 3}
+  IconItem: {fileID: 424852946, guid: 0e2e5550dba572d419e5c5911cd634a5, type: 3}
+  IconUltimate: {fileID: -1290140547, guid: 0e2e5550dba572d419e5c5911cd634a5, type: 3}
+  IconDead: {fileID: -181886996, guid: 0e2e5550dba572d419e5c5911cd634a5, type: 3}
+  IconSkill: {fileID: -1529315713, guid: 0e2e5550dba572d419e5c5911cd634a5, type: 3}
   Description: Catarina is a princess who's run away in search of adventure, tired
     of being locked up in the castle.
   IsUnlocked: 1

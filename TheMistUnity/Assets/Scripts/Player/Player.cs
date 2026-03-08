@@ -4,12 +4,6 @@ using UnityEngine;
 public class Player : Singleton<Player>
 {
     [Header("Config")]
-    //[SerializeField] private PlayerStats stats;
-    
-    //public PlayerStats Stats => stats;
-    public PlayerMana PlayerMana { get; private set; }
-    public PlayerHealth PlayerHealth {get; private set;}
-
     public PlayerAttack PlayerAttack { get; private set; }
 
     private PlayerAnimations animations;
@@ -17,30 +11,9 @@ public class Player : Singleton<Player>
     protected override void Awake()
     {
         base.Awake();
-        PlayerMana = GetComponent<PlayerMana>();
-        PlayerHealth = GetComponent<PlayerHealth>();
         PlayerAttack = GetComponent<PlayerAttack>();
         animations = GetComponent<PlayerAnimations>();
     }
-
-    /*
-    public void SavePlayerStats()
-    {
-        stats.SavePlayerStats();
-    }
-
-    public void LoadPlayerStats()
-    {
-        stats.LoadPlayerStats();
-    }
-
-    public void ResetPlayer()
-    {
-        stats.ResetPlayer();
-        animations.ResetPlayer();
-        PlayerMana.ResetMana();
-    }
-    */
 
     public void RespawnPlayer()
     {

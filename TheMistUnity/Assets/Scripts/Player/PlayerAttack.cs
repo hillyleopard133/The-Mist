@@ -20,7 +20,6 @@ public class PlayerAttack : MonoBehaviour
     private PlayerActions actions;
     private PlayerAnimations playerAnimations;
     private PlayerMovement playerMovement;
-    private PlayerMana playerMana;
     //private EnemyBrain enemyTarget;
     private Coroutine attackCoroutine;
 
@@ -30,7 +29,6 @@ public class PlayerAttack : MonoBehaviour
     private void Awake()
     {
         actions = new PlayerActions();
-        playerMana = GetComponent<PlayerMana>();
         playerMovement = GetComponent<PlayerMovement>();
         playerAnimations = GetComponent<PlayerAnimations>();
         
@@ -65,10 +63,6 @@ public class PlayerAttack : MonoBehaviour
         
         if (CurrentWeapon.WeaponType == RPGWeaponType.Magic)
         {
-            if (playerMana.CurrentMana < CurrentWeapon.RequiredMana)
-            {
-                yield break;   
-            }
             MagicAttack();
         }
         else

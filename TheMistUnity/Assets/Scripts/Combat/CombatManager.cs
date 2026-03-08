@@ -8,6 +8,10 @@ public class CombatManager : Singleton<CombatManager>
 {
     [SerializeField] private GameObject[] combatTilemaps;
 
+    [SerializeField] private float UltimateAttackDamageMultiplier;
+
+    [SerializeField] private float ultimateAttackDamageWait = 0.7f;
+
     private List<EnemyDetails> enemies = new List<EnemyDetails>();
     [HideInInspector] public bool isFighting;
     
@@ -17,6 +21,7 @@ public class CombatManager : Singleton<CombatManager>
     [HideInInspector] public int ultimateCharges;
     [HideInInspector] public int maxUltimateCharges;
     [HideInInspector] public int ultimateChargeProgress;
+    [HideInInspector] public int ultimateChargeRingProgress;
     [SerializeField] private int ultimateFullChargeAmount;
     
     [SerializeField] private int basicSkillManaRecovery;
@@ -161,6 +166,7 @@ public class CombatManager : Singleton<CombatManager>
         {
             partyMembersCurrentHealth[partyMemberIndex] = 0;
             partyMemberIsDead[partyMemberIndex] = true;
+            uIManager.KillPartyMember(partyMemberIndex);
             
             int allDead = AllPartyMembersDead();
             if (allDead != -1)
@@ -220,14 +226,19 @@ public class CombatManager : Singleton<CombatManager>
     {
         float damage = skillsManager.partyMembers[selectedPartyMember].CurrentAttack * attackMove.DamageMultiplier;
 
-        if (enemies[selectedEnemy].TakeDamage(damage, attackMove.DamageType))
+        DamageEnemy(selectedEnemy, damage, attackMove.DamageType);
+    }
+
+    private void DamageEnemy(int enemyIndex, float damage, DamageType damageType)
+    {
+        if (enemies[enemyIndex].TakeDamage(damage, damageType))
         {
-            uIManager.KillEnemy(selectedEnemy);
+            uIManager.KillEnemy(enemyIndex);
             if(AllEnemiesDead()) CombatWin();
         }
         else
         {
-            uIManager.SelectEnemy(selectedEnemy);
+            uIManager.SelectEnemy(enemyIndex);
         }
     }
 
@@ -278,7 +289,6 @@ public class CombatManager : Singleton<CombatManager>
         partyMembersCurrentHealth[partyMemberIndex] += amount;
         if(partyMembersCurrentHealth[partyMemberIndex] >= skillsManager.partyMembers[partyMemberIndex].CurrentMaxHealth)
             partyMembersCurrentHealth[partyMemberIndex] = skillsManager.partyMembers[partyMemberIndex].CurrentMaxHealth;
-        SaveCombatData();
     }
     
     public void AddMana(int partyMemberIndex, int amount)
@@ -286,7 +296,6 @@ public class CombatManager : Singleton<CombatManager>
         partyMembersCurrentMana[partyMemberIndex] += amount;
         if(partyMembersCurrentMana[partyMemberIndex] >= skillsManager.partyMembers[partyMemberIndex].CurrentMaxMana) 
             partyMembersCurrentMana[partyMemberIndex] = skillsManager.partyMembers[partyMemberIndex].CurrentMaxMana;
-        SaveCombatData();
     }
 
     public bool IsPartyMemberDead(int index)
@@ -341,7 +350,7 @@ public class CombatManager : Singleton<CombatManager>
 
     public AttackMove[] GetAllPartyMemberAttacks(int partyMemberIndex)
     {
-        ItemEquipment[] equipmentList = equipmentManager.GetCharacterEquipment(partyMemberIndex);
+        ItemEquipment[] equipmentList = equipmentManager.GetPartyMemberEquipment(partyMemberIndex);
         List<AttackMove> unlockedAttacks = skillsManager.partyMembers[partyMemberIndex].GetUnlockedAttacks();
 
         List<AttackMove> attacks = new List<AttackMove>();
@@ -387,7 +396,11 @@ public class CombatManager : Singleton<CombatManager>
             {
                 if(partyMemberIsDead[i] && !item.IsRevive) continue;
 
-                if(item.IsRevive) partyMemberIsDead[i] = false;
+                if (item.IsRevive)
+                {
+                    uIManager.RevivePartyMember(i);
+                    partyMemberIsDead[i] = false;
+                }
                 
                 int healthValue = item.GetHealthValue();
                 partyMembersCurrentHealth[i] += healthValue;
@@ -428,26 +441,79 @@ public class CombatManager : Singleton<CombatManager>
 
     public float GetUltimateChargeProgressPercentage()
     {
-        return (float) ultimateChargeProgress / ultimateFullChargeAmount;
+        return (float) ultimateChargeRingProgress / ultimateFullChargeAmount;
     }
 
     public void UseUltimateAttack()
     {
-        bool[] combatSelections = uIManager.combatSelections;
-        int amountSelected = uIManager.numberOfSelectedPartyMembers;
+        StartCoroutine(DealUltimateAttackDamage());
+    }
 
+    private IEnumerator DealUltimateAttackDamage()
+    {
+        bool[] combatSelections = uIManager.combatSelections;
+        
+        int amountSelected = uIManager.numberOfSelectedPartyMembers;
         UseUltimateCharges(amountSelected);
+        uIManager.ExitCombatSelectionScreen();
+        uIManager.StartEnemyTurn();
+
+        for (int i = 0; i < combatSelections.Length; i++)
+        {
+            if (combatSelections[i])
+            {
+                float damage = skillsManager.partyMembers[i].CurrentAttack * UltimateAttackDamageMultiplier;
+                List<DamageType> damageTypes = equipmentManager.GetPartyMemberDamageTypes(i);
+                
+                while (damageTypes.Count < 2)
+                {
+                    DamageType none = ScriptableObject.CreateInstance<DamageType>();
+                    none.damageType = DamageTypes.None;
+                    damageTypes.Add(none);
+                }
+
+                int livingEnemies = 0;
+                foreach (EnemyDetails enemy in enemies)
+                {
+                    if(enemy.IsDead) continue;
+                    livingEnemies++;
+                }
+                
+                foreach (DamageType damageType in damageTypes)
+                {
+                    for (int j = 0; j < enemies.Count; j++)
+                    {
+                        if(enemies[j].IsDead) continue;
+                        DamageEnemy(j, damage / livingEnemies, damageType);
+                    }
+                    
+                    uIManager.UpdateEnemyHealthBar();
+                    yield return new WaitForSeconds(ultimateAttackDamageWait);
+                }
+            }
+        }
+        
+        StartCoroutine(TimeBetweenTurns());
     }
 
     private void UseUltimateCharges(int amount)
     {
         ultimateCharges -= amount;
+        AddUltimateCharge(0);
         uIManager.UpdateUltimateCharges();
     }
 
     private void AddUltimateCharge(int chargeAmount)
     {
+        
         ultimateChargeProgress += chargeAmount;
+        ultimateChargeRingProgress = ultimateChargeProgress;
+
+        if (ultimateCharges == maxUltimateCharges)
+        {
+            ultimateChargeProgress = 0;
+            ultimateChargeRingProgress = ultimateFullChargeAmount;
+        }
 
         if (ultimateChargeProgress < ultimateFullChargeAmount) return;
         
@@ -455,11 +521,13 @@ public class CombatManager : Singleton<CombatManager>
         {
             ultimateCharges++;
             ultimateChargeProgress -= ultimateFullChargeAmount;
+            ultimateChargeRingProgress = ultimateChargeProgress;
         }
         else
         {
-            if (ultimateCharges < maxUltimateCharges) ultimateCharges++; 
-            ultimateChargeProgress = ultimateFullChargeAmount;
+            if (ultimateCharges < maxUltimateCharges) ultimateCharges++;
+            ultimateChargeRingProgress = ultimateFullChargeAmount;
+            ultimateChargeProgress = 0;
         }
         
         uIManager.UpdateUltimateCharges();
@@ -510,8 +578,8 @@ public class CombatManager : Singleton<CombatManager>
     {
         UseItems();
         AddRewards();
+        //PostBattleRecovery();
         EndCombat();
-        PostBattleRecovery();
         SaveCombatData();
     }
 
@@ -519,8 +587,19 @@ public class CombatManager : Singleton<CombatManager>
     {
         foreach (EnemyDetails enemy in enemies)
         {
-            coinManager.AddCoins(enemy.CoinsReward);
-            skillsManager.AddExp(enemy.ExpReward);
+            float coinAmount = enemy.CoinsReward;
+            if (skillsManager.GetSkill(SkillTreeSkills.BonusCombatGold).IsUnlocked)
+            {
+                coinAmount *= skillsManager.coinIncreaseMultiplier;
+            }
+            coinManager.AddCoins(Mathf.RoundToInt(coinAmount));
+
+            float expAmount = enemy.ExpReward;
+            if (skillsManager.GetSkill(SkillTreeSkills.BonusCombatExp).IsUnlocked)
+            {
+                expAmount *= skillsManager.expIncreaseMultiplier;
+            }
+            skillsManager.AddExp(Mathf.RoundToInt(expAmount));
         }
     }
 
@@ -542,7 +621,6 @@ public class CombatManager : Singleton<CombatManager>
             AddHealth(i, 20);
             AddMana(i, 5);
         }
-        uIManager.UpdatePartyMemberInfo();
     }
 
     private void RevivePartyMembers()
@@ -550,7 +628,9 @@ public class CombatManager : Singleton<CombatManager>
         for (int i = 0; i < partyMemberIsDead.Length; i++)
         {
             partyMemberIsDead[i] = false;
+            AddHealth(i, 1);
         }
+        uIManager.UpdatePartyMemberInfo();
     }
 
     private void DeactivateTilemaps()

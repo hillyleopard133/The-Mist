@@ -46,13 +46,35 @@ public class EquipmentManager : Singleton<EquipmentManager>
         LoadEquipment();
     }
 
-    public ItemEquipment[] GetCharacterEquipment(int characterIndex)
+    public ItemEquipment[] GetPartyMemberEquipment(int partyMemberIndex)
     {
         ItemEquipment[] equippedItems = new ItemEquipment[partySize];
-        equippedItems[0] = equippedArmour[characterIndex];
-        equippedItems[1] = equippedWeapons[characterIndex];
-        equippedItems[2] = equippedScrolls[characterIndex];
+        equippedItems[0] = equippedArmour[partyMemberIndex];
+        equippedItems[1] = equippedWeapons[partyMemberIndex];
+        equippedItems[2] = equippedScrolls[partyMemberIndex];
         return equippedItems;
+    }
+
+    public List<DamageType> GetPartyMemberDamageTypes(int partyMemberIndex)
+    {
+        ItemEquipment[] equipment = GetPartyMemberEquipment(partyMemberIndex);
+        List<DamageType> damageTypes = new List<DamageType>();
+        
+        foreach (ItemEquipment item in equipment)
+        {
+            if(item == null) continue;
+            switch (item)
+            {
+                case ItemWeapon weapon:
+                    damageTypes.Add(weapon.weaponDamageType);
+                    break;
+                case ItemScroll scroll:
+                    damageTypes.Add(scroll.scrollDamageType);
+                    break;
+            }
+        }
+        
+        return damageTypes;
     }
 
     public int GetEquippedSlotIndex(int equipmentType, int characterIndex)

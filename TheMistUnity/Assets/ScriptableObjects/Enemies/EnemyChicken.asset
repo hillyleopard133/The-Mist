@@ -17,7 +17,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 9185471420396107289, guid: fa7950473c3e5834f9dd78ac04ef7b72, type: 3}
   CoinsReward: 5
   ExpReward: 200
-  AttackDamage: 5
+  AttackDamage: 6
   MaxHealth: 20
   CurrentHealth: 40
   IsDead: 0

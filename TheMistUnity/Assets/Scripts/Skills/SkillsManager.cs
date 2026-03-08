@@ -38,6 +38,10 @@ public class SkillsManager : Singleton<SkillsManager>
     [HideInInspector] public int[] pointsToAddMana;
     
     [SerializeField] public Skill[] skills;
+    [SerializeField] public float shopDiscountMultiplier;
+    [SerializeField] public float coinIncreaseMultiplier;
+    [SerializeField] public float expIncreaseMultiplier;
+    [SerializeField] public float speedIncreaseMultiplier;
     [HideInInspector] public int skillOrbs;
     
     private UIManager uIManager;
@@ -73,7 +77,6 @@ public class SkillsManager : Singleton<SkillsManager>
         {
             if (partyMember.IsUnlocked) unlockedPartyMembers.Add(partyMember);
         }
-        
         return unlockedPartyMembers;
     }
 
@@ -165,6 +168,7 @@ public class SkillsManager : Singleton<SkillsManager>
         pointsToAddMana[partyMemberIndex] = 0;
         
         UIManager.Instance.UpdateSkillCards();
+        combatManager.SaveCombatData();
         SaveSkills();
     }
 

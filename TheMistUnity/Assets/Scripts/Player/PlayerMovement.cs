@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     private bool sprintToggleActive;
     private bool isSprinting;
     
+    private SkillsManager skillsManager;
+    
     public bool IsSprinting => isSprinting;
     
     private readonly string TOGGLE_SPRINT = "TOGGLE_SPRINT";
@@ -42,6 +44,8 @@ public class PlayerMovement : MonoBehaviour
     
     private void Start()
     {
+        skillsManager = SkillsManager.Instance;
+        
         actions.Movement.Sprint.performed += ctx => Sprint(true);  
         actions.Movement.Sprint.canceled += ctx => Sprint(false); 
         
@@ -88,7 +92,14 @@ public class PlayerMovement : MonoBehaviour
         //   return;
         //}
         float speed = walkSpeed;
-        if(isSprinting) speed = sprintSpeed;
+        if (isSprinting)
+        {
+            speed = sprintSpeed;
+            if (skillsManager.GetSkill(SkillTreeSkills.IncreaseSprintSpeed).IsUnlocked)
+            {
+                speed *= skillsManager.speedIncreaseMultiplier;
+            }
+        }
         rb2D.MovePosition(rb2D.position + moveDirection * (speed * Time.fixedDeltaTime));
     }
 
