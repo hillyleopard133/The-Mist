@@ -42,6 +42,7 @@ public class SkillsManager : Singleton<SkillsManager>
     [SerializeField] public float coinIncreaseMultiplier;
     [SerializeField] public float expIncreaseMultiplier;
     [SerializeField] public float speedIncreaseMultiplier;
+    [SerializeField] public float timingWindowIncreaseMultiplier;
     [HideInInspector] public int skillOrbs;
     
     private UIManager uIManager;

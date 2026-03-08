@@ -25,9 +25,18 @@ public class CombatManager : Singleton<CombatManager>
     [SerializeField] private int ultimateFullChargeAmount;
     
     [SerializeField] private int basicSkillManaRecovery;
+    
     [SerializeField] private float timeBetweenTurns;
     [HideInInspector] public bool isPlayerTurn;
     private bool[] partyMemberHasTakenTurn;
+    private Coroutine enemyTurnCoroutine;
+
+    [HideInInspector] public bool isTiming;
+    [HideInInspector] public bool perfectTimed;
+    [SerializeField] private float timingWindowBaseSpeed;   //pixels per second
+    [SerializeField] private float multiHitTimingSpeedBoost;
+    [SerializeField] private float perfectAttackMultiplier;
+    private int perfectMultiHits;
     
     private List<InventoryItem> usedItems = new List<InventoryItem>();
     
@@ -99,8 +108,7 @@ public class CombatManager : Singleton<CombatManager>
         isPlayerTurn = true;
         uIManager.StartPlayersTurn();
     }
-
-    private Coroutine enemyTurnCoroutine;
+    
     private IEnumerator TimeBetweenTurns()
     {
         if (isPlayerTurn)
@@ -216,17 +224,27 @@ public class CombatManager : Singleton<CombatManager>
         
         if (attack.MoveType == AttackMoveType.SingleTarget)
         {
-            AttackTargetEnemy(attack);
+            StartCoroutine(AttackTargetEnemy(attack));
         }
+    }
+    
+    private IEnumerator AttackTargetEnemy(AttackMove attackMove)
+    {
+        Debug.Log("AHHHHHH");
+        
+        float damage = skillsManager.partyMembers[selectedPartyMember].CurrentAttack * attackMove.DamageMultiplier;
+        
+        uIManager.ShowTimingWindow(true, timingWindowBaseSpeed);
+        
+        while (isTiming) yield return null;
+
+        if (perfectTimed) damage *= perfectAttackMultiplier;
+        
+        Debug.Log("Perfect timed: " + perfectTimed);
+        
+        DamageEnemy(selectedEnemy, damage, attackMove.DamageType);
         
         StartCoroutine(TimeBetweenTurns());
-    }
-
-    private void AttackTargetEnemy(AttackMove attackMove)
-    {
-        float damage = skillsManager.partyMembers[selectedPartyMember].CurrentAttack * attackMove.DamageMultiplier;
-
-        DamageEnemy(selectedEnemy, damage, attackMove.DamageType);
     }
 
     private void DamageEnemy(int enemyIndex, float damage, DamageType damageType)

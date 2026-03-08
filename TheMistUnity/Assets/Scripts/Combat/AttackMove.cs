@@ -25,9 +25,9 @@ public class AttackMove: ScriptableObject
     public DamageType DamageType;
     public float DamageMultiplier;
     public int MPCost;
-
     public bool IsHitAll;
     
+    /*
     public bool HasEffect;
     public AttackEffect Effect;
     public float EffectChance;
@@ -40,5 +40,6 @@ public class AttackMove: ScriptableObject
             if(HasEffect) enemyCombat.AddEffect(Effect.CopyEffect());
         }
     }
+    */
 
 }

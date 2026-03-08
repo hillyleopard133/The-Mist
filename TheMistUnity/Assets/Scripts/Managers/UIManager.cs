@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -32,6 +33,17 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private float timeToRespawn;
     private float respawnTimer;
     private bool isReviving;
+    
+    [Header("Timing Window")]
+    [SerializeField] private GameObject timingWindowScreen;
+    [SerializeField] private GameObject timingBar;
+    [SerializeField] private GameObject timingWindow;
+    [SerializeField] private GameObject timingSlider;
+    [SerializeField] private int timingWindowBaseSize;
+    private RectTransform sliderRect;
+    private RectTransform barRect;
+    private RectTransform windowRect;
+    private bool isTiming;
     
     [Header("Loading Screen")]
     [SerializeField] private GameObject loadingScreen;
@@ -336,6 +348,10 @@ public class UIManager : Singleton<UIManager>
     {
         base.Awake();
         actions = new PlayerActions();
+        
+        sliderRect = timingSlider.GetComponent<RectTransform>();
+        barRect = timingBar.GetComponent<RectTransform>();
+        windowRect = timingWindow.GetComponent<RectTransform>();
     }
 
     private void Start()
@@ -360,6 +376,7 @@ public class UIManager : Singleton<UIManager>
         actions.Combat.SelectPartyMemberLeft.performed += ctx => SwitchSelectedPartyMember(-1);
         actions.Combat.SelectPartyMemberRight.performed += ctx => SwitchSelectedPartyMember(1);
         actions.Combat.UltimateAttack.performed += ctx => CombatSelection(true);
+        actions.Combat.TimingWindow.performed += ctx => StopTimingSlider();
         
         combatSelections = new bool[combatSelectionRings.Length];
         
@@ -410,7 +427,91 @@ public class UIManager : Singleton<UIManager>
 
     #endregion
 
-    #region DamageText
+    #region Combat - Timing Window
+    
+    private void StartTiming(bool isAttack, float speed)
+    {
+        isTiming = true;
+        
+        float width = timingWindowBaseSize;
+
+        if (isAttack && skillsManager.GetSkill(SkillTreeSkills.IncreaseAttackTimingWindow).IsUnlocked)
+        {
+            width *= skillsManager.timingWindowIncreaseMultiplier;
+        }
+
+        if (!isAttack && skillsManager.GetSkill(SkillTreeSkills.IncreaseBlockTimingWindow).IsUnlocked)
+        {
+            width *= skillsManager.timingWindowIncreaseMultiplier;
+        }
+
+        windowRect.sizeDelta = new Vector2(width, windowRect.sizeDelta.y);
+
+        StartCoroutine(MoveTimingSlider(speed));
+    }
+
+    private IEnumerator MoveTimingSlider(float speed)
+    {
+        float barWidth = barRect.rect.width;
+
+        float posX = -barWidth / 2f; 
+
+        sliderRect.anchoredPosition = new Vector2(posX, sliderRect.anchoredPosition.y);
+        
+        while (isTiming)
+        {
+            posX += speed * Time.deltaTime;
+
+            sliderRect.anchoredPosition = new Vector2(posX, sliderRect.anchoredPosition.y);
+            
+            yield return null;
+            
+            if (posX >= barWidth / 2f)
+            {
+                isTiming = false;
+                combatManager.isTiming = false;
+                combatManager.perfectTimed = false;
+            }
+        }
+        
+        yield return new WaitForSeconds(1f);
+        
+        HideTimingWindow();
+    }
+
+    private void StopTimingSlider()
+    {
+        if(!isTiming) return;
+        
+        isTiming = false;
+        combatManager.isTiming = false;
+        
+        float sliderX = sliderRect.anchoredPosition.x;
+
+        float windowCenter = windowRect.anchoredPosition.x;
+        float windowHalfWidth = windowRect.rect.width / 2f;
+
+        combatManager.perfectTimed = Mathf.Abs(sliderX - windowCenter) <= windowHalfWidth;
+    }
+
+    public void ShowTimingWindow(bool isAttack, float speed)
+    {
+        timingWindowScreen.SetActive(true);
+        combatManager.isTiming = true;
+        isTiming = true;
+        StartTiming(isAttack, speed);
+    }
+
+    private void HideTimingWindow()
+    {
+        timingWindowScreen.SetActive(false);
+        isTiming = false;
+        combatManager.isTiming = false;
+    }
+
+    #endregion
+
+    #region Combat - DamageText
 
     private void InstantiateCombatTextPool()
     {
@@ -461,7 +562,7 @@ public class UIManager : Singleton<UIManager>
 
     #endregion
 
-    #region Combat - Selection
+    #region Combat - Selection Screen
     
     private void SelectCombatItem(ItemConsumable item)
     {
@@ -792,6 +893,7 @@ public class UIManager : Singleton<UIManager>
                 combatPartyMemberLocations[i].SetActive(false);
             }
         }
+        
         foreach (GameObject navigation in combatNavigationAD)
         {
             navigation.SetActive(unlockedPartyMembers > 1);

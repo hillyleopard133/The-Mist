@@ -188,7 +188,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""name"": ""ClickAttack"",
                     ""type"": ""Button"",
                     ""id"": ""959c4a82-fe1c-4b44-af1e-541028a5ba13"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -216,7 +216,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""38e47b7c-573b-4778-825b-d68a38a0f295"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -275,7 +275,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""name"": ""Pause"",
                     ""type"": ""Button"",
                     ""id"": ""1c02a92c-4e2e-43d1-9192-89d2fd6460a5"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -343,7 +343,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""name"": ""Slot1"",
                     ""type"": ""Button"",
                     ""id"": ""2378d1d3-7c28-40f8-b8f3-f6fafc6e0bfc"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -411,7 +411,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""name"": ""Generate"",
                     ""type"": ""Button"",
                     ""id"": ""31595bfe-c4e9-41f8-8889-02549ae9f0e7"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -459,7 +459,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""e477298c-2f32-44e6-a319-e94c201956d7"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -591,7 +591,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""name"": ""LeftTab"",
                     ""type"": ""Button"",
                     ""id"": ""8afeedb3-5d1f-4ac4-bdd6-eefb58df949c"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -679,7 +679,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""name"": ""SelectEnemyLeft"",
                     ""type"": ""Button"",
                     ""id"": ""b510b607-471a-4c70-84a2-250e48fb60a8"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -721,10 +721,10 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""SelectUltimateParty"",
+                    ""name"": ""TimingWindow"",
                     ""type"": ""Button"",
                     ""id"": ""774318e0-12c3-4dc7-ae7a-7a232258cf9f"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -793,7 +793,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""SelectUltimateParty"",
+                    ""action"": ""TimingWindow"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -846,7 +846,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         m_Combat_SelectPartyMemberLeft = m_Combat.FindAction("SelectPartyMemberLeft", throwIfNotFound: true);
         m_Combat_SelectPartyMemberRight = m_Combat.FindAction("SelectPartyMemberRight", throwIfNotFound: true);
         m_Combat_UltimateAttack = m_Combat.FindAction("UltimateAttack", throwIfNotFound: true);
-        m_Combat_SelectUltimateParty = m_Combat.FindAction("SelectUltimateParty", throwIfNotFound: true);
+        m_Combat_TimingWindow = m_Combat.FindAction("TimingWindow", throwIfNotFound: true);
     }
 
     ~@PlayerActions()
@@ -1851,7 +1851,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Combat_SelectPartyMemberLeft;
     private readonly InputAction m_Combat_SelectPartyMemberRight;
     private readonly InputAction m_Combat_UltimateAttack;
-    private readonly InputAction m_Combat_SelectUltimateParty;
+    private readonly InputAction m_Combat_TimingWindow;
     /// <summary>
     /// Provides access to input actions defined in input action map "Combat".
     /// </summary>
@@ -1884,9 +1884,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @UltimateAttack => m_Wrapper.m_Combat_UltimateAttack;
         /// <summary>
-        /// Provides access to the underlying input action "Combat/SelectUltimateParty".
+        /// Provides access to the underlying input action "Combat/TimingWindow".
         /// </summary>
-        public InputAction @SelectUltimateParty => m_Wrapper.m_Combat_SelectUltimateParty;
+        public InputAction @TimingWindow => m_Wrapper.m_Combat_TimingWindow;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1928,9 +1928,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @UltimateAttack.started += instance.OnUltimateAttack;
             @UltimateAttack.performed += instance.OnUltimateAttack;
             @UltimateAttack.canceled += instance.OnUltimateAttack;
-            @SelectUltimateParty.started += instance.OnSelectUltimateParty;
-            @SelectUltimateParty.performed += instance.OnSelectUltimateParty;
-            @SelectUltimateParty.canceled += instance.OnSelectUltimateParty;
+            @TimingWindow.started += instance.OnTimingWindow;
+            @TimingWindow.performed += instance.OnTimingWindow;
+            @TimingWindow.canceled += instance.OnTimingWindow;
         }
 
         /// <summary>
@@ -1957,9 +1957,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @UltimateAttack.started -= instance.OnUltimateAttack;
             @UltimateAttack.performed -= instance.OnUltimateAttack;
             @UltimateAttack.canceled -= instance.OnUltimateAttack;
-            @SelectUltimateParty.started -= instance.OnSelectUltimateParty;
-            @SelectUltimateParty.performed -= instance.OnSelectUltimateParty;
-            @SelectUltimateParty.canceled -= instance.OnSelectUltimateParty;
+            @TimingWindow.started -= instance.OnTimingWindow;
+            @TimingWindow.performed -= instance.OnTimingWindow;
+            @TimingWindow.canceled -= instance.OnTimingWindow;
         }
 
         /// <summary>
@@ -2247,11 +2247,11 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnUltimateAttack(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "SelectUltimateParty" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "TimingWindow" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnSelectUltimateParty(InputAction.CallbackContext context);
+        void OnTimingWindow(InputAction.CallbackContext context);
     }
 }

@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "PlayerActions",
     "maps": [
         {
@@ -101,7 +102,7 @@
                     "name": "ClickAttack",
                     "type": "Button",
                     "id": "959c4a82-fe1c-4b44-af1e-541028a5ba13",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -129,7 +130,7 @@
                     "name": "Interact",
                     "type": "Button",
                     "id": "38e47b7c-573b-4778-825b-d68a38a0f295",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -188,7 +189,7 @@
                     "name": "Pause",
                     "type": "Button",
                     "id": "1c02a92c-4e2e-43d1-9192-89d2fd6460a5",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -256,7 +257,7 @@
                     "name": "Slot1",
                     "type": "Button",
                     "id": "2378d1d3-7c28-40f8-b8f3-f6fafc6e0bfc",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -324,7 +325,7 @@
                     "name": "Generate",
                     "type": "Button",
                     "id": "31595bfe-c4e9-41f8-8889-02549ae9f0e7",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -372,7 +373,7 @@
                     "name": "Interact",
                     "type": "Button",
                     "id": "e477298c-2f32-44e6-a319-e94c201956d7",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -504,7 +505,7 @@
                     "name": "LeftTab",
                     "type": "Button",
                     "id": "8afeedb3-5d1f-4ac4-bdd6-eefb58df949c",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -592,7 +593,7 @@
                     "name": "SelectEnemyLeft",
                     "type": "Button",
                     "id": "b510b607-471a-4c70-84a2-250e48fb60a8",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -634,10 +635,10 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "SelectUltimateParty",
+                    "name": "TimingWindow",
                     "type": "Button",
                     "id": "774318e0-12c3-4dc7-ae7a-7a232258cf9f",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -706,7 +707,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "SelectUltimateParty",
+                    "action": "TimingWindow",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
