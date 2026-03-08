@@ -18,6 +18,8 @@ public class NPCFollowPlayer : MonoBehaviour
     private bool isFollowing;
     private Player player;
     private Rigidbody2D rb;
+    
+    private SkillsManager skillsManager;
 
     //Animation
     private Animator animator;
@@ -33,6 +35,8 @@ public class NPCFollowPlayer : MonoBehaviour
 
     private void Start()
     {
+        skillsManager = SkillsManager.Instance;
+        
         IS_FOLLOWING = "IS_FOLLOWING" + gameObject.name;
         player = Player.Instance;
         rb = GetComponent<Rigidbody2D>();
@@ -145,6 +149,10 @@ public class NPCFollowPlayer : MonoBehaviour
         if (player.GetComponent<PlayerMovement>().IsSprinting)
         {
             chaseSpeed = player.GetComponent<PlayerMovement>().SprintSpeed;
+            if (skillsManager.GetSkill(SkillTreeSkills.IncreaseSprintSpeed).IsUnlocked)
+            {
+                chaseSpeed *= skillsManager.speedIncreaseMultiplier;
+            }
             isSprinting = true;
         }
         else

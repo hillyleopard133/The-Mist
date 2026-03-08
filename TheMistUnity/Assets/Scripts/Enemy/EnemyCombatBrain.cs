@@ -27,7 +27,7 @@ public class EnemyCombatBrain : MonoBehaviour
         combatManager = CombatManager.Instance;
     }
     
-    public IEnumerator TakeTurn(System.Action onFinished)
+    public IEnumerator TakeTurn()
     {
         EnemyAction currentAction = EvaluateActions();
 
@@ -51,7 +51,6 @@ public class EnemyCombatBrain : MonoBehaviour
         
         
         lastAction = currentAction;
-        onFinished?.Invoke();
     }
 
     private EnemyAction EvaluateActions()

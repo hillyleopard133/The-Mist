@@ -28,6 +28,7 @@ public class CombatManager : Singleton<CombatManager>
     
     [SerializeField] private float timeBetweenTurns;
     [HideInInspector] public bool isPlayerTurn;
+    [HideInInspector] public bool isEnemyTurn;
     private bool[] partyMemberHasTakenTurn;
     private Coroutine enemyTurnCoroutine;
 
@@ -36,6 +37,7 @@ public class CombatManager : Singleton<CombatManager>
     [SerializeField] private float timingWindowBaseSpeed;   //pixels per second
     [SerializeField] private float multiHitTimingSpeedBoost;
     [SerializeField] private float perfectAttackMultiplier;
+    [SerializeField] private float perfectBlockMultiplier = 0.7f;
     private int perfectMultiHits;
     
     private List<InventoryItem> usedItems = new List<InventoryItem>();
@@ -88,19 +90,29 @@ public class CombatManager : Singleton<CombatManager>
     private IEnumerator EnemyTurn()
     {
         isPlayerTurn = false;
-
+        yield return new WaitForSeconds(timeBetweenTurns);
+        
         foreach (EnemyDetails enemy in enemies)
         {
             if(enemy.IsDead) continue;
             
             bool finished = false;
-            StartCoroutine(enemy.enemyCombatBrain.TakeTurn(() => finished = true));
-            while(!finished) yield return null;
+            StartCoroutine(enemy.enemyCombatBrain.TakeTurn());
             
+            isEnemyTurn = true;
+            
+            while(isEnemyTurn) yield return null;
+            
+            yield return new WaitForSeconds(1f);
             yield return new WaitForSeconds(timeBetweenTurns);
         }
 
         StartCoroutine(TimeBetweenTurns());
+    }
+
+    private void EndEnemyTurn()
+    {
+        isEnemyTurn = false;
     }
 
     private void PlayerTurn()
@@ -161,8 +173,21 @@ public class CombatManager : Singleton<CombatManager>
 
         if (attackMove.MoveType == AttackMoveType.SingleTarget)
         {
-            TakeDamage(Mathf.RoundToInt(damage), partyMemberIndex);
+            StartCoroutine(AttackTargetPartyMember(damage, partyMemberIndex));
         }
+    }
+
+    private IEnumerator AttackTargetPartyMember(float damage, int partyMemberIndex)
+    {
+        uIManager.ShowTimingWindow(true, timingWindowBaseSpeed);
+        
+        while (isTiming) yield return null;
+
+        if (perfectTimed) damage *= perfectBlockMultiplier;
+        
+        TakeDamage(Mathf.RoundToInt(damage), partyMemberIndex);
+        
+        EndEnemyTurn();
     }
 
     private void TakeDamage(int damage, int partyMemberIndex)
@@ -230,8 +255,6 @@ public class CombatManager : Singleton<CombatManager>
     
     private IEnumerator AttackTargetEnemy(AttackMove attackMove)
     {
-        Debug.Log("AHHHHHH");
-        
         float damage = skillsManager.partyMembers[selectedPartyMember].CurrentAttack * attackMove.DamageMultiplier;
         
         uIManager.ShowTimingWindow(true, timingWindowBaseSpeed);
@@ -239,8 +262,6 @@ public class CombatManager : Singleton<CombatManager>
         while (isTiming) yield return null;
 
         if (perfectTimed) damage *= perfectAttackMultiplier;
-        
-        Debug.Log("Perfect timed: " + perfectTimed);
         
         DamageEnemy(selectedEnemy, damage, attackMove.DamageType);
         
@@ -364,6 +385,16 @@ public class CombatManager : Singleton<CombatManager>
         if(manaTotal >= maxMana) return 1;
         
         return (float) manaTotal / maxMana;
+    }
+
+    public void FullRecovery()
+    {
+        for (int i = 0; i < partyMembersCurrentHealth.Length; i++)
+        {
+            partyMembersCurrentHealth[i] = skillsManager.partyMembers[i].CurrentMaxHealth;
+            partyMembersCurrentMana[i] = skillsManager.partyMembers[i].CurrentMaxMana;
+        }
+        uIManager.UpdatePartyMemberInfo();
     }
 
     public AttackMove[] GetAllPartyMemberAttacks(int partyMemberIndex)
@@ -521,7 +552,22 @@ public class CombatManager : Singleton<CombatManager>
         uIManager.UpdateUltimateCharges();
     }
 
-    private void AddUltimateCharge(int chargeAmount)
+    [SerializeField] private int perfectTimingChargeAmount;
+    
+    public void GetPerfectTimingCharge()
+    {
+        float amount = perfectTimingChargeAmount;
+
+        if (skillsManager.GetSkill(SkillTreeSkills.IncreaseUltimateChargeSpeed).IsUnlocked)
+        {
+            amount *= skillsManager.ultimateChargeSpeedIncreaseMultiplier;
+        }
+        Debug.Log(amount);
+        AddUltimateCharge(Mathf.RoundToInt(amount));
+        uIManager.UpdateUltimateCharges();
+    }
+
+    public void AddUltimateCharge(int chargeAmount)
     {
         
         ultimateChargeProgress += chargeAmount;
@@ -587,7 +633,7 @@ public class CombatManager : Singleton<CombatManager>
     private void CombatLose()
     {
         EndCombat();
-        StopCoroutine(enemyTurnCoroutine);
+        if(enemyTurnCoroutine != null) StopCoroutine(enemyTurnCoroutine);
         usedItems.Clear();
         LoadCombatData();
     }

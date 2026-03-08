@@ -491,7 +491,13 @@ public class UIManager : Singleton<UIManager>
         float windowCenter = windowRect.anchoredPosition.x;
         float windowHalfWidth = windowRect.rect.width / 2f;
 
-        combatManager.perfectTimed = Mathf.Abs(sliderX - windowCenter) <= windowHalfWidth;
+        bool perfectTiming = Mathf.Abs(sliderX - windowCenter) <= windowHalfWidth;
+        combatManager.perfectTimed = perfectTiming;
+
+        if (perfectTiming)
+        {
+            combatManager.GetPerfectTimingCharge();
+        }
     }
 
     public void ShowTimingWindow(bool isAttack, float speed)

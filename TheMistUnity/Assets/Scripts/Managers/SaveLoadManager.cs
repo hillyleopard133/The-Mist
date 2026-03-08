@@ -212,5 +212,6 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         UIManager.Instance.UpdateLoadingProgress(1f);
         yield return new WaitForSeconds(0.1f);
         UIManager.Instance.ActivateLoadingScreen(false);
+        dialogueManager.SelectNPC(null);
     }
 }

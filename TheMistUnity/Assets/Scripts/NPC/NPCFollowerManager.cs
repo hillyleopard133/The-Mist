@@ -42,5 +42,6 @@ public class NPCFollowerManager : Singleton<NPCFollowerManager>
                 }
             }
         }
+        DialogueManager.Instance.SelectNPC(null);
     }
 }

@@ -297,6 +297,15 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RegenPoint"",
+                    ""type"": ""Button"",
+                    ""id"": ""3cdd3ff3-132e-40ea-9302-5e1ee298fceb"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -330,6 +339,17 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""TabMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4fa50854-0c39-46d5-af23-b1b9fe48d16f"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RegenPoint"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -818,6 +838,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         m_General_Pause = m_General.FindAction("Pause", throwIfNotFound: true);
         m_General_Respawn = m_General.FindAction("Respawn", throwIfNotFound: true);
         m_General_TabMenu = m_General.FindAction("TabMenu", throwIfNotFound: true);
+        m_General_RegenPoint = m_General.FindAction("RegenPoint", throwIfNotFound: true);
         // Hotbar
         m_Hotbar = asset.FindActionMap("Hotbar", throwIfNotFound: true);
         m_Hotbar_Slot1 = m_Hotbar.FindAction("Slot1", throwIfNotFound: true);
@@ -1248,6 +1269,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_General_Pause;
     private readonly InputAction m_General_Respawn;
     private readonly InputAction m_General_TabMenu;
+    private readonly InputAction m_General_RegenPoint;
     /// <summary>
     /// Provides access to input actions defined in input action map "General".
     /// </summary>
@@ -1271,6 +1293,10 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "General/TabMenu".
         /// </summary>
         public InputAction @TabMenu => m_Wrapper.m_General_TabMenu;
+        /// <summary>
+        /// Provides access to the underlying input action "General/RegenPoint".
+        /// </summary>
+        public InputAction @RegenPoint => m_Wrapper.m_General_RegenPoint;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1306,6 +1332,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @TabMenu.started += instance.OnTabMenu;
             @TabMenu.performed += instance.OnTabMenu;
             @TabMenu.canceled += instance.OnTabMenu;
+            @RegenPoint.started += instance.OnRegenPoint;
+            @RegenPoint.performed += instance.OnRegenPoint;
+            @RegenPoint.canceled += instance.OnRegenPoint;
         }
 
         /// <summary>
@@ -1326,6 +1355,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @TabMenu.started -= instance.OnTabMenu;
             @TabMenu.performed -= instance.OnTabMenu;
             @TabMenu.canceled -= instance.OnTabMenu;
+            @RegenPoint.started -= instance.OnRegenPoint;
+            @RegenPoint.performed -= instance.OnRegenPoint;
+            @RegenPoint.canceled -= instance.OnRegenPoint;
         }
 
         /// <summary>
@@ -2080,6 +2112,13 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnTabMenu(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "RegenPoint" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnRegenPoint(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Hotbar" which allows adding and removing callbacks.
