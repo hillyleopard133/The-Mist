@@ -5,7 +5,7 @@ public enum EnemyMovementType
         Wander,
         Patrol
 }
-public class EnemyBrainRPG : MonoBehaviour
+public class EnemyBrain : MonoBehaviour
 {
         [Header("Config")]
         [SerializeField] public Sprite Icon;

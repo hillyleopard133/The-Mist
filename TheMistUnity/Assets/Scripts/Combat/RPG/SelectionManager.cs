@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SelectionManager : Singleton<SelectionManager>
 {
-    public static event Action<EnemyBrainRPG> OnEnemySelectedEvent;
+    public static event Action<EnemyBrain> OnEnemySelectedEvent;
     public static event Action OnNoSelectionEvent;
     
     [Header("Config")]
@@ -34,7 +34,7 @@ public class SelectionManager : Singleton<SelectionManager>
             //using enemy mask so it will only detect collider of enemy
             if (hit.collider != null)
             {
-                EnemyBrainRPG enemy = hit.collider.GetComponent<EnemyBrainRPG>();
+                EnemyBrain enemy = hit.collider.GetComponent<EnemyBrain>();
                 if (enemy == null)
                 {
                     return;

@@ -18,24 +18,24 @@ public class ActionPatrol : FSMAction
     private int updateFrameNumber;
     private Vector3 movePosition;
     
-    private EnemyBrainRPG _enemyBrainRpg;
+    private EnemyBrain _enemyBrain;
     private AStarArea area;
 
     private void Awake()
     {
         waypoint = GetComponent<Waypoint>();
-        _enemyBrainRpg = GetComponent<EnemyBrainRPG>();
+        _enemyBrain = GetComponent<EnemyBrain>();
     }
 
     private void Start()
     {
         area = FindFirstObjectByType<AStarArea>();
-        updateFrameNumber = _enemyBrainRpg.updateFrameNumber;
+        updateFrameNumber = _enemyBrain.updateFrameNumber;
     }
 
     public override void Act()
     {
-        if(!_enemyBrainRpg.isAlive) return;
+        if(!_enemyBrain.isAlive) return;
         MoveEnemy();
     }
 
@@ -72,7 +72,7 @@ public class ActionPatrol : FSMAction
     
     private IEnumerator MoveEnemyRoutine(Stack<Vector3> movementSteps)
     {
-        _enemyBrainRpg.animations.SetMoveBoolTransition(true);  
+        _enemyBrain.animations.SetMoveBoolTransition(true);  
         while (movementSteps.Count > 0)
         {
             Vector3 nextPosition = movementSteps.Pop();
@@ -90,8 +90,8 @@ public class ActionPatrol : FSMAction
     private void MoveRigidBody(Vector3 destination, float moveSpeed)
     {
         Vector2 direction = (destination - transform.position).normalized;
-        _enemyBrainRpg.animations.SetMoveAnimation(direction);
-        _enemyBrainRpg.rb.MovePosition(_enemyBrainRpg.rb.position + (direction * (moveSpeed * Time.fixedDeltaTime)));
+        _enemyBrain.animations.SetMoveAnimation(direction);
+        _enemyBrain.rb.MovePosition(_enemyBrain.rb.position + (direction * (moveSpeed * Time.fixedDeltaTime)));
     }
     
     private void CreatePath()

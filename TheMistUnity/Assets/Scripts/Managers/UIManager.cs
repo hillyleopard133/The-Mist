@@ -43,6 +43,7 @@ public class UIManager : Singleton<UIManager>
     private RectTransform sliderRect;
     private RectTransform barRect;
     private RectTransform windowRect;
+    private bool isAttackTiming;
     private bool isTiming;
     
     [Header("Loading Screen")]
@@ -429,8 +430,6 @@ public class UIManager : Singleton<UIManager>
     }
 
     #endregion
-
-    private bool isAttackTiming;
     
     #region Combat - Timing Window
     

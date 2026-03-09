@@ -6,6 +6,8 @@ using UnityEngine.Tilemaps;
 
 public class CombatManager : Singleton<CombatManager>
 {
+    #region Fields
+    
     [SerializeField] private GameObject[] combatTilemaps;
     [SerializeField] private int basicSkillManaRecovery;
 
@@ -18,8 +20,9 @@ public class CombatManager : Singleton<CombatManager>
     [HideInInspector] public int maxUltimateCharges;
     [HideInInspector] public int ultimateChargeProgress;
     [HideInInspector] public int ultimateChargeRingProgress;
+    [SerializeField] private int perfectTimingChargeAmount;
     
-    [Header("Timing Window")]
+    [Header("Turns")]
     [SerializeField] private float timeBetweenTurns;
     [HideInInspector] public bool isPlayerTurn;
     [HideInInspector] public bool isEnemyTurn;
@@ -61,6 +64,8 @@ public class CombatManager : Singleton<CombatManager>
     private readonly string PARTY_MEMBER_CURRENT_HEALTH = "PARTY_MEMBER_CURRENT_HEALTH";
     private readonly string PARTY_MEMBER_CURRENT_MANA= "PARTY_MEMBER_CURRENT_MANA";
     
+    #endregion
+    
     private void Start()
     {
         cameraManager = CameraManager.Instance;
@@ -90,43 +95,7 @@ public class CombatManager : Singleton<CombatManager>
         AddUltimateCharge(120);
     }
     
-    private IEnumerator EnemyTurn()
-    {
-        isPlayerTurn = false;
-        yield return new WaitForSeconds(timeBetweenTurns);
-        
-        foreach (EnemyDetails enemy in enemies)
-        {
-            if(enemy.IsDead) continue;
-            
-            bool finished = false;
-            StartCoroutine(enemy.enemyCombatBrain.TakeTurn());
-            
-            isEnemyTurn = true;
-            
-            while(isEnemyTurn) yield return null;
-            
-            yield return new WaitForSeconds(1f);
-            
-            uIManager.ClearEnemyTargetArrows();
-            uIManager.ClearEnemyTurnArrows();
-            
-            yield return new WaitForSeconds(timeBetweenTurns);
-        }
-
-        StartCoroutine(TimeBetweenTurns());
-    }
-
-    private void EndEnemyTurn()
-    {
-        isEnemyTurn = false;
-    }
-
-    private void PlayerTurn()
-    {
-        isPlayerTurn = true;
-        uIManager.StartPlayersTurn();
-    }
+    #region Player Turn
     
     private IEnumerator TimeBetweenTurns()
     {
@@ -168,72 +137,18 @@ public class CombatManager : Singleton<CombatManager>
             }
         }
     }
-
+    
+    private void PlayerTurn()
+    {
+        isPlayerTurn = true;
+        uIManager.StartPlayersTurn();
+    }
+    
     public bool HasTakenTurn(int partyMemberIndex)
     {
         return partyMemberHasTakenTurn[partyMemberIndex];
     }
-
-    public void AttackPartyMember(int partyMemberIndex, AttackMove attackMove, EnemyDetails enemyDetails)
-    {
-        float damage = enemyDetails.AttackDamage * attackMove.DamageMultiplier;
-
-        if (attackMove.MoveType == AttackMoveType.SingleTarget)
-        {
-            StartCoroutine(AttackTargetPartyMember(damage, partyMemberIndex));
-        }
-    }
-
-    private IEnumerator AttackTargetPartyMember(float damage, int partyMemberIndex)
-    {
-        uIManager.ShowTimingWindow(false, timingWindowBaseSpeed);
-        
-        while (isTiming) yield return null;
-
-        if (perfectTimed) damage *= perfectBlockMultiplier;
-        
-        TakeDamage(Mathf.RoundToInt(damage), partyMemberIndex);
-        
-        EndEnemyTurn();
-    }
-
-    private void TakeDamage(int damage, int partyMemberIndex)
-    {
-        partyMembersCurrentHealth[partyMemberIndex] -= damage;
-        uIManager.ShowPartyMemberCombatText(partyMemberIndex, damage, CombatTextType.Damage);
-        
-        if (partyMembersCurrentHealth[partyMemberIndex] <= 0)
-        {
-            partyMembersCurrentHealth[partyMemberIndex] = 0;
-            partyMemberIsDead[partyMemberIndex] = true;
-            uIManager.KillPartyMember(partyMemberIndex);
-            
-            int allDead = AllPartyMembersDead();
-            if (allDead != -1)
-            {
-                uIManager.SelectCombatPartyMember(allDead);
-            }
-            else
-            {
-                CombatLose();
-            }
-        }
-        
-        uIManager.UpdatePartyMemberInfo();
-    }
-    
-    private int AllPartyMembersDead()
-    {
-        for (int i = 0; i < partyMemberIsDead.Length; i++)
-        {
-            if (!partyMemberIsDead[i] && skillsManager.partyMembers[i].IsUnlocked)
-            {
-                return i;
-            }
-        }
-        return -1;
-    }
-
+      
     public void AttackEnemy(AttackMove attack)
     {
         if (attack.Type == AttackType.Basic)
@@ -301,6 +216,120 @@ public class CombatManager : Singleton<CombatManager>
         return true;
     }
 
+
+    #endregion
+    
+    #region Enemy Turn
+    
+    private IEnumerator EnemyTurn()
+    {
+        isPlayerTurn = false;
+        yield return new WaitForSeconds(timeBetweenTurns);
+        
+        foreach (EnemyDetails enemy in enemies)
+        {
+            if(enemy.IsDead) continue;
+            
+            bool finished = false;
+            StartCoroutine(enemy.enemyCombatBrain.TakeTurn());
+            
+            isEnemyTurn = true;
+            
+            while(isEnemyTurn) yield return null;
+            
+            yield return new WaitForSeconds(1f);
+            
+            uIManager.ClearEnemyTargetArrows();
+            uIManager.ClearEnemyTurnArrows();
+            
+            yield return new WaitForSeconds(timeBetweenTurns);
+        }
+
+        StartCoroutine(TimeBetweenTurns());
+    }
+
+    private void EndEnemyTurn()
+    {
+        isEnemyTurn = false;
+    }
+    
+    
+    public void AttackPartyMember(int partyMemberIndex, AttackMove attackMove, EnemyDetails enemyDetails)
+    {
+        float damage = enemyDetails.AttackDamage * attackMove.DamageMultiplier;
+
+        if (attackMove.MoveType == AttackMoveType.SingleTarget)
+        {
+            StartCoroutine(AttackTargetPartyMember(damage, partyMemberIndex));
+        }
+    }
+
+    private IEnumerator AttackTargetPartyMember(float damage, int partyMemberIndex)
+    {
+        uIManager.ShowTimingWindow(false, timingWindowBaseSpeed);
+        
+        while (isTiming) yield return null;
+
+        if (perfectTimed) damage *= perfectBlockMultiplier;
+        
+        TakeDamage(Mathf.RoundToInt(damage), partyMemberIndex);
+        
+        EndEnemyTurn();
+    }
+
+    private void TakeDamage(int damage, int partyMemberIndex)
+    {
+        partyMembersCurrentHealth[partyMemberIndex] -= damage;
+        uIManager.ShowPartyMemberCombatText(partyMemberIndex, damage, CombatTextType.Damage);
+        
+        if (partyMembersCurrentHealth[partyMemberIndex] <= 0)
+        {
+            partyMembersCurrentHealth[partyMemberIndex] = 0;
+            partyMemberIsDead[partyMemberIndex] = true;
+            uIManager.KillPartyMember(partyMemberIndex);
+            
+            int allDead = AllPartyMembersDead();
+            if (allDead != -1)
+            {
+                uIManager.SelectCombatPartyMember(allDead);
+            }
+            else
+            {
+                CombatLose();
+            }
+        }
+        
+        uIManager.UpdatePartyMemberInfo();
+    }
+    
+    private int AllPartyMembersDead()
+    {
+        for (int i = 0; i < partyMemberIsDead.Length; i++)
+        {
+            if (!partyMemberIsDead[i] && skillsManager.partyMembers[i].IsUnlocked)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    #endregion
+    
+    #region Health & Mana
+
+    public void LevelUp()
+    {
+        for (int i = 0; i < partyMembersCurrentHealth.Length; i++)
+        {
+            partyMembersCurrentHealth[i] = skillsManager.partyMembers[i].CurrentMaxHealth;
+            partyMembersCurrentMana[i] = skillsManager.partyMembers[i].CurrentMaxMana;
+            partyMemberIsDead[i] = false;
+        }
+        uIManager.UpdatePartyMemberInfo();
+        SaveCombatData();
+    }
+        
     public int GetHighestHPPartyMember()
     {
         int health = 0;
@@ -318,18 +347,6 @@ public class CombatManager : Singleton<CombatManager>
         return highestIndex;
     }
 
-    public void LevelUp()
-    {
-        for (int i = 0; i < partyMembersCurrentHealth.Length; i++)
-        {
-            partyMembersCurrentHealth[i] = skillsManager.partyMembers[i].CurrentMaxHealth;
-            partyMembersCurrentMana[i] = skillsManager.partyMembers[i].CurrentMaxMana;
-            partyMemberIsDead[i] = false;
-        }
-        uIManager.UpdatePartyMemberInfo();
-        SaveCombatData();
-    }
-
     public void AddHealth(int partyMemberIndex, int amount)
     {
         partyMembersCurrentHealth[partyMemberIndex] += amount;
@@ -342,16 +359,6 @@ public class CombatManager : Singleton<CombatManager>
         partyMembersCurrentMana[partyMemberIndex] += amount;
         if(partyMembersCurrentMana[partyMemberIndex] >= skillsManager.partyMembers[partyMemberIndex].CurrentMaxMana) 
             partyMembersCurrentMana[partyMemberIndex] = skillsManager.partyMembers[partyMemberIndex].CurrentMaxMana;
-    }
-
-    public bool IsPartyMemberDead(int index)
-    {
-        return partyMemberIsDead[index];
-    }
-
-    public bool IsEnemyDead(int index)
-    {
-        return enemies[index].IsDead;
     }
 
     public int GetPartyMemberCurrentHealth(int index)
@@ -404,28 +411,10 @@ public class CombatManager : Singleton<CombatManager>
         uIManager.UpdatePartyMemberInfo();
     }
 
-    public AttackMove[] GetAllPartyMemberAttacks(int partyMemberIndex)
-    {
-        ItemEquipment[] equipmentList = equipmentManager.GetPartyMemberEquipment(partyMemberIndex);
-        List<AttackMove> unlockedAttacks = skillsManager.partyMembers[partyMemberIndex].GetUnlockedAttacks();
 
-        List<AttackMove> attacks = new List<AttackMove>();
-        attacks.AddRange(unlockedAttacks);
+    #endregion
 
-        ItemWeapon weapon = null;
-        ItemScroll scroll = null;
-        foreach (ItemEquipment equipment in equipmentList)
-        {
-            if(equipment == null) continue;
-            if (equipment is ItemWeapon w) weapon = w;
-            else if (equipment is ItemScroll s) scroll = s;
-        }
-        
-        if(weapon != null) attacks.AddRange(weapon.Attacks);
-        if (scroll != null) attacks.AddRange(scroll.Attacks);
-        
-        return attacks.ToArray();
-    }
+    #region Items
 
     public int GetItemAmountLeft(string itemID)
     {
@@ -490,10 +479,11 @@ public class CombatManager : Singleton<CombatManager>
         uIManager.ShowPartyMemberCombatText(partyMemberIndex, manaValue, CombatTextType.ManaRecovery);
     }
 
-    public int NumberOfEnemies()
-    {
-        return enemies.Count;
-    }
+
+    #endregion
+
+    #region Ultimate
+    
 
     public float GetUltimateChargeProgressPercentage()
     {
@@ -566,8 +556,6 @@ public class CombatManager : Singleton<CombatManager>
         AddUltimateCharge(0);
         uIManager.UpdateUltimateCharges();
     }
-
-    [SerializeField] private int perfectTimingChargeAmount;
     
     public void GetPerfectTimingCharge()
     {
@@ -577,12 +565,11 @@ public class CombatManager : Singleton<CombatManager>
         {
             amount *= skillsManager.ultimateChargeSpeedIncreaseMultiplier;
         }
-        Debug.Log(amount);
         AddUltimateCharge(Mathf.RoundToInt(amount));
         uIManager.UpdateUltimateCharges();
     }
 
-    public void AddUltimateCharge(int chargeAmount)
+    private void AddUltimateCharge(int chargeAmount)
     {
         
         ultimateChargeProgress += chargeAmount;
@@ -624,12 +611,58 @@ public class CombatManager : Singleton<CombatManager>
         
         return chargeAmount;
     }
+    
+    #endregion
+
+    #region Getters
+    
+    public AttackMove[] GetAllPartyMemberAttacks(int partyMemberIndex)
+    {
+        ItemEquipment[] equipmentList = equipmentManager.GetPartyMemberEquipment(partyMemberIndex);
+        List<AttackMove> unlockedAttacks = skillsManager.partyMembers[partyMemberIndex].GetUnlockedAttacks();
+
+        List<AttackMove> attacks = new List<AttackMove>();
+        attacks.AddRange(unlockedAttacks);
+
+        ItemWeapon weapon = null;
+        ItemScroll scroll = null;
+        foreach (ItemEquipment equipment in equipmentList)
+        {
+            if(equipment == null) continue;
+            if (equipment is ItemWeapon w) weapon = w;
+            else if (equipment is ItemScroll s) scroll = s;
+        }
+        
+        if(weapon != null) attacks.AddRange(weapon.Attacks);
+        if (scroll != null) attacks.AddRange(scroll.Attacks);
+        
+        return attacks.ToArray();
+    }
+    
+    public bool IsPartyMemberDead(int index)
+    {
+        return partyMemberIsDead[index];
+    }
+
+    public bool IsEnemyDead(int index)
+    {
+        return enemies[index].IsDead;
+    }
+    
+    public int NumberOfEnemies()
+    {
+        return enemies.Count;
+    }
 
     public EnemyDetails GetSelectedEnemy()
     {
         return enemies[selectedEnemy];
     }
+    
+    #endregion
 
+    #region Combat Start & End
+    
     public void EnterCombat(List<EnemyDetails> enemies, CombatGridType gridType)
     {
         SaveCombatData();
@@ -730,6 +763,10 @@ public class CombatManager : Singleton<CombatManager>
         usedItems.Clear();
     }
 
+    #endregion
+
+    #region Save, Load & Reset
+    
     public void SaveCombatData()
     {
         SaveGame.Save(PARTY_MEMBER_CURRENT_MANA, partyMembersCurrentMana);
@@ -762,4 +799,6 @@ public class CombatManager : Singleton<CombatManager>
         
         SaveCombatData();
     }
+    
+    #endregion
 }

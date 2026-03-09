@@ -10,14 +10,14 @@ public class DecisionDetectPlayer : FSMDecision
 
     [SerializeField] private LayerMask playerMask;
 
-    private EnemyBrainRPG enemy;
+    private EnemyBrain enemy;
     private ActionPatrol actionPatrol;
     private ActionWander actionWander;
     private ActionChase actionChase;
 
     private void Awake()
     {
-        enemy = GetComponent<EnemyBrainRPG>();
+        enemy = GetComponent<EnemyBrain>();
         actionPatrol = GetComponent<ActionPatrol>();
         actionWander = GetComponent<ActionWander>();
         actionChase = GetComponent<ActionChase>();
