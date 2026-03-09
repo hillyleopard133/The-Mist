@@ -7,38 +7,39 @@ using UnityEngine.Tilemaps;
 public class CombatManager : Singleton<CombatManager>
 {
     [SerializeField] private GameObject[] combatTilemaps;
+    [SerializeField] private int basicSkillManaRecovery;
 
+    [Header("Ultimate Attack")]
+    [SerializeField] private int ultimateFullChargeAmount;
+    [SerializeField] private float ultimateAttackTeamUpBonusMultiplier = 1.2f;
     [SerializeField] private float UltimateAttackDamageMultiplier;
-
     [SerializeField] private float ultimateAttackDamageWait = 0.7f;
-
-    private List<EnemyDetails> enemies = new List<EnemyDetails>();
-    [HideInInspector] public bool isFighting;
-    
-    [HideInInspector] public int selectedEnemy;
-    [HideInInspector] public int selectedPartyMember;
-
     [HideInInspector] public int ultimateCharges;
     [HideInInspector] public int maxUltimateCharges;
     [HideInInspector] public int ultimateChargeProgress;
     [HideInInspector] public int ultimateChargeRingProgress;
-    [SerializeField] private int ultimateFullChargeAmount;
     
-    [SerializeField] private int basicSkillManaRecovery;
-    
+    [Header("Timing Window")]
     [SerializeField] private float timeBetweenTurns;
     [HideInInspector] public bool isPlayerTurn;
     [HideInInspector] public bool isEnemyTurn;
     private bool[] partyMemberHasTakenTurn;
     private Coroutine enemyTurnCoroutine;
 
-    [HideInInspector] public bool isTiming;
-    [HideInInspector] public bool perfectTimed;
+    [Header("Timing Window")]
     [SerializeField] private float timingWindowBaseSpeed;   //pixels per second
     [SerializeField] private float multiHitTimingSpeedBoost;
     [SerializeField] private float perfectAttackMultiplier;
     [SerializeField] private float perfectBlockMultiplier = 0.7f;
+    [HideInInspector] public bool isTiming;
+    [HideInInspector] public bool perfectTimed;
     private int perfectMultiHits;
+    
+    private List<EnemyDetails> enemies = new List<EnemyDetails>();
+    [HideInInspector] public bool isFighting;
+    
+    [HideInInspector] public int selectedEnemy;
+    [HideInInspector] public int selectedPartyMember;
     
     private List<InventoryItem> usedItems = new List<InventoryItem>();
     
@@ -53,6 +54,7 @@ public class CombatManager : Singleton<CombatManager>
     private Inventory inventory;
     private CoinManager coinManager;
     private EquipmentManager equipmentManager;
+    private DialogueManager dialogueManager;
     
     private readonly string ULTIMATE_CHARGES = "ULTIMATE_CHARGES";
     private readonly string ULTIMATE_CHARGE_PROGRESS = "ULTIMATE_CHARGE_PROGRESS";
@@ -68,6 +70,7 @@ public class CombatManager : Singleton<CombatManager>
         inventory = Inventory.Instance;
         coinManager = CoinManager.Instance;
         equipmentManager = EquipmentManager.Instance;
+        dialogueManager = DialogueManager.Instance;
 
         int partySize = skillsManager.partyMembers.Length;
         
@@ -104,6 +107,10 @@ public class CombatManager : Singleton<CombatManager>
             while(isEnemyTurn) yield return null;
             
             yield return new WaitForSeconds(1f);
+            
+            uIManager.ClearEnemyTargetArrows();
+            uIManager.ClearEnemyTurnArrows();
+            
             yield return new WaitForSeconds(timeBetweenTurns);
         }
 
@@ -179,7 +186,7 @@ public class CombatManager : Singleton<CombatManager>
 
     private IEnumerator AttackTargetPartyMember(float damage, int partyMemberIndex)
     {
-        uIManager.ShowTimingWindow(true, timingWindowBaseSpeed);
+        uIManager.ShowTimingWindow(false, timingWindowBaseSpeed);
         
         while (isTiming) yield return null;
 
@@ -513,6 +520,14 @@ public class CombatManager : Singleton<CombatManager>
             {
                 float damage = skillsManager.partyMembers[i].CurrentAttack * UltimateAttackDamageMultiplier;
                 List<DamageType> damageTypes = equipmentManager.GetPartyMemberDamageTypes(i);
+
+                for (int j = 0; j < amountSelected; j++)
+                {
+                    if (j >= 1)
+                    {
+                        damage *= ultimateAttackTeamUpBonusMultiplier;
+                    }
+                }
                 
                 while (damageTypes.Count < 2)
                 {
@@ -673,6 +688,7 @@ public class CombatManager : Singleton<CombatManager>
         gameManager.Player.gameObject.SetActive(true);
         uIManager.DeactivateCombatScreen();
         cameraManager.ToggleCombatCamera();
+        dialogueManager.SelectNPC(null);
         DeactivateTilemaps();
         RevivePartyMembers();
         isFighting = false;

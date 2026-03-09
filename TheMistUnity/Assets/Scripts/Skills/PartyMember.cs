@@ -13,7 +13,7 @@ public class PartyMember : ScriptableObject
     public Sprite IconItem;
     public Sprite IconUltimate;
     public Sprite IconDead;
-    [FormerlySerializedAs("IconSkill")] public Sprite IconPerfectTiming;
+    public Sprite IconPerfectTiming;
     [TextArea] public string Description;
     [HideInInspector] public bool IsUnlocked;
     public DamageType WeaponDamageType;

@@ -231,6 +231,8 @@ public class UIManager : Singleton<UIManager>
     [Header("Combat")]
     [SerializeField] private GameObject combatScreen;
     [SerializeField] private GameObject[] combatEnemyLocations;
+    [SerializeField] private GameObject[] EnemyTurnArrows;
+    [SerializeField] private GameObject[] EnemyTargetPartyMemberArrows;
     [SerializeField] private Image[] combatEnemyImages;
     [SerializeField] private GameObject[] combatEnemySelections;
     [SerializeField] private GameObject[] combatPartyMemberLocations;
@@ -274,6 +276,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject playerActionsBlocker;
     private int combatSelectedEnemyIndex;
     private int combatSelectedPartyMemberIndex;
+    private int combatEnemyTargetPartyMemberIndex;
     private int unlockedPartyMembers;
     private bool isAttackListOpen;
     
@@ -427,11 +430,14 @@ public class UIManager : Singleton<UIManager>
 
     #endregion
 
+    private bool isAttackTiming;
+    
     #region Combat - Timing Window
     
     private void StartTiming(bool isAttack, float speed)
     {
         isTiming = true;
+        isAttackTiming = isAttack;
         
         float width = timingWindowBaseSize;
 
@@ -496,6 +502,14 @@ public class UIManager : Singleton<UIManager>
 
         if (perfectTiming)
         {
+            if (isAttackTiming)
+            {
+                combatPartyMemberImages[combatSelectedPartyMemberIndex].sprite = skillsManager.partyMembers[combatSelectedPartyMemberIndex].IconPerfectTiming;
+            }
+            else
+            {
+                combatPartyMemberImages[combatEnemyTargetPartyMemberIndex].sprite = skillsManager.partyMembers[combatEnemyTargetPartyMemberIndex].IconPerfectTiming;
+            }
             combatManager.GetPerfectTimingCharge();
         }
     }
@@ -513,6 +527,10 @@ public class UIManager : Singleton<UIManager>
         timingWindowScreen.SetActive(false);
         isTiming = false;
         combatManager.isTiming = false;
+        for (int i = 0; i < combatPartyMemberImages.Length; i++)
+        {
+            combatPartyMemberImages[i].sprite = skillsManager.partyMembers[i].IconBack;
+        }
     }
 
     #endregion
@@ -913,6 +931,35 @@ public class UIManager : Singleton<UIManager>
         HideCombatActionInfo();
         OpenAttackMovesList();
         ExitCombatSelectionScreen();
+    }
+
+    public void ShowEnemyTurnArrow(int index)
+    {
+        ClearEnemyTurnArrows();
+        EnemyTurnArrows[index].SetActive(true);
+    }
+
+    public void ClearEnemyTurnArrows()
+    {
+        foreach (GameObject arrow in EnemyTurnArrows)
+        {
+            arrow.SetActive(false);
+        }
+    }
+
+    public void SetEnemyTarget(int index)
+    {
+        ClearEnemyTargetArrows();
+        combatEnemyTargetPartyMemberIndex = index;
+        EnemyTargetPartyMemberArrows[index].SetActive(true);
+    }
+
+    public void ClearEnemyTargetArrows()
+    {
+        foreach (GameObject arrow in EnemyTargetPartyMemberArrows)
+        {
+            arrow.SetActive(false);
+        }
     }
     
     public void RevivePartyMember(int partyMemberIndex)

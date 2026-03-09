@@ -21,14 +21,18 @@ public class EnemyCombatBrain : MonoBehaviour
     private AttackMove selectedAttack;
     
     private CombatManager combatManager;
+    private UIManager uIManager;
 
     private void Start()
     {
         combatManager = CombatManager.Instance;
+        uIManager = UIManager.Instance;
     }
     
     public IEnumerator TakeTurn()
     {
+        uIManager.ShowEnemyTurnArrow(enemyDetails.Index);
+        
         EnemyAction currentAction = EvaluateActions();
 
         switch (currentAction)
@@ -59,8 +63,8 @@ public class EnemyCombatBrain : MonoBehaviour
         
         AttackMove[] attackMoves = enemyDetails.attackMoves;
         selectedAttack = attackMoves[0];
-
         targetPartyMemberIndex = combatManager.GetHighestHPPartyMember();
+        uIManager.SetEnemyTarget(targetPartyMemberIndex);
         
         return currentAction;
     }

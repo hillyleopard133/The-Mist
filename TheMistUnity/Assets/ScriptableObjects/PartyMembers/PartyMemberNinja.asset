@@ -18,7 +18,7 @@ MonoBehaviour:
   IconItem: {fileID: 1214651694, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
   IconUltimate: {fileID: -1638547310, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
   IconDead: {fileID: 2120524158, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
-  IconSkill: {fileID: -862369976, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
+  IconPerfectTiming: {fileID: -862369976, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
   Description: Pablo is a green ninja who enjoys fishing.
   IsUnlocked: 1
   WeaponDamageType: {fileID: 0}
@@ -35,8 +35,8 @@ MonoBehaviour:
   SkillPointsAttack: 0
   SkillPointsCritChance: 0
   SkillPointsMana: 0
-  EquipmentHealth: 0
-  EquipmentDefence: 0
+  EquipmentHealth: 20
+  EquipmentDefence: 10
   EquipmentAttack: 0
   EquipmentCritChance: 0
   EquipmentMana: 0
@@ -45,8 +45,8 @@ MonoBehaviour:
   CurrentBaseAttack: 5
   CurrentBaseCritChance: 5
   CurrentBaseMaxMana: 20
-  CurrentMaxHealth: 100
-  CurrentDefence: 10
+  CurrentMaxHealth: 120
+  CurrentDefence: 20
   CurrentAttack: 5
   CurrentCritChance: 5
   CurrentMaxMana: 20
