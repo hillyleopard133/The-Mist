@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e50d1ad5acb8744aa58de97af30385, type: 3}
+  m_Name: AttackMovePityHug
+  m_EditorClassIdentifier: Assembly-CSharp::AttackMove
+  MoveName: Pity Hug
+  Description: Heal the party member with the lowest HP for 60HP
+  Type: 1
+  MoveType: 0
+  DamageType: {fileID: 11400000, guid: 02465ade7d073a24387b6e3c2034c5af, type: 2}
+  DamageMultiplier: 0.8
+  MPCost: 6
+  IsHitAll: 0
+  IsHeal: 1
+  HealAmount: 60

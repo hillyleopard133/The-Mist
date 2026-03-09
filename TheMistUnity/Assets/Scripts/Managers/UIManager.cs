@@ -988,6 +988,11 @@ public class UIManager : Singleton<UIManager>
     
     private void SelectAttackMove(AttackMove attack)
     {
+        if (attack.IsHeal)
+        {
+            combatManager.HealParty(attack);
+            return;
+        }
         combatManager.AttackEnemy(attack);
     }
 

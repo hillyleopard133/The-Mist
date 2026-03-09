@@ -37522,6 +37522,7 @@ MonoBehaviour:
   combatTilemaps:
   - {fileID: 1650927317}
   basicSkillManaRecovery: 3
+  aOEAdjacentDamageMultiplier: 0
   ultimateFullChargeAmount: 100
   ultimateAttackTeamUpBonusMultiplier: 1.2
   UltimateAttackDamageMultiplier: 1.2
@@ -37530,6 +37531,7 @@ MonoBehaviour:
   maxUltimateCharges: 0
   ultimateChargeProgress: 0
   ultimateChargeRingProgress: 0
+  perfectTimingChargeAmount: 10
   timeBetweenTurns: 0.7
   isPlayerTurn: 0
   isEnemyTurn: 0
@@ -37542,7 +37544,6 @@ MonoBehaviour:
   isFighting: 0
   selectedEnemy: 0
   selectedPartyMember: 0
-  perfectTimingChargeAmount: 10
 --- !u!4 &774453890
 Transform:
   m_ObjectHideFlags: 0
@@ -59651,7 +59652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1215119022
 RectTransform:
   m_ObjectHideFlags: 0

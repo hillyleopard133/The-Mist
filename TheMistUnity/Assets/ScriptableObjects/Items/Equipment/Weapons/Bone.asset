@@ -27,3 +27,5 @@ MonoBehaviour:
   damage: 20
   critChance: 4
   weaponDamageType: {fileID: 11400000, guid: 113ce3f55f1333247885a775164dcb86, type: 2}
+  Attacks:
+  - {fileID: 11400000, guid: 757f92830e42f9e46bd68cf9fbf7032e, type: 2}

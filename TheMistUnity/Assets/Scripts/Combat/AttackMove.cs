@@ -26,12 +26,15 @@ public class AttackMove: ScriptableObject
     public float DamageMultiplier;
     public int MPCost;
     public bool IsHitAll;
-    
+
+    public bool IsHeal;
+    public int HealAmount;
+
     /*
     public bool HasEffect;
     public AttackEffect Effect;
     public float EffectChance;
-    
+
     public void InflictEffect(EnemyCombat enemyCombat)
     {
         int random = Random.Range(0, 100);

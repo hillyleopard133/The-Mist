@@ -7,9 +7,10 @@ using UnityEngine.Tilemaps;
 public class CombatManager : Singleton<CombatManager>
 {
     #region Fields
-    
+
     [SerializeField] private GameObject[] combatTilemaps;
     [SerializeField] private int basicSkillManaRecovery;
+    [SerializeField] private float aOEAdjacentDamageMultiplier = 0.5f;
 
     [Header("Ultimate Attack")]
     [SerializeField] private int ultimateFullChargeAmount;
@@ -148,7 +149,23 @@ public class CombatManager : Singleton<CombatManager>
     {
         return partyMemberHasTakenTurn[partyMemberIndex];
     }
-      
+
+    public void HealParty(AttackMove attack)
+    {
+        if (attack.IsHitAll)
+        {
+            for (int i = 0; i < partyMembersCurrentHealth.Length; i++)
+            {
+                AddHealth(i, attack.HealAmount);
+            }
+        }
+        else
+        {
+            int lowestHPPartyMember = GetLowestHPPartyMember();
+            AddHealth(lowestHPPartyMember, attack.HealAmount);
+        }
+    }
+    
     public void AttackEnemy(AttackMove attack)
     {
         if (attack.Type == AttackType.Basic)
@@ -173,6 +190,55 @@ public class CombatManager : Singleton<CombatManager>
         {
             StartCoroutine(AttackTargetEnemy(attack));
         }
+        else if (attack.MoveType == AttackMoveType.AOE)
+        {
+            StartCoroutine(AttackEnemyAOE(attack));
+        }
+        else if (attack.MoveType == AttackMoveType.MultiHit)
+        {
+            StartCoroutine(AttackEnemyMultiHit(attack));
+        }
+    }
+
+    private IEnumerator AttackEnemyMultiHit(AttackMove attackMove)
+    {
+        
+        yield return null;
+    }
+    
+    private IEnumerator AttackEnemyAOE(AttackMove attackMove)
+    {
+        float damage = skillsManager.partyMembers[selectedPartyMember].CurrentAttack * attackMove.DamageMultiplier;
+        
+        uIManager.ShowTimingWindow(true, timingWindowBaseSpeed);
+        
+        while (isTiming) yield return null;
+        
+        if (perfectTimed) damage *= perfectAttackMultiplier;
+        
+        if (attackMove.IsHitAll)
+        {
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                if(IsEnemyDead(i)) continue;
+                DamageEnemy(i, damage, attackMove.DamageType);
+            }
+        }
+        else
+        {
+            DamageEnemy(selectedEnemy, damage, attackMove.DamageType);
+
+            List<int> adjacentEnemies = GetAdjacentEnemies();
+
+            int adjacentDamage = Mathf.RoundToInt(damage * aOEAdjacentDamageMultiplier);
+
+            foreach (int enemyIndex in adjacentEnemies)
+            {
+                DamageEnemy(enemyIndex, adjacentDamage, attackMove.DamageType);
+            }
+        }
+        
+        StartCoroutine(TimeBetweenTurns());
     }
     
     private IEnumerator AttackTargetEnemy(AttackMove attackMove)
@@ -202,6 +268,29 @@ public class CombatManager : Singleton<CombatManager>
             uIManager.SelectEnemy(enemyIndex);
         }
     }
+    
+    private List<int> GetAdjacentEnemies()
+    {
+        List<int> adjacentEnemies = new List<int>();
+
+        if (selectedEnemy - 1 >= 0)
+        {
+            if (!IsEnemyDead(selectedEnemy - 1))
+            {
+                adjacentEnemies.Add(selectedEnemy - 1);
+            }
+        }
+
+        if (selectedEnemy + 1 < enemies.Count)
+        {
+            if (!IsEnemyDead(selectedEnemy + 1))
+            {
+                adjacentEnemies.Add(selectedEnemy + 1);
+            }
+        }
+        
+        return adjacentEnemies;
+    }
 
     private bool AllEnemiesDead()
     {
@@ -215,7 +304,6 @@ public class CombatManager : Singleton<CombatManager>
         }
         return true;
     }
-
 
     #endregion
     
@@ -345,6 +433,23 @@ public class CombatManager : Singleton<CombatManager>
         }
 
         return highestIndex;
+    }
+    
+    private int GetLowestHPPartyMember()
+    {
+        int health = 10000;
+        int lowestIndex = 0;
+        
+        for (int i = 0; i < partyMembersCurrentHealth.Length; i++)
+        {
+            if (partyMembersCurrentHealth[i] < health && skillsManager.partyMembers[i].IsUnlocked)
+            {
+                health = partyMembersCurrentHealth[i];
+                lowestIndex = i;
+            } 
+        }
+
+        return lowestIndex;
     }
 
     public void AddHealth(int partyMemberIndex, int amount)

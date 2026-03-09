@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 338545f33ce61bc4aae53c6349dc3203, type: 3}
-  m_Name: FireScroll
+  m_Name: LifeScroll
   m_EditorClassIdentifier: 
-  ID: ScrollFire
-  Name: Fire Scroll
-  Icon: {fileID: 21300000, guid: 207ffa597ecde374c87892b97d868a8f, type: 3}
-  Description: Fiery magic burns within. Equip to cast fire spells.
+  ID: LifeScroll
+  Name: Scroll of Life
+  Icon: {fileID: 21300000, guid: a9d2569dd38a26942979d9562942d635, type: 3}
+  Description: Equip to cast healing spells.
   SellValue: 50
-  BuyValue: 100
+  BuyValue: 150
   ItemType: 3
   IsConsumable: 0
   IsStackable: 0
@@ -25,6 +25,7 @@ MonoBehaviour:
   Quantity: 0
   equipped: -1
   mana: 15
-  scrollDamageType: {fileID: 11400000, guid: d48698e194792824ea13b765c3823e89, type: 2}
+  scrollDamageType: {fileID: 11400000, guid: 02465ade7d073a24387b6e3c2034c5af, type: 2}
   Attacks:
-  - {fileID: 11400000, guid: d8dda4b9a54ca37469e14b5706a1393e, type: 2}
+  - {fileID: 11400000, guid: a718eca29d95dd94bad731acad786330, type: 2}
+  - {fileID: 11400000, guid: 9c64bcc659af5524c90518d525dc975e, type: 2}
