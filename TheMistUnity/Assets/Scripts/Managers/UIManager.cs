@@ -974,6 +974,7 @@ public class UIManager : Singleton<UIManager>
     public void StartPlayersTurn()
     {
         playerActionsBlocker.SetActive(false);
+        RefreshPlayerActions();
     }
 
     public void StartEnemyTurn()
@@ -988,6 +989,7 @@ public class UIManager : Singleton<UIManager>
     
     private void SelectAttackMove(AttackMove attack)
     {
+        playerActionsBlocker.SetActive(true);
         if (attack.IsHeal)
         {
             combatManager.HealParty(attack);
@@ -1168,6 +1170,11 @@ public class UIManager : Singleton<UIManager>
         }
         combatPartyMemberSelections[index].SetActive(true);
 
+        RefreshPlayerActions();
+    }
+
+    private void RefreshPlayerActions()
+    {
         if (isAttackListOpen) OpenAttackMovesList();
         else OpenCombatInventory();
     }

@@ -24,8 +24,9 @@ MonoBehaviour:
   MaxStack: 1
   Quantity: 0
   equipped: -1
-  damage: 20
+  damage: 5
   critChance: 4
   weaponDamageType: {fileID: 11400000, guid: 113ce3f55f1333247885a775164dcb86, type: 2}
   Attacks:
-  - {fileID: 11400000, guid: 757f92830e42f9e46bd68cf9fbf7032e, type: 2}
+  - {fileID: 11400000, guid: cc9a664e22535e14983e469317aa881f, type: 2}
+  - {fileID: 11400000, guid: a81ac69c2812b5e4cbf93b19342b3474, type: 2}

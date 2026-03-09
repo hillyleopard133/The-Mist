@@ -177,6 +177,12 @@ public class PartyMember : ScriptableObject
     {
         AttackIsUnlocked = new bool[Attacks.Length];
         AttackIsUnlocked[0] = true;
+        
+        //Todo for testing
+        for (int i = 0; i < AttackIsUnlocked.Length; i++)
+        {
+            AttackIsUnlocked[i] = true;
+        }
     }
 
     public void ResetPartyMember()

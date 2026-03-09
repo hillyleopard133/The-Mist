@@ -24,6 +24,7 @@ MonoBehaviour:
   WeaponDamageType: {fileID: 0}
   Attacks:
   - {fileID: 11400000, guid: 0029e5d66733f90408e945cbe9b5cca0, type: 2}
+  - {fileID: 11400000, guid: b4a05da4dc04c2a42b0df3d79e229431, type: 2}
   AttackIsUnlocked: 01
   BaseMaxHealth: 100
   BaseDefence: 10
