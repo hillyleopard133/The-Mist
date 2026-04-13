@@ -1,0 +1,5655 @@
+fileFormatVersion: 2
+guid: 5e85e98a15e54e04a98f7e5ccc33b758
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7767991320121632657
+    second: Relic Guardian 123x134 spritesheet with shadow_0
+  - first:
+      213: 7293883554024708461
+    second: Relic Guardian 123x134 spritesheet with shadow_1
+  - first:
+      213: -817084551218730173
+    second: Relic Guardian 123x134 spritesheet with shadow_2
+  - first:
+      213: 4285548605530660682
+    second: Relic Guardian 123x134 spritesheet with shadow_3
+  - first:
+      213: 8461214790203330322
+    second: Relic Guardian 123x134 spritesheet with shadow_4
+  - first:
+      213: 56207399866079012
+    second: Relic Guardian 123x134 spritesheet with shadow_5
+  - first:
+      213: -3970070215220657016
+    second: Relic Guardian 123x134 spritesheet with shadow_6
+  - first:
+      213: 6845073218708722266
+    second: Relic Guardian 123x134 spritesheet with shadow_7
+  - first:
+      213: -6742964194014807468
+    second: Relic Guardian 123x134 spritesheet with shadow_8
+  - first:
+      213: -4692210834550857932
+    second: Relic Guardian 123x134 spritesheet with shadow_9
+  - first:
+      213: 1611775260947603521
+    second: Relic Guardian 123x134 spritesheet with shadow_10
+  - first:
+      213: 4079957100383789235
+    second: Relic Guardian 123x134 spritesheet with shadow_11
+  - first:
+      213: 3130487437675644161
+    second: Relic Guardian 123x134 spritesheet with shadow_12
+  - first:
+      213: -6752895956672782133
+    second: Relic Guardian 123x134 spritesheet with shadow_13
+  - first:
+      213: -283351453622937530
+    second: Relic Guardian 123x134 spritesheet with shadow_14
+  - first:
+      213: -2552358762571212216
+    second: Relic Guardian 123x134 spritesheet with shadow_15
+  - first:
+      213: -218303142614720343
+    second: Relic Guardian 123x134 spritesheet with shadow_16
+  - first:
+      213: 1303175121737894101
+    second: Relic Guardian 123x134 spritesheet with shadow_17
+  - first:
+      213: -6578386609294283409
+    second: Relic Guardian 123x134 spritesheet with shadow_18
+  - first:
+      213: -3191503062936369080
+    second: Relic Guardian 123x134 spritesheet with shadow_19
+  - first:
+      213: -1219259284595804168
+    second: Relic Guardian 123x134 spritesheet with shadow_20
+  - first:
+      213: -5274049006225733258
+    second: Relic Guardian 123x134 spritesheet with shadow_21
+  - first:
+      213: 8534522335927943702
+    second: Relic Guardian 123x134 spritesheet with shadow_22
+  - first:
+      213: 3527878490316049114
+    second: Relic Guardian 123x134 spritesheet with shadow_23
+  - first:
+      213: -3809911361858916963
+    second: Relic Guardian 123x134 spritesheet with shadow_24
+  - first:
+      213: 3827915257629268128
+    second: Relic Guardian 123x134 spritesheet with shadow_25
+  - first:
+      213: -7073602732413577798
+    second: Relic Guardian 123x134 spritesheet with shadow_26
+  - first:
+      213: -3586641282928949161
+    second: Relic Guardian 123x134 spritesheet with shadow_27
+  - first:
+      213: 8915540128736499256
+    second: Relic Guardian 123x134 spritesheet with shadow_28
+  - first:
+      213: 7539495522718930247
+    second: Relic Guardian 123x134 spritesheet with shadow_29
+  - first:
+      213: 3464768791748706784
+    second: Relic Guardian 123x134 spritesheet with shadow_30
+  - first:
+      213: 6101156785719318433
+    second: Relic Guardian 123x134 spritesheet with shadow_31
+  - first:
+      213: 5215566223690115950
+    second: Relic Guardian 123x134 spritesheet with shadow_32
+  - first:
+      213: -2111306780655239569
+    second: Relic Guardian 123x134 spritesheet with shadow_33
+  - first:
+      213: 3930919764777137669
+    second: Relic Guardian 123x134 spritesheet with shadow_34
+  - first:
+      213: -3751302348995881090
+    second: Relic Guardian 123x134 spritesheet with shadow_35
+  - first:
+      213: -8943594370934338703
+    second: Relic Guardian 123x134 spritesheet with shadow_36
+  - first:
+      213: 6187809063391642234
+    second: Relic Guardian 123x134 spritesheet with shadow_37
+  - first:
+      213: 4676375606923493279
+    second: Relic Guardian 123x134 spritesheet with shadow_38
+  - first:
+      213: 4706923223929520693
+    second: Relic Guardian 123x134 spritesheet with shadow_39
+  - first:
+      213: 3437949875817486433
+    second: Relic Guardian 123x134 spritesheet with shadow_40
+  - first:
+      213: 1220952528715771546
+    second: Relic Guardian 123x134 spritesheet with shadow_41
+  - first:
+      213: 6699490824282250249
+    second: Relic Guardian 123x134 spritesheet with shadow_42
+  - first:
+      213: -562839425951758959
+    second: Relic Guardian 123x134 spritesheet with shadow_43
+  - first:
+      213: -2047228593060025027
+    second: Relic Guardian 123x134 spritesheet with shadow_44
+  - first:
+      213: 3063260477641415243
+    second: Relic Guardian 123x134 spritesheet with shadow_45
+  - first:
+      213: -4288404139193073703
+    second: Relic Guardian 123x134 spritesheet with shadow_46
+  - first:
+      213: 7219202861410021248
+    second: Relic Guardian 123x134 spritesheet with shadow_47
+  - first:
+      213: 6323341339041485912
+    second: Relic Guardian 123x134 spritesheet with shadow_48
+  - first:
+      213: -5054528421730101426
+    second: Relic Guardian 123x134 spritesheet with shadow_49
+  - first:
+      213: 5373949093913248547
+    second: Relic Guardian 123x134 spritesheet with shadow_50
+  - first:
+      213: 3594094870385133235
+    second: Relic Guardian 123x134 spritesheet with shadow_51
+  - first:
+      213: -2760586945317327935
+    second: Relic Guardian 123x134 spritesheet with shadow_52
+  - first:
+      213: 5248698790082866147
+    second: Relic Guardian 123x134 spritesheet with shadow_53
+  - first:
+      213: 6385298223216584748
+    second: Relic Guardian 123x134 spritesheet with shadow_54
+  - first:
+      213: -2961120342185534781
+    second: Relic Guardian 123x134 spritesheet with shadow_55
+  - first:
+      213: 2951087760572333265
+    second: Relic Guardian 123x134 spritesheet with shadow_56
+  - first:
+      213: 2517384500439459929
+    second: Relic Guardian 123x134 spritesheet with shadow_57
+  - first:
+      213: -8713504239501934031
+    second: Relic Guardian 123x134 spritesheet with shadow_58
+  - first:
+      213: 8255407651942467326
+    second: Relic Guardian 123x134 spritesheet with shadow_59
+  - first:
+      213: -2500477421524633163
+    second: Relic Guardian 123x134 spritesheet with shadow_60
+  - first:
+      213: 2608912029187721214
+    second: Relic Guardian 123x134 spritesheet with shadow_61
+  - first:
+      213: -3566652215117910448
+    second: Relic Guardian 123x134 spritesheet with shadow_62
+  - first:
+      213: -887794747972457454
+    second: Relic Guardian 123x134 spritesheet with shadow_63
+  - first:
+      213: -2710952779319511448
+    second: Relic Guardian 123x134 spritesheet with shadow_64
+  - first:
+      213: -1879901584358951682
+    second: Relic Guardian 123x134 spritesheet with shadow_65
+  - first:
+      213: -7421444684962651484
+    second: Relic Guardian 123x134 spritesheet with shadow_66
+  - first:
+      213: -1107843755151426593
+    second: Relic Guardian 123x134 spritesheet with shadow_67
+  - first:
+      213: -2499755480115163777
+    second: Relic Guardian 123x134 spritesheet with shadow_68
+  - first:
+      213: -6373205635917358187
+    second: Relic Guardian 123x134 spritesheet with shadow_69
+  - first:
+      213: -1197220443523035426
+    second: Relic Guardian 123x134 spritesheet with shadow_70
+  - first:
+      213: -1234493543853012762
+    second: Relic Guardian 123x134 spritesheet with shadow_71
+  - first:
+      213: 9174418943179981600
+    second: Relic Guardian 123x134 spritesheet with shadow_72
+  - first:
+      213: 5305483366871586532
+    second: Relic Guardian 123x134 spritesheet with shadow_73
+  - first:
+      213: 3633463094598299984
+    second: Relic Guardian 123x134 spritesheet with shadow_74
+  - first:
+      213: -2588994958074045774
+    second: Relic Guardian 123x134 spritesheet with shadow_75
+  - first:
+      213: 104223713559659092
+    second: Relic Guardian 123x134 spritesheet with shadow_76
+  - first:
+      213: 6462148087339519481
+    second: Relic Guardian 123x134 spritesheet with shadow_77
+  - first:
+      213: 5051530354318307361
+    second: Relic Guardian 123x134 spritesheet with shadow_78
+  - first:
+      213: 7270803353248413175
+    second: Relic Guardian 123x134 spritesheet with shadow_79
+  - first:
+      213: 7670350674643406373
+    second: Relic Guardian 123x134 spritesheet with shadow_80
+  - first:
+      213: -773864213084390524
+    second: Relic Guardian 123x134 spritesheet with shadow_81
+  - first:
+      213: 4754024749888767346
+    second: Relic Guardian 123x134 spritesheet with shadow_82
+  - first:
+      213: 8827269056769549118
+    second: Relic Guardian 123x134 spritesheet with shadow_83
+  - first:
+      213: 6550622352339386344
+    second: Relic Guardian 123x134 spritesheet with shadow_84
+  - first:
+      213: 4499004379829457384
+    second: Relic Guardian 123x134 spritesheet with shadow_85
+  - first:
+      213: 1583541788753241336
+    second: Relic Guardian 123x134 spritesheet with shadow_86
+  - first:
+      213: -3304974310028178532
+    second: Relic Guardian 123x134 spritesheet with shadow_87
+  - first:
+      213: 5616910220709083299
+    second: Relic Guardian 123x134 spritesheet with shadow_88
+  - first:
+      213: -8539128194599803010
+    second: Relic Guardian 123x134 spritesheet with shadow_89
+  - first:
+      213: -1363110247158295381
+    second: Relic Guardian 123x134 spritesheet with shadow_90
+  - first:
+      213: 683435887202470736
+    second: Relic Guardian 123x134 spritesheet with shadow_91
+  - first:
+      213: -135831249772734804
+    second: Relic Guardian 123x134 spritesheet with shadow_92
+  - first:
+      213: 3998417662019850626
+    second: Relic Guardian 123x134 spritesheet with shadow_93
+  - first:
+      213: 6238151586187534832
+    second: Relic Guardian 123x134 spritesheet with shadow_94
+  - first:
+      213: 7728727281241563861
+    second: Relic Guardian 123x134 spritesheet with shadow_95
+  - first:
+      213: 9109932448414340135
+    second: Relic Guardian 123x134 spritesheet with shadow_96
+  - first:
+      213: -5513140572653108604
+    second: Relic Guardian 123x134 spritesheet with shadow_97
+  - first:
+      213: -5893877843733449079
+    second: Relic Guardian 123x134 spritesheet with shadow_98
+  - first:
+      213: -3544280185846879240
+    second: Relic Guardian 123x134 spritesheet with shadow_99
+  - first:
+      213: -8256715202735430253
+    second: Relic Guardian 123x134 spritesheet with shadow_100
+  - first:
+      213: 8382943780753738865
+    second: Relic Guardian 123x134 spritesheet with shadow_101
+  - first:
+      213: 464235341126083326
+    second: Relic Guardian 123x134 spritesheet with shadow_102
+  - first:
+      213: -3317746312165107951
+    second: Relic Guardian 123x134 spritesheet with shadow_103
+  - first:
+      213: -7577076500163275927
+    second: Relic Guardian 123x134 spritesheet with shadow_104
+  - first:
+      213: 3505221548646314280
+    second: Relic Guardian 123x134 spritesheet with shadow_105
+  - first:
+      213: -4851543020208792934
+    second: Relic Guardian 123x134 spritesheet with shadow_106
+  - first:
+      213: -8403356436814562451
+    second: Relic Guardian 123x134 spritesheet with shadow_107
+  - first:
+      213: -6617592414248316734
+    second: Relic Guardian 123x134 spritesheet with shadow_108
+  - first:
+      213: 7152480341513017441
+    second: Relic Guardian 123x134 spritesheet with shadow_109
+  - first:
+      213: -1408297922002023788
+    second: Relic Guardian 123x134 spritesheet with shadow_110
+  - first:
+      213: 4129777783935968749
+    second: Relic Guardian 123x134 spritesheet with shadow_111
+  - first:
+      213: 3223319839610902967
+    second: Relic Guardian 123x134 spritesheet with shadow_112
+  - first:
+      213: -3525138202526145776
+    second: Relic Guardian 123x134 spritesheet with shadow_113
+  - first:
+      213: 1120483701597598939
+    second: Relic Guardian 123x134 spritesheet with shadow_114
+  - first:
+      213: -6290322249488193929
+    second: Relic Guardian 123x134 spritesheet with shadow_115
+  - first:
+      213: 7573704340826054487
+    second: Relic Guardian 123x134 spritesheet with shadow_116
+  - first:
+      213: -5712519265096834614
+    second: Relic Guardian 123x134 spritesheet with shadow_117
+  - first:
+      213: -761944693418232609
+    second: Relic Guardian 123x134 spritesheet with shadow_118
+  - first:
+      213: -526196603952028044
+    second: Relic Guardian 123x134 spritesheet with shadow_119
+  - first:
+      213: -6099606286776459021
+    second: Relic Guardian 123x134 spritesheet with shadow_120
+  - first:
+      213: -6714137727417762535
+    second: Relic Guardian 123x134 spritesheet with shadow_121
+  - first:
+      213: -4950762788947342103
+    second: Relic Guardian 123x134 spritesheet with shadow_122
+  - first:
+      213: 2811465267838794415
+    second: Relic Guardian 123x134 spritesheet with shadow_123
+  - first:
+      213: 8503132276527065913
+    second: Relic Guardian 123x134 spritesheet with shadow_124
+  - first:
+      213: 93434303968788229
+    second: Relic Guardian 123x134 spritesheet with shadow_125
+  - first:
+      213: -8360624559585612074
+    second: Relic Guardian 123x134 spritesheet with shadow_126
+  - first:
+      213: 2769552081771175688
+    second: Relic Guardian 123x134 spritesheet with shadow_127
+  - first:
+      213: -6094351008499215094
+    second: Relic Guardian 123x134 spritesheet with shadow_128
+  - first:
+      213: -2834732684029715022
+    second: Relic Guardian 123x134 spritesheet with shadow_129
+  - first:
+      213: -2357576896393323007
+    second: Relic Guardian 123x134 spritesheet with shadow_130
+  - first:
+      213: -3249761491642539140
+    second: Relic Guardian 123x134 spritesheet with shadow_131
+  - first:
+      213: -7234230767204531132
+    second: Relic Guardian 123x134 spritesheet with shadow_132
+  - first:
+      213: 5378573568095942492
+    second: Relic Guardian 123x134 spritesheet with shadow_133
+  - first:
+      213: 8502841204808592041
+    second: Relic Guardian 123x134 spritesheet with shadow_134
+  - first:
+      213: 2911898597403890711
+    second: Relic Guardian 123x134 spritesheet with shadow_135
+  - first:
+      213: 7619637163941034941
+    second: Relic Guardian 123x134 spritesheet with shadow_136
+  - first:
+      213: -2243016875830059297
+    second: Relic Guardian 123x134 spritesheet with shadow_137
+  - first:
+      213: -3160625181574379303
+    second: Relic Guardian 123x134 spritesheet with shadow_138
+  - first:
+      213: 6953209818252605059
+    second: Relic Guardian 123x134 spritesheet with shadow_139
+  - first:
+      213: 1111321698552247703
+    second: Relic Guardian 123x134 spritesheet with shadow_140
+  - first:
+      213: 1193522708537357192
+    second: Relic Guardian 123x134 spritesheet with shadow_141
+  - first:
+      213: 7077636788139637846
+    second: Relic Guardian 123x134 spritesheet with shadow_142
+  - first:
+      213: 8896110421175846293
+    second: Relic Guardian 123x134 spritesheet with shadow_143
+  - first:
+      213: -488214048306813914
+    second: Relic Guardian 123x134 spritesheet with shadow_144
+  - first:
+      213: 8716136347408354742
+    second: Relic Guardian 123x134 spritesheet with shadow_145
+  - first:
+      213: -4640466024077184472
+    second: Relic Guardian 123x134 spritesheet with shadow_146
+  - first:
+      213: 8914731448222499942
+    second: Relic Guardian 123x134 spritesheet with shadow_147
+  - first:
+      213: 3365537269645570771
+    second: Relic Guardian 123x134 spritesheet with shadow_148
+  - first:
+      213: -139986385379780781
+    second: Relic Guardian 123x134 spritesheet with shadow_149
+  - first:
+      213: -548827793440419840
+    second: Relic Guardian 123x134 spritesheet with shadow_150
+  - first:
+      213: -5057361849258031905
+    second: Relic Guardian 123x134 spritesheet with shadow_151
+  - first:
+      213: 3987050391134293149
+    second: Relic Guardian 123x134 spritesheet with shadow_152
+  - first:
+      213: -8901736881900815358
+    second: Relic Guardian 123x134 spritesheet with shadow_153
+  - first:
+      213: 2938487737836261278
+    second: Relic Guardian 123x134 spritesheet with shadow_154
+  - first:
+      213: 8695008336379867463
+    second: Relic Guardian 123x134 spritesheet with shadow_155
+  - first:
+      213: 7576413386239283964
+    second: Relic Guardian 123x134 spritesheet with shadow_156
+  - first:
+      213: 6282448821830444578
+    second: Relic Guardian 123x134 spritesheet with shadow_157
+  - first:
+      213: 5108427711124242845
+    second: Relic Guardian 123x134 spritesheet with shadow_158
+  - first:
+      213: 3060203210656998365
+    second: Relic Guardian 123x134 spritesheet with shadow_159
+  - first:
+      213: 952326352769066938
+    second: Relic Guardian 123x134 spritesheet with shadow_160
+  - first:
+      213: 2919351511773975823
+    second: Relic Guardian 123x134 spritesheet with shadow_161
+  - first:
+      213: -3519817225237556514
+    second: Relic Guardian 123x134 spritesheet with shadow_162
+  - first:
+      213: 5488922454130618573
+    second: Relic Guardian 123x134 spritesheet with shadow_163
+  - first:
+      213: -7141206462572000173
+    second: Relic Guardian 123x134 spritesheet with shadow_164
+  - first:
+      213: 4362141303491588147
+    second: Relic Guardian 123x134 spritesheet with shadow_165
+  - first:
+      213: -1685208345442830624
+    second: Relic Guardian 123x134 spritesheet with shadow_166
+  - first:
+      213: 1934485852412546956
+    second: Relic Guardian 123x134 spritesheet with shadow_167
+  - first:
+      213: -876723438653132819
+    second: Relic Guardian 123x134 spritesheet with shadow_168
+  - first:
+      213: -5129284491148135563
+    second: Relic Guardian 123x134 spritesheet with shadow_169
+  - first:
+      213: -2679110030716270175
+    second: Relic Guardian 123x134 spritesheet with shadow_170
+  - first:
+      213: 8316078732393044407
+    second: Relic Guardian 123x134 spritesheet with shadow_171
+  - first:
+      213: 1682288544312853853
+    second: Relic Guardian 123x134 spritesheet with shadow_172
+  - first:
+      213: -5868114150516479278
+    second: Relic Guardian 123x134 spritesheet with shadow_173
+  - first:
+      213: -2208448151063322196
+    second: Relic Guardian 123x134 spritesheet with shadow_174
+  - first:
+      213: 4740192629511609897
+    second: Relic Guardian 123x134 spritesheet with shadow_175
+  - first:
+      213: 5173240960273597320
+    second: Relic Guardian 123x134 spritesheet with shadow_176
+  - first:
+      213: 8991164135188404856
+    second: Relic Guardian 123x134 spritesheet with shadow_177
+  - first:
+      213: 6343204815555863716
+    second: Relic Guardian 123x134 spritesheet with shadow_178
+  - first:
+      213: -3737683524463703819
+    second: Relic Guardian 123x134 spritesheet with shadow_179
+  - first:
+      213: -4167924379697930392
+    second: Relic Guardian 123x134 spritesheet with shadow_180
+  - first:
+      213: -6923105908333648379
+    second: Relic Guardian 123x134 spritesheet with shadow_181
+  - first:
+      213: 2343668934434485086
+    second: Relic Guardian 123x134 spritesheet with shadow_182
+  - first:
+      213: 252240413497883176
+    second: Relic Guardian 123x134 spritesheet with shadow_183
+  - first:
+      213: 6917422637290611220
+    second: Relic Guardian 123x134 spritesheet with shadow_184
+  - first:
+      213: -4558290831462017220
+    second: Relic Guardian 123x134 spritesheet with shadow_185
+  - first:
+      213: 5166054454496533472
+    second: Relic Guardian 123x134 spritesheet with shadow_186
+  - first:
+      213: -3129926133148184516
+    second: Relic Guardian 123x134 spritesheet with shadow_187
+  - first:
+      213: 571349574048385483
+    second: Relic Guardian 123x134 spritesheet with shadow_188
+  - first:
+      213: 8921274618477289405
+    second: Relic Guardian 123x134 spritesheet with shadow_189
+  - first:
+      213: 6105388373626596336
+    second: Relic Guardian 123x134 spritesheet with shadow_190
+  - first:
+      213: 3252488570293860865
+    second: Relic Guardian 123x134 spritesheet with shadow_191
+  - first:
+      213: -4958085061594631232
+    second: Relic Guardian 123x134 spritesheet with shadow_192
+  - first:
+      213: -450975965673922730
+    second: Relic Guardian 123x134 spritesheet with shadow_193
+  - first:
+      213: 6418927778864976723
+    second: Relic Guardian 123x134 spritesheet with shadow_194
+  - first:
+      213: -3404377521896427000
+    second: Relic Guardian 123x134 spritesheet with shadow_195
+  - first:
+      213: -7252461270233143990
+    second: Relic Guardian 123x134 spritesheet with shadow_196
+  - first:
+      213: -839674523578703605
+    second: Relic Guardian 123x134 spritesheet with shadow_197
+  - first:
+      213: -7877822788513583572
+    second: Relic Guardian 123x134 spritesheet with shadow_198
+  - first:
+      213: 1689279528895327924
+    second: Relic Guardian 123x134 spritesheet with shadow_199
+  - first:
+      213: 2439816253708140058
+    second: Relic Guardian 123x134 spritesheet with shadow_200
+  - first:
+      213: 3369176480613371315
+    second: Relic Guardian 123x134 spritesheet with shadow_201
+  - first:
+      213: -3202770962007067592
+    second: Relic Guardian 123x134 spritesheet with shadow_202
+  - first:
+      213: 1119233830436813559
+    second: Relic Guardian 123x134 spritesheet with shadow_203
+  - first:
+      213: -6210899974130766720
+    second: Relic Guardian 123x134 spritesheet with shadow_204
+  - first:
+      213: 6632716661172159358
+    second: Relic Guardian 123x134 spritesheet with shadow_205
+  - first:
+      213: -8965278942123669497
+    second: Relic Guardian 123x134 spritesheet with shadow_206
+  - first:
+      213: 4029692601111959388
+    second: Relic Guardian 123x134 spritesheet with shadow_207
+  - first:
+      213: 3009177285664872024
+    second: Relic Guardian 123x134 spritesheet with shadow_208
+  - first:
+      213: 2684201103397852675
+    second: Relic Guardian 123x134 spritesheet with shadow_209
+  - first:
+      213: -1076681871429120162
+    second: Relic Guardian 123x134 spritesheet with shadow_210
+  - first:
+      213: 8238672502839495625
+    second: Relic Guardian 123x134 spritesheet with shadow_211
+  - first:
+      213: 4326382136414723324
+    second: Relic Guardian 123x134 spritesheet with shadow_212
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1787
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6815d90d0d823490800000000000000
+      internalID: -7767991320121632657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1787
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69d4be9274193560800000000000000
+      internalID: 7293883554024708461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1787
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34be5250ee129a4f0800000000000000
+      internalID: -817084551218730173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_3
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1787
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f535c30c3597b30800000000000000
+      internalID: 4285548605530660682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_4
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1787
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21fc952b5064c6570800000000000000
+      internalID: 8461214790203330322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_5
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1787
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42714c61550b7c000800000000000000
+      internalID: 56207399866079012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_6
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1787
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8840a607c2a77e8c0800000000000000
+      internalID: -3970070215220657016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_7
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1787
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a525cae53d59efe50800000000000000
+      internalID: 6845073218708722266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_8
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 1787
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ab1929acd2c62a0800000000000000
+      internalID: -6742964194014807468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_9
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1787
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f5b5b3b1be1eeb0800000000000000
+      internalID: -4692210834550857932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_10
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 1787
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1406b8e6f0d2e5610800000000000000
+      internalID: 1611775260947603521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_11
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1653
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b06533cd5bee9830800000000000000
+      internalID: 4079957100383789235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_12
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1653
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105ca701db9b17b20800000000000000
+      internalID: 3130487437675644161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_13
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1653
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0e851e7e4e842a0800000000000000
+      internalID: -6752895956672782133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_14
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1653
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648d63caa55511cf0800000000000000
+      internalID: -283351453622937530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_15
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1653
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a56997a33349cd0800000000000000
+      internalID: -2552358762571212216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_16
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1653
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0291bc27e68fcf0800000000000000
+      internalID: -218303142614720343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_17
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1653
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d840536edec51210800000000000000
+      internalID: 1303175121737894101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_18
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1653
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6de3dd8b30e4b4a0800000000000000
+      internalID: -6578386609294283409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_19
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 1653
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8484b12afd085b3d0800000000000000
+      internalID: -3191503062936369080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_20
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 1653
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7f19cf322541fe0800000000000000
+      internalID: -1219259284595804168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_21
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 1653
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679c9e73f50dec6b0800000000000000
+      internalID: -5274049006225733258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_22
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 1653
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6124f90c8d6b07670800000000000000
+      internalID: 8534522335927943702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_23
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1519
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada8702abca85f030800000000000000
+      internalID: 3527878490316049114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_24
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1519
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9dacaa5dc9702bc0800000000000000
+      internalID: -3809911361858916963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_25
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1519
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a85a4945ac7f1530800000000000000
+      internalID: 3827915257629268128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_26
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1519
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5914cdac385dd90800000000000000
+      internalID: -7073602732413577798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_27
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1519
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 758c44a81c0b93ec0800000000000000
+      internalID: -3586641282928949161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_28
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1519
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8365412b28c5abb70800000000000000
+      internalID: 8915540128736499256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_29
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1519
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7455f416b3ba1a860800000000000000
+      internalID: 7539495522718930247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_30
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 1519
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e18a05ebd4551030800000000000000
+      internalID: 3464768791748706784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_31
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 1519
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a793c375c9aba450800000000000000
+      internalID: 6101156785719318433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_32
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1519
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b2391e8d9616840800000000000000
+      internalID: 5215566223690115950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_33
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 1519
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ebb2f4ba123b2e0800000000000000
+      internalID: -2111306780655239569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_34
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 1519
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5067a1cf2be6d8630800000000000000
+      internalID: 3930919764777137669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_35
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 1519
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77130b8362b0fbc0800000000000000
+      internalID: -3751302348995881090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_36
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 1519
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b86490e48f1e380800000000000000
+      internalID: -8943594370934338703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_37
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 1519
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72c6690f838fd550800000000000000
+      internalID: 6187809063391642234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_38
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1385
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ff9f686d2d5e040800000000000000
+      internalID: 4676375606923493279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_39
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1385
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5320b5bdbb9525140800000000000000
+      internalID: 4706923223929520693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_40
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1385
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16813bf623d06bf20800000000000000
+      internalID: 3437949875817486433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_41
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1385
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ee7b12bd1b1f010800000000000000
+      internalID: 1220952528715771546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_42
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1385
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c1555c86f59fc50800000000000000
+      internalID: 6699490824282250249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_43
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1385
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1958f8e26846038f0800000000000000
+      internalID: -562839425951758959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_44
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1383
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d62a8f078c693e0800000000000000
+      internalID: -2047228593060025027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_45
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1382
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a5f40bc23e28a20800000000000000
+      internalID: 3063260477641415243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_46
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1380
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dff41608278c74c0800000000000000
+      internalID: -4288404139193073703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_47
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 1353
+        width: 84
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08fe3d3e0c2cf2460800000000000000
+      internalID: 7219202861410021248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_48
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 1352
+        width: 82
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8545c13027501c750800000000000000
+      internalID: 6323341339041485912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_49
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 1353
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4759a33e25bad9b0800000000000000
+      internalID: -5054528421730101426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_50
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1351
+        width: 83
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3234bbf7a3a149a40800000000000000
+      internalID: 5373949093913248547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_51
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1351
+        width: 88
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b60c560e3ac0e130800000000000000
+      internalID: 3594094870385133235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_52
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 1351
+        width: 90
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cba7c8accc60b9d0800000000000000
+      internalID: -2760586945317327935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_53
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 1349
+        width: 87
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb69e3adbf17d840800000000000000
+      internalID: 5248698790082866147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_54
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 1340
+        width: 63
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28e1cb37e22d9850800000000000000
+      internalID: 6385298223216584748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_55
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 1340
+        width: 45
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca19daccbcf7e6d0800000000000000
+      internalID: -2961120342185534781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_56
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 1320
+        width: 80
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dcbae5ceae54f820800000000000000
+      internalID: 2951087760572333265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_57
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 1321
+        width: 81
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958a4cf8ddb8fe220800000000000000
+      internalID: 2517384500439459929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_58
+      rect:
+        serializedVersion: 2
+        x: 2491
+        y: 1338
+        width: 28
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13280af6f0a631780800000000000000
+      internalID: -8713504239501934031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_59
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 1322
+        width: 147
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6821a3589119270800000000000000
+      internalID: 8255407651942467326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_60
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1339
+        width: 63
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9b32188058c4dd0800000000000000
+      internalID: -2500477421524633163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_61
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 1339
+        width: 28
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef74afdfaa7b43420800000000000000
+      internalID: 2608912029187721214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_62
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 1380
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e698015b4b08ec0800000000000000
+      internalID: -3566652215117910448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_63
+      rect:
+        serializedVersion: 2
+        x: 3106
+        y: 1380
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ce4a5616beda3f0800000000000000
+      internalID: -887794747972457454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_64
+      rect:
+        serializedVersion: 2
+        x: 3229
+        y: 1380
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8667dc97fc2c06ad0800000000000000
+      internalID: -2710952779319511448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_65
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 1357
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4379b187f39e5e0800000000000000
+      internalID: -1879901584358951682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_66
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 1357
+        width: 28
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a22798216bb10990800000000000000
+      internalID: -7421444684962651484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_67
+      rect:
+        serializedVersion: 2
+        x: 3598
+        y: 1366
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb709b69f520a0f0800000000000000
+      internalID: -1107843755151426593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_68
+      rect:
+        serializedVersion: 2
+        x: 3721
+        y: 1385
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d466692a51f4dd0800000000000000
+      internalID: -2499755480115163777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_69
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 1340
+        width: 11
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bd0a6ad33dd87a0800000000000000
+      internalID: -6373205635917358187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_70
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 1368
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede49f9895e926fe0800000000000000
+      internalID: -1197220443523035426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_71
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 1360
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8c02999a23edee0800000000000000
+      internalID: -1234493543853012762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_72
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 1345
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0238bd0bb65125f70800000000000000
+      internalID: 9174418943179981600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_73
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1354
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6df14330dd0a940800000000000000
+      internalID: 5305483366871586532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_74
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 1355
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051f5020f67ac6230800000000000000
+      internalID: 3633463094598299984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_75
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 1348
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba18be7dca021cd0800000000000000
+      internalID: -2588994958074045774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_76
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 1345
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45245ef4ae6427100800000000000000
+      internalID: 104223713559659092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_77
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 1247
+        width: 95
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd87df82792ea950800000000000000
+      internalID: 6462148087339519481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_78
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1244
+        width: 103
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120fe35d714aa1640800000000000000
+      internalID: 5051530354318307361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_79
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 1246
+        width: 94
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5371e902517e460800000000000000
+      internalID: 7270803353248413175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_80
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 1251
+        width: 74
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e4cc0ac4f827a60800000000000000
+      internalID: 7670350674643406373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_81
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 1251
+        width: 45
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48bb7ba299ea245f0800000000000000
+      internalID: -773864213084390524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_82
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 1317
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27509867250b9f140800000000000000
+      internalID: 4754024749888767346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_83
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 1324
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33eb813072c08a70800000000000000
+      internalID: 8827269056769549118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_84
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 1251
+        width: 35
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef3ce0a25c78ea50800000000000000
+      internalID: 6550622352339386344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_85
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 1251
+        width: 29
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e159ae85acaf6e30800000000000000
+      internalID: 4499004379829457384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_86
+      rect:
+        serializedVersion: 2
+        x: 2491
+        y: 1251
+        width: 28
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4af9dedded9f510800000000000000
+      internalID: 1583541788753241336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_87
+      rect:
+        serializedVersion: 2
+        x: 2614
+        y: 1251
+        width: 28
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b8af2206f5222d0800000000000000
+      internalID: -3304974310028178532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_88
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1221
+        width: 63
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a830a8061643fd40800000000000000
+      internalID: 5616910220709083299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_89
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 1251
+        width: 28
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e772b55362cee7980800000000000000
+      internalID: -8539128194599803010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_90
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 1291
+        width: 11
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba45f68c372451de0800000000000000
+      internalID: -1363110247158295381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_91
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 1310
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b0573815d0c7900800000000000000
+      internalID: 683435887202470736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_92
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 1282
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca616efa23e6d1ef0800000000000000
+      internalID: -135831249772734804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_93
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1243
+        width: 83
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2815758ddab3d7730800000000000000
+      internalID: 3998417662019850626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_94
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 1307
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f16fb501dd529650800000000000000
+      internalID: 6238151586187534832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_95
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 1244
+        width: 83
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d226448384f14b60800000000000000
+      internalID: 7728727281241563861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_96
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 1307
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7249a8b9b4bfc6e70800000000000000
+      internalID: 9109932448414340135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_97
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1244
+        width: 101
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482c73aebd36d73b0800000000000000
+      internalID: -5513140572653108604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_98
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 1243
+        width: 105
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986f8b6045db43ea0800000000000000
+      internalID: -5893877843733449079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_99
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 1304
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb242a03ff20dec0800000000000000
+      internalID: -3544280185846879240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_100
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 1251
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3952361e4414a6d80800000000000000
+      internalID: -8256715202735430253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_101
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 1251
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c85ef24f2365470800000000000000
+      internalID: 8382943780753738865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_102
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 1251
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2a008459b417600800000000000000
+      internalID: 464235341126083326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_103
+      rect:
+        serializedVersion: 2
+        x: 3119
+        y: 1286
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1175988ae4ff4f1d0800000000000000
+      internalID: -3317746312165107951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_104
+      rect:
+        serializedVersion: 2
+        x: 3598
+        y: 1251
+        width: 28
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963dec37111d8d690800000000000000
+      internalID: -7577076500163275927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_105
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1251
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821bb125d6c05a030800000000000000
+      internalID: 3505221548646314280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_106
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1251
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9adde3e35bdbacb0800000000000000
+      internalID: -4851543020208792934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_107
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1251
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6bfca6f7d7416b80800000000000000
+      internalID: -8403356436814562451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_108
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1251
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0d860c2c69924a0800000000000000
+      internalID: -6617592414248316734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_109
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1251
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16819d2a9f6b24360800000000000000
+      internalID: 7152480341513017441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_110
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1251
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a062d5088b47ce0800000000000000
+      internalID: -1408297922002023788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_111
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1248
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5adc4930bef4930800000000000000
+      internalID: 4129777783935968749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_112
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 1247
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b91a75f0588bbc20800000000000000
+      internalID: 3223319839610902967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_113
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 1245
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01325465b71341fc0800000000000000
+      internalID: -3525138202526145776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_114
+      rect:
+        serializedVersion: 2
+        x: 3106
+        y: 1251
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd4f6527df1cc8f00800000000000000
+      internalID: 1120483701597598939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_115
+      rect:
+        serializedVersion: 2
+        x: 3229
+        y: 1251
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 776258cdd3944b8a0800000000000000
+      internalID: -6290322249488193929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_116
+      rect:
+        serializedVersion: 2
+        x: 3247
+        y: 1275
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75f55c488f33b1960800000000000000
+      internalID: 7573704340826054487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_117
+      rect:
+        serializedVersion: 2
+        x: 3721
+        y: 1251
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1e35f9efd09b0b0800000000000000
+      internalID: -5712519265096834614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_118
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1117
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4ff4a96570d65f0800000000000000
+      internalID: -761944693418232609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_119
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1117
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4762c630af292b8f0800000000000000
+      internalID: -526196603952028044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_120
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1117
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f023f63668d95ba0800000000000000
+      internalID: -6099606286776459021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_121
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1117
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d37385f4792d2a0800000000000000
+      internalID: -6714137727417762535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_122
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1117
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec4295497b5b4bb0800000000000000
+      internalID: -4950762788947342103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_123
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1117
+        width: 46
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa31ebe3c4540720800000000000000
+      internalID: 2811465267838794415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_124
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1117
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93bed8401c1310670800000000000000
+      internalID: 8503132276527065913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_125
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1117
+        width: 46
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f35e12102fb4100800000000000000
+      internalID: 93434303968788229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_126
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 1117
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de2e71724819fb80800000000000000
+      internalID: -8360624559585612074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_127
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1117
+        width: 46
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f1ae4d1fc6f6620800000000000000
+      internalID: 2769552081771175688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_128
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1117
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a055cd90c048c6ba0800000000000000
+      internalID: -6094351008499215094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_129
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 1089
+        width: 90
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd183794a109a8d0800000000000000
+      internalID: -2834732684029715022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_130
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 1089
+        width: 90
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10edecfbd44384fd0800000000000000
+      internalID: -2357576896393323007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_131
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 1089
+        width: 90
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7327ed242786e2d0800000000000000
+      internalID: -3249761491642539140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_132
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1089
+        width: 90
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44482912279da9b90800000000000000
+      internalID: -7234230767204531132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_133
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 1089
+        width: 90
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57f9acc92884aa40800000000000000
+      internalID: 5378573568095942492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_134
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 1104
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aaab2a9609200670800000000000000
+      internalID: 8502841204808592041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_135
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1111
+        width: 53
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7149730b854296820800000000000000
+      internalID: 2911898597403890711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_136
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 983
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbf11a41a36eb960800000000000000
+      internalID: 7619637163941034941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_137
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 849
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde51f219043fd0e0800000000000000
+      internalID: -2243016875830059297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_138
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 849
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8ca10a4243324d0800000000000000
+      internalID: -3160625181574379303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_139
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 849
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38674b17d73ce7060800000000000000
+      internalID: 6953209818252605059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_140
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 849
+        width: 38
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795f36162353c6f00800000000000000
+      internalID: 1111321698552247703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_141
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 690
+        width: 78
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8833bb1749e309010800000000000000
+      internalID: 1193522708537357192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_142
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 717
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65cbc4ee821d83260800000000000000
+      internalID: 7077636788139637846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_143
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 683
+        width: 26
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59546d06b45557b70800000000000000
+      internalID: 8896110421175846293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_144
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 718
+        width: 38
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6242154e8e38939f0800000000000000
+      internalID: -488214048306813914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_145
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 717
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd4521f3dfe5f870800000000000000
+      internalID: 8716136347408354742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_146
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 682
+        width: 26
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8223c92ccb0c99fb0800000000000000
+      internalID: -4640466024077184472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_147
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 718
+        width: 34
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6644e47150d77bb70800000000000000
+      internalID: 8914731448222499942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_148
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 681
+        width: 125
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2ff8bb05ac4be20800000000000000
+      internalID: 3365537269645570771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_149
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 680
+        width: 81
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3571c0acf1bae0ef0800000000000000
+      internalID: -139986385379780781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_150
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 581
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0005f19970c2268f0800000000000000
+      internalID: -548827793440419840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_151
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 581
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4cc527134a0d9b0800000000000000
+      internalID: -5057361849258031905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_152
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 581
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c4429d439d45730800000000000000
+      internalID: 3987050391134293149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_153
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 581
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20cfe46287da67480800000000000000
+      internalID: -8901736881900815358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_154
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 447
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f429e570b97c820800000000000000
+      internalID: 2938487737836261278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_155
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 447
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7417bf88300eaa870800000000000000
+      internalID: 8695008336379867463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_156
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 447
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf29e4e45d3d42960800000000000000
+      internalID: 7576413386239283964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_157
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 447
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22666c8eaedbf2750800000000000000
+      internalID: 6282448821830444578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_158
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 285
+        width: 90
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91825a00f7c4e640800000000000000
+      internalID: 5108427711124242845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_159
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 281
+        width: 98
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd368bf3b96087a20800000000000000
+      internalID: 3060203210656998365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_160
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 280
+        width: 101
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab72b0fa5c7573d00800000000000000
+      internalID: 952326352769066938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_161
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 279
+        width: 103
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0599c98bbe938820800000000000000
+      internalID: 2919351511773975823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_162
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 278
+        width: 105
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed21a67e1e8172fc0800000000000000
+      internalID: -3519817225237556514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_163
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 294
+        width: 75
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0fe16f3e19c2c40800000000000000
+      internalID: 5488922454130618573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_164
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 298
+        width: 68
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c0caade8655ec90800000000000000
+      internalID: -7141206462572000173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_165
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 298
+        width: 66
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330fca66760798c30800000000000000
+      internalID: 4362141303491588147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_166
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 301
+        width: 53
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e63b5d30ffec98e0800000000000000
+      internalID: -1685208345442830624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_167
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 179
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f811822aca8da10800000000000000
+      internalID: 1934485852412546956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_168
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 179
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def22d87da045d3f0800000000000000
+      internalID: -876723438653132819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_169
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 179
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573f1317eee11d8b0800000000000000
+      internalID: -5129284491148135563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_170
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 179
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a988f02f93e1dad0800000000000000
+      internalID: -2679110030716270175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_171
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 179
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9d770fb85a86370800000000000000
+      internalID: 8316078732393044407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_172
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 179
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d550a759480b85710800000000000000
+      internalID: 1682288544312853853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_173
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 179
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2daa50d4545409ea0800000000000000
+      internalID: -5868114150516479278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_174
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 179
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1a0038b140a51e0800000000000000
+      internalID: -2208448151063322196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_175
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 45
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ed6f8f41c88c140800000000000000
+      internalID: 4740192629511609897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_176
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 45
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883cb9e8e3b0bc740800000000000000
+      internalID: 5173240960273597320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_177
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 45
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a132bc42807cc70800000000000000
+      internalID: 8991164135188404856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_178
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 45
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a421c80c27970850800000000000000
+      internalID: 6343204815555863716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_179
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 45
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8c28933a4112cc0800000000000000
+      internalID: -3737683524463703819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_180
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 45
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f1a69fbde8826c0800000000000000
+      internalID: -4167924379697930392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_181
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 45
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5066d574bdf2cef90800000000000000
+      internalID: -6923105908333648379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_182
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 38
+        width: 74
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53f5148a72668020800000000000000
+      internalID: 2343668934434485086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_183
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 65
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82af984d153208300800000000000000
+      internalID: 252240413497883176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_184
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 40
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412e3f01d3f9fff50800000000000000
+      internalID: 6917422637290611220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_185
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 35
+        width: 44
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3759cfb3a2bdb0c0800000000000000
+      internalID: -4558290831462017220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_186
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 44
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb179ac72381b740800000000000000
+      internalID: 5166054454496533472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_187
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 64
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c309d74d3c44094d0800000000000000
+      internalID: -3129926133148184516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_188
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 65
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc989b31967dde700800000000000000
+      internalID: 571349574048385483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_189
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 40
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf1c02affbbecb70800000000000000
+      internalID: 8921274618477289405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_190
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 46
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb20d9c062bab450800000000000000
+      internalID: 6105388373626596336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_191
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 64
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a326c4f19232d20800000000000000
+      internalID: 3252488570293860865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_192
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 43
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c33b71d7e7513bb0800000000000000
+      internalID: -4958085061594631232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_193
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 47
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f54c3afbfcdb9f0800000000000000
+      internalID: -450975965673922730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_194
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 40
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35352225ecc941950800000000000000
+      internalID: 6418927778864976723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_195
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 48
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802f9065ea831c0d0800000000000000
+      internalID: -3404377521896427000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_196
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 34
+        width: 41
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45a97066e41a5b90800000000000000
+      internalID: -7252461270233143990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_197
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0165273870e854f0800000000000000
+      internalID: -839674523578703605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_198
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 54
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2eab2f89e95ca290800000000000000
+      internalID: -7877822788513583572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_199
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 42
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be252608c6817710800000000000000
+      internalID: 1689279528895327924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_200
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 69
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e7f7fb4f7fbd120800000000000000
+      internalID: 2439816253708140058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_201
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 48
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd8f809828b1ce20800000000000000
+      internalID: 3369176480613371315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_202
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 56
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834f1a077c87d83d0800000000000000
+      internalID: -3202770962007067592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_203
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 63
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa39c32d31588f00800000000000000
+      internalID: 1119233830436813559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_204
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 70
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ce37a51637ec9a0800000000000000
+      internalID: -6210899974130766720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_205
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 65
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e734bf469a42c0c50800000000000000
+      internalID: 6632716661172159358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_206
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 59
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708cd6e5d4ee49380800000000000000
+      internalID: -8965278942123669497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_207
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 49
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c575c4b02185ce730800000000000000
+      internalID: 4029692601111959388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_208
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 43
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8569a3a4cceb2c920800000000000000
+      internalID: 3009177285664872024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_209
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 53
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3069db99ea2304520800000000000000
+      internalID: 2684201103397852675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_210
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 40
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f4d5dda8bde01f0800000000000000
+      internalID: -1076681871429120162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_211
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 30
+        width: 1137
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cbc680bdf4a55270800000000000000
+      internalID: 8238672502839495625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 123x134 spritesheet with shadow_212
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 44
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc589381a56a0c30800000000000000
+      internalID: 4326382136414723324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic Guardian 123x134 spritesheet with shadow_0: -7767991320121632657
+      Relic Guardian 123x134 spritesheet with shadow_1: 7293883554024708461
+      Relic Guardian 123x134 spritesheet with shadow_10: 1611775260947603521
+      Relic Guardian 123x134 spritesheet with shadow_100: -8256715202735430253
+      Relic Guardian 123x134 spritesheet with shadow_101: 8382943780753738865
+      Relic Guardian 123x134 spritesheet with shadow_102: 464235341126083326
+      Relic Guardian 123x134 spritesheet with shadow_103: -3317746312165107951
+      Relic Guardian 123x134 spritesheet with shadow_104: -7577076500163275927
+      Relic Guardian 123x134 spritesheet with shadow_105: 3505221548646314280
+      Relic Guardian 123x134 spritesheet with shadow_106: -4851543020208792934
+      Relic Guardian 123x134 spritesheet with shadow_107: -8403356436814562451
+      Relic Guardian 123x134 spritesheet with shadow_108: -6617592414248316734
+      Relic Guardian 123x134 spritesheet with shadow_109: 7152480341513017441
+      Relic Guardian 123x134 spritesheet with shadow_11: 4079957100383789235
+      Relic Guardian 123x134 spritesheet with shadow_110: -1408297922002023788
+      Relic Guardian 123x134 spritesheet with shadow_111: 4129777783935968749
+      Relic Guardian 123x134 spritesheet with shadow_112: 3223319839610902967
+      Relic Guardian 123x134 spritesheet with shadow_113: -3525138202526145776
+      Relic Guardian 123x134 spritesheet with shadow_114: 1120483701597598939
+      Relic Guardian 123x134 spritesheet with shadow_115: -6290322249488193929
+      Relic Guardian 123x134 spritesheet with shadow_116: 7573704340826054487
+      Relic Guardian 123x134 spritesheet with shadow_117: -5712519265096834614
+      Relic Guardian 123x134 spritesheet with shadow_118: -761944693418232609
+      Relic Guardian 123x134 spritesheet with shadow_119: -526196603952028044
+      Relic Guardian 123x134 spritesheet with shadow_12: 3130487437675644161
+      Relic Guardian 123x134 spritesheet with shadow_120: -6099606286776459021
+      Relic Guardian 123x134 spritesheet with shadow_121: -6714137727417762535
+      Relic Guardian 123x134 spritesheet with shadow_122: -4950762788947342103
+      Relic Guardian 123x134 spritesheet with shadow_123: 2811465267838794415
+      Relic Guardian 123x134 spritesheet with shadow_124: 8503132276527065913
+      Relic Guardian 123x134 spritesheet with shadow_125: 93434303968788229
+      Relic Guardian 123x134 spritesheet with shadow_126: -8360624559585612074
+      Relic Guardian 123x134 spritesheet with shadow_127: 2769552081771175688
+      Relic Guardian 123x134 spritesheet with shadow_128: -6094351008499215094
+      Relic Guardian 123x134 spritesheet with shadow_129: -2834732684029715022
+      Relic Guardian 123x134 spritesheet with shadow_13: -6752895956672782133
+      Relic Guardian 123x134 spritesheet with shadow_130: -2357576896393323007
+      Relic Guardian 123x134 spritesheet with shadow_131: -3249761491642539140
+      Relic Guardian 123x134 spritesheet with shadow_132: -7234230767204531132
+      Relic Guardian 123x134 spritesheet with shadow_133: 5378573568095942492
+      Relic Guardian 123x134 spritesheet with shadow_134: 8502841204808592041
+      Relic Guardian 123x134 spritesheet with shadow_135: 2911898597403890711
+      Relic Guardian 123x134 spritesheet with shadow_136: 7619637163941034941
+      Relic Guardian 123x134 spritesheet with shadow_137: -2243016875830059297
+      Relic Guardian 123x134 spritesheet with shadow_138: -3160625181574379303
+      Relic Guardian 123x134 spritesheet with shadow_139: 6953209818252605059
+      Relic Guardian 123x134 spritesheet with shadow_14: -283351453622937530
+      Relic Guardian 123x134 spritesheet with shadow_140: 1111321698552247703
+      Relic Guardian 123x134 spritesheet with shadow_141: 1193522708537357192
+      Relic Guardian 123x134 spritesheet with shadow_142: 7077636788139637846
+      Relic Guardian 123x134 spritesheet with shadow_143: 8896110421175846293
+      Relic Guardian 123x134 spritesheet with shadow_144: -488214048306813914
+      Relic Guardian 123x134 spritesheet with shadow_145: 8716136347408354742
+      Relic Guardian 123x134 spritesheet with shadow_146: -4640466024077184472
+      Relic Guardian 123x134 spritesheet with shadow_147: 8914731448222499942
+      Relic Guardian 123x134 spritesheet with shadow_148: 3365537269645570771
+      Relic Guardian 123x134 spritesheet with shadow_149: -139986385379780781
+      Relic Guardian 123x134 spritesheet with shadow_15: -2552358762571212216
+      Relic Guardian 123x134 spritesheet with shadow_150: -548827793440419840
+      Relic Guardian 123x134 spritesheet with shadow_151: -5057361849258031905
+      Relic Guardian 123x134 spritesheet with shadow_152: 3987050391134293149
+      Relic Guardian 123x134 spritesheet with shadow_153: -8901736881900815358
+      Relic Guardian 123x134 spritesheet with shadow_154: 2938487737836261278
+      Relic Guardian 123x134 spritesheet with shadow_155: 8695008336379867463
+      Relic Guardian 123x134 spritesheet with shadow_156: 7576413386239283964
+      Relic Guardian 123x134 spritesheet with shadow_157: 6282448821830444578
+      Relic Guardian 123x134 spritesheet with shadow_158: 5108427711124242845
+      Relic Guardian 123x134 spritesheet with shadow_159: 3060203210656998365
+      Relic Guardian 123x134 spritesheet with shadow_16: -218303142614720343
+      Relic Guardian 123x134 spritesheet with shadow_160: 952326352769066938
+      Relic Guardian 123x134 spritesheet with shadow_161: 2919351511773975823
+      Relic Guardian 123x134 spritesheet with shadow_162: -3519817225237556514
+      Relic Guardian 123x134 spritesheet with shadow_163: 5488922454130618573
+      Relic Guardian 123x134 spritesheet with shadow_164: -7141206462572000173
+      Relic Guardian 123x134 spritesheet with shadow_165: 4362141303491588147
+      Relic Guardian 123x134 spritesheet with shadow_166: -1685208345442830624
+      Relic Guardian 123x134 spritesheet with shadow_167: 1934485852412546956
+      Relic Guardian 123x134 spritesheet with shadow_168: -876723438653132819
+      Relic Guardian 123x134 spritesheet with shadow_169: -5129284491148135563
+      Relic Guardian 123x134 spritesheet with shadow_17: 1303175121737894101
+      Relic Guardian 123x134 spritesheet with shadow_170: -2679110030716270175
+      Relic Guardian 123x134 spritesheet with shadow_171: 8316078732393044407
+      Relic Guardian 123x134 spritesheet with shadow_172: 1682288544312853853
+      Relic Guardian 123x134 spritesheet with shadow_173: -5868114150516479278
+      Relic Guardian 123x134 spritesheet with shadow_174: -2208448151063322196
+      Relic Guardian 123x134 spritesheet with shadow_175: 4740192629511609897
+      Relic Guardian 123x134 spritesheet with shadow_176: 5173240960273597320
+      Relic Guardian 123x134 spritesheet with shadow_177: 8991164135188404856
+      Relic Guardian 123x134 spritesheet with shadow_178: 6343204815555863716
+      Relic Guardian 123x134 spritesheet with shadow_179: -3737683524463703819
+      Relic Guardian 123x134 spritesheet with shadow_18: -6578386609294283409
+      Relic Guardian 123x134 spritesheet with shadow_180: -4167924379697930392
+      Relic Guardian 123x134 spritesheet with shadow_181: -6923105908333648379
+      Relic Guardian 123x134 spritesheet with shadow_182: 2343668934434485086
+      Relic Guardian 123x134 spritesheet with shadow_183: 252240413497883176
+      Relic Guardian 123x134 spritesheet with shadow_184: 6917422637290611220
+      Relic Guardian 123x134 spritesheet with shadow_185: -4558290831462017220
+      Relic Guardian 123x134 spritesheet with shadow_186: 5166054454496533472
+      Relic Guardian 123x134 spritesheet with shadow_187: -3129926133148184516
+      Relic Guardian 123x134 spritesheet with shadow_188: 571349574048385483
+      Relic Guardian 123x134 spritesheet with shadow_189: 8921274618477289405
+      Relic Guardian 123x134 spritesheet with shadow_19: -3191503062936369080
+      Relic Guardian 123x134 spritesheet with shadow_190: 6105388373626596336
+      Relic Guardian 123x134 spritesheet with shadow_191: 3252488570293860865
+      Relic Guardian 123x134 spritesheet with shadow_192: -4958085061594631232
+      Relic Guardian 123x134 spritesheet with shadow_193: -450975965673922730
+      Relic Guardian 123x134 spritesheet with shadow_194: 6418927778864976723
+      Relic Guardian 123x134 spritesheet with shadow_195: -3404377521896427000
+      Relic Guardian 123x134 spritesheet with shadow_196: -7252461270233143990
+      Relic Guardian 123x134 spritesheet with shadow_197: -839674523578703605
+      Relic Guardian 123x134 spritesheet with shadow_198: -7877822788513583572
+      Relic Guardian 123x134 spritesheet with shadow_199: 1689279528895327924
+      Relic Guardian 123x134 spritesheet with shadow_2: -817084551218730173
+      Relic Guardian 123x134 spritesheet with shadow_20: -1219259284595804168
+      Relic Guardian 123x134 spritesheet with shadow_200: 2439816253708140058
+      Relic Guardian 123x134 spritesheet with shadow_201: 3369176480613371315
+      Relic Guardian 123x134 spritesheet with shadow_202: -3202770962007067592
+      Relic Guardian 123x134 spritesheet with shadow_203: 1119233830436813559
+      Relic Guardian 123x134 spritesheet with shadow_204: -6210899974130766720
+      Relic Guardian 123x134 spritesheet with shadow_205: 6632716661172159358
+      Relic Guardian 123x134 spritesheet with shadow_206: -8965278942123669497
+      Relic Guardian 123x134 spritesheet with shadow_207: 4029692601111959388
+      Relic Guardian 123x134 spritesheet with shadow_208: 3009177285664872024
+      Relic Guardian 123x134 spritesheet with shadow_209: 2684201103397852675
+      Relic Guardian 123x134 spritesheet with shadow_21: -5274049006225733258
+      Relic Guardian 123x134 spritesheet with shadow_210: -1076681871429120162
+      Relic Guardian 123x134 spritesheet with shadow_211: 8238672502839495625
+      Relic Guardian 123x134 spritesheet with shadow_212: 4326382136414723324
+      Relic Guardian 123x134 spritesheet with shadow_22: 8534522335927943702
+      Relic Guardian 123x134 spritesheet with shadow_23: 3527878490316049114
+      Relic Guardian 123x134 spritesheet with shadow_24: -3809911361858916963
+      Relic Guardian 123x134 spritesheet with shadow_25: 3827915257629268128
+      Relic Guardian 123x134 spritesheet with shadow_26: -7073602732413577798
+      Relic Guardian 123x134 spritesheet with shadow_27: -3586641282928949161
+      Relic Guardian 123x134 spritesheet with shadow_28: 8915540128736499256
+      Relic Guardian 123x134 spritesheet with shadow_29: 7539495522718930247
+      Relic Guardian 123x134 spritesheet with shadow_3: 4285548605530660682
+      Relic Guardian 123x134 spritesheet with shadow_30: 3464768791748706784
+      Relic Guardian 123x134 spritesheet with shadow_31: 6101156785719318433
+      Relic Guardian 123x134 spritesheet with shadow_32: 5215566223690115950
+      Relic Guardian 123x134 spritesheet with shadow_33: -2111306780655239569
+      Relic Guardian 123x134 spritesheet with shadow_34: 3930919764777137669
+      Relic Guardian 123x134 spritesheet with shadow_35: -3751302348995881090
+      Relic Guardian 123x134 spritesheet with shadow_36: -8943594370934338703
+      Relic Guardian 123x134 spritesheet with shadow_37: 6187809063391642234
+      Relic Guardian 123x134 spritesheet with shadow_38: 4676375606923493279
+      Relic Guardian 123x134 spritesheet with shadow_39: 4706923223929520693
+      Relic Guardian 123x134 spritesheet with shadow_4: 8461214790203330322
+      Relic Guardian 123x134 spritesheet with shadow_40: 3437949875817486433
+      Relic Guardian 123x134 spritesheet with shadow_41: 1220952528715771546
+      Relic Guardian 123x134 spritesheet with shadow_42: 6699490824282250249
+      Relic Guardian 123x134 spritesheet with shadow_43: -562839425951758959
+      Relic Guardian 123x134 spritesheet with shadow_44: -2047228593060025027
+      Relic Guardian 123x134 spritesheet with shadow_45: 3063260477641415243
+      Relic Guardian 123x134 spritesheet with shadow_46: -4288404139193073703
+      Relic Guardian 123x134 spritesheet with shadow_47: 7219202861410021248
+      Relic Guardian 123x134 spritesheet with shadow_48: 6323341339041485912
+      Relic Guardian 123x134 spritesheet with shadow_49: -5054528421730101426
+      Relic Guardian 123x134 spritesheet with shadow_5: 56207399866079012
+      Relic Guardian 123x134 spritesheet with shadow_50: 5373949093913248547
+      Relic Guardian 123x134 spritesheet with shadow_51: 3594094870385133235
+      Relic Guardian 123x134 spritesheet with shadow_52: -2760586945317327935
+      Relic Guardian 123x134 spritesheet with shadow_53: 5248698790082866147
+      Relic Guardian 123x134 spritesheet with shadow_54: 6385298223216584748
+      Relic Guardian 123x134 spritesheet with shadow_55: -2961120342185534781
+      Relic Guardian 123x134 spritesheet with shadow_56: 2951087760572333265
+      Relic Guardian 123x134 spritesheet with shadow_57: 2517384500439459929
+      Relic Guardian 123x134 spritesheet with shadow_58: -8713504239501934031
+      Relic Guardian 123x134 spritesheet with shadow_59: 8255407651942467326
+      Relic Guardian 123x134 spritesheet with shadow_6: -3970070215220657016
+      Relic Guardian 123x134 spritesheet with shadow_60: -2500477421524633163
+      Relic Guardian 123x134 spritesheet with shadow_61: 2608912029187721214
+      Relic Guardian 123x134 spritesheet with shadow_62: -3566652215117910448
+      Relic Guardian 123x134 spritesheet with shadow_63: -887794747972457454
+      Relic Guardian 123x134 spritesheet with shadow_64: -2710952779319511448
+      Relic Guardian 123x134 spritesheet with shadow_65: -1879901584358951682
+      Relic Guardian 123x134 spritesheet with shadow_66: -7421444684962651484
+      Relic Guardian 123x134 spritesheet with shadow_67: -1107843755151426593
+      Relic Guardian 123x134 spritesheet with shadow_68: -2499755480115163777
+      Relic Guardian 123x134 spritesheet with shadow_69: -6373205635917358187
+      Relic Guardian 123x134 spritesheet with shadow_7: 6845073218708722266
+      Relic Guardian 123x134 spritesheet with shadow_70: -1197220443523035426
+      Relic Guardian 123x134 spritesheet with shadow_71: -1234493543853012762
+      Relic Guardian 123x134 spritesheet with shadow_72: 9174418943179981600
+      Relic Guardian 123x134 spritesheet with shadow_73: 5305483366871586532
+      Relic Guardian 123x134 spritesheet with shadow_74: 3633463094598299984
+      Relic Guardian 123x134 spritesheet with shadow_75: -2588994958074045774
+      Relic Guardian 123x134 spritesheet with shadow_76: 104223713559659092
+      Relic Guardian 123x134 spritesheet with shadow_77: 6462148087339519481
+      Relic Guardian 123x134 spritesheet with shadow_78: 5051530354318307361
+      Relic Guardian 123x134 spritesheet with shadow_79: 7270803353248413175
+      Relic Guardian 123x134 spritesheet with shadow_8: -6742964194014807468
+      Relic Guardian 123x134 spritesheet with shadow_80: 7670350674643406373
+      Relic Guardian 123x134 spritesheet with shadow_81: -773864213084390524
+      Relic Guardian 123x134 spritesheet with shadow_82: 4754024749888767346
+      Relic Guardian 123x134 spritesheet with shadow_83: 8827269056769549118
+      Relic Guardian 123x134 spritesheet with shadow_84: 6550622352339386344
+      Relic Guardian 123x134 spritesheet with shadow_85: 4499004379829457384
+      Relic Guardian 123x134 spritesheet with shadow_86: 1583541788753241336
+      Relic Guardian 123x134 spritesheet with shadow_87: -3304974310028178532
+      Relic Guardian 123x134 spritesheet with shadow_88: 5616910220709083299
+      Relic Guardian 123x134 spritesheet with shadow_89: -8539128194599803010
+      Relic Guardian 123x134 spritesheet with shadow_9: -4692210834550857932
+      Relic Guardian 123x134 spritesheet with shadow_90: -1363110247158295381
+      Relic Guardian 123x134 spritesheet with shadow_91: 683435887202470736
+      Relic Guardian 123x134 spritesheet with shadow_92: -135831249772734804
+      Relic Guardian 123x134 spritesheet with shadow_93: 3998417662019850626
+      Relic Guardian 123x134 spritesheet with shadow_94: 6238151586187534832
+      Relic Guardian 123x134 spritesheet with shadow_95: 7728727281241563861
+      Relic Guardian 123x134 spritesheet with shadow_96: 9109932448414340135
+      Relic Guardian 123x134 spritesheet with shadow_97: -5513140572653108604
+      Relic Guardian 123x134 spritesheet with shadow_98: -5893877843733449079
+      Relic Guardian 123x134 spritesheet with shadow_99: -3544280185846879240
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

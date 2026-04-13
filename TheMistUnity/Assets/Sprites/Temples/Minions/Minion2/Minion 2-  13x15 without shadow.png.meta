@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 1992e6abc8c93dd438e540614d2dd661
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6069475255768502690
+    second: Minion 2-  13x15 without shadow_0
+  - first:
+      213: -8227860999631590890
+    second: Minion 2-  13x15 without shadow_1
+  - first:
+      213: -8016073553529347600
+    second: Minion 2-  13x15 without shadow_2
+  - first:
+      213: 7245311858932053462
+    second: Minion 2-  13x15 without shadow_3
+  - first:
+      213: 1952844897071188357
+    second: Minion 2-  13x15 without shadow_4
+  - first:
+      213: 690809469207777394
+    second: Minion 2-  13x15 without shadow_5
+  - first:
+      213: 2451050922292778030
+    second: Minion 2-  13x15 without shadow_6
+  - first:
+      213: 4465292029392769284
+    second: Minion 2-  13x15 without shadow_7
+  - first:
+      213: -918204694207766756
+    second: Minion 2-  13x15 without shadow_8
+  - first:
+      213: -7805905545081978540
+    second: Minion 2-  13x15 without shadow_9
+  - first:
+      213: 3957479324462313368
+    second: Minion 2-  13x15 without shadow_10
+  - first:
+      213: -3936418200829192062
+    second: Minion 2-  13x15 without shadow_11
+  - first:
+      213: -6171212169759323267
+    second: Minion 2-  13x15 without shadow_12
+  - first:
+      213: -2127934414332199965
+    second: Minion 2-  13x15 without shadow_13
+  - first:
+      213: -7822651983698980268
+    second: Minion 2-  13x15 without shadow_14
+  - first:
+      213: -6955553743963539204
+    second: Minion 2-  13x15 without shadow_15
+  - first:
+      213: -7988784043296937910
+    second: Minion 2-  13x15 without shadow_16
+  - first:
+      213: -3098620353701122344
+    second: Minion 2-  13x15 without shadow_17
+  - first:
+      213: -327388567824974236
+    second: Minion 2-  13x15 without shadow_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1da11769b1b3450800000000000000
+      internalID: 6069475255768502690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 30
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a2baf8304c0dd80800000000000000
+      internalID: -8227860999631590890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 30
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1ea74f29f21c090800000000000000
+      internalID: -8016073553529347600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_3
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 17
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5f1969fb48c8460800000000000000
+      internalID: 7245311858932053462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_4
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 30
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589cc575616e91b10800000000000000
+      internalID: 1952844897071188357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_5
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 15
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2701b9b5d8f369900800000000000000
+      internalID: 690809469207777394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 30
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2497add3d1e30220800000000000000
+      internalID: 2451050922292778030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_7
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 30
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401d65e4177e7fd30800000000000000
+      internalID: 4465292029392769284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_8
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 17
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f56aa02b1e143f0800000000000000
+      internalID: -918204694207766756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_9
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 30
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4510323a34adba390800000000000000
+      internalID: -7805905545081978540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_10
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 16
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f678c5a7acbe630800000000000000
+      internalID: 3957479324462313368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_11
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 30
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288913c90880f59c0800000000000000
+      internalID: -3936418200829192062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b8de36a337b5aa0800000000000000
+      internalID: -6171212169759323267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_13
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 16
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb7668acee0872e0800000000000000
+      internalID: -2127934414332199965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4521e1e877b507390800000000000000
+      internalID: -7822651983698980268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf83ae2d8b8e87f90800000000000000
+      internalID: -6955553743963539204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_16
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a482aff2d33222190800000000000000
+      internalID: -7988784043296937910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_17
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de69db943d7ff4d0800000000000000
+      internalID: -3098620353701122344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2-  13x15 without shadow_18
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46eb44705d1e47bf0800000000000000
+      internalID: -327388567824974236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Minion 2-  13x15 without shadow_0: 6069475255768502690
+      Minion 2-  13x15 without shadow_1: -8227860999631590890
+      Minion 2-  13x15 without shadow_10: 3957479324462313368
+      Minion 2-  13x15 without shadow_11: -3936418200829192062
+      Minion 2-  13x15 without shadow_12: -6171212169759323267
+      Minion 2-  13x15 without shadow_13: -2127934414332199965
+      Minion 2-  13x15 without shadow_14: -7822651983698980268
+      Minion 2-  13x15 without shadow_15: -6955553743963539204
+      Minion 2-  13x15 without shadow_16: -7988784043296937910
+      Minion 2-  13x15 without shadow_17: -3098620353701122344
+      Minion 2-  13x15 without shadow_18: -327388567824974236
+      Minion 2-  13x15 without shadow_2: -8016073553529347600
+      Minion 2-  13x15 without shadow_3: 7245311858932053462
+      Minion 2-  13x15 without shadow_4: 1952844897071188357
+      Minion 2-  13x15 without shadow_5: 690809469207777394
+      Minion 2-  13x15 without shadow_6: 2451050922292778030
+      Minion 2-  13x15 without shadow_7: 4465292029392769284
+      Minion 2-  13x15 without shadow_8: -918204694207766756
+      Minion 2-  13x15 without shadow_9: -7805905545081978540
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

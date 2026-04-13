@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: 071320f7afd618e4a9013ec4ddc79d1a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2089128583197069601
+    second: Relic Guardian 2 Condensed-Launch Projectile_0
+  - first:
+      213: -475940047107691578
+    second: Relic Guardian 2 Condensed-Launch Projectile_1
+  - first:
+      213: 7125532507450984680
+    second: Relic Guardian 2 Condensed-Launch Projectile_2
+  - first:
+      213: 4450817498948092519
+    second: Relic Guardian 2 Condensed-Launch Projectile_3
+  - first:
+      213: -7518634326150613547
+    second: Relic Guardian 2 Condensed-Launch Projectile_4
+  - first:
+      213: -1871247752264167526
+    second: Relic Guardian 2 Condensed-Launch Projectile_5
+  - first:
+      213: 9191808118901636749
+    second: Relic Guardian 2 Condensed-Launch Projectile_6
+  - first:
+      213: 4519806044928799794
+    second: Relic Guardian 2 Condensed-Launch Projectile_7
+  - first:
+      213: 7759679614094142101
+    second: Relic Guardian 2 Condensed-Launch Projectile_8
+  - first:
+      213: -2818278946041105606
+    second: Relic Guardian 2 Condensed-Launch Projectile_9
+  - first:
+      213: 97607291917089997
+    second: Relic Guardian 2 Condensed-Launch Projectile_10
+  - first:
+      213: -3463132298198867019
+    second: Relic Guardian 2 Condensed-Launch Projectile_11
+  - first:
+      213: -4291482861450499385
+    second: Relic Guardian 2 Condensed-Launch Projectile_12
+  - first:
+      213: -5139459081471078930
+    second: Relic Guardian 2 Condensed-Launch Projectile_13
+  - first:
+      213: 6560603402291011822
+    second: Relic Guardian 2 Condensed-Launch Projectile_14
+  - first:
+      213: 5932251106117696295
+    second: Relic Guardian 2 Condensed-Launch Projectile_15
+  - first:
+      213: -8311092560042939598
+    second: Relic Guardian 2 Condensed-Launch Projectile_16
+  - first:
+      213: -4289754928077765825
+    second: Relic Guardian 2 Condensed-Launch Projectile_17
+  - first:
+      213: 3558316023401160932
+    second: Relic Guardian 2 Condensed-Launch Projectile_18
+  - first:
+      213: 1916358748241976858
+    second: Relic Guardian 2 Condensed-Launch Projectile_19
+  - first:
+      213: -5034070531994874289
+    second: Relic Guardian 2 Condensed-Launch Projectile_20
+  - first:
+      213: -332443701120932379
+    second: Relic Guardian 2 Condensed-Launch Projectile_21
+  - first:
+      213: 2714205338396598587
+    second: Relic Guardian 2 Condensed-Launch Projectile_22
+  - first:
+      213: 5432827701573232419
+    second: Relic Guardian 2 Condensed-Launch Projectile_23
+  - first:
+      213: -1960432497892517225
+    second: Relic Guardian 2 Condensed-Launch Projectile_24
+  - first:
+      213: 3473004268186109635
+    second: Relic Guardian 2 Condensed-Launch Projectile_25
+  - first:
+      213: 2829265924376098127
+    second: Relic Guardian 2 Condensed-Launch Projectile_26
+  - first:
+      213: -4168925846287298842
+    second: Relic Guardian 2 Condensed-Launch Projectile_27
+  - first:
+      213: 3595884335075308548
+    second: Relic Guardian 2 Condensed-Launch Projectile_28
+  - first:
+      213: -2827808363883103116
+    second: Relic Guardian 2 Condensed-Launch Projectile_29
+  - first:
+      213: -5267852382831636224
+    second: Relic Guardian 2 Condensed-Launch Projectile_30
+  - first:
+      213: 4796116101359267388
+    second: Relic Guardian 2 Condensed-Launch Projectile_31
+  - first:
+      213: -720415133737449811
+    second: Relic Guardian 2 Condensed-Launch Projectile_32
+  - first:
+      213: 2571745051345221751
+    second: Relic Guardian 2 Condensed-Launch Projectile_33
+  - first:
+      213: 3403409643573867287
+    second: Relic Guardian 2 Condensed-Launch Projectile_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1219393b0631efc10800000000000000
+      internalID: 2089128583197069601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_1
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 26
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb63cd7c0f1569f0800000000000000
+      internalID: -475940047107691578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 26
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e84d16101af2e260800000000000000
+      internalID: 7125532507450984680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_3
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 26
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 762c4e01fea74cd30800000000000000
+      internalID: 4450817498948092519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_4
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5fbb17ae178a790800000000000000
+      internalID: -7518634326150613547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_5
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9fcb87651ef706e0800000000000000
+      internalID: -1871247752264167526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_6
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8efeaaa8ccdf8f70800000000000000
+      internalID: 9191808118901636749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_7
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234f4a1a6a399be30800000000000000
+      internalID: 4519806044928799794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_8
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59aebe81f7befab60800000000000000
+      internalID: 7759679614094142101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_9
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33f14ffa3673e8d0800000000000000
+      internalID: -2818278946041105606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_10
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccb43a9055ca5100800000000000000
+      internalID: 97607291917089997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_11
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b3aca3f58b70ffc0800000000000000
+      internalID: -3463132298198867019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_12
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cae09323179174c0800000000000000
+      internalID: -4291482861450499385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_13
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 26
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eedc2470239fca8b0800000000000000
+      internalID: -5139459081471078930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_14
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 26
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee066c9e802fb0b50800000000000000
+      internalID: 6560603402291011822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_15
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 26
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b309a53f6935250800000000000000
+      internalID: 5932251106117696295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_16
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 26
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23baf37c95119ac80800000000000000
+      internalID: -8311092560042939598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_17
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 26
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33817afe9ab774c0800000000000000
+      internalID: -4289754928077765825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_18
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 26
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0286d029da16130800000000000000
+      internalID: 3558316023401160932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_19
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 26
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1edc23d026489a10800000000000000
+      internalID: 1916358748241976858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_20
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 26
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e0f26d583632ab0800000000000000
+      internalID: -5034070531994874289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_21
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 26
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5eed6173ce26bf0800000000000000
+      internalID: -332443701120932379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_22
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b312992ff5bcaa520800000000000000
+      internalID: 2714205338396598587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_23
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 327ac2e9208456b40800000000000000
+      internalID: 5432827701573232419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_24
+      rect:
+        serializedVersion: 2
+        x: 2308
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a1cfca7052bc4e0800000000000000
+      internalID: -1960432497892517225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_25
+      rect:
+        serializedVersion: 2
+        x: 2403
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c606ac2bf6923030800000000000000
+      internalID: 3473004268186109635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_26
+      rect:
+        serializedVersion: 2
+        x: 2498
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45fd8d3e52934720800000000000000
+      internalID: 2829265924376098127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_27
+      rect:
+        serializedVersion: 2
+        x: 2593
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eec91dd7000526c0800000000000000
+      internalID: -4168925846287298842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_28
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4043e8d30c527e130800000000000000
+      internalID: 3595884335075308548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_29
+      rect:
+        serializedVersion: 2
+        x: 2783
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c7ed1864b91c8d0800000000000000
+      internalID: -2827808363883103116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_30
+      rect:
+        serializedVersion: 2
+        x: 2878
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00110280b24d4e6b0800000000000000
+      internalID: -5267852382831636224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_31
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3eec0bee2a3f8240800000000000000
+      internalID: 4796116101359267388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_32
+      rect:
+        serializedVersion: 2
+        x: 3068
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da683c6b0429006f0800000000000000
+      internalID: -720415133737449811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_33
+      rect:
+        serializedVersion: 2
+        x: 3163
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778fc4e9f7ca0b320800000000000000
+      internalID: 2571745051345221751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Launch Projectile_34
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713fb5ee9075b3f20800000000000000
+      internalID: 3403409643573867287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic Guardian 2 Condensed-Launch Projectile_0: 2089128583197069601
+      Relic Guardian 2 Condensed-Launch Projectile_1: -475940047107691578
+      Relic Guardian 2 Condensed-Launch Projectile_10: 97607291917089997
+      Relic Guardian 2 Condensed-Launch Projectile_11: -3463132298198867019
+      Relic Guardian 2 Condensed-Launch Projectile_12: -4291482861450499385
+      Relic Guardian 2 Condensed-Launch Projectile_13: -5139459081471078930
+      Relic Guardian 2 Condensed-Launch Projectile_14: 6560603402291011822
+      Relic Guardian 2 Condensed-Launch Projectile_15: 5932251106117696295
+      Relic Guardian 2 Condensed-Launch Projectile_16: -8311092560042939598
+      Relic Guardian 2 Condensed-Launch Projectile_17: -4289754928077765825
+      Relic Guardian 2 Condensed-Launch Projectile_18: 3558316023401160932
+      Relic Guardian 2 Condensed-Launch Projectile_19: 1916358748241976858
+      Relic Guardian 2 Condensed-Launch Projectile_2: 7125532507450984680
+      Relic Guardian 2 Condensed-Launch Projectile_20: -5034070531994874289
+      Relic Guardian 2 Condensed-Launch Projectile_21: -332443701120932379
+      Relic Guardian 2 Condensed-Launch Projectile_22: 2714205338396598587
+      Relic Guardian 2 Condensed-Launch Projectile_23: 5432827701573232419
+      Relic Guardian 2 Condensed-Launch Projectile_24: -1960432497892517225
+      Relic Guardian 2 Condensed-Launch Projectile_25: 3473004268186109635
+      Relic Guardian 2 Condensed-Launch Projectile_26: 2829265924376098127
+      Relic Guardian 2 Condensed-Launch Projectile_27: -4168925846287298842
+      Relic Guardian 2 Condensed-Launch Projectile_28: 3595884335075308548
+      Relic Guardian 2 Condensed-Launch Projectile_29: -2827808363883103116
+      Relic Guardian 2 Condensed-Launch Projectile_3: 4450817498948092519
+      Relic Guardian 2 Condensed-Launch Projectile_30: -5267852382831636224
+      Relic Guardian 2 Condensed-Launch Projectile_31: 4796116101359267388
+      Relic Guardian 2 Condensed-Launch Projectile_32: -720415133737449811
+      Relic Guardian 2 Condensed-Launch Projectile_33: 2571745051345221751
+      Relic Guardian 2 Condensed-Launch Projectile_34: 3403409643573867287
+      Relic Guardian 2 Condensed-Launch Projectile_4: -7518634326150613547
+      Relic Guardian 2 Condensed-Launch Projectile_5: -1871247752264167526
+      Relic Guardian 2 Condensed-Launch Projectile_6: 9191808118901636749
+      Relic Guardian 2 Condensed-Launch Projectile_7: 4519806044928799794
+      Relic Guardian 2 Condensed-Launch Projectile_8: 7759679614094142101
+      Relic Guardian 2 Condensed-Launch Projectile_9: -2818278946041105606
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

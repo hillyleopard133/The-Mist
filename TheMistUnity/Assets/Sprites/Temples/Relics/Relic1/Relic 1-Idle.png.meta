@@ -1,0 +1,5135 @@
+fileFormatVersion: 2
+guid: 69caf825eaefb614fbbc5f334033760c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4018820794021572984
+    second: Relic 1-Idle_0
+  - first:
+      213: 3727977688264877555
+    second: Relic 1-Idle_1
+  - first:
+      213: 509324749602284374
+    second: Relic 1-Idle_2
+  - first:
+      213: -9165493867581224488
+    second: Relic 1-Idle_3
+  - first:
+      213: 7873014345341031128
+    second: Relic 1-Idle_4
+  - first:
+      213: 3546792673916344052
+    second: Relic 1-Idle_5
+  - first:
+      213: -3398701346124848386
+    second: Relic 1-Idle_6
+  - first:
+      213: -7902546893059388222
+    second: Relic 1-Idle_7
+  - first:
+      213: 3036097702047720352
+    second: Relic 1-Idle_8
+  - first:
+      213: 7359961065070685027
+    second: Relic 1-Idle_9
+  - first:
+      213: 5896364160566431311
+    second: Relic 1-Idle_10
+  - first:
+      213: -5563464917805026846
+    second: Relic 1-Idle_11
+  - first:
+      213: -9105767873179405785
+    second: Relic 1-Idle_12
+  - first:
+      213: 6197025633486243756
+    second: Relic 1-Idle_13
+  - first:
+      213: 7751734751652168070
+    second: Relic 1-Idle_14
+  - first:
+      213: 4150498813790876707
+    second: Relic 1-Idle_15
+  - first:
+      213: -7156475905539688975
+    second: Relic 1-Idle_16
+  - first:
+      213: -2918276562720371129
+    second: Relic 1-Idle_17
+  - first:
+      213: 5211669558855049374
+    second: Relic 1-Idle_18
+  - first:
+      213: -45813732391872452
+    second: Relic 1-Idle_19
+  - first:
+      213: 1402275560773337549
+    second: Relic 1-Idle_20
+  - first:
+      213: 3392253879870587752
+    second: Relic 1-Idle_21
+  - first:
+      213: -3884979717325888279
+    second: Relic 1-Idle_22
+  - first:
+      213: 3758916061493642367
+    second: Relic 1-Idle_23
+  - first:
+      213: -7814018957305478806
+    second: Relic 1-Idle_24
+  - first:
+      213: -4919462516048701363
+    second: Relic 1-Idle_25
+  - first:
+      213: -4446152874311424847
+    second: Relic 1-Idle_26
+  - first:
+      213: 1158913617571592270
+    second: Relic 1-Idle_27
+  - first:
+      213: -73509157018896492
+    second: Relic 1-Idle_28
+  - first:
+      213: 6665733468382925604
+    second: Relic 1-Idle_29
+  - first:
+      213: -7093378350852584317
+    second: Relic 1-Idle_30
+  - first:
+      213: 7453077651536144924
+    second: Relic 1-Idle_31
+  - first:
+      213: 7693140002213812068
+    second: Relic 1-Idle_32
+  - first:
+      213: 2264640478275146437
+    second: Relic 1-Idle_33
+  - first:
+      213: 1972564990762350090
+    second: Relic 1-Idle_34
+  - first:
+      213: 3256284090577099337
+    second: Relic 1-Idle_35
+  - first:
+      213: 1501728454534105540
+    second: Relic 1-Idle_36
+  - first:
+      213: 5957647461792869794
+    second: Relic 1-Idle_37
+  - first:
+      213: -2696481402708371060
+    second: Relic 1-Idle_38
+  - first:
+      213: 4811084675777182495
+    second: Relic 1-Idle_39
+  - first:
+      213: -474854504061966576
+    second: Relic 1-Idle_40
+  - first:
+      213: 2450738778921079614
+    second: Relic 1-Idle_41
+  - first:
+      213: -2597250874255087141
+    second: Relic 1-Idle_42
+  - first:
+      213: 7724067045166223621
+    second: Relic 1-Idle_43
+  - first:
+      213: -1634058483604253769
+    second: Relic 1-Idle_44
+  - first:
+      213: -3370355165823882781
+    second: Relic 1-Idle_45
+  - first:
+      213: 9075518540392522281
+    second: Relic 1-Idle_46
+  - first:
+      213: -1013323429637689079
+    second: Relic 1-Idle_47
+  - first:
+      213: -1841012863972615735
+    second: Relic 1-Idle_48
+  - first:
+      213: 3489072302311719861
+    second: Relic 1-Idle_49
+  - first:
+      213: 3882761665301098701
+    second: Relic 1-Idle_50
+  - first:
+      213: 1152211526863625110
+    second: Relic 1-Idle_51
+  - first:
+      213: 7120451844871116038
+    second: Relic 1-Idle_52
+  - first:
+      213: 9073760326665482404
+    second: Relic 1-Idle_53
+  - first:
+      213: 7309116016184839691
+    second: Relic 1-Idle_54
+  - first:
+      213: 726192166272596947
+    second: Relic 1-Idle_55
+  - first:
+      213: 3153467766754601863
+    second: Relic 1-Idle_56
+  - first:
+      213: -677995654716949655
+    second: Relic 1-Idle_57
+  - first:
+      213: -6151171090339774005
+    second: Relic 1-Idle_58
+  - first:
+      213: 2053038794446492973
+    second: Relic 1-Idle_59
+  - first:
+      213: 39268757011011807
+    second: Relic 1-Idle_60
+  - first:
+      213: -6465262845415179809
+    second: Relic 1-Idle_61
+  - first:
+      213: 5956753659070919518
+    second: Relic 1-Idle_62
+  - first:
+      213: -8711924466640982312
+    second: Relic 1-Idle_63
+  - first:
+      213: 7329910505406232359
+    second: Relic 1-Idle_64
+  - first:
+      213: -1339679199762186986
+    second: Relic 1-Idle_65
+  - first:
+      213: 4202357563648779181
+    second: Relic 1-Idle_66
+  - first:
+      213: 5783659330086865114
+    second: Relic 1-Idle_67
+  - first:
+      213: 4973080693317109674
+    second: Relic 1-Idle_68
+  - first:
+      213: -1239914156231025589
+    second: Relic 1-Idle_69
+  - first:
+      213: -7435386098576563841
+    second: Relic 1-Idle_70
+  - first:
+      213: -4883492485365287480
+    second: Relic 1-Idle_71
+  - first:
+      213: 2565751176193610845
+    second: Relic 1-Idle_72
+  - first:
+      213: 2271815707827473089
+    second: Relic 1-Idle_73
+  - first:
+      213: 3889631047744399160
+    second: Relic 1-Idle_74
+  - first:
+      213: -3430105208733178494
+    second: Relic 1-Idle_75
+  - first:
+      213: -4155802349079135424
+    second: Relic 1-Idle_76
+  - first:
+      213: 8228542810797890698
+    second: Relic 1-Idle_77
+  - first:
+      213: -217594524512953114
+    second: Relic 1-Idle_78
+  - first:
+      213: 2556996897768517534
+    second: Relic 1-Idle_79
+  - first:
+      213: 8732510446963825113
+    second: Relic 1-Idle_80
+  - first:
+      213: -6725392452610632332
+    second: Relic 1-Idle_81
+  - first:
+      213: 4692752560029967765
+    second: Relic 1-Idle_82
+  - first:
+      213: 2740509957780158244
+    second: Relic 1-Idle_83
+  - first:
+      213: 55150347176494332
+    second: Relic 1-Idle_84
+  - first:
+      213: 3923856352017193485
+    second: Relic 1-Idle_85
+  - first:
+      213: 9007815230746004392
+    second: Relic 1-Idle_86
+  - first:
+      213: 7085856114915567964
+    second: Relic 1-Idle_87
+  - first:
+      213: 2282563319282958558
+    second: Relic 1-Idle_88
+  - first:
+      213: -6657801415304635881
+    second: Relic 1-Idle_89
+  - first:
+      213: 4275361444836312529
+    second: Relic 1-Idle_90
+  - first:
+      213: -5576487897591319899
+    second: Relic 1-Idle_91
+  - first:
+      213: -5048443054235972645
+    second: Relic 1-Idle_92
+  - first:
+      213: 5526453999524580444
+    second: Relic 1-Idle_93
+  - first:
+      213: -8839371709715466720
+    second: Relic 1-Idle_94
+  - first:
+      213: 6928815059082067368
+    second: Relic 1-Idle_95
+  - first:
+      213: -5783485988571078464
+    second: Relic 1-Idle_96
+  - first:
+      213: 8963116082144496636
+    second: Relic 1-Idle_97
+  - first:
+      213: -5631749103859214338
+    second: Relic 1-Idle_98
+  - first:
+      213: -4173053555901978181
+    second: Relic 1-Idle_99
+  - first:
+      213: -7437544699186454191
+    second: Relic 1-Idle_100
+  - first:
+      213: -7001293311308592113
+    second: Relic 1-Idle_101
+  - first:
+      213: -5615323370272302423
+    second: Relic 1-Idle_102
+  - first:
+      213: 1239917570921335154
+    second: Relic 1-Idle_103
+  - first:
+      213: 7151150948438630496
+    second: Relic 1-Idle_104
+  - first:
+      213: 5957249030663052557
+    second: Relic 1-Idle_105
+  - first:
+      213: -8982594149564947282
+    second: Relic 1-Idle_106
+  - first:
+      213: 3119252207623832602
+    second: Relic 1-Idle_107
+  - first:
+      213: 5277896625652678819
+    second: Relic 1-Idle_108
+  - first:
+      213: -5618428487823663659
+    second: Relic 1-Idle_109
+  - first:
+      213: 339112440378756244
+    second: Relic 1-Idle_110
+  - first:
+      213: -6287449712696449042
+    second: Relic 1-Idle_111
+  - first:
+      213: 8479023868649522105
+    second: Relic 1-Idle_112
+  - first:
+      213: -8425574235388791209
+    second: Relic 1-Idle_113
+  - first:
+      213: 3325765073039092216
+    second: Relic 1-Idle_114
+  - first:
+      213: 4226653878985216041
+    second: Relic 1-Idle_115
+  - first:
+      213: 4850606544294513149
+    second: Relic 1-Idle_116
+  - first:
+      213: 5065087576181304252
+    second: Relic 1-Idle_117
+  - first:
+      213: -6217379761647826149
+    second: Relic 1-Idle_118
+  - first:
+      213: -9202081420822545485
+    second: Relic 1-Idle_119
+  - first:
+      213: -3728849959713597469
+    second: Relic 1-Idle_120
+  - first:
+      213: -567522061245991508
+    second: Relic 1-Idle_121
+  - first:
+      213: -7850138685930921207
+    second: Relic 1-Idle_122
+  - first:
+      213: -169343582770261863
+    second: Relic 1-Idle_123
+  - first:
+      213: 1439394411239135959
+    second: Relic 1-Idle_124
+  - first:
+      213: 6243676747164806447
+    second: Relic 1-Idle_125
+  - first:
+      213: -7362836566990285082
+    second: Relic 1-Idle_126
+  - first:
+      213: -3780525944840304160
+    second: Relic 1-Idle_127
+  - first:
+      213: -8160374161291959649
+    second: Relic 1-Idle_128
+  - first:
+      213: 7597281406741365050
+    second: Relic 1-Idle_129
+  - first:
+      213: -3728785115795423829
+    second: Relic 1-Idle_130
+  - first:
+      213: 233075728784392386
+    second: Relic 1-Idle_131
+  - first:
+      213: -7357883260658495296
+    second: Relic 1-Idle_132
+  - first:
+      213: -3739410558722485260
+    second: Relic 1-Idle_133
+  - first:
+      213: -2632713934443501705
+    second: Relic 1-Idle_134
+  - first:
+      213: 4704876787040526246
+    second: Relic 1-Idle_135
+  - first:
+      213: 6610101108183433317
+    second: Relic 1-Idle_136
+  - first:
+      213: 276368279686363086
+    second: Relic 1-Idle_137
+  - first:
+      213: 453622421474682896
+    second: Relic 1-Idle_138
+  - first:
+      213: -3701177010520402530
+    second: Relic 1-Idle_139
+  - first:
+      213: 3741233117176539745
+    second: Relic 1-Idle_140
+  - first:
+      213: 2239594668477962816
+    second: Relic 1-Idle_141
+  - first:
+      213: 6894893872230321329
+    second: Relic 1-Idle_142
+  - first:
+      213: -6123972838921669542
+    second: Relic 1-Idle_143
+  - first:
+      213: 8150859464641915350
+    second: Relic 1-Idle_144
+  - first:
+      213: 6650480538667328747
+    second: Relic 1-Idle_145
+  - first:
+      213: 2287324980251914530
+    second: Relic 1-Idle_146
+  - first:
+      213: -3043831559037060485
+    second: Relic 1-Idle_147
+  - first:
+      213: 1234325423224707918
+    second: Relic 1-Idle_148
+  - first:
+      213: 2844358569114690593
+    second: Relic 1-Idle_149
+  - first:
+      213: 2245799800912152497
+    second: Relic 1-Idle_150
+  - first:
+      213: 8645726771906631501
+    second: Relic 1-Idle_151
+  - first:
+      213: -3016643965330951266
+    second: Relic 1-Idle_152
+  - first:
+      213: 3293163655060993111
+    second: Relic 1-Idle_153
+  - first:
+      213: 3580324876068080536
+    second: Relic 1-Idle_154
+  - first:
+      213: -5440390489917028459
+    second: Relic 1-Idle_155
+  - first:
+      213: 3372262150320279887
+    second: Relic 1-Idle_156
+  - first:
+      213: 5493154187463787481
+    second: Relic 1-Idle_157
+  - first:
+      213: -6038730936002030284
+    second: Relic 1-Idle_158
+  - first:
+      213: -3667944838597300661
+    second: Relic 1-Idle_159
+  - first:
+      213: -1182906952985040683
+    second: Relic 1-Idle_160
+  - first:
+      213: -8725514850852911270
+    second: Relic 1-Idle_161
+  - first:
+      213: 6320448332412814011
+    second: Relic 1-Idle_162
+  - first:
+      213: 8750110729300162545
+    second: Relic 1-Idle_163
+  - first:
+      213: -5914194549018863350
+    second: Relic 1-Idle_164
+  - first:
+      213: -7095188836250769527
+    second: Relic 1-Idle_165
+  - first:
+      213: -3418467913373948021
+    second: Relic 1-Idle_166
+  - first:
+      213: -5000904398252408046
+    second: Relic 1-Idle_167
+  - first:
+      213: 5442183761870567951
+    second: Relic 1-Idle_168
+  - first:
+      213: 1848757841862201248
+    second: Relic 1-Idle_169
+  - first:
+      213: 9057643172341291261
+    second: Relic 1-Idle_170
+  - first:
+      213: 6963477040693910685
+    second: Relic 1-Idle_171
+  - first:
+      213: -5215916381605429750
+    second: Relic 1-Idle_172
+  - first:
+      213: 1979319001918935411
+    second: Relic 1-Idle_173
+  - first:
+      213: -2964911677528570925
+    second: Relic 1-Idle_174
+  - first:
+      213: 4201611537886043812
+    second: Relic 1-Idle_175
+  - first:
+      213: 5381684467042437407
+    second: Relic 1-Idle_176
+  - first:
+      213: -8123565108523906978
+    second: Relic 1-Idle_177
+  - first:
+      213: -2871009160831339635
+    second: Relic 1-Idle_178
+  - first:
+      213: 6129944287066003911
+    second: Relic 1-Idle_179
+  - first:
+      213: 8915247612153821854
+    second: Relic 1-Idle_180
+  - first:
+      213: 8074056969475654049
+    second: Relic 1-Idle_181
+  - first:
+      213: -3594361428066977208
+    second: Relic 1-Idle_182
+  - first:
+      213: -507711919388591529
+    second: Relic 1-Idle_183
+  - first:
+      213: -8887610110875149511
+    second: Relic 1-Idle_184
+  - first:
+      213: -3755873788702997243
+    second: Relic 1-Idle_185
+  - first:
+      213: -2692394347079241554
+    second: Relic 1-Idle_186
+  - first:
+      213: 5703518200104466667
+    second: Relic 1-Idle_187
+  - first:
+      213: -1412323991554112270
+    second: Relic 1-Idle_188
+  - first:
+      213: 7971950419257279090
+    second: Relic 1-Idle_189
+  - first:
+      213: 5463661449594749416
+    second: Relic 1-Idle_190
+  - first:
+      213: -2874123344508362723
+    second: Relic 1-Idle_191
+  - first:
+      213: -3675883896107384004
+    second: Relic 1-Idle_192
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic 1-Idle_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e046cc7c74a38c0800000000000000
+      internalID: -4018820794021572984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f52c9fa4ff6cb330800000000000000
+      internalID: 3727977688264877555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653eb57492c711700800000000000000
+      internalID: 509324749602284374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9ccc763ef9dc080800000000000000
+      internalID: -9165493867581224488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_4
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d25b9585d0924d60800000000000000
+      internalID: 7873014345341031128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_5
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6ddbc252db83130800000000000000
+      internalID: 3546792673916344052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_6
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2269ef12365d0d0800000000000000
+      internalID: -3398701346124848386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc04526873845290800000000000000
+      internalID: -7902546893059388222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a32fe926c2622a20800000000000000
+      internalID: 3036097702047720352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b6e3c0895d32660800000000000000
+      internalID: 7359961065070685027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_10
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e08e8b6f714d150800000000000000
+      internalID: 5896364160566431311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_11
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e132ed322a9ac2b0800000000000000
+      internalID: -5563464917805026846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_12
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7223aff1d50d1a180800000000000000
+      internalID: -9105767873179405785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_13
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca700fbfaf1400650800000000000000
+      internalID: 6197025633486243756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_14
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6814749afa1b39b60800000000000000
+      internalID: 7751734751652168070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_15
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3247fac4ea8899930800000000000000
+      internalID: 4150498813790876707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_16
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f53aae94171fac90800000000000000
+      internalID: -7156475905539688975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_17
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e44ba8de23087d0800000000000000
+      internalID: -2918276562720371129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_18
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90a546e9d1935840800000000000000
+      internalID: 5211669558855049374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_19
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3892f237ac3d5ff0800000000000000
+      internalID: -45813732391872452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_20
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc14b156132e57310800000000000000
+      internalID: 1402275560773337549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_21
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86380a94ee4b31f20800000000000000
+      internalID: 3392253879870587752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_22
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e46135d787c51ac0800000000000000
+      internalID: -3884979717325888279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_23
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74c6d90e3a5a2430800000000000000
+      internalID: 3758916061493642367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_24
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6183a5a8270f8390800000000000000
+      internalID: -7814018957305478806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_25
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d485115f7ee8abbb0800000000000000
+      internalID: -4919462516048701363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_26
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4e59d74871c42c0800000000000000
+      internalID: -4446152874311424847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_27
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48b7b48bc9451010800000000000000
+      internalID: 1158913617571592270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_28
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4977628afc7dafef0800000000000000
+      internalID: -73509157018896492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_29
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423956ed541718c50800000000000000
+      internalID: 6665733468382925604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_30
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c4cf3e8f14f8d90800000000000000
+      internalID: -7093378350852584317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_31
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ae63fc2a6ae6760800000000000000
+      internalID: 7453077651536144924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_32
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4675d4f621683ca60800000000000000
+      internalID: 7693140002213812068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_33
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c29f83348e9d6f10800000000000000
+      internalID: 2264640478275146437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_34
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06f2c27865ff5b10800000000000000
+      internalID: 1972564990762350090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_35
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a9a9ab025a03d20800000000000000
+      internalID: 3256284090577099337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_36
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c90a99a21637d410800000000000000
+      internalID: 1501728454534105540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_37
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2adeb213dc0dda250800000000000000
+      internalID: 5957647461792869794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_38
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89de18637c249ad0800000000000000
+      internalID: -2696481402708371060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_39
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b360cb50864c240800000000000000
+      internalID: 4811084675777182495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_40
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017646d285af869f0800000000000000
+      internalID: -474854504061966576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_41
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e339dd25fe5c20220800000000000000
+      internalID: 2450738778921079614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_42
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd9e3773716b4fbd0800000000000000
+      internalID: -2597250874255087141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_43
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5011f60cd06613b60800000000000000
+      internalID: 7724067045166223621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_44
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b31e8e7778a259e0800000000000000
+      internalID: -1634058483604253769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_45
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e92a2665d71a31d0800000000000000
+      internalID: -3370355165823882781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_46
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92261904708b2fd70800000000000000
+      internalID: 9075518540392522281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_47
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9017dd5a5b3ffe1f0800000000000000
+      internalID: -1013323429637689079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_48
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9dcf7ed886376e0800000000000000
+      internalID: -1841012863972615735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_49
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b3c1f6e5ccab6030800000000000000
+      internalID: 3489072302311719861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_50
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0b6cfa92752e530800000000000000
+      internalID: 3882761665301098701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_51
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b11dc674a7dff00800000000000000
+      internalID: 1152211526863625110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_52
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60551d52a3de0d260800000000000000
+      internalID: 7120451844871116038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_53
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0bde731f87ced70800000000000000
+      internalID: 9073760326665482404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_54
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ec0d69a423f6560800000000000000
+      internalID: 7309116016184839691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_55
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db795d7de3f31a00800000000000000
+      internalID: 726192166272596947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_56
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b6d00e93e53cb20800000000000000
+      internalID: 3153467766754601863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_57
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b76515b864796f0800000000000000
+      internalID: -677995654716949655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_58
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc145afcb76a2aaa0800000000000000
+      internalID: -6151171090339774005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_59
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d255415f7ebdd7c10800000000000000
+      internalID: 2053038794446492973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_60
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd89968f9b28b8000800000000000000
+      internalID: 39268757011011807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_61
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd93f7f42b5c646a0800000000000000
+      internalID: -6465262845415179809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_62
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e533e6784e3aaa250800000000000000
+      internalID: 5956753659070919518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_63
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de64d7fad6091780800000000000000
+      internalID: -8711924466640982312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_64
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7277426e4c219b560800000000000000
+      internalID: 7329910505406232359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_65
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61df131add0886de0800000000000000
+      internalID: -1339679199762186986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_66
+      rect:
+        serializedVersion: 2
+        x: 2315
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3267860f5c15a30800000000000000
+      internalID: 4202357563648779181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_67
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad883bf748fa34050800000000000000
+      internalID: 5783659330086865114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_68
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa70584ca8ee30540800000000000000
+      internalID: 4973080693317109674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_69
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c1fdde4a0facee0800000000000000
+      internalID: -1239914156231025589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_70
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71677adcb330d890800000000000000
+      internalID: -7435386098576563841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_71
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5338a55795a3cb0800000000000000
+      internalID: -4883492485365287480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d549f0fc9116b9320800000000000000
+      internalID: 2565751176193610845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_73
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca8534895c178f10800000000000000
+      internalID: 2271815707827473089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_74
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837a22c64debaf530800000000000000
+      internalID: 3889631047744399160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_75
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285ed337c71d560d0800000000000000
+      internalID: -3430105208733178494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_76
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b776a28cf9356c0800000000000000
+      internalID: -4155802349079135424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_77
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8cd3b8f618a13270800000000000000
+      internalID: 8228542810797890698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_78
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ecd55dcee2fafcf0800000000000000
+      internalID: -217594524512953114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_79
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fa44781274c7320800000000000000
+      internalID: 2556996897768517534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_80
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d99aa41cfb103970800000000000000
+      internalID: 8732510446963825113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_81
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475dc0f623b9aa2a0800000000000000
+      internalID: -6725392452610632332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_82
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595246f0791002140800000000000000
+      internalID: 4692752560029967765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_83
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42738e8694f380620800000000000000
+      internalID: 2740509957780158244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_84
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4c1b4d2fee3c000800000000000000
+      internalID: 55150347176494332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_85
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a15ab0096547630800000000000000
+      internalID: 3923856352017193485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_86
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab08f61a30320d70800000000000000
+      internalID: 9007815230746004392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_87
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5962131894065260800000000000000
+      internalID: 7085856114915567964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_88
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0823fce3b4daf10800000000000000
+      internalID: 2282563319282958558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_89
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a9ca723ecba93a0800000000000000
+      internalID: -6657801415304635881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_90
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d58edd0592255b30800000000000000
+      internalID: 4275361444836312529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_91
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2fdc97dc55c92b0800000000000000
+      internalID: -5576487897591319899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_92
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb0a7b3ac350f9b0800000000000000
+      internalID: -5048443054235972645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_93
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c0335d1a8e1bc40800000000000000
+      internalID: 5526453999524580444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_94
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 026b5c4534e345580800000000000000
+      internalID: -8839371709715466720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_95
+      rect:
+        serializedVersion: 2
+        x: 2401
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8adb6f6f598182060800000000000000
+      internalID: 6928815059082067368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_96
+      rect:
+        serializedVersion: 2
+        x: 2506
+        y: 21
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0a5c7b22eecbfa0800000000000000
+      internalID: -5783485988571078464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_97
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb40dc8692636c70800000000000000
+      internalID: 8963116082144496636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_98
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7d850470208d1b0800000000000000
+      internalID: -5631749103859214338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_99
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb928c396e55616c0800000000000000
+      internalID: -4173053555901978181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_100
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151e6eb708888c890800000000000000
+      internalID: -7437544699186454191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_101
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c022be3d866de90800000000000000
+      internalID: -7001293311308592113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_102
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa58ff552d5212b0800000000000000
+      internalID: -5615323370272302423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_103
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279088d1672153110800000000000000
+      internalID: 1239917570921335154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_104
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060e1e036edfd3360800000000000000
+      internalID: 7151150948438630496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_105
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d16373e666ca250800000000000000
+      internalID: 5957249030663052557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_106
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea4eda9763a675380800000000000000
+      internalID: -8982594149564947282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_107
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1485483b5fc94b20800000000000000
+      internalID: 3119252207623832602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_108
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a0c24d740bde3940800000000000000
+      internalID: 5277896625652678819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_109
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ddd55bde055702b0800000000000000
+      internalID: -5618428487823663659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_110
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c01b3c7f4c4b400800000000000000
+      internalID: 339112440378756244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_111
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7a8937ccd7eb8a0800000000000000
+      internalID: -6287449712696449042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_112
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3c9e4e84b8ba570800000000000000
+      internalID: 8479023868649522105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_113
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756b7fe9fd8521b80800000000000000
+      internalID: -8425574235388791209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_114
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f965e896bd772e20800000000000000
+      internalID: 3325765073039092216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_115
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920d0752f4718aa30800000000000000
+      internalID: 4226653878985216041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_116
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df90cd1d3f0d05340800000000000000
+      internalID: 4850606544294513149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_117
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbbe786805eca4640800000000000000
+      internalID: 5065087576181304252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_118
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b47414c0e67b9a0800000000000000
+      internalID: -6217379761647826149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_119
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb76a5d3b3ab4080800000000000000
+      internalID: -9202081420822545485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_120
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e79a8ac7b6704cc0800000000000000
+      internalID: -3728849959713597469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_121
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca53c3131b1cf18f0800000000000000
+      internalID: -567522061245991508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_122
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903298bf474be0390800000000000000
+      internalID: -7850138685930921207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_123
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9909cff98ee56adf0800000000000000
+      internalID: -169343582770261863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_124
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da579d3791c9f310800000000000000
+      internalID: 1439394411239135959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_125
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2def1fcbeef5a650800000000000000
+      internalID: 6243676747164806447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_126
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6994df623f1d990800000000000000
+      internalID: -7362836566990285082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_127
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e945a9eeafd88bc0800000000000000
+      internalID: -3780525944840304160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_128
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92aae19fe680ce80800000000000000
+      internalID: -8160374161291959649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_129
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31cf73ff27fe6960800000000000000
+      internalID: 7597281406741365050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_130
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: badff3171b1b04cc0800000000000000
+      internalID: -3728785115795423829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_131
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c085f3f32d0c3300800000000000000
+      internalID: 233075728784392386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_132
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c058ad782c83e990800000000000000
+      internalID: -7357883260658495296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_133
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3500ab8e1fa1cc0800000000000000
+      internalID: -3739410558722485260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_134
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777264610a8b67bd0800000000000000
+      internalID: -2632713934443501705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_135
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af1883a2841b4140800000000000000
+      internalID: 4704876787040526246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_136
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56080b2afebcbbb50800000000000000
+      internalID: 6610101108183433317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_137
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec734e17c7bd5d300800000000000000
+      internalID: 276368279686363086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_138
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018a62e50379b4600800000000000000
+      internalID: 453622421474682896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_139
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95d61d5e17c2acc0800000000000000
+      internalID: -3701177010520402530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_140
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a2c3bb2b78be330800000000000000
+      internalID: 3741233117176539745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_141
+      rect:
+        serializedVersion: 2
+        x: 2313
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04adc7f2c73a41f10800000000000000
+      internalID: 2239594668477962816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_142
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc4e4232759faf50800000000000000
+      internalID: 6894893872230321329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_143
+      rect:
+        serializedVersion: 2
+        x: 2418
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54fee13627430ba0800000000000000
+      internalID: -6123972838921669542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_144
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d9ac1c7f7bad1170800000000000000
+      internalID: 8150859464641915350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_145
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be42aec60d04b4c50800000000000000
+      internalID: 6650480538667328747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_146
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221fac563f53ebf10800000000000000
+      internalID: 2287324980251914530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_147
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7af87fe25322c5d0800000000000000
+      internalID: -3043831559037060485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_148
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bda84ce64312110800000000000000
+      internalID: 1234325423224707918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_149
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1246bed6c01397720800000000000000
+      internalID: 2844358569114690593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_150
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7030a250faa2f10800000000000000
+      internalID: 2245799800912152497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_151
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47549821bacbf770800000000000000
+      internalID: 8645726771906631501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_152
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e937f90eb4ab226d0800000000000000
+      internalID: -3016643965330951266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_153
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754332775eaa3bd20800000000000000
+      internalID: 3293163655060993111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_154
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b4882618edfa130800000000000000
+      internalID: 3580324876068080536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_155
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59705118ca9df74b0800000000000000
+      internalID: -5440390489917028459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_156
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41d5570f8eacce20800000000000000
+      internalID: 3372262150320279887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_157
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d38a3821aa9b3c40800000000000000
+      internalID: 5493154187463787481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_158
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435df61553e123ca0800000000000000
+      internalID: -6038730936002030284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_159
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e2ea75a97d81dc0800000000000000
+      internalID: -3667944838597300661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_160
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8acf0c468759fe0800000000000000
+      internalID: -1182906952985040683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_161
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a574480197eb8e680800000000000000
+      internalID: -8725514850852911270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_162
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb20daa654eb6b750800000000000000
+      internalID: 6320448332412814011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_163
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f735452953ae6970800000000000000
+      internalID: 8750110729300162545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_164
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09dd25746f8ceda0800000000000000
+      internalID: -5914194549018863350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_165
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987a4f86853d88d90800000000000000
+      internalID: -7095188836250769527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_166
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87664b6b892f80d0800000000000000
+      internalID: -3418467913373948021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_167
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2130a7a12f7399ab0800000000000000
+      internalID: -5000904398252408046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_168
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ab1b82c45868b40800000000000000
+      internalID: 5442183761870567951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_169
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af0ae7467b18a910800000000000000
+      internalID: 1848757841862201248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_170
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df815adc97633bd70800000000000000
+      internalID: 9057643172341291261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_171
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c1624797d33a060800000000000000
+      internalID: 6963477040693910685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_172
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e7440afa75d97b0800000000000000
+      internalID: -5215916381605429750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_173
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3711f863524f77b10800000000000000
+      internalID: 1979319001918935411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_174
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3808eb9848ad6d0800000000000000
+      internalID: -2964911677528570925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_175
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae51efbe6f1f4a30800000000000000
+      internalID: 4201611537886043812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_176
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f194d4762859faa40800000000000000
+      internalID: 5381684467042437407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_177
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58cca4039c434f80800000000000000
+      internalID: -8123565108523906978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_178
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8371c521602828d0800000000000000
+      internalID: -2871009160831339635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_179
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9118be9dfe11550800000000000000
+      internalID: 6129944287066003911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_180
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9af31fd77259bb70800000000000000
+      internalID: 8915247612153821854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_181
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a10dd91900dc0070800000000000000
+      internalID: 8074056969475654049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_182
+      rect:
+        serializedVersion: 2
+        x: 1961
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ab3bd23534e1ec0800000000000000
+      internalID: -3594361428066977208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_183
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a7c9403be34f8f0800000000000000
+      internalID: -507711919388591529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_184
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93bdd1751bdd8a480800000000000000
+      internalID: -8887610110875149511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_185
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505482b40b470ebc0800000000000000
+      internalID: -3755873788702997243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_186
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea072133b91b2aad0800000000000000
+      internalID: -2692394347079241554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_187
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be8b33f9597f62f40800000000000000
+      internalID: 5703518200104466667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_188
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4c7afffca666ce0800000000000000
+      internalID: -1412323991554112270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_189
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2724bda4bae02ae60800000000000000
+      internalID: 7971950419257279090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_190
+      rect:
+        serializedVersion: 2
+        x: 2381
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e147140423d2db40800000000000000
+      internalID: 5463661449594749416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_191
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10ebe1cb001d18d0800000000000000
+      internalID: -2874123344508362723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Idle_192
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c33c0f87213acfcc0800000000000000
+      internalID: -3675883896107384004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic 1-Idle_0: -4018820794021572984
+      Relic 1-Idle_1: 3727977688264877555
+      Relic 1-Idle_10: 5896364160566431311
+      Relic 1-Idle_100: -7437544699186454191
+      Relic 1-Idle_101: -7001293311308592113
+      Relic 1-Idle_102: -5615323370272302423
+      Relic 1-Idle_103: 1239917570921335154
+      Relic 1-Idle_104: 7151150948438630496
+      Relic 1-Idle_105: 5957249030663052557
+      Relic 1-Idle_106: -8982594149564947282
+      Relic 1-Idle_107: 3119252207623832602
+      Relic 1-Idle_108: 5277896625652678819
+      Relic 1-Idle_109: -5618428487823663659
+      Relic 1-Idle_11: -5563464917805026846
+      Relic 1-Idle_110: 339112440378756244
+      Relic 1-Idle_111: -6287449712696449042
+      Relic 1-Idle_112: 8479023868649522105
+      Relic 1-Idle_113: -8425574235388791209
+      Relic 1-Idle_114: 3325765073039092216
+      Relic 1-Idle_115: 4226653878985216041
+      Relic 1-Idle_116: 4850606544294513149
+      Relic 1-Idle_117: 5065087576181304252
+      Relic 1-Idle_118: -6217379761647826149
+      Relic 1-Idle_119: -9202081420822545485
+      Relic 1-Idle_12: -9105767873179405785
+      Relic 1-Idle_120: -3728849959713597469
+      Relic 1-Idle_121: -567522061245991508
+      Relic 1-Idle_122: -7850138685930921207
+      Relic 1-Idle_123: -169343582770261863
+      Relic 1-Idle_124: 1439394411239135959
+      Relic 1-Idle_125: 6243676747164806447
+      Relic 1-Idle_126: -7362836566990285082
+      Relic 1-Idle_127: -3780525944840304160
+      Relic 1-Idle_128: -8160374161291959649
+      Relic 1-Idle_129: 7597281406741365050
+      Relic 1-Idle_13: 6197025633486243756
+      Relic 1-Idle_130: -3728785115795423829
+      Relic 1-Idle_131: 233075728784392386
+      Relic 1-Idle_132: -7357883260658495296
+      Relic 1-Idle_133: -3739410558722485260
+      Relic 1-Idle_134: -2632713934443501705
+      Relic 1-Idle_135: 4704876787040526246
+      Relic 1-Idle_136: 6610101108183433317
+      Relic 1-Idle_137: 276368279686363086
+      Relic 1-Idle_138: 453622421474682896
+      Relic 1-Idle_139: -3701177010520402530
+      Relic 1-Idle_14: 7751734751652168070
+      Relic 1-Idle_140: 3741233117176539745
+      Relic 1-Idle_141: 2239594668477962816
+      Relic 1-Idle_142: 6894893872230321329
+      Relic 1-Idle_143: -6123972838921669542
+      Relic 1-Idle_144: 8150859464641915350
+      Relic 1-Idle_145: 6650480538667328747
+      Relic 1-Idle_146: 2287324980251914530
+      Relic 1-Idle_147: -3043831559037060485
+      Relic 1-Idle_148: 1234325423224707918
+      Relic 1-Idle_149: 2844358569114690593
+      Relic 1-Idle_15: 4150498813790876707
+      Relic 1-Idle_150: 2245799800912152497
+      Relic 1-Idle_151: 8645726771906631501
+      Relic 1-Idle_152: -3016643965330951266
+      Relic 1-Idle_153: 3293163655060993111
+      Relic 1-Idle_154: 3580324876068080536
+      Relic 1-Idle_155: -5440390489917028459
+      Relic 1-Idle_156: 3372262150320279887
+      Relic 1-Idle_157: 5493154187463787481
+      Relic 1-Idle_158: -6038730936002030284
+      Relic 1-Idle_159: -3667944838597300661
+      Relic 1-Idle_16: -7156475905539688975
+      Relic 1-Idle_160: -1182906952985040683
+      Relic 1-Idle_161: -8725514850852911270
+      Relic 1-Idle_162: 6320448332412814011
+      Relic 1-Idle_163: 8750110729300162545
+      Relic 1-Idle_164: -5914194549018863350
+      Relic 1-Idle_165: -7095188836250769527
+      Relic 1-Idle_166: -3418467913373948021
+      Relic 1-Idle_167: -5000904398252408046
+      Relic 1-Idle_168: 5442183761870567951
+      Relic 1-Idle_169: 1848757841862201248
+      Relic 1-Idle_17: -2918276562720371129
+      Relic 1-Idle_170: 9057643172341291261
+      Relic 1-Idle_171: 6963477040693910685
+      Relic 1-Idle_172: -5215916381605429750
+      Relic 1-Idle_173: 1979319001918935411
+      Relic 1-Idle_174: -2964911677528570925
+      Relic 1-Idle_175: 4201611537886043812
+      Relic 1-Idle_176: 5381684467042437407
+      Relic 1-Idle_177: -8123565108523906978
+      Relic 1-Idle_178: -2871009160831339635
+      Relic 1-Idle_179: 6129944287066003911
+      Relic 1-Idle_18: 5211669558855049374
+      Relic 1-Idle_180: 8915247612153821854
+      Relic 1-Idle_181: 8074056969475654049
+      Relic 1-Idle_182: -3594361428066977208
+      Relic 1-Idle_183: -507711919388591529
+      Relic 1-Idle_184: -8887610110875149511
+      Relic 1-Idle_185: -3755873788702997243
+      Relic 1-Idle_186: -2692394347079241554
+      Relic 1-Idle_187: 5703518200104466667
+      Relic 1-Idle_188: -1412323991554112270
+      Relic 1-Idle_189: 7971950419257279090
+      Relic 1-Idle_19: -45813732391872452
+      Relic 1-Idle_190: 5463661449594749416
+      Relic 1-Idle_191: -2874123344508362723
+      Relic 1-Idle_192: -3675883896107384004
+      Relic 1-Idle_2: 509324749602284374
+      Relic 1-Idle_20: 1402275560773337549
+      Relic 1-Idle_21: 3392253879870587752
+      Relic 1-Idle_22: -3884979717325888279
+      Relic 1-Idle_23: 3758916061493642367
+      Relic 1-Idle_24: -7814018957305478806
+      Relic 1-Idle_25: -4919462516048701363
+      Relic 1-Idle_26: -4446152874311424847
+      Relic 1-Idle_27: 1158913617571592270
+      Relic 1-Idle_28: -73509157018896492
+      Relic 1-Idle_29: 6665733468382925604
+      Relic 1-Idle_3: -9165493867581224488
+      Relic 1-Idle_30: -7093378350852584317
+      Relic 1-Idle_31: 7453077651536144924
+      Relic 1-Idle_32: 7693140002213812068
+      Relic 1-Idle_33: 2264640478275146437
+      Relic 1-Idle_34: 1972564990762350090
+      Relic 1-Idle_35: 3256284090577099337
+      Relic 1-Idle_36: 1501728454534105540
+      Relic 1-Idle_37: 5957647461792869794
+      Relic 1-Idle_38: -2696481402708371060
+      Relic 1-Idle_39: 4811084675777182495
+      Relic 1-Idle_4: 7873014345341031128
+      Relic 1-Idle_40: -474854504061966576
+      Relic 1-Idle_41: 2450738778921079614
+      Relic 1-Idle_42: -2597250874255087141
+      Relic 1-Idle_43: 7724067045166223621
+      Relic 1-Idle_44: -1634058483604253769
+      Relic 1-Idle_45: -3370355165823882781
+      Relic 1-Idle_46: 9075518540392522281
+      Relic 1-Idle_47: -1013323429637689079
+      Relic 1-Idle_48: -1841012863972615735
+      Relic 1-Idle_49: 3489072302311719861
+      Relic 1-Idle_5: 3546792673916344052
+      Relic 1-Idle_50: 3882761665301098701
+      Relic 1-Idle_51: 1152211526863625110
+      Relic 1-Idle_52: 7120451844871116038
+      Relic 1-Idle_53: 9073760326665482404
+      Relic 1-Idle_54: 7309116016184839691
+      Relic 1-Idle_55: 726192166272596947
+      Relic 1-Idle_56: 3153467766754601863
+      Relic 1-Idle_57: -677995654716949655
+      Relic 1-Idle_58: -6151171090339774005
+      Relic 1-Idle_59: 2053038794446492973
+      Relic 1-Idle_6: -3398701346124848386
+      Relic 1-Idle_60: 39268757011011807
+      Relic 1-Idle_61: -6465262845415179809
+      Relic 1-Idle_62: 5956753659070919518
+      Relic 1-Idle_63: -8711924466640982312
+      Relic 1-Idle_64: 7329910505406232359
+      Relic 1-Idle_65: -1339679199762186986
+      Relic 1-Idle_66: 4202357563648779181
+      Relic 1-Idle_67: 5783659330086865114
+      Relic 1-Idle_68: 4973080693317109674
+      Relic 1-Idle_69: -1239914156231025589
+      Relic 1-Idle_7: -7902546893059388222
+      Relic 1-Idle_70: -7435386098576563841
+      Relic 1-Idle_71: -4883492485365287480
+      Relic 1-Idle_72: 2565751176193610845
+      Relic 1-Idle_73: 2271815707827473089
+      Relic 1-Idle_74: 3889631047744399160
+      Relic 1-Idle_75: -3430105208733178494
+      Relic 1-Idle_76: -4155802349079135424
+      Relic 1-Idle_77: 8228542810797890698
+      Relic 1-Idle_78: -217594524512953114
+      Relic 1-Idle_79: 2556996897768517534
+      Relic 1-Idle_8: 3036097702047720352
+      Relic 1-Idle_80: 8732510446963825113
+      Relic 1-Idle_81: -6725392452610632332
+      Relic 1-Idle_82: 4692752560029967765
+      Relic 1-Idle_83: 2740509957780158244
+      Relic 1-Idle_84: 55150347176494332
+      Relic 1-Idle_85: 3923856352017193485
+      Relic 1-Idle_86: 9007815230746004392
+      Relic 1-Idle_87: 7085856114915567964
+      Relic 1-Idle_88: 2282563319282958558
+      Relic 1-Idle_89: -6657801415304635881
+      Relic 1-Idle_9: 7359961065070685027
+      Relic 1-Idle_90: 4275361444836312529
+      Relic 1-Idle_91: -5576487897591319899
+      Relic 1-Idle_92: -5048443054235972645
+      Relic 1-Idle_93: 5526453999524580444
+      Relic 1-Idle_94: -8839371709715466720
+      Relic 1-Idle_95: 6928815059082067368
+      Relic 1-Idle_96: -5783485988571078464
+      Relic 1-Idle_97: 8963116082144496636
+      Relic 1-Idle_98: -5631749103859214338
+      Relic 1-Idle_99: -4173053555901978181
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

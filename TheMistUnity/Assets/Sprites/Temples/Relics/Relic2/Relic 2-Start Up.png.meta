@@ -1,0 +1,6617 @@
+fileFormatVersion: 2
+guid: 0be220de59149664f8704d52ccb47b90
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1617672618620029794
+    second: Relic 2-Start Up_0
+  - first:
+      213: -6892444958802155751
+    second: Relic 2-Start Up_1
+  - first:
+      213: -4545181162854804350
+    second: Relic 2-Start Up_2
+  - first:
+      213: -99974934254223381
+    second: Relic 2-Start Up_3
+  - first:
+      213: 8983179533975377551
+    second: Relic 2-Start Up_4
+  - first:
+      213: 4270164026097859724
+    second: Relic 2-Start Up_5
+  - first:
+      213: -6607338283254213571
+    second: Relic 2-Start Up_6
+  - first:
+      213: 9037458051347624232
+    second: Relic 2-Start Up_7
+  - first:
+      213: -5146887957647515222
+    second: Relic 2-Start Up_8
+  - first:
+      213: 6188052100149573419
+    second: Relic 2-Start Up_9
+  - first:
+      213: -6027693870790502482
+    second: Relic 2-Start Up_10
+  - first:
+      213: -906383059446838279
+    second: Relic 2-Start Up_11
+  - first:
+      213: -4755947609565240784
+    second: Relic 2-Start Up_12
+  - first:
+      213: 3924620460644135038
+    second: Relic 2-Start Up_13
+  - first:
+      213: 957406446580900179
+    second: Relic 2-Start Up_14
+  - first:
+      213: -7933864585602674267
+    second: Relic 2-Start Up_15
+  - first:
+      213: -7601889681252541828
+    second: Relic 2-Start Up_16
+  - first:
+      213: 2663325691750446634
+    second: Relic 2-Start Up_17
+  - first:
+      213: 2205752129694243203
+    second: Relic 2-Start Up_18
+  - first:
+      213: 9032673858205427572
+    second: Relic 2-Start Up_19
+  - first:
+      213: 2408330998405149075
+    second: Relic 2-Start Up_20
+  - first:
+      213: -8472647299092756335
+    second: Relic 2-Start Up_21
+  - first:
+      213: 2335346269630209289
+    second: Relic 2-Start Up_22
+  - first:
+      213: 6228087777378246608
+    second: Relic 2-Start Up_23
+  - first:
+      213: -901831382219643275
+    second: Relic 2-Start Up_24
+  - first:
+      213: -1143507414126752335
+    second: Relic 2-Start Up_25
+  - first:
+      213: -5678848432080078952
+    second: Relic 2-Start Up_26
+  - first:
+      213: -8581497264137225529
+    second: Relic 2-Start Up_27
+  - first:
+      213: 1619412599372600279
+    second: Relic 2-Start Up_28
+  - first:
+      213: -4040016179886704738
+    second: Relic 2-Start Up_29
+  - first:
+      213: 6686732571784933739
+    second: Relic 2-Start Up_30
+  - first:
+      213: 6137232798175925728
+    second: Relic 2-Start Up_31
+  - first:
+      213: 9114439266690648030
+    second: Relic 2-Start Up_32
+  - first:
+      213: 9192331917770772381
+    second: Relic 2-Start Up_33
+  - first:
+      213: -3070206984103215474
+    second: Relic 2-Start Up_34
+  - first:
+      213: 5238275337310904372
+    second: Relic 2-Start Up_35
+  - first:
+      213: 3600742091402675597
+    second: Relic 2-Start Up_36
+  - first:
+      213: 5002415211387208097
+    second: Relic 2-Start Up_37
+  - first:
+      213: 6037900600144926971
+    second: Relic 2-Start Up_38
+  - first:
+      213: -5721223672168124558
+    second: Relic 2-Start Up_39
+  - first:
+      213: -109320218583648065
+    second: Relic 2-Start Up_40
+  - first:
+      213: 1472254424169634144
+    second: Relic 2-Start Up_41
+  - first:
+      213: 4376656169298528621
+    second: Relic 2-Start Up_42
+  - first:
+      213: 1541112554405157838
+    second: Relic 2-Start Up_43
+  - first:
+      213: -6743277632596323535
+    second: Relic 2-Start Up_44
+  - first:
+      213: 9104136940306247237
+    second: Relic 2-Start Up_45
+  - first:
+      213: -8355328420039950903
+    second: Relic 2-Start Up_46
+  - first:
+      213: -4213329486882459509
+    second: Relic 2-Start Up_47
+  - first:
+      213: -6233497791824256943
+    second: Relic 2-Start Up_48
+  - first:
+      213: 2326942632977887411
+    second: Relic 2-Start Up_49
+  - first:
+      213: 6668926183751195585
+    second: Relic 2-Start Up_50
+  - first:
+      213: -4589188998650894857
+    second: Relic 2-Start Up_51
+  - first:
+      213: -6325575240038843497
+    second: Relic 2-Start Up_52
+  - first:
+      213: -4777933973915903497
+    second: Relic 2-Start Up_53
+  - first:
+      213: 4519921773608480711
+    second: Relic 2-Start Up_54
+  - first:
+      213: -7261855913160645323
+    second: Relic 2-Start Up_55
+  - first:
+      213: -6365996263352801832
+    second: Relic 2-Start Up_56
+  - first:
+      213: 7527516353642878510
+    second: Relic 2-Start Up_57
+  - first:
+      213: -1960346359746721872
+    second: Relic 2-Start Up_58
+  - first:
+      213: 7707307008583403897
+    second: Relic 2-Start Up_59
+  - first:
+      213: -2086237350135349952
+    second: Relic 2-Start Up_60
+  - first:
+      213: 4117351256613499819
+    second: Relic 2-Start Up_61
+  - first:
+      213: 3738649550019841809
+    second: Relic 2-Start Up_62
+  - first:
+      213: -8371727774049274197
+    second: Relic 2-Start Up_63
+  - first:
+      213: -5510092657223821928
+    second: Relic 2-Start Up_64
+  - first:
+      213: -2755619184192012161
+    second: Relic 2-Start Up_65
+  - first:
+      213: -1016910986701664333
+    second: Relic 2-Start Up_66
+  - first:
+      213: 388911760373923362
+    second: Relic 2-Start Up_67
+  - first:
+      213: -4948188496015523334
+    second: Relic 2-Start Up_68
+  - first:
+      213: 2100558834860159342
+    second: Relic 2-Start Up_69
+  - first:
+      213: -4166110785172730864
+    second: Relic 2-Start Up_70
+  - first:
+      213: 1432877172186784740
+    second: Relic 2-Start Up_71
+  - first:
+      213: -5846677080285194132
+    second: Relic 2-Start Up_72
+  - first:
+      213: -446336730475197189
+    second: Relic 2-Start Up_73
+  - first:
+      213: 2064117882260039058
+    second: Relic 2-Start Up_74
+  - first:
+      213: -8552862505953266571
+    second: Relic 2-Start Up_75
+  - first:
+      213: -4570467539159758479
+    second: Relic 2-Start Up_76
+  - first:
+      213: 5326585171697028694
+    second: Relic 2-Start Up_77
+  - first:
+      213: 3424306139956364778
+    second: Relic 2-Start Up_78
+  - first:
+      213: -1200780628892281264
+    second: Relic 2-Start Up_79
+  - first:
+      213: 7822131777559393413
+    second: Relic 2-Start Up_80
+  - first:
+      213: -6264897236042336020
+    second: Relic 2-Start Up_81
+  - first:
+      213: 9015003565354319208
+    second: Relic 2-Start Up_82
+  - first:
+      213: -383604948144652480
+    second: Relic 2-Start Up_83
+  - first:
+      213: 8295729312612682663
+    second: Relic 2-Start Up_84
+  - first:
+      213: -1131022309324257015
+    second: Relic 2-Start Up_85
+  - first:
+      213: 817867452931149249
+    second: Relic 2-Start Up_86
+  - first:
+      213: -4759121474295308935
+    second: Relic 2-Start Up_87
+  - first:
+      213: -7045495859363645259
+    second: Relic 2-Start Up_88
+  - first:
+      213: 3417985320286915410
+    second: Relic 2-Start Up_89
+  - first:
+      213: 9189192524003254257
+    second: Relic 2-Start Up_90
+  - first:
+      213: 1935996247495525551
+    second: Relic 2-Start Up_91
+  - first:
+      213: -6879383628136421912
+    second: Relic 2-Start Up_92
+  - first:
+      213: -3167986430047140750
+    second: Relic 2-Start Up_93
+  - first:
+      213: 9065650693707798276
+    second: Relic 2-Start Up_94
+  - first:
+      213: 2563143923352590464
+    second: Relic 2-Start Up_95
+  - first:
+      213: -5010869316511445694
+    second: Relic 2-Start Up_96
+  - first:
+      213: 5382848156419265537
+    second: Relic 2-Start Up_97
+  - first:
+      213: 3885564231764227786
+    second: Relic 2-Start Up_98
+  - first:
+      213: -8985175042758706941
+    second: Relic 2-Start Up_99
+  - first:
+      213: -6121699388793148832
+    second: Relic 2-Start Up_100
+  - first:
+      213: 5751781913272623455
+    second: Relic 2-Start Up_101
+  - first:
+      213: -9216463015933662230
+    second: Relic 2-Start Up_102
+  - first:
+      213: 5033826939769611884
+    second: Relic 2-Start Up_103
+  - first:
+      213: 8120568348900296385
+    second: Relic 2-Start Up_104
+  - first:
+      213: 9166039631509859333
+    second: Relic 2-Start Up_105
+  - first:
+      213: -8848259540809995294
+    second: Relic 2-Start Up_106
+  - first:
+      213: -5785258345362337025
+    second: Relic 2-Start Up_107
+  - first:
+      213: 2575084481635188744
+    second: Relic 2-Start Up_108
+  - first:
+      213: -841611550445824465
+    second: Relic 2-Start Up_109
+  - first:
+      213: 8335069793918993280
+    second: Relic 2-Start Up_110
+  - first:
+      213: -1759299157722953864
+    second: Relic 2-Start Up_111
+  - first:
+      213: 637390500984066504
+    second: Relic 2-Start Up_112
+  - first:
+      213: -8202522346224221477
+    second: Relic 2-Start Up_113
+  - first:
+      213: -6469395559063763380
+    second: Relic 2-Start Up_114
+  - first:
+      213: 122612554063942802
+    second: Relic 2-Start Up_115
+  - first:
+      213: -5602352026843064306
+    second: Relic 2-Start Up_116
+  - first:
+      213: 6655091836650092285
+    second: Relic 2-Start Up_117
+  - first:
+      213: -2656525903320912355
+    second: Relic 2-Start Up_118
+  - first:
+      213: 3662179105851557442
+    second: Relic 2-Start Up_119
+  - first:
+      213: -5730686856350015970
+    second: Relic 2-Start Up_120
+  - first:
+      213: -2986799861081339621
+    second: Relic 2-Start Up_121
+  - first:
+      213: -6706112535974164447
+    second: Relic 2-Start Up_122
+  - first:
+      213: -6594729320867392696
+    second: Relic 2-Start Up_123
+  - first:
+      213: 7421856796705735067
+    second: Relic 2-Start Up_124
+  - first:
+      213: -9119880090715035455
+    second: Relic 2-Start Up_125
+  - first:
+      213: 2315043359178816584
+    second: Relic 2-Start Up_126
+  - first:
+      213: 1362980193886862190
+    second: Relic 2-Start Up_127
+  - first:
+      213: 3221536203073174796
+    second: Relic 2-Start Up_128
+  - first:
+      213: -7033638167976232729
+    second: Relic 2-Start Up_129
+  - first:
+      213: 9057328146479431550
+    second: Relic 2-Start Up_130
+  - first:
+      213: -5888260200422893705
+    second: Relic 2-Start Up_131
+  - first:
+      213: 7263333381709581399
+    second: Relic 2-Start Up_132
+  - first:
+      213: -7980973894678275485
+    second: Relic 2-Start Up_133
+  - first:
+      213: 3379123571904691902
+    second: Relic 2-Start Up_134
+  - first:
+      213: -5538505480223405037
+    second: Relic 2-Start Up_135
+  - first:
+      213: 2214150221181035171
+    second: Relic 2-Start Up_136
+  - first:
+      213: -6459413540340498629
+    second: Relic 2-Start Up_137
+  - first:
+      213: 2412155649262935675
+    second: Relic 2-Start Up_138
+  - first:
+      213: -5626236889591309288
+    second: Relic 2-Start Up_139
+  - first:
+      213: 1239781282409865126
+    second: Relic 2-Start Up_140
+  - first:
+      213: -6106373796725919113
+    second: Relic 2-Start Up_141
+  - first:
+      213: 2371719288839581564
+    second: Relic 2-Start Up_142
+  - first:
+      213: -5027429526778327901
+    second: Relic 2-Start Up_143
+  - first:
+      213: 9195067653440706274
+    second: Relic 2-Start Up_144
+  - first:
+      213: -3718008161360838334
+    second: Relic 2-Start Up_145
+  - first:
+      213: -3598692567190092600
+    second: Relic 2-Start Up_146
+  - first:
+      213: -217987573774895281
+    second: Relic 2-Start Up_147
+  - first:
+      213: 1914193536880569202
+    second: Relic 2-Start Up_148
+  - first:
+      213: -2561453693274193988
+    second: Relic 2-Start Up_149
+  - first:
+      213: -2314384383736926386
+    second: Relic 2-Start Up_150
+  - first:
+      213: 1954689565555600595
+    second: Relic 2-Start Up_151
+  - first:
+      213: -6662120081239842617
+    second: Relic 2-Start Up_152
+  - first:
+      213: -3384230901394022840
+    second: Relic 2-Start Up_153
+  - first:
+      213: -6399089120791736869
+    second: Relic 2-Start Up_154
+  - first:
+      213: 5549182862645664281
+    second: Relic 2-Start Up_155
+  - first:
+      213: -4145161688000492921
+    second: Relic 2-Start Up_156
+  - first:
+      213: 7458911887469001689
+    second: Relic 2-Start Up_157
+  - first:
+      213: -6479845663588129902
+    second: Relic 2-Start Up_158
+  - first:
+      213: 5469699043255192330
+    second: Relic 2-Start Up_159
+  - first:
+      213: 7132048733282415733
+    second: Relic 2-Start Up_160
+  - first:
+      213: -3439623579967337533
+    second: Relic 2-Start Up_161
+  - first:
+      213: 4185758197861867902
+    second: Relic 2-Start Up_162
+  - first:
+      213: 6951451903030065609
+    second: Relic 2-Start Up_163
+  - first:
+      213: 7301819168667788231
+    second: Relic 2-Start Up_164
+  - first:
+      213: -5420137016052005591
+    second: Relic 2-Start Up_165
+  - first:
+      213: -4663351726577891214
+    second: Relic 2-Start Up_166
+  - first:
+      213: -2519384499014543324
+    second: Relic 2-Start Up_167
+  - first:
+      213: -7418231651264770951
+    second: Relic 2-Start Up_168
+  - first:
+      213: -6288288855050265549
+    second: Relic 2-Start Up_169
+  - first:
+      213: 3122072990470755096
+    second: Relic 2-Start Up_170
+  - first:
+      213: -6674702201854970501
+    second: Relic 2-Start Up_171
+  - first:
+      213: -6519479378287558375
+    second: Relic 2-Start Up_172
+  - first:
+      213: 1014099488053396629
+    second: Relic 2-Start Up_173
+  - first:
+      213: 5249580236523243087
+    second: Relic 2-Start Up_174
+  - first:
+      213: 3580759440356990715
+    second: Relic 2-Start Up_175
+  - first:
+      213: 2120155834078601959
+    second: Relic 2-Start Up_176
+  - first:
+      213: -1255527572230013324
+    second: Relic 2-Start Up_177
+  - first:
+      213: -4543134540154187083
+    second: Relic 2-Start Up_178
+  - first:
+      213: -8925920759269281548
+    second: Relic 2-Start Up_179
+  - first:
+      213: -1914213533846307121
+    second: Relic 2-Start Up_180
+  - first:
+      213: 6471306677211693592
+    second: Relic 2-Start Up_181
+  - first:
+      213: 8094727885793296451
+    second: Relic 2-Start Up_182
+  - first:
+      213: -5271223128776424138
+    second: Relic 2-Start Up_183
+  - first:
+      213: -8046264974216680491
+    second: Relic 2-Start Up_184
+  - first:
+      213: 1161474054847172863
+    second: Relic 2-Start Up_185
+  - first:
+      213: 6649604272252338397
+    second: Relic 2-Start Up_186
+  - first:
+      213: 7449386344298711611
+    second: Relic 2-Start Up_187
+  - first:
+      213: 1441911034889774653
+    second: Relic 2-Start Up_188
+  - first:
+      213: -5698134532453585121
+    second: Relic 2-Start Up_189
+  - first:
+      213: 113157331841751686
+    second: Relic 2-Start Up_190
+  - first:
+      213: -8597909927374655525
+    second: Relic 2-Start Up_191
+  - first:
+      213: -686209238281283044
+    second: Relic 2-Start Up_192
+  - first:
+      213: -7509558589622250708
+    second: Relic 2-Start Up_193
+  - first:
+      213: 4046364111112716288
+    second: Relic 2-Start Up_194
+  - first:
+      213: -9768941450444935
+    second: Relic 2-Start Up_195
+  - first:
+      213: -2546909602731760619
+    second: Relic 2-Start Up_196
+  - first:
+      213: -2014177631283614057
+    second: Relic 2-Start Up_197
+  - first:
+      213: -6472638487479424375
+    second: Relic 2-Start Up_198
+  - first:
+      213: -6142696095495042991
+    second: Relic 2-Start Up_199
+  - first:
+      213: -4489665064889117295
+    second: Relic 2-Start Up_200
+  - first:
+      213: -1260623093193942440
+    second: Relic 2-Start Up_201
+  - first:
+      213: -6933365473411623257
+    second: Relic 2-Start Up_202
+  - first:
+      213: 1892740246729413637
+    second: Relic 2-Start Up_203
+  - first:
+      213: 8989635960900376311
+    second: Relic 2-Start Up_204
+  - first:
+      213: -3006872625087545512
+    second: Relic 2-Start Up_205
+  - first:
+      213: -2723161779581194336
+    second: Relic 2-Start Up_206
+  - first:
+      213: -3614594260737274939
+    second: Relic 2-Start Up_207
+  - first:
+      213: -8622024594976561823
+    second: Relic 2-Start Up_208
+  - first:
+      213: 4650859385578056037
+    second: Relic 2-Start Up_209
+  - first:
+      213: 4168802679514023697
+    second: Relic 2-Start Up_210
+  - first:
+      213: -2741945441559561670
+    second: Relic 2-Start Up_211
+  - first:
+      213: -4330020570826650359
+    second: Relic 2-Start Up_212
+  - first:
+      213: 3328890898494786357
+    second: Relic 2-Start Up_213
+  - first:
+      213: 341902311730418860
+    second: Relic 2-Start Up_214
+  - first:
+      213: -2612557386210438341
+    second: Relic 2-Start Up_215
+  - first:
+      213: 1662343507790269659
+    second: Relic 2-Start Up_216
+  - first:
+      213: 6562722911132783659
+    second: Relic 2-Start Up_217
+  - first:
+      213: -7738041773447584692
+    second: Relic 2-Start Up_218
+  - first:
+      213: 5217971948228576560
+    second: Relic 2-Start Up_219
+  - first:
+      213: -7896302418379489670
+    second: Relic 2-Start Up_220
+  - first:
+      213: 254476815457496205
+    second: Relic 2-Start Up_221
+  - first:
+      213: 2806985098624043151
+    second: Relic 2-Start Up_222
+  - first:
+      213: -8658224627340337011
+    second: Relic 2-Start Up_223
+  - first:
+      213: -3998685056931290757
+    second: Relic 2-Start Up_224
+  - first:
+      213: 3496590497240652987
+    second: Relic 2-Start Up_225
+  - first:
+      213: -484361527307024781
+    second: Relic 2-Start Up_226
+  - first:
+      213: 4173259326553551255
+    second: Relic 2-Start Up_227
+  - first:
+      213: -2886609035447854480
+    second: Relic 2-Start Up_228
+  - first:
+      213: -616121116341894023
+    second: Relic 2-Start Up_229
+  - first:
+      213: -3214368311679521412
+    second: Relic 2-Start Up_230
+  - first:
+      213: -5101516096179194007
+    second: Relic 2-Start Up_231
+  - first:
+      213: -4614022677904341760
+    second: Relic 2-Start Up_232
+  - first:
+      213: 8225148752148859234
+    second: Relic 2-Start Up_233
+  - first:
+      213: 7038391364881299590
+    second: Relic 2-Start Up_234
+  - first:
+      213: -3122820841518331948
+    second: Relic 2-Start Up_235
+  - first:
+      213: 8948367311871857301
+    second: Relic 2-Start Up_236
+  - first:
+      213: -6870112541571819351
+    second: Relic 2-Start Up_237
+  - first:
+      213: -5282739275768650799
+    second: Relic 2-Start Up_238
+  - first:
+      213: 8177529092238659941
+    second: Relic 2-Start Up_239
+  - first:
+      213: 5149123910534936222
+    second: Relic 2-Start Up_240
+  - first:
+      213: -8516410147777682895
+    second: Relic 2-Start Up_241
+  - first:
+      213: -8877667755569843084
+    second: Relic 2-Start Up_242
+  - first:
+      213: -3281425260699372426
+    second: Relic 2-Start Up_243
+  - first:
+      213: -3725364678919576685
+    second: Relic 2-Start Up_244
+  - first:
+      213: 8204944645799884625
+    second: Relic 2-Start Up_245
+  - first:
+      213: -4868244335653588044
+    second: Relic 2-Start Up_246
+  - first:
+      213: -9150324269939078934
+    second: Relic 2-Start Up_247
+  - first:
+      213: -1973202985597011459
+    second: Relic 2-Start Up_248
+  - first:
+      213: 8140078615106427070
+    second: Relic 2-Start Up_249
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic 2-Start Up_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b09b30da0237610800000000000000
+      internalID: 1617672618620029794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9176aa4e3dd1950a0800000000000000
+      internalID: -6892444958802155751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 37
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2841e3450d54ce0c0800000000000000
+      internalID: -4545181162854804350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef7555b351dc9ef0800000000000000
+      internalID: -99974934254223381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_4
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f865924f03aaaac70800000000000000
+      internalID: 8983179533975377551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8cf634be8ba24b30800000000000000
+      internalID: 4270164026097859724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_6
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 37
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d341bcba6d40e44a0800000000000000
+      internalID: -6607338283254213571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_7
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821b11717308b6d70800000000000000
+      internalID: 9037458051347624232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_8
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa12fa10ca49298b0800000000000000
+      internalID: -5146887957647515222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_9
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b277601799060e550800000000000000
+      internalID: 6188052100149573419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_10
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 37
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea79bb05c54595ca0800000000000000
+      internalID: -6027693870790502482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_11
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb4d3fd861eb63f0800000000000000
+      internalID: -906383059446838279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_12
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032ee71e8da7ffdb0800000000000000
+      internalID: -4755947609565240784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_13
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e707ce2f38d077630800000000000000
+      internalID: 3924620460644135038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_14
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 37
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351af123714694d00800000000000000
+      internalID: 957406446580900179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_15
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1d91fd13045e190800000000000000
+      internalID: -7933864585602674267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_16
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a1c378c99a08690800000000000000
+      internalID: -7601889681252541828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_17
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26f4f11b9806f420800000000000000
+      internalID: 2663325691750446634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_18
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 37
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3899cf810e76c9e10800000000000000
+      internalID: 2205752129694243203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_19
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477aa4254018a5d70800000000000000
+      internalID: 9032673858205427572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_20
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391308d784c1c6120800000000000000
+      internalID: 2408330998405149075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_21
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1984766eb2c1b6a80800000000000000
+      internalID: -8472647299092756335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_22
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 37
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d97dc1f01d86020800000000000000
+      internalID: 2335346269630209289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_23
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df1590f5dc9e6650800000000000000
+      internalID: 6228087777378246608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_24
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576af7fc22d0c73f0800000000000000
+      internalID: -901831382219643275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_25
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd03feb0127120f0800000000000000
+      internalID: -1143507414126752335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_26
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 37
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8973598507da031b0800000000000000
+      internalID: -5678848432080078952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_27
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca3d1a74b568e880800000000000000
+      internalID: -8581497264137225529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_28
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3556add2f497610800000000000000
+      internalID: 1619412599372600279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_29
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97b50770bafee7c0800000000000000
+      internalID: -4040016179886704738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_30
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 37
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b617641a8db0ccc50800000000000000
+      internalID: 6686732571784933739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_31
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e51727a6b4db2550800000000000000
+      internalID: 6137232798175925728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_32
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7c7f1093efc7e70800000000000000
+      internalID: 9114439266690648030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_33
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f46381d29b19f70800000000000000
+      internalID: 9192331917770772381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_34
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 37
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8eba9db30f6465d0800000000000000
+      internalID: -3070206984103215474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_35
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4302b1c6aa712b840800000000000000
+      internalID: 5238275337310904372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_36
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d858ad5cad768f130800000000000000
+      internalID: 3600742091402675597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_37
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1cebd71262c6540800000000000000
+      internalID: 5002415211387208097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_38
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 37
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf891cc0b9eeac350800000000000000
+      internalID: 6037900600144926971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_39
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27fecdbe1612a90b0800000000000000
+      internalID: -5721223672168124558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_40
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8bd8427dd9b7ef0800000000000000
+      internalID: -109320218583648065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_41
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069d0a3399f7e6410800000000000000
+      internalID: 1472254424169634144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_42
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 37
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d698f03f8910dbc30800000000000000
+      internalID: 4376656169298528621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_43
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecbd63cf3b1236510800000000000000
+      internalID: 1541112554405157838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_44
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133524778b01b62a0800000000000000
+      internalID: -6743277632596323535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_45
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e2779bf44685e70800000000000000
+      internalID: 9104136940306247237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_46
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 37
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cdfac50219eb0c80800000000000000
+      internalID: -8355328420039950903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_47
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8031b4a72f3785c0800000000000000
+      internalID: -4213329486882459509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_48
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150222ae8ca2e79a0800000000000000
+      internalID: -6233497791824256943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_49
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0fb5bfef5fa4020800000000000000
+      internalID: 2326942632977887411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_50
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 37
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb9ac7d709cc8c50800000000000000
+      internalID: 6668926183751195585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_51
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f568489becef40c0800000000000000
+      internalID: -4589188998650894857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_52
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b7a7165da0738a0800000000000000
+      internalID: -6325575240038843497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_53
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9d8748d5e51bdb0800000000000000
+      internalID: -4777933973915903497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_54
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 37
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cfac70d7ecf9be30800000000000000
+      internalID: 4519921773608480711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_55
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5356dfd9584b83b90800000000000000
+      internalID: -7261855913160645323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_56
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 42
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d56461802077a7a0800000000000000
+      internalID: -6365996263352801832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_57
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 16
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26d3dbbd3c177860800000000000000
+      internalID: 7527516353642878510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_58
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b701964f537bc4e0800000000000000
+      internalID: -1960346359746721872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_59
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 37
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9790e75a3ead5fa60800000000000000
+      internalID: 7707307008583403897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_60
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 42
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04db704fe223c03e0800000000000000
+      internalID: -2086237350135349952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_61
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 42
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3b4f93725c32930800000000000000
+      internalID: 4117351256613499819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_62
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 16
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f4b9025f952e330800000000000000
+      internalID: 3738649550019841809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_63
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6758fd1f5a1db80800000000000000
+      internalID: -8371727774049274197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_64
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 37
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8959fa60ce73883b0800000000000000
+      internalID: -5510092657223821928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_65
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 42
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70cbfda3f212c9d0800000000000000
+      internalID: -2755619184192012161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_66
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 42
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf847d68d433e1f0800000000000000
+      internalID: -1016910986701664333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_67
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 16
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e3f0e7f21b56500800000000000000
+      internalID: 388911760373923362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_68
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1025d87c0845bb0800000000000000
+      internalID: -4948188496015523334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_69
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 37
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61f5ad812fa62d10800000000000000
+      internalID: 2100558834860159342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_70
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 42
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c0bda50500f26c0800000000000000
+      internalID: -4166110785172730864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_71
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e3a5f6423a92e310800000000000000
+      internalID: 1432877172186784740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_72
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68de292c2e6cdea0800000000000000
+      internalID: -5846677080285194132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_73
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 37
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc01d1cb1b4ec9f0800000000000000
+      internalID: -446336730475197189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_74
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29524aa174835ac10800000000000000
+      internalID: 2064117882260039058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_75
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 42
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574f5e7add02e4980800000000000000
+      internalID: -8552862505953266571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_76
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 16
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179cdee0dff6290c0800000000000000
+      internalID: -4570467539159758479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_77
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e4dd00ef4dbe940800000000000000
+      internalID: 5326585171697028694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_78
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 37
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5c942aa44958f20800000000000000
+      internalID: 3424306139956364778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_79
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 42
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05694b94168f55fe0800000000000000
+      internalID: -1200780628892281264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_80
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 42
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584f8b3886bcd8c60800000000000000
+      internalID: 7822131777559393413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_81
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 16
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8be5b182d9e09a0800000000000000
+      internalID: -6264897236042336020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_82
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86df2d9aaf9bb1d70800000000000000
+      internalID: 9015003565354319208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_83
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 37
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f71c305592daaf0800000000000000
+      internalID: -383604948144652480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_84
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 42
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab031f6bd9502370800000000000000
+      internalID: 8295729312612682663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_85
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9098fabb33dcd40f0800000000000000
+      internalID: -1131022309324257015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_86
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd805d7d16a95b00800000000000000
+      internalID: 817867452931149249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_87
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 37
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97dd1b9eb3434fdb0800000000000000
+      internalID: -4759121474295308935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_88
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8f42438de593e90800000000000000
+      internalID: -7045495859363645259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_89
+      rect:
+        serializedVersion: 2
+        x: 2129
+        y: 42
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b833f1a8f1f6f20800000000000000
+      internalID: 3417985320286915410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_90
+      rect:
+        serializedVersion: 2
+        x: 2134
+        y: 16
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff93e50ae1968f70800000000000000
+      internalID: 9189192524003254257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_91
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4c57a645a0eda10800000000000000
+      internalID: 1935996247495525551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_92
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 37
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e56a4be9058780a0800000000000000
+      internalID: -6879383628136421912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_93
+      rect:
+        serializedVersion: 2
+        x: 2198
+        y: 42
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27448c7602d0904d0800000000000000
+      internalID: -3167986430047140750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_94
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 42
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4071a382649afcd70800000000000000
+      internalID: 9065650693707798276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_95
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088d1a371dd129320800000000000000
+      internalID: 2563143923352590464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_96
+      rect:
+        serializedVersion: 2
+        x: 2253
+        y: 37
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d4e65c7e0d57ab0800000000000000
+      internalID: -5010869316511445694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_97
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 42
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1049c33f0e7b3ba40800000000000000
+      internalID: 5382848156419265537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_98
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 42
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6354a051c4ce530800000000000000
+      internalID: 3885564231764227786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_99
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 16
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30979a377ee3e4380800000000000000
+      internalID: -8985175042758706941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_100
+      rect:
+        serializedVersion: 2
+        x: 2346
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a224d07da5b0ba0800000000000000
+      internalID: -6121699388793148832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_101
+      rect:
+        serializedVersion: 2
+        x: 2354
+        y: 37
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51a1260d2f62df40800000000000000
+      internalID: 5751781913272623455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_102
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 42
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aebafb9c7bb881080800000000000000
+      internalID: -9216463015933662230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_103
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 42
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6662cd6eeebbd540800000000000000
+      internalID: 5033826939769611884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_104
+      rect:
+        serializedVersion: 2
+        x: 2437
+        y: 16
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c68b7283ed02b070800000000000000
+      internalID: 8120568348900296385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_105
+      rect:
+        serializedVersion: 2
+        x: 2447
+        y: 38
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c2c492b70543f70800000000000000
+      internalID: 9166039631509859333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_106
+      rect:
+        serializedVersion: 2
+        x: 2455
+        y: 37
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb2f85e3daa43580800000000000000
+      internalID: -8848259540809995294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_107
+      rect:
+        serializedVersion: 2
+        x: 2501
+        y: 42
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff250debf22a6bfa0800000000000000
+      internalID: -5785258345362337025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_108
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8008c7251b98cb320800000000000000
+      internalID: 2575084481635188744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_109
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f269fc001cef154f0800000000000000
+      internalID: -841611550445824465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_110
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08341a401dd1ca370800000000000000
+      internalID: 8335069793918993280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_111
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877874abcb6b597e0800000000000000
+      internalID: -1759299157722953864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_112
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c11d5a984778d800800000000000000
+      internalID: 637390500984066504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_113
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd20a1b8269ca2e80800000000000000
+      internalID: -8202522346224221477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_114
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46c38ee3071836a0800000000000000
+      internalID: -6469395559063763380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_115
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2941cf1e77b93b100800000000000000
+      internalID: 122612554063942802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_116
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e08545d93827042b0800000000000000
+      internalID: -5602352026843064306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_117
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df67127e3c2ab5c50800000000000000
+      internalID: 6655091836650092285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_118
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1eeeeb04cf122bd0800000000000000
+      internalID: -2656525903320912355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_119
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246c3246e7ca2d230800000000000000
+      internalID: 3662179105851557442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_120
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ed148aaa28870b0800000000000000
+      internalID: -5730686856350015970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_121
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b198f01e951cc86d0800000000000000
+      internalID: -2986799861081339621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_122
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1284775dd2a1fe2a0800000000000000
+      internalID: -6706112535974164447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_123
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84398df7f90da74a0800000000000000
+      internalID: -6594729320867392696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_124
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91c6751f6bbff660800000000000000
+      internalID: 7421856796705735067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_125
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8e5ce606daf6180800000000000000
+      internalID: -9119880090715035455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_126
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84cfa776bafa02020800000000000000
+      internalID: 2315043359178816584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_127
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6bf484d3474ae210800000000000000
+      internalID: 1362980193886862190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_128
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0dbc37bb1235bc20800000000000000
+      internalID: 3221536203073174796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_129
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8b52f1a5f736e90800000000000000
+      internalID: -7033638167976232729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_130
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7fbd0126f712bd70800000000000000
+      internalID: 9057328146479431550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_131
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77719b88b82b84ea0800000000000000
+      internalID: -5888260200422893705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_132
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c49065a3b8cc460800000000000000
+      internalID: 7263333381709581399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_133
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a190e1782ed3190800000000000000
+      internalID: -7980973894678275485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_134
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe378b3cfe05ee20800000000000000
+      internalID: 3379123571904691902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_135
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ccab82c964323b0800000000000000
+      internalID: -5538505480223405037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_136
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a229d425ed3abe10800000000000000
+      internalID: 2214150221181035171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_137
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ff7a6cb9d8b56a0800000000000000
+      internalID: -6459413540340498629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_138
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ed44968c2b97120800000000000000
+      internalID: 2412155649262935675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_139
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c16b5ab579be1b0800000000000000
+      internalID: -5626236889591309288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_140
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6afd739f186943110800000000000000
+      internalID: 1239781282409865126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_141
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 772f564826dc14ba0800000000000000
+      internalID: -6106373796725919113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_142
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fa936902a0ae020800000000000000
+      internalID: 2371719288839581564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_143
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac411b5b7bfa3ab0800000000000000
+      internalID: -5027429526778327901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_144
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6940130517b9f70800000000000000
+      internalID: 9195067653440706274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_145
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 241851ea64bf66cc0800000000000000
+      internalID: -3718008161360838334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_146
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4cbc44d20ee0ec0800000000000000
+      internalID: -3598692567190092600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_147
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47b2b3e47d89fcf0800000000000000
+      internalID: -217987573774895281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_148
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b6d1541e4909a10800000000000000
+      internalID: 1914193536880569202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_149
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf77c7ef63e37cd0800000000000000
+      internalID: -2561453693274193988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_150
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 16
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f26a54aa7a1efd0800000000000000
+      internalID: -2314384383736926386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_151
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dcaa11bdc3702b10800000000000000
+      internalID: 1954689565555600595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_152
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 16
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0e3b265156b83a0800000000000000
+      internalID: -6662120081239842617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_153
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e5284fcebc801d0800000000000000
+      internalID: -3384230901394022840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_154
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 16
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd4425395ed137a0800000000000000
+      internalID: -6399089120791736869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_155
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a1ea9a968a20d40800000000000000
+      internalID: 5549182862645664281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_156
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a0c22286d6976c0800000000000000
+      internalID: -4145161688000492921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_157
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db3787b7d0638760800000000000000
+      internalID: 7458911887469001689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_158
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293697e53b6f216a0800000000000000
+      internalID: -6479845663588129902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_159
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 16
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b0585dc4648eb40800000000000000
+      internalID: 5469699043255192330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_160
+      rect:
+        serializedVersion: 2
+        x: 1907
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574b21429802af260800000000000000
+      internalID: 7132048733282415733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_161
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 16
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb4df2f3900440d0800000000000000
+      internalID: -3439623579967337533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_162
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e716c3367ecc61a30800000000000000
+      internalID: 4185758197861867902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_163
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9f159eca4887060800000000000000
+      internalID: 6951451903030065609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_164
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3e492e8d5455560800000000000000
+      internalID: 7301819168667788231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_165
+      rect:
+        serializedVersion: 2
+        x: 2109
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925464cd91ec7c4b0800000000000000
+      internalID: -5420137016052005591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_166
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 16
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278ce9aef42784fb0800000000000000
+      internalID: -4663351726577891214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_167
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428dc9b7529590dd0800000000000000
+      internalID: -2519384499014543324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_168
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 20
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ccdccdd952d0990800000000000000
+      internalID: -7418231651264770951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_169
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 20
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c5ea56a928bb8a0800000000000000
+      internalID: -6288288855050265549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_170
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813d9d7e7d4d35b20800000000000000
+      internalID: 3122072990470755096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_171
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 16
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75bae426b1be53a0800000000000000
+      internalID: -6674702201854970501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_172
+      rect:
+        serializedVersion: 2
+        x: 2412
+        y: 33
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9118fa01c082685a0800000000000000
+      internalID: -6519479378287558375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_173
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 16
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59404588c1ec21e00800000000000000
+      internalID: 1014099488053396629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_174
+      rect:
+        serializedVersion: 2
+        x: 2513
+        y: 33
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4601e169614ad840800000000000000
+      internalID: 5249580236523243087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_175
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfeda944db961b130800000000000000
+      internalID: 3580759440356990715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_176
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e22abe7f7e4c6d10800000000000000
+      internalID: 2120155834078601959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_177
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e758b3358739ee0800000000000000
+      internalID: -1255527572230013324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_178
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b25d4fc43b83f0c0800000000000000
+      internalID: -4543134540154187083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_179
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0387a6c52c02480800000000000000
+      internalID: -8925920759269281548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_180
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce78d2dee85f65e0800000000000000
+      internalID: -1914213533846307121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_181
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81201dfe223bec950800000000000000
+      internalID: 6471306677211693592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_182
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340882adf10465070800000000000000
+      internalID: 8094727885793296451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_183
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63545751e7ad8d6b0800000000000000
+      internalID: -5271223128776424138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_184
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dba52b03ace55090800000000000000
+      internalID: -8046264974216680491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_185
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff09ff6cf726e1010800000000000000
+      internalID: 1161474054847172863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_186
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd04580cad3284c50800000000000000
+      internalID: 6649604272252338397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_187
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a029e5969816760800000000000000
+      internalID: 7449386344298711611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_188
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3622585272b20410800000000000000
+      internalID: 1441911034889774653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_189
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fa7be25d82ce0b0800000000000000
+      internalID: -5698134532453585121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_190
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a98286ef3029100800000000000000
+      internalID: 113157331841751686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_191
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf670889761ea880800000000000000
+      internalID: -8597909927374655525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_192
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a17ae55581a76f0800000000000000
+      internalID: -686209238281283044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_193
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2315950040b8c790800000000000000
+      internalID: -7509558589622250708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_194
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00043c278b2972830800000000000000
+      internalID: 4046364111112716288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_195
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97fb303133b4ddff0800000000000000
+      internalID: -9768941450444935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_196
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514642ed53f87acd0800000000000000
+      internalID: -2546909602731760619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_197
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e6dccad143c04e0800000000000000
+      internalID: -2014177631283614057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_198
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a6442d6919c26a0800000000000000
+      internalID: -6472638487479424375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_199
+      rect:
+        serializedVersion: 2
+        x: 2423
+        y: 18
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158c6d05272c0caa0800000000000000
+      internalID: -6142696095495042991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_200
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1959dc6296181b1c0800000000000000
+      internalID: -4489665064889117295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_201
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a558ec9fd518ee0800000000000000
+      internalID: -1260623093193942440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_202
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6975326dcb7cf90800000000000000
+      internalID: -6933365473411623257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_203
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504546ae93d544a10800000000000000
+      internalID: 1892740246729413637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_204
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f65b8df64a91cc70800000000000000
+      internalID: 8989635960900376311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_205
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f7fc057417546d0800000000000000
+      internalID: -3006872625087545512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_206
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af64261ac2653ad0800000000000000
+      internalID: -2723161779581194336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_207
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cbc699bba166ddc0800000000000000
+      internalID: -3614594260737274939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_208
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165adb3ff4a685880800000000000000
+      internalID: -8622024594976561823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_209
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 569eba948fb2b8040800000000000000
+      internalID: 4650859385578056037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_210
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117412323ff8ad930800000000000000
+      internalID: 4168802679514023697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_211
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a375af527a2f9d0800000000000000
+      internalID: -2741945441559561670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_212
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d4eb57b3da8e3c0800000000000000
+      internalID: -4330020570826650359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_213
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b00dc82a8923e20800000000000000
+      internalID: 3328890898494786357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_214
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca4939e475eaeb400800000000000000
+      internalID: 341902311730418860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_215
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b339a9f26e45ebbd0800000000000000
+      internalID: -2612557386210438341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_216
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc0484ec94d11710800000000000000
+      internalID: 1662343507790269659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_217
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24136587b9731b50800000000000000
+      internalID: 6562722911132783659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_218
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44e5844104fc9490800000000000000
+      internalID: -7738041773447584692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_219
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0350e1647d5f96840800000000000000
+      internalID: 5217971948228576560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_220
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ebe6179c2ba6290800000000000000
+      internalID: -7896302418379489670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_221
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8caaecb055188300800000000000000
+      internalID: 254476815457496205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_222
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f880d4d331a64f620800000000000000
+      internalID: 2806985098624043151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_223
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8027dd139ec7d780800000000000000
+      internalID: -8658224627340337011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_224
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71a2fc6021d188c0800000000000000
+      internalID: -3998685056931290757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_225
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc19011882668030800000000000000
+      internalID: 3496590497240652987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_226
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376cff5d1c33749f0800000000000000
+      internalID: -484361527307024781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_227
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7917fc22f356ae930800000000000000
+      internalID: 4173259326553551255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_228
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 2
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a92bc4064b0f7d0800000000000000
+      internalID: -2886609035447854480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_229
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 0
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97403d9eb191377f0800000000000000
+      internalID: -616121116341894023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_230
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7de11d0d054463d0800000000000000
+      internalID: -3214368311679521412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_231
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 0
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9673d47b326c339b0800000000000000
+      internalID: -5101516096179194007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_232
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 2
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0054ae112d2b7ffb0800000000000000
+      internalID: -4614022677904341760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_233
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269849c1639952270800000000000000
+      internalID: 8225148752148859234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_234
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6883de5c7a36da160800000000000000
+      internalID: 7038391364881299590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_235
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d70d147df289a4d0800000000000000
+      internalID: -3122820841518331948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_236
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 2
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 592d6dfd8acfe2c70800000000000000
+      internalID: 8948367311871857301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_237
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 0
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8d7a8fa0578a0a0800000000000000
+      internalID: -6870112541571819351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_238
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 2
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d32eca2e90ffa6b0800000000000000
+      internalID: -5282739275768650799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_239
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 0
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561de4b026b6c7170800000000000000
+      internalID: 8177529092238659941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_240
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96b7e75aec557740800000000000000
+      internalID: 5149123910534936222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_241
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132ed2ca712afc980800000000000000
+      internalID: -8516410147777682895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_242
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 2
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474f15356303cc480800000000000000
+      internalID: -8877667755569843084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_243
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 0
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67435037c190672d0800000000000000
+      internalID: -3281425260699372426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_244
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3932636ff88dc4cc0800000000000000
+      internalID: -3725364678919576685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_245
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 0
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15735a60fa1ddd170800000000000000
+      internalID: 8204944645799884625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_246
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 2
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b37f8dd195807cb0800000000000000
+      internalID: -4868244335653588044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_247
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 0
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae845a69e84830180800000000000000
+      internalID: -9150324269939078934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_248
+      rect:
+        serializedVersion: 2
+        x: 2445
+        y: 2
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9ffbdc656cd94e0800000000000000
+      internalID: -1973202985597011459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 2-Start Up_249
+      rect:
+        serializedVersion: 2
+        x: 2488
+        y: 0
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb81c295f5e57f070800000000000000
+      internalID: 8140078615106427070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic 2-Start Up_0: 1617672618620029794
+      Relic 2-Start Up_1: -6892444958802155751
+      Relic 2-Start Up_10: -6027693870790502482
+      Relic 2-Start Up_100: -6121699388793148832
+      Relic 2-Start Up_101: 5751781913272623455
+      Relic 2-Start Up_102: -9216463015933662230
+      Relic 2-Start Up_103: 5033826939769611884
+      Relic 2-Start Up_104: 8120568348900296385
+      Relic 2-Start Up_105: 9166039631509859333
+      Relic 2-Start Up_106: -8848259540809995294
+      Relic 2-Start Up_107: -5785258345362337025
+      Relic 2-Start Up_108: 2575084481635188744
+      Relic 2-Start Up_109: -841611550445824465
+      Relic 2-Start Up_11: -906383059446838279
+      Relic 2-Start Up_110: 8335069793918993280
+      Relic 2-Start Up_111: -1759299157722953864
+      Relic 2-Start Up_112: 637390500984066504
+      Relic 2-Start Up_113: -8202522346224221477
+      Relic 2-Start Up_114: -6469395559063763380
+      Relic 2-Start Up_115: 122612554063942802
+      Relic 2-Start Up_116: -5602352026843064306
+      Relic 2-Start Up_117: 6655091836650092285
+      Relic 2-Start Up_118: -2656525903320912355
+      Relic 2-Start Up_119: 3662179105851557442
+      Relic 2-Start Up_12: -4755947609565240784
+      Relic 2-Start Up_120: -5730686856350015970
+      Relic 2-Start Up_121: -2986799861081339621
+      Relic 2-Start Up_122: -6706112535974164447
+      Relic 2-Start Up_123: -6594729320867392696
+      Relic 2-Start Up_124: 7421856796705735067
+      Relic 2-Start Up_125: -9119880090715035455
+      Relic 2-Start Up_126: 2315043359178816584
+      Relic 2-Start Up_127: 1362980193886862190
+      Relic 2-Start Up_128: 3221536203073174796
+      Relic 2-Start Up_129: -7033638167976232729
+      Relic 2-Start Up_13: 3924620460644135038
+      Relic 2-Start Up_130: 9057328146479431550
+      Relic 2-Start Up_131: -5888260200422893705
+      Relic 2-Start Up_132: 7263333381709581399
+      Relic 2-Start Up_133: -7980973894678275485
+      Relic 2-Start Up_134: 3379123571904691902
+      Relic 2-Start Up_135: -5538505480223405037
+      Relic 2-Start Up_136: 2214150221181035171
+      Relic 2-Start Up_137: -6459413540340498629
+      Relic 2-Start Up_138: 2412155649262935675
+      Relic 2-Start Up_139: -5626236889591309288
+      Relic 2-Start Up_14: 957406446580900179
+      Relic 2-Start Up_140: 1239781282409865126
+      Relic 2-Start Up_141: -6106373796725919113
+      Relic 2-Start Up_142: 2371719288839581564
+      Relic 2-Start Up_143: -5027429526778327901
+      Relic 2-Start Up_144: 9195067653440706274
+      Relic 2-Start Up_145: -3718008161360838334
+      Relic 2-Start Up_146: -3598692567190092600
+      Relic 2-Start Up_147: -217987573774895281
+      Relic 2-Start Up_148: 1914193536880569202
+      Relic 2-Start Up_149: -2561453693274193988
+      Relic 2-Start Up_15: -7933864585602674267
+      Relic 2-Start Up_150: -2314384383736926386
+      Relic 2-Start Up_151: 1954689565555600595
+      Relic 2-Start Up_152: -6662120081239842617
+      Relic 2-Start Up_153: -3384230901394022840
+      Relic 2-Start Up_154: -6399089120791736869
+      Relic 2-Start Up_155: 5549182862645664281
+      Relic 2-Start Up_156: -4145161688000492921
+      Relic 2-Start Up_157: 7458911887469001689
+      Relic 2-Start Up_158: -6479845663588129902
+      Relic 2-Start Up_159: 5469699043255192330
+      Relic 2-Start Up_16: -7601889681252541828
+      Relic 2-Start Up_160: 7132048733282415733
+      Relic 2-Start Up_161: -3439623579967337533
+      Relic 2-Start Up_162: 4185758197861867902
+      Relic 2-Start Up_163: 6951451903030065609
+      Relic 2-Start Up_164: 7301819168667788231
+      Relic 2-Start Up_165: -5420137016052005591
+      Relic 2-Start Up_166: -4663351726577891214
+      Relic 2-Start Up_167: -2519384499014543324
+      Relic 2-Start Up_168: -7418231651264770951
+      Relic 2-Start Up_169: -6288288855050265549
+      Relic 2-Start Up_17: 2663325691750446634
+      Relic 2-Start Up_170: 3122072990470755096
+      Relic 2-Start Up_171: -6674702201854970501
+      Relic 2-Start Up_172: -6519479378287558375
+      Relic 2-Start Up_173: 1014099488053396629
+      Relic 2-Start Up_174: 5249580236523243087
+      Relic 2-Start Up_175: 3580759440356990715
+      Relic 2-Start Up_176: 2120155834078601959
+      Relic 2-Start Up_177: -1255527572230013324
+      Relic 2-Start Up_178: -4543134540154187083
+      Relic 2-Start Up_179: -8925920759269281548
+      Relic 2-Start Up_18: 2205752129694243203
+      Relic 2-Start Up_180: -1914213533846307121
+      Relic 2-Start Up_181: 6471306677211693592
+      Relic 2-Start Up_182: 8094727885793296451
+      Relic 2-Start Up_183: -5271223128776424138
+      Relic 2-Start Up_184: -8046264974216680491
+      Relic 2-Start Up_185: 1161474054847172863
+      Relic 2-Start Up_186: 6649604272252338397
+      Relic 2-Start Up_187: 7449386344298711611
+      Relic 2-Start Up_188: 1441911034889774653
+      Relic 2-Start Up_189: -5698134532453585121
+      Relic 2-Start Up_19: 9032673858205427572
+      Relic 2-Start Up_190: 113157331841751686
+      Relic 2-Start Up_191: -8597909927374655525
+      Relic 2-Start Up_192: -686209238281283044
+      Relic 2-Start Up_193: -7509558589622250708
+      Relic 2-Start Up_194: 4046364111112716288
+      Relic 2-Start Up_195: -9768941450444935
+      Relic 2-Start Up_196: -2546909602731760619
+      Relic 2-Start Up_197: -2014177631283614057
+      Relic 2-Start Up_198: -6472638487479424375
+      Relic 2-Start Up_199: -6142696095495042991
+      Relic 2-Start Up_2: -4545181162854804350
+      Relic 2-Start Up_20: 2408330998405149075
+      Relic 2-Start Up_200: -4489665064889117295
+      Relic 2-Start Up_201: -1260623093193942440
+      Relic 2-Start Up_202: -6933365473411623257
+      Relic 2-Start Up_203: 1892740246729413637
+      Relic 2-Start Up_204: 8989635960900376311
+      Relic 2-Start Up_205: -3006872625087545512
+      Relic 2-Start Up_206: -2723161779581194336
+      Relic 2-Start Up_207: -3614594260737274939
+      Relic 2-Start Up_208: -8622024594976561823
+      Relic 2-Start Up_209: 4650859385578056037
+      Relic 2-Start Up_21: -8472647299092756335
+      Relic 2-Start Up_210: 4168802679514023697
+      Relic 2-Start Up_211: -2741945441559561670
+      Relic 2-Start Up_212: -4330020570826650359
+      Relic 2-Start Up_213: 3328890898494786357
+      Relic 2-Start Up_214: 341902311730418860
+      Relic 2-Start Up_215: -2612557386210438341
+      Relic 2-Start Up_216: 1662343507790269659
+      Relic 2-Start Up_217: 6562722911132783659
+      Relic 2-Start Up_218: -7738041773447584692
+      Relic 2-Start Up_219: 5217971948228576560
+      Relic 2-Start Up_22: 2335346269630209289
+      Relic 2-Start Up_220: -7896302418379489670
+      Relic 2-Start Up_221: 254476815457496205
+      Relic 2-Start Up_222: 2806985098624043151
+      Relic 2-Start Up_223: -8658224627340337011
+      Relic 2-Start Up_224: -3998685056931290757
+      Relic 2-Start Up_225: 3496590497240652987
+      Relic 2-Start Up_226: -484361527307024781
+      Relic 2-Start Up_227: 4173259326553551255
+      Relic 2-Start Up_228: -2886609035447854480
+      Relic 2-Start Up_229: -616121116341894023
+      Relic 2-Start Up_23: 6228087777378246608
+      Relic 2-Start Up_230: -3214368311679521412
+      Relic 2-Start Up_231: -5101516096179194007
+      Relic 2-Start Up_232: -4614022677904341760
+      Relic 2-Start Up_233: 8225148752148859234
+      Relic 2-Start Up_234: 7038391364881299590
+      Relic 2-Start Up_235: -3122820841518331948
+      Relic 2-Start Up_236: 8948367311871857301
+      Relic 2-Start Up_237: -6870112541571819351
+      Relic 2-Start Up_238: -5282739275768650799
+      Relic 2-Start Up_239: 8177529092238659941
+      Relic 2-Start Up_24: -901831382219643275
+      Relic 2-Start Up_240: 5149123910534936222
+      Relic 2-Start Up_241: -8516410147777682895
+      Relic 2-Start Up_242: -8877667755569843084
+      Relic 2-Start Up_243: -3281425260699372426
+      Relic 2-Start Up_244: -3725364678919576685
+      Relic 2-Start Up_245: 8204944645799884625
+      Relic 2-Start Up_246: -4868244335653588044
+      Relic 2-Start Up_247: -9150324269939078934
+      Relic 2-Start Up_248: -1973202985597011459
+      Relic 2-Start Up_249: 8140078615106427070
+      Relic 2-Start Up_25: -1143507414126752335
+      Relic 2-Start Up_26: -5678848432080078952
+      Relic 2-Start Up_27: -8581497264137225529
+      Relic 2-Start Up_28: 1619412599372600279
+      Relic 2-Start Up_29: -4040016179886704738
+      Relic 2-Start Up_3: -99974934254223381
+      Relic 2-Start Up_30: 6686732571784933739
+      Relic 2-Start Up_31: 6137232798175925728
+      Relic 2-Start Up_32: 9114439266690648030
+      Relic 2-Start Up_33: 9192331917770772381
+      Relic 2-Start Up_34: -3070206984103215474
+      Relic 2-Start Up_35: 5238275337310904372
+      Relic 2-Start Up_36: 3600742091402675597
+      Relic 2-Start Up_37: 5002415211387208097
+      Relic 2-Start Up_38: 6037900600144926971
+      Relic 2-Start Up_39: -5721223672168124558
+      Relic 2-Start Up_4: 8983179533975377551
+      Relic 2-Start Up_40: -109320218583648065
+      Relic 2-Start Up_41: 1472254424169634144
+      Relic 2-Start Up_42: 4376656169298528621
+      Relic 2-Start Up_43: 1541112554405157838
+      Relic 2-Start Up_44: -6743277632596323535
+      Relic 2-Start Up_45: 9104136940306247237
+      Relic 2-Start Up_46: -8355328420039950903
+      Relic 2-Start Up_47: -4213329486882459509
+      Relic 2-Start Up_48: -6233497791824256943
+      Relic 2-Start Up_49: 2326942632977887411
+      Relic 2-Start Up_5: 4270164026097859724
+      Relic 2-Start Up_50: 6668926183751195585
+      Relic 2-Start Up_51: -4589188998650894857
+      Relic 2-Start Up_52: -6325575240038843497
+      Relic 2-Start Up_53: -4777933973915903497
+      Relic 2-Start Up_54: 4519921773608480711
+      Relic 2-Start Up_55: -7261855913160645323
+      Relic 2-Start Up_56: -6365996263352801832
+      Relic 2-Start Up_57: 7527516353642878510
+      Relic 2-Start Up_58: -1960346359746721872
+      Relic 2-Start Up_59: 7707307008583403897
+      Relic 2-Start Up_6: -6607338283254213571
+      Relic 2-Start Up_60: -2086237350135349952
+      Relic 2-Start Up_61: 4117351256613499819
+      Relic 2-Start Up_62: 3738649550019841809
+      Relic 2-Start Up_63: -8371727774049274197
+      Relic 2-Start Up_64: -5510092657223821928
+      Relic 2-Start Up_65: -2755619184192012161
+      Relic 2-Start Up_66: -1016910986701664333
+      Relic 2-Start Up_67: 388911760373923362
+      Relic 2-Start Up_68: -4948188496015523334
+      Relic 2-Start Up_69: 2100558834860159342
+      Relic 2-Start Up_7: 9037458051347624232
+      Relic 2-Start Up_70: -4166110785172730864
+      Relic 2-Start Up_71: 1432877172186784740
+      Relic 2-Start Up_72: -5846677080285194132
+      Relic 2-Start Up_73: -446336730475197189
+      Relic 2-Start Up_74: 2064117882260039058
+      Relic 2-Start Up_75: -8552862505953266571
+      Relic 2-Start Up_76: -4570467539159758479
+      Relic 2-Start Up_77: 5326585171697028694
+      Relic 2-Start Up_78: 3424306139956364778
+      Relic 2-Start Up_79: -1200780628892281264
+      Relic 2-Start Up_8: -5146887957647515222
+      Relic 2-Start Up_80: 7822131777559393413
+      Relic 2-Start Up_81: -6264897236042336020
+      Relic 2-Start Up_82: 9015003565354319208
+      Relic 2-Start Up_83: -383604948144652480
+      Relic 2-Start Up_84: 8295729312612682663
+      Relic 2-Start Up_85: -1131022309324257015
+      Relic 2-Start Up_86: 817867452931149249
+      Relic 2-Start Up_87: -4759121474295308935
+      Relic 2-Start Up_88: -7045495859363645259
+      Relic 2-Start Up_89: 3417985320286915410
+      Relic 2-Start Up_9: 6188052100149573419
+      Relic 2-Start Up_90: 9189192524003254257
+      Relic 2-Start Up_91: 1935996247495525551
+      Relic 2-Start Up_92: -6879383628136421912
+      Relic 2-Start Up_93: -3167986430047140750
+      Relic 2-Start Up_94: 9065650693707798276
+      Relic 2-Start Up_95: 2563143923352590464
+      Relic 2-Start Up_96: -5010869316511445694
+      Relic 2-Start Up_97: 5382848156419265537
+      Relic 2-Start Up_98: 3885564231764227786
+      Relic 2-Start Up_99: -8985175042758706941
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

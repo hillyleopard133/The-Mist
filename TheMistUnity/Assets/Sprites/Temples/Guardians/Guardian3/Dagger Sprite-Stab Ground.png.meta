@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 02f1bbbd65e3a6642949fa70f12f8e93
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7538277890735330205
+    second: Dagger Sprite-Stab Ground_0
+  - first:
+      213: -862155386718656576
+    second: Dagger Sprite-Stab Ground_1
+  - first:
+      213: 1537934726627834022
+    second: Dagger Sprite-Stab Ground_2
+  - first:
+      213: 969360458346423509
+    second: Dagger Sprite-Stab Ground_3
+  - first:
+      213: 2433859723291908988
+    second: Dagger Sprite-Stab Ground_4
+  - first:
+      213: 4615028629531603329
+    second: Dagger Sprite-Stab Ground_5
+  - first:
+      213: 52841277542594785
+    second: Dagger Sprite-Stab Ground_6
+  - first:
+      213: 1953080081171404082
+    second: Dagger Sprite-Stab Ground_7
+  - first:
+      213: 6751866209513399494
+    second: Dagger Sprite-Stab Ground_8
+  - first:
+      213: -5173791148050659495
+    second: Dagger Sprite-Stab Ground_9
+  - first:
+      213: -4372045699528467730
+    second: Dagger Sprite-Stab Ground_10
+  - first:
+      213: -4887308260894487705
+    second: Dagger Sprite-Stab Ground_11
+  - first:
+      213: 4203585948104465123
+    second: Dagger Sprite-Stab Ground_12
+  - first:
+      213: -7005537949215362385
+    second: Dagger Sprite-Stab Ground_13
+  - first:
+      213: -447246115584870947
+    second: Dagger Sprite-Stab Ground_14
+  - first:
+      213: 8249393564571205772
+    second: Dagger Sprite-Stab Ground_15
+  - first:
+      213: -6286199500838330494
+    second: Dagger Sprite-Stab Ground_16
+  - first:
+      213: -7335315280319665407
+    second: Dagger Sprite-Stab Ground_17
+  - first:
+      213: 3914813423050162702
+    second: Dagger Sprite-Stab Ground_18
+  - first:
+      213: 6242248131977128004
+    second: Dagger Sprite-Stab Ground_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 42
+        width: 59
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c2a88a238a26790800000000000000
+      internalID: -7538277890735330205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 41
+        width: 65
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7e1716e320904f0800000000000000
+      internalID: -862155386718656576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_2
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 41
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8b36c4c77d75510800000000000000
+      internalID: 1537934726627834022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_3
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 39
+        width: 66
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d46c03733cd37d00800000000000000
+      internalID: 969360458346423509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_4
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 4
+        width: 7
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bd1ffe58ec6c120800000000000000
+      internalID: 2433859723291908988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_5
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 15
+        width: 7
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1813d7b4610eb0040800000000000000
+      internalID: 4615028629531603329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_6
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 4
+        width: 10
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e87769acdabbb000800000000000000
+      internalID: 52841277542594785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_7
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 4
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235dc186cfbba1b10800000000000000
+      internalID: 1953080081171404082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_8
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 4
+        width: 10
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4620d6b8273bd50800000000000000
+      internalID: 6751866209513399494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_9
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 4
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957416edc500338b0800000000000000
+      internalID: -5173791148050659495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_10
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 21
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eead4d1b99f5353c0800000000000000
+      internalID: -4372045699528467730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_11
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 3
+        width: 60
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76b4d81e70bcc2cb0800000000000000
+      internalID: -4887308260894487705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_12
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 4
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea1793f523265a30800000000000000
+      internalID: 4203585948104465123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_13
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 0
+        width: 44
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2ff742a5457ce90800000000000000
+      internalID: -7005537949215362385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_14
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5f36907001bc9f0800000000000000
+      internalID: -447246115584870947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_15
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 0
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8009a46dbbbb7270800000000000000
+      internalID: 8249393564571205772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_16
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f1b451cdee2c8a0800000000000000
+      internalID: -6286199500838330494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_17
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b2d01ed99b33a90800000000000000
+      internalID: -7335315280319665407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_18
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 0
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0206d21116345630800000000000000
+      internalID: 3914813423050162702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite-Stab Ground_19
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 3
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448a75a6a9be0a650800000000000000
+      internalID: 6242248131977128004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dagger Sprite-Stab Ground_0: -7538277890735330205
+      Dagger Sprite-Stab Ground_1: -862155386718656576
+      Dagger Sprite-Stab Ground_10: -4372045699528467730
+      Dagger Sprite-Stab Ground_11: -4887308260894487705
+      Dagger Sprite-Stab Ground_12: 4203585948104465123
+      Dagger Sprite-Stab Ground_13: -7005537949215362385
+      Dagger Sprite-Stab Ground_14: -447246115584870947
+      Dagger Sprite-Stab Ground_15: 8249393564571205772
+      Dagger Sprite-Stab Ground_16: -6286199500838330494
+      Dagger Sprite-Stab Ground_17: -7335315280319665407
+      Dagger Sprite-Stab Ground_18: 3914813423050162702
+      Dagger Sprite-Stab Ground_19: 6242248131977128004
+      Dagger Sprite-Stab Ground_2: 1537934726627834022
+      Dagger Sprite-Stab Ground_3: 969360458346423509
+      Dagger Sprite-Stab Ground_4: 2433859723291908988
+      Dagger Sprite-Stab Ground_5: 4615028629531603329
+      Dagger Sprite-Stab Ground_6: 52841277542594785
+      Dagger Sprite-Stab Ground_7: 1953080081171404082
+      Dagger Sprite-Stab Ground_8: 6751866209513399494
+      Dagger Sprite-Stab Ground_9: -5173791148050659495
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

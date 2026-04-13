@@ -1,0 +1,2119 @@
+fileFormatVersion: 2
+guid: 810111814d491d746938f17c0ffdeb82
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3741253186591572863
+    second: Minion 2 Explosion - 124x71_0
+  - first:
+      213: 1121966065583235957
+    second: Minion 2 Explosion - 124x71_1
+  - first:
+      213: 4137406797397815584
+    second: Minion 2 Explosion - 124x71_2
+  - first:
+      213: 7403900495951028277
+    second: Minion 2 Explosion - 124x71_3
+  - first:
+      213: 7618421685416054360
+    second: Minion 2 Explosion - 124x71_4
+  - first:
+      213: 7714834410948820119
+    second: Minion 2 Explosion - 124x71_5
+  - first:
+      213: -3801715948168413004
+    second: Minion 2 Explosion - 124x71_6
+  - first:
+      213: -6142801320144600424
+    second: Minion 2 Explosion - 124x71_7
+  - first:
+      213: 4748745070591237281
+    second: Minion 2 Explosion - 124x71_8
+  - first:
+      213: 7667347121078556904
+    second: Minion 2 Explosion - 124x71_9
+  - first:
+      213: -4403441383502283248
+    second: Minion 2 Explosion - 124x71_10
+  - first:
+      213: 7406075165265062740
+    second: Minion 2 Explosion - 124x71_11
+  - first:
+      213: -1492573899863638381
+    second: Minion 2 Explosion - 124x71_12
+  - first:
+      213: 3274620545530452307
+    second: Minion 2 Explosion - 124x71_13
+  - first:
+      213: -6206138349883243448
+    second: Minion 2 Explosion - 124x71_14
+  - first:
+      213: -6660981277771432436
+    second: Minion 2 Explosion - 124x71_15
+  - first:
+      213: -7007549160453902313
+    second: Minion 2 Explosion - 124x71_16
+  - first:
+      213: -6118863787862769003
+    second: Minion 2 Explosion - 124x71_17
+  - first:
+      213: 8503334426426508446
+    second: Minion 2 Explosion - 124x71_18
+  - first:
+      213: -2584507684375641684
+    second: Minion 2 Explosion - 124x71_19
+  - first:
+      213: -5335222047696240087
+    second: Minion 2 Explosion - 124x71_20
+  - first:
+      213: 7515370776908117926
+    second: Minion 2 Explosion - 124x71_21
+  - first:
+      213: -3180180147930906302
+    second: Minion 2 Explosion - 124x71_22
+  - first:
+      213: -8455152255117203513
+    second: Minion 2 Explosion - 124x71_23
+  - first:
+      213: -6701694122380224236
+    second: Minion 2 Explosion - 124x71_24
+  - first:
+      213: -4696750423739749713
+    second: Minion 2 Explosion - 124x71_25
+  - first:
+      213: -3416891802781926468
+    second: Minion 2 Explosion - 124x71_26
+  - first:
+      213: -2548252145373848359
+    second: Minion 2 Explosion - 124x71_27
+  - first:
+      213: 5980323792867322544
+    second: Minion 2 Explosion - 124x71_28
+  - first:
+      213: -1307899983147873375
+    second: Minion 2 Explosion - 124x71_29
+  - first:
+      213: 5366752595591405156
+    second: Minion 2 Explosion - 124x71_30
+  - first:
+      213: 1283640919910044412
+    second: Minion 2 Explosion - 124x71_31
+  - first:
+      213: -1827965763659209003
+    second: Minion 2 Explosion - 124x71_32
+  - first:
+      213: -8807842707078468699
+    second: Minion 2 Explosion - 124x71_33
+  - first:
+      213: 8688649358841091665
+    second: Minion 2 Explosion - 124x71_34
+  - first:
+      213: -638559183993525800
+    second: Minion 2 Explosion - 124x71_35
+  - first:
+      213: -4782305226768888157
+    second: Minion 2 Explosion - 124x71_36
+  - first:
+      213: 1662500848889827784
+    second: Minion 2 Explosion - 124x71_37
+  - first:
+      213: 5778359962502836118
+    second: Minion 2 Explosion - 124x71_38
+  - first:
+      213: -1143577039681647457
+    second: Minion 2 Explosion - 124x71_39
+  - first:
+      213: 106824724985009200
+    second: Minion 2 Explosion - 124x71_40
+  - first:
+      213: 7993882416832383705
+    second: Minion 2 Explosion - 124x71_41
+  - first:
+      213: 3624887406560095416
+    second: Minion 2 Explosion - 124x71_42
+  - first:
+      213: -6733184611054596355
+    second: Minion 2 Explosion - 124x71_43
+  - first:
+      213: 8210654280903756005
+    second: Minion 2 Explosion - 124x71_44
+  - first:
+      213: 5808705570603071391
+    second: Minion 2 Explosion - 124x71_45
+  - first:
+      213: 2994871594103041422
+    second: Minion 2 Explosion - 124x71_46
+  - first:
+      213: -68085846174065825
+    second: Minion 2 Explosion - 124x71_47
+  - first:
+      213: -7346983726116794346
+    second: Minion 2 Explosion - 124x71_48
+  - first:
+      213: 438612118436464236
+    second: Minion 2 Explosion - 124x71_49
+  - first:
+      213: -1499446315249361752
+    second: Minion 2 Explosion - 124x71_50
+  - first:
+      213: 3183744370557006256
+    second: Minion 2 Explosion - 124x71_51
+  - first:
+      213: -3341267199992292152
+    second: Minion 2 Explosion - 124x71_52
+  - first:
+      213: 3553920351007419585
+    second: Minion 2 Explosion - 124x71_53
+  - first:
+      213: -4678689958611144088
+    second: Minion 2 Explosion - 124x71_54
+  - first:
+      213: -3840556094043876678
+    second: Minion 2 Explosion - 124x71_55
+  - first:
+      213: -280071310678743948
+    second: Minion 2 Explosion - 124x71_56
+  - first:
+      213: -1600404254038724121
+    second: Minion 2 Explosion - 124x71_57
+  - first:
+      213: 6251047493815527231
+    second: Minion 2 Explosion - 124x71_58
+  - first:
+      213: 6082704121076749777
+    second: Minion 2 Explosion - 124x71_59
+  - first:
+      213: -689980357714080520
+    second: Minion 2 Explosion - 124x71_60
+  - first:
+      213: 6614313521560179217
+    second: Minion 2 Explosion - 124x71_61
+  - first:
+      213: -763741257351984378
+    second: Minion 2 Explosion - 124x71_62
+  - first:
+      213: 4294546476063615812
+    second: Minion 2 Explosion - 124x71_63
+  - first:
+      213: 4686648676283834735
+    second: Minion 2 Explosion - 124x71_64
+  - first:
+      213: -7390850853702005523
+    second: Minion 2 Explosion - 124x71_65
+  - first:
+      213: -6525592922241984759
+    second: Minion 2 Explosion - 124x71_66
+  - first:
+      213: -8741222537423989629
+    second: Minion 2 Explosion - 124x71_67
+  - first:
+      213: 3530458232650283637
+    second: Minion 2 Explosion - 124x71_68
+  - first:
+      213: 4759280664730066769
+    second: Minion 2 Explosion - 124x71_69
+  - first:
+      213: 2078874272465027923
+    second: Minion 2 Explosion - 124x71_70
+  - first:
+      213: 6879353816573552953
+    second: Minion 2 Explosion - 124x71_71
+  - first:
+      213: -7785792086338808583
+    second: Minion 2 Explosion - 124x71_72
+  - first:
+      213: 6391236904576866386
+    second: Minion 2 Explosion - 124x71_73
+  - first:
+      213: -496189302012529735
+    second: Minion 2 Explosion - 124x71_74
+  - first:
+      213: -2045433573482823390
+    second: Minion 2 Explosion - 124x71_75
+  - first:
+      213: 5637579010245351253
+    second: Minion 2 Explosion - 124x71_76
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 5
+        width: 77
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73c69183f99be330800000000000000
+      internalID: 3741253186591572863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 25
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573a1253136029f00800000000000000
+      internalID: 1121966065583235957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 3
+        width: 44
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021fe22bf850b6930800000000000000
+      internalID: 4137406797397815584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 18
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530ef750640ffb660800000000000000
+      internalID: 7403900495951028277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 38
+        width: 70
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e4b54a8221ab960800000000000000
+      internalID: 7618421685416054360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_5
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 15
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c70959509901b60800000000000000
+      internalID: 7714834410948820119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_6
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 12
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b00c7ccc779d3bc0800000000000000
+      internalID: -3801715948168413004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_7
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 28
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8920bfaceb260caa0800000000000000
+      internalID: -6142801320144600424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_8
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 35
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac5a755b7ee6e140800000000000000
+      internalID: 4748745070591237281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 7
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e850815593e76a60800000000000000
+      internalID: 7667347121078556904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_10
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 21
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01e77136465d3e2c0800000000000000
+      internalID: -4403441383502283248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_11
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 21
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b677daf1aa7c660800000000000000
+      internalID: 7406075165265062740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_12
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 16
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ebb9132ff494be0800000000000000
+      internalID: -1492573899863638381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_13
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 8
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359d986590ac17d20800000000000000
+      internalID: 3274620545530452307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_14
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 44
+        width: 71
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844c7446d0e5fd9a0800000000000000
+      internalID: -6206138349883243448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_15
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 36
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ef7eab1d07f83a0800000000000000
+      internalID: -6660981277771432436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 28
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710fe098a2f20ce90800000000000000
+      internalID: -7007549160453902313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_17
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2
+        width: 36
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5924077ddcd651ba0800000000000000
+      internalID: -6118863787862769003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_18
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 25
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e948085bb99e10670800000000000000
+      internalID: 8503334426426508446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_19
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 12
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1c58154fbf12cd0800000000000000
+      internalID: -2584507684375641684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_20
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 18
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 922cb3990db75f5b0800000000000000
+      internalID: -5335222047696240087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_21
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 18
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7b5f847e5fb4860800000000000000
+      internalID: 7515370776908117926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_22
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 14
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24144d8310bbdd3d0800000000000000
+      internalID: -3180180147930906302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_23
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1
+        width: 105
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c765ef32d349aa80800000000000000
+      internalID: -8455152255117203513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_24
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 24
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 419143ae3bccef2a0800000000000000
+      internalID: -6701694122380224236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_25
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faaa352cf5ac1deb0800000000000000
+      internalID: -4696750423739749713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_26
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 13
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb3d334203c490d0800000000000000
+      internalID: -3416891802781926468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_27
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 30
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc5ddccc2ac2acd0800000000000000
+      internalID: -2548252145373848359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_28
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 20
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba6ca3fdc06ef250800000000000000
+      internalID: 5980323792867322544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_29
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 18
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab4bb615e769dde0800000000000000
+      internalID: -1307899983147873375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_30
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 13
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e91a92d098a7a40800000000000000
+      internalID: 5366752595591405156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_31
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 27
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2d46a9d9860d110800000000000000
+      internalID: 1283640919910044412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_32
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 17
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d6648ba2d2c1a6e0800000000000000
+      internalID: -1827965763659209003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_33
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 20
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aba21f49b144c580800000000000000
+      internalID: -8807842707078468699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_34
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 10
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15616a3be88449870800000000000000
+      internalID: 8688649358841091665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_35
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 53
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9a00e2ec16327f0800000000000000
+      internalID: -638559183993525800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_36
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 60
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae42f6ebb6d1adb0800000000000000
+      internalID: -4782305226768888157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_37
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 29
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c11dd8b6b3621710800000000000000
+      internalID: 1662500848889827784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_38
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 20
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f225555cbd03050800000000000000
+      internalID: 5778359962502836118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_39
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 66
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c8b78cdb23120f0800000000000000
+      internalID: -1143577039681647457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_40
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034d5f975848b7100800000000000000
+      internalID: 106824724985009200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_41
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 14
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da098764b9ffee60800000000000000
+      internalID: 7993882416832383705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_42
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 64
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bc2dca04ef2e4230800000000000000
+      internalID: 3624887406560095416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_43
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 64
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfec6fa254cee82a0800000000000000
+      internalID: -6733184611054596355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_44
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 59
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e80fca019a12f170800000000000000
+      internalID: 8210654280903756005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_45
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 26
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97f0acc0faac9050800000000000000
+      internalID: 5808705570603071391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_46
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d6b6ae8dbef8920800000000000000
+      internalID: 2994871594103041422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_47
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 6
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b109c984c1e0ff0800000000000000
+      internalID: -68085846174065825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_48
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 19
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6109b322a354a0a90800000000000000
+      internalID: -7346983726116794346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_49
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 55
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c664699d563461600800000000000000
+      internalID: 438612118436464236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_50
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 55
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac1bcb4585e03be0800000000000000
+      internalID: -1499446315249361752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_51
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 62
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b133b603aeee2c20800000000000000
+      internalID: 3183744370557006256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_52
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 65
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc9bc43f2f61a1d0800000000000000
+      internalID: -3341267199992292152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_53
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 68
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc24d1dabf025130800000000000000
+      internalID: 3553920351007419585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_54
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 66
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862bbca7544f11fb0800000000000000
+      internalID: -4678689958611144088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_55
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 0
+        width: 79
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab29d82a49a93bac0800000000000000
+      internalID: -3840556094043876678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_56
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 66
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474273770acfc1cf0800000000000000
+      internalID: -280071310678743948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_57
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 26
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e17ffc6fc83ac9e0800000000000000
+      internalID: -1600404254038724121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_58
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 56
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3768fe739e20c650800000000000000
+      internalID: 6251047493815527231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_59
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 63
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5959aab2b1a6450800000000000000
+      internalID: 6082704121076749777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_60
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 67
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc84743582bc66f0800000000000000
+      internalID: -689980357714080520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_61
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 29
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11258ad8a13cacb50800000000000000
+      internalID: 6614313521560179217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_62
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 70
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b89377f55a665f0800000000000000
+      internalID: -763741257351984378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_63
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 20
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b6d29344b499b30800000000000000
+      internalID: 4294546476063615812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_64
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 15
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61e3f0e3225a0140800000000000000
+      internalID: 4686648676283834735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_65
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 68
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec03359e4c6e6990800000000000000
+      internalID: -7390850853702005523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_66
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 11
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90796f0bfcf6075a0800000000000000
+      internalID: -6525592922241984759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_67
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 67
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384543a4a60f0b680800000000000000
+      internalID: -8741222537423989629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_68
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 63
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a3973be05bef030800000000000000
+      internalID: 3530458232650283637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_69
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 24
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fde9f7c8c5c0240800000000000000
+      internalID: 4759280664730066769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_70
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 14
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3530afee225a9dc10800000000000000
+      internalID: 2078874272465027923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_71
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 5
+        width: 65
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939281909df587f50800000000000000
+      internalID: 6879353816573552953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_72
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 17
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f45abe295f43f390800000000000000
+      internalID: -7785792086338808583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_73
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 57
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 258dbac3a1c32b850800000000000000
+      internalID: 6391236904576866386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_74
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 5
+        width: 100
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3b130757e2d19f0800000000000000
+      internalID: -496189302012529735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_75
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 58
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22106e880092d93e0800000000000000
+      internalID: -2045433573482823390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minion 2 Explosion - 124x71_76
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 10
+        width: 519
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5575fda9d34bc3e40800000000000000
+      internalID: 5637579010245351253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Minion 2 Explosion - 124x71_0: 3741253186591572863
+      Minion 2 Explosion - 124x71_1: 1121966065583235957
+      Minion 2 Explosion - 124x71_10: -4403441383502283248
+      Minion 2 Explosion - 124x71_11: 7406075165265062740
+      Minion 2 Explosion - 124x71_12: -1492573899863638381
+      Minion 2 Explosion - 124x71_13: 3274620545530452307
+      Minion 2 Explosion - 124x71_14: -6206138349883243448
+      Minion 2 Explosion - 124x71_15: -6660981277771432436
+      Minion 2 Explosion - 124x71_16: -7007549160453902313
+      Minion 2 Explosion - 124x71_17: -6118863787862769003
+      Minion 2 Explosion - 124x71_18: 8503334426426508446
+      Minion 2 Explosion - 124x71_19: -2584507684375641684
+      Minion 2 Explosion - 124x71_2: 4137406797397815584
+      Minion 2 Explosion - 124x71_20: -5335222047696240087
+      Minion 2 Explosion - 124x71_21: 7515370776908117926
+      Minion 2 Explosion - 124x71_22: -3180180147930906302
+      Minion 2 Explosion - 124x71_23: -8455152255117203513
+      Minion 2 Explosion - 124x71_24: -6701694122380224236
+      Minion 2 Explosion - 124x71_25: -4696750423739749713
+      Minion 2 Explosion - 124x71_26: -3416891802781926468
+      Minion 2 Explosion - 124x71_27: -2548252145373848359
+      Minion 2 Explosion - 124x71_28: 5980323792867322544
+      Minion 2 Explosion - 124x71_29: -1307899983147873375
+      Minion 2 Explosion - 124x71_3: 7403900495951028277
+      Minion 2 Explosion - 124x71_30: 5366752595591405156
+      Minion 2 Explosion - 124x71_31: 1283640919910044412
+      Minion 2 Explosion - 124x71_32: -1827965763659209003
+      Minion 2 Explosion - 124x71_33: -8807842707078468699
+      Minion 2 Explosion - 124x71_34: 8688649358841091665
+      Minion 2 Explosion - 124x71_35: -638559183993525800
+      Minion 2 Explosion - 124x71_36: -4782305226768888157
+      Minion 2 Explosion - 124x71_37: 1662500848889827784
+      Minion 2 Explosion - 124x71_38: 5778359962502836118
+      Minion 2 Explosion - 124x71_39: -1143577039681647457
+      Minion 2 Explosion - 124x71_4: 7618421685416054360
+      Minion 2 Explosion - 124x71_40: 106824724985009200
+      Minion 2 Explosion - 124x71_41: 7993882416832383705
+      Minion 2 Explosion - 124x71_42: 3624887406560095416
+      Minion 2 Explosion - 124x71_43: -6733184611054596355
+      Minion 2 Explosion - 124x71_44: 8210654280903756005
+      Minion 2 Explosion - 124x71_45: 5808705570603071391
+      Minion 2 Explosion - 124x71_46: 2994871594103041422
+      Minion 2 Explosion - 124x71_47: -68085846174065825
+      Minion 2 Explosion - 124x71_48: -7346983726116794346
+      Minion 2 Explosion - 124x71_49: 438612118436464236
+      Minion 2 Explosion - 124x71_5: 7714834410948820119
+      Minion 2 Explosion - 124x71_50: -1499446315249361752
+      Minion 2 Explosion - 124x71_51: 3183744370557006256
+      Minion 2 Explosion - 124x71_52: -3341267199992292152
+      Minion 2 Explosion - 124x71_53: 3553920351007419585
+      Minion 2 Explosion - 124x71_54: -4678689958611144088
+      Minion 2 Explosion - 124x71_55: -3840556094043876678
+      Minion 2 Explosion - 124x71_56: -280071310678743948
+      Minion 2 Explosion - 124x71_57: -1600404254038724121
+      Minion 2 Explosion - 124x71_58: 6251047493815527231
+      Minion 2 Explosion - 124x71_59: 6082704121076749777
+      Minion 2 Explosion - 124x71_6: -3801715948168413004
+      Minion 2 Explosion - 124x71_60: -689980357714080520
+      Minion 2 Explosion - 124x71_61: 6614313521560179217
+      Minion 2 Explosion - 124x71_62: -763741257351984378
+      Minion 2 Explosion - 124x71_63: 4294546476063615812
+      Minion 2 Explosion - 124x71_64: 4686648676283834735
+      Minion 2 Explosion - 124x71_65: -7390850853702005523
+      Minion 2 Explosion - 124x71_66: -6525592922241984759
+      Minion 2 Explosion - 124x71_67: -8741222537423989629
+      Minion 2 Explosion - 124x71_68: 3530458232650283637
+      Minion 2 Explosion - 124x71_69: 4759280664730066769
+      Minion 2 Explosion - 124x71_7: -6142801320144600424
+      Minion 2 Explosion - 124x71_70: 2078874272465027923
+      Minion 2 Explosion - 124x71_71: 6879353816573552953
+      Minion 2 Explosion - 124x71_72: -7785792086338808583
+      Minion 2 Explosion - 124x71_73: 6391236904576866386
+      Minion 2 Explosion - 124x71_74: -496189302012529735
+      Minion 2 Explosion - 124x71_75: -2045433573482823390
+      Minion 2 Explosion - 124x71_76: 5637579010245351253
+      Minion 2 Explosion - 124x71_8: 4748745070591237281
+      Minion 2 Explosion - 124x71_9: 7667347121078556904
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

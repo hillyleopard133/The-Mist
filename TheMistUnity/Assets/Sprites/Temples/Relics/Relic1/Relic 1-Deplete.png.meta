@@ -1,0 +1,6201 @@
+fileFormatVersion: 2
+guid: 2fa1a9f37b8c7de448d02f68df2530de
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3163928080830936324
+    second: Relic 1-Deplete_0
+  - first:
+      213: -8526680339189176892
+    second: Relic 1-Deplete_1
+  - first:
+      213: 6156678075399188563
+    second: Relic 1-Deplete_2
+  - first:
+      213: 4898235944708523879
+    second: Relic 1-Deplete_3
+  - first:
+      213: 2633027030009191979
+    second: Relic 1-Deplete_4
+  - first:
+      213: 7748870398837324897
+    second: Relic 1-Deplete_5
+  - first:
+      213: 3831237112027746162
+    second: Relic 1-Deplete_6
+  - first:
+      213: -5220091331537082850
+    second: Relic 1-Deplete_7
+  - first:
+      213: 7151917152487869895
+    second: Relic 1-Deplete_8
+  - first:
+      213: 2064045451257305746
+    second: Relic 1-Deplete_9
+  - first:
+      213: -8753101226878269049
+    second: Relic 1-Deplete_10
+  - first:
+      213: -882041243150400232
+    second: Relic 1-Deplete_11
+  - first:
+      213: 17968398287269512
+    second: Relic 1-Deplete_12
+  - first:
+      213: 3530315716207817309
+    second: Relic 1-Deplete_13
+  - first:
+      213: 9029067695713829318
+    second: Relic 1-Deplete_14
+  - first:
+      213: -1319290525262574919
+    second: Relic 1-Deplete_15
+  - first:
+      213: -7716507382710065434
+    second: Relic 1-Deplete_16
+  - first:
+      213: 4026178018763445787
+    second: Relic 1-Deplete_17
+  - first:
+      213: -4955018865278040177
+    second: Relic 1-Deplete_18
+  - first:
+      213: 2029699754375970088
+    second: Relic 1-Deplete_19
+  - first:
+      213: -6057313292409576632
+    second: Relic 1-Deplete_20
+  - first:
+      213: -6600774820668844306
+    second: Relic 1-Deplete_21
+  - first:
+      213: 3840100321189579267
+    second: Relic 1-Deplete_22
+  - first:
+      213: -6947183759072439064
+    second: Relic 1-Deplete_23
+  - first:
+      213: 2842384902019335626
+    second: Relic 1-Deplete_24
+  - first:
+      213: 686270616432766232
+    second: Relic 1-Deplete_25
+  - first:
+      213: 7370298312204078306
+    second: Relic 1-Deplete_26
+  - first:
+      213: 7347656979811110914
+    second: Relic 1-Deplete_27
+  - first:
+      213: -2939848030327132946
+    second: Relic 1-Deplete_28
+  - first:
+      213: 9200779400366296209
+    second: Relic 1-Deplete_29
+  - first:
+      213: 1937747166596667782
+    second: Relic 1-Deplete_30
+  - first:
+      213: 3949899367452168846
+    second: Relic 1-Deplete_31
+  - first:
+      213: -549607065876320105
+    second: Relic 1-Deplete_32
+  - first:
+      213: 2250264891090382335
+    second: Relic 1-Deplete_33
+  - first:
+      213: 6772120358140894011
+    second: Relic 1-Deplete_34
+  - first:
+      213: -7119883049258598233
+    second: Relic 1-Deplete_35
+  - first:
+      213: 5399104341317163506
+    second: Relic 1-Deplete_36
+  - first:
+      213: 1958533358692257669
+    second: Relic 1-Deplete_37
+  - first:
+      213: 6926456236245281416
+    second: Relic 1-Deplete_38
+  - first:
+      213: -6367179887945380536
+    second: Relic 1-Deplete_39
+  - first:
+      213: 2714278125292624338
+    second: Relic 1-Deplete_40
+  - first:
+      213: 8530738939493173985
+    second: Relic 1-Deplete_41
+  - first:
+      213: -6331658767313048222
+    second: Relic 1-Deplete_42
+  - first:
+      213: -2286240524632513632
+    second: Relic 1-Deplete_43
+  - first:
+      213: -3503679967135034636
+    second: Relic 1-Deplete_44
+  - first:
+      213: -7055046142817855232
+    second: Relic 1-Deplete_45
+  - first:
+      213: 4057457788601710876
+    second: Relic 1-Deplete_46
+  - first:
+      213: -5831566776241472411
+    second: Relic 1-Deplete_47
+  - first:
+      213: 8761309205350024745
+    second: Relic 1-Deplete_48
+  - first:
+      213: 1907572401311325751
+    second: Relic 1-Deplete_49
+  - first:
+      213: 7206080117246544589
+    second: Relic 1-Deplete_50
+  - first:
+      213: 1098304674772134921
+    second: Relic 1-Deplete_51
+  - first:
+      213: -2451605066228048177
+    second: Relic 1-Deplete_52
+  - first:
+      213: 2348755141389498092
+    second: Relic 1-Deplete_53
+  - first:
+      213: -8644589272709092021
+    second: Relic 1-Deplete_54
+  - first:
+      213: -4061751151129294258
+    second: Relic 1-Deplete_55
+  - first:
+      213: -3577670891959798000
+    second: Relic 1-Deplete_56
+  - first:
+      213: 4666441070872910048
+    second: Relic 1-Deplete_57
+  - first:
+      213: 3804876517870772672
+    second: Relic 1-Deplete_58
+  - first:
+      213: 8184974069717207373
+    second: Relic 1-Deplete_59
+  - first:
+      213: -3582801709446968574
+    second: Relic 1-Deplete_60
+  - first:
+      213: -5526278130412687550
+    second: Relic 1-Deplete_61
+  - first:
+      213: -562264775555343821
+    second: Relic 1-Deplete_62
+  - first:
+      213: 8909583870903373134
+    second: Relic 1-Deplete_63
+  - first:
+      213: -1000260204661637167
+    second: Relic 1-Deplete_64
+  - first:
+      213: 1013351744567648676
+    second: Relic 1-Deplete_65
+  - first:
+      213: 1951482325970610615
+    second: Relic 1-Deplete_66
+  - first:
+      213: -4821414467701727569
+    second: Relic 1-Deplete_67
+  - first:
+      213: -3542138650437176325
+    second: Relic 1-Deplete_68
+  - first:
+      213: 6383280280011788118
+    second: Relic 1-Deplete_69
+  - first:
+      213: 3130271411408797262
+    second: Relic 1-Deplete_70
+  - first:
+      213: 3917704243987584040
+    second: Relic 1-Deplete_71
+  - first:
+      213: -5736477347653300004
+    second: Relic 1-Deplete_72
+  - first:
+      213: -6893633169044485073
+    second: Relic 1-Deplete_73
+  - first:
+      213: -1272187472928157900
+    second: Relic 1-Deplete_74
+  - first:
+      213: 8051309591323532969
+    second: Relic 1-Deplete_75
+  - first:
+      213: -1190170258472325366
+    second: Relic 1-Deplete_76
+  - first:
+      213: 4286433108877354502
+    second: Relic 1-Deplete_77
+  - first:
+      213: -2317809281056726120
+    second: Relic 1-Deplete_78
+  - first:
+      213: 2394061112286294351
+    second: Relic 1-Deplete_79
+  - first:
+      213: 2901256078417671462
+    second: Relic 1-Deplete_80
+  - first:
+      213: -4987306663698060739
+    second: Relic 1-Deplete_81
+  - first:
+      213: 24899096661016906
+    second: Relic 1-Deplete_82
+  - first:
+      213: 1532281124605491505
+    second: Relic 1-Deplete_83
+  - first:
+      213: 4801071130831688597
+    second: Relic 1-Deplete_84
+  - first:
+      213: 8373942932043623991
+    second: Relic 1-Deplete_85
+  - first:
+      213: -3494948606121305861
+    second: Relic 1-Deplete_86
+  - first:
+      213: -3491750066749850556
+    second: Relic 1-Deplete_87
+  - first:
+      213: 6612964392578030309
+    second: Relic 1-Deplete_88
+  - first:
+      213: -4352209423510172546
+    second: Relic 1-Deplete_89
+  - first:
+      213: 925915893867547414
+    second: Relic 1-Deplete_90
+  - first:
+      213: -4603340507676476156
+    second: Relic 1-Deplete_91
+  - first:
+      213: 2688448142619121585
+    second: Relic 1-Deplete_92
+  - first:
+      213: -742999641518662353
+    second: Relic 1-Deplete_93
+  - first:
+      213: -7791749758258268930
+    second: Relic 1-Deplete_94
+  - first:
+      213: 7657549487852165401
+    second: Relic 1-Deplete_95
+  - first:
+      213: 8804631320796067322
+    second: Relic 1-Deplete_96
+  - first:
+      213: -5160815544550455051
+    second: Relic 1-Deplete_97
+  - first:
+      213: -1694367000988534191
+    second: Relic 1-Deplete_98
+  - first:
+      213: 2258546289417214406
+    second: Relic 1-Deplete_99
+  - first:
+      213: -8138829726291244524
+    second: Relic 1-Deplete_100
+  - first:
+      213: 5242837424161327962
+    second: Relic 1-Deplete_101
+  - first:
+      213: -2082665125986424658
+    second: Relic 1-Deplete_102
+  - first:
+      213: -3914382162670340331
+    second: Relic 1-Deplete_103
+  - first:
+      213: 6239078968194355032
+    second: Relic 1-Deplete_104
+  - first:
+      213: -7768189197591477453
+    second: Relic 1-Deplete_105
+  - first:
+      213: -3824730182516703746
+    second: Relic 1-Deplete_106
+  - first:
+      213: -2269468119886555363
+    second: Relic 1-Deplete_107
+  - first:
+      213: 5910273188534333952
+    second: Relic 1-Deplete_108
+  - first:
+      213: -8827767590749236265
+    second: Relic 1-Deplete_109
+  - first:
+      213: 3849405502798613706
+    second: Relic 1-Deplete_110
+  - first:
+      213: 6648700701785850304
+    second: Relic 1-Deplete_111
+  - first:
+      213: 8798794483729092229
+    second: Relic 1-Deplete_112
+  - first:
+      213: 8699210423264160119
+    second: Relic 1-Deplete_113
+  - first:
+      213: 7337825102296835649
+    second: Relic 1-Deplete_114
+  - first:
+      213: -2434487788193398197
+    second: Relic 1-Deplete_115
+  - first:
+      213: 5948416070065210109
+    second: Relic 1-Deplete_116
+  - first:
+      213: -245082346956428145
+    second: Relic 1-Deplete_117
+  - first:
+      213: 8303897376283874703
+    second: Relic 1-Deplete_118
+  - first:
+      213: -1476702154638137017
+    second: Relic 1-Deplete_119
+  - first:
+      213: 321692825572576985
+    second: Relic 1-Deplete_120
+  - first:
+      213: 8887396384116794404
+    second: Relic 1-Deplete_121
+  - first:
+      213: 8252182500798887256
+    second: Relic 1-Deplete_122
+  - first:
+      213: 5623148180287499850
+    second: Relic 1-Deplete_123
+  - first:
+      213: -2111815619125166225
+    second: Relic 1-Deplete_124
+  - first:
+      213: -7435008065168284648
+    second: Relic 1-Deplete_125
+  - first:
+      213: -7467076062252034966
+    second: Relic 1-Deplete_126
+  - first:
+      213: 3520373948644588519
+    second: Relic 1-Deplete_127
+  - first:
+      213: 8647384219124880099
+    second: Relic 1-Deplete_128
+  - first:
+      213: -5601848779530270794
+    second: Relic 1-Deplete_129
+  - first:
+      213: 2365035002139571397
+    second: Relic 1-Deplete_130
+  - first:
+      213: 4707554865873876349
+    second: Relic 1-Deplete_131
+  - first:
+      213: 3875350843701644528
+    second: Relic 1-Deplete_132
+  - first:
+      213: -5595018750046448158
+    second: Relic 1-Deplete_133
+  - first:
+      213: 7034211420117182725
+    second: Relic 1-Deplete_134
+  - first:
+      213: -3604628436486185598
+    second: Relic 1-Deplete_135
+  - first:
+      213: -5056717665908138820
+    second: Relic 1-Deplete_136
+  - first:
+      213: -3674095317323000993
+    second: Relic 1-Deplete_137
+  - first:
+      213: 2087603317398214222
+    second: Relic 1-Deplete_138
+  - first:
+      213: -8573333160825536843
+    second: Relic 1-Deplete_139
+  - first:
+      213: 8372216365270976137
+    second: Relic 1-Deplete_140
+  - first:
+      213: 5559903974214458483
+    second: Relic 1-Deplete_141
+  - first:
+      213: -8220023992959977004
+    second: Relic 1-Deplete_142
+  - first:
+      213: -4683714924375994051
+    second: Relic 1-Deplete_143
+  - first:
+      213: 5686927567348728198
+    second: Relic 1-Deplete_144
+  - first:
+      213: 8361211610699440396
+    second: Relic 1-Deplete_145
+  - first:
+      213: -2182310869696430011
+    second: Relic 1-Deplete_146
+  - first:
+      213: -4734046391520567742
+    second: Relic 1-Deplete_147
+  - first:
+      213: 8800742581454252771
+    second: Relic 1-Deplete_148
+  - first:
+      213: -3036502460497562358
+    second: Relic 1-Deplete_149
+  - first:
+      213: -7611342580008929214
+    second: Relic 1-Deplete_150
+  - first:
+      213: -3330417907692198004
+    second: Relic 1-Deplete_151
+  - first:
+      213: 4213704884142376480
+    second: Relic 1-Deplete_152
+  - first:
+      213: 1745475158180338705
+    second: Relic 1-Deplete_153
+  - first:
+      213: -3774004921280236297
+    second: Relic 1-Deplete_154
+  - first:
+      213: 2320670709212848987
+    second: Relic 1-Deplete_155
+  - first:
+      213: -5738098477461472388
+    second: Relic 1-Deplete_156
+  - first:
+      213: -8196913838714429014
+    second: Relic 1-Deplete_157
+  - first:
+      213: 7403785512594129883
+    second: Relic 1-Deplete_158
+  - first:
+      213: -3545306369799714974
+    second: Relic 1-Deplete_159
+  - first:
+      213: 7465473488314811985
+    second: Relic 1-Deplete_160
+  - first:
+      213: -7594841468068765284
+    second: Relic 1-Deplete_161
+  - first:
+      213: 5537577801353474379
+    second: Relic 1-Deplete_162
+  - first:
+      213: 6905194494636150466
+    second: Relic 1-Deplete_163
+  - first:
+      213: -195967869572209780
+    second: Relic 1-Deplete_164
+  - first:
+      213: 3594014796312154526
+    second: Relic 1-Deplete_165
+  - first:
+      213: 5170359615818350588
+    second: Relic 1-Deplete_166
+  - first:
+      213: -8388716017999256103
+    second: Relic 1-Deplete_167
+  - first:
+      213: -5921611991481518747
+    second: Relic 1-Deplete_168
+  - first:
+      213: -3376951523972752897
+    second: Relic 1-Deplete_169
+  - first:
+      213: 1827846549508271360
+    second: Relic 1-Deplete_170
+  - first:
+      213: 5792667431021767655
+    second: Relic 1-Deplete_171
+  - first:
+      213: -2722227455432730301
+    second: Relic 1-Deplete_172
+  - first:
+      213: 1892700214385427841
+    second: Relic 1-Deplete_173
+  - first:
+      213: 6575103535738293105
+    second: Relic 1-Deplete_174
+  - first:
+      213: -7378915669453048502
+    second: Relic 1-Deplete_175
+  - first:
+      213: -844748518146613932
+    second: Relic 1-Deplete_176
+  - first:
+      213: 1306131654164519565
+    second: Relic 1-Deplete_177
+  - first:
+      213: -3617975858387337178
+    second: Relic 1-Deplete_178
+  - first:
+      213: 7451011328138053548
+    second: Relic 1-Deplete_179
+  - first:
+      213: 7738028161633378096
+    second: Relic 1-Deplete_180
+  - first:
+      213: -7206965740523986347
+    second: Relic 1-Deplete_181
+  - first:
+      213: -8876844572684562229
+    second: Relic 1-Deplete_182
+  - first:
+      213: -8091814243689894848
+    second: Relic 1-Deplete_183
+  - first:
+      213: 5914994035631218065
+    second: Relic 1-Deplete_184
+  - first:
+      213: 7396036999453780533
+    second: Relic 1-Deplete_185
+  - first:
+      213: -6184732339349688842
+    second: Relic 1-Deplete_186
+  - first:
+      213: 6043023672179810799
+    second: Relic 1-Deplete_187
+  - first:
+      213: -3215011499089552616
+    second: Relic 1-Deplete_188
+  - first:
+      213: 7360119971552374054
+    second: Relic 1-Deplete_189
+  - first:
+      213: -8088858002271298179
+    second: Relic 1-Deplete_190
+  - first:
+      213: 5527319796508914452
+    second: Relic 1-Deplete_191
+  - first:
+      213: -3176967908601094857
+    second: Relic 1-Deplete_192
+  - first:
+      213: 296398603419758205
+    second: Relic 1-Deplete_193
+  - first:
+      213: -3449821141135555644
+    second: Relic 1-Deplete_194
+  - first:
+      213: 3571202578039731338
+    second: Relic 1-Deplete_195
+  - first:
+      213: 7289881815540903348
+    second: Relic 1-Deplete_196
+  - first:
+      213: -5583967550493290250
+    second: Relic 1-Deplete_197
+  - first:
+      213: 365497719663162854
+    second: Relic 1-Deplete_198
+  - first:
+      213: 1934978378356634120
+    second: Relic 1-Deplete_199
+  - first:
+      213: 6640306896330833317
+    second: Relic 1-Deplete_200
+  - first:
+      213: -750458943955553416
+    second: Relic 1-Deplete_201
+  - first:
+      213: 6040271645411839959
+    second: Relic 1-Deplete_202
+  - first:
+      213: -7637654328864045405
+    second: Relic 1-Deplete_203
+  - first:
+      213: 955234841846564024
+    second: Relic 1-Deplete_204
+  - first:
+      213: 6695591995422148397
+    second: Relic 1-Deplete_205
+  - first:
+      213: -5528802201354152383
+    second: Relic 1-Deplete_206
+  - first:
+      213: 982682790040456271
+    second: Relic 1-Deplete_207
+  - first:
+      213: -218560806322229082
+    second: Relic 1-Deplete_208
+  - first:
+      213: 1512888554362309362
+    second: Relic 1-Deplete_209
+  - first:
+      213: -3001440915691203512
+    second: Relic 1-Deplete_210
+  - first:
+      213: 5340726887391119255
+    second: Relic 1-Deplete_211
+  - first:
+      213: -3943093921629048600
+    second: Relic 1-Deplete_212
+  - first:
+      213: -5093083106567483158
+    second: Relic 1-Deplete_213
+  - first:
+      213: 8286750871333385555
+    second: Relic 1-Deplete_214
+  - first:
+      213: -1667864989656837225
+    second: Relic 1-Deplete_215
+  - first:
+      213: -2258373414316203759
+    second: Relic 1-Deplete_216
+  - first:
+      213: -7456461745761573147
+    second: Relic 1-Deplete_217
+  - first:
+      213: 3374654132240405142
+    second: Relic 1-Deplete_218
+  - first:
+      213: -3023897902957557106
+    second: Relic 1-Deplete_219
+  - first:
+      213: 4236245408392942133
+    second: Relic 1-Deplete_220
+  - first:
+      213: -1136734438421184905
+    second: Relic 1-Deplete_221
+  - first:
+      213: -7070472039932629811
+    second: Relic 1-Deplete_222
+  - first:
+      213: 1563385285772055073
+    second: Relic 1-Deplete_223
+  - first:
+      213: 6863612007844791647
+    second: Relic 1-Deplete_224
+  - first:
+      213: 246985101378598356
+    second: Relic 1-Deplete_225
+  - first:
+      213: -4705390143092136654
+    second: Relic 1-Deplete_226
+  - first:
+      213: 3577957021387750918
+    second: Relic 1-Deplete_227
+  - first:
+      213: 1930999686818557530
+    second: Relic 1-Deplete_228
+  - first:
+      213: 3538895701948837548
+    second: Relic 1-Deplete_229
+  - first:
+      213: 4308320001250936780
+    second: Relic 1-Deplete_230
+  - first:
+      213: 8944991148565439811
+    second: Relic 1-Deplete_231
+  - first:
+      213: -4877019157731257552
+    second: Relic 1-Deplete_232
+  - first:
+      213: -5970865228764277629
+    second: Relic 1-Deplete_233
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic 1-Deplete_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa40377c287714d0800000000000000
+      internalID: -3163928080830936324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5625568652ba980800000000000000
+      internalID: -8526680339189176892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350ba90171ae07550800000000000000
+      internalID: 6156678075399188563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_3
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767c666c3a70af340800000000000000
+      internalID: 4898235944708523879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_4
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e13b722246a8420800000000000000
+      internalID: 2633027030009191979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_5
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cfc3d8294898b60800000000000000
+      internalID: 7748870398837324897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_6
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 15
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f05b8cad94b2530800000000000000
+      internalID: 3831237112027746162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_7
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 15
+        width: 64
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16e2a857928e87b0800000000000000
+      internalID: -5220091331537082850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_8
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 71
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd0019f1c6b04360800000000000000
+      internalID: 7151917152487869895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_9
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 15
+        width: 64
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ad372f666f4ac10800000000000000
+      internalID: 2064045451257305746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_10
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 15
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78982e06fccb68680800000000000000
+      internalID: -8753101226878269049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_11
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 15
+        width: 64
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815c6c0a92c52c3f0800000000000000
+      internalID: -882041243150400232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_12
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 15
+        width: 64
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e681db926df3000800000000000000
+      internalID: 17968398287269512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_13
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 15
+        width: 64
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d52bb8180733ef030800000000000000
+      internalID: 3530315716207817309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_14
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 15
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c14aff2b31bd4d70800000000000000
+      internalID: 9029067695713829318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_15
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 15
+        width: 64
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba8f26d140f0bde0800000000000000
+      internalID: -1319290525262574919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e623e25b6579e490800000000000000
+      internalID: -7716507382710065434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1691e2939bdfd730800000000000000
+      internalID: 4026178018763445787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_18
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f874eb7489c3c3bb0800000000000000
+      internalID: -4955018865278040177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_19
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82df64c3c21fa2c10800000000000000
+      internalID: 2029699754375970088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_20
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843eca057a910fba0800000000000000
+      internalID: -6057313292409576632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_21
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6d0b3e5465564a0800000000000000
+      internalID: -6600774820668844306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a4e5a75e6ca4530800000000000000
+      internalID: 3840100321189579267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_23
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4df1bcd25a69f90800000000000000
+      internalID: -6947183759072439064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_24
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5cbcf320e227720800000000000000
+      internalID: 2842384902019335626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_25
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d63485d7f168900800000000000000
+      internalID: 686270616432766232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_26
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ecc593f34f884660800000000000000
+      internalID: 7370298312204078306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_27
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2009f05f71f18f560800000000000000
+      internalID: 7347656979811110914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_28
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec28badacf8337d0800000000000000
+      internalID: -2939848030327132946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_29
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c8097ed1cbfaf70800000000000000
+      internalID: 9200779400366296209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_30
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689938908c244ea10800000000000000
+      internalID: 1937747166596667782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_31
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82d6871c8cd0d630800000000000000
+      internalID: 3949899367452168846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_32
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790b56819476f58f0800000000000000
+      internalID: -549607065876320105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_33
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffda9fbfefb8a3f10800000000000000
+      internalID: 2250264891090382335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_34
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3bdd23e5976bfd50800000000000000
+      internalID: 6772120358140894011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_35
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a0cd96e618113d90800000000000000
+      internalID: -7119883049258598233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_36
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f99a71fac87dea40800000000000000
+      internalID: 5399104341317163506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_37
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58fca9586bb1e2b10800000000000000
+      internalID: 1958533358692257669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_38
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a60b9bf37bf1060800000000000000
+      internalID: 6926456236245281416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_39
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d010e60ab33a7a0800000000000000
+      internalID: -6367179887945380536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_40
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d91ea7f29d0ba520800000000000000
+      internalID: 2714278125292624338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_41
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea45102ed5436670800000000000000
+      internalID: 8530738939493173985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_42
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d615fc5ed6128a0800000000000000
+      internalID: -6331658767313048222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_43
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a32d2a1b54a540e0800000000000000
+      internalID: -2286240524632513632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_44
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2934812ad606fc0800000000000000
+      internalID: -3503679967135034636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_45
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0091a5f89e0771e90800000000000000
+      internalID: -7055046142817855232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_46
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c193fb48c5cfe4830800000000000000
+      internalID: 4057457788601710876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_47
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56c382af9ec121fa0800000000000000
+      internalID: -5831566776241472411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_48
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9268f388d4c669970800000000000000
+      internalID: 8761309205350024745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_49
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e10830efe097a10800000000000000
+      internalID: 1907572401311325751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_50
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca4c7befa3210460800000000000000
+      internalID: 7206080117246544589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_51
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ca1fa5846fd3f00800000000000000
+      internalID: 1098304674772134921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_52
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcedde17e262afdd0800000000000000
+      internalID: -2451605066228048177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_53
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce6b4ea5b54789020800000000000000
+      internalID: 2348755141389498092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_54
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4da5038bdf380880800000000000000
+      internalID: -8644589272709092021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_55
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a87ee19d2c1a7c0800000000000000
+      internalID: -4061751151129294258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_56
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0173b71774f895ec0800000000000000
+      internalID: -3577670891959798000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_57
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e85caa1e6782c040800000000000000
+      internalID: 4666441070872910048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_58
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1a9eda803adc430800000000000000
+      internalID: 3804876517870772672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_59
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d490741fc8ed69170800000000000000
+      internalID: 8184974069717207373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_60
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b40c7e3d4574ec0800000000000000
+      internalID: -3582801709446968574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_61
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fedb2e157be43b0800000000000000
+      internalID: -5526278130412687550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_62
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a1f476a2f6238f0800000000000000
+      internalID: -562264775555343821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_63
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4dceb9535335ab70800000000000000
+      internalID: 8909583870903373134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_64
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dffe2ab4ac5e12f0800000000000000
+      internalID: -1000260204661637167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_65
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a12a7fea06201e00800000000000000
+      internalID: 1013351744567648676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_66
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b96ee806de051b10800000000000000
+      internalID: 1951482325970610615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_67
+      rect:
+        serializedVersion: 2
+        x: 2315
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae95b92615e61db0800000000000000
+      internalID: -4821414467701727569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_68
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3b28b1aabc7dec0800000000000000
+      internalID: -3542138650437176325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_69
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65fcbd73897f59850800000000000000
+      internalID: 6383280280011788118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_70
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ef4978345f07b20800000000000000
+      internalID: 3130271411408797262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_71
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8249be5c04b7e5630800000000000000
+      internalID: 3917704243987584040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_72
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0dc07de30f360b0800000000000000
+      internalID: -5736477347653300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_73
+      rect:
+        serializedVersion: 2
+        x: 2525
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2cc0432825e450a0800000000000000
+      internalID: -6893633169044485073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_74
+      rect:
+        serializedVersion: 2
+        x: 2541
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f4a64db38485ee0800000000000000
+      internalID: -1272187472928157900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_75
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aed8876a6ffbbf60800000000000000
+      internalID: 8051309591323532969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_76
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0fa589a47aab7fe0800000000000000
+      internalID: -1190170258472325366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_77
+      rect:
+        serializedVersion: 2
+        x: 2646
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 606ab18b3387c7b30800000000000000
+      internalID: 4286433108877354502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_78
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893a2893dbc75dfd0800000000000000
+      internalID: -2317809281056726120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_79
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41b668b5e9693120800000000000000
+      internalID: 2394061112286294351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_80
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62537842805534820800000000000000
+      internalID: 2901256078417671462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_81
+      rect:
+        serializedVersion: 2
+        x: 2815
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3aa654630789cab0800000000000000
+      internalID: -4987306663698060739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_82
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4145b3b895785000800000000000000
+      internalID: 24899096661016906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_83
+      rect:
+        serializedVersion: 2
+        x: 2856
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13975208091c34510800000000000000
+      internalID: 1532281124605491505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_84
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5931b9e91c4d0a240800000000000000
+      internalID: 4801071130831688597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_85
+      rect:
+        serializedVersion: 2
+        x: 2945
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e6ad9cab8363470800000000000000
+      internalID: 8373942932043623991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_86
+      rect:
+        serializedVersion: 2
+        x: 2961
+        y: 15
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf894ef72c27f7fc0800000000000000
+      internalID: -3494948606121305861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_87
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 32
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44cbdea70dfca8fc0800000000000000
+      internalID: -3491750066749850556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea9bebf318f5cb50800000000000000
+      internalID: 6612964392578030309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_89
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c819b9698d993c0800000000000000
+      internalID: -4352209423510172546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_90
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b0dd9899389dc00800000000000000
+      internalID: 925915893867547414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_91
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40df6c3a236ad10c0800000000000000
+      internalID: -4603340507676476156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_92
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b71fd977594f4520800000000000000
+      internalID: 2688448142619121585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_93
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d990b33c550b5f0800000000000000
+      internalID: -742999641518662353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_94
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4b74890e42ed390800000000000000
+      internalID: -7791749758258268930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_95
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919176110b4154a60800000000000000
+      internalID: 7657549487852165401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_96
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5f35e8985503a70800000000000000
+      internalID: 8804631320796067322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_97
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f881cbfa991168b0800000000000000
+      internalID: -5160815544550455051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_98
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a3fe290366c78e0800000000000000
+      internalID: -1694367000988534191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_99
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c95d7942e7f75f10800000000000000
+      internalID: 2258546289417214406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_100
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a450d3c711d0f80800000000000000
+      internalID: -8138829726291244524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_101
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b824a0cdc42c840800000000000000
+      internalID: 5242837424161327962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_102
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea82c733a13e813e0800000000000000
+      internalID: -2082665125986424658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_103
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517b8ee89225da9c0800000000000000
+      internalID: -3914382162670340331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_104
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85fc5d8f349a59650800000000000000
+      internalID: 6239078968194355032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_105
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33388891519d13490800000000000000
+      internalID: -7768189197591477453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_106
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd706dc924dbeac0800000000000000
+      internalID: -3824730182516703746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_107
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d179615e4ca3180e0800000000000000
+      internalID: -2269468119886555363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_108
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002ba18a622850250800000000000000
+      internalID: 5910273188534333952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_109
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d39fa1d5287d7580800000000000000
+      internalID: -8827767590749236265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_110
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: accceb6e8e5db6530800000000000000
+      internalID: 3849405502798613706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_111
+      rect:
+        serializedVersion: 2
+        x: 2401
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c106dbdf0ee44c50800000000000000
+      internalID: 6648700701785850304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_112
+      rect:
+        serializedVersion: 2
+        x: 2506
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ec65607f89b1a70800000000000000
+      internalID: 8798794483729092229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_113
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77929012acdc9b870800000000000000
+      internalID: 8699210423264160119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_114
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146e8569d0135d560800000000000000
+      internalID: 7337825102296835649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_115
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42c4be4146f63ed0800000000000000
+      internalID: -2434487788193398197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_116
+      rect:
+        serializedVersion: 2
+        x: 2926
+        y: 21
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2467056e40d8250800000000000000
+      internalID: 5948416070065210109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_117
+      rect:
+        serializedVersion: 2
+        x: 3031
+        y: 21
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c61f867ea499cf0800000000000000
+      internalID: -245082346956428145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_118
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85d2b4faae5d3370800000000000000
+      internalID: 8303897376283874703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_119
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7496db9d633b18be0800000000000000
+      internalID: -1476702154638137017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_120
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de8b03abe1e67400800000000000000
+      internalID: 321692825572576985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_121
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4246f558cef565b70800000000000000
+      internalID: 8887396384116794404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_122
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855ffc53344a58270800000000000000
+      internalID: 8252182500798887256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_123
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4eab6d2a7f690e40800000000000000
+      internalID: 5623148180287499850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_124
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f3cee12e251b2e0800000000000000
+      internalID: -2111815619125166225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_125
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814ea7d9e8b81d890800000000000000
+      internalID: -7435008065168284648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_126
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6415a632ed9f5890800000000000000
+      internalID: -7467076062252034966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_127
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ebff7d5471ead030800000000000000
+      internalID: 3520373948644588519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_128
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2d149a12ea10870800000000000000
+      internalID: 8647384219124880099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_129
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b784a2073c3242b0800000000000000
+      internalID: -5601848779530270794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_130
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4f4efcdca42d020800000000000000
+      internalID: 2365035002139571397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_131
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75f2157538945140800000000000000
+      internalID: 4707554865873876349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_132
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fcc8d25f0308c530800000000000000
+      internalID: 3875350843701644528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_133
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5d4db27108a52b0800000000000000
+      internalID: -5595018750046448158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_134
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509a41b840a8e9160800000000000000
+      internalID: 7034211420117182725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_135
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d18fff889c9fdc0800000000000000
+      internalID: -3604628436486185598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_136
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc5a12131ee2d9b0800000000000000
+      internalID: -5056717665908138820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_137
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53590c66cdf20dc0800000000000000
+      internalID: -3674095317323000993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_138
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4692751828a8fc10800000000000000
+      internalID: 2087603317398214222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_139
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bebae7e9e6650980800000000000000
+      internalID: -8573333160825536843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_140
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98640b22d66103470800000000000000
+      internalID: 8372216365270976137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_141
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37cd558f43fb82d40800000000000000
+      internalID: 5559903974214458483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_142
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9be6edabb9ced80800000000000000
+      internalID: -8220023992959977004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_143
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d319f57771a100fb0800000000000000
+      internalID: -4683714924375994051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_144
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 681823bed760cee40800000000000000
+      internalID: 5686927567348728198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_145
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01ac9b09adf80470800000000000000
+      internalID: 8361211610699440396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_146
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540454e83dfd6b1e0800000000000000
+      internalID: -2182310869696430011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_147
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e523393e94d4eb0800000000000000
+      internalID: -4734046391520567742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_148
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea2c3fdfb4822a70800000000000000
+      internalID: 8800742581454252771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_149
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05717aa91d2cd5d0800000000000000
+      internalID: -3036502460497562358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_150
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24833c600441f5690800000000000000
+      internalID: -7611342580008929214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_151
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87286aee8af7c1d0800000000000000
+      internalID: -3330417907692198004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_152
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02682a754461a7a30800000000000000
+      internalID: 4213704884142376480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_153
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c9b9f886c293810800000000000000
+      internalID: 1745475158180338705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_154
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4f386058a00abc0800000000000000
+      internalID: -3774004921280236297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_155
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53294fe6bda43020800000000000000
+      internalID: 2320670709212848987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_156
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bf2b426dd2e50b0800000000000000
+      internalID: -5738098477461472388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_157
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa161f4fa46be3e80800000000000000
+      internalID: -8196913838714429014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_158
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd34b5f52b78fb660800000000000000
+      internalID: 7403785512594129883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_159
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2678828f3aa8ccec0800000000000000
+      internalID: -3545306369799714974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_160
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156c9177590ba9760800000000000000
+      internalID: 7465473488314811985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_161
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91ea5a8ce3b99690800000000000000
+      internalID: -7594841468068765284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_162
+      rect:
+        serializedVersion: 2
+        x: 2313
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4133c5cbad69dc40800000000000000
+      internalID: 5537577801353474379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_163
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ce45cdbecd24df50800000000000000
+      internalID: 6905194494636150466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_164
+      rect:
+        serializedVersion: 2
+        x: 2418
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8322cac248c74df0800000000000000
+      internalID: -195967869572209780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_165
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e911fa35a6180e130800000000000000
+      internalID: 3594014796312154526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_166
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffb0e54daec0c740800000000000000
+      internalID: 5170359615818350588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_167
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d566891a3b459b80800000000000000
+      internalID: -8388716017999256103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_168
+      rect:
+        serializedVersion: 2
+        x: 2628
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565fc0e844532dda0800000000000000
+      internalID: -5921611991481518747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_169
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9d3e51b78a221d0800000000000000
+      internalID: -3376951523972752897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_170
+      rect:
+        serializedVersion: 2
+        x: 2733
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d2d5f90c0dd5910800000000000000
+      internalID: 1827846549508271360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_171
+      rect:
+        serializedVersion: 2
+        x: 2815
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ebe6007650b36050800000000000000
+      internalID: 5792667431021767655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_172
+      rect:
+        serializedVersion: 2
+        x: 2838
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 349dd116d84b83ad0800000000000000
+      internalID: -2722227455432730301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_173
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 185cfb821d8344a10800000000000000
+      internalID: 1892700214385427841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_174
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 8
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b881154d57f3b50800000000000000
+      internalID: 6575103535738293105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_175
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 8
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45ffa63b43d89990800000000000000
+      internalID: -7378915669453048502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_176
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d555bc2b9d644f0800000000000000
+      internalID: -844748518146613932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_177
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a9e5cb1df402210800000000000000
+      internalID: 1306131654164519565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_178
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62042ea202e5acdc0800000000000000
+      internalID: -3617975858387337178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_179
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca78417635f476760800000000000000
+      internalID: 7451011328138053548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_180
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f502c7d9ff26b60800000000000000
+      internalID: 7738028161633378096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_181
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55268a7d7d6bbfb90800000000000000
+      internalID: -7206965740523986347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_182
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc058c684ec1fc480800000000000000
+      internalID: -8876844572684562229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_183
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04cea6051d914bf80800000000000000
+      internalID: -8091814243689894848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_184
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d5a568cb7461250800000000000000
+      internalID: 5914994035631218065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_185
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53aa612177004a660800000000000000
+      internalID: 7396036999453780533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_186
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fde03a94ba6b2aa0800000000000000
+      internalID: -6184732339349688842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_187
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1ed8533022dd350800000000000000
+      internalID: 6043023672179810799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_188
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b98ff431cf163d0800000000000000
+      internalID: -3215011499089552616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_189
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d23a85e16642660800000000000000
+      internalID: 7360119971552374054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_190
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d1b08e08a9ebf80800000000000000
+      internalID: -8088858002271298179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_191
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413f5e6e11cf4bc40800000000000000
+      internalID: 5527319796508914452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_192
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d1409f48429e3d0800000000000000
+      internalID: -3176967908601094857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_193
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ea1cc95f40d1400800000000000000
+      internalID: 296398603419758205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_194
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c38bf733f5cf10d0800000000000000
+      internalID: -3449821141135555644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_195
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84740dd2d57f8130800000000000000
+      internalID: 3571202578039731338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_196
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd25e543ecda2560800000000000000
+      internalID: 7289881815540903348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_197
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f01a831913c182b0800000000000000
+      internalID: -5583967550493290250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_198
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5fcb25d32821500800000000000000
+      internalID: 365497719663162854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_199
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802320a459c6ada10800000000000000
+      internalID: 1934978378356634120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_200
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad306bb0fb172c50800000000000000
+      internalID: 6640306896330833317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_201
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873b30b0195d595f0800000000000000
+      internalID: -750458943955553416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_202
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df03ab0f0b53d350800000000000000
+      internalID: 6040271645411839959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_203
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a685da9ad9910690800000000000000
+      internalID: -7637654328864045405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_204
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b44751170da14d00800000000000000
+      internalID: 955234841846564024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_205
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d270610f1758bec50800000000000000
+      internalID: 6695591995422148397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_206
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14653e2d0bfb543b0800000000000000
+      internalID: -5528802201354152383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_207
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c40438ac033ad00800000000000000
+      internalID: 982682790040456271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_208
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a03759ca1487fcf0800000000000000
+      internalID: -218560806322229082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_209
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa0583ef1cdef410800000000000000
+      internalID: 1512888554362309362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_210
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84417e5b36db856d0800000000000000
+      internalID: -3001440915691203512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_211
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7974355cec21e1a40800000000000000
+      internalID: 5340726887391119255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_212
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e07c4d38f05749c0800000000000000
+      internalID: -3943093921629048600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_213
+      rect:
+        serializedVersion: 2
+        x: 1961
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0908d16ebb159b0800000000000000
+      internalID: -5093083106567483158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_214
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3553cfb2304700370800000000000000
+      internalID: 8286750871333385555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_215
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793913ee0ad8ad8e0800000000000000
+      internalID: -1667864989656837225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_216
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1112f755855a8a0e0800000000000000
+      internalID: -2258373414316203759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_217
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6a79a5c83558890800000000000000
+      internalID: -7456461745761573147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_218
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6925ef7bd0e25de20800000000000000
+      internalID: 3374654132240405142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_219
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a8a29e0e4f806d0800000000000000
+      internalID: -3023897902957557106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_220
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53214ac11ca2aca30800000000000000
+      internalID: 4236245408392942133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_221
+      rect:
+        serializedVersion: 2
+        x: 2381
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77eb3f90d028930f0800000000000000
+      internalID: -1136734438421184905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_222
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcceb710423a0ed90800000000000000
+      internalID: -7070472039932629811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_223
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122148d52a242b510800000000000000
+      internalID: 1563385285772055073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_224
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55c1b391c2704f50800000000000000
+      internalID: 6863612007844791647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_225
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d53c7024a77d6300800000000000000
+      internalID: 246985101378598356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_226
+      rect:
+        serializedVersion: 2
+        x: 2645
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2356e57589813beb0800000000000000
+      internalID: -4705390143092136654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_227
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e7e6144f477a130800000000000000
+      internalID: 3577957021387750918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_228
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ee53afbf94cca10800000000000000
+      internalID: 1930999686818557530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_229
+      rect:
+        serializedVersion: 2
+        x: 2801
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae21db14eeac1130800000000000000
+      internalID: 3538895701948837548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_230
+      rect:
+        serializedVersion: 2
+        x: 2855
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7c545f63a3acb30800000000000000
+      internalID: 4308320001250936780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_231
+      rect:
+        serializedVersion: 2
+        x: 2906
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345a1499e0ef22c70800000000000000
+      internalID: 8944991148565439811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_232
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03357a46ae8515cb0800000000000000
+      internalID: -4877019157731257552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 1-Deplete_233
+      rect:
+        serializedVersion: 2
+        x: 3011
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38416cd95b9332da0800000000000000
+      internalID: -5970865228764277629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic 1-Deplete_0: -3163928080830936324
+      Relic 1-Deplete_1: -8526680339189176892
+      Relic 1-Deplete_10: -8753101226878269049
+      Relic 1-Deplete_100: -8138829726291244524
+      Relic 1-Deplete_101: 5242837424161327962
+      Relic 1-Deplete_102: -2082665125986424658
+      Relic 1-Deplete_103: -3914382162670340331
+      Relic 1-Deplete_104: 6239078968194355032
+      Relic 1-Deplete_105: -7768189197591477453
+      Relic 1-Deplete_106: -3824730182516703746
+      Relic 1-Deplete_107: -2269468119886555363
+      Relic 1-Deplete_108: 5910273188534333952
+      Relic 1-Deplete_109: -8827767590749236265
+      Relic 1-Deplete_11: -882041243150400232
+      Relic 1-Deplete_110: 3849405502798613706
+      Relic 1-Deplete_111: 6648700701785850304
+      Relic 1-Deplete_112: 8798794483729092229
+      Relic 1-Deplete_113: 8699210423264160119
+      Relic 1-Deplete_114: 7337825102296835649
+      Relic 1-Deplete_115: -2434487788193398197
+      Relic 1-Deplete_116: 5948416070065210109
+      Relic 1-Deplete_117: -245082346956428145
+      Relic 1-Deplete_118: 8303897376283874703
+      Relic 1-Deplete_119: -1476702154638137017
+      Relic 1-Deplete_12: 17968398287269512
+      Relic 1-Deplete_120: 321692825572576985
+      Relic 1-Deplete_121: 8887396384116794404
+      Relic 1-Deplete_122: 8252182500798887256
+      Relic 1-Deplete_123: 5623148180287499850
+      Relic 1-Deplete_124: -2111815619125166225
+      Relic 1-Deplete_125: -7435008065168284648
+      Relic 1-Deplete_126: -7467076062252034966
+      Relic 1-Deplete_127: 3520373948644588519
+      Relic 1-Deplete_128: 8647384219124880099
+      Relic 1-Deplete_129: -5601848779530270794
+      Relic 1-Deplete_13: 3530315716207817309
+      Relic 1-Deplete_130: 2365035002139571397
+      Relic 1-Deplete_131: 4707554865873876349
+      Relic 1-Deplete_132: 3875350843701644528
+      Relic 1-Deplete_133: -5595018750046448158
+      Relic 1-Deplete_134: 7034211420117182725
+      Relic 1-Deplete_135: -3604628436486185598
+      Relic 1-Deplete_136: -5056717665908138820
+      Relic 1-Deplete_137: -3674095317323000993
+      Relic 1-Deplete_138: 2087603317398214222
+      Relic 1-Deplete_139: -8573333160825536843
+      Relic 1-Deplete_14: 9029067695713829318
+      Relic 1-Deplete_140: 8372216365270976137
+      Relic 1-Deplete_141: 5559903974214458483
+      Relic 1-Deplete_142: -8220023992959977004
+      Relic 1-Deplete_143: -4683714924375994051
+      Relic 1-Deplete_144: 5686927567348728198
+      Relic 1-Deplete_145: 8361211610699440396
+      Relic 1-Deplete_146: -2182310869696430011
+      Relic 1-Deplete_147: -4734046391520567742
+      Relic 1-Deplete_148: 8800742581454252771
+      Relic 1-Deplete_149: -3036502460497562358
+      Relic 1-Deplete_15: -1319290525262574919
+      Relic 1-Deplete_150: -7611342580008929214
+      Relic 1-Deplete_151: -3330417907692198004
+      Relic 1-Deplete_152: 4213704884142376480
+      Relic 1-Deplete_153: 1745475158180338705
+      Relic 1-Deplete_154: -3774004921280236297
+      Relic 1-Deplete_155: 2320670709212848987
+      Relic 1-Deplete_156: -5738098477461472388
+      Relic 1-Deplete_157: -8196913838714429014
+      Relic 1-Deplete_158: 7403785512594129883
+      Relic 1-Deplete_159: -3545306369799714974
+      Relic 1-Deplete_16: -7716507382710065434
+      Relic 1-Deplete_160: 7465473488314811985
+      Relic 1-Deplete_161: -7594841468068765284
+      Relic 1-Deplete_162: 5537577801353474379
+      Relic 1-Deplete_163: 6905194494636150466
+      Relic 1-Deplete_164: -195967869572209780
+      Relic 1-Deplete_165: 3594014796312154526
+      Relic 1-Deplete_166: 5170359615818350588
+      Relic 1-Deplete_167: -8388716017999256103
+      Relic 1-Deplete_168: -5921611991481518747
+      Relic 1-Deplete_169: -3376951523972752897
+      Relic 1-Deplete_17: 4026178018763445787
+      Relic 1-Deplete_170: 1827846549508271360
+      Relic 1-Deplete_171: 5792667431021767655
+      Relic 1-Deplete_172: -2722227455432730301
+      Relic 1-Deplete_173: 1892700214385427841
+      Relic 1-Deplete_174: 6575103535738293105
+      Relic 1-Deplete_175: -7378915669453048502
+      Relic 1-Deplete_176: -844748518146613932
+      Relic 1-Deplete_177: 1306131654164519565
+      Relic 1-Deplete_178: -3617975858387337178
+      Relic 1-Deplete_179: 7451011328138053548
+      Relic 1-Deplete_18: -4955018865278040177
+      Relic 1-Deplete_180: 7738028161633378096
+      Relic 1-Deplete_181: -7206965740523986347
+      Relic 1-Deplete_182: -8876844572684562229
+      Relic 1-Deplete_183: -8091814243689894848
+      Relic 1-Deplete_184: 5914994035631218065
+      Relic 1-Deplete_185: 7396036999453780533
+      Relic 1-Deplete_186: -6184732339349688842
+      Relic 1-Deplete_187: 6043023672179810799
+      Relic 1-Deplete_188: -3215011499089552616
+      Relic 1-Deplete_189: 7360119971552374054
+      Relic 1-Deplete_19: 2029699754375970088
+      Relic 1-Deplete_190: -8088858002271298179
+      Relic 1-Deplete_191: 5527319796508914452
+      Relic 1-Deplete_192: -3176967908601094857
+      Relic 1-Deplete_193: 296398603419758205
+      Relic 1-Deplete_194: -3449821141135555644
+      Relic 1-Deplete_195: 3571202578039731338
+      Relic 1-Deplete_196: 7289881815540903348
+      Relic 1-Deplete_197: -5583967550493290250
+      Relic 1-Deplete_198: 365497719663162854
+      Relic 1-Deplete_199: 1934978378356634120
+      Relic 1-Deplete_2: 6156678075399188563
+      Relic 1-Deplete_20: -6057313292409576632
+      Relic 1-Deplete_200: 6640306896330833317
+      Relic 1-Deplete_201: -750458943955553416
+      Relic 1-Deplete_202: 6040271645411839959
+      Relic 1-Deplete_203: -7637654328864045405
+      Relic 1-Deplete_204: 955234841846564024
+      Relic 1-Deplete_205: 6695591995422148397
+      Relic 1-Deplete_206: -5528802201354152383
+      Relic 1-Deplete_207: 982682790040456271
+      Relic 1-Deplete_208: -218560806322229082
+      Relic 1-Deplete_209: 1512888554362309362
+      Relic 1-Deplete_21: -6600774820668844306
+      Relic 1-Deplete_210: -3001440915691203512
+      Relic 1-Deplete_211: 5340726887391119255
+      Relic 1-Deplete_212: -3943093921629048600
+      Relic 1-Deplete_213: -5093083106567483158
+      Relic 1-Deplete_214: 8286750871333385555
+      Relic 1-Deplete_215: -1667864989656837225
+      Relic 1-Deplete_216: -2258373414316203759
+      Relic 1-Deplete_217: -7456461745761573147
+      Relic 1-Deplete_218: 3374654132240405142
+      Relic 1-Deplete_219: -3023897902957557106
+      Relic 1-Deplete_22: 3840100321189579267
+      Relic 1-Deplete_220: 4236245408392942133
+      Relic 1-Deplete_221: -1136734438421184905
+      Relic 1-Deplete_222: -7070472039932629811
+      Relic 1-Deplete_223: 1563385285772055073
+      Relic 1-Deplete_224: 6863612007844791647
+      Relic 1-Deplete_225: 246985101378598356
+      Relic 1-Deplete_226: -4705390143092136654
+      Relic 1-Deplete_227: 3577957021387750918
+      Relic 1-Deplete_228: 1930999686818557530
+      Relic 1-Deplete_229: 3538895701948837548
+      Relic 1-Deplete_23: -6947183759072439064
+      Relic 1-Deplete_230: 4308320001250936780
+      Relic 1-Deplete_231: 8944991148565439811
+      Relic 1-Deplete_232: -4877019157731257552
+      Relic 1-Deplete_233: -5970865228764277629
+      Relic 1-Deplete_24: 2842384902019335626
+      Relic 1-Deplete_25: 686270616432766232
+      Relic 1-Deplete_26: 7370298312204078306
+      Relic 1-Deplete_27: 7347656979811110914
+      Relic 1-Deplete_28: -2939848030327132946
+      Relic 1-Deplete_29: 9200779400366296209
+      Relic 1-Deplete_3: 4898235944708523879
+      Relic 1-Deplete_30: 1937747166596667782
+      Relic 1-Deplete_31: 3949899367452168846
+      Relic 1-Deplete_32: -549607065876320105
+      Relic 1-Deplete_33: 2250264891090382335
+      Relic 1-Deplete_34: 6772120358140894011
+      Relic 1-Deplete_35: -7119883049258598233
+      Relic 1-Deplete_36: 5399104341317163506
+      Relic 1-Deplete_37: 1958533358692257669
+      Relic 1-Deplete_38: 6926456236245281416
+      Relic 1-Deplete_39: -6367179887945380536
+      Relic 1-Deplete_4: 2633027030009191979
+      Relic 1-Deplete_40: 2714278125292624338
+      Relic 1-Deplete_41: 8530738939493173985
+      Relic 1-Deplete_42: -6331658767313048222
+      Relic 1-Deplete_43: -2286240524632513632
+      Relic 1-Deplete_44: -3503679967135034636
+      Relic 1-Deplete_45: -7055046142817855232
+      Relic 1-Deplete_46: 4057457788601710876
+      Relic 1-Deplete_47: -5831566776241472411
+      Relic 1-Deplete_48: 8761309205350024745
+      Relic 1-Deplete_49: 1907572401311325751
+      Relic 1-Deplete_5: 7748870398837324897
+      Relic 1-Deplete_50: 7206080117246544589
+      Relic 1-Deplete_51: 1098304674772134921
+      Relic 1-Deplete_52: -2451605066228048177
+      Relic 1-Deplete_53: 2348755141389498092
+      Relic 1-Deplete_54: -8644589272709092021
+      Relic 1-Deplete_55: -4061751151129294258
+      Relic 1-Deplete_56: -3577670891959798000
+      Relic 1-Deplete_57: 4666441070872910048
+      Relic 1-Deplete_58: 3804876517870772672
+      Relic 1-Deplete_59: 8184974069717207373
+      Relic 1-Deplete_6: 3831237112027746162
+      Relic 1-Deplete_60: -3582801709446968574
+      Relic 1-Deplete_61: -5526278130412687550
+      Relic 1-Deplete_62: -562264775555343821
+      Relic 1-Deplete_63: 8909583870903373134
+      Relic 1-Deplete_64: -1000260204661637167
+      Relic 1-Deplete_65: 1013351744567648676
+      Relic 1-Deplete_66: 1951482325970610615
+      Relic 1-Deplete_67: -4821414467701727569
+      Relic 1-Deplete_68: -3542138650437176325
+      Relic 1-Deplete_69: 6383280280011788118
+      Relic 1-Deplete_7: -5220091331537082850
+      Relic 1-Deplete_70: 3130271411408797262
+      Relic 1-Deplete_71: 3917704243987584040
+      Relic 1-Deplete_72: -5736477347653300004
+      Relic 1-Deplete_73: -6893633169044485073
+      Relic 1-Deplete_74: -1272187472928157900
+      Relic 1-Deplete_75: 8051309591323532969
+      Relic 1-Deplete_76: -1190170258472325366
+      Relic 1-Deplete_77: 4286433108877354502
+      Relic 1-Deplete_78: -2317809281056726120
+      Relic 1-Deplete_79: 2394061112286294351
+      Relic 1-Deplete_8: 7151917152487869895
+      Relic 1-Deplete_80: 2901256078417671462
+      Relic 1-Deplete_81: -4987306663698060739
+      Relic 1-Deplete_82: 24899096661016906
+      Relic 1-Deplete_83: 1532281124605491505
+      Relic 1-Deplete_84: 4801071130831688597
+      Relic 1-Deplete_85: 8373942932043623991
+      Relic 1-Deplete_86: -3494948606121305861
+      Relic 1-Deplete_87: -3491750066749850556
+      Relic 1-Deplete_88: 6612964392578030309
+      Relic 1-Deplete_89: -4352209423510172546
+      Relic 1-Deplete_9: 2064045451257305746
+      Relic 1-Deplete_90: 925915893867547414
+      Relic 1-Deplete_91: -4603340507676476156
+      Relic 1-Deplete_92: 2688448142619121585
+      Relic 1-Deplete_93: -742999641518662353
+      Relic 1-Deplete_94: -7791749758258268930
+      Relic 1-Deplete_95: 7657549487852165401
+      Relic 1-Deplete_96: 8804631320796067322
+      Relic 1-Deplete_97: -5160815544550455051
+      Relic 1-Deplete_98: -1694367000988534191
+      Relic 1-Deplete_99: 2258546289417214406
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

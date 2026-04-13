@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 2a66df1cf89c3744eb924e8768250010
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1432152191862974822
+    second: Relic Guardian 2 Condensed-Move Sideways_0
+  - first:
+      213: 1235885965278614006
+    second: Relic Guardian 2 Condensed-Move Sideways_1
+  - first:
+      213: -8782980871092138162
+    second: Relic Guardian 2 Condensed-Move Sideways_2
+  - first:
+      213: -2150345413165756090
+    second: Relic Guardian 2 Condensed-Move Sideways_3
+  - first:
+      213: 1738299064226063339
+    second: Relic Guardian 2 Condensed-Move Sideways_4
+  - first:
+      213: -8002036175358443517
+    second: Relic Guardian 2 Condensed-Move Sideways_5
+  - first:
+      213: -2633552599346328168
+    second: Relic Guardian 2 Condensed-Move Sideways_6
+  - first:
+      213: -337261413298792353
+    second: Relic Guardian 2 Condensed-Move Sideways_7
+  - first:
+      213: 233938811716300833
+    second: Relic Guardian 2 Condensed-Move Sideways_8
+  - first:
+      213: 355610565583859675
+    second: Relic Guardian 2 Condensed-Move Sideways_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move Sideways_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 26
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96d5bb5b29ff1ce0800000000000000
+      internalID: -1432152191862974822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move Sideways_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 26
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f19257ccbfb62110800000000000000
+      internalID: 1235885965278614006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move Sideways_2
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 26
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f80859e659c1680800000000000000
+      internalID: -8782980871092138162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move Sideways_3
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 26
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6415ddf5d307822e0800000000000000
+      internalID: -2150345413165756090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move Sideways_4
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 26
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3a69cf9cdaf1810800000000000000
+      internalID: 1738299064226063339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move Sideways_5
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 26
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3004fefbe7e03f090800000000000000
+      internalID: -8002036175358443517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move Sideways_6
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 26
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89dc7a23dddb37bd0800000000000000
+      internalID: -2633552599346328168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move Sideways_7
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 25
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5811ef088ec15bf0800000000000000
+      internalID: -337261413298792353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move Sideways_8
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 26
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120f68b1c1e1f3300800000000000000
+      internalID: 233938811716300833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move Sideways_9
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 26
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf6000ece16fe400800000000000000
+      internalID: 355610565583859675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic Guardian 2 Condensed-Move Sideways_0: -1432152191862974822
+      Relic Guardian 2 Condensed-Move Sideways_1: 1235885965278614006
+      Relic Guardian 2 Condensed-Move Sideways_2: -8782980871092138162
+      Relic Guardian 2 Condensed-Move Sideways_3: -2150345413165756090
+      Relic Guardian 2 Condensed-Move Sideways_4: 1738299064226063339
+      Relic Guardian 2 Condensed-Move Sideways_5: -8002036175358443517
+      Relic Guardian 2 Condensed-Move Sideways_6: -2633552599346328168
+      Relic Guardian 2 Condensed-Move Sideways_7: -337261413298792353
+      Relic Guardian 2 Condensed-Move Sideways_8: 233938811716300833
+      Relic Guardian 2 Condensed-Move Sideways_9: 355610565583859675
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

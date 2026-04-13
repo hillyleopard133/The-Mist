@@ -1,0 +1,1105 @@
+fileFormatVersion: 2
+guid: 4be89b35d38861f4394a047dd89efbfb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5367043703076287083
+    second: Relic Guardian-Death_0
+  - first:
+      213: -6934966698365769188
+    second: Relic Guardian-Death_1
+  - first:
+      213: -4583044333454767194
+    second: Relic Guardian-Death_2
+  - first:
+      213: 5949246752602609017
+    second: Relic Guardian-Death_3
+  - first:
+      213: 5268583213732813673
+    second: Relic Guardian-Death_4
+  - first:
+      213: 8304248971975947384
+    second: Relic Guardian-Death_5
+  - first:
+      213: 1471151244738238915
+    second: Relic Guardian-Death_6
+  - first:
+      213: 7060626483184588226
+    second: Relic Guardian-Death_7
+  - first:
+      213: 4322798975828972137
+    second: Relic Guardian-Death_8
+  - first:
+      213: -3942837613248477876
+    second: Relic Guardian-Death_9
+  - first:
+      213: 8622755462496786933
+    second: Relic Guardian-Death_10
+  - first:
+      213: -1378869191309055171
+    second: Relic Guardian-Death_11
+  - first:
+      213: 3586709055847532260
+    second: Relic Guardian-Death_12
+  - first:
+      213: -3024667715211265167
+    second: Relic Guardian-Death_13
+  - first:
+      213: -3818539059015389443
+    second: Relic Guardian-Death_14
+  - first:
+      213: -5076838185757093001
+    second: Relic Guardian-Death_15
+  - first:
+      213: -3667262834294198662
+    second: Relic Guardian-Death_16
+  - first:
+      213: 1682499188286343029
+    second: Relic Guardian-Death_17
+  - first:
+      213: 1694951849392441832
+    second: Relic Guardian-Death_18
+  - first:
+      213: -2730865464114543454
+    second: Relic Guardian-Death_19
+  - first:
+      213: 5577137357445634145
+    second: Relic Guardian-Death_20
+  - first:
+      213: 4999907142115843492
+    second: Relic Guardian-Death_21
+  - first:
+      213: -5384990356590370760
+    second: Relic Guardian-Death_22
+  - first:
+      213: 5704038109589165501
+    second: Relic Guardian-Death_23
+  - first:
+      213: -2655515425199784309
+    second: Relic Guardian-Death_24
+  - first:
+      213: -3846268716629221312
+    second: Relic Guardian-Death_25
+  - first:
+      213: 8342953866577030410
+    second: Relic Guardian-Death_26
+  - first:
+      213: 891595110327770200
+    second: Relic Guardian-Death_27
+  - first:
+      213: -3989732369637129967
+    second: Relic Guardian-Death_28
+  - first:
+      213: 2810124015422361750
+    second: Relic Guardian-Death_29
+  - first:
+      213: -8617174311464540297
+    second: Relic Guardian-Death_30
+  - first:
+      213: -8043499579716389299
+    second: Relic Guardian-Death_31
+  - first:
+      213: -561742292768133035
+    second: Relic Guardian-Death_32
+  - first:
+      213: -3687458978591983162
+    second: Relic Guardian-Death_33
+  - first:
+      213: 4338742923353318198
+    second: Relic Guardian-Death_34
+  - first:
+      213: -3805137216155680374
+    second: Relic Guardian-Death_35
+  - first:
+      213: 3296998718173564107
+    second: Relic Guardian-Death_36
+  - first:
+      213: -7513148884460810955
+    second: Relic Guardian-Death_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic Guardian-Death_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 46
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62fbd7efc19b7a40800000000000000
+      internalID: 5367043703076287083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 46
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1aaeb6e78c02cf90800000000000000
+      internalID: -6934966698365769188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_2
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 46
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6abcf82f571c560c0800000000000000
+      internalID: -4583044333454767194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_3
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 46
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975560aa668ff8250800000000000000
+      internalID: 5949246752602609017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_4
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 46
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b512cc484cd1940800000000000000
+      internalID: 5268583213732813673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_5
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 46
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8747705317e9e3370800000000000000
+      internalID: 8304248971975947384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_6
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 46
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c91f7933449a6410800000000000000
+      internalID: 1471151244738238915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_7
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 38
+        width: 74
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5deeda0626cf160800000000000000
+      internalID: 7060626483184588226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_8
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 65
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96255bde3caadfb30800000000000000
+      internalID: 4322798975828972137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_9
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 40
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45864fa41a3849c0800000000000000
+      internalID: -3942837613248477876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_10
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 35
+        width: 44
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f91e27686e2aa770800000000000000
+      internalID: 8622755462496786933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_11
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 44
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b2b4ca6c54ddce0800000000000000
+      internalID: -1378869191309055171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_12
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 64
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6087212ec86c130800000000000000
+      internalID: 3586709055847532260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_13
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 65
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b7d370db83606d0800000000000000
+      internalID: -3024667715211265167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_14
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 40
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfeee6215f2d10bc0800000000000000
+      internalID: -3818539059015389443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_15
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 46
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7735fcb71927b89b0800000000000000
+      internalID: -5076838185757093001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_16
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 64
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ee6e7d1e34b1dc0800000000000000
+      internalID: -3667262834294198662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_17
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 43
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577c0b4f810795710800000000000000
+      internalID: 1682499188286343029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_18
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 47
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e98d6e0abda58710800000000000000
+      internalID: 1694951849392441832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_19
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 40
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4021244540a1ad0800000000000000
+      internalID: -2730865464114543454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_20
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 48
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1689b1ea0e8f56d40800000000000000
+      internalID: 5577137357445634145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_21
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 34
+        width: 41
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4add0cb1e0d336540800000000000000
+      internalID: 4999907142115843492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_22
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830e6843dcba445b0800000000000000
+      internalID: -5384990356590370760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_23
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 54
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db55a5b7070d82f40800000000000000
+      internalID: 5704038109589165501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_24
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 42
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e75615ac6b52bd0800000000000000
+      internalID: -2655515425199784309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_25
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 69
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0402e9a0bfe4f9ac0800000000000000
+      internalID: -3846268716629221312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_26
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 48
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0dabcab65028c370800000000000000
+      internalID: 8342953866577030410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_27
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 56
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85cdf8a67059f5c00800000000000000
+      internalID: 891595110327770200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_28
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 63
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111c6ee5c8f91a8c0800000000000000
+      internalID: -3989732369637129967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_29
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 70
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6905b0247e09ff620800000000000000
+      internalID: 2810124015422361750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_30
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 65
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777e8859e95a96880800000000000000
+      internalID: -8617174311464540297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_31
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 59
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d463000afbfbf5090800000000000000
+      internalID: -8043499579716389299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_32
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 49
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550fd386c5a4438f0800000000000000
+      internalID: -561742292768133035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_33
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 43
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c93331989383dcc0800000000000000
+      internalID: -3687458978591983162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_34
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 53
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633e63e73bf463c30800000000000000
+      internalID: 4338742923353318198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_35
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 40
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a810c65ccdf613bc0800000000000000
+      internalID: -3805137216155680374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_36
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 30
+        width: 1137
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc47adadda41cd20800000000000000
+      internalID: 3296998718173564107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Death_37
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 44
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d471d55eeebb790800000000000000
+      internalID: -7513148884460810955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic Guardian-Death_0: 5367043703076287083
+      Relic Guardian-Death_1: -6934966698365769188
+      Relic Guardian-Death_10: 8622755462496786933
+      Relic Guardian-Death_11: -1378869191309055171
+      Relic Guardian-Death_12: 3586709055847532260
+      Relic Guardian-Death_13: -3024667715211265167
+      Relic Guardian-Death_14: -3818539059015389443
+      Relic Guardian-Death_15: -5076838185757093001
+      Relic Guardian-Death_16: -3667262834294198662
+      Relic Guardian-Death_17: 1682499188286343029
+      Relic Guardian-Death_18: 1694951849392441832
+      Relic Guardian-Death_19: -2730865464114543454
+      Relic Guardian-Death_2: -4583044333454767194
+      Relic Guardian-Death_20: 5577137357445634145
+      Relic Guardian-Death_21: 4999907142115843492
+      Relic Guardian-Death_22: -5384990356590370760
+      Relic Guardian-Death_23: 5704038109589165501
+      Relic Guardian-Death_24: -2655515425199784309
+      Relic Guardian-Death_25: -3846268716629221312
+      Relic Guardian-Death_26: 8342953866577030410
+      Relic Guardian-Death_27: 891595110327770200
+      Relic Guardian-Death_28: -3989732369637129967
+      Relic Guardian-Death_29: 2810124015422361750
+      Relic Guardian-Death_3: 5949246752602609017
+      Relic Guardian-Death_30: -8617174311464540297
+      Relic Guardian-Death_31: -8043499579716389299
+      Relic Guardian-Death_32: -561742292768133035
+      Relic Guardian-Death_33: -3687458978591983162
+      Relic Guardian-Death_34: 4338742923353318198
+      Relic Guardian-Death_35: -3805137216155680374
+      Relic Guardian-Death_36: 3296998718173564107
+      Relic Guardian-Death_37: -7513148884460810955
+      Relic Guardian-Death_4: 5268583213732813673
+      Relic Guardian-Death_5: 8304248971975947384
+      Relic Guardian-Death_6: 1471151244738238915
+      Relic Guardian-Death_7: 7060626483184588226
+      Relic Guardian-Death_8: 4322798975828972137
+      Relic Guardian-Death_9: -3942837613248477876
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

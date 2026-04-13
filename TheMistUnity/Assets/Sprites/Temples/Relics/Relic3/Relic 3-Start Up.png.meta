@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 6bfdfe2d4df425f48bb2b1f11e111ea1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2760998864234269191
+    second: Relic 3-Start Up_0
+  - first:
+      213: -5179699687491262894
+    second: Relic 3-Start Up_1
+  - first:
+      213: -1428135283081815149
+    second: Relic 3-Start Up_2
+  - first:
+      213: -6967635790035767889
+    second: Relic 3-Start Up_3
+  - first:
+      213: -4538017574245292247
+    second: Relic 3-Start Up_4
+  - first:
+      213: -1926985093502499473
+    second: Relic 3-Start Up_5
+  - first:
+      213: 5101253105520924596
+    second: Relic 3-Start Up_6
+  - first:
+      213: 5466812471957754541
+    second: Relic 3-Start Up_7
+  - first:
+      213: -8851577701131864699
+    second: Relic 3-Start Up_8
+  - first:
+      213: 9095298505683180502
+    second: Relic 3-Start Up_9
+  - first:
+      213: -2758924912293423430
+    second: Relic 3-Start Up_10
+  - first:
+      213: 1257084597114197030
+    second: Relic 3-Start Up_11
+  - first:
+      213: 6946429614784271889
+    second: Relic 3-Start Up_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic 3-Start Up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1554
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f53f005926fea9d0800000000000000
+      internalID: -2760998864234269191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 3-Start Up_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 68
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256a1e3d3920e18b0800000000000000
+      internalID: -5179699687491262894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 3-Start Up_2
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 68
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39bd4b0d68e3e2ce0800000000000000
+      internalID: -1428135283081815149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 3-Start Up_3
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 68
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fadae924a2cfd4f90800000000000000
+      internalID: -6967635790035767889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 3-Start Up_4
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 68
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92721a64f09b501c0800000000000000
+      internalID: -4538017574245292247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 3-Start Up_5
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 68
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f658f4e5449f145e0800000000000000
+      internalID: -1926985093502499473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 3-Start Up_6
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 68
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7deeffbaa4bc640800000000000000
+      internalID: 5101253105520924596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 3-Start Up_7
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 68
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da297b49af40edb40800000000000000
+      internalID: 5466812471957754541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 3-Start Up_8
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 68
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585344e7af0e82580800000000000000
+      internalID: -8851577701131864699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 3-Start Up_9
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 68
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db136d4dcdf83e70800000000000000
+      internalID: 9095298505683180502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 3-Start Up_10
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 68
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab656c0e86456b9d0800000000000000
+      internalID: -2758924912293423430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 3-Start Up_11
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 68
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6245b9fd7cf027110800000000000000
+      internalID: 1257084597114197030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic 3-Start Up_12
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 68
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116587e4eeca66060800000000000000
+      internalID: 6946429614784271889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic 3-Start Up_0: -2760998864234269191
+      Relic 3-Start Up_1: -5179699687491262894
+      Relic 3-Start Up_10: -2758924912293423430
+      Relic 3-Start Up_11: 1257084597114197030
+      Relic 3-Start Up_12: 6946429614784271889
+      Relic 3-Start Up_2: -1428135283081815149
+      Relic 3-Start Up_3: -6967635790035767889
+      Relic 3-Start Up_4: -4538017574245292247
+      Relic 3-Start Up_5: -1926985093502499473
+      Relic 3-Start Up_6: 5101253105520924596
+      Relic 3-Start Up_7: 5466812471957754541
+      Relic 3-Start Up_8: -8851577701131864699
+      Relic 3-Start Up_9: 9095298505683180502
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -26,19 +26,19 @@ MonoBehaviour:
   Attacks:
   - {fileID: 11400000, guid: 757f92830e42f9e46bd68cf9fbf7032e, type: 2}
   - {fileID: 11400000, guid: 5193f790557e9754a8f8f26c1f1a6d3d, type: 2}
-  AttackIsUnlocked: 01
+  AttackIsUnlocked: 0101
   BaseMaxHealth: 80
   BaseDefence: 10
   BaseAttack: 5
-  BaseCritChance: 10
-  BaseMaxMana: 20
+  BaseCritChance: 5
+  BaseMaxMana: 10
   SkillPointsHealth: 0
   SkillPointsDefence: 0
   SkillPointsAttack: 0
   SkillPointsCritChance: 0
   SkillPointsMana: 0
-  EquipmentHealth: 20
-  EquipmentDefence: 10
+  EquipmentHealth: 0
+  EquipmentDefence: 0
   EquipmentAttack: 0
   EquipmentCritChance: 0
   EquipmentMana: 0
@@ -47,8 +47,8 @@ MonoBehaviour:
   CurrentBaseAttack: 5
   CurrentBaseCritChance: 10
   CurrentBaseMaxMana: 20
-  CurrentMaxHealth: 100
-  CurrentDefence: 20
+  CurrentMaxHealth: 80
+  CurrentDefence: 10
   CurrentAttack: 5
   CurrentCritChance: 10
   CurrentMaxMana: 20

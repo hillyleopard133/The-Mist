@@ -1,0 +1,2301 @@
+fileFormatVersion: 2
+guid: c645c0eb0764e1c47b9089bed8282f7d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3593927998942714367
+    second: Relic Guardian 2 Condensed-Death_0
+  - first:
+      213: 7190276318576490806
+    second: Relic Guardian 2 Condensed-Death_1
+  - first:
+      213: 3289378431898142251
+    second: Relic Guardian 2 Condensed-Death_2
+  - first:
+      213: -7882294505250982775
+    second: Relic Guardian 2 Condensed-Death_3
+  - first:
+      213: -1447584762389418794
+    second: Relic Guardian 2 Condensed-Death_4
+  - first:
+      213: 7976909009854411820
+    second: Relic Guardian 2 Condensed-Death_5
+  - first:
+      213: -8801927872279395134
+    second: Relic Guardian 2 Condensed-Death_6
+  - first:
+      213: -6385745234887654440
+    second: Relic Guardian 2 Condensed-Death_7
+  - first:
+      213: 2922726261699058150
+    second: Relic Guardian 2 Condensed-Death_8
+  - first:
+      213: 7744894263527094898
+    second: Relic Guardian 2 Condensed-Death_9
+  - first:
+      213: 2607213075540868246
+    second: Relic Guardian 2 Condensed-Death_10
+  - first:
+      213: 3405896433458331676
+    second: Relic Guardian 2 Condensed-Death_11
+  - first:
+      213: 6790362875410588611
+    second: Relic Guardian 2 Condensed-Death_12
+  - first:
+      213: 6338456204921812614
+    second: Relic Guardian 2 Condensed-Death_13
+  - first:
+      213: 8344800010871387369
+    second: Relic Guardian 2 Condensed-Death_14
+  - first:
+      213: -5613500147937196637
+    second: Relic Guardian 2 Condensed-Death_15
+  - first:
+      213: 169990224915187169
+    second: Relic Guardian 2 Condensed-Death_16
+  - first:
+      213: -3944298233436040414
+    second: Relic Guardian 2 Condensed-Death_17
+  - first:
+      213: 1297860369143524794
+    second: Relic Guardian 2 Condensed-Death_18
+  - first:
+      213: 6078355318080434805
+    second: Relic Guardian 2 Condensed-Death_19
+  - first:
+      213: -984316697984405929
+    second: Relic Guardian 2 Condensed-Death_20
+  - first:
+      213: -5663472025901952289
+    second: Relic Guardian 2 Condensed-Death_21
+  - first:
+      213: 5590549117005960576
+    second: Relic Guardian 2 Condensed-Death_22
+  - first:
+      213: -3227409525444308304
+    second: Relic Guardian 2 Condensed-Death_23
+  - first:
+      213: 8097667480012235831
+    second: Relic Guardian 2 Condensed-Death_24
+  - first:
+      213: 2992739304062281091
+    second: Relic Guardian 2 Condensed-Death_25
+  - first:
+      213: 1883077419952589113
+    second: Relic Guardian 2 Condensed-Death_26
+  - first:
+      213: 8333998670815315769
+    second: Relic Guardian 2 Condensed-Death_27
+  - first:
+      213: -2401813827637474298
+    second: Relic Guardian 2 Condensed-Death_28
+  - first:
+      213: 7930092041702088565
+    second: Relic Guardian 2 Condensed-Death_29
+  - first:
+      213: -1511422675342567408
+    second: Relic Guardian 2 Condensed-Death_30
+  - first:
+      213: 4731160888132949507
+    second: Relic Guardian 2 Condensed-Death_31
+  - first:
+      213: -3137991201786392727
+    second: Relic Guardian 2 Condensed-Death_32
+  - first:
+      213: -3008547515172980534
+    second: Relic Guardian 2 Condensed-Death_33
+  - first:
+      213: 3090652192195205250
+    second: Relic Guardian 2 Condensed-Death_34
+  - first:
+      213: -6764226150959461253
+    second: Relic Guardian 2 Condensed-Death_35
+  - first:
+      213: -8852836822358372882
+    second: Relic Guardian 2 Condensed-Death_36
+  - first:
+      213: 6266362527195830725
+    second: Relic Guardian 2 Condensed-Death_37
+  - first:
+      213: 969666893512405870
+    second: Relic Guardian 2 Condensed-Death_38
+  - first:
+      213: 6733900279155287287
+    second: Relic Guardian 2 Condensed-Death_39
+  - first:
+      213: 2117347862424874774
+    second: Relic Guardian 2 Condensed-Death_40
+  - first:
+      213: 6948181354378970376
+    second: Relic Guardian 2 Condensed-Death_41
+  - first:
+      213: 2848405066921816317
+    second: Relic Guardian 2 Condensed-Death_42
+  - first:
+      213: -5866277438059057882
+    second: Relic Guardian 2 Condensed-Death_43
+  - first:
+      213: 811285185204988977
+    second: Relic Guardian 2 Condensed-Death_44
+  - first:
+      213: 6001820817584756773
+    second: Relic Guardian 2 Condensed-Death_45
+  - first:
+      213: -3776958058464295009
+    second: Relic Guardian 2 Condensed-Death_46
+  - first:
+      213: 148024622069431866
+    second: Relic Guardian 2 Condensed-Death_47
+  - first:
+      213: 6243296364029128178
+    second: Relic Guardian 2 Condensed-Death_48
+  - first:
+      213: -3844268218146995990
+    second: Relic Guardian 2 Condensed-Death_49
+  - first:
+      213: -624554418473202029
+    second: Relic Guardian 2 Condensed-Death_50
+  - first:
+      213: -5333439536393345603
+    second: Relic Guardian 2 Condensed-Death_51
+  - first:
+      213: -3934641657904610703
+    second: Relic Guardian 2 Condensed-Death_52
+  - first:
+      213: -499482961707934591
+    second: Relic Guardian 2 Condensed-Death_53
+  - first:
+      213: 1916368625935704429
+    second: Relic Guardian 2 Condensed-Death_54
+  - first:
+      213: 3494975760485852580
+    second: Relic Guardian 2 Condensed-Death_55
+  - first:
+      213: 3007828715991544938
+    second: Relic Guardian 2 Condensed-Death_56
+  - first:
+      213: 2944458606742568411
+    second: Relic Guardian 2 Condensed-Death_57
+  - first:
+      213: -2774823072697403716
+    second: Relic Guardian 2 Condensed-Death_58
+  - first:
+      213: 1146006297090970718
+    second: Relic Guardian 2 Condensed-Death_59
+  - first:
+      213: -5696457529910714158
+    second: Relic Guardian 2 Condensed-Death_60
+  - first:
+      213: -6257713197543520515
+    second: Relic Guardian 2 Condensed-Death_61
+  - first:
+      213: -8030329165068644544
+    second: Relic Guardian 2 Condensed-Death_62
+  - first:
+      213: 574084027829657242
+    second: Relic Guardian 2 Condensed-Death_63
+  - first:
+      213: 3526941487754725233
+    second: Relic Guardian 2 Condensed-Death_64
+  - first:
+      213: -7184014499475508556
+    second: Relic Guardian 2 Condensed-Death_65
+  - first:
+      213: 7993460787019151960
+    second: Relic Guardian 2 Condensed-Death_66
+  - first:
+      213: 3664438426684127271
+    second: Relic Guardian 2 Condensed-Death_67
+  - first:
+      213: 1490500625226678810
+    second: Relic Guardian 2 Condensed-Death_68
+  - first:
+      213: -6552171138329591195
+    second: Relic Guardian 2 Condensed-Death_69
+  - first:
+      213: 321071513264360382
+    second: Relic Guardian 2 Condensed-Death_70
+  - first:
+      213: -1311613897495323282
+    second: Relic Guardian 2 Condensed-Death_71
+  - first:
+      213: 2804746993160736797
+    second: Relic Guardian 2 Condensed-Death_72
+  - first:
+      213: 3675355584089788125
+    second: Relic Guardian 2 Condensed-Death_73
+  - first:
+      213: -1290694176756972047
+    second: Relic Guardian 2 Condensed-Death_74
+  - first:
+      213: -1841424636389063175
+    second: Relic Guardian 2 Condensed-Death_75
+  - first:
+      213: -6516128358504242170
+    second: Relic Guardian 2 Condensed-Death_76
+  - first:
+      213: 7922174765470763987
+    second: Relic Guardian 2 Condensed-Death_77
+  - first:
+      213: 2193864036566864532
+    second: Relic Guardian 2 Condensed-Death_78
+  - first:
+      213: 7916477824863470903
+    second: Relic Guardian 2 Condensed-Death_79
+  - first:
+      213: -7670565855877745940
+    second: Relic Guardian 2 Condensed-Death_80
+  - first:
+      213: 4942515745157533145
+    second: Relic Guardian 2 Condensed-Death_81
+  - first:
+      213: -7859594889026974153
+    second: Relic Guardian 2 Condensed-Death_82
+  - first:
+      213: -323292521343630428
+    second: Relic Guardian 2 Condensed-Death_83
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff99f4d397230e130800000000000000
+      internalID: 3593927998942714367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_1
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639b7ad473ef8c360800000000000000
+      internalID: 7190276318576490806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26ce15814836ad20800000000000000
+      internalID: 3289378431898142251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_3
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984708fd8e67c9290800000000000000
+      internalID: -7882294505250982775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_4
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dca287045529ebe0800000000000000
+      internalID: -1447584762389418794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_5
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c243cf12b7ca3be60800000000000000
+      internalID: 7976909009854411820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_6
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 12
+        width: 74
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c44d2a1c3549d580800000000000000
+      internalID: -8801927872279395134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_7
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 53
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3c060ca864167a0800000000000000
+      internalID: -6385745234887654440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_8
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 47
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9174cbc0c9f8820800000000000000
+      internalID: 2922726261699058150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_9
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 22
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a3e786c446b7b60800000000000000
+      internalID: 7744894263527094898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_10
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 12
+        width: 49
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69cfd558a7eae2420800000000000000
+      internalID: 2607213075540868246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_11
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 46
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10cd02d2cc244f20800000000000000
+      internalID: 3405896433458331676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_12
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 26
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c329dcee073c3e50800000000000000
+      internalID: 6790362875410588611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_13
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 47
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6863cb6f558b6f750800000000000000
+      internalID: 6338456204921812614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_14
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 28
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e43aa1b56faec370800000000000000
+      internalID: 8344800010871387369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_15
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 34
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5c9976b57d812b0800000000000000
+      internalID: -5613500147937196637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_16
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 46
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5cb5b753deb5200800000000000000
+      internalID: 169990224915187169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_17
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 25
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22318db87a90349c0800000000000000
+      internalID: -3944298233436040414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_18
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 29
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd6bde112de20210800000000000000
+      internalID: 1297860369143524794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_19
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 22
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5727ac015f7aa5450800000000000000
+      internalID: 6078355318080434805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_20
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 29
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e6726ad210752f0800000000000000
+      internalID: -984316697984405929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_21
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 30
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd290c4e23e4761b0800000000000000
+      internalID: -5663472025901952289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_22
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 49
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085938a4dce959d40800000000000000
+      internalID: 5590549117005960576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_23
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 36
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b21e2bd220f533d0800000000000000
+      internalID: -3227409525444308304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_24
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 24
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734ac577ba1b06070800000000000000
+      internalID: 8097667480012235831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_25
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 51
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3856bf37a88588920800000000000000
+      internalID: 2992739304062281091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_26
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 30
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93945dcbfe8022a10800000000000000
+      internalID: 1883077419952589113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_27
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 38
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937468cb2af48a370800000000000000
+      internalID: 8333998670815315769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_28
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 27
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c0c039c0b0baed0800000000000000
+      internalID: -2401813827637474298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_29
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 45
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f1ecd42b85d0e60800000000000000
+      internalID: 7930092041702088565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_30
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 52
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0185cbaa519560be0800000000000000
+      internalID: -1511422675342567408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_31
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 47
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306d260d2c578a140800000000000000
+      internalID: 4731160888132949507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_32
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 41
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f8835b0ad9374d0800000000000000
+      internalID: -3137991201786392727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_33
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 31
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8fa3499fd7f36d0800000000000000
+      internalID: -3008547515172980534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_34
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 19
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288d3183bc334ea20800000000000000
+      internalID: 3090652192195205250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_35
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 25
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c47a37724a022a0800000000000000
+      internalID: -6764226150959461253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_36
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 35
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eedc4dc70d7642580800000000000000
+      internalID: -8852836822358372882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_37
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 22
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c99353948796f650800000000000000
+      internalID: 6266362527195830725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_38
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 29
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e637342f6e2f47d00800000000000000
+      internalID: 969666893512405870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_39
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 23
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f464fb40ae937d50800000000000000
+      internalID: 6733900279155287287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_40
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 26
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61f64c5a9a4526d10800000000000000
+      internalID: 2117347862424874774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_41
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 17
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80540c6f026ec6060800000000000000
+      internalID: 6948181354378970376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_42
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 52
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df03c4e1151978720800000000000000
+      internalID: 2848405066921816317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_43
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 33
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62de99e30cbc69ea0800000000000000
+      internalID: -5866277438059057882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_44
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 21
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c2eabd393424b00800000000000000
+      internalID: 811285185204988977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_45
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 14
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5281fad0c30ca4350800000000000000
+      internalID: 6001820817584756773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_46
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 16
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97cfa138ac859bc0800000000000000
+      internalID: -3776958058464295009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_47
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 32
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3eb5780c93ed0200800000000000000
+      internalID: 148024622069431866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_48
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 24
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fda175f6f4a4a650800000000000000
+      internalID: 6243296364029128178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_49
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 13
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae046046c6a66aac0800000000000000
+      internalID: -3844268218146995990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_50
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 17
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e0100c0132557f0800000000000000
+      internalID: -624554418473202029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_51
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 32
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5204adff0dbf5b0800000000000000
+      internalID: -5333439536393345603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_52
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 24
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172442e32485569c0800000000000000
+      internalID: -3934641657904610703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_53
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 13
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18cd90884ea7119f0800000000000000
+      internalID: -499482961707934591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_54
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 17
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61e997ac1f489a10800000000000000
+      internalID: 1916368625935704429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_55
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 31
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a52c5edfe5a08030800000000000000
+      internalID: 3494975760485852580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_56
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 23
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6435e1f744fdb920800000000000000
+      internalID: 3007828715991544938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_57
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 12
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd7bbe9081dcd820800000000000000
+      internalID: 2944458606742568411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_58
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 12
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb63055fd19dd79d0800000000000000
+      internalID: -2774823072697403716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_59
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 19
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54d778c7ae67ef00800000000000000
+      internalID: 1146006297090970718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_60
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 34
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0a293ce0e12f0b0800000000000000
+      internalID: -5696457529910714158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_61
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 21
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6052a60032829a0800000000000000
+      internalID: -6257713197543520515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_62
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 31
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04fcf9ebb2a8e8090800000000000000
+      internalID: -8030329165068644544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_63
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 12
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e1306b16e87f700800000000000000
+      internalID: 574084027829657242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_64
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 19
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1774539b89632f030800000000000000
+      internalID: 3526941487754725233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_65
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 42
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2b18110e04d4c90800000000000000
+      internalID: -7184014499475508556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_66
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 20
+        width: 45
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a7a401c3a7eee60800000000000000
+      internalID: 7993460787019151960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_67
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 53
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7287cc38553bad230800000000000000
+      internalID: 3664438426684127271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_68
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 19
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a124220fb625fa410800000000000000
+      internalID: 1490500625226678810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_69
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 29
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5624c4880130215a0800000000000000
+      internalID: -6552171138329591195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_70
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 53
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb8e9717dca47400800000000000000
+      internalID: 321071513264360382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_71
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 19
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d53550c163ccde0800000000000000
+      internalID: -1311613897495323282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_72
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 30
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10d034b7867ce620800000000000000
+      internalID: 2804746993160736797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_73
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 60
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde8bec4e6c710330800000000000000
+      internalID: 3675355584089788125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_74
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 12
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f54cb01c78861ee0800000000000000
+      internalID: -1290694176756972047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_75
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 17
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5806bac02f176e0800000000000000
+      internalID: -1841424636389063175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_76
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 28
+        width: 62
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604618828cf0295a0800000000000000
+      internalID: -6516128358504242170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_77
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 12
+        width: 39
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dbc278c9f731fd60800000000000000
+      internalID: 7922174765470763987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_78
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 12
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4929219b7bb227e10800000000000000
+      internalID: 2193864036566864532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_79
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 12
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7358e3f63aafcdd60800000000000000
+      internalID: 7916477824863470903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_80
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 12
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2ba269efcac8590800000000000000
+      internalID: -7670565855877745940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_81
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 12
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ddc3e632e7579440800000000000000
+      internalID: 4942515745157533145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_82
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 12
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e4211271c1de290800000000000000
+      internalID: -7859594889026974153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Death_83
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 12
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3c5ca2a2f638bf0800000000000000
+      internalID: -323292521343630428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic Guardian 2 Condensed-Death_0: 3593927998942714367
+      Relic Guardian 2 Condensed-Death_1: 7190276318576490806
+      Relic Guardian 2 Condensed-Death_10: 2607213075540868246
+      Relic Guardian 2 Condensed-Death_11: 3405896433458331676
+      Relic Guardian 2 Condensed-Death_12: 6790362875410588611
+      Relic Guardian 2 Condensed-Death_13: 6338456204921812614
+      Relic Guardian 2 Condensed-Death_14: 8344800010871387369
+      Relic Guardian 2 Condensed-Death_15: -5613500147937196637
+      Relic Guardian 2 Condensed-Death_16: 169990224915187169
+      Relic Guardian 2 Condensed-Death_17: -3944298233436040414
+      Relic Guardian 2 Condensed-Death_18: 1297860369143524794
+      Relic Guardian 2 Condensed-Death_19: 6078355318080434805
+      Relic Guardian 2 Condensed-Death_2: 3289378431898142251
+      Relic Guardian 2 Condensed-Death_20: -984316697984405929
+      Relic Guardian 2 Condensed-Death_21: -5663472025901952289
+      Relic Guardian 2 Condensed-Death_22: 5590549117005960576
+      Relic Guardian 2 Condensed-Death_23: -3227409525444308304
+      Relic Guardian 2 Condensed-Death_24: 8097667480012235831
+      Relic Guardian 2 Condensed-Death_25: 2992739304062281091
+      Relic Guardian 2 Condensed-Death_26: 1883077419952589113
+      Relic Guardian 2 Condensed-Death_27: 8333998670815315769
+      Relic Guardian 2 Condensed-Death_28: -2401813827637474298
+      Relic Guardian 2 Condensed-Death_29: 7930092041702088565
+      Relic Guardian 2 Condensed-Death_3: -7882294505250982775
+      Relic Guardian 2 Condensed-Death_30: -1511422675342567408
+      Relic Guardian 2 Condensed-Death_31: 4731160888132949507
+      Relic Guardian 2 Condensed-Death_32: -3137991201786392727
+      Relic Guardian 2 Condensed-Death_33: -3008547515172980534
+      Relic Guardian 2 Condensed-Death_34: 3090652192195205250
+      Relic Guardian 2 Condensed-Death_35: -6764226150959461253
+      Relic Guardian 2 Condensed-Death_36: -8852836822358372882
+      Relic Guardian 2 Condensed-Death_37: 6266362527195830725
+      Relic Guardian 2 Condensed-Death_38: 969666893512405870
+      Relic Guardian 2 Condensed-Death_39: 6733900279155287287
+      Relic Guardian 2 Condensed-Death_4: -1447584762389418794
+      Relic Guardian 2 Condensed-Death_40: 2117347862424874774
+      Relic Guardian 2 Condensed-Death_41: 6948181354378970376
+      Relic Guardian 2 Condensed-Death_42: 2848405066921816317
+      Relic Guardian 2 Condensed-Death_43: -5866277438059057882
+      Relic Guardian 2 Condensed-Death_44: 811285185204988977
+      Relic Guardian 2 Condensed-Death_45: 6001820817584756773
+      Relic Guardian 2 Condensed-Death_46: -3776958058464295009
+      Relic Guardian 2 Condensed-Death_47: 148024622069431866
+      Relic Guardian 2 Condensed-Death_48: 6243296364029128178
+      Relic Guardian 2 Condensed-Death_49: -3844268218146995990
+      Relic Guardian 2 Condensed-Death_5: 7976909009854411820
+      Relic Guardian 2 Condensed-Death_50: -624554418473202029
+      Relic Guardian 2 Condensed-Death_51: -5333439536393345603
+      Relic Guardian 2 Condensed-Death_52: -3934641657904610703
+      Relic Guardian 2 Condensed-Death_53: -499482961707934591
+      Relic Guardian 2 Condensed-Death_54: 1916368625935704429
+      Relic Guardian 2 Condensed-Death_55: 3494975760485852580
+      Relic Guardian 2 Condensed-Death_56: 3007828715991544938
+      Relic Guardian 2 Condensed-Death_57: 2944458606742568411
+      Relic Guardian 2 Condensed-Death_58: -2774823072697403716
+      Relic Guardian 2 Condensed-Death_59: 1146006297090970718
+      Relic Guardian 2 Condensed-Death_6: -8801927872279395134
+      Relic Guardian 2 Condensed-Death_60: -5696457529910714158
+      Relic Guardian 2 Condensed-Death_61: -6257713197543520515
+      Relic Guardian 2 Condensed-Death_62: -8030329165068644544
+      Relic Guardian 2 Condensed-Death_63: 574084027829657242
+      Relic Guardian 2 Condensed-Death_64: 3526941487754725233
+      Relic Guardian 2 Condensed-Death_65: -7184014499475508556
+      Relic Guardian 2 Condensed-Death_66: 7993460787019151960
+      Relic Guardian 2 Condensed-Death_67: 3664438426684127271
+      Relic Guardian 2 Condensed-Death_68: 1490500625226678810
+      Relic Guardian 2 Condensed-Death_69: -6552171138329591195
+      Relic Guardian 2 Condensed-Death_7: -6385745234887654440
+      Relic Guardian 2 Condensed-Death_70: 321071513264360382
+      Relic Guardian 2 Condensed-Death_71: -1311613897495323282
+      Relic Guardian 2 Condensed-Death_72: 2804746993160736797
+      Relic Guardian 2 Condensed-Death_73: 3675355584089788125
+      Relic Guardian 2 Condensed-Death_74: -1290694176756972047
+      Relic Guardian 2 Condensed-Death_75: -1841424636389063175
+      Relic Guardian 2 Condensed-Death_76: -6516128358504242170
+      Relic Guardian 2 Condensed-Death_77: 7922174765470763987
+      Relic Guardian 2 Condensed-Death_78: 2193864036566864532
+      Relic Guardian 2 Condensed-Death_79: 7916477824863470903
+      Relic Guardian 2 Condensed-Death_8: 2922726261699058150
+      Relic Guardian 2 Condensed-Death_80: -7670565855877745940
+      Relic Guardian 2 Condensed-Death_81: 4942515745157533145
+      Relic Guardian 2 Condensed-Death_82: -7859594889026974153
+      Relic Guardian 2 Condensed-Death_83: -323292521343630428
+      Relic Guardian 2 Condensed-Death_9: 7744894263527094898
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

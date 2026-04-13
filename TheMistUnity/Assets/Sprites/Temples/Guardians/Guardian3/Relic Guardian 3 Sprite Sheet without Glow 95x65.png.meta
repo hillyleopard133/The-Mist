@@ -1,0 +1,3731 @@
+fileFormatVersion: 2
+guid: 0159cd4f842742b4183b8773f68fabd4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3364603254513686215
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_0
+  - first:
+      213: 2590122588459571228
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_1
+  - first:
+      213: -1081341186057292506
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_2
+  - first:
+      213: 5332280266123790004
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_3
+  - first:
+      213: -3092616977283700518
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_4
+  - first:
+      213: 2365565920608286424
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_5
+  - first:
+      213: 413391677674713445
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_6
+  - first:
+      213: 7120270359436424841
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_7
+  - first:
+      213: -6120896094209024332
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_8
+  - first:
+      213: 8207235229673053177
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_9
+  - first:
+      213: 4403031156182164958
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_10
+  - first:
+      213: -7868012922148337318
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_11
+  - first:
+      213: -1052897786159739307
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_12
+  - first:
+      213: 3169223082332309002
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_13
+  - first:
+      213: 8083438330525650882
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_14
+  - first:
+      213: -5020619006409879907
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_15
+  - first:
+      213: -5340898064322234143
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_16
+  - first:
+      213: 682962954045061535
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_17
+  - first:
+      213: -3145735782409832742
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_18
+  - first:
+      213: -7470500728572203370
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_19
+  - first:
+      213: 8206999194100130943
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_20
+  - first:
+      213: -6283781998382715400
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_21
+  - first:
+      213: 8990584412200760828
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_22
+  - first:
+      213: 3106991778383261491
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_23
+  - first:
+      213: -8155614998605067401
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_24
+  - first:
+      213: 7202856431898995748
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_25
+  - first:
+      213: -2475667863949048675
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_26
+  - first:
+      213: 8386050954204589865
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_27
+  - first:
+      213: 1530820789488673824
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_28
+  - first:
+      213: 2793612646440328055
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_29
+  - first:
+      213: -6914289495582904685
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_30
+  - first:
+      213: -6177694319642195787
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_31
+  - first:
+      213: 4573430135142640839
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_32
+  - first:
+      213: 8880631699673714452
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_33
+  - first:
+      213: 6841531975043779079
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_34
+  - first:
+      213: -8919378173069513236
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_35
+  - first:
+      213: -1786979635163196885
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_36
+  - first:
+      213: -7936802829467432935
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_37
+  - first:
+      213: 7883725354193666670
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_38
+  - first:
+      213: -5705979213008461450
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_39
+  - first:
+      213: 2231518361213231035
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_40
+  - first:
+      213: -8298732009705072764
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_41
+  - first:
+      213: -5922077374231229214
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_42
+  - first:
+      213: 7943113794657076093
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_43
+  - first:
+      213: -120010611266507949
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_44
+  - first:
+      213: -885769889323750011
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_45
+  - first:
+      213: -6966086096186828119
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_46
+  - first:
+      213: -5305757686966162782
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_47
+  - first:
+      213: -7567945178801774742
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_48
+  - first:
+      213: -6924310537105653766
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_49
+  - first:
+      213: 5874934496623191589
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_50
+  - first:
+      213: 3482064690824863453
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_51
+  - first:
+      213: 1874783089195800210
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_52
+  - first:
+      213: -7172734638153321742
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_53
+  - first:
+      213: -3781452516866311471
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_54
+  - first:
+      213: 3629450864786877033
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_55
+  - first:
+      213: -5948239752156492971
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_56
+  - first:
+      213: 3224195219008165202
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_57
+  - first:
+      213: 6967818874975072738
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_58
+  - first:
+      213: -5599004156466892511
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_59
+  - first:
+      213: 2677835910014969955
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_60
+  - first:
+      213: -5744946184996372914
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_61
+  - first:
+      213: 4125853320153145218
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_62
+  - first:
+      213: 1989269109334614055
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_63
+  - first:
+      213: -8040632627810160545
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_64
+  - first:
+      213: 8593461705748629436
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_65
+  - first:
+      213: 5584193359048046947
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_66
+  - first:
+      213: -7333951637282826740
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_67
+  - first:
+      213: -8273627450984205960
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_68
+  - first:
+      213: -7468587266383269696
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_69
+  - first:
+      213: -5628180522665541171
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_70
+  - first:
+      213: -4185480410380086280
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_71
+  - first:
+      213: 4243978520635797309
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_72
+  - first:
+      213: -6958530205992063402
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_73
+  - first:
+      213: 5820439885741091740
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_74
+  - first:
+      213: 7701033011735898459
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_75
+  - first:
+      213: -7005052115624373457
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_76
+  - first:
+      213: 3360389719314369007
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_77
+  - first:
+      213: -4889775782629160864
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_78
+  - first:
+      213: -8089332004823228342
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_79
+  - first:
+      213: -2588060928215181399
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_80
+  - first:
+      213: -2322797668157029646
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_81
+  - first:
+      213: 8806756577753181578
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_82
+  - first:
+      213: 1483215623615953101
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_83
+  - first:
+      213: 7062873063822374960
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_84
+  - first:
+      213: 5256986225487268005
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_85
+  - first:
+      213: -3611324870237326471
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_86
+  - first:
+      213: 3011984106024404929
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_87
+  - first:
+      213: -2479508117386574050
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_88
+  - first:
+      213: -8990637613215397966
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_89
+  - first:
+      213: 5872892761382890442
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_90
+  - first:
+      213: -3635823483036550053
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_91
+  - first:
+      213: -8886086264391086722
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_92
+  - first:
+      213: 860622953485199982
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_93
+  - first:
+      213: 7935322938093687033
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_94
+  - first:
+      213: -2412254507208389150
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_95
+  - first:
+      213: -7523944407442513026
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_96
+  - first:
+      213: -3993122224160576542
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_97
+  - first:
+      213: -6834662109753122871
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_98
+  - first:
+      213: -5870482987131670375
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_99
+  - first:
+      213: 5726333907175704721
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_100
+  - first:
+      213: -8668949366973534028
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_101
+  - first:
+      213: -7967084802990995458
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_102
+  - first:
+      213: 2438589047433227104
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_103
+  - first:
+      213: -5813386158052274554
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_104
+  - first:
+      213: -3943778913118214127
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_105
+  - first:
+      213: -3142276762509961845
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_106
+  - first:
+      213: 8405159446720528091
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_107
+  - first:
+      213: 5852405818210089801
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_108
+  - first:
+      213: -4002153806190541318
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_109
+  - first:
+      213: 3783839136973420857
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_110
+  - first:
+      213: -8241745418906629955
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_111
+  - first:
+      213: 8286439838578014769
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_112
+  - first:
+      213: 4640958745187675536
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_113
+  - first:
+      213: -4643122075848895797
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_114
+  - first:
+      213: 5232633741175683993
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_115
+  - first:
+      213: 5001868583615198181
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_116
+  - first:
+      213: -661715453789757958
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_117
+  - first:
+      213: 1618260330208253994
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_118
+  - first:
+      213: -5899917756521542063
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_119
+  - first:
+      213: 6851106395539096202
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_120
+  - first:
+      213: -6971717535504448272
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_121
+  - first:
+      213: -3836596049410570239
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_122
+  - first:
+      213: 5332542843495696681
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_123
+  - first:
+      213: -3442503207801358374
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_124
+  - first:
+      213: 4911765635126283543
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_125
+  - first:
+      213: -1854094339380647205
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_126
+  - first:
+      213: -5378493658963074473
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_127
+  - first:
+      213: -6356753119834387122
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_128
+  - first:
+      213: -3903064687085045341
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_129
+  - first:
+      213: 2129486307109920074
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_130
+  - first:
+      213: -516544515561195973
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_131
+  - first:
+      213: 5941889129587967005
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_132
+  - first:
+      213: 3076411956391748116
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_133
+  - first:
+      213: 4048276546978945557
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_134
+  - first:
+      213: -220968505303015737
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_135
+  - first:
+      213: -3755247297265451066
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_136
+  - first:
+      213: 1071497977218981420
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_137
+  - first:
+      213: -5741691014181447605
+    second: Relic Guardian 3 Sprite Sheet without Glow 95x65_138
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 336
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939a69c9a278e41d0800000000000000
+      internalID: -3364603254513686215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 342
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1819d965c6f1f320800000000000000
+      internalID: 2590122588459571228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 336
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6253e04abed4ef0f0800000000000000
+      internalID: -1081341186057292506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 343
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6422186a0100a40800000000000000
+      internalID: 5332280266123790004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_4
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 336
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8a9aa9e31d415d0800000000000000
+      internalID: -3092616977283700518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_5
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 343
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d670a6ebad24d020800000000000000
+      internalID: 2365565920608286424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_6
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 336
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56177e46a89acb500800000000000000
+      internalID: 413391677674713445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_7
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 344
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98673f6ca2840d260800000000000000
+      internalID: 7120270359436424841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_8
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 336
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be5895ae653e0ba0800000000000000
+      internalID: -6120896094209024332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_9
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 344
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fbdbb425f4f5e170800000000000000
+      internalID: 8207235229673053177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_10
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 336
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5273f1285ba1d30800000000000000
+      internalID: 4403031156182164958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_11
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 344
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a594a2f0fe33fc290800000000000000
+      internalID: -7868012922148337318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_12
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 336
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e472fba0b5361f0800000000000000
+      internalID: -1052897786159739307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_13
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 343
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06c2642a975bfb20800000000000000
+      internalID: 3169223082332309002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_14
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 336
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf02ce65542e2070800000000000000
+      internalID: 8083438330525650882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_15
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 343
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9e4d523d9d235ab0800000000000000
+      internalID: -5020619006409879907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_16
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 336
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8708ef18151e5b0800000000000000
+      internalID: -5340898064322234143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_17
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 342
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f997b9e203f5a7900800000000000000
+      internalID: 682962954045061535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_18
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 336
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6f93409f91854d0800000000000000
+      internalID: -3145735782409832742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_19
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 342
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e2823fa23735890800000000000000
+      internalID: -7470500728572203370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_20
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 280
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f746144d84e15e170800000000000000
+      internalID: 8206999194100130943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_21
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 280
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd676cb0958bc8a0800000000000000
+      internalID: -6283781998382715400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_22
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 281
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5f36483e8f4cc70800000000000000
+      internalID: 8990584412200760828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_23
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 281
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fe7969f804e1b20800000000000000
+      internalID: 3106991778383261491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 271
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b0c4b7e5f61de80800000000000000
+      internalID: -8155614998605067401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_25
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 271
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c2a7f23cfa5f360800000000000000
+      internalID: 7202856431898995748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_26
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 271
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d948773c139a4add0800000000000000
+      internalID: -2475667863949048675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_27
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 271
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92fa0b169ec316470800000000000000
+      internalID: 8386050954204589865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_28
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 213
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024614cb5619e3510800000000000000
+      internalID: 1530820789488673824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 213
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b5d1796e7e4c620800000000000000
+      internalID: 2793612646440328055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_30
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 214
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ee09556528b00a0800000000000000
+      internalID: -6914289495582904685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_31
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 206
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b847c24fbb644aa0800000000000000
+      internalID: -6177694319642195787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_32
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 215
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc6e321a76187f30800000000000000
+      internalID: 4573430135142640839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_33
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 214
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f0020ba775e3b70800000000000000
+      internalID: 8880631699673714452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_34
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 214
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a06f3551102fe50800000000000000
+      internalID: 6841531975043779079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_35
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 215
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceda1d8fec0083480800000000000000
+      internalID: -8919378173069513236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_36
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 215
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b229d395d7f5337e0800000000000000
+      internalID: -1786979635163196885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_37
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 215
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9184749a0efcad190800000000000000
+      internalID: -7936802829467432935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_38
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 213
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62447b907e986d60800000000000000
+      internalID: 7883725354193666670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_39
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 212
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6712ed8232a40d0b0800000000000000
+      internalID: -5705979213008461450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_40
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 213
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf50ed5022f7fe10800000000000000
+      internalID: 2231518361213231035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_41
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 213
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4879d5ba43bf4dc80800000000000000
+      internalID: -8298732009705072764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 206
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ecc190310e80dda0800000000000000
+      internalID: -5922077374231229214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_43
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 206
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d734a0d69eb9b3e60800000000000000
+      internalID: 7943113794657076093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_44
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 206
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35bae222cf2a55ef0800000000000000
+      internalID: -120010611266507949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_45
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 206
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58dee1a8afc15b3f0800000000000000
+      internalID: -885769889323750011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_46
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 206
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa1ff97a9d735f90800000000000000
+      internalID: -6966086096186828119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_47
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 206
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa651cae792e56b0800000000000000
+      internalID: -5305757686966162782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_48
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 206
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6fd3e1e4f149f690800000000000000
+      internalID: -7567945178801774742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_49
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 206
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: affb259c048e7ef90800000000000000
+      internalID: -6924310537105653766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_50
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 206
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526e9e54cc5f78150800000000000000
+      internalID: 5874934496623191589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_51
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 206
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddedb853367c25030800000000000000
+      internalID: 3482064690824863453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_52
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 206
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296dc6e5941940a10800000000000000
+      internalID: 1874783089195800210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_53
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 206
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f23bb079d3557c90800000000000000
+      internalID: -7172734638153321742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_54
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 148
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da3d2d88f4958bc0800000000000000
+      internalID: -3781452516866311471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_55
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 140
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a2b55f4566e5230800000000000000
+      internalID: 3629450864786877033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_56
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 137
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55bcad5e57b937da0800000000000000
+      internalID: -5948239752156492971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_57
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 136
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2559e7b1874aebc20800000000000000
+      internalID: 3224195219008165202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_58
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 135
+        width: 52
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1b626895aa2b060800000000000000
+      internalID: 6967818874975072738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_59
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 135
+        width: 52
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 121fadd62675c42b0800000000000000
+      internalID: -5599004156466892511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_60
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 135
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3682a378295992520800000000000000
+      internalID: 2677835910014969955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_61
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 135
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e3e8df1e9d540b0800000000000000
+      internalID: -5744946184996372914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_62
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 135
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f18172cb9f14930800000000000000
+      internalID: 4125853320153145218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_63
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 135
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7202c8027bd4b9b10800000000000000
+      internalID: 1989269109334614055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_64
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 135
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50b5f1e93fe96090800000000000000
+      internalID: -8040632627810160545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_65
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 135
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7c11a24eb124770800000000000000
+      internalID: 8593461705748629436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_66
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 141
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3697723164a0f7d40800000000000000
+      internalID: 5584193359048046947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_67
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 170
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06dcd3c7d1983a90800000000000000
+      internalID: -7333951637282826740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_68
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 174
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8717a2c3bab2e2d80800000000000000
+      internalID: -8273627450984205960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_69
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 171
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c03835937f3a5890800000000000000
+      internalID: -7468587266383269696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_70
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 164
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc18fbe42afa4e1b0800000000000000
+      internalID: -5628180522665541171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_71
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 136
+        width: 72
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f350fc0ebf2ae5c0800000000000000
+      internalID: -4185480410380086280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_72
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 172
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f62ec9af3a5ea30800000000000000
+      internalID: 4243978520635797309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_73
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 136
+        width: 75
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e640145a55e6f90800000000000000
+      internalID: -6958530205992063402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_74
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 136
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9bec12fc3b56c050800000000000000
+      internalID: 5820439885741091740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_75
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 136
+        width: 77
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59231ce8b09fda60800000000000000
+      internalID: 7701033011735898459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_76
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 141
+        width: 73
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f235c17173e09ce90800000000000000
+      internalID: -7005052115624373457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_77
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 141
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe98b9645a082ae20800000000000000
+      internalID: 3360389719314369007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_78
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 141
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068c41535d6042cb0800000000000000
+      internalID: -4889775782629160864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_79
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 148
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a402056966becbf80800000000000000
+      internalID: -8089332004823228342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_80
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 148
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a79aa44c4c551cd0800000000000000
+      internalID: -2588060928215181399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_81
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 148
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f20568d3d3c3cfd0800000000000000
+      internalID: -2322797668157029646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_82
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 141
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d20508272e73a70800000000000000
+      internalID: 8806756577753181578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_83
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 150
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc830f250c0759410800000000000000
+      internalID: 1483215623615953101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_84
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 145
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038bece71ad540260800000000000000
+      internalID: 7062873063822374960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_85
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 150
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a84a4f8e1194f840800000000000000
+      internalID: 5256986225487268005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_86
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 144
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97378f40a2ff1edc0800000000000000
+      internalID: -3611324870237326471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_87
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 147
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c705b41697bcc920800000000000000
+      internalID: 3011984106024404929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_88
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 135
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17c9751184079dd0800000000000000
+      internalID: -2479508117386574050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_89
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 144
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7c708a9b6da3380800000000000000
+      internalID: -8990637613215397966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_90
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 139
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acba03eb9d4b08150800000000000000
+      internalID: 5872892761382890442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_91
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 135
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c359b3ec5fa8dc0800000000000000
+      internalID: -3635823483036550053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_92
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 137
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7dcd7f7f974ea480800000000000000
+      internalID: -8886086264391086722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_93
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 141
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a6804340c81fb00800000000000000
+      internalID: 860622953485199982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_94
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 141
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f055174b2eef1e60800000000000000
+      internalID: 7935322938093687033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_95
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 141
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed420e6e43f58ed0800000000000000
+      internalID: -2412254507208389150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_96
+      rect:
+        serializedVersion: 2
+        x: 2217
+        y: 141
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e732a9ccc64959790800000000000000
+      internalID: -7523944407442513026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_97
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 76
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ebe03c5e749598c0800000000000000
+      internalID: -3993122224160576542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_98
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 83
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cfd754d5076621a0800000000000000
+      internalID: -6834662109753122871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_99
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 75
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990fa0c83dad78ea0800000000000000
+      internalID: -5870482987131670375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_100
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 72
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1988b726956087f40800000000000000
+      internalID: 5726333907175704721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_101
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 71
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0f1b51b74b1b780800000000000000
+      internalID: -8668949366973534028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_102
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 10
+        width: 82
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef70f46459a3f6190800000000000000
+      internalID: -7967084802990995458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_103
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 10
+        width: 81
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b6a6581db97d120800000000000000
+      internalID: 2438589047433227104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_104
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 9
+        width: 80
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e0f130714b25fa0800000000000000
+      internalID: -5813386158052274554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_105
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 9
+        width: 79
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118a9ea39f1e449c0800000000000000
+      internalID: -3943778913118214127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_106
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 8
+        width: 78
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8511a8dee36464d0800000000000000
+      internalID: -3142276762509961845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_107
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 7
+        width: 52
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdebb4efbff15a470800000000000000
+      internalID: 8405159446720528091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_108
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 29
+        width: 52
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b77d3951ce73150800000000000000
+      internalID: 5852405818210089801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_109
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 29
+        width: 52
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5098d415e7578c0800000000000000
+      internalID: -4002153806190541318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_110
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 29
+        width: 49
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939758eb5a5e28430800000000000000
+      internalID: 3783839136973420857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_111
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 72
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db80ed845307f9d80800000000000000
+      internalID: -8241745418906629955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_112
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 75
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a761731295ff270800000000000000
+      internalID: 8286439838578014769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_113
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 76
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d6720d36ff76040800000000000000
+      internalID: 4640958745187675536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_114
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 83
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc290448211509fb0800000000000000
+      internalID: -4643122075848895797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_115
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 11
+        width: 73
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99bff76f9ac0e9840800000000000000
+      internalID: 5232633741175683993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_116
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 34
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3f19bc9f43a6540800000000000000
+      internalID: 5001868583615198181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_117
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 13
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd997afc4d11d6f0800000000000000
+      internalID: -661715453789757958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_118
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 33
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a285b284237357610800000000000000
+      internalID: 1618260330208253994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_119
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 34
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e838e3f084f1ea0800000000000000
+      internalID: -5899917756521542063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_120
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 9
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a82c380d7f4041f50800000000000000
+      internalID: 6851106395539096202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_121
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 15
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f445e5d6db7f3f90800000000000000
+      internalID: -6971717535504448272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_122
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 33
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1084730683ca1cac0800000000000000
+      internalID: -3836596049410570239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_123
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 17
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929cc10967ff00a40800000000000000
+      internalID: 5332542843495696681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_124
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 36
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad77bd85295c930d0800000000000000
+      internalID: -3442503207801358374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_125
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 23
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d4cad42d81a2440800000000000000
+      internalID: 4911765635126283543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_126
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 11
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda6721950fe446e0800000000000000
+      internalID: -1854094339380647205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_127
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 38
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752a0de7380cb55b0800000000000000
+      internalID: -5378493658963074473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_128
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 17
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d4a6f87b648c7a0800000000000000
+      internalID: -6356753119834387122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_129
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 25
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9bceea85785d9c0800000000000000
+      internalID: -3903064687085045341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_130
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 8
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d585983847d8d10800000000000000
+      internalID: 2129486307109920074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_131
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 32
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b367c47ff7dd4d8f0800000000000000
+      internalID: -516544515561195973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_132
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 39
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1488df8ea4d57250800000000000000
+      internalID: 5941889129587967005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_133
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 34
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412ae73ff5c91ba20800000000000000
+      internalID: 3076411956391748116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_134
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 28
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a993f121e5e2830800000000000000
+      internalID: 4048276546978945557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_135
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 18
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce5ddea056feecf0800000000000000
+      internalID: -220968505303015737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_136
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 16
+        width: 46
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf3fb2ba7ea2ebc0800000000000000
+      internalID: -3755247297265451066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_137
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 10
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2edfa5bbb9bede00800000000000000
+      internalID: 1071497977218981420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Sprite Sheet without Glow 95x65_138
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 13
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4899a1817a6150b0800000000000000
+      internalID: -5741691014181447605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_0: -3364603254513686215
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_1: 2590122588459571228
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_10: 4403031156182164958
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_100: 5726333907175704721
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_101: -8668949366973534028
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_102: -7967084802990995458
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_103: 2438589047433227104
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_104: -5813386158052274554
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_105: -3943778913118214127
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_106: -3142276762509961845
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_107: 8405159446720528091
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_108: 5852405818210089801
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_109: -4002153806190541318
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_11: -7868012922148337318
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_110: 3783839136973420857
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_111: -8241745418906629955
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_112: 8286439838578014769
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_113: 4640958745187675536
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_114: -4643122075848895797
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_115: 5232633741175683993
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_116: 5001868583615198181
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_117: -661715453789757958
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_118: 1618260330208253994
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_119: -5899917756521542063
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_12: -1052897786159739307
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_120: 6851106395539096202
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_121: -6971717535504448272
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_122: -3836596049410570239
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_123: 5332542843495696681
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_124: -3442503207801358374
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_125: 4911765635126283543
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_126: -1854094339380647205
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_127: -5378493658963074473
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_128: -6356753119834387122
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_129: -3903064687085045341
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_13: 3169223082332309002
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_130: 2129486307109920074
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_131: -516544515561195973
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_132: 5941889129587967005
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_133: 3076411956391748116
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_134: 4048276546978945557
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_135: -220968505303015737
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_136: -3755247297265451066
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_137: 1071497977218981420
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_138: -5741691014181447605
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_14: 8083438330525650882
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_15: -5020619006409879907
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_16: -5340898064322234143
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_17: 682962954045061535
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_18: -3145735782409832742
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_19: -7470500728572203370
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_2: -1081341186057292506
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_20: 8206999194100130943
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_21: -6283781998382715400
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_22: 8990584412200760828
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_23: 3106991778383261491
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_24: -8155614998605067401
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_25: 7202856431898995748
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_26: -2475667863949048675
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_27: 8386050954204589865
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_28: 1530820789488673824
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_29: 2793612646440328055
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_3: 5332280266123790004
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_30: -6914289495582904685
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_31: -6177694319642195787
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_32: 4573430135142640839
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_33: 8880631699673714452
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_34: 6841531975043779079
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_35: -8919378173069513236
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_36: -1786979635163196885
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_37: -7936802829467432935
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_38: 7883725354193666670
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_39: -5705979213008461450
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_4: -3092616977283700518
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_40: 2231518361213231035
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_41: -8298732009705072764
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_42: -5922077374231229214
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_43: 7943113794657076093
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_44: -120010611266507949
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_45: -885769889323750011
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_46: -6966086096186828119
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_47: -5305757686966162782
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_48: -7567945178801774742
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_49: -6924310537105653766
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_5: 2365565920608286424
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_50: 5874934496623191589
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_51: 3482064690824863453
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_52: 1874783089195800210
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_53: -7172734638153321742
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_54: -3781452516866311471
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_55: 3629450864786877033
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_56: -5948239752156492971
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_57: 3224195219008165202
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_58: 6967818874975072738
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_59: -5599004156466892511
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_6: 413391677674713445
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_60: 2677835910014969955
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_61: -5744946184996372914
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_62: 4125853320153145218
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_63: 1989269109334614055
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_64: -8040632627810160545
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_65: 8593461705748629436
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_66: 5584193359048046947
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_67: -7333951637282826740
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_68: -8273627450984205960
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_69: -7468587266383269696
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_7: 7120270359436424841
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_70: -5628180522665541171
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_71: -4185480410380086280
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_72: 4243978520635797309
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_73: -6958530205992063402
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_74: 5820439885741091740
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_75: 7701033011735898459
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_76: -7005052115624373457
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_77: 3360389719314369007
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_78: -4889775782629160864
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_79: -8089332004823228342
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_8: -6120896094209024332
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_80: -2588060928215181399
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_81: -2322797668157029646
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_82: 8806756577753181578
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_83: 1483215623615953101
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_84: 7062873063822374960
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_85: 5256986225487268005
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_86: -3611324870237326471
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_87: 3011984106024404929
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_88: -2479508117386574050
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_89: -8990637613215397966
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_9: 8207235229673053177
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_90: 5872892761382890442
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_91: -3635823483036550053
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_92: -8886086264391086722
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_93: 860622953485199982
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_94: 7935322938093687033
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_95: -2412254507208389150
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_96: -7523944407442513026
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_97: -3993122224160576542
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_98: -6834662109753122871
+      Relic Guardian 3 Sprite Sheet without Glow 95x65_99: -5870482987131670375
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

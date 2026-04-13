@@ -230,6 +230,8 @@ public class SkillsManager : Singleton<SkillsManager>
         }
         skillOrbs = 0;
         
+        availableAttributePoints = new int[partyMembers.Length];
+        
         SaveSkills();
     }
 

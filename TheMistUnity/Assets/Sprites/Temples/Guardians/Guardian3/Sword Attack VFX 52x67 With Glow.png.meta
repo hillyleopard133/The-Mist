@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 0123ecc65b508a7489a676042bf4526a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 307931309899726464
+    second: Sword Attack VFX 52x67 With Glow_0
+  - first:
+      213: 2408376159394000944
+    second: Sword Attack VFX 52x67 With Glow_1
+  - first:
+      213: -5478895803346150321
+    second: Sword Attack VFX 52x67 With Glow_2
+  - first:
+      213: -4659907243043343124
+    second: Sword Attack VFX 52x67 With Glow_3
+  - first:
+      213: -1679969146922359411
+    second: Sword Attack VFX 52x67 With Glow_4
+  - first:
+      213: 5179966897152357909
+    second: Sword Attack VFX 52x67 With Glow_5
+  - first:
+      213: -6503424283353896259
+    second: Sword Attack VFX 52x67 With Glow_6
+  - first:
+      213: -4531512021292119380
+    second: Sword Attack VFX 52x67 With Glow_7
+  - first:
+      213: 8148580182266114653
+    second: Sword Attack VFX 52x67 With Glow_8
+  - first:
+      213: -5115114326351576782
+    second: Sword Attack VFX 52x67 With Glow_9
+  - first:
+      213: 1774516735968925886
+    second: Sword Attack VFX 52x67 With Glow_10
+  - first:
+      213: 5639439247785388574
+    second: Sword Attack VFX 52x67 With Glow_11
+  - first:
+      213: -8423373752655877662
+    second: Sword Attack VFX 52x67 With Glow_12
+  - first:
+      213: 8266756524721708595
+    second: Sword Attack VFX 52x67 With Glow_13
+  - first:
+      213: -1220173002400385846
+    second: Sword Attack VFX 52x67 With Glow_14
+  - first:
+      213: 7738692001661605835
+    second: Sword Attack VFX 52x67 With Glow_15
+  - first:
+      213: -8604947793748487767
+    second: Sword Attack VFX 52x67 With Glow_16
+  - first:
+      213: -2142531260196324576
+    second: Sword Attack VFX 52x67 With Glow_17
+  - first:
+      213: -6396501187534214923
+    second: Sword Attack VFX 52x67 With Glow_18
+  - first:
+      213: -6725035603251315245
+    second: Sword Attack VFX 52x67 With Glow_19
+  - first:
+      213: 8924503093529527342
+    second: Sword Attack VFX 52x67 With Glow_20
+  - first:
+      213: 591144796903128260
+    second: Sword Attack VFX 52x67 With Glow_21
+  - first:
+      213: -6418138950649491479
+    second: Sword Attack VFX 52x67 With Glow_22
+  - first:
+      213: 3763627578928855527
+    second: Sword Attack VFX 52x67 With Glow_23
+  - first:
+      213: -6575717912823850362
+    second: Sword Attack VFX 52x67 With Glow_24
+  - first:
+      213: 6428371297602052443
+    second: Sword Attack VFX 52x67 With Glow_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 60
+        width: 59
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e3bc515edf54400800000000000000
+      internalID: 307931309899726464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 59
+        width: 65
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 030f23a5b554c6120800000000000000
+      internalID: 2408376159394000944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_2
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 59
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c9c289b4d07f3b0800000000000000
+      internalID: -5478895803346150321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_3
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 57
+        width: 66
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4b12c3d0fa45fb0800000000000000
+      internalID: -4659907243043343124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_4
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 47
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85a31436fc8fa8e0800000000000000
+      internalID: -1679969146922359411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_5
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 17
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5167c05c270f2e740800000000000000
+      internalID: 5179966897152357909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_6
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 0
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbaaa0722123fb5a0800000000000000
+      internalID: -6503424283353896259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_7
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 4
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa887b53d5dc11c0800000000000000
+      internalID: -4531512021292119380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_8
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 4
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5272c3b082951170800000000000000
+      internalID: 8148580182266114653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_9
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 3
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2318d480f967309b0800000000000000
+      internalID: -5115114326351576782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_10
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 4
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8d96fc19950a810800000000000000
+      internalID: 1774516735968925886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_11
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 3
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ae4a8ed10534e40800000000000000
+      internalID: 5639439247785388574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_12
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 4
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9e89e633a2a1b80800000000000000
+      internalID: -8423373752655877662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_13
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 4
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e1ea4924b69b270800000000000000
+      internalID: 8266756524721708595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_14
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 19
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4376b7e13111fe0800000000000000
+      internalID: -1220173002400385846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_15
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 19
+        width: 83
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc75239cf5b556b60800000000000000
+      internalID: 7738692001661605835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_16
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 29
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a117d29295159880800000000000000
+      internalID: -8604947793748487767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_17
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 0
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02bf3d3ab233442e0800000000000000
+      internalID: -2142531260196324576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_18
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8a8af5f001b37a0800000000000000
+      internalID: -6396501187534214923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_19
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddb956efbfdba2a0800000000000000
+      internalID: -6725035603251315245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_20
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 3
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24c3be87443adb70800000000000000
+      internalID: 8924503093529527342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_21
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 4
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc3b3e8f0b243800800000000000000
+      internalID: 591144796903128260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_22
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 9
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef407f01a03ee6a0800000000000000
+      internalID: -6418138950649491479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_23
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 6
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e9faeca7571b3430800000000000000
+      internalID: 3763627578928855527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_24
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a16fed56b5eb4a0800000000000000
+      internalID: -6575717912823850362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Attack VFX 52x67 With Glow_25
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 0
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5123edd2a9263950800000000000000
+      internalID: 6428371297602052443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sword Attack VFX 52x67 With Glow_0: 307931309899726464
+      Sword Attack VFX 52x67 With Glow_1: 2408376159394000944
+      Sword Attack VFX 52x67 With Glow_10: 1774516735968925886
+      Sword Attack VFX 52x67 With Glow_11: 5639439247785388574
+      Sword Attack VFX 52x67 With Glow_12: -8423373752655877662
+      Sword Attack VFX 52x67 With Glow_13: 8266756524721708595
+      Sword Attack VFX 52x67 With Glow_14: -1220173002400385846
+      Sword Attack VFX 52x67 With Glow_15: 7738692001661605835
+      Sword Attack VFX 52x67 With Glow_16: -8604947793748487767
+      Sword Attack VFX 52x67 With Glow_17: -2142531260196324576
+      Sword Attack VFX 52x67 With Glow_18: -6396501187534214923
+      Sword Attack VFX 52x67 With Glow_19: -6725035603251315245
+      Sword Attack VFX 52x67 With Glow_2: -5478895803346150321
+      Sword Attack VFX 52x67 With Glow_20: 8924503093529527342
+      Sword Attack VFX 52x67 With Glow_21: 591144796903128260
+      Sword Attack VFX 52x67 With Glow_22: -6418138950649491479
+      Sword Attack VFX 52x67 With Glow_23: 3763627578928855527
+      Sword Attack VFX 52x67 With Glow_24: -6575717912823850362
+      Sword Attack VFX 52x67 With Glow_25: 6428371297602052443
+      Sword Attack VFX 52x67 With Glow_3: -4659907243043343124
+      Sword Attack VFX 52x67 With Glow_4: -1679969146922359411
+      Sword Attack VFX 52x67 With Glow_5: 5179966897152357909
+      Sword Attack VFX 52x67 With Glow_6: -6503424283353896259
+      Sword Attack VFX 52x67 With Glow_7: -4531512021292119380
+      Sword Attack VFX 52x67 With Glow_8: 8148580182266114653
+      Sword Attack VFX 52x67 With Glow_9: -5115114326351576782
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

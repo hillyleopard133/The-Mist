@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: 37ceb62cf7c557a4787ff502c7837be4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5612273985737669585
+    second: Relic Guardian-Beam Up_0
+  - first:
+      213: -114390652904151096
+    second: Relic Guardian-Beam Up_1
+  - first:
+      213: -6570808253790704554
+    second: Relic Guardian-Beam Up_2
+  - first:
+      213: 9101060868018043650
+    second: Relic Guardian-Beam Up_3
+  - first:
+      213: 7406514107360800124
+    second: Relic Guardian-Beam Up_4
+  - first:
+      213: 8469739239710371386
+    second: Relic Guardian-Beam Up_5
+  - first:
+      213: -7341289019059911758
+    second: Relic Guardian-Beam Up_6
+  - first:
+      213: 1946120485415016546
+    second: Relic Guardian-Beam Up_7
+  - first:
+      213: -1907756411003087817
+    second: Relic Guardian-Beam Up_8
+  - first:
+      213: -936184744862622983
+    second: Relic Guardian-Beam Up_9
+  - first:
+      213: -755609282369413395
+    second: Relic Guardian-Beam Up_10
+  - first:
+      213: -472341195846060911
+    second: Relic Guardian-Beam Up_11
+  - first:
+      213: -5471861500745724009
+    second: Relic Guardian-Beam Up_12
+  - first:
+      213: 6227922117701854356
+    second: Relic Guardian-Beam Up_13
+  - first:
+      213: 6643124946611091732
+    second: Relic Guardian-Beam Up_14
+  - first:
+      213: -6561789693007336873
+    second: Relic Guardian-Beam Up_15
+  - first:
+      213: -3664074204580186878
+    second: Relic Guardian-Beam Up_16
+  - first:
+      213: -8442872206997596844
+    second: Relic Guardian-Beam Up_17
+  - first:
+      213: 7253133850016611183
+    second: Relic Guardian-Beam Up_18
+  - first:
+      213: 7893178340763050765
+    second: Relic Guardian-Beam Up_19
+  - first:
+      213: 101724433554677359
+    second: Relic Guardian-Beam Up_20
+  - first:
+      213: 8938710153340749717
+    second: Relic Guardian-Beam Up_21
+  - first:
+      213: -7767816070072916489
+    second: Relic Guardian-Beam Up_22
+  - first:
+      213: -6864799490718900307
+    second: Relic Guardian-Beam Up_23
+  - first:
+      213: 2670458731340672049
+    second: Relic Guardian-Beam Up_24
+  - first:
+      213: 937217235315636455
+    second: Relic Guardian-Beam Up_25
+  - first:
+      213: -3779953922567342569
+    second: Relic Guardian-Beam Up_26
+  - first:
+      213: -5980910415950779410
+    second: Relic Guardian-Beam Up_27
+  - first:
+      213: 7638713785758601067
+    second: Relic Guardian-Beam Up_28
+  - first:
+      213: 6194232153954927189
+    second: Relic Guardian-Beam Up_29
+  - first:
+      213: 4650938474800119438
+    second: Relic Guardian-Beam Up_30
+  - first:
+      213: 36644839988699962
+    second: Relic Guardian-Beam Up_31
+  - first:
+      213: -7053133611618124375
+    second: Relic Guardian-Beam Up_32
+  - first:
+      213: 2825395462164595550
+    second: Relic Guardian-Beam Up_33
+  - first:
+      213: 4113384040589101024
+    second: Relic Guardian-Beam Up_34
+  - first:
+      213: -799105921381439322
+    second: Relic Guardian-Beam Up_35
+  - first:
+      213: -7297606192126666722
+    second: Relic Guardian-Beam Up_36
+  - first:
+      213: -4378564551450014247
+    second: Relic Guardian-Beam Up_37
+  - first:
+      213: -2496551129334923852
+    second: Relic Guardian-Beam Up_38
+  - first:
+      213: -7908242578875602861
+    second: Relic Guardian-Beam Up_39
+  - first:
+      213: 4281690634752303198
+    second: Relic Guardian-Beam Up_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_0
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 41
+        width: 95
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24c0f98b823d12b0800000000000000
+      internalID: -5612273985737669585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_1
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 38
+        width: 103
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7e508ae4a996ef0800000000000000
+      internalID: -114390652904151096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_2
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 40
+        width: 94
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ca991f4bccfc4a0800000000000000
+      internalID: -6570808253790704554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_3
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 48
+        width: 74
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b7c65d3a67d4e70800000000000000
+      internalID: 9101060868018043650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_4
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 48
+        width: 45
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7de829d65939c660800000000000000
+      internalID: 7406514107360800124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_5
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 111
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3eaf13c6fe8a8570800000000000000
+      internalID: 8469739239710371386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_6
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 118
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3457178808e1a90800000000000000
+      internalID: -7341289019059911758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_7
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 48
+        width: 56
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268d54f3542020b10800000000000000
+      internalID: 1946120485415016546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_8
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 48
+        width: 48
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734df24e6a94685e0800000000000000
+      internalID: -1907756411003087817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_9
+      rect:
+        serializedVersion: 2
+        x: 2491
+        y: 48
+        width: 47
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fad2564fe00203f0800000000000000
+      internalID: -936184744862622983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_10
+      rect:
+        serializedVersion: 2
+        x: 2614
+        y: 48
+        width: 46
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee126f6c598385f0800000000000000
+      internalID: -755609282369413395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_11
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 15
+        width: 63
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194ffc85f28e179f0800000000000000
+      internalID: -472341195846060911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_12
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 48
+        width: 28
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f4aebc4fa0014b0800000000000000
+      internalID: -5471861500745724009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_13
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 85
+        width: 11
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494ea6a4b260e6650800000000000000
+      internalID: 6227922117701854356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_14
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 104
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4193a4131fe113c50800000000000000
+      internalID: 6643124946611091732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_15
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 76
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a6a714a07dfe4a0800000000000000
+      internalID: -6561789693007336873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_16
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 37
+        width: 83
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205735d8ce7962dc0800000000000000
+      internalID: -3664074204580186878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_17
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 101
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 455d3e1c574e4da80800000000000000
+      internalID: -8442872206997596844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_18
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 38
+        width: 83
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6bf99ecece48a460800000000000000
+      internalID: 7253133850016611183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_19
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 101
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d032dfd81e33a8d60800000000000000
+      internalID: 7893178340763050765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_20
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 38
+        width: 101
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e110755d5696100800000000000000
+      internalID: 101724433554677359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_21
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 37
+        width: 105
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5978d00768dac0c70800000000000000
+      internalID: 8938710153340749717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_22
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 98
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5abbe907c233490800000000000000
+      internalID: -7767816070072916489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_23
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 48
+        width: 28
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dafda650c355bb0a0800000000000000
+      internalID: -6864799490718900307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_24
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 48
+        width: 28
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ca6e441106f0520800000000000000
+      internalID: 2670458731340672049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_25
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 48
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8bc542c1aa10d00800000000000000
+      internalID: 937217235315636455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_26
+      rect:
+        serializedVersion: 2
+        x: 3119
+        y: 80
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 716770a3fe7ea8bc0800000000000000
+      internalID: -3779953922567342569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_27
+      rect:
+        serializedVersion: 2
+        x: 3598
+        y: 48
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebe1d73aa98ffca0800000000000000
+      internalID: -5980910415950779410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_28
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 48
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f450d67b9220a60800000000000000
+      internalID: 7638713785758601067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_29
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 48
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55249c8535556f550800000000000000
+      internalID: 6194232153954927189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_30
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 48
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e78aea6e37b8040800000000000000
+      internalID: 4650938474800119438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_31
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 48
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33a06ea940328000800000000000000
+      internalID: 36644839988699962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_32
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 48
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad322e695c3e1e90800000000000000
+      internalID: -7053133611618124375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_33
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 48
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5342580432d53720800000000000000
+      internalID: 2825395462164595550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_34
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 42
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e70314cdfca51930800000000000000
+      internalID: 4113384040589101024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_35
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 41
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8e52af56109e4f0800000000000000
+      internalID: -799105921381439322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_36
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 39
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18599725d1b9ba90800000000000000
+      internalID: -7297606192126666722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_37
+      rect:
+        serializedVersion: 2
+        x: 3106
+        y: 48
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd44b43db63c33c0800000000000000
+      internalID: -4378564551450014247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_38
+      rect:
+        serializedVersion: 2
+        x: 3229
+        y: 48
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd3464a9f77a5dd0800000000000000
+      internalID: -2496551129334923852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_39
+      rect:
+        serializedVersion: 2
+        x: 3247
+        y: 69
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35820803647404290800000000000000
+      internalID: -7908242578875602861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Beam Up_40
+      rect:
+        serializedVersion: 2
+        x: 3721
+        y: 48
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50278a62fe9b6b30800000000000000
+      internalID: 4281690634752303198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic Guardian-Beam Up_0: -5612273985737669585
+      Relic Guardian-Beam Up_1: -114390652904151096
+      Relic Guardian-Beam Up_10: -755609282369413395
+      Relic Guardian-Beam Up_11: -472341195846060911
+      Relic Guardian-Beam Up_12: -5471861500745724009
+      Relic Guardian-Beam Up_13: 6227922117701854356
+      Relic Guardian-Beam Up_14: 6643124946611091732
+      Relic Guardian-Beam Up_15: -6561789693007336873
+      Relic Guardian-Beam Up_16: -3664074204580186878
+      Relic Guardian-Beam Up_17: -8442872206997596844
+      Relic Guardian-Beam Up_18: 7253133850016611183
+      Relic Guardian-Beam Up_19: 7893178340763050765
+      Relic Guardian-Beam Up_2: -6570808253790704554
+      Relic Guardian-Beam Up_20: 101724433554677359
+      Relic Guardian-Beam Up_21: 8938710153340749717
+      Relic Guardian-Beam Up_22: -7767816070072916489
+      Relic Guardian-Beam Up_23: -6864799490718900307
+      Relic Guardian-Beam Up_24: 2670458731340672049
+      Relic Guardian-Beam Up_25: 937217235315636455
+      Relic Guardian-Beam Up_26: -3779953922567342569
+      Relic Guardian-Beam Up_27: -5980910415950779410
+      Relic Guardian-Beam Up_28: 7638713785758601067
+      Relic Guardian-Beam Up_29: 6194232153954927189
+      Relic Guardian-Beam Up_3: 9101060868018043650
+      Relic Guardian-Beam Up_30: 4650938474800119438
+      Relic Guardian-Beam Up_31: 36644839988699962
+      Relic Guardian-Beam Up_32: -7053133611618124375
+      Relic Guardian-Beam Up_33: 2825395462164595550
+      Relic Guardian-Beam Up_34: 4113384040589101024
+      Relic Guardian-Beam Up_35: -799105921381439322
+      Relic Guardian-Beam Up_36: -7297606192126666722
+      Relic Guardian-Beam Up_37: -4378564551450014247
+      Relic Guardian-Beam Up_38: -2496551129334923852
+      Relic Guardian-Beam Up_39: -7908242578875602861
+      Relic Guardian-Beam Up_4: 7406514107360800124
+      Relic Guardian-Beam Up_40: 4281690634752303198
+      Relic Guardian-Beam Up_5: 8469739239710371386
+      Relic Guardian-Beam Up_6: -7341289019059911758
+      Relic Guardian-Beam Up_7: 1946120485415016546
+      Relic Guardian-Beam Up_8: -1907756411003087817
+      Relic Guardian-Beam Up_9: -936184744862622983
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

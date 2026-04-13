@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: 886ee907870b3a648b6fd0c6416b4780
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3532406716845517052
+    second: Relic Guardian-Attack Beam_0
+  - first:
+      213: -3606589069102842138
+    second: Relic Guardian-Attack Beam_1
+  - first:
+      213: -8782166966795094544
+    second: Relic Guardian-Attack Beam_2
+  - first:
+      213: -4735262391209223570
+    second: Relic Guardian-Attack Beam_3
+  - first:
+      213: -8265132499984599261
+    second: Relic Guardian-Attack Beam_4
+  - first:
+      213: -4249619792207859417
+    second: Relic Guardian-Attack Beam_5
+  - first:
+      213: -5842344854429774670
+    second: Relic Guardian-Attack Beam_6
+  - first:
+      213: 6968375711845988007
+    second: Relic Guardian-Attack Beam_7
+  - first:
+      213: -6934679882126632451
+    second: Relic Guardian-Attack Beam_8
+  - first:
+      213: -6738633234733498640
+    second: Relic Guardian-Attack Beam_9
+  - first:
+      213: 5859425798736765909
+    second: Relic Guardian-Attack Beam_10
+  - first:
+      213: 1807635607279917003
+    second: Relic Guardian-Attack Beam_11
+  - first:
+      213: 6407253442816454052
+    second: Relic Guardian-Attack Beam_12
+  - first:
+      213: 2112639528224225736
+    second: Relic Guardian-Attack Beam_13
+  - first:
+      213: -616566445431892269
+    second: Relic Guardian-Attack Beam_14
+  - first:
+      213: 4312377393971506590
+    second: Relic Guardian-Attack Beam_15
+  - first:
+      213: -4108097753062999193
+    second: Relic Guardian-Attack Beam_16
+  - first:
+      213: 154029991016168437
+    second: Relic Guardian-Attack Beam_17
+  - first:
+      213: 5940835851838891792
+    second: Relic Guardian-Attack Beam_18
+  - first:
+      213: 6982637865268581837
+    second: Relic Guardian-Attack Beam_19
+  - first:
+      213: 6135858184710824378
+    second: Relic Guardian-Attack Beam_20
+  - first:
+      213: -2719809198904922079
+    second: Relic Guardian-Attack Beam_21
+  - first:
+      213: -6531263176823873405
+    second: Relic Guardian-Attack Beam_22
+  - first:
+      213: 7977217303591355342
+    second: Relic Guardian-Attack Beam_23
+  - first:
+      213: -952505236482618783
+    second: Relic Guardian-Attack Beam_24
+  - first:
+      213: 8783618431714283221
+    second: Relic Guardian-Attack Beam_25
+  - first:
+      213: 4470262660579596629
+    second: Relic Guardian-Attack Beam_26
+  - first:
+      213: -6905318303036577226
+    second: Relic Guardian-Attack Beam_27
+  - first:
+      213: -8157594947180248824
+    second: Relic Guardian-Attack Beam_28
+  - first:
+      213: -2039741155151614313
+    second: Relic Guardian-Attack Beam_29
+  - first:
+      213: -6941840066357610205
+    second: Relic Guardian-Attack Beam_30
+  - first:
+      213: 5153293852798832033
+    second: Relic Guardian-Attack Beam_31
+  - first:
+      213: 8555806368414796381
+    second: Relic Guardian-Attack Beam_32
+  - first:
+      213: -8260968787098466589
+    second: Relic Guardian-Attack Beam_33
+  - first:
+      213: 4005890620549865746
+    second: Relic Guardian-Attack Beam_34
+  - first:
+      213: -6940860472479659725
+    second: Relic Guardian-Attack Beam_35
+  - first:
+      213: 5134871970327433643
+    second: Relic Guardian-Attack Beam_36
+  - first:
+      213: -7264191931507960177
+    second: Relic Guardian-Attack Beam_37
+  - first:
+      213: 9188296485949526580
+    second: Relic Guardian-Attack Beam_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 48
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf8e7c78131a50130800000000000000
+      internalID: 3532406716845517052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 48
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee7155a952d2fdc0800000000000000
+      internalID: -3606589069102842138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_2
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 48
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f532027ca97f1680800000000000000
+      internalID: -8782166966795094544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_3
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 48
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a15b591f7f84eb0800000000000000
+      internalID: -4735262391209223570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_4
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 48
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 327b1e428c95c4d80800000000000000
+      internalID: -8265132499984599261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_5
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 48
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7213bfe70515605c0800000000000000
+      internalID: -4249619792207859417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_6
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 43
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bcc1681f42dbeea0800000000000000
+      internalID: -5842344854429774670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_7
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 42
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a63a063ac4a4b060800000000000000
+      internalID: 6968375711845988007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_8
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 40
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df95bc2836113cf90800000000000000
+      internalID: -6934679882126632451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_9
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 13
+        width: 84
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fe711c96c09b72a0800000000000000
+      internalID: -6738633234733498640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_10
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 12
+        width: 82
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3e67928bcd05150800000000000000
+      internalID: 5859425798736765909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_11
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 13
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7544fe103061910800000000000000
+      internalID: 1807635607279917003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_12
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 11
+        width: 83
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad29f42f032be850800000000000000
+      internalID: 6407253442816454052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_13
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 11
+        width: 88
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9f04a257a915d10800000000000000
+      internalID: 2112639528224225736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_14
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 11
+        width: 90
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d65b97a5148177f0800000000000000
+      internalID: -616566445431892269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_15
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 9
+        width: 87
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9da8115464a8db30800000000000000
+      internalID: 4312377393971506590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_16
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 0
+        width: 63
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76b7916fbda1df6c0800000000000000
+      internalID: -4108097753062999193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_17
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 0
+        width: 45
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb7643f579332200800000000000000
+      internalID: 154029991016168437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_18
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 0
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01723c93bb6127250800000000000000
+      internalID: 5940835851838891792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_19
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 0
+        width: 81
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc59682942057e060800000000000000
+      internalID: 6982637865268581837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_20
+      rect:
+        serializedVersion: 2
+        x: 2491
+        y: 0
+        width: 28
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1acd38282f62550800000000000000
+      internalID: 6135858184710824378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_21
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 0
+        width: 141
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120be6a91fb414ad0800000000000000
+      internalID: -2719809198904922079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_22
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 0
+        width: 63
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380e2daaeba4c55a0800000000000000
+      internalID: -6531263176823873405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_23
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 0
+        width: 28
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec389ac5fd4c4be60800000000000000
+      internalID: 7977217303591355342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_24
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 40
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a01c4b88508c2f0800000000000000
+      internalID: -952505236482618783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_25
+      rect:
+        serializedVersion: 2
+        x: 3106
+        y: 40
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de47e01d6ea5e970800000000000000
+      internalID: 8783618431714283221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_26
+      rect:
+        serializedVersion: 2
+        x: 3229
+        y: 40
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5591a809430990e30800000000000000
+      internalID: 4470262660579596629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_27
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 17
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a608ed6916b20a0800000000000000
+      internalID: -6905318303036577226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_28
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 17
+        width: 28
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801ccc7cd966ace80800000000000000
+      internalID: -8157594947180248824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_29
+      rect:
+        serializedVersion: 2
+        x: 3598
+        y: 26
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e6175f93261b3e0800000000000000
+      internalID: -2039741155151614313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_30
+      rect:
+        serializedVersion: 2
+        x: 3721
+        y: 48
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3293e253d31a9af90800000000000000
+      internalID: -6941840066357610205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_31
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 0
+        width: 11
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad474fa47d248740800000000000000
+      internalID: 5153293852798832033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_32
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 28
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a836cbf845cb670800000000000000
+      internalID: 8555806368414796381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_33
+      rect:
+        serializedVersion: 2
+        x: 3126
+        y: 20
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6086818a42b5d80800000000000000
+      internalID: -8260968787098466589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_34
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 5
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211a1f69b48c79730800000000000000
+      internalID: 4005890620549865746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_35
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 14
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339cc4eac2c1daf90800000000000000
+      internalID: -6940860472479659725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_36
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 15
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba11a7ee9dab24740800000000000000
+      internalID: 5134871970327433643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_37
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 8
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f869536fce7603b90800000000000000
+      internalID: -7264191931507960177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Attack Beam_38
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 5
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432ddf7e8f2638f70800000000000000
+      internalID: 9188296485949526580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic Guardian-Attack Beam_0: 3532406716845517052
+      Relic Guardian-Attack Beam_1: -3606589069102842138
+      Relic Guardian-Attack Beam_10: 5859425798736765909
+      Relic Guardian-Attack Beam_11: 1807635607279917003
+      Relic Guardian-Attack Beam_12: 6407253442816454052
+      Relic Guardian-Attack Beam_13: 2112639528224225736
+      Relic Guardian-Attack Beam_14: -616566445431892269
+      Relic Guardian-Attack Beam_15: 4312377393971506590
+      Relic Guardian-Attack Beam_16: -4108097753062999193
+      Relic Guardian-Attack Beam_17: 154029991016168437
+      Relic Guardian-Attack Beam_18: 5940835851838891792
+      Relic Guardian-Attack Beam_19: 6982637865268581837
+      Relic Guardian-Attack Beam_2: -8782166966795094544
+      Relic Guardian-Attack Beam_20: 6135858184710824378
+      Relic Guardian-Attack Beam_21: -2719809198904922079
+      Relic Guardian-Attack Beam_22: -6531263176823873405
+      Relic Guardian-Attack Beam_23: 7977217303591355342
+      Relic Guardian-Attack Beam_24: -952505236482618783
+      Relic Guardian-Attack Beam_25: 8783618431714283221
+      Relic Guardian-Attack Beam_26: 4470262660579596629
+      Relic Guardian-Attack Beam_27: -6905318303036577226
+      Relic Guardian-Attack Beam_28: -8157594947180248824
+      Relic Guardian-Attack Beam_29: -2039741155151614313
+      Relic Guardian-Attack Beam_3: -4735262391209223570
+      Relic Guardian-Attack Beam_30: -6941840066357610205
+      Relic Guardian-Attack Beam_31: 5153293852798832033
+      Relic Guardian-Attack Beam_32: 8555806368414796381
+      Relic Guardian-Attack Beam_33: -8260968787098466589
+      Relic Guardian-Attack Beam_34: 4005890620549865746
+      Relic Guardian-Attack Beam_35: -6940860472479659725
+      Relic Guardian-Attack Beam_36: 5134871970327433643
+      Relic Guardian-Attack Beam_37: -7264191931507960177
+      Relic Guardian-Attack Beam_38: 9188296485949526580
+      Relic Guardian-Attack Beam_4: -8265132499984599261
+      Relic Guardian-Attack Beam_5: -4249619792207859417
+      Relic Guardian-Attack Beam_6: -5842344854429774670
+      Relic Guardian-Attack Beam_7: 6968375711845988007
+      Relic Guardian-Attack Beam_8: -6934679882126632451
+      Relic Guardian-Attack Beam_9: -6738633234733498640
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

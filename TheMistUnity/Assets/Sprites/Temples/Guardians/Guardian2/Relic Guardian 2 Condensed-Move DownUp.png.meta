@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: d889c67748b029045a96cf525f6e4d1a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6540013142603046946
+    second: Relic Guardian 2 Condensed-Move DownUp_0
+  - first:
+      213: -2466965278349349976
+    second: Relic Guardian 2 Condensed-Move DownUp_1
+  - first:
+      213: -6435565883946404872
+    second: Relic Guardian 2 Condensed-Move DownUp_2
+  - first:
+      213: 8341911502713368666
+    second: Relic Guardian 2 Condensed-Move DownUp_3
+  - first:
+      213: 8696464507123454615
+    second: Relic Guardian 2 Condensed-Move DownUp_4
+  - first:
+      213: 2076419838256504128
+    second: Relic Guardian 2 Condensed-Move DownUp_5
+  - first:
+      213: -1636900090562713589
+    second: Relic Guardian 2 Condensed-Move DownUp_6
+  - first:
+      213: -7252679513581923671
+    second: Relic Guardian 2 Condensed-Move DownUp_7
+  - first:
+      213: -6050364597499069662
+    second: Relic Guardian 2 Condensed-Move DownUp_8
+  - first:
+      213: -875765322670875921
+    second: Relic Guardian 2 Condensed-Move DownUp_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move DownUp_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 23
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf52c082b43d35a0800000000000000
+      internalID: -6540013142603046946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move DownUp_1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 21
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aba3ce562493cdd0800000000000000
+      internalID: -2466965278349349976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move DownUp_2
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 23
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f370c6fce640b6a0800000000000000
+      internalID: -6435565883946404872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move DownUp_3
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 25
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50b9fa705c64c370800000000000000
+      internalID: 8341911502713368666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move DownUp_4
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 28
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 792d2e4b46c00b870800000000000000
+      internalID: 8696464507123454615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move DownUp_5
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 23
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d5adf67dce0dc10800000000000000
+      internalID: 2076419838256504128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move DownUp_6
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 21
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0864315a009849e0800000000000000
+      internalID: -1636900090562713589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move DownUp_7
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 23
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a25233a86e495b90800000000000000
+      internalID: -7252679513581923671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move DownUp_8
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 25
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22bf77c6479c80ca0800000000000000
+      internalID: -6050364597499069662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Move DownUp_9
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 26
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fead89b3418a8d3f0800000000000000
+      internalID: -875765322670875921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic Guardian 2 Condensed-Move DownUp_0: -6540013142603046946
+      Relic Guardian 2 Condensed-Move DownUp_1: -2466965278349349976
+      Relic Guardian 2 Condensed-Move DownUp_2: -6435565883946404872
+      Relic Guardian 2 Condensed-Move DownUp_3: 8341911502713368666
+      Relic Guardian 2 Condensed-Move DownUp_4: 8696464507123454615
+      Relic Guardian 2 Condensed-Move DownUp_5: 2076419838256504128
+      Relic Guardian 2 Condensed-Move DownUp_6: -1636900090562713589
+      Relic Guardian 2 Condensed-Move DownUp_7: -7252679513581923671
+      Relic Guardian 2 Condensed-Move DownUp_8: -6050364597499069662
+      Relic Guardian 2 Condensed-Move DownUp_9: -875765322670875921
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2717 @@
+fileFormatVersion: 2
+guid: 85fee565217ecdb44a0f0670a6237235
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6720019676668221644
+    second: Dagger Sprite Sheet 52x49_0
+  - first:
+      213: 2667521232129207902
+    second: Dagger Sprite Sheet 52x49_1
+  - first:
+      213: -3599280474700289856
+    second: Dagger Sprite Sheet 52x49_2
+  - first:
+      213: 4749387841392119776
+    second: Dagger Sprite Sheet 52x49_3
+  - first:
+      213: -3396212868767866372
+    second: Dagger Sprite Sheet 52x49_4
+  - first:
+      213: 2067304678683955915
+    second: Dagger Sprite Sheet 52x49_5
+  - first:
+      213: 177454253339841850
+    second: Dagger Sprite Sheet 52x49_6
+  - first:
+      213: 4716341271790696920
+    second: Dagger Sprite Sheet 52x49_7
+  - first:
+      213: 1309587572711314542
+    second: Dagger Sprite Sheet 52x49_8
+  - first:
+      213: 6758446373256807473
+    second: Dagger Sprite Sheet 52x49_9
+  - first:
+      213: -863456322018341505
+    second: Dagger Sprite Sheet 52x49_10
+  - first:
+      213: 4373393104130304156
+    second: Dagger Sprite Sheet 52x49_11
+  - first:
+      213: 3882875359094688539
+    second: Dagger Sprite Sheet 52x49_12
+  - first:
+      213: -2640293884246680569
+    second: Dagger Sprite Sheet 52x49_13
+  - first:
+      213: -5270490449371452930
+    second: Dagger Sprite Sheet 52x49_14
+  - first:
+      213: -2336009707709289101
+    second: Dagger Sprite Sheet 52x49_15
+  - first:
+      213: 5589102343328606499
+    second: Dagger Sprite Sheet 52x49_16
+  - first:
+      213: -8629955676118796238
+    second: Dagger Sprite Sheet 52x49_17
+  - first:
+      213: 936780235519115360
+    second: Dagger Sprite Sheet 52x49_18
+  - first:
+      213: 45394212227100058
+    second: Dagger Sprite Sheet 52x49_19
+  - first:
+      213: -951763733963314860
+    second: Dagger Sprite Sheet 52x49_20
+  - first:
+      213: -1311220030978125999
+    second: Dagger Sprite Sheet 52x49_21
+  - first:
+      213: 6238336613611671162
+    second: Dagger Sprite Sheet 52x49_22
+  - first:
+      213: -3609785625221810038
+    second: Dagger Sprite Sheet 52x49_23
+  - first:
+      213: -4517397079700774417
+    second: Dagger Sprite Sheet 52x49_24
+  - first:
+      213: -6485574395936511567
+    second: Dagger Sprite Sheet 52x49_25
+  - first:
+      213: 7474578837324639926
+    second: Dagger Sprite Sheet 52x49_26
+  - first:
+      213: -1280052637442739526
+    second: Dagger Sprite Sheet 52x49_27
+  - first:
+      213: -5736661863873502990
+    second: Dagger Sprite Sheet 52x49_28
+  - first:
+      213: 190325474256733444
+    second: Dagger Sprite Sheet 52x49_29
+  - first:
+      213: 686259356189209640
+    second: Dagger Sprite Sheet 52x49_30
+  - first:
+      213: 8058182143762423574
+    second: Dagger Sprite Sheet 52x49_31
+  - first:
+      213: 2555950639421475675
+    second: Dagger Sprite Sheet 52x49_32
+  - first:
+      213: 6519525513088322724
+    second: Dagger Sprite Sheet 52x49_33
+  - first:
+      213: 3722256968944519234
+    second: Dagger Sprite Sheet 52x49_34
+  - first:
+      213: 8965942091100285512
+    second: Dagger Sprite Sheet 52x49_35
+  - first:
+      213: -1936690772682350340
+    second: Dagger Sprite Sheet 52x49_36
+  - first:
+      213: -5800513825221888779
+    second: Dagger Sprite Sheet 52x49_37
+  - first:
+      213: 8865209168930032386
+    second: Dagger Sprite Sheet 52x49_38
+  - first:
+      213: 6184360573298755939
+    second: Dagger Sprite Sheet 52x49_39
+  - first:
+      213: 3509181076035596022
+    second: Dagger Sprite Sheet 52x49_40
+  - first:
+      213: 8201669305661369392
+    second: Dagger Sprite Sheet 52x49_41
+  - first:
+      213: 6856278002182338121
+    second: Dagger Sprite Sheet 52x49_42
+  - first:
+      213: -2791584037799078262
+    second: Dagger Sprite Sheet 52x49_43
+  - first:
+      213: -744678844829729844
+    second: Dagger Sprite Sheet 52x49_44
+  - first:
+      213: -6083172156497003393
+    second: Dagger Sprite Sheet 52x49_45
+  - first:
+      213: 144961754124397229
+    second: Dagger Sprite Sheet 52x49_46
+  - first:
+      213: -4249417916068703126
+    second: Dagger Sprite Sheet 52x49_47
+  - first:
+      213: 8075823337930520730
+    second: Dagger Sprite Sheet 52x49_48
+  - first:
+      213: 5199410002859058945
+    second: Dagger Sprite Sheet 52x49_49
+  - first:
+      213: -7453079185140731211
+    second: Dagger Sprite Sheet 52x49_50
+  - first:
+      213: -6584586499352901034
+    second: Dagger Sprite Sheet 52x49_51
+  - first:
+      213: 1148315277364518477
+    second: Dagger Sprite Sheet 52x49_52
+  - first:
+      213: 1548779121267272798
+    second: Dagger Sprite Sheet 52x49_53
+  - first:
+      213: 8427490718203763381
+    second: Dagger Sprite Sheet 52x49_54
+  - first:
+      213: -122691455558590137
+    second: Dagger Sprite Sheet 52x49_55
+  - first:
+      213: 3747401974388392948
+    second: Dagger Sprite Sheet 52x49_56
+  - first:
+      213: 4258109241628014058
+    second: Dagger Sprite Sheet 52x49_57
+  - first:
+      213: -6277246847650718773
+    second: Dagger Sprite Sheet 52x49_58
+  - first:
+      213: 8799046040631170801
+    second: Dagger Sprite Sheet 52x49_59
+  - first:
+      213: 4276013046692643246
+    second: Dagger Sprite Sheet 52x49_60
+  - first:
+      213: -5497560667594216657
+    second: Dagger Sprite Sheet 52x49_61
+  - first:
+      213: -7917737945189868007
+    second: Dagger Sprite Sheet 52x49_62
+  - first:
+      213: 6056070558023713302
+    second: Dagger Sprite Sheet 52x49_63
+  - first:
+      213: 4401549387928001229
+    second: Dagger Sprite Sheet 52x49_64
+  - first:
+      213: 3268464086320439996
+    second: Dagger Sprite Sheet 52x49_65
+  - first:
+      213: 945824593073588311
+    second: Dagger Sprite Sheet 52x49_66
+  - first:
+      213: 6967384961525265453
+    second: Dagger Sprite Sheet 52x49_67
+  - first:
+      213: 1465706089868902987
+    second: Dagger Sprite Sheet 52x49_68
+  - first:
+      213: 9133094080550208664
+    second: Dagger Sprite Sheet 52x49_69
+  - first:
+      213: 4166230718628057604
+    second: Dagger Sprite Sheet 52x49_70
+  - first:
+      213: -4783798788950315272
+    second: Dagger Sprite Sheet 52x49_71
+  - first:
+      213: 9219481828702404159
+    second: Dagger Sprite Sheet 52x49_72
+  - first:
+      213: -5112274659009772236
+    second: Dagger Sprite Sheet 52x49_73
+  - first:
+      213: -1645955271235831347
+    second: Dagger Sprite Sheet 52x49_74
+  - first:
+      213: 4736459605730779162
+    second: Dagger Sprite Sheet 52x49_75
+  - first:
+      213: 8875429105927394710
+    second: Dagger Sprite Sheet 52x49_76
+  - first:
+      213: -4780080145027330500
+    second: Dagger Sprite Sheet 52x49_77
+  - first:
+      213: -4004108508283707075
+    second: Dagger Sprite Sheet 52x49_78
+  - first:
+      213: -7468149864193568071
+    second: Dagger Sprite Sheet 52x49_79
+  - first:
+      213: -4084652244201300216
+    second: Dagger Sprite Sheet 52x49_80
+  - first:
+      213: -8961062405385739305
+    second: Dagger Sprite Sheet 52x49_81
+  - first:
+      213: -6863693451190082198
+    second: Dagger Sprite Sheet 52x49_82
+  - first:
+      213: 2432196059277765445
+    second: Dagger Sprite Sheet 52x49_83
+  - first:
+      213: 9174246972315119787
+    second: Dagger Sprite Sheet 52x49_84
+  - first:
+      213: 8660219516666928702
+    second: Dagger Sprite Sheet 52x49_85
+  - first:
+      213: 7427436690817764236
+    second: Dagger Sprite Sheet 52x49_86
+  - first:
+      213: -7819073663403137996
+    second: Dagger Sprite Sheet 52x49_87
+  - first:
+      213: -6263011706608331644
+    second: Dagger Sprite Sheet 52x49_88
+  - first:
+      213: -8748852738040602351
+    second: Dagger Sprite Sheet 52x49_89
+  - first:
+      213: 9033360542546905606
+    second: Dagger Sprite Sheet 52x49_90
+  - first:
+      213: -5337540416344454435
+    second: Dagger Sprite Sheet 52x49_91
+  - first:
+      213: 4380695709291993512
+    second: Dagger Sprite Sheet 52x49_92
+  - first:
+      213: -1467073954958356454
+    second: Dagger Sprite Sheet 52x49_93
+  - first:
+      213: 583800576631242690
+    second: Dagger Sprite Sheet 52x49_94
+  - first:
+      213: 4724269175433280760
+    second: Dagger Sprite Sheet 52x49_95
+  - first:
+      213: 9061213608050273525
+    second: Dagger Sprite Sheet 52x49_96
+  - first:
+      213: 7823922238578574557
+    second: Dagger Sprite Sheet 52x49_97
+  - first:
+      213: 7005043759622733872
+    second: Dagger Sprite Sheet 52x49_98
+  - first:
+      213: -1490069514871809649
+    second: Dagger Sprite Sheet 52x49_99
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 396
+        width: 9
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8d17faa4e424d50800000000000000
+      internalID: 6720019676668221644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 453
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5eafdf6d60f40520800000000000000
+      internalID: 2667521232129207902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 453
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c86d726a79cc0ec0800000000000000
+      internalID: -3599280474700289856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_3
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 446
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef8cb2141739e140800000000000000
+      internalID: 4749387841392119776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_4
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 445
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf12b77c36a3ed0d0800000000000000
+      internalID: -3396212868767866372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_5
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 445
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc2d577f6aa80bc10800000000000000
+      internalID: 2067304678683955915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_6
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 445
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35143604b1767200800000000000000
+      internalID: 177454253339841850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_7
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 445
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d93990066fc37140800000000000000
+      internalID: 4716341271790696920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_8
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 445
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6459b975f69c2210800000000000000
+      internalID: 1309587572711314542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_9
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 445
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 134cf7f2b23dacd50800000000000000
+      internalID: 6758446373256807473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 396
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d0807cc036404f0800000000000000
+      internalID: -863456322018341505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_11
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 396
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9864d26bd961bc30800000000000000
+      internalID: 4373393104130304156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_12
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 396
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1bc4f5119eb2e530800000000000000
+      internalID: 3882875359094688539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_13
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 396
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c17de73bacb5bd0800000000000000
+      internalID: -2640293884246680569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_14
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 396
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9202d4cd47bd6b0800000000000000
+      internalID: -5270490449371452930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_15
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 396
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37daf1c2c83d49fd0800000000000000
+      internalID: -2336009707709289101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_16
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 396
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329a76b08fa709d40800000000000000
+      internalID: 5589102343328606499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_17
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 396
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238b299390d3c3880800000000000000
+      internalID: -8629955676118796238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_18
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 396
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06049b239ac100d00800000000000000
+      internalID: 936780235519115360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_19
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 347
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9da7a6abc541a000800000000000000
+      internalID: 45394212227100058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_20
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 347
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45964073de7aac2f0800000000000000
+      internalID: -951763733963314860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_21
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 347
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f0c27345c9dcde0800000000000000
+      internalID: -1311220030978125999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 298
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e03a31916039650800000000000000
+      internalID: 6238336613611671162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_23
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 298
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88b75d691777edc0800000000000000
+      internalID: -3609785625221810038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_24
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 298
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe16c0b4a4bfe41c0800000000000000
+      internalID: -4517397079700774417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_25
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 298
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9e5dde27c9ef5a0800000000000000
+      internalID: -6485574395936511567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_26
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 249
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be236cb9d90bb760800000000000000
+      internalID: 7474578837324639926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_27
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 257
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab27c6388e65c3ee0800000000000000
+      internalID: -1280052637442739526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_28
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 249
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f02a4fcd684360b0800000000000000
+      internalID: -5736661863873502990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_29
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 256
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405c7cca20c24a200800000000000000
+      internalID: 190325474256733444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_30
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 200
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824327d9f35168900800000000000000
+      internalID: 686259356189209640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_31
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 200
+        width: 7
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61fda5637f964df60800000000000000
+      internalID: 8058182143762423574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_32
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 218
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b4626809f887320800000000000000
+      internalID: 2555950639421475675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_33
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 200
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4acc9b789e10a7a50800000000000000
+      internalID: 6519525513088322724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_34
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 222
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24809acedfc18a330800000000000000
+      internalID: 3722256968944519234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_35
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 225
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a61c804dc6d6c70800000000000000
+      internalID: 8965942091100285512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_36
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 220
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0ed76d00e7f15e0800000000000000
+      internalID: -1936690772682350340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_37
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 222
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f438ec886f608fa0800000000000000
+      internalID: -5800513825221888779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_38
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 215
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b4c9de4cc870b70800000000000000
+      internalID: 8865209168930032386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_39
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 200
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369476edc2343d550800000000000000
+      internalID: 6184360573298755939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_40
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 200
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6feef91a89d13b030800000000000000
+      internalID: 3509181076035596022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_41
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 209
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03cab2977ce22d170800000000000000
+      internalID: 8201669305661369392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_42
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 200
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94637615484662f50800000000000000
+      internalID: 6856278002182338121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_43
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 200
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86d55aab1d4249d0800000000000000
+      internalID: -2791584037799078262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_44
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 200
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccbfc2e398e5aa5f0800000000000000
+      internalID: -744678844829729844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_45
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 200
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7cf278572b349ba0800000000000000
+      internalID: -6083172156497003393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_46
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 203
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa2a9482f1030200800000000000000
+      internalID: 144961754124397229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_47
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 209
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a645b827be80705c0800000000000000
+      internalID: -4249417916068703126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_48
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 200
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98782ec986131070800000000000000
+      internalID: 8075823337930520730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_49
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 200
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107e60699d3082840800000000000000
+      internalID: 5199410002859058945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_50
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 213
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b234de18f7519890800000000000000
+      internalID: -7453079185140731211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_51
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 208
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65acc392779de94a0800000000000000
+      internalID: -6584586499352901034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_52
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 207
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e577529a2afef00800000000000000
+      internalID: 1148315277364518477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_53
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 199
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c6daea76e5e7510800000000000000
+      internalID: 1548779121267272798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_54
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 199
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5badf6e482674f470800000000000000
+      internalID: 8427490718203763381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_55
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 199
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741647e65cc1c4ef0800000000000000
+      internalID: -122691455558590137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_56
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 198
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3840abd32710430800000000000000
+      internalID: 3747401974388392948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_57
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 203
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5bb0a7bc7d71b30800000000000000
+      internalID: 4258109241628014058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_58
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 201
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb9656104db2e8a0800000000000000
+      internalID: -6277246847650718773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_59
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 143
+        width: 8
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6d02e21cd7c1a70800000000000000
+      internalID: 8799046040631170801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_60
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 159
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea10d0fe533775b30800000000000000
+      internalID: 4276013046692643246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_61
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 140
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b23ec33bdb4b3b0800000000000000
+      internalID: -5497560667594216657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_62
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 141
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e9350f94b8e1290800000000000000
+      internalID: -7917737945189868007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_63
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 151
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61284b9061c7b0450800000000000000
+      internalID: 6056070558023713302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_64
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 139
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca59c019d1751d30800000000000000
+      internalID: 4401549387928001229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_65
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 151
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2604af4caeb5d20800000000000000
+      internalID: 3268464086320439996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_66
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 139
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 758caf9c47e302d00800000000000000
+      internalID: 945824593073588311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_67
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 138
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24bc1d25bf11b060800000000000000
+      internalID: 6967384961525265453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_68
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 137
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4243cf4ceb375410800000000000000
+      internalID: 1465706089868902987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_69
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 152
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8940b635da44fbe70800000000000000
+      internalID: 9133094080550208664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_70
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 159
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4025524d3cc61d930800000000000000
+      internalID: 4166230718628057604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_71
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 102
+        width: 7
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe2cabd8588c9db0800000000000000
+      internalID: -4783798788950315272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_72
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 159
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3eb9f450ed22ff70800000000000000
+      internalID: 9219481828702404159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_73
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 102
+        width: 10
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435cd7b984d8d09b0800000000000000
+      internalID: -5112274659009772236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_74
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 113
+        width: 7
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc97ec5c6646829e0800000000000000
+      internalID: -1645955271235831347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_75
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 102
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10e194aae84bb140800000000000000
+      internalID: 4736459605730779162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_76
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 102
+        width: 10
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69517ff6fbbdb2b70800000000000000
+      internalID: 8875429105927394710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_77
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 102
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e8fbd1f6eb9adb0800000000000000
+      internalID: -4780080145027330500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_78
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 119
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3161a1c68c8e68c0800000000000000
+      internalID: -4004108508283707075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_79
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 101
+        width: 60
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b25c57344dcb5890800000000000000
+      internalID: -7468149864193568071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_80
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 102
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f1161ec666057c0800000000000000
+      internalID: -4084652244201300216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_81
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 97
+        width: 44
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d320e45839e3a380800000000000000
+      internalID: -8961062405385739305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_82
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 97
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65e3aaeb234fb0a0800000000000000
+      internalID: -6863693451190082198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_83
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 97
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b2b59fd65e0c120800000000000000
+      internalID: 2432196059277765445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_84
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 103
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0bb8a9309715f70800000000000000
+      internalID: 9174246972315119787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_85
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 97
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e56df34c74f2870800000000000000
+      internalID: 8660219516666928702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_86
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 97
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b45eb615e831760800000000000000
+      internalID: 7427436690817764236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_87
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 101
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4346e3c2ee11d7390800000000000000
+      internalID: -7819073663403137996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_88
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 53
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4845f7329005519a0800000000000000
+      internalID: -6263011706608331644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_89
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 53
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111e2e4c9c4d59680800000000000000
+      internalID: -8748852738040602351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_90
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 53
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ac98a7d81fc5d70800000000000000
+      internalID: 9033360542546905606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_91
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 53
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda8f75554f3de5b0800000000000000
+      internalID: -5337540416344454435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_92
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 53
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a95d65a98b5bcc30800000000000000
+      internalID: 4380695709291993512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_93
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 4
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10da77c208e3abe0800000000000000
+      internalID: -1467073954958356454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_94
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 4
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cff5c508831a1800800000000000000
+      internalID: 583800576631242690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_95
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 4
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc3709e8c9ff8140800000000000000
+      internalID: 4724269175433280760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_96
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 4
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fca5c5a4c5efbd70800000000000000
+      internalID: 9061213608050273525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_97
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 5
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd441c4b2d7249c60800000000000000
+      internalID: 7823922238578574557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_98
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 12
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03041606f2ae63160800000000000000
+      internalID: 7005043759622733872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger Sprite Sheet 52x49_99
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 12
+        width: 58
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f895d63cba5325be0800000000000000
+      internalID: -1490069514871809649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dagger Sprite Sheet 52x49_0: 6720019676668221644
+      Dagger Sprite Sheet 52x49_1: 2667521232129207902
+      Dagger Sprite Sheet 52x49_10: -863456322018341505
+      Dagger Sprite Sheet 52x49_11: 4373393104130304156
+      Dagger Sprite Sheet 52x49_12: 3882875359094688539
+      Dagger Sprite Sheet 52x49_13: -2640293884246680569
+      Dagger Sprite Sheet 52x49_14: -5270490449371452930
+      Dagger Sprite Sheet 52x49_15: -2336009707709289101
+      Dagger Sprite Sheet 52x49_16: 5589102343328606499
+      Dagger Sprite Sheet 52x49_17: -8629955676118796238
+      Dagger Sprite Sheet 52x49_18: 936780235519115360
+      Dagger Sprite Sheet 52x49_19: 45394212227100058
+      Dagger Sprite Sheet 52x49_2: -3599280474700289856
+      Dagger Sprite Sheet 52x49_20: -951763733963314860
+      Dagger Sprite Sheet 52x49_21: -1311220030978125999
+      Dagger Sprite Sheet 52x49_22: 6238336613611671162
+      Dagger Sprite Sheet 52x49_23: -3609785625221810038
+      Dagger Sprite Sheet 52x49_24: -4517397079700774417
+      Dagger Sprite Sheet 52x49_25: -6485574395936511567
+      Dagger Sprite Sheet 52x49_26: 7474578837324639926
+      Dagger Sprite Sheet 52x49_27: -1280052637442739526
+      Dagger Sprite Sheet 52x49_28: -5736661863873502990
+      Dagger Sprite Sheet 52x49_29: 190325474256733444
+      Dagger Sprite Sheet 52x49_3: 4749387841392119776
+      Dagger Sprite Sheet 52x49_30: 686259356189209640
+      Dagger Sprite Sheet 52x49_31: 8058182143762423574
+      Dagger Sprite Sheet 52x49_32: 2555950639421475675
+      Dagger Sprite Sheet 52x49_33: 6519525513088322724
+      Dagger Sprite Sheet 52x49_34: 3722256968944519234
+      Dagger Sprite Sheet 52x49_35: 8965942091100285512
+      Dagger Sprite Sheet 52x49_36: -1936690772682350340
+      Dagger Sprite Sheet 52x49_37: -5800513825221888779
+      Dagger Sprite Sheet 52x49_38: 8865209168930032386
+      Dagger Sprite Sheet 52x49_39: 6184360573298755939
+      Dagger Sprite Sheet 52x49_4: -3396212868767866372
+      Dagger Sprite Sheet 52x49_40: 3509181076035596022
+      Dagger Sprite Sheet 52x49_41: 8201669305661369392
+      Dagger Sprite Sheet 52x49_42: 6856278002182338121
+      Dagger Sprite Sheet 52x49_43: -2791584037799078262
+      Dagger Sprite Sheet 52x49_44: -744678844829729844
+      Dagger Sprite Sheet 52x49_45: -6083172156497003393
+      Dagger Sprite Sheet 52x49_46: 144961754124397229
+      Dagger Sprite Sheet 52x49_47: -4249417916068703126
+      Dagger Sprite Sheet 52x49_48: 8075823337930520730
+      Dagger Sprite Sheet 52x49_49: 5199410002859058945
+      Dagger Sprite Sheet 52x49_5: 2067304678683955915
+      Dagger Sprite Sheet 52x49_50: -7453079185140731211
+      Dagger Sprite Sheet 52x49_51: -6584586499352901034
+      Dagger Sprite Sheet 52x49_52: 1148315277364518477
+      Dagger Sprite Sheet 52x49_53: 1548779121267272798
+      Dagger Sprite Sheet 52x49_54: 8427490718203763381
+      Dagger Sprite Sheet 52x49_55: -122691455558590137
+      Dagger Sprite Sheet 52x49_56: 3747401974388392948
+      Dagger Sprite Sheet 52x49_57: 4258109241628014058
+      Dagger Sprite Sheet 52x49_58: -6277246847650718773
+      Dagger Sprite Sheet 52x49_59: 8799046040631170801
+      Dagger Sprite Sheet 52x49_6: 177454253339841850
+      Dagger Sprite Sheet 52x49_60: 4276013046692643246
+      Dagger Sprite Sheet 52x49_61: -5497560667594216657
+      Dagger Sprite Sheet 52x49_62: -7917737945189868007
+      Dagger Sprite Sheet 52x49_63: 6056070558023713302
+      Dagger Sprite Sheet 52x49_64: 4401549387928001229
+      Dagger Sprite Sheet 52x49_65: 3268464086320439996
+      Dagger Sprite Sheet 52x49_66: 945824593073588311
+      Dagger Sprite Sheet 52x49_67: 6967384961525265453
+      Dagger Sprite Sheet 52x49_68: 1465706089868902987
+      Dagger Sprite Sheet 52x49_69: 9133094080550208664
+      Dagger Sprite Sheet 52x49_7: 4716341271790696920
+      Dagger Sprite Sheet 52x49_70: 4166230718628057604
+      Dagger Sprite Sheet 52x49_71: -4783798788950315272
+      Dagger Sprite Sheet 52x49_72: 9219481828702404159
+      Dagger Sprite Sheet 52x49_73: -5112274659009772236
+      Dagger Sprite Sheet 52x49_74: -1645955271235831347
+      Dagger Sprite Sheet 52x49_75: 4736459605730779162
+      Dagger Sprite Sheet 52x49_76: 8875429105927394710
+      Dagger Sprite Sheet 52x49_77: -4780080145027330500
+      Dagger Sprite Sheet 52x49_78: -4004108508283707075
+      Dagger Sprite Sheet 52x49_79: -7468149864193568071
+      Dagger Sprite Sheet 52x49_8: 1309587572711314542
+      Dagger Sprite Sheet 52x49_80: -4084652244201300216
+      Dagger Sprite Sheet 52x49_81: -8961062405385739305
+      Dagger Sprite Sheet 52x49_82: -6863693451190082198
+      Dagger Sprite Sheet 52x49_83: 2432196059277765445
+      Dagger Sprite Sheet 52x49_84: 9174246972315119787
+      Dagger Sprite Sheet 52x49_85: 8660219516666928702
+      Dagger Sprite Sheet 52x49_86: 7427436690817764236
+      Dagger Sprite Sheet 52x49_87: -7819073663403137996
+      Dagger Sprite Sheet 52x49_88: -6263011706608331644
+      Dagger Sprite Sheet 52x49_89: -8748852738040602351
+      Dagger Sprite Sheet 52x49_9: 6758446373256807473
+      Dagger Sprite Sheet 52x49_90: 9033360542546905606
+      Dagger Sprite Sheet 52x49_91: -5337540416344454435
+      Dagger Sprite Sheet 52x49_92: 4380695709291993512
+      Dagger Sprite Sheet 52x49_93: -1467073954958356454
+      Dagger Sprite Sheet 52x49_94: 583800576631242690
+      Dagger Sprite Sheet 52x49_95: 4724269175433280760
+      Dagger Sprite Sheet 52x49_96: 9061213608050273525
+      Dagger Sprite Sheet 52x49_97: 7823922238578574557
+      Dagger Sprite Sheet 52x49_98: 7005043759622733872
+      Dagger Sprite Sheet 52x49_99: -1490069514871809649
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

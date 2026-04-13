@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 746f4980ec57bae488c2b977793b3c37
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7385021445400209353
+    second: Relic Guardian 3 Export Ready-Idle_0
+  - first:
+      213: 3810454113930160209
+    second: Relic Guardian 3 Export Ready-Idle_1
+  - first:
+      213: 2603463245264731264
+    second: Relic Guardian 3 Export Ready-Idle_2
+  - first:
+      213: -7695980641057351714
+    second: Relic Guardian 3 Export Ready-Idle_3
+  - first:
+      213: 993842561128410908
+    second: Relic Guardian 3 Export Ready-Idle_4
+  - first:
+      213: -3180796199893633809
+    second: Relic Guardian 3 Export Ready-Idle_5
+  - first:
+      213: 1842717241906519434
+    second: Relic Guardian 3 Export Ready-Idle_6
+  - first:
+      213: 7019844115795006605
+    second: Relic Guardian 3 Export Ready-Idle_7
+  - first:
+      213: 6322445294613545372
+    second: Relic Guardian 3 Export Ready-Idle_8
+  - first:
+      213: 4962460420664517602
+    second: Relic Guardian 3 Export Ready-Idle_9
+  - first:
+      213: -160338932085340552
+    second: Relic Guardian 3 Export Ready-Idle_10
+  - first:
+      213: -1850972845960128574
+    second: Relic Guardian 3 Export Ready-Idle_11
+  - first:
+      213: -7613738898357505670
+    second: Relic Guardian 3 Export Ready-Idle_12
+  - first:
+      213: -6920833335094845021
+    second: Relic Guardian 3 Export Ready-Idle_13
+  - first:
+      213: 4349038452269448858
+    second: Relic Guardian 3 Export Ready-Idle_14
+  - first:
+      213: 4460120945566413112
+    second: Relic Guardian 3 Export Ready-Idle_15
+  - first:
+      213: -3029417566137017526
+    second: Relic Guardian 3 Export Ready-Idle_16
+  - first:
+      213: -1674566600017047490
+    second: Relic Guardian 3 Export Ready-Idle_17
+  - first:
+      213: 9190818021088129313
+    second: Relic Guardian 3 Export Ready-Idle_18
+  - first:
+      213: 4476193837162628435
+    second: Relic Guardian 3 Export Ready-Idle_19
+  - first:
+      213: -2740738886472679912
+    second: Relic Guardian 3 Export Ready-Idle_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 17
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7a8b780eddc7660800000000000000
+      internalID: 7385021445400209353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 18
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158abb5f3d371e430800000000000000
+      internalID: 3810454113930160209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 18
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c3acf170c512420800000000000000
+      internalID: 2603463245264731264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_3
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 19
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed75e7bc162623590800000000000000
+      internalID: -7695980641057351714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_4
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 19
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f29b23b86dacd00800000000000000
+      internalID: 993842561128410908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_5
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 19
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe47d6275ba8bd3d0800000000000000
+      internalID: -3180796199893633809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_6
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 18
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d53518195a29910800000000000000
+      internalID: 1842717241906519434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_7
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 18
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84d394d70f7b6160800000000000000
+      internalID: 7019844115795006605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_8
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 17
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91c7496f76ddb750800000000000000
+      internalID: 6322445294613545372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_9
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 52
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3e4a9d5733ed440800000000000000
+      internalID: 4962460420664517602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_10
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 17
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876436d379c56cdf0800000000000000
+      internalID: -160338932085340552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 11
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c717a3e0060056e0800000000000000
+      internalID: -1850972845960128574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_12
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 11
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a71b3deafc0965690800000000000000
+      internalID: -7613738898357505670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_13
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 11
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a16df7ffb244ff90800000000000000
+      internalID: -6920833335094845021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_14
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 11
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ef80e1e63ea5c30800000000000000
+      internalID: 4349038452269448858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_15
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 11
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831f3c78e5885ed30800000000000000
+      internalID: 4460120945566413112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_16
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 11
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b131e26c855f5d0800000000000000
+      internalID: -3029417566137017526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_17
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 11
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30104dac8eb2c8e0800000000000000
+      internalID: -1674566600017047490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_18
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 11
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 121773e8b485c8f70800000000000000
+      internalID: 9190818021088129313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_19
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 11
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3550fd93492ae1e30800000000000000
+      internalID: 4476193837162628435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 3 Export Ready-Idle_20
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 11
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e32b9f080f6f9d0800000000000000
+      internalID: -2740738886472679912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic Guardian 3 Export Ready-Idle_0: 7385021445400209353
+      Relic Guardian 3 Export Ready-Idle_1: 3810454113930160209
+      Relic Guardian 3 Export Ready-Idle_10: -160338932085340552
+      Relic Guardian 3 Export Ready-Idle_11: -1850972845960128574
+      Relic Guardian 3 Export Ready-Idle_12: -7613738898357505670
+      Relic Guardian 3 Export Ready-Idle_13: -6920833335094845021
+      Relic Guardian 3 Export Ready-Idle_14: 4349038452269448858
+      Relic Guardian 3 Export Ready-Idle_15: 4460120945566413112
+      Relic Guardian 3 Export Ready-Idle_16: -3029417566137017526
+      Relic Guardian 3 Export Ready-Idle_17: -1674566600017047490
+      Relic Guardian 3 Export Ready-Idle_18: 9190818021088129313
+      Relic Guardian 3 Export Ready-Idle_19: 4476193837162628435
+      Relic Guardian 3 Export Ready-Idle_2: 2603463245264731264
+      Relic Guardian 3 Export Ready-Idle_20: -2740738886472679912
+      Relic Guardian 3 Export Ready-Idle_3: -7695980641057351714
+      Relic Guardian 3 Export Ready-Idle_4: 993842561128410908
+      Relic Guardian 3 Export Ready-Idle_5: -3180796199893633809
+      Relic Guardian 3 Export Ready-Idle_6: 1842717241906519434
+      Relic Guardian 3 Export Ready-Idle_7: 7019844115795006605
+      Relic Guardian 3 Export Ready-Idle_8: 6322445294613545372
+      Relic Guardian 3 Export Ready-Idle_9: 4962460420664517602
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

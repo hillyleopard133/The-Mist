@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: c803634f1a9b56944a75d50fceb9e2c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6998614324908301973
+    second: Relic Guardian 2 Condensed-Flame Being_0
+  - first:
+      213: 163519450443464225
+    second: Relic Guardian 2 Condensed-Flame Being_1
+  - first:
+      213: 6710595880972932625
+    second: Relic Guardian 2 Condensed-Flame Being_2
+  - first:
+      213: 5383974344963046905
+    second: Relic Guardian 2 Condensed-Flame Being_3
+  - first:
+      213: -6767724295300766140
+    second: Relic Guardian 2 Condensed-Flame Being_4
+  - first:
+      213: -2431218481701869410
+    second: Relic Guardian 2 Condensed-Flame Being_5
+  - first:
+      213: -1752576831102358257
+    second: Relic Guardian 2 Condensed-Flame Being_6
+  - first:
+      213: 2027114155827742927
+    second: Relic Guardian 2 Condensed-Flame Being_7
+  - first:
+      213: -6402027440400011398
+    second: Relic Guardian 2 Condensed-Flame Being_8
+  - first:
+      213: 2881260038288943449
+    second: Relic Guardian 2 Condensed-Flame Being_9
+  - first:
+      213: 7705260461723572909
+    second: Relic Guardian 2 Condensed-Flame Being_10
+  - first:
+      213: -4926528360854264483
+    second: Relic Guardian 2 Condensed-Flame Being_11
+  - first:
+      213: -8296787787717362404
+    second: Relic Guardian 2 Condensed-Flame Being_12
+  - first:
+      213: -2410629621522015138
+    second: Relic Guardian 2 Condensed-Flame Being_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 26
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6161eb0a5defde90800000000000000
+      internalID: -6998614324908301973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_1
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 26
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ebc85e210f44200800000000000000
+      internalID: 163519450443464225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 26
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11657944663d02d50800000000000000
+      internalID: 6710595880972932625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_3
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 26
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fdb6572428b7ba40800000000000000
+      internalID: 5383974344963046905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_4
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44621d04c963412a0800000000000000
+      internalID: -6767724295300766140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_5
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98abca0ca3924ed0800000000000000
+      internalID: -2431218481701869410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_6
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d609c58a89da7e0800000000000000
+      internalID: -1752576831102358257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_7
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc84749a591c12c10800000000000000
+      internalID: 2027114155827742927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_8
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f67ac56fd6727a0800000000000000
+      internalID: -6402027440400011398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_9
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959adbf3dba4cf720800000000000000
+      internalID: 2881260038288943449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_10
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 26
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa55e2d0959eea60800000000000000
+      internalID: 7705260461723572909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_11
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 26
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55e463ce8471abb0800000000000000
+      internalID: -4926528360854264483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_12
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 26
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1dbe402773ebdc80800000000000000
+      internalID: -8296787787717362404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian 2 Condensed-Flame Being_13
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 26
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c552c9129bb8ed0800000000000000
+      internalID: -2410629621522015138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic Guardian 2 Condensed-Flame Being_0: -6998614324908301973
+      Relic Guardian 2 Condensed-Flame Being_1: 163519450443464225
+      Relic Guardian 2 Condensed-Flame Being_10: 7705260461723572909
+      Relic Guardian 2 Condensed-Flame Being_11: -4926528360854264483
+      Relic Guardian 2 Condensed-Flame Being_12: -8296787787717362404
+      Relic Guardian 2 Condensed-Flame Being_13: -2410629621522015138
+      Relic Guardian 2 Condensed-Flame Being_2: 6710595880972932625
+      Relic Guardian 2 Condensed-Flame Being_3: 5383974344963046905
+      Relic Guardian 2 Condensed-Flame Being_4: -6767724295300766140
+      Relic Guardian 2 Condensed-Flame Being_5: -2431218481701869410
+      Relic Guardian 2 Condensed-Flame Being_6: -1752576831102358257
+      Relic Guardian 2 Condensed-Flame Being_7: 2027114155827742927
+      Relic Guardian 2 Condensed-Flame Being_8: -6402027440400011398
+      Relic Guardian 2 Condensed-Flame Being_9: 2881260038288943449
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

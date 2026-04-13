@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 0c06c9ba3a69b2c4fb0cc34396472852
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3645544482595690920
+    second: Relic Guardian-Land Attack_0
+  - first:
+      213: 721091558265363072
+    second: Relic Guardian-Land Attack_1
+  - first:
+      213: 6385272532146555312
+    second: Relic Guardian-Land Attack_2
+  - first:
+      213: 4029928733481015024
+    second: Relic Guardian-Land Attack_3
+  - first:
+      213: 540047415378030075
+    second: Relic Guardian-Land Attack_4
+  - first:
+      213: 1684886671096111626
+    second: Relic Guardian-Land Attack_5
+  - first:
+      213: 5053992483118679323
+    second: Relic Guardian-Land Attack_6
+  - first:
+      213: 2617325454049789010
+    second: Relic Guardian-Land Attack_7
+  - first:
+      213: 8160258026401307388
+    second: Relic Guardian-Land Attack_8
+  - first:
+      213: 5387265367240047193
+    second: Relic Guardian-Land Attack_9
+  - first:
+      213: -91471195348236095
+    second: Relic Guardian-Land Attack_10
+  - first:
+      213: -4452530753142658156
+    second: Relic Guardian-Land Attack_11
+  - first:
+      213: -3188402401803694163
+    second: Relic Guardian-Land Attack_12
+  - first:
+      213: 2730986544156193186
+    second: Relic Guardian-Land Attack_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 17
+        width: 90
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9500a5463979230800000000000000
+      internalID: 3645544482595690920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 13
+        width: 98
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a90f4a3f4d10a00800000000000000
+      internalID: 721091558265363072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_2
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 12
+        width: 101
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b987a0998b0d9850800000000000000
+      internalID: 6385272532146555312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_3
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 55
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f69645e4de2de730800000000000000
+      internalID: 4029928733481015024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_4
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 46
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfda9735342ae7700800000000000000
+      internalID: 540047415378030075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_5
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 66
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a02697d108be16710800000000000000
+      internalID: 1684886671096111626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_6
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 55
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1588cdd263632640800000000000000
+      internalID: 5053992483118679323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_7
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 46
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254c93e12ab925420800000000000000
+      internalID: 2617325454049789010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_8
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 26
+        width: 75
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa1e2ba07f0f3170800000000000000
+      internalID: 8160258026401307388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_9
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 30
+        width: 68
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a7b1dfe4963ca40800000000000000
+      internalID: 5387265367240047193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_10
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 30
+        width: 66
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c88616be670bbef0800000000000000
+      internalID: -91471195348236095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_11
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 33
+        width: 53
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bed6bdede6532c0800000000000000
+      internalID: -4452530753142658156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_12
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 11
+        width: 103
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf0d7f88e480c3d0800000000000000
+      internalID: -3188402401803694163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Relic Guardian-Land Attack_13
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 10
+        width: 105
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a13dc2eac966e520800000000000000
+      internalID: 2730986544156193186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Relic Guardian-Land Attack_0: 3645544482595690920
+      Relic Guardian-Land Attack_1: 721091558265363072
+      Relic Guardian-Land Attack_10: -91471195348236095
+      Relic Guardian-Land Attack_11: -4452530753142658156
+      Relic Guardian-Land Attack_12: -3188402401803694163
+      Relic Guardian-Land Attack_13: 2730986544156193186
+      Relic Guardian-Land Attack_2: 6385272532146555312
+      Relic Guardian-Land Attack_3: 4029928733481015024
+      Relic Guardian-Land Attack_4: 540047415378030075
+      Relic Guardian-Land Attack_5: 1684886671096111626
+      Relic Guardian-Land Attack_6: 5053992483118679323
+      Relic Guardian-Land Attack_7: 2617325454049789010
+      Relic Guardian-Land Attack_8: 8160258026401307388
+      Relic Guardian-Land Attack_9: 5387265367240047193
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
