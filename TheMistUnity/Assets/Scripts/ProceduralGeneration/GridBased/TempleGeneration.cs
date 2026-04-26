@@ -6,16 +6,29 @@ public class TempleGeneration : MonoBehaviour
 {
     [SerializeField] private Vector2Int roomSize;
     [SerializeField] private Vector2Int templeSize;
-    [SerializeField] private GameObject roomPrefab;
+    [SerializeField] private GameObject[] roomPrefabs;
     [SerializeField] private GameObject startingRoomPrefab;
+    [SerializeField] private GameObject bossRoomPrefab;
+    [SerializeField] private GameObject relicRoomPrefab;
+    [SerializeField] private GameObject treasureRoomPrefab;
     [SerializeField] private int maxRoomNumber;
     [SerializeField] private int minRoomNumber;
     [SerializeField] private int maxBuildAttempts;
+    [SerializeField] private int numberOfTreasureRooms;
 
     private Room startingRoom;
+    private Room bossRoom;
     private List<Room> rooms;
     private GameObject[,] grid;
     private int buildAttempts;
+    private int requiredEndRooms = 4;
+    
+    public static TempleGeneration Instance { get; private set; }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -38,15 +51,12 @@ public class TempleGeneration : MonoBehaviour
         startingRoom = new Room(startingX, startingY, startingRoomObject);
         rooms.Add(startingRoom);
         GenerateNeighbours(startingRoom);
+        
+        List<Room> endRooms = GetEndRooms();
 
-        if (rooms.Count < minRoomNumber)
+        if (rooms.Count < minRoomNumber || endRooms.Count < requiredEndRooms)
         {
-            if (buildAttempts >= maxBuildAttempts)
-            {
-                Debug.Log("Max builds reached");
-                return;
-            } 
-            Debug.Log(rooms.Count + "Retrying");
+            if (buildAttempts >= maxBuildAttempts) return;
             
             foreach (Transform child in transform)
             {
@@ -54,7 +64,80 @@ public class TempleGeneration : MonoBehaviour
             }
             
             CreateGrid();
+            return;
         }
+        
+        ReplaceEndRooms(endRooms);
+        
+        SceneEnemies.Instance.InitiateEnemyAreas();
+    }
+    
+    public void UnlockBossRoom()
+    {
+        
+    }
+
+    private void ReplaceEndRooms(List<Room> endRooms)
+    {
+        if (endRooms.Count > requiredEndRooms)
+        {
+            while (endRooms.Count > requiredEndRooms)
+            {
+                endRooms.RemoveAt(0);
+            }
+        }
+
+        for (int i = 0; i < endRooms.Count - 1; i++)
+        {
+            Room room = endRooms[i];
+            Directions direction = room.NeighbourDirection();
+            SpawnEndRoom(room, direction, relicRoomPrefab);
+        }
+        
+        bossRoom = endRooms[^1];
+        Directions bossDirection = bossRoom.NeighbourDirection();
+        SpawnEndRoom(bossRoom, bossDirection, bossRoomPrefab);
+    }
+
+    private void SpawnEndRoom(Room room, Directions direction, GameObject prefab)
+    {
+        Destroy(room.roomObject);
+        
+        Vector3 position = new Vector3(
+            room.gridX * (roomSize.x + 1),
+            room.gridY * (roomSize.y + 1),
+            0
+        );
+                    
+        GameObject newRoomObject = Instantiate(prefab, position, Quaternion.identity, transform);
+        grid[room.gridX, room.gridY] = newRoomObject;
+        room.roomObject = newRoomObject;
+        
+        switch (direction)
+        {
+            case Directions.Left:
+                room.roomObject.GetComponent<Doors>().OpenLeftDoor();
+                break;
+            case Directions.Right:
+                room.roomObject.GetComponent<Doors>().OpenRightDoor();
+                break;
+            case Directions.Top:
+                room.roomObject.GetComponent<Doors>().OpenTopDoor();
+                break;
+            case Directions.Bottom:
+                room.roomObject.GetComponent<Doors>().OpenBottomDoor();
+                break;
+        }
+    }
+
+    private List<Room> GetEndRooms()
+    {
+        List<Room> endRooms = new List<Room>();
+        foreach (Room room in rooms)
+        {
+            if(room.isEndRoom) endRooms.Add(room);
+        }
+        return endRooms;
     }
 
     private void GenerateNeighbours(Room room)
@@ -73,7 +156,8 @@ public class TempleGeneration : MonoBehaviour
                     int spawns = Random.Range(0, 2);
                     if (spawns == 0)
                     {
-                        SpawnRoom(gridX - 1, gridY, room, Directions.Left);
+                        int randomIndex = Random.Range(0, roomPrefabs.Length);
+                        SpawnRoom(gridX - 1, gridY, room, Directions.Left, roomPrefabs[randomIndex]);
                     }
                 }
             }
@@ -88,7 +172,8 @@ public class TempleGeneration : MonoBehaviour
                     int spawns = Random.Range(0, 2);
                     if (spawns == 0)
                     {
-                        SpawnRoom(gridX + 1, gridY, room, Directions.Right);
+                        int randomIndex = Random.Range(0, roomPrefabs.Length);
+                        SpawnRoom(gridX + 1, gridY, room, Directions.Right, roomPrefabs[randomIndex]);
                     }
                 }
             }
@@ -103,7 +188,8 @@ public class TempleGeneration : MonoBehaviour
                     int spawns = Random.Range(0, 2);
                     if (spawns == 0)
                     {
-                        SpawnRoom(gridX, gridY + 1, room, Directions.Top);
+                        int randomIndex = Random.Range(0, roomPrefabs.Length);
+                        SpawnRoom(gridX, gridY + 1, room, Directions.Top, roomPrefabs[randomIndex]);
                     }
                 }
             }
@@ -118,7 +204,8 @@ public class TempleGeneration : MonoBehaviour
                     int spawns = Random.Range(0, 2);
                     if (spawns == 0)
                     {
-                        SpawnRoom(gridX, gridY - 1, room, Directions.Bottom);
+                        int randomIndex = Random.Range(0, roomPrefabs.Length);
+                        SpawnRoom(gridX, gridY - 1, room, Directions.Bottom, roomPrefabs[randomIndex]);
                     }
                 }
             }
@@ -132,7 +219,7 @@ public class TempleGeneration : MonoBehaviour
         }
     }
 
-    private void SpawnRoom(int gridX, int gridY, Room room, Directions direction)
+    private void SpawnRoom(int gridX, int gridY, Room room, Directions direction, GameObject prefab)
     {
         if(rooms.Count >= maxRoomNumber) return;
         
@@ -142,7 +229,7 @@ public class TempleGeneration : MonoBehaviour
             0
         );
                     
-        GameObject newRoomObject = Instantiate(roomPrefab, position, Quaternion.identity, transform);
+        GameObject newRoomObject = Instantiate(prefab, position, Quaternion.identity, transform);
         grid[gridX, gridY] = newRoomObject;
         Room newRoom = new Room(gridX, gridY, newRoomObject);
 
@@ -150,27 +237,31 @@ public class TempleGeneration : MonoBehaviour
         {
             case Directions.Left:
                 room.roomLeft = newRoom;
-                room.room.GetComponent<Doors>().OpenLeftDoor();
+                room.roomObject.GetComponent<Doors>().OpenLeftDoor();
+                room.isEndRoom = false;
                 newRoom.roomRight = room;
-                newRoom.room.GetComponent<Doors>().OpenRightDoor();
+                newRoom.roomObject.GetComponent<Doors>().OpenRightDoor();
                 break;
             case Directions.Right:
                 room.roomRight = newRoom;
-                room.room.GetComponent<Doors>().OpenRightDoor();
+                room.roomObject.GetComponent<Doors>().OpenRightDoor();
+                room.isEndRoom = false;
                 newRoom.roomLeft = room;
-                newRoom.room.GetComponent<Doors>().OpenLeftDoor();
+                newRoom.roomObject.GetComponent<Doors>().OpenLeftDoor();
                 break;
             case Directions.Top:
                 room.roomTop = newRoom;
-                room.room.GetComponent<Doors>().OpenTopDoor();
+                room.roomObject.GetComponent<Doors>().OpenTopDoor();
+                room.isEndRoom = false;
                 newRoom.roomBottom = room;
-                newRoom.room.GetComponent<Doors>().OpenBottomDoor();
+                newRoom.roomObject.GetComponent<Doors>().OpenBottomDoor();
                 break;
             case Directions.Bottom:
                 room.roomBottom = newRoom;
-                room.room.GetComponent<Doors>().OpenBottomDoor();
+                room.roomObject.GetComponent<Doors>().OpenBottomDoor();
+                room.isEndRoom = false;
                 newRoom.roomTop = room;
-                newRoom.room.GetComponent<Doors>().OpenTopDoor();
+                newRoom.roomObject.GetComponent<Doors>().OpenTopDoor();
                 break;
         }
         

@@ -818,6 +818,34 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Temple"",
+            ""id"": ""cdcc1dfc-c99a-4715-a4c8-c14306ca2a31"",
+            ""actions"": [
+                {
+                    ""name"": ""ActivateRelic"",
+                    ""type"": ""Button"",
+                    ""id"": ""fd9e092e-4bae-4ba3-8c89-11641fd07eb0"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""42c1063d-f584-41d0-84f5-d5a8469b1ec2"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ActivateRelic"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -868,6 +896,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         m_Combat_SelectPartyMemberRight = m_Combat.FindAction("SelectPartyMemberRight", throwIfNotFound: true);
         m_Combat_UltimateAttack = m_Combat.FindAction("UltimateAttack", throwIfNotFound: true);
         m_Combat_TimingWindow = m_Combat.FindAction("TimingWindow", throwIfNotFound: true);
+        // Temple
+        m_Temple = asset.FindActionMap("Temple", throwIfNotFound: true);
+        m_Temple_ActivateRelic = m_Temple.FindAction("ActivateRelic", throwIfNotFound: true);
     }
 
     ~@PlayerActions()
@@ -881,6 +912,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         UnityEngine.Debug.Assert(!m_Hamster.enabled, "This will cause a leak and performance issues, PlayerActions.Hamster.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_UI.enabled, "This will cause a leak and performance issues, PlayerActions.UI.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_Combat.enabled, "This will cause a leak and performance issues, PlayerActions.Combat.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_Temple.enabled, "This will cause a leak and performance issues, PlayerActions.Temple.Disable() has not been called.");
     }
 
     /// <summary>
@@ -2025,6 +2057,102 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="CombatActions" /> instance referencing this action map.
     /// </summary>
     public CombatActions @Combat => new CombatActions(this);
+
+    // Temple
+    private readonly InputActionMap m_Temple;
+    private List<ITempleActions> m_TempleActionsCallbackInterfaces = new List<ITempleActions>();
+    private readonly InputAction m_Temple_ActivateRelic;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "Temple".
+    /// </summary>
+    public struct TempleActions
+    {
+        private @PlayerActions m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public TempleActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "Temple/ActivateRelic".
+        /// </summary>
+        public InputAction @ActivateRelic => m_Wrapper.m_Temple_ActivateRelic;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_Temple; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="TempleActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(TempleActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="TempleActions" />
+        public void AddCallbacks(ITempleActions instance)
+        {
+            if (instance == null || m_Wrapper.m_TempleActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_TempleActionsCallbackInterfaces.Add(instance);
+            @ActivateRelic.started += instance.OnActivateRelic;
+            @ActivateRelic.performed += instance.OnActivateRelic;
+            @ActivateRelic.canceled += instance.OnActivateRelic;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="TempleActions" />
+        private void UnregisterCallbacks(ITempleActions instance)
+        {
+            @ActivateRelic.started -= instance.OnActivateRelic;
+            @ActivateRelic.performed -= instance.OnActivateRelic;
+            @ActivateRelic.canceled -= instance.OnActivateRelic;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="TempleActions.UnregisterCallbacks(ITempleActions)" />.
+        /// </summary>
+        /// <seealso cref="TempleActions.UnregisterCallbacks(ITempleActions)" />
+        public void RemoveCallbacks(ITempleActions instance)
+        {
+            if (m_Wrapper.m_TempleActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="TempleActions.AddCallbacks(ITempleActions)" />
+        /// <seealso cref="TempleActions.RemoveCallbacks(ITempleActions)" />
+        /// <seealso cref="TempleActions.UnregisterCallbacks(ITempleActions)" />
+        public void SetCallbacks(ITempleActions instance)
+        {
+            foreach (var item in m_Wrapper.m_TempleActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_TempleActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="TempleActions" /> instance referencing this action map.
+    /// </summary>
+    public TempleActions @Temple => new TempleActions(this);
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Movement" which allows adding and removing callbacks.
     /// </summary>
@@ -2292,5 +2420,20 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnTimingWindow(InputAction.CallbackContext context);
+    }
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Temple" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="TempleActions.AddCallbacks(ITempleActions)" />
+    /// <seealso cref="TempleActions.RemoveCallbacks(ITempleActions)" />
+    public interface ITempleActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "ActivateRelic" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnActivateRelic(InputAction.CallbackContext context);
     }
 }

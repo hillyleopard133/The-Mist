@@ -732,6 +732,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Temple",
+            "id": "cdcc1dfc-c99a-4715-a4c8-c14306ca2a31",
+            "actions": [
+                {
+                    "name": "ActivateRelic",
+                    "type": "Button",
+                    "id": "fd9e092e-4bae-4ba3-8c89-11641fd07eb0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "42c1063d-f584-41d0-84f5-d5a8469b1ec2",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ActivateRelic",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

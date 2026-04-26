@@ -17,29 +17,23 @@ public class Room
 
     public int gridX;
     public int gridY;
-    public GameObject room;
+    public GameObject roomObject;
 
-    public Room(int gridX, int gridY, GameObject room)
+    public bool isEndRoom = true;
+
+    public Room(int gridX, int gridY, GameObject roomObject)
     {
         this.gridX = gridX;
         this.gridY = gridY;
-        this.room = room;
+        this.roomObject = roomObject;
     }
     
-    public bool IsEndRoom()
+    public Directions NeighbourDirection()
     {
-        return NumberOfNeighbours() < 2;
-    }
-
-    private int NumberOfNeighbours()
-    {
-        int neighbours = 0;
+        if(roomTop != null) return Directions.Top;
+        if(roomBottom != null) return Directions.Bottom;
+        if(roomLeft != null) return Directions.Left;
         
-        if(roomTop != null) neighbours += 1;
-        if(roomBottom != null) neighbours += 1;
-        if(roomLeft != null) neighbours += 1;
-        if(roomRight != null) neighbours += 1;
-        
-        return neighbours;
+        return Directions.Right;
     }
 }

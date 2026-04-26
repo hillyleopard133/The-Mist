@@ -8,12 +8,14 @@ public class SceneEnemies : MonoBehaviour
     [SerializeField] private int minEnemies, maxEnemies;
     private EnemyArea[] enemyAreas;
 
-    private void Start()
-    {
-        InitiateEnemyAreas();
-    }
+    public static SceneEnemies Instance { get; private set; }
 
-    private void InitiateEnemyAreas()
+    private void Awake()
+    {
+        Instance = this;
+    }
+    
+    public void InitiateEnemyAreas()
     {
         enemyAreas = FindObjectsByType<EnemyArea>(FindObjectsInactive.Include, FindObjectsSortMode.None);
         foreach (EnemyArea area in enemyAreas)
