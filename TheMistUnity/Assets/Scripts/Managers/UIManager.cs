@@ -391,6 +391,18 @@ public class UIManager : Singleton<UIManager>
     }
     
     #endregion
+    
+    #region Temples
+
+    [SerializeField] private GameObject templeList;
+    [SerializeField] private TextMeshProUGUI relicAmountText;
+
+    public void UpdateRelicAmount(int amount, int total)
+    {
+        relicAmountText.text = amount + "/" + total;
+    }
+    
+    #endregion
 
     #region PartyInfo
     public void UpdatePartyMemberInfo()
@@ -883,6 +895,7 @@ public class UIManager : Singleton<UIManager>
 
     public void ActivateCombatScreen(List<EnemyDetails> enemies)
     {
+        HideGameHUD();
         combatScreen.SetActive(true);
         actions.Combat.Enable();
         ShowPartyMemberInfo();
@@ -896,6 +909,14 @@ public class UIManager : Singleton<UIManager>
         {
             combatEnemyLocations[i].SetActive(true);
             combatEnemyImages[i].sprite = enemies[i].EnemySprite;
+            if (enemies[i].isBoss)
+            {
+                combatEnemyLocations[i].transform.localScale = new Vector3(1.8f, 1.8f, 1f);
+            }
+            else
+            {
+                combatEnemyLocations[i].transform.localScale = new Vector3(1f, 1f, 1f);
+            }
         }
         foreach (GameObject navigation in combatNavigationQE)
         {
@@ -1325,6 +1346,7 @@ public class UIManager : Singleton<UIManager>
         combatScreen.SetActive(false);
         actions.Combat.Disable();
         DisableAllCombatText();
+        ShowGameHUD();
     }
 
     #endregion
@@ -1682,6 +1704,9 @@ public class UIManager : Singleton<UIManager>
                 break;
             case InteractionType.Crafting:
                 OpenCloseCraftingPanel(true);
+                break;
+            case InteractionType.Battle:
+                combatManager.EnterBossCombat();
                 break;
         }
     }

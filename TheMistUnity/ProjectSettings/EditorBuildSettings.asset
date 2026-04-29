@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TownTheMist.unity
     guid: d2643499299bb6a4eb9296533b7d578c
   - enabled: 1
-    path: Assets/Scenes/TheMistTemple.unity
+    path: Assets/Scenes/RPG/TheMistTemple.unity
     guid: ce5daf11e53e7d1488f67b89a3a090de
   - enabled: 1
     path: Assets/Scenes/Shops/WeaponShop.unity

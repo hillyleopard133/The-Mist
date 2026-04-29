@@ -4,9 +4,9 @@ using UnityEngine;
 
 public enum CombatGridType
 {
-    DarkGrass,
-    Bedroom,
-    Temple
+    Forest,
+    Temple,
+    Bedroom
 }
 
 public class EnemyArea : MonoBehaviour

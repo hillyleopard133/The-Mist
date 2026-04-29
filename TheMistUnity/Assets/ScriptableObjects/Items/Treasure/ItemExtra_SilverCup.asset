@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: Silver Cup
   Icon: {fileID: 21300000, guid: 12aaf27190a14824fb61230263036112, type: 3}
   Description: A drinking cup made of silver.
-  SellValue: 20
+  SellValue: 10
   BuyValue: 0
   ItemType: 0
   IsConsumable: 0

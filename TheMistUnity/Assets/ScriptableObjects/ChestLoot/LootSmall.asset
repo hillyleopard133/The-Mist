@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d755fafb5174ed0ad0b5ce80e3f41db, type: 3}
+  m_Name: LootSmall
+  m_EditorClassIdentifier: Assembly-CSharp::ChestLoot
+  minCoins: 10
+  maxCoins: 20
+  items:
+  - {fileID: 11400000, guid: c30386ce42986744fbc0b86f997aa5ae, type: 2}
+  - {fileID: 11400000, guid: aad6a3a55c9aca745826d3afed541d45, type: 2}
+  - {fileID: 11400000, guid: 810cdc12ef45c1644ac5ada1cb9fba3e, type: 2}
+  - {fileID: 11400000, guid: 5389c233d70d5bd42915976e6ca0b6af, type: 2}
+  giveAllItems: 0
+  maxItems: 1

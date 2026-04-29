@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: Silver Coin
   Icon: {fileID: 21300000, guid: a54ab2992df7d754790f7f43805a11a5, type: 3}
   Description: A small silver coin.
-  SellValue: 20
+  SellValue: 10
   BuyValue: 0
   ItemType: 0
   IsConsumable: 0

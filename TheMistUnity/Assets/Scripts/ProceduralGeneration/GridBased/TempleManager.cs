@@ -20,7 +20,14 @@ public class TempleManager : Singleton<TempleManager>
     
     private bool[] templesCleared = new bool[3];
     
-    public Temples currentTemple;
+    [HideInInspector] public Temples currentTemple = Temples.Fire;
+    
+    private UIManager uiManager;
+
+    private void Start()
+    {
+        uiManager = UIManager.Instance;
+    }
 
     public void ActivateRelic()
     {
@@ -28,14 +35,17 @@ public class TempleManager : Singleton<TempleManager>
         {
             case Temples.Fire:
                 fireRelics++;
+                uiManager.UpdateRelicAmount(fireRelics, fireRelicsAmount);
                 if (fireRelics >= fireRelicsAmount) UnlockBossRoom();
                 break;
             case Temples.Ice:
                 iceRelics++;
+                uiManager.UpdateRelicAmount(iceRelics, iceRelicsAmount);
                 if (iceRelics >= iceRelicsAmount) UnlockBossRoom();
                 break;
             case Temples.Wind:
                 windRelics++;
+                uiManager.UpdateRelicAmount(windRelics, windRelicsAmount);
                 if (windRelics >= windRelicsAmount) UnlockBossRoom();
                 break;
         }

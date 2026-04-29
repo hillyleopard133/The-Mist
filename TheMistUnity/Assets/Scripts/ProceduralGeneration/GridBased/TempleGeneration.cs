@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -7,6 +8,8 @@ public class TempleGeneration : MonoBehaviour
     [SerializeField] private Vector2Int roomSize;
     [SerializeField] private Vector2Int templeSize;
     [SerializeField] private GameObject[] roomPrefabs;
+    [SerializeField] private GameObject bigChestRoom;
+    [SerializeField] private GameObject smallChestRoom;
     [SerializeField] private GameObject startingRoomPrefab;
     [SerializeField] private GameObject bossRoomPrefab;
     [SerializeField] private GameObject relicRoomPrefab;
@@ -14,7 +17,8 @@ public class TempleGeneration : MonoBehaviour
     [SerializeField] private int maxRoomNumber;
     [SerializeField] private int minRoomNumber;
     [SerializeField] private int maxBuildAttempts;
-    [SerializeField] private int numberOfTreasureRooms;
+    [SerializeField] private int numberOfBigTreasureRooms;
+    [SerializeField] private int numberOfSmallTreasureRooms;
 
     private Room startingRoom;
     private Room bossRoom;
@@ -69,6 +73,7 @@ public class TempleGeneration : MonoBehaviour
         }
         
         ReplaceEndRooms(endRooms);
+        AddTreasureRooms(endRooms);
         
         SceneEnemies.Instance.InitiateEnemyAreas();
         Player.Instance.gameObject.transform.position = startingRoomObject.transform.position + new Vector3(roomSize.x / 2f, roomSize.y / 2f, 0f);;
@@ -76,7 +81,77 @@ public class TempleGeneration : MonoBehaviour
     
     public void UnlockBossRoom()
     {
+        bossRoom.roomObject.GetComponent<BossDoors>().OpenBossDoors();
+    }
+
+    private void AddTreasureRooms(List<Room> endRooms)
+    {
+        List<Room> availableRooms = rooms.Where(r => !endRooms.Contains(r)).ToList();
         
+        List<Room> bigTreasureRooms = new List<Room>();
+        List<Room> smallTreasureRooms = new List<Room>();
+        for (int i = 0; i < numberOfBigTreasureRooms; i++)
+        {
+            Room room = availableRooms[Random.Range(1, availableRooms.Count)];
+            bigTreasureRooms.Add(room);
+            availableRooms.Remove(room);
+        }
+        for (int i = 0; i < numberOfSmallTreasureRooms; i++)
+        {
+            Room room = availableRooms[Random.Range(1, availableRooms.Count)];
+            smallTreasureRooms.Add(room);
+            availableRooms.Remove(room);
+        }
+        
+        ReplaceTreasureRooms(bigTreasureRooms, smallTreasureRooms);
+    }
+
+    private void ReplaceTreasureRooms(List<Room> bigTreasureRooms, List<Room> smallTreasureRooms)
+    {
+        foreach (Room room in bigTreasureRooms)
+        {
+            ReplaceRoom(room, bigChestRoom);
+        }
+
+        foreach (Room room in smallTreasureRooms)
+        {
+            ReplaceRoom(room, smallChestRoom);
+        }
+    }
+
+    private void ReplaceRoom(Room room, GameObject roomPrefab)
+    {
+        List<Directions> openDoors = room.AllOpenDoors();
+        Destroy(room.roomObject);
+            
+        Vector3 position = new Vector3(
+            room.gridX * (roomSize.x + 1),
+            room.gridY * (roomSize.y + 1),
+            0
+        );
+            
+        GameObject newRoomObject = Instantiate(roomPrefab, position, Quaternion.identity, transform);
+        grid[room.gridX, room.gridY] = newRoomObject;
+        room.roomObject = newRoomObject;
+
+        foreach (Directions direction in openDoors)
+        {
+            switch (direction)
+            {
+                case Directions.Left:
+                    room.roomObject.GetComponent<Doors>().OpenLeftDoor();
+                    break;
+                case Directions.Right:
+                    room.roomObject.GetComponent<Doors>().OpenRightDoor();
+                    break;
+                case Directions.Top:
+                    room.roomObject.GetComponent<Doors>().OpenTopDoor();
+                    break;
+                case Directions.Bottom:
+                    room.roomObject.GetComponent<Doors>().OpenBottomDoor();
+                    break;
+            }
+        }
     }
 
     private void ReplaceEndRooms(List<Room> endRooms)
@@ -92,13 +167,15 @@ public class TempleGeneration : MonoBehaviour
         for (int i = 0; i < endRooms.Count - 1; i++)
         {
             Room room = endRooms[i];
-            Directions direction = room.NeighbourDirection();
-            SpawnEndRoom(room, direction, relicRoomPrefab);
+            //Directions direction = room.NeighbourDirection();
+            //SpawnEndRoom(room, direction, relicRoomPrefab);
+            ReplaceRoom(room, relicRoomPrefab);
         }
         
         bossRoom = endRooms[^1];
-        Directions bossDirection = bossRoom.NeighbourDirection();
-        SpawnEndRoom(bossRoom, bossDirection, bossRoomPrefab);
+        //Directions bossDirection = bossRoom.NeighbourDirection();
+        //SpawnEndRoom(bossRoom, bossDirection, bossRoomPrefab);
+        ReplaceRoom(bossRoom, bossRoomPrefab);
     }
 
     private void SpawnEndRoom(Room room, Directions direction, GameObject prefab)

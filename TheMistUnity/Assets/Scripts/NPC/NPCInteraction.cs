@@ -7,7 +7,8 @@ public enum InteractionType
 {
     SuppliesShop,
     EquipmentShop,
-    Crafting
+    Crafting,
+    Battle
 }
 
 public class NPCInteraction : MonoBehaviour
@@ -96,7 +97,7 @@ public class NPCInteraction : MonoBehaviour
     public void SetShowInteractionBox(bool show)
     {
         showInteractionBox = show;
-        interactionBox.SetActive(show);
+        if(interactionBox != null) interactionBox.SetActive(show);
         SaveOptions();
     }
 
@@ -113,7 +114,7 @@ public class NPCInteraction : MonoBehaviour
 
             if (showInteractionBox)
             {
-                interactionBox.SetActive(true);
+                if(interactionBox != null) interactionBox.SetActive(true);
             }
         }
     }
@@ -124,7 +125,7 @@ public class NPCInteraction : MonoBehaviour
         {
             DialogueManager.Instance.SelectNPC(null);
             DialogueManager.Instance.CloseDialoguePanel();
-            interactionBox.SetActive(false);
+            if(interactionBox != null) interactionBox.SetActive(false);
         }
     }
     

@@ -8,6 +8,21 @@ public class DialogueQuestManager : ScriptableObject
     public List<DialogueTrigger> dialogueTriggers = new List<DialogueTrigger>();
     private string DIALOGUE_TRIGGERS = "DIALOGUE_TRIGGERS";
     private int itemAmount;
+
+    public void SetCombatBoss(EnemyDetails bossDetails)
+    {
+        CombatManager.Instance.SetBoss(bossDetails);
+    }
+
+    public void SetBossCombatGrid(string gridName)
+    {
+        CombatGridType gridType;
+        
+        if(gridName.ToUpper() == "TEMPLE") gridType = CombatGridType.Temple;
+        if (gridName.ToUpper() == "FOREST") gridType = CombatGridType.Forest;
+        if (gridName.ToUpper() == "BEDROOM") gridType = CombatGridType.Bedroom;
+    }
+    
     public void GiveQuest(Quest quest)
     {
         QuestManager.Instance.AcceptQuest(quest);

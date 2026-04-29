@@ -306,6 +306,15 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenChest"",
+                    ""type"": ""Button"",
+                    ""id"": ""47ca0459-63f8-48c9-af78-28a7c8bb6a9c"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -350,6 +359,17 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""RegenPoint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f6f9f0a7-a9b5-4a83-af5c-f815314ab053"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenChest"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -867,6 +887,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         m_General_Respawn = m_General.FindAction("Respawn", throwIfNotFound: true);
         m_General_TabMenu = m_General.FindAction("TabMenu", throwIfNotFound: true);
         m_General_RegenPoint = m_General.FindAction("RegenPoint", throwIfNotFound: true);
+        m_General_OpenChest = m_General.FindAction("OpenChest", throwIfNotFound: true);
         // Hotbar
         m_Hotbar = asset.FindActionMap("Hotbar", throwIfNotFound: true);
         m_Hotbar_Slot1 = m_Hotbar.FindAction("Slot1", throwIfNotFound: true);
@@ -1302,6 +1323,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_General_Respawn;
     private readonly InputAction m_General_TabMenu;
     private readonly InputAction m_General_RegenPoint;
+    private readonly InputAction m_General_OpenChest;
     /// <summary>
     /// Provides access to input actions defined in input action map "General".
     /// </summary>
@@ -1329,6 +1351,10 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "General/RegenPoint".
         /// </summary>
         public InputAction @RegenPoint => m_Wrapper.m_General_RegenPoint;
+        /// <summary>
+        /// Provides access to the underlying input action "General/OpenChest".
+        /// </summary>
+        public InputAction @OpenChest => m_Wrapper.m_General_OpenChest;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1367,6 +1393,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @RegenPoint.started += instance.OnRegenPoint;
             @RegenPoint.performed += instance.OnRegenPoint;
             @RegenPoint.canceled += instance.OnRegenPoint;
+            @OpenChest.started += instance.OnOpenChest;
+            @OpenChest.performed += instance.OnOpenChest;
+            @OpenChest.canceled += instance.OnOpenChest;
         }
 
         /// <summary>
@@ -1390,6 +1419,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @RegenPoint.started -= instance.OnRegenPoint;
             @RegenPoint.performed -= instance.OnRegenPoint;
             @RegenPoint.canceled -= instance.OnRegenPoint;
+            @OpenChest.started -= instance.OnOpenChest;
+            @OpenChest.performed -= instance.OnOpenChest;
+            @OpenChest.canceled -= instance.OnOpenChest;
         }
 
         /// <summary>
@@ -2247,6 +2279,13 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnRegenPoint(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "OpenChest" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnOpenChest(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Hotbar" which allows adding and removing callbacks.

@@ -9,6 +9,8 @@ public class EnemyDetails : ScriptableObject
     public string EnemyName;
     public Sprite EnemySprite;
     public GameObject enemyPrefab;
+    public bool isBoss;
+    
     public int CoinsReward;
     public int ExpReward;
     

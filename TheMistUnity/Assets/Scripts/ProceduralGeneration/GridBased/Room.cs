@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public enum Directions
@@ -35,5 +36,15 @@ public class Room
         if(roomLeft != null) return Directions.Left;
         
         return Directions.Right;
+    }
+
+    public List<Directions> AllOpenDoors()
+    {
+        List<Directions> openDoors = new List<Directions>();
+        if(roomTop != null) openDoors.Add(Directions.Top);
+        if(roomBottom != null) openDoors.Add(Directions.Bottom);
+        if(roomLeft != null) openDoors.Add(Directions.Left);
+        if(roomRight != null) openDoors.Add(Directions.Right);
+        return openDoors;
     }
 }

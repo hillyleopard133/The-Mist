@@ -41,6 +41,10 @@ public class CombatManager : Singleton<CombatManager>
     private int perfectMultiHits;
     
     private List<EnemyDetails> enemies = new List<EnemyDetails>();
+    
+    private EnemyDetails boss;
+    private CombatGridType bossGridType;
+    private bool isBossFight;
     [HideInInspector] public bool isFighting;
     
     [HideInInspector] public int selectedEnemy;
@@ -60,6 +64,7 @@ public class CombatManager : Singleton<CombatManager>
     private CoinManager coinManager;
     private EquipmentManager equipmentManager;
     private DialogueManager dialogueManager;
+    private AudioManager audioManager;
     
     private readonly string ULTIMATE_CHARGES = "ULTIMATE_CHARGES";
     private readonly string ULTIMATE_CHARGE_PROGRESS = "ULTIMATE_CHARGE_PROGRESS";
@@ -78,6 +83,7 @@ public class CombatManager : Singleton<CombatManager>
         coinManager = CoinManager.Instance;
         equipmentManager = EquipmentManager.Instance;
         dialogueManager = DialogueManager.Instance;
+        audioManager = AudioManager.Instance;
 
         int partySize = skillsManager.partyMembers.Length;
         
@@ -890,10 +896,29 @@ public class CombatManager : Singleton<CombatManager>
         uIManager.ActivateCombatScreen(enemies);
         cameraManager.ToggleCombatCamera();
         combatTilemaps[(int)gridType].SetActive(true);
+        audioManager.PlayCombatMusic((int)gridType);
         isFighting = true;
         isPlayerTurn = false;
         StartCoroutine(TimeBetweenTurns());
         AddUltimateCharge(0);
+    }
+
+    public void EnterBossCombat()
+    {
+        List<EnemyDetails> bossList = new List<EnemyDetails>();
+        bossList.Add(boss);
+        EnterCombat(bossList, bossGridType);
+        isBossFight = true;
+    }
+
+    public void SetBoss(EnemyDetails boss)
+    {
+        this.boss = boss;
+    }
+
+    public void SetBossGridType(CombatGridType gridType)
+    {
+        bossGridType = gridType;
     }
 
     private void CombatLose()
@@ -943,6 +968,7 @@ public class CombatManager : Singleton<CombatManager>
         DeactivateTilemaps();
         RevivePartyMembers();
         isFighting = false;
+        isBossFight = false;
     }
 
     private void PostBattleRecovery()

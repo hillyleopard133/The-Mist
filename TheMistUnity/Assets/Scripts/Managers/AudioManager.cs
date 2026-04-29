@@ -1,3 +1,4 @@
+using System.Linq;
 using BayatGames.SaveGameFree;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -24,6 +25,7 @@ public class AudioManager : Singleton<AudioManager>
     [SerializeField] private AudioClip deadMusic;
     [SerializeField] private AudioClip menuMusicIntro;
     [SerializeField] private AudioClip menuMusicLoop;
+    [SerializeField] private AudioClip[] combatMusic;
     
     [Header("Menu Sounds")]
     [SerializeField] private AudioClip removeItem;
@@ -92,7 +94,7 @@ public class AudioManager : Singleton<AudioManager>
     void Update()
     {
         if(nextClip == null) return;
-        if (!musicSourceIntro.isPlaying)
+        if (musicSourceIntro.time >= musicSourceIntro.clip.length)
         {
             PlayMusic(nextClip, nextClipVolume);
         }
@@ -144,7 +146,6 @@ public class AudioManager : Singleton<AudioManager>
         audioMixer.SetFloat("MasterVolume", volume);
         SaveGame.Save(VOLUME_MUTED, isMuted);
     }
-    
 
     public void SaveCurrentMusic()
     {
@@ -219,10 +220,12 @@ public class AudioManager : Singleton<AudioManager>
     {
         if (musicSourceLoop.clip == musicClip) return; 
         
+        musicSourceIntro.Stop();
+        
         musicSourceLoop.volume = volume;
         musicSourceLoop.clip = musicClip;
         musicSourceLoop.Play();
-        if (musicSourceLoop.clip != menuMusicLoop)
+        if (musicSourceLoop.clip != menuMusicLoop && !isCombatMusic(musicClip))
         {
             SaveCurrentMusic();
         }
@@ -236,11 +239,21 @@ public class AudioManager : Singleton<AudioManager>
         PlaySFX(clips[randomSound]);
     }
 
+    private bool isCombatMusic(AudioClip clip)
+    {
+        if (combatMusic.Contains(clip))
+        {
+            return true;
+        }
+        return false;
+    }
+
     //Music
     public void PlayMenuMusic() => PlayMusicWithIntro(menuMusicIntro, menuMusicLoop, 1f);
     public void PlayTownMusic() => PlayMusic(townMusic, 0.5f);
     public void PlayDeadMusic() => PlayMusic(deadMusic, 1f);
     public void PlayEnemyAreaMusic() => PlayMusic(enemyAreaMusic, 1f);
+    public void PlayCombatMusic(int index) => PlayMusic(combatMusic[index], 1f);
 
     // Menu Sounds
     public void PlayRemoveItemSound() => PlaySFX(removeItem, 0.7f);
