@@ -126,7 +126,7 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
     {
         GameObject spawnPoint = GameObject.Find(spawnLocation);
 
-        if (spawnLocation != null)
+        if (spawnPoint != null)
         {
             Vector3 newPosition = spawnPoint.transform.position;
             newPosition.z = 0f;

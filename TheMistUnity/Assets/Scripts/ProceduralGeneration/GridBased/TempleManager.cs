@@ -45,4 +45,27 @@ public class TempleManager : Singleton<TempleManager>
     {
         TempleGeneration.Instance.UnlockBossRoom();
     }
+
+    private void FailTemple()
+    {
+        fireRelics = 0;
+        iceRelics = 0;
+        windRelics = 0;
+    }
+
+    public void CompleteTemple()
+    {
+        switch (currentTemple)
+        {
+            case Temples.Fire:
+                templesCleared[0] = true;
+                break;
+            case Temples.Ice:
+                templesCleared[1] = true;
+                break;
+            case Temples.Wind:
+                templesCleared[2] = true;
+                break;
+        }
+    }
 }

@@ -50,6 +50,7 @@ public class TempleGeneration : MonoBehaviour
         grid[startingX, startingY] = startingRoomObject;
         startingRoom = new Room(startingX, startingY, startingRoomObject);
         rooms.Add(startingRoom);
+        
         GenerateNeighbours(startingRoom);
         
         List<Room> endRooms = GetEndRooms();
@@ -70,6 +71,7 @@ public class TempleGeneration : MonoBehaviour
         ReplaceEndRooms(endRooms);
         
         SceneEnemies.Instance.InitiateEnemyAreas();
+        Player.Instance.gameObject.transform.position = startingRoomObject.transform.position + new Vector3(roomSize.x / 2f, roomSize.y / 2f, 0f);;
     }
     
     public void UnlockBossRoom()
