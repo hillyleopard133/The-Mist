@@ -167,46 +167,11 @@ public class TempleGeneration : MonoBehaviour
         for (int i = 0; i < endRooms.Count - 1; i++)
         {
             Room room = endRooms[i];
-            //Directions direction = room.NeighbourDirection();
-            //SpawnEndRoom(room, direction, relicRoomPrefab);
             ReplaceRoom(room, relicRoomPrefab);
         }
         
         bossRoom = endRooms[^1];
-        //Directions bossDirection = bossRoom.NeighbourDirection();
-        //SpawnEndRoom(bossRoom, bossDirection, bossRoomPrefab);
         ReplaceRoom(bossRoom, bossRoomPrefab);
-    }
-
-    private void SpawnEndRoom(Room room, Directions direction, GameObject prefab)
-    {
-        Destroy(room.roomObject);
-        
-        Vector3 position = new Vector3(
-            room.gridX * (roomSize.x + 1),
-            room.gridY * (roomSize.y + 1),
-            0
-        );
-                    
-        GameObject newRoomObject = Instantiate(prefab, position, Quaternion.identity, transform);
-        grid[room.gridX, room.gridY] = newRoomObject;
-        room.roomObject = newRoomObject;
-        
-        switch (direction)
-        {
-            case Directions.Left:
-                room.roomObject.GetComponent<Doors>().OpenLeftDoor();
-                break;
-            case Directions.Right:
-                room.roomObject.GetComponent<Doors>().OpenRightDoor();
-                break;
-            case Directions.Top:
-                room.roomObject.GetComponent<Doors>().OpenTopDoor();
-                break;
-            case Directions.Bottom:
-                room.roomObject.GetComponent<Doors>().OpenBottomDoor();
-                break;
-        }
     }
 
     private List<Room> GetEndRooms()

@@ -28,15 +28,6 @@ public class Room
         this.gridY = gridY;
         this.roomObject = roomObject;
     }
-    
-    public Directions NeighbourDirection()
-    {
-        if(roomTop != null) return Directions.Top;
-        if(roomBottom != null) return Directions.Bottom;
-        if(roomLeft != null) return Directions.Left;
-        
-        return Directions.Right;
-    }
 
     public List<Directions> AllOpenDoors()
     {
