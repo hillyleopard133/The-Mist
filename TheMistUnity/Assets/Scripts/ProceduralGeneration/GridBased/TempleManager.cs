@@ -1,4 +1,5 @@
 using System;
+using BayatGames.SaveGameFree;
 using Mono.Cecil;
 using UnityEngine;
 
@@ -30,6 +31,8 @@ public class TempleManager : Singleton<TempleManager>
     [HideInInspector] public Temples currentTemple = Temples.Fire;
     
     private UIManager uiManager;
+    
+    private const string TEMPLE_DATA = "TEMPLE_DATA";
 
     private void Start()
     {
@@ -53,6 +56,8 @@ public class TempleManager : Singleton<TempleManager>
                 windChests++;
                 break;
         }
+        
+        SaveTemples();
     }
 
     public void ActivateRelic()
@@ -75,6 +80,7 @@ public class TempleManager : Singleton<TempleManager>
                 if (windRelics >= windRelicsAmount) UnlockBossRoom();
                 break;
         }
+        SaveTemples();
     }
 
     private void UnlockBossRoom()
@@ -84,12 +90,22 @@ public class TempleManager : Singleton<TempleManager>
 
     private void FailTemple()
     {
-        fireRelics = 0;
-        iceRelics = 0;
-        windRelics = 0;
-        fireChests = 0;
-        iceChests = 0;
-        windChests = 0;
+        switch (currentTemple)
+        {
+            case Temples.Fire:
+                fireRelics = 0;
+                uiManager.UpdateRelicAmount(fireRelics, fireRelicsAmount);
+                break;
+            case Temples.Ice:
+                iceRelics = 0;
+                uiManager.UpdateRelicAmount(iceRelics, iceRelicsAmount);
+                break;
+            case Temples.Wind:
+                windRelics = 0;
+                uiManager.UpdateRelicAmount(windRelics, windRelicsAmount);
+                break;
+        }
+        SaveTemples();
     }
 
     public void CompleteTemple()
@@ -106,5 +122,50 @@ public class TempleManager : Singleton<TempleManager>
                 templesCleared[2] = true;
                 break;
         }
+        SaveTemples();
+    }
+
+    public void ResetTemples()
+    {
+        fireRelics = 0;
+        iceRelics = 0;
+        windRelics = 0;
+        fireChests = 0;
+        iceChests = 0;
+        windChests = 0;
+        
+        templesCleared = new bool[3];
+    }
+
+    public void LoadTemples()
+    {
+        if (SaveGame.Exists(TEMPLE_DATA))
+        {
+            TempleData templeData = SaveGame.Load<TempleData>(TEMPLE_DATA);
+            int[] relics = templeData.relics;
+            int[] chests = templeData.chests;
+            templesCleared = templeData.completed;
+            
+            fireRelics = relics[0];
+            iceRelics = relics[1];
+            windRelics = relics[2];
+            
+            fireChests = chests[0];
+            iceChests = chests[1];
+            windChests = chests[2];
+        }
+    }
+
+    public void SaveTemples()
+    {
+        int[] relics = { fireRelics, iceRelics, windRelics };
+        int[] chests = { fireChests, iceChests, windChests };
+        
+        TempleData templeData = new TempleData();
+        templeData.relics = relics;
+        templeData.chests = chests;
+        templeData.completed = templesCleared;
+        
+        SaveGame.Save(TEMPLE_DATA, templeData);
     }
 }
