@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using BayatGames.SaveGameFree;
 using UnityEngine;
@@ -19,12 +20,19 @@ public class AudioManager : Singleton<AudioManager>
     [SerializeField] private AudioMixer audioMixer;
     
     [Header("Music")]
-    [SerializeField] private AudioClip townMusic;
-    [SerializeField] private AudioClip enemyAreaMusic;
-    [SerializeField] private AudioClip menuMusic;
     [SerializeField] private AudioClip deadMusic;
     [SerializeField] private AudioClip menuMusicIntro;
     [SerializeField] private AudioClip menuMusicLoop;
+    [SerializeField] private AudioClip villageMusicIntro;
+    [SerializeField] private AudioClip villageMusicLoop;
+    [SerializeField] private AudioClip forestMusicIntro;
+    [SerializeField] private AudioClip forestMusicLoop;
+    [SerializeField] private AudioClip forestMusicBattle;
+    [SerializeField] private AudioClip hamsterMusicIntro;
+    [SerializeField] private AudioClip hamsterMusicLoop;
+    [SerializeField] private AudioClip templeMusicIntro;
+    [SerializeField] private AudioClip templeMusicLoop;
+    [SerializeField] private AudioClip templeMusicBattle;
     [SerializeField] private AudioClip[] combatMusic;
     
     [Header("Menu Sounds")]
@@ -55,11 +63,35 @@ public class AudioManager : Singleton<AudioManager>
     
     private AudioClip nextClip;
     private float nextClipVolume;
+    
+    private Dictionary<string, AudioClip> musicLookup;
 
     protected override void Awake()
     {
         base.Awake();
         PlayMenuMusic();
+        
+        musicLookup = new Dictionary<string, AudioClip>
+        {
+            { deadMusic.name, deadMusic },
+
+            { menuMusicIntro.name, menuMusicIntro },
+            { menuMusicLoop.name, menuMusicLoop },
+
+            { villageMusicIntro.name, villageMusicIntro },
+            { villageMusicLoop.name, villageMusicLoop },
+
+            { forestMusicIntro.name, forestMusicIntro },
+            { forestMusicLoop.name, forestMusicLoop },
+            { forestMusicBattle.name, forestMusicBattle },
+
+            { hamsterMusicIntro.name, hamsterMusicIntro },
+            { hamsterMusicLoop.name, hamsterMusicLoop },
+
+            { templeMusicIntro.name, templeMusicIntro },
+            { templeMusicLoop.name, templeMusicLoop },
+            { templeMusicBattle.name, templeMusicBattle }
+        };
     }
 
     private void Start()
@@ -147,11 +179,19 @@ public class AudioManager : Singleton<AudioManager>
         SaveGame.Save(VOLUME_MUTED, isMuted);
     }
 
-    public void SaveCurrentMusic()
+    public void SaveCurrentMusic(AudioClip clip)
     {
-        string currentMusic = musicSourceLoop.clip.name;
+        string currentMusic = clip.name;
+        
         SaveGame.Save(GAME_MUSIC, currentMusic);
-        SaveGame.Save(MUSIC_CLIP_VOLUME, musicSourceLoop.volume);
+        
+        float volume;
+
+        if (musicSourceIntro.clip == clip) volume = musicSourceIntro.volume;
+        else if (musicSourceLoop.clip == clip) volume = musicSourceLoop.volume;
+        else volume = musicSourceLoop.volume;
+        
+        SaveGame.Save(MUSIC_CLIP_VOLUME, volume);
     }
 
     public void LoadCurrentMusic()
@@ -161,26 +201,46 @@ public class AudioManager : Singleton<AudioManager>
             string currentMusic = SaveGame.Load<string>(GAME_MUSIC);
             float volume = SaveGame.Load<float>(MUSIC_CLIP_VOLUME);
             AudioClip currentMusicClip = GetMusicClipByName(currentMusic);
+            
             if (currentMusicClip != null)
             {
-                PlayMusic(currentMusicClip, volume);
+                AudioClip loopClip = GetLoopForIntro(currentMusicClip);
+
+                if (loopClip != null)
+                {
+                    PlayMusicWithIntro(currentMusicClip, loopClip, volume);
+                }
+                else
+                {
+                    PlayMusic(currentMusicClip, volume);
+                }
             }
         }
     }
     
+    private AudioClip GetLoopForIntro(AudioClip introClip)
+    {
+        if (introClip == menuMusicIntro) return menuMusicLoop;
+
+        if (introClip == villageMusicIntro) return villageMusicLoop;
+
+        if (introClip == forestMusicIntro) return forestMusicLoop;
+
+        if (introClip == hamsterMusicIntro) return hamsterMusicLoop;
+
+        if (introClip == templeMusicIntro) return templeMusicLoop;
+
+        return null;
+    }
+    
     private AudioClip GetMusicClipByName(string clipName)
     {
-        if (clipName == townMusic.name) return townMusic;
-        if (clipName == enemyAreaMusic.name) return enemyAreaMusic;
-        if (clipName == menuMusicIntro.name) return menuMusicIntro;
-        if(clipName == menuMusicLoop.name) return menuMusicLoop;
-
-        return null; 
+        return musicLookup.TryGetValue(clipName, out var clip) ? clip : null;
     }
 
     public void NewGameMusic()
     {
-        PlayTownMusic();
+        PlayVillageMusic();
     }
     
     public void PlaySFX(AudioClip clip)
@@ -199,9 +259,11 @@ public class AudioManager : Singleton<AudioManager>
         }
     }
 
-    private void PlayMusicWithIntro(AudioClip introClip, AudioClip loopClip, float volume)
+    public void PlayMusicWithIntro(AudioClip introClip, AudioClip loopClip, float volume)
     {
         if (musicSourceIntro.clip == introClip) return; 
+        
+        musicSourceLoop.Stop();
         
         musicSourceIntro.volume = volume;
         musicSourceIntro.clip = introClip;
@@ -209,7 +271,7 @@ public class AudioManager : Singleton<AudioManager>
         
         if (musicSourceIntro.clip != menuMusicIntro)
         {
-            SaveCurrentMusic();
+            SaveCurrentMusic(introClip);
         }
 
         nextClip = loopClip;
@@ -225,10 +287,6 @@ public class AudioManager : Singleton<AudioManager>
         musicSourceLoop.volume = volume;
         musicSourceLoop.clip = musicClip;
         musicSourceLoop.Play();
-        if (musicSourceLoop.clip != menuMusicLoop && !isCombatMusic(musicClip))
-        {
-            SaveCurrentMusic();
-        }
         
         nextClip = null;
     }
@@ -250,9 +308,8 @@ public class AudioManager : Singleton<AudioManager>
 
     //Music
     public void PlayMenuMusic() => PlayMusicWithIntro(menuMusicIntro, menuMusicLoop, 1f);
-    public void PlayTownMusic() => PlayMusic(townMusic, 0.5f);
+    public void PlayVillageMusic() => PlayMusicWithIntro(villageMusicIntro, villageMusicLoop, 1f);
     public void PlayDeadMusic() => PlayMusic(deadMusic, 1f);
-    public void PlayEnemyAreaMusic() => PlayMusic(enemyAreaMusic, 1f);
     public void PlayCombatMusic(int index) => PlayMusic(combatMusic[index], 1f);
 
     // Menu Sounds

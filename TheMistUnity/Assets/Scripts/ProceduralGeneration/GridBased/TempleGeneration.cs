@@ -32,6 +32,7 @@ public class TempleGeneration : MonoBehaviour
     public static TempleGeneration Instance { get; private set; }
     
     private TempleManager templeManager;
+    private UIManager uIManager;
 
     private void Awake()
     {
@@ -41,7 +42,12 @@ public class TempleGeneration : MonoBehaviour
     private void Start()
     {
         templeManager = TempleManager.Instance;
-        templeManager.currentTemple = templeType;
+        uIManager = UIManager.Instance;
+        
+        templeManager.SetCurrentTemple(templeType);
+        uIManager.ToggleTempleList(true);
+        templeManager.UpdateUI();
+        
         buildAttempts = 0;
         CreateGrid();
     }
@@ -316,5 +322,10 @@ public class TempleGeneration : MonoBehaviour
         }
         
         rooms.Add(newRoom);
+    }
+
+    private void OnDisable()
+    {
+        uIManager.ToggleTempleList(false);
     }
 }

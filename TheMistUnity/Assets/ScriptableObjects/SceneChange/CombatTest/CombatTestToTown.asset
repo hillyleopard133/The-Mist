@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneChangeLocation
   SceneEntryPointName: CombatTestTown
   TargetScene: TownTheMist
-  TargetSceneMusic: {fileID: 0}
-  MusicVolume: 0
+  TargetSceneMusic: {fileID: 8300000, guid: d4cdad62933ecfd4c89876b98acdf0a6, type: 3}
+  TargetSceneIntroMusic: {fileID: 8300000, guid: d6cefb4b479690248abbcaca0ba17ddb, type: 3}
+  MusicVolume: 1
+  MusicHasIntro: 1

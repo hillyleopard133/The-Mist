@@ -33,7 +33,7 @@ public class Burnable : MonoBehaviour
         }
         else
         {
-            dialogueManager.StartObjectDialogue(dialogue);
+            //dialogueManager.StartObjectDialogue(dialogue);
         }
     }
     

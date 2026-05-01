@@ -8,5 +8,7 @@ public class SceneChangeLocation : ScriptableObject
     public string SceneEntryPointName;
     public string TargetScene;
     public AudioClip TargetSceneMusic;
+    public AudioClip TargetSceneIntroMusic;
     public float MusicVolume;
+    public bool MusicHasIntro;
 }

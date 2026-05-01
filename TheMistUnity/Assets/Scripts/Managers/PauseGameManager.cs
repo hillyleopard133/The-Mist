@@ -58,7 +58,7 @@ public class PauseGameManager : Singleton<PauseGameManager>
         {
             uIManager.ShowGameHUD();
             gameManager.EnablePlayerMovement();
-            //TODO AudioManager.Instance.LoadCurrentMusic();
+            AudioManager.Instance.LoadCurrentMusic();
         }
 
         Time.timeScale = pauseMenu.activeSelf ? 0f : 1f;

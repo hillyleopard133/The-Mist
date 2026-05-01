@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneEntryPointName: Hole1Entry
   TargetScene: HamsterHoles
-  TargetSceneMusic: {fileID: 0}
-  MusicVolume: 0
+  TargetSceneMusic: {fileID: 8300000, guid: b34817a8ce011da49aab76499f2db29e, type: 3}
+  TargetSceneIntroMusic: {fileID: 8300000, guid: 1f905478dfd3a344ea019f323ab054f8, type: 3}
+  MusicVolume: 1
+  MusicHasIntro: 1

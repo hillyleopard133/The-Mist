@@ -9,7 +9,11 @@ public class SceneChange : MonoBehaviour
         {
             SceneChangeManager.Instance.LoadScene(location.TargetScene, location.SceneEntryPointName);
             if (location.TargetSceneMusic == null) return;
-            AudioManager.Instance.PlayMusic(location.TargetSceneMusic, location.MusicVolume);
+            if (location.MusicHasIntro)
+            {
+                AudioManager.Instance.PlayMusicWithIntro(location.TargetSceneIntroMusic, location.TargetSceneMusic, location.MusicVolume);
+            }
+            else AudioManager.Instance.PlayMusic(location.TargetSceneMusic, location.MusicVolume);
         }
     }
 }

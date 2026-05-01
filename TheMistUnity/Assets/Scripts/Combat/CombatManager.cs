@@ -975,6 +975,7 @@ public class CombatManager : Singleton<CombatManager>
         dialogueManager.SelectNPC(null);
         DeactivateTilemaps();
         RevivePartyMembers();
+        audioManager.LoadCurrentMusic();
         isFighting = false;
         isBossFight = false;
     }

@@ -407,6 +407,11 @@ public class UIManager : Singleton<UIManager>
     {
         chestAmountText.text = amount + "/" + total;
     }
+
+    public void ToggleTempleList(bool toggle)
+    {
+        templeList.SetActive(toggle);
+    }
     
     #endregion
 

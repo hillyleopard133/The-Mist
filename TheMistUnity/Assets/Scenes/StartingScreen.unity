@@ -8164,12 +8164,20 @@ MonoBehaviour:
   musicSourceIntro: {fileID: 472651883}
   sfxSource: {fileID: 524830224}
   audioMixer: {fileID: 24100000, guid: a7907c460e9ddbb488ccc63bb03cc4ca, type: 2}
-  townMusic: {fileID: 8300000, guid: 3a56842af59877149a8d7c767353b188, type: 3}
-  enemyAreaMusic: {fileID: 8300000, guid: 65ae7341b59c37e4594df39e875a9031, type: 3}
   menuMusic: {fileID: 8300000, guid: caf214e68cfb873458e4e9d3de076f6f, type: 3}
   deadMusic: {fileID: 8300000, guid: ea9dcb24560caee498ca964521bc6bc3, type: 3}
   menuMusicIntro: {fileID: 8300000, guid: 2be0fdf511df10247bb44c0bbcae523e, type: 3}
   menuMusicLoop: {fileID: 8300000, guid: bd62e1ddb7eae664a9dfc01b654b46f8, type: 3}
+  villageMusicIntro: {fileID: 8300000, guid: d6cefb4b479690248abbcaca0ba17ddb, type: 3}
+  villageMusicLoop: {fileID: 8300000, guid: d4cdad62933ecfd4c89876b98acdf0a6, type: 3}
+  forestMusicIntro: {fileID: 8300000, guid: 41c94af14b4fe0b40bfb80983c2df8e6, type: 3}
+  forestMusicLoop: {fileID: 8300000, guid: c6f72a9d4cb0003499b78c39f5b18c39, type: 3}
+  forestMusicBattle: {fileID: 8300000, guid: b5555887d6e20954a8aa41a80ce6680e, type: 3}
+  hamsterMusicIntro: {fileID: 8300000, guid: 1f905478dfd3a344ea019f323ab054f8, type: 3}
+  hamsterMusicLoop: {fileID: 8300000, guid: b34817a8ce011da49aab76499f2db29e, type: 3}
+  templeMusicIntro: {fileID: 8300000, guid: d92a331b8b676ce4597fba4a62a6a2b4, type: 3}
+  templeMusicLoop: {fileID: 8300000, guid: cb6ff3e86c1a7434d99c3f75e36307f7, type: 3}
+  templeMusicBattle: {fileID: 8300000, guid: b22c159810e7ec64ea12b83d13c3fdf6, type: 3}
   combatMusic:
   - {fileID: 8300000, guid: b5555887d6e20954a8aa41a80ce6680e, type: 3}
   - {fileID: 8300000, guid: b22c159810e7ec64ea12b83d13c3fdf6, type: 3}
@@ -98310,7 +98318,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 2703096556275621961, guid: a7907c460e9ddbb488ccc63bb03cc4ca, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -127941,7 +127949,7 @@ MonoBehaviour:
   combatTextPoolSize: 15
   templeList: {fileID: 48542009}
   relicAmountText: {fileID: 218891696}
-  chestAmountText: {fileID: 0}
+  chestAmountText: {fileID: 1001428627}
 --- !u!4 &1683219268
 Transform:
   m_ObjectHideFlags: 0

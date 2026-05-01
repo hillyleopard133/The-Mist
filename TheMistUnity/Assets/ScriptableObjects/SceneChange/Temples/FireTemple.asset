@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneEntryPointName: TempleEntryPoint
   TargetScene: FireTemple
-  TargetSceneMusic: {fileID: 0}
-  MusicVolume: 0
+  TargetSceneMusic: {fileID: 8300000, guid: cb6ff3e86c1a7434d99c3f75e36307f7, type: 3}
+  TargetSceneIntroMusic: {fileID: 8300000, guid: d92a331b8b676ce4597fba4a62a6a2b4, type: 3}
+  MusicVolume: 1
+  MusicHasIntro: 1

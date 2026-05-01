@@ -132,7 +132,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         StartCoroutine(LoadNewGameSceneCoroutine());
         ActivateGame();
         ResetGameData();
-        //TODO AudioManager.Instance.NewGameMusic();
+        audioManager.NewGameMusic();
         SetCheckpoint(startingCheckpoint);
         uIManager.EnableLoadButton();
         SaveGameData();

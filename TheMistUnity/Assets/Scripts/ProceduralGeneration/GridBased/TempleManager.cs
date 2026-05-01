@@ -31,12 +31,20 @@ public class TempleManager : Singleton<TempleManager>
     [HideInInspector] public Temples currentTemple = Temples.Fire;
     
     private UIManager uiManager;
+    private AudioManager audioManager;
     
     private const string TEMPLE_DATA = "TEMPLE_DATA";
 
     private void Start()
     {
         uiManager = UIManager.Instance;
+        audioManager = AudioManager.Instance;
+    }
+
+    public void SetCurrentTemple(Temples temple)
+    {
+        currentTemple = temple;
+        
     }
 
     public bool IsTempleCleared(Temples temple)
@@ -139,6 +147,25 @@ public class TempleManager : Singleton<TempleManager>
         SaveTemples();
     }
 
+    public void UpdateUI()
+    {
+        switch (currentTemple)
+        {
+            case Temples.Fire:
+                uiManager.UpdateChestAmount(fireChests, fireChestsAmount);
+                uiManager.UpdateRelicAmount(fireRelics, fireRelicsAmount);
+                break;
+            case Temples.Ice:
+                uiManager.UpdateChestAmount(iceChests, iceChestsAmount);
+                uiManager.UpdateRelicAmount(iceRelics, iceRelicsAmount);
+                break;
+            case Temples.Wind:
+                uiManager.UpdateChestAmount(windChests, windChestsAmount);
+                uiManager.UpdateRelicAmount(windRelics, windRelicsAmount);
+                break;
+        }
+    }
+
     public void ResetTemples()
     {
         fireRelics = 0;
@@ -149,6 +176,8 @@ public class TempleManager : Singleton<TempleManager>
         windChests = 0;
         
         templesCleared = new bool[3];
+        
+        UpdateUI();
     }
 
     public void LoadTemples()
@@ -167,6 +196,8 @@ public class TempleManager : Singleton<TempleManager>
             fireChests = chests[0];
             iceChests = chests[1];
             windChests = chests[2];
+            
+            UpdateUI();
         }
     }
 

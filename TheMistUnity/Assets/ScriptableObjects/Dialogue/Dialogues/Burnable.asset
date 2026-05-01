@@ -20,8 +20,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 374
-    y: 293
+    x: 455
+    y: 277
     width: 250
     height: 100
   requirementsOr: []
