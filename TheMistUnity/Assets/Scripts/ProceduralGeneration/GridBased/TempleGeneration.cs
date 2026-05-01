@@ -5,6 +5,8 @@ using UnityEngine.Serialization;
 
 public class TempleGeneration : MonoBehaviour
 {
+    [SerializeField] private Temples templeType;
+    
     [SerializeField] private Vector2Int roomSize;
     [SerializeField] private Vector2Int templeSize;
     [SerializeField] private GameObject[] roomPrefabs;
@@ -28,6 +30,8 @@ public class TempleGeneration : MonoBehaviour
     private int requiredEndRooms = 4;
     
     public static TempleGeneration Instance { get; private set; }
+    
+    private TempleManager templeManager;
 
     private void Awake()
     {
@@ -36,6 +40,8 @@ public class TempleGeneration : MonoBehaviour
 
     private void Start()
     {
+        templeManager = TempleManager.Instance;
+        templeManager.currentTemple = templeType;
         buildAttempts = 0;
         CreateGrid();
     }

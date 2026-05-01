@@ -149,6 +149,17 @@ public class DialogueManager : Singleton<DialogueManager>
             GameManager.Instance.DisablePlayerMovement();
         }
     }
+
+    public void StartObjectDialogue(Dialogue dialogue)
+    {
+        currentDialogue = dialogue;
+        currentNode = currentDialogue.GetRootNode();
+        dialoguePanel.SetActive(true);
+        TriggerAction();
+        UpdateUI();
+        dialogueStarted = true;
+        actions.Dialogue.Continue.Enable();
+    }
     
     private void Next()
     {

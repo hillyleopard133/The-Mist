@@ -39,6 +39,20 @@ public class TempleManager : Singleton<TempleManager>
         uiManager = UIManager.Instance;
     }
 
+    public bool IsTempleCleared(Temples temple)
+    {
+        switch (temple)
+        {
+            case Temples.Fire:
+                return templesCleared[0];
+            case Temples.Ice:
+                return templesCleared[1];
+            case Temples.Wind:
+                return templesCleared[2];
+        }
+        return false;
+    }
+
     public void OpenChest()
     {
         switch (currentTemple)
@@ -88,7 +102,7 @@ public class TempleManager : Singleton<TempleManager>
         TempleGeneration.Instance.UnlockBossRoom();
     }
 
-    private void FailTemple()
+    public void FailTemple()
     {
         switch (currentTemple)
         {

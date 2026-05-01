@@ -927,6 +927,10 @@ public class CombatManager : Singleton<CombatManager>
         if(enemyTurnCoroutine != null) StopCoroutine(enemyTurnCoroutine);
         usedItems.Clear();
         LoadCombatData();
+        if (isBossFight)
+        {
+            TempleManager.Instance.FailTemple();
+        }
     }
 
     private void CombatWin()
@@ -936,6 +940,10 @@ public class CombatManager : Singleton<CombatManager>
         //PostBattleRecovery();
         EndCombat();
         SaveCombatData();
+        if (isBossFight)
+        {
+            TempleManager.Instance.CompleteTemple();
+        }
     }
 
     private void AddRewards()
