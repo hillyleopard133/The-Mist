@@ -396,10 +396,16 @@ public class UIManager : Singleton<UIManager>
 
     [SerializeField] private GameObject templeList;
     [SerializeField] private TextMeshProUGUI relicAmountText;
+    [SerializeField] private TextMeshProUGUI chestAmountText;
 
     public void UpdateRelicAmount(int amount, int total)
     {
         relicAmountText.text = amount + "/" + total;
+    }
+
+    public void UpdateChestAmount(int amount, int total)
+    {
+        chestAmountText.text = amount + "/" + total;
     }
     
     #endregion

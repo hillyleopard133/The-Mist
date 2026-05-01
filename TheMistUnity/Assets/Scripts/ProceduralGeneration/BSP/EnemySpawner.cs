@@ -76,16 +76,6 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    public void SetRespawnTime(EnemyHealth enemy, int respawnTime = Settings.defaultEnemyRespawnTime)
-    {
-        int index = GetEnemyIndex(enemy.gameObject);
-        if (index == -1)
-        {
-            return;
-        }
-        respawnTimes[index] = GameManager.Instance.gamePlayTime + respawnTime;
-    }
-
     private int GetEnemyIndex(GameObject enemyToFind)
     {
         for (int i = 0; i < enemies.Length; i++)

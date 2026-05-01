@@ -18,6 +18,13 @@ public class TempleManager : Singleton<TempleManager>
     private int iceRelics;
     private int windRelics;
     
+    [SerializeField] private int fireChestsAmount = 3;
+    [SerializeField] private int iceChestsAmount = 3;
+    [SerializeField] private int windChestsAmount = 3;
+    private int fireChests;
+    private int iceChests;
+    private int windChests;
+    
     private bool[] templesCleared = new bool[3];
     
     [HideInInspector] public Temples currentTemple = Temples.Fire;
@@ -27,6 +34,25 @@ public class TempleManager : Singleton<TempleManager>
     private void Start()
     {
         uiManager = UIManager.Instance;
+    }
+
+    public void OpenChest()
+    {
+        switch (currentTemple)
+        {
+            case Temples.Fire:
+                fireChests++;
+                uiManager.UpdateChestAmount(fireChests, fireChestsAmount);
+                break;
+            case Temples.Ice:
+                uiManager.UpdateChestAmount(iceChests, iceChestsAmount);
+                iceChests++;
+                break;
+            case Temples.Wind:
+                uiManager.UpdateChestAmount(windChests, windChestsAmount);
+                windChests++;
+                break;
+        }
     }
 
     public void ActivateRelic()
@@ -61,6 +87,9 @@ public class TempleManager : Singleton<TempleManager>
         fireRelics = 0;
         iceRelics = 0;
         windRelics = 0;
+        fireChests = 0;
+        iceChests = 0;
+        windChests = 0;
     }
 
     public void CompleteTemple()

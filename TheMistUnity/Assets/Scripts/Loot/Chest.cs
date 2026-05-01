@@ -36,6 +36,12 @@ public class Chest : MonoBehaviour
         circleCollider2D.enabled = false;
         interactionBox.SetActive(false);
         GiveLoot();
+
+        TempleChest chest = GetComponent<TempleChest>();
+        if (chest != null)
+        {
+            chest.Open();
+        }
     }
 
     private void GiveLoot()
