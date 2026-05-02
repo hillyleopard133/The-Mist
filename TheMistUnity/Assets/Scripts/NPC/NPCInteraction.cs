@@ -8,7 +8,8 @@ public enum InteractionType
     SuppliesShop,
     EquipmentShop,
     Crafting,
-    Battle
+    Battle,
+    Disable
 }
 
 public class NPCInteraction : MonoBehaviour

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0f9ac5861d74ef4aa3eae5ded0c702c, type: 3}
-  m_Name: VisitElder
+  m_Name: SaveMilo
   m_EditorClassIdentifier: Assembly-CSharp::Quest
-  Name: What's wrong with Milo?
-  ID: VisitElder
+  Name: Saving Milo
+  ID: SaveMilo
   QuestGiverIcon: {fileID: 21300000, guid: 3f84f7ac6d85e5449a4070b9da39fe28, type: 3}
   QuestGiverName: Mama
   IsMainQuest: 1
@@ -32,4 +32,4 @@ MonoBehaviour:
   - Item: {fileID: 11400000, guid: 333d5780fa9d3be4cabfb821a9b35b83, type: 2}
     Quantity: 3
   QuestCompleted: 0
-  QuestAccepted: 0
+  QuestAccepted: 1

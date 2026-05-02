@@ -58,7 +58,7 @@ public class Quest : ScriptableObject
         UIManager.Instance.LoadQuestsUI();
     }
 
-    public void GiveQuestRewards()
+    private void GiveQuestRewards()
     {
         SkillsManager.Instance.AddExp(ExpReward);
         CoinManager.Instance.AddCoins(CoinReward);

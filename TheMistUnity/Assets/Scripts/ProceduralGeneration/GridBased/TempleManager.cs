@@ -32,6 +32,7 @@ public class TempleManager : Singleton<TempleManager>
     
     private UIManager uiManager;
     private AudioManager audioManager;
+    private QuestManager questManager;
     
     private const string TEMPLE_DATA = "TEMPLE_DATA";
 
@@ -39,6 +40,7 @@ public class TempleManager : Singleton<TempleManager>
     {
         uiManager = UIManager.Instance;
         audioManager = AudioManager.Instance;
+        questManager = QuestManager.Instance;
     }
 
     public void SetCurrentTemple(Temples temple)
@@ -68,13 +70,17 @@ public class TempleManager : Singleton<TempleManager>
             case Temples.Fire:
                 fireChests++;
                 uiManager.UpdateChestAmount(fireChests, fireChestsAmount);
+                questManager.AddProgress("PablosBrother", 1);
+                questManager.AddProgress("SaveMilo", 1);
                 break;
             case Temples.Ice:
                 uiManager.UpdateChestAmount(iceChests, iceChestsAmount);
+                questManager.AddProgress("SaveMilo", 1);
                 iceChests++;
                 break;
             case Temples.Wind:
                 uiManager.UpdateChestAmount(windChests, windChestsAmount);
+                questManager.AddProgress("SaveMilo", 1);
                 windChests++;
                 break;
         }

@@ -348,6 +348,7 @@ public class UIManager : Singleton<UIManager>
     private CombatManager combatManager;
     private EquipmentManager equipmentManager;
     private Inventory inventory;
+    private DialogueManager dialogueManager;
     
     #endregion
 
@@ -369,6 +370,7 @@ public class UIManager : Singleton<UIManager>
         combatManager = CombatManager.Instance;
         equipmentManager = EquipmentManager.Instance;
         inventory = Inventory.Instance;
+        dialogueManager = DialogueManager.Instance;
         
         actions.General.Respawn.performed += ctx => SetIsReviving(true);  
         actions.General.Respawn.canceled += ctx => SetIsReviving(false); 
@@ -1703,25 +1705,6 @@ public class UIManager : Singleton<UIManager>
             shopSlotList.Add(slot);
         }
     }
-    
-    private void ExtraInteractionCallback(InteractionType type)
-    {
-        switch (type)
-        {
-            case InteractionType.SuppliesShop:
-                OpenShop(0);
-                break;
-            case InteractionType.EquipmentShop:
-                OpenShop(1);
-                break;
-            case InteractionType.Crafting:
-                OpenCloseCraftingPanel(true);
-                break;
-            case InteractionType.Battle:
-                combatManager.EnterBossCombat();
-                break;
-        }
-    }
 
     public void SelectShopInventoryTab(int index)
     {
@@ -2357,6 +2340,8 @@ public class UIManager : Singleton<UIManager>
             {
                 GameObject newQuest = Instantiate(questPrefab, questListContent);
                 newQuest.GetComponent<Button>().onClick.AddListener(() => SelectQuest(quest));
+                newQuest.GetComponentInChildren<TextMeshProUGUI>().text = quest.Name;
+                SelectQuest(quest);
             }
         }
         
@@ -2368,6 +2353,7 @@ public class UIManager : Singleton<UIManager>
             {
                 GameObject newQuest = Instantiate(questPrefab, questListContent);
                 newQuest.GetComponent<Button>().onClick.AddListener(() => SelectQuest(quest));
+                newQuest.GetComponentInChildren<TextMeshProUGUI>().text = quest.Name;
             }
         }
         
@@ -2378,6 +2364,7 @@ public class UIManager : Singleton<UIManager>
             {
                 GameObject newQuest = Instantiate(questPrefab, questListContent);
                 newQuest.GetComponent<Button>().onClick.AddListener(() => SelectQuest(quest));
+                newQuest.GetComponentInChildren<TextMeshProUGUI>().text = quest.Name;
             }
         }
     }
@@ -2781,6 +2768,29 @@ public class UIManager : Singleton<UIManager>
         CloseAllPanels();
         craftingPanel.SetActive(value);
         CraftingManager.Instance.HideRecipe();
+    }
+    
+    private void ExtraInteractionCallback(InteractionType type)
+    {
+        switch (type)
+        {
+            case InteractionType.SuppliesShop:
+                OpenShop(0);
+                break;
+            case InteractionType.EquipmentShop:
+                OpenShop(1);
+                break;
+            case InteractionType.Crafting:
+                OpenCloseCraftingPanel(true);
+                break;
+            case InteractionType.Battle:
+                combatManager.EnterBossCombat();
+                break;
+            case InteractionType.Disable:
+                dialogueManager.NPCSelected.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+                dialogueManager.SelectNPC(null);
+                break;
+        }
     }
     
     private void OnEnable()

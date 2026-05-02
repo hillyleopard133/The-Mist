@@ -68,20 +68,13 @@ public class DialogueQuestManager : ScriptableObject
             followPlayer.enabled = true;
             followPlayer.StartFollowing();
         }
-        DialogueManager.Instance.SelectNPC(null);
     }
 
     public void AddExp(int amount)
     {
         SkillsManager.Instance.AddExp(amount);
     }
-
-    public void DisableInteractions()
-    {
-        DialogueManager.Instance.NPCSelected.SetShowInteractionBox(false);
-        DialogueManager.Instance.NPCSelected.enabled = false;
-    }
-
+    
     public void NPCIsAlive(bool value)
     {
         NPCFollowPlayer followPlayer = DialogueManager.Instance.NPCSelected.GetComponent<NPCFollowPlayer>();

@@ -131537,9 +131537,9 @@ MonoBehaviour:
   fireRelicsAmount: 3
   iceRelicsAmount: 3
   windRelicsAmount: 3
-  fireChestsAmount: 3
-  iceChestsAmount: 3
-  windChestsAmount: 3
+  fireChestsAmount: 5
+  iceChestsAmount: 5
+  windChestsAmount: 5
   currentTemple: 0
 --- !u!4 &1876303271
 Transform:

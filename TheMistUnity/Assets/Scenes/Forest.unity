@@ -3000,9 +3000,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8089216582273660398, guid: 644a39b1827f9ee43af9ebf800d6a41a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8089216582273660399, guid: 644a39b1827f9ee43af9ebf800d6a41a, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089216582273660399, guid: 644a39b1827f9ee43af9ebf800d6a41a, type: 3}
+      propertyPath: HasInteraction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089216582273660399, guid: 644a39b1827f9ee43af9ebf800d6a41a, type: 3}
+      propertyPath: InteractionType
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8089216582273660399, guid: 644a39b1827f9ee43af9ebf800d6a41a, type: 3}
       propertyPath: startDialogueOnEnterInitial
@@ -50698,7 +50710,7 @@ Transform:
   m_GameObject: {fileID: 1012445670}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 75.45, y: 46.19, z: 0}
+  m_LocalPosition: {x: 0.01, y: -1.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
