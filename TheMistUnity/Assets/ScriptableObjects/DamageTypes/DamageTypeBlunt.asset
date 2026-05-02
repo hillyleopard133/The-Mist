@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15b36034f08841c9ab48d0c15902cefb, type: 3}
   m_Name: DamageTypeBlunt
   m_EditorClassIdentifier: Assembly-CSharp::DamageType
-  damageType: 3
+  damageType: 4
   icon: {fileID: 21300000, guid: a5b8293e5551a1a45910a3231bc90de1, type: 3}

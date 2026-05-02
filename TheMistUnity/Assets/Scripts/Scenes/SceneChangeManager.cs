@@ -34,7 +34,6 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
     public void SaveGameLocation()
     {
         SceneData sceneData = new SceneData();
-        currentScene = SceneManager.GetActiveScene().name;
         sceneData.sceneName = currentScene;
         sceneData.playerPosX = Player.Instance.gameObject.transform.position.x;
         sceneData.playerPosY = Player.Instance.gameObject.transform.position.y;
@@ -72,10 +71,12 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
         if (sceneName == "HamsterHoles")
         {
             Player.Instance.gameObject.SetActive(false);
+            NPCFollowerManager.Instance.gameObject.SetActive(false);
         }
         else
         {
             Player.Instance.gameObject.SetActive(true);
+            NPCFollowerManager.Instance.gameObject.SetActive(true);
         }
 
         if (sceneName == "HamsterHoles" || currentScene == "HamsterHoles")
@@ -105,6 +106,7 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
         yield return null;
         
         SaveGame.Save(CHECKPOINT, spawnLocation);
+        currentScene = SceneManager.GetActiveScene().name;
         PositionPlayer(spawnLocation);
         SaveGameLocation();
         GameManager.Instance.SaveTimer();

@@ -19,9 +19,9 @@ public class TempleManager : Singleton<TempleManager>
     private int iceRelics;
     private int windRelics;
     
-    [SerializeField] private int fireChestsAmount = 3;
-    [SerializeField] private int iceChestsAmount = 3;
-    [SerializeField] private int windChestsAmount = 3;
+    [SerializeField] private int fireChestsAmount = 5;
+    [SerializeField] private int iceChestsAmount = 5;
+    [SerializeField] private int windChestsAmount = 5;
     private int fireChests;
     private int iceChests;
     private int windChests;

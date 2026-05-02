@@ -19,7 +19,9 @@ MonoBehaviour:
   IconUltimate: {fileID: -1638547310, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
   IconDead: {fileID: 2120524158, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
   IconPerfectTiming: {fileID: -862369976, guid: ba49b3f29447de540b931b854fa7a9aa, type: 3}
-  Description: Pablo is a green ninja who enjoys fishing.
+  Description: Pablo the Green Ninja is a master of stealth and timing, trained to
+    remain unseen until the decisive moment. When not on a mission, he prefers the
+    stillness of fishing, where patience matters just as much as skill.
   IsUnlocked: 1
   WeaponDamageType: {fileID: 0}
   Attacks:
@@ -32,22 +34,22 @@ MonoBehaviour:
   BaseCritChance: 5
   BaseMaxMana: 10
   SkillPointsHealth: 0
-  SkillPointsDefence: 0
-  SkillPointsAttack: 0
+  SkillPointsDefence: 3
+  SkillPointsAttack: 5
   SkillPointsCritChance: 0
   SkillPointsMana: 0
-  EquipmentHealth: 20
-  EquipmentDefence: 10
-  EquipmentAttack: 5
-  EquipmentCritChance: 4
-  EquipmentMana: 15
+  EquipmentHealth: 0
+  EquipmentDefence: 0
+  EquipmentAttack: 0
+  EquipmentCritChance: 0
+  EquipmentMana: 0
   CurrentBaseMaxHealth: 100
-  CurrentBaseDefence: 10
-  CurrentBaseAttack: 5
+  CurrentBaseDefence: 16
+  CurrentBaseAttack: 15
   CurrentBaseCritChance: 5
-  CurrentBaseMaxMana: 20
-  CurrentMaxHealth: 120
-  CurrentDefence: 20
-  CurrentAttack: 10
-  CurrentCritChance: 9
-  CurrentMaxMana: 35
+  CurrentBaseMaxMana: 10
+  CurrentMaxHealth: 100
+  CurrentDefence: 16
+  CurrentAttack: 15
+  CurrentCritChance: 5
+  CurrentMaxMana: 10

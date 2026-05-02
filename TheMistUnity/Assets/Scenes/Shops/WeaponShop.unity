@@ -1825,6 +1825,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0f815f7df83188d4c8817f984edf3ab2, type: 2}
   - {fileID: 11400000, guid: 0ea3531f71fb1944b8d629d0986c6dbd, type: 2}
   - {fileID: 11400000, guid: 247bd7913e953d84cb8f4689f8e1049d, type: 2}
+  - {fileID: 11400000, guid: 52c29f12d9d4c444b8f1445be0941edf, type: 2}
+  - {fileID: 11400000, guid: b4e2155e2705e1f438de57f47467365a, type: 2}
   interactionBox: {fileID: 470471610}
 --- !u!212 &1049487708
 SpriteRenderer:

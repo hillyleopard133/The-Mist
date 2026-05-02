@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1631258f12a4134813014727ec6e0e2, type: 3}
   m_Name: DialogueQuestManager
   m_EditorClassIdentifier: 
+  dialogueTriggers:
+  - {fileID: 11400000, guid: 0bd2b5fa24e9348448a1e645c394e94d, type: 2}

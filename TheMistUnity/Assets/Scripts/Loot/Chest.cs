@@ -58,6 +58,7 @@ public class Chest : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             interactionBox.SetActive(true);
+            actions.General.OpenChest.Enable();
         }
     }
 
@@ -66,14 +67,8 @@ public class Chest : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             interactionBox.SetActive(false);
+            actions.General.OpenChest.Disable();
         }
     }
-
-    private void OnEnable()
-    {
-        if (actions != null)
-        {
-            actions.General.OpenChest.Enable();
-        }
-    }
+    
 }

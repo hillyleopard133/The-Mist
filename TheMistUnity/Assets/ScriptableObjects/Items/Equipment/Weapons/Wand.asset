@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f50c7d94d36c8f44939a235b74aa2e9, type: 3}
+  m_Name: Wand
+  m_EditorClassIdentifier: 
+  ID: WeaponWand
+  Name: Wand
+  Icon: {fileID: 21300000, guid: 3e647f6e233b720428ad75fbf1041bd0, type: 3}
+  Description: A magical wand, power emanates from within.
+  SellValue: 25
+  BuyValue: 60
+  ItemType: 3
+  IsConsumable: 0
+  IsStackable: 0
+  MaxStack: 1
+  Quantity: 0
+  equipped: -1
+  damage: 5
+  critChance: 10
+  weaponDamageType: {fileID: 11400000, guid: 2b16fa08ade92664faf828b139b9c67a, type: 2}
+  Attacks:
+  - {fileID: 11400000, guid: ba9969bb3bb232d49bae02aced095e50, type: 2}
+  - {fileID: 11400000, guid: 45655524c07eb8247be8419c6863f9c0, type: 2}
+  - {fileID: 11400000, guid: 385db3dbe864ca74cb0b819f2e66f26c, type: 2}

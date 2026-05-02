@@ -335,6 +335,11 @@ public class UIManager : Singleton<UIManager>
     private int combatTextNextPoolNumber;
     private CombatText[] combatTextPool;
     
+    [Header("Temples")]
+    [SerializeField] private GameObject templeList;
+    [SerializeField] private TextMeshProUGUI relicAmountText;
+    [SerializeField] private TextMeshProUGUI chestAmountText;
+    
     
     private PlayerActions actions;
     
@@ -393,10 +398,6 @@ public class UIManager : Singleton<UIManager>
     #endregion
     
     #region Temples
-
-    [SerializeField] private GameObject templeList;
-    [SerializeField] private TextMeshProUGUI relicAmountText;
-    [SerializeField] private TextMeshProUGUI chestAmountText;
 
     public void UpdateRelicAmount(int amount, int total)
     {

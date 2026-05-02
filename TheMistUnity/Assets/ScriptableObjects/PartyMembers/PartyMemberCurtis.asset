@@ -19,7 +19,9 @@ MonoBehaviour:
   IconUltimate: {fileID: -2133049639, guid: d47c533dd6617fa48b143dece7cab110, type: 3}
   IconDead: {fileID: -33701553, guid: d47c533dd6617fa48b143dece7cab110, type: 3}
   IconPerfectTiming: {fileID: 1963348711, guid: d47c533dd6617fa48b143dece7cab110, type: 3}
-  Description: Curtis is a dumb caveman.
+  Description: Curtis has spent much of his life learning to survive on his own,
+    relying on discipline and instinct rather than comfort. He is often the first
+    to step into danger when the situation demands it.
   IsUnlocked: 0
   WeaponDamageType: {fileID: 0}
   Attacks:

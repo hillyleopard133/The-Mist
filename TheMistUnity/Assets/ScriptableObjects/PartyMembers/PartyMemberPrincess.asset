@@ -34,7 +34,7 @@ MonoBehaviour:
   BaseMaxMana: 10
   SkillPointsHealth: 0
   SkillPointsDefence: 0
-  SkillPointsAttack: 0
+  SkillPointsAttack: 8
   SkillPointsCritChance: 0
   SkillPointsMana: 0
   EquipmentHealth: 0
@@ -44,11 +44,11 @@ MonoBehaviour:
   EquipmentMana: 0
   CurrentBaseMaxHealth: 80
   CurrentBaseDefence: 10
-  CurrentBaseAttack: 5
-  CurrentBaseCritChance: 10
-  CurrentBaseMaxMana: 20
+  CurrentBaseAttack: 21
+  CurrentBaseCritChance: 5
+  CurrentBaseMaxMana: 10
   CurrentMaxHealth: 80
   CurrentDefence: 10
-  CurrentAttack: 5
-  CurrentCritChance: 10
-  CurrentMaxMana: 20
+  CurrentAttack: 21
+  CurrentCritChance: 5
+  CurrentMaxMana: 10
