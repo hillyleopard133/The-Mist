@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: DialogueQuestManager
   m_EditorClassIdentifier: 
   dialogueTriggers:
+  - {fileID: 11400000, guid: 3e025f554c87e7040bd198e309eb0b81, type: 2}
+  - {fileID: 11400000, guid: 8db6afba326d21e40abf363f5dc331fc, type: 2}
   - {fileID: 11400000, guid: 0bd2b5fa24e9348448a1e645c394e94d, type: 2}

@@ -25,6 +25,7 @@ MonoBehaviour:
   Index: 0
   attackMoves:
   - {fileID: 11400000, guid: 0029e5d66733f90408e945cbe9b5cca0, type: 2}
+  - {fileID: 11400000, guid: eaf31e81b0b9ea349ac81169e0d018ff, type: 2}
   weaknesses: []
   resistances:
   - {fileID: 11400000, guid: d48698e194792824ea13b765c3823e89, type: 2}

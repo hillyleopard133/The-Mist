@@ -14,11 +14,6 @@ public class DialogueQuestManager : ScriptableObject
         ObstacleManager.Instance.AddObstacle(objectName);
     }
 
-    public void SetCombatBoss(EnemyDetails bossDetails)
-    {
-        CombatManager.Instance.SetBoss(bossDetails);
-    }
-
     public void SetBossCombatGrid(string gridName)
     {
         CombatGridType gridType;

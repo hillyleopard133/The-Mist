@@ -2784,7 +2784,7 @@ public class UIManager : Singleton<UIManager>
                 OpenCloseCraftingPanel(true);
                 break;
             case InteractionType.Battle:
-                combatManager.EnterBossCombat();
+                combatManager.enemyArea.StartCombat();
                 break;
             case InteractionType.Disable:
                 dialogueManager.NPCSelected.gameObject.GetComponent<CircleCollider2D>().enabled = false;

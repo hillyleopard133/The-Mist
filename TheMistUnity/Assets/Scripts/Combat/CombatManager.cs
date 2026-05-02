@@ -97,7 +97,7 @@ public class CombatManager : Singleton<CombatManager>
 
     public void TestEndCombat()
     {
-        CombatLose();
+        CombatWin();
     }
     
     #region Player Turn
@@ -905,22 +905,9 @@ public class CombatManager : Singleton<CombatManager>
         AddUltimateCharge(0);
     }
 
-    public void EnterBossCombat()
+    public void SetIsBossFight(bool isBossFight)
     {
-        List<EnemyDetails> bossList = new List<EnemyDetails>();
-        bossList.Add(boss);
-        EnterCombat(bossList, bossGridType);
-        isBossFight = true;
-    }
-
-    public void SetBoss(EnemyDetails boss)
-    {
-        this.boss = boss;
-    }
-
-    public void SetBossGridType(CombatGridType gridType)
-    {
-        bossGridType = gridType;
+        this.isBossFight = isBossFight;
     }
 
     private void CombatLose()
@@ -942,6 +929,7 @@ public class CombatManager : Singleton<CombatManager>
         //PostBattleRecovery();
         EndCombat();
         SaveCombatData();
+        Debug.Log(isBossFight);
         if (isBossFight)
         {
             TempleManager.Instance.CompleteTemple();
@@ -979,7 +967,6 @@ public class CombatManager : Singleton<CombatManager>
         RevivePartyMembers();
         audioManager.LoadCurrentMusic();
         isFighting = false;
-        isBossFight = false;
     }
 
     private void PostBattleRecovery()

@@ -5,9 +5,11 @@ using UnityEngine;
 public class SceneEnemies : MonoBehaviour
 {
     [SerializeField] private EnemyDetails[] enemies;
+    [SerializeField] private EnemyDetails[] bosses;
     [SerializeField] private int minEnemies, maxEnemies;
     [SerializeField] private bool spawnOnLoad;
     private EnemyArea[] enemyAreas;
+    private BossArea[] bossAreas;
 
     public static SceneEnemies Instance { get; private set; }
 
@@ -26,9 +28,18 @@ public class SceneEnemies : MonoBehaviour
         enemyAreas = FindObjectsByType<EnemyArea>(FindObjectsInactive.Include, FindObjectsSortMode.None);
         foreach (EnemyArea area in enemyAreas)
         {
-            area.ClearEnemies();
-            FillEnemyArea(area);
-            area.SpawnEnemies();
+            if (area is BossArea bossArea)
+            {
+                bossArea.ClearEnemies();
+                bossArea.AddEnemy(bosses[0]);
+                bossArea.SpawnEnemies();
+            }
+            else
+            {
+                area.ClearEnemies();
+                FillEnemyArea(area);
+                area.SpawnEnemies();
+            }
         }
     }
 

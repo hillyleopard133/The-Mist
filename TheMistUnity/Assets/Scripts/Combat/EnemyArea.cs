@@ -11,15 +11,15 @@ public enum CombatGridType
 
 public class EnemyArea : MonoBehaviour
 {
-    [SerializeField] private float padding;
-    [SerializeField] private CombatGridType gridType;
-    [SerializeField] private AStarArea aStarArea;
-    private BoxCollider2D spawnArea;
-    private List<EnemyDetails> enemies = new List<EnemyDetails>();
+    [SerializeField] protected float padding;
+    [SerializeField] protected CombatGridType gridType;
+    [SerializeField] protected AStarArea aStarArea;
+    protected BoxCollider2D spawnArea;
+    protected List<EnemyDetails> enemies = new List<EnemyDetails>();
 
     [HideInInspector] public bool hasEntered;
     
-    private CombatManager combatManager;
+    protected CombatManager combatManager;
 
     private void Awake()
     {
@@ -41,9 +41,10 @@ public class EnemyArea : MonoBehaviour
         enemies.Add(enemy);
     }
     
-    public void StartCombat()
+    public virtual void StartCombat()
     {
-        if(!hasEntered)
+        if(hasEntered) return;
+        combatManager.SetIsBossFight(false);
         combatManager.EnterCombat(enemies, gridType);
         hasEntered = true;
         foreach (Transform child in transform)
@@ -52,7 +53,7 @@ public class EnemyArea : MonoBehaviour
         }
     }
     
-    public void SpawnEnemies()
+    public virtual void SpawnEnemies()
     {
         foreach (EnemyDetails enemy in enemies)
         {
@@ -81,7 +82,7 @@ public class EnemyArea : MonoBehaviour
         return new Vector2(randomX, randomY);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    protected virtual void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {

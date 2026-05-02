@@ -70,17 +70,13 @@ public class TempleManager : Singleton<TempleManager>
             case Temples.Fire:
                 fireChests++;
                 uiManager.UpdateChestAmount(fireChests, fireChestsAmount);
-                questManager.AddProgress("PablosBrother", 1);
-                questManager.AddProgress("SaveMilo", 1);
                 break;
             case Temples.Ice:
                 uiManager.UpdateChestAmount(iceChests, iceChestsAmount);
-                questManager.AddProgress("SaveMilo", 1);
                 iceChests++;
                 break;
             case Temples.Wind:
                 uiManager.UpdateChestAmount(windChests, windChestsAmount);
-                questManager.AddProgress("SaveMilo", 1);
                 windChests++;
                 break;
         }
@@ -142,12 +138,16 @@ public class TempleManager : Singleton<TempleManager>
         {
             case Temples.Fire:
                 templesCleared[0] = true;
+                questManager.AddProgress("PablosBrother", 1);
+                questManager.AddProgress("SaveMilo", 1);
                 break;
             case Temples.Ice:
                 templesCleared[1] = true;
+                questManager.AddProgress("SaveMilo", 1);
                 break;
             case Temples.Wind:
                 templesCleared[2] = true;
+                questManager.AddProgress("SaveMilo", 1);
                 break;
         }
         SaveTemples();

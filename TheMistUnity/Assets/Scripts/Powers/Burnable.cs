@@ -28,12 +28,9 @@ public class Burnable : MonoBehaviour
     {
         if (templeManager.IsTempleCleared(Temples.Fire))
         {
+            actions.General.UsePower.Disable();
             //TODO burning shader
             Destroy(gameObject);
-        }
-        else
-        {
-            //dialogueManager.StartObjectDialogue(dialogue);
         }
     }
     
@@ -41,6 +38,7 @@ public class Burnable : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            actions.General.UsePower.Enable();
             interactionBox.SetActive(true);
         }
     }
@@ -49,6 +47,7 @@ public class Burnable : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            actions.General.UsePower.Disable();
             interactionBox.SetActive(false);
         }
     }

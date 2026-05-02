@@ -17,11 +17,100 @@ MonoBehaviour:
   isQuestOption: 0
   triggerInteraction: 0
   text: It's such a lovely day today.
-  children: []
+  children:
+  - 23e07f21-37d3-4d07-a228-fc2305e2157b
+  - fa8a1a61-208e-4d05-824a-47d85e56ab28
+  - 05a0ebf7-d4b0-40e0-9a84-d488234441d7
   rect:
     serializedVersion: 2
     x: 548
-    y: 494
+    y: 503
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-4404255808150661508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 27c0b2f4-5b66-49b9-90fa-45b1cf97b484
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: You too!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1233
+    y: 437
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-962148691277521585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 05a0ebf7-d4b0-40e0-9a84-d488234441d7
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Bye!
+  children:
+  - 75e25ef9-fd8f-4350-8a3e-9660c4394aae
+  rect:
+    serializedVersion: 2
+    x: 867
+    y: 741
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-914279330353246147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: fa8a1a61-208e-4d05-824a-47d85e56ab28
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Hope it doesn't rain.
+  children:
+  - 928ec7e2-8ddb-4c32-8c55-aecf2cb29372
+  rect:
+    serializedVersion: 2
+    x: 872
+    y: 597
     width: 250
     height: 100
   requirementsOr: []
@@ -45,7 +134,41 @@ MonoBehaviour:
   nodes:
   - {fileID: 6247167351115152674}
   - {fileID: -6906559120916116030}
+  - {fileID: 6798177761659812481}
+  - {fileID: -914279330353246147}
+  - {fileID: -962148691277521585}
+  - {fileID: 6325053434617400998}
+  - {fileID: -4404255808150661508}
+  - {fileID: 784851259642974786}
   newNodeOffset: {x: 350, y: 0}
+--- !u!114 &784851259642974786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 75e25ef9-fd8f-4350-8a3e-9660c4394aae
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: See you later!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1175
+    y: 756
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &6247167351115152674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,6 +192,63 @@ MonoBehaviour:
     serializedVersion: 2
     x: 265
     y: 493
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6325053434617400998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 928ec7e2-8ddb-4c32-8c55-aecf2cb29372
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: That would be terrible! I've got my laundry out on the line!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1198
+    y: 616
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6798177761659812481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 23e07f21-37d3-4d07-a228-fc2305e2157b
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Have a nice day!
+  children:
+  - 27c0b2f4-5b66-49b9-90fa-45b1cf97b484
+  rect:
+    serializedVersion: 2
+    x: 883
+    y: 437
     width: 250
     height: 100
   requirementsOr: []

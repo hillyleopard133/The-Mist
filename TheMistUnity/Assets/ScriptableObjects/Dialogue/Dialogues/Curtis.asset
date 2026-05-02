@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-360048496706131370
+--- !u!114 &-8755695054109371604
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,18 +10,125 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
-  m_Name: 85aaed83-5ca9-4948-a9e5-45ae62b31bf6
-  m_EditorClassIdentifier: 
+  m_Name: cf51c79b-d385-4548-9498-730fd451902e
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   speakerIndex: 0
-  isPlayerSpeaking: 1
+  isPlayerSpeaking: 0
   isQuestOption: 0
   triggerInteraction: 0
-  text: Bye!
-  children: []
+  text: Nomnomnom
+  children:
+  - 717beffe-8e3c-415b-b094-e9c8c342c8b2
   rect:
     serializedVersion: 2
-    x: 456
-    y: 583
+    x: 703
+    y: 633
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: NPCIsAlive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: PassDialogueTrigger
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: bc27859baf05b1548a9f9f77dce28431, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: SetItemAmount
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: RemoveItems
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 8a4f3bfe62c2919459a7fe75c7db5c17, type: 2}
+          m_ObjectArgumentAssemblyTypeName: InventoryItem, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &-5493968376892363186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 05172269-2df9-430f-bc5d-63857309c3c6
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Took ya long enough to come looking.... I almost starved!
+  children:
+  - 8b646a82-ccaf-4eaf-9939-a450c29dbbca
+  rect:
+    serializedVersion: 2
+    x: 1347
+    y: 643
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-2920875887451754616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 717beffe-8e3c-415b-b094-e9c8c342c8b2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 1
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Curtis it's so good to see you I was so worried!
+  children:
+  - 05172269-2df9-430f-bc5d-63857309c3c6
+  rect:
+    serializedVersion: 2
+    x: 1045
+    y: 641
     width: 250
     height: 100
   requirementsOr: []
@@ -42,11 +149,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterSpeakers:
   - {fileID: 11400000, guid: bbd5658dfdf5c9b4fa1bd11b10b9955b, type: 2}
+  - {fileID: 11400000, guid: 392a74cf08049484d91f16bf67b36dee, type: 2}
   nodes:
   - {fileID: 8590103138396839463}
   - {fileID: 3547818153566558364}
   - {fileID: 1018876981683609525}
-  - {fileID: -360048496706131370}
+  - {fileID: 8240699185977883749}
+  - {fileID: 2256244205975240788}
+  - {fileID: -8755695054109371604}
+  - {fileID: -2920875887451754616}
+  - {fileID: -5493968376892363186}
+  - {fileID: 8234721365345522622}
+  - {fileID: 2224548124667693784}
+  - {fileID: 4072338516904023291}
   newNodeOffset: {x: 350, y: 0}
 --- !u!114 &1018876981683609525
 MonoBehaviour:
@@ -64,54 +179,85 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   isQuestOption: 0
   triggerInteraction: 0
-  text: Lets go!
-  children: []
+  text: ....Need......Food.....
+  children:
+  - 49660748-79c4-4805-a0fd-4bb9834c03cc
   rect:
     serializedVersion: 2
-    x: 769
-    y: 455
+    x: 745
+    y: 458
     width: 250
     height: 100
   requirementsOr: []
   onTrigger:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
-        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
-        m_MethodName: PassDialogueTrigger
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 920825c8c7be4574fb104d2ef7815102, type: 2}
-          m_ObjectArgumentAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
-        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
-        m_MethodName: DisableInteractions
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
-        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
-        m_MethodName: UnlockPartyMember
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 46b08ff6030d9b148b5ab9e1543413a3, type: 2}
-          m_ObjectArgumentAssemblyTypeName: PartyMember, Assembly-CSharp
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &2224548124667693784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: ddffdaeb-348e-436f-a298-4a4e9404aa75
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Sppose I can't be saying no to the person who just saved me life. I'll join
+    you.
+  children:
+  - a24d1d1c-0a21-4726-92ca-c554c2f5fc3c
+  rect:
+    serializedVersion: 2
+    x: 1978
+    y: 631
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2256244205975240788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: b4efdb98-af68-45df-87ad-2397e3e9e71b
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: I have some fish!
+  children:
+  - cf51c79b-d385-4548-9498-730fd451902e
+  rect:
+    serializedVersion: 2
+    x: 407
+    y: 613
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 2
+      not: 0
+      quest: {fileID: 0}
+      item: {fileID: 11400000, guid: 8a4f3bfe62c2919459a7fe75c7db5c17, type: 2}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 1
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &3547818153566558364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,23 +270,175 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
   m_Name: 07f40a56-87d3-4a4e-b66b-728b73fe62ed
   m_EditorClassIdentifier: 
-  speakerIndex: 0
-  isPlayerSpeaking: 1
+  speakerIndex: 1
+  isPlayerSpeaking: 0
   isQuestOption: 0
   triggerInteraction: 0
-  text: Join my party!
+  text: Curtis I found you! What happened?
   children:
   - da3f789b-4375-45c9-a4a9-5325d59a761d
   rect:
     serializedVersion: 2
-    x: 455
-    y: 433
+    x: 433
+    y: 453
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 3
+      not: 1
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: 7db4cc6dc30f84048ba59bae1ca43ce4, type: 2}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4072338516904023291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: a24d1d1c-0a21-4726-92ca-c554c2f5fc3c
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 1
+  text: Welcome aboard!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2295
+    y: 619
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: AddQuestProgress
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 3a0fcfc36023c3f4c86dac6082e8059a, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: UnlockPartyMember
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 46b08ff6030d9b148b5ab9e1543413a3, type: 2}
+          m_ObjectArgumentAssemblyTypeName: PartyMember, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: PassDialogueTrigger
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 920825c8c7be4574fb104d2ef7815102, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8234721365345522622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 8b646a82-ccaf-4eaf-9939-a450c29dbbca
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 1
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: I owe you big time Erin! Allow us to assist you in your quest!
+  children:
+  - ddffdaeb-348e-436f-a298-4a4e9404aa75
+  rect:
+    serializedVersion: 2
+    x: 1650
+    y: 635
     width: 250
     height: 100
   requirementsOr: []
   onTrigger:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8240699185977883749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 49660748-79c4-4805-a0fd-4bb9834c03cc
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 1
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Let's hurry and find him something to eat!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1052
+    y: 465
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: PassDialogueTrigger
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 7db4cc6dc30f84048ba59bae1ca43ce4, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: AddQuestProgress
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 3a0fcfc36023c3f4c86dac6082e8059a, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8590103138396839463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,10 +455,10 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   isQuestOption: 0
   triggerInteraction: 0
-  text: Hello!
+  text: Help......
   children:
   - 07f40a56-87d3-4a4e-b66b-728b73fe62ed
-  - 85aaed83-5ca9-4948-a9e5-45ae62b31bf6
+  - b4efdb98-af68-45df-87ad-2397e3e9e71b
   rect:
     serializedVersion: 2
     x: 61
