@@ -13,6 +13,7 @@ public class EnemyArea : MonoBehaviour
 {
     [SerializeField] private float padding;
     [SerializeField] private CombatGridType gridType;
+    [SerializeField] private AStarArea aStarArea;
     private BoxCollider2D spawnArea;
     private List<EnemyDetails> enemies = new List<EnemyDetails>();
 
@@ -40,12 +41,17 @@ public class EnemyArea : MonoBehaviour
         enemies.Add(enemy);
     }
     
-    private void StartCombat()
+    public void StartCombat()
     {
+        if(!hasEntered)
         combatManager.EnterCombat(enemies, gridType);
         hasEntered = true;
+        foreach (Transform child in transform)
+        {
+            Destroy(child.gameObject);
+        }
     }
-
+    
     public void SpawnEnemies()
     {
         foreach (EnemyDetails enemy in enemies)
@@ -54,6 +60,8 @@ public class EnemyArea : MonoBehaviour
             GameObject enemyObject = Instantiate(enemy.enemyPrefab, randomPos, Quaternion.identity, transform);
             enemy.enemyCombatBrain = enemyObject.GetComponent<EnemyCombatBrain>();
             enemy.enemyCombatBrain.enemyDetails = enemy;
+            EnemyBrain brain = enemyObject.GetComponent<EnemyBrain>();
+            if (brain != null) brain.area = aStarArea;
         }
     }
     
@@ -77,7 +85,7 @@ public class EnemyArea : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if(!hasEntered) StartCombat();
+            combatManager.SetEnemyArea(this);
         }
     }
 }

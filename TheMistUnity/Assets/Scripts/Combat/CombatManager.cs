@@ -51,6 +51,8 @@ public class CombatManager : Singleton<CombatManager>
     [HideInInspector] public int selectedPartyMember;
     
     private List<InventoryItem> usedItems = new List<InventoryItem>();
+
+    [HideInInspector] public EnemyArea enemyArea;
     
     private int[] partyMembersCurrentHealth;
     private int[] partyMembersCurrentMana;
@@ -96,11 +98,6 @@ public class CombatManager : Singleton<CombatManager>
     public void TestEndCombat()
     {
         CombatLose();
-    }
-    
-    public void TestUltimateCharge()
-    {
-        AddUltimateCharge(120);
     }
     
     #region Player Turn
@@ -796,6 +793,11 @@ public class CombatManager : Singleton<CombatManager>
     #endregion
 
     #region Getters
+
+    public void SetEnemyArea(EnemyArea area)
+    {
+        enemyArea = area;
+    }
     
     public AttackMove[] GetAllPartyMemberAttacks(int partyMemberIndex)
     {

@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 4612472204103580021}
   - component: {fileID: 4612472204103580026}
   - component: {fileID: 4612472204103580030}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: GreenNinja
   m_TagString: Player
   m_Icon: {fileID: 0}

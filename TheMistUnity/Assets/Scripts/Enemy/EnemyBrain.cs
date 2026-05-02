@@ -5,24 +5,25 @@ public enum EnemyMovementType
         Wander,
         Patrol
 }
+
 public class EnemyBrain : MonoBehaviour
 {
-        [Header("Config")]
-        [SerializeField] public Sprite Icon;
+        [Header("Config")] [SerializeField] public Sprite Icon;
         [SerializeField] public string Name;
 
         public EnemyMovementType movementType;
-        [SerializeField] private string initialState;      //Patrol or wander
+        [SerializeField] private string initialState; //Patrol or wander
         [SerializeField] private FSMState[] states;
-        
+
         [HideInInspector] public Rigidbody2D rb;
         [HideInInspector] public EnemyAnimations animations;
         [HideInInspector] public int updateFrameNumber = 1;
-        [HideInInspector] public bool isAlive = true;
         
-        public FSMState CurrentState {get; set;}
-        
-        public Transform Player {get; set;}
+        public AStarArea area;
+
+        public FSMState CurrentState { get; set; }
+
+        public Transform Player { get; set; }
 
         private void Awake()
         {
@@ -37,15 +38,9 @@ public class EnemyBrain : MonoBehaviour
 
         private void Update()
         {
-                //if (CurrentState == null)
-                //{
-                //        return;
-                //}
-                //CurrentState.UpdateState(this);
-                //Alternative way to do the above (using a ?)
                 CurrentState?.UpdateState(this);
         }
-        
+
         public void ChangeState(string newStateID)
         {
                 FSMState newState = GetState(newStateID);
@@ -53,6 +48,7 @@ public class EnemyBrain : MonoBehaviour
                 {
                         return;
                 }
+
                 CurrentState = newState;
         }
 
@@ -65,7 +61,7 @@ public class EnemyBrain : MonoBehaviour
                                 return states[i];
                         }
                 }
+
                 return null;
         }
-        
 }

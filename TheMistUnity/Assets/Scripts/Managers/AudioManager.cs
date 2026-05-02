@@ -213,6 +213,7 @@ public class AudioManager : Singleton<AudioManager>
                 else
                 {
                     PlayMusic(currentMusicClip, volume);
+                    Debug.Log(currentMusic);
                 }
             }
         }
@@ -261,7 +262,7 @@ public class AudioManager : Singleton<AudioManager>
 
     public void PlayMusicWithIntro(AudioClip introClip, AudioClip loopClip, float volume)
     {
-        if (musicSourceIntro.clip == introClip) return; 
+        if (musicSourceIntro.clip == introClip && musicSourceIntro.isPlaying) return; 
         
         musicSourceLoop.Stop();
         

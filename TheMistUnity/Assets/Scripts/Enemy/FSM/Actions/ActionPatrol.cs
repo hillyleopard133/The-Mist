@@ -35,7 +35,6 @@ public class ActionPatrol : FSMAction
 
     public override void Act()
     {
-        if(!_enemyBrain.isAlive) return;
         MoveEnemy();
     }
 

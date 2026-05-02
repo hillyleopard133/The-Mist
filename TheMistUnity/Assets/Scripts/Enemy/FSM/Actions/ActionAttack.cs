@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class ActionAttack : FSMAction
 {
-    [Header("Config")]
-    [SerializeField] public float damage;
-    [SerializeField] private float timeBtwAttacks;  //time between attacks
+    private EnemyBrain enemyBrain;
 
-    private EnemyBrain _enemyBrain;
-    private float timer;
+    private bool inCombat;
 
     private void Awake()
     {
-        _enemyBrain = GetComponent<EnemyBrain>();
+        enemyBrain = GetComponent<EnemyBrain>();
     }
     
     public override void Act()
@@ -23,19 +20,12 @@ public class ActionAttack : FSMAction
 
     private void AttackPlayer()
     {
-        if (_enemyBrain.Player == null)
-        {
-            return;
-        }
+        if(inCombat) return;
+        if (enemyBrain.Player == null) return; 
         
-        timer -= Time.deltaTime;
-        if (timer <= 0f)
-        {
-            _enemyBrain.animations.SetMoveBoolTransition(false);
-            //IDamageable player = enemyBrain.Player.GetComponent<IDamageable>();
-            //player.TakeDamage(damage);
-            timer = timeBtwAttacks;
-        }
+        inCombat = true;
+        enemyBrain.animations.SetMoveBoolTransition(false);
+        CombatManager.Instance.enemyArea.StartCombat();
     }
     
 }
