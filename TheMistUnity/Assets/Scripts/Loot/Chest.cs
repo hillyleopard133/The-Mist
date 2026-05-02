@@ -1,3 +1,4 @@
+using BayatGames.SaveGameFree;
 using UnityEngine;
 
 public class Chest : MonoBehaviour
@@ -11,6 +12,8 @@ public class Chest : MonoBehaviour
     private PlayerActions actions;
     private Animator animator;
     private CircleCollider2D circleCollider2D;
+
+    [SerializeField] private string chestID;
     
     private void Awake()
     {
@@ -26,15 +29,18 @@ public class Chest : MonoBehaviour
         
         animator = GetComponent<Animator>();
         circleCollider2D = GetComponent<CircleCollider2D>();
+
+        if (ChestManager.Instance.IsOpened(chestID))
+        {
+            OpenChest();
+        }
     }
 
     private void Open()
     {
         if(!interactionBox.activeSelf || PauseGameManager.Instance.isPaused) return;
 
-        animator.SetTrigger(OpenS);
-        circleCollider2D.enabled = false;
-        interactionBox.SetActive(false);
+        OpenChest();
         GiveLoot();
 
         TempleChest chest = GetComponent<TempleChest>();
@@ -42,6 +48,17 @@ public class Chest : MonoBehaviour
         {
             chest.Open();
         }
+        else
+        {
+            ChestManager.Instance.OpenChest(chestID);
+        }
+    }
+
+    private void OpenChest()
+    {
+        animator.SetTrigger(OpenS);
+        circleCollider2D.enabled = false;
+        interactionBox.SetActive(false);
     }
 
     private void GiveLoot()
@@ -70,5 +87,4 @@ public class Chest : MonoBehaviour
             actions.General.OpenChest.Disable();
         }
     }
-    
 }

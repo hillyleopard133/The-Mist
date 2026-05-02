@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fefaef3d124ceef4f97f33a8a5ab4742, type: 3}
+  m_Name: EnemyReptile
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDetails
+  EnemyName: Reptile
+  EnemySprite: {fileID: 650471458, guid: 7ae228dda5514c74c9e421d05112d405, type: 3}
+  enemyPrefab: {fileID: 7763877056305698131, guid: 1d6ac88855eb4134ba2cee63f4691523, type: 3}
+  isBoss: 0
+  CoinsReward: 7
+  ExpReward: 200
+  AttackDamage: 6
+  MaxHealth: 25
+  CurrentHealth: 40
+  IsDead: 0
+  Index: 0
+  attackMoves:
+  - {fileID: 11400000, guid: 0029e5d66733f90408e945cbe9b5cca0, type: 2}
+  weaknesses:
+  - {fileID: 11400000, guid: d48698e194792824ea13b765c3823e89, type: 2}
+  resistances: []
+  weaknessMultiplier: 1.3
+  resistanceMultiplier: 0.75
+  enemyCombatBrain: {fileID: 0}

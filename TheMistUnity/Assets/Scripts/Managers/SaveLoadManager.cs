@@ -22,6 +22,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
     private SkillsManager skillsManager;
     private CombatManager combatManager;
     private TempleManager templeManager;
+    private ChestManager chestManager;
 
     private bool gameIsActive;
     
@@ -53,6 +54,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         skillsManager = SkillsManager.Instance;
         combatManager = CombatManager.Instance;
         templeManager = TempleManager.Instance;
+        chestManager = ChestManager.Instance;
         
         DeactivateGame();    
         
@@ -122,6 +124,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         gameManager.SaveTimer();
         combatManager.SaveCombatData();
         templeManager.SaveTemples();
+        chestManager.SaveChests();
     }
 
     //Reset game data here
@@ -154,6 +157,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         skillsManager.ResetSkills();
         combatManager.ResetCombatData();
         templeManager.ResetTemples();
+        chestManager.ResetChests();
     }
     
     private IEnumerator LoadNewGameSceneCoroutine()
@@ -208,6 +212,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         coinManager.LoadCoins();
         combatManager.LoadCombatData();
         templeManager.LoadTemples();
+        chestManager.LoadChests();
         dialogueManager.GetDialogueQuestManager().LoadDialogueTriggers();
         if (npcFollowerManager.gameObject.transform.childCount == 0)
         {

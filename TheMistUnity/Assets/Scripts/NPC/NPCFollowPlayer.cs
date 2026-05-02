@@ -96,6 +96,10 @@ public class NPCFollowPlayer : MonoBehaviour
     {
         isFollowing = true;
         transform.SetParent(NPCFollowerManager.Instance.transform);
+        
+        NPCInteraction interaction = GetComponent<NPCInteraction>();
+        if (interaction != null) interaction.enabled = false;
+        
         SaveIsFollowing();
     }
 

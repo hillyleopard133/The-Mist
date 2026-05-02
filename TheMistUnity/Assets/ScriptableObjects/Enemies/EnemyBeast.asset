@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fefaef3d124ceef4f97f33a8a5ab4742, type: 3}
+  m_Name: EnemyBeast
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDetails
+  EnemyName: Beast
+  EnemySprite: {fileID: -174373105, guid: 757e6f07351598c4588c81b364d905e4, type: 3}
+  enemyPrefab: {fileID: 9043873679288132246, guid: b2974f19ec4143f4b853a010f1f69e70, type: 3}
+  isBoss: 0
+  CoinsReward: 15
+  ExpReward: 300
+  AttackDamage: 8
+  MaxHealth: 30
+  CurrentHealth: 40
+  IsDead: 0
+  Index: 0
+  attackMoves:
+  - {fileID: 11400000, guid: 0029e5d66733f90408e945cbe9b5cca0, type: 2}
+  weaknesses: []
+  resistances:
+  - {fileID: 11400000, guid: 2b16fa08ade92664faf828b139b9c67a, type: 2}
+  weaknessMultiplier: 1.3
+  resistanceMultiplier: 0.75
+  enemyCombatBrain: {fileID: 0}

@@ -104,15 +104,14 @@ GameObject:
   - component: {fileID: 8679884285075823463}
   - component: {fileID: 8679884285075823456}
   - component: {fileID: 8679884285075823457}
-  - component: {fileID: 8679884285075823465}
   - component: {fileID: 8679884285075823467}
-  - component: {fileID: 8679884285075823466}
   - component: {fileID: 8679884285075823464}
   - component: {fileID: 8679884285075823471}
   - component: {fileID: 8679884285075823470}
   - component: {fileID: 8679884285075823469}
   - component: {fileID: -17821195073345792}
   - component: {fileID: 636746611787690267}
+  - component: {fileID: 5520339189879676835}
   m_Layer: 6
   m_Name: Enemy_Axolotl
   m_TagString: Enemy
@@ -280,22 +279,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8679884285075823465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8679884285075823458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb907c60f0d78b4c8cb5a81eb678fbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  points:
-  - {x: -0.35479546, y: 0.6652422, z: 0}
-  - {x: 5.6767406, y: -2.616622, z: 0}
-  - {x: 1.7296314, y: -6.1202364, z: 0}
 --- !u!114 &8679884285075823467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,12 +293,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 21300000, guid: 4e364ca08a57b2148a0a851a6f37d83e, type: 3}
   Name: Axolotl
-  movementType: 1
-  initialState: Patrol
+  movementType: 0
+  initialState: Wander
   states:
-  - ID: Patrol
+  - ID: Wander
     Actions:
-    - {fileID: 8679884285075823466}
+    - {fileID: 5520339189879676835}
     Transitions:
     - Decision: {fileID: 8679884285075823464}
       TrueState: Chase
@@ -326,7 +309,7 @@ MonoBehaviour:
     Transitions:
     - Decision: {fileID: 8679884285075823464}
       TrueState: 
-      FalseState: Patrol
+      FalseState: Wander
     - Decision: {fileID: 8679884285075823470}
       TrueState: Attack
       FalseState: 
@@ -341,19 +324,6 @@ MonoBehaviour:
   animations: {fileID: 0}
   updateFrameNumber: 1
   area: {fileID: 0}
---- !u!114 &8679884285075823466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8679884285075823458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60723ff8eae9d2e4183355309f871504, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!114 &8679884285075823464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,7 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251d83de3524f8341ad4b6c100c7c10e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 3.5
+  chaseSpeed: 4
 --- !u!114 &8679884285075823470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,3 +406,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCombatBrain
   enemyDetails: {fileID: 0}
+--- !u!114 &5520339189879676835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8679884285075823458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 367c8ee7218dc234d9de7d53339f83e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionWander
+  speed: 2
+  wanderTime: 1.5
+  moveRange: {x: 3, y: 3}

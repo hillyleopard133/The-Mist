@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fefaef3d124ceef4f97f33a8a5ab4742, type: 3}
+  m_Name: EnemyAxolotl
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDetails
+  EnemyName: Axolotl
+  EnemySprite: {fileID: -1626691233, guid: fe848bd49810855409d86980a363049b, type: 3}
+  enemyPrefab: {fileID: 8679884285075823458, guid: 153d6098812900f408d097b10b4ec425, type: 3}
+  isBoss: 0
+  CoinsReward: 8
+  ExpReward: 180
+  AttackDamage: 5
+  MaxHealth: 15
+  CurrentHealth: 40
+  IsDead: 0
+  Index: 0
+  attackMoves:
+  - {fileID: 11400000, guid: 0029e5d66733f90408e945cbe9b5cca0, type: 2}
+  weaknesses:
+  - {fileID: 11400000, guid: d48698e194792824ea13b765c3823e89, type: 2}
+  resistances:
+  - {fileID: 11400000, guid: 391aec18d3b6d0748a6e767def43a0ac, type: 2}
+  weaknessMultiplier: 1.3
+  resistanceMultiplier: 0.75
+  enemyCombatBrain: {fileID: 0}

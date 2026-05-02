@@ -41,7 +41,7 @@ MonoBehaviour:
   m_Name: Burnable
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   characterSpeakers:
-  - {fileID: 11400000, guid: 392a74cf08049484d91f16bf67b36dee, type: 2}
+  - {fileID: 11400000, guid: 34c9e00320837d14b80046025fdeb818, type: 2}
   nodes:
   - {fileID: -3439973328341138787}
   newNodeOffset: {x: 350, y: 0}

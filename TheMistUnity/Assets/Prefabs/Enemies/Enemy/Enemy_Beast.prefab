@@ -104,15 +104,14 @@ GameObject:
   - component: {fileID: 9043873679288132245}
   - component: {fileID: 9043873679288132244}
   - component: {fileID: 9043873679288132247}
-  - component: {fileID: 9043873679288132238}
   - component: {fileID: 9043873679288132241}
-  - component: {fileID: 9043873679288132239}
   - component: {fileID: 9043873679288132236}
   - component: {fileID: 9043873679288132237}
   - component: {fileID: 9043873679288132234}
   - component: {fileID: 9043873679288132235}
   - component: {fileID: 3900741622857215471}
   - component: {fileID: -8885036941274631590}
+  - component: {fileID: -7671715957106108961}
   m_Layer: 6
   m_Name: Enemy_Beast
   m_TagString: Enemy
@@ -280,23 +279,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &9043873679288132238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9043873679288132246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb907c60f0d78b4c8cb5a81eb678fbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  points:
-  - {x: 1, y: 0, z: 0}
-  - {x: 5, y: 0, z: 0}
-  - {x: 5, y: -4, z: 0}
-  - {x: 1, y: -4, z: 0}
 --- !u!114 &9043873679288132241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,12 +293,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 21300000, guid: 8d0319e0deb3c524f8f994af1ede00ac, type: 3}
   Name: Beast
-  movementType: 1
-  initialState: Patrol
+  movementType: 0
+  initialState: Wander
   states:
-  - ID: Patrol
+  - ID: Wander
     Actions:
-    - {fileID: 9043873679288132239}
+    - {fileID: -7671715957106108961}
     Transitions:
     - Decision: {fileID: 9043873679288132236}
       TrueState: Chase
@@ -327,7 +309,7 @@ MonoBehaviour:
     Transitions:
     - Decision: {fileID: 9043873679288132236}
       TrueState: 
-      FalseState: Patrol
+      FalseState: Wander
     - Decision: {fileID: 9043873679288132234}
       TrueState: Attack
       FalseState: 
@@ -342,19 +324,6 @@ MonoBehaviour:
   animations: {fileID: 0}
   updateFrameNumber: 1
   area: {fileID: 0}
---- !u!114 &9043873679288132239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9043873679288132246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60723ff8eae9d2e4183355309f871504, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!114 &9043873679288132236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,7 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251d83de3524f8341ad4b6c100c7c10e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 3.5
+  chaseSpeed: 4
 --- !u!114 &9043873679288132234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,3 +406,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCombatBrain
   enemyDetails: {fileID: 0}
+--- !u!114 &-7671715957106108961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9043873679288132246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 367c8ee7218dc234d9de7d53339f83e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActionWander
+  speed: 2
+  wanderTime: 1.5
+  moveRange: {x: 3, y: 3}

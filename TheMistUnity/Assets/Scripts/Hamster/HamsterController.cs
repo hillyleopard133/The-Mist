@@ -8,11 +8,13 @@ public class HamsterController : MonoBehaviour
 {
     [Header("Config")]
     [SerializeField] private float walkSpeed;
+    [SerializeField] private float jumpForce = 12f;
     
     public float WalkSpeed  => walkSpeed;
 
     private PlayerActions actions;
     private Rigidbody2D rb2D;
+    private SpriteRenderer spriteRenderer;
     private float horizontalInput;
     
     [Header("Ground Check")]
@@ -22,12 +24,11 @@ public class HamsterController : MonoBehaviour
 
     private bool isGrounded;
     
-    [SerializeField] private float jumpForce = 12f;
-    
     private void Awake()
     {
         actions = new PlayerActions();
         rb2D = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
@@ -65,6 +66,11 @@ public class HamsterController : MonoBehaviour
     private void Move()
     {
         rb2D.linearVelocity = new Vector2(horizontalInput * walkSpeed, rb2D.linearVelocity.y);
+        
+        if (horizontalInput > 0)
+            spriteRenderer.flipX = false;
+        else if (horizontalInput < 0)
+            spriteRenderer.flipX = true;
     }
 
     private void ReadMovement()

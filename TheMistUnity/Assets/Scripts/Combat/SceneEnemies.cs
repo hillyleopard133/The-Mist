@@ -6,6 +6,7 @@ public class SceneEnemies : MonoBehaviour
 {
     [SerializeField] private EnemyDetails[] enemies;
     [SerializeField] private int minEnemies, maxEnemies;
+    [SerializeField] private bool spawnOnLoad;
     private EnemyArea[] enemyAreas;
 
     public static SceneEnemies Instance { get; private set; }
@@ -13,6 +14,11 @@ public class SceneEnemies : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+    }
+
+    private void Start()
+    {
+        if(spawnOnLoad) InitiateEnemyAreas();
     }
     
     public void InitiateEnemyAreas()

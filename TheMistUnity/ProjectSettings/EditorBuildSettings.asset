@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/HamsterHoles.unity
     guid: fa608af621e19274098e4d5d15feb7e9
   - enabled: 1
-    path: Assets/Scenes/CombatTest.unity
+    path: Assets/Scenes/Forest.unity
     guid: 2449c04ee6fcb2343b6ba802a0cbd159
   - enabled: 1
     path: Assets/Scenes/FireTemple.unity

@@ -31377,6 +31377,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715949922}
   m_CullTransparentMesh: 1
+--- !u!1 &716227549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 716227551}
+  - component: {fileID: 716227550}
+  m_Layer: 0
+  m_Name: ChestManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &716227550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716227549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b88854af06542e69851465d342c7754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChestManager
+--- !u!4 &716227551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716227549}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &716663682
 GameObject:
   m_ObjectHideFlags: 0
@@ -32064,7 +32108,7 @@ MonoBehaviour:
   npcIcon: {fileID: 2143216478}
   npcNameTMP: {fileID: 1107812020}
   npcDialogueTMP: {fileID: 590049562}
-  playerCharacter: {fileID: 11400000, guid: 392a74cf08049484d91f16bf67b36dee, type: 2}
+  playerCharacter: {fileID: 11400000, guid: 34c9e00320837d14b80046025fdeb818, type: 2}
   playerChoicesBox: {fileID: 265336577}
   choicePrefab: {fileID: 3042945179742482738, guid: 0e55fa2a8cc85af4da0dff37215a9957, type: 3}
   dialogueQuestManager: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
@@ -50922,6 +50966,7 @@ MonoBehaviour:
   isFighting: 0
   selectedEnemy: 0
   selectedPartyMember: 0
+  enemyArea: {fileID: 0}
 --- !u!4 &774453890
 Transform:
   m_ObjectHideFlags: 0
@@ -144591,6 +144636,7 @@ SceneRoots:
   - {fileID: 975903478}
   - {fileID: 149712125}
   - {fileID: 546582215}
+  - {fileID: 1876303271}
+  - {fileID: 716227551}
   - {fileID: 1834887120}
   - {fileID: 5559254500948025714}
-  - {fileID: 1876303271}
