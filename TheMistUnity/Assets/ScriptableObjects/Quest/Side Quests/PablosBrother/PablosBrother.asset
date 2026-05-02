@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f9ac5861d74ef4aa3eae5ded0c702c, type: 3}
+  m_Name: PablosBrother
+  m_EditorClassIdentifier: Assembly-CSharp::Quest
+  Name: Pablo's Brother
+  ID: PablosBrother
+  QuestGiverIcon: {fileID: 21300000, guid: 82082cf0f8411bb4e8c317128686e63a, type: 3}
+  QuestGiverName: Pablo
+  IsMainQuest: 0
+  Description: Pablo's brother entered the temple and hasn't returned. Please help
+    me find him!
+  Tasks:
+  - {fileID: 11400000, guid: cd2e401013d1d994ab74e96c45f37ab0, type: 2}
+  CoinReward: 200
+  ExpReward: 3000
+  ItemRewards:
+  - Item: {fileID: 11400000, guid: 06be233b81501804b9fbf7cbf0e60607, type: 2}
+    Quantity: 2
+  - Item: {fileID: 11400000, guid: 247bd7913e953d84cb8f4689f8e1049d, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: c30386ce42986744fbc0b86f997aa5ae, type: 2}
+    Quantity: 1
+  QuestCompleted: 0
+  QuestAccepted: 0

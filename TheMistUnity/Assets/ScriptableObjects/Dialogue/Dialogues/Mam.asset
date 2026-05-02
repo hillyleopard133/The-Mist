@@ -1,0 +1,290 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5768376156960993353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 913b7f93-8326-4ba0-86e9-7e7edb463eba
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: I spent all morning trying to catch him, he kept biting my fingers.
+  children:
+  - c1a3d424-87aa-4717-b83e-646c0fc7dba4
+  rect:
+    serializedVersion: 2
+    x: 1302
+    y: 314
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-2509930888381193759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 2464e322-a71d-4ecc-85fb-540ebe57ac78
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Precisely why you need to bring him to the elder. If he's sick he needs to
+    be checked.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1973
+    y: 314
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: DisableInteractions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: ChangeDialogueIsLeavable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: ChangeStartDialogueOnEnter
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: PassDialogueTrigger
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 3e025f554c87e7040bd198e309eb0b81, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: SetItemAmount
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: AddItems
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: a2fae37f344a08d46a044eee6a5cb97f, type: 2}
+          m_ObjectArgumentAssemblyTypeName: InventoryItem, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: GiveQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1789c3776af84044184e6a159b4a0ea8, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &-1987487975673401359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 559f2da8-deec-4d9d-93d4-5e2dc9b19a6f
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Is something wrong with him?
+  children:
+  - 913b7f93-8326-4ba0-86e9-7e7edb463eba
+  rect:
+    serializedVersion: 2
+    x: 985
+    y: 274
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1521bdc4c1880b43b77716221978fa6, type: 3}
+  m_Name: Mam
+  m_EditorClassIdentifier: 
+  characterSpeakers:
+  - {fileID: 11400000, guid: 5f192fbafefc30648b22274e1904d322, type: 2}
+  nodes:
+  - {fileID: 6247167351115152674}
+  - {fileID: 3135032554348368273}
+  - {fileID: -1987487975673401359}
+  - {fileID: -5768376156960993353}
+  - {fileID: 8138336950717558062}
+  - {fileID: -2509930888381193759}
+  newNodeOffset: {x: 350, y: 0}
+--- !u!114 &3135032554348368273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: aeec3d2d-7aab-4c2f-8ceb-1ea507f677e0
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: I don't know what's gotten into him, take him to see the elder will you?
+  children:
+  - 559f2da8-deec-4d9d-93d4-5e2dc9b19a6f
+  rect:
+    serializedVersion: 2
+    x: 667
+    y: 309
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6247167351115152674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: ec095a16-dcb2-4a7c-b886-196de03fdfdb
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Erin! It's about time you're awake. That hamster of yours has been running
+    all over the house.
+  children:
+  - aeec3d2d-7aab-4c2f-8ceb-1ea507f677e0
+  rect:
+    serializedVersion: 2
+    x: 360
+    y: 309
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 3
+      not: 1
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: 3e025f554c87e7040bd198e309eb0b81, type: 2}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8138336950717558062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: c1a3d424-87aa-4717-b83e-646c0fc7dba4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Milos never bitten anyone before..
+  children:
+  - 2464e322-a71d-4ecc-85fb-540ebe57ac78
+  rect:
+    serializedVersion: 2
+    x: 1627
+    y: 312
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []

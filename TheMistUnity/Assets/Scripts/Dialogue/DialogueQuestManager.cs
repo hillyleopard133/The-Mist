@@ -9,6 +9,11 @@ public class DialogueQuestManager : ScriptableObject
     private string DIALOGUE_TRIGGERS = "DIALOGUE_TRIGGERS";
     private int itemAmount;
 
+    public void ClearObstacle(string objectName)
+    {
+        ObstacleManager.Instance.AddObstacle(objectName);
+    }
+
     public void SetCombatBoss(EnemyDetails bossDetails)
     {
         CombatManager.Instance.SetBoss(bossDetails);

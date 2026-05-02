@@ -15,6 +15,12 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
     private readonly string SCENES_VISITED = "SCENES_VISITED";
     
     private List<string> scenesVisited = new List<string>();
+
+    private Player player;
+    private UIManager uIManager;
+    private NPCFollowerManager npcFollowerManager;
+    private PauseGameManager pauseGameManager;
+    private GameManager gameManager;
     
     protected override void Awake()
     {
@@ -24,6 +30,11 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
     private void Start()
     {
         LoadScenesVisited();
+        player = Player.Instance;
+        uIManager = UIManager.Instance;
+        npcFollowerManager = NPCFollowerManager.Instance;
+        pauseGameManager = PauseGameManager.Instance;
+        gameManager = GameManager.Instance;
     }
     
     public void QuitGame()
@@ -35,8 +46,8 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
     {
         SceneData sceneData = new SceneData();
         sceneData.sceneName = currentScene;
-        sceneData.playerPosX = Player.Instance.gameObject.transform.position.x;
-        sceneData.playerPosY = Player.Instance.gameObject.transform.position.y;
+        sceneData.playerPosX = player.gameObject.transform.position.x;
+        sceneData.playerPosY = player.gameObject.transform.position.y;
         SaveGame.Save(GAME_LOCATION, sceneData);
         if(!scenesVisited.Contains(currentScene)) scenesVisited.Add(currentScene);
         SaveScenesVisited();
@@ -70,13 +81,15 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
     {
         if (sceneName == "HamsterHoles")
         {
-            Player.Instance.gameObject.SetActive(false);
-            NPCFollowerManager.Instance.gameObject.SetActive(false);
+            player.gameObject.SetActive(false);
+            npcFollowerManager.gameObject.SetActive(false);
+            uIManager.HideGameHUD();
         }
         else
         {
-            Player.Instance.gameObject.SetActive(true);
-            NPCFollowerManager.Instance.gameObject.SetActive(true);
+            player.gameObject.SetActive(true);
+            npcFollowerManager.gameObject.SetActive(true);
+            uIManager.ShowGameHUD();
         }
 
         if (sceneName == "HamsterHoles" || currentScene == "HamsterHoles")
@@ -91,7 +104,7 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
     {
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName);
         
-        UIManager.Instance.ActivateLoadingScreen(true);
+        uIManager.ActivateLoadingScreen(true);
         
         float minimumDisplayTime = 0.3f;
         float timer = 0f;
@@ -100,7 +113,7 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
         {
             timer += Time.deltaTime;
             float progress = Mathf.Clamp01(asyncOperation.progress / 0.9f);
-            UIManager.Instance.UpdateLoadingProgress(progress);
+            uIManager.UpdateLoadingProgress(progress);
             yield return null;
         }
         yield return null;
@@ -109,9 +122,9 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
         currentScene = SceneManager.GetActiveScene().name;
         PositionPlayer(spawnLocation);
         SaveGameLocation();
-        GameManager.Instance.SaveTimer();
+        gameManager.SaveTimer();
         
-        UIManager.Instance.ActivateLoadingScreen(false);
+        uIManager.ActivateLoadingScreen(false);
     }
 
     public void LoadCheckpoint()
@@ -119,8 +132,8 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
         if (SaveGame.Exists(CHECKPOINT))
         {
             PositionPlayer(SaveGame.Load<string>(CHECKPOINT));
-            UIManager.Instance.CloseAllPanels();
-            PauseGameManager.Instance.UnPause();
+            uIManager.CloseAllPanels();
+            pauseGameManager.UnPause();
         }
     }
 
@@ -132,7 +145,7 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
         {
             Vector3 newPosition = spawnPoint.transform.position;
             newPosition.z = 0f;
-            Player.Instance.gameObject.transform.position = newPosition;
+            player.gameObject.transform.position = newPosition;
 
             if (currentScene == "HamsterHoles")
             {
@@ -148,11 +161,11 @@ public class SceneChangeManager : Singleton<SceneChangeManager>
 
     private void MoveFollowingNPCsToPlayer()
     {
-        GameObject npcParent = NPCFollowerManager.Instance.gameObject;
+        GameObject npcParent = npcFollowerManager.gameObject;
         
         foreach (Transform npc in npcParent.transform) 
         {
-            npc.position = Player.Instance.transform.position;
+            npc.position = player.transform.position;
             Rigidbody2D rb = npc.GetComponent<Rigidbody2D>(); 
             if (rb != null)
             {

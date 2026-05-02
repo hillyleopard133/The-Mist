@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6906559120916116030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 60cc7b8a-792a-4f4f-b0ee-84c79aa29310
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: It's such a lovely day today.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 548
+    y: 494
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1521bdc4c1880b43b77716221978fa6, type: 3}
+  m_Name: GrassMan
+  m_EditorClassIdentifier: 
+  characterSpeakers:
+  - {fileID: 11400000, guid: ddd44e356855bdf40b6d29d776ffb75d, type: 2}
+  nodes:
+  - {fileID: 6247167351115152674}
+  - {fileID: -6906559120916116030}
+  newNodeOffset: {x: 350, y: 0}
+--- !u!114 &6247167351115152674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: ec095a16-dcb2-4a7c-b886-196de03fdfdb
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Hello!
+  children:
+  - 60cc7b8a-792a-4f4f-b0ee-84c79aa29310
+  rect:
+    serializedVersion: 2
+    x: 265
+    y: 493
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []

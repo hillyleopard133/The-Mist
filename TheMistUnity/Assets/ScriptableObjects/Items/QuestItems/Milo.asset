@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27784ca44b040fda739fa2d618aa2bf, type: 3}
+  m_Name: Milo
+  m_EditorClassIdentifier: 
+  ID: Milo
+  Name: Milo
+  Icon: {fileID: 5741417805841418837, guid: 7c9998b31a3c50d4eb2ecfc5427f4e39, type: 3}
+  Description: Milo's been infected by the mist.. I must find a way to help him.
+    He can fit into small spaces.
+  SellValue: 0
+  BuyValue: 0
+  ItemType: 4
+  IsConsumable: 0
+  IsStackable: 0
+  MaxStack: 1
+  Quantity: 0

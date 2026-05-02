@@ -6,26 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/RPG/StartingScreenRPG.unity
-    guid: 09ccd12d3862cce4c817873fdba0e795
-  - enabled: 0
-    path: Assets/Scenes/RPG/Town.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/RPG/DarkWoods.unity
-    guid: 0855e4e4c7e68f84698318e2323b3f77
-  - enabled: 0
     path: Assets/Scenes/Shops/MagicShop.unity
     guid: a1135c9b6e63cba47b69739a89238b1c
   - enabled: 1
     path: Assets/Scenes/StartingScreen.unity
     guid: 9f45a1a4429182d449be835fde072735
   - enabled: 1
+    path: Assets/Scenes/House.unity
+    guid: e0254fd6ad7c4f840a91d93a83bfc4f1
+  - enabled: 1
     path: Assets/Scenes/TownTheMist.unity
     guid: d2643499299bb6a4eb9296533b7d578c
-  - enabled: 1
-    path: Assets/Scenes/RPG/TheMistTemple.unity
-    guid: ce5daf11e53e7d1488f67b89a3a090de
   - enabled: 1
     path: Assets/Scenes/Shops/WeaponShop.unity
     guid: 167655c965542ae42bfb48c21184f441

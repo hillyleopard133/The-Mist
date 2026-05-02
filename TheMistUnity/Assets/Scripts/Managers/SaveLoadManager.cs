@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Runtime.Serialization;
 using BayatGames.SaveGameFree;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -23,6 +24,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
     private CombatManager combatManager;
     private TempleManager templeManager;
     private ChestManager chestManager;
+    private ObstacleManager obstacleManager;
 
     private bool gameIsActive;
     
@@ -55,6 +57,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         combatManager = CombatManager.Instance;
         templeManager = TempleManager.Instance;
         chestManager = ChestManager.Instance;
+        obstacleManager = ObstacleManager.Instance;
         
         DeactivateGame();    
         
@@ -125,6 +128,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         combatManager.SaveCombatData();
         templeManager.SaveTemples();
         chestManager.SaveChests();
+        obstacleManager.SaveObstacles();
     }
 
     //Reset game data here
@@ -158,6 +162,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         combatManager.ResetCombatData();
         templeManager.ResetTemples();
         chestManager.ResetChests();
+        obstacleManager.ResetObstacles();
     }
     
     private IEnumerator LoadNewGameSceneCoroutine()
@@ -213,6 +218,7 @@ public class SaveLoadManager : Singleton<SaveLoadManager>
         combatManager.LoadCombatData();
         templeManager.LoadTemples();
         chestManager.LoadChests();
+        obstacleManager.LoadObstacles();
         dialogueManager.GetDialogueQuestManager().LoadDialogueTriggers();
         if (npcFollowerManager.gameObject.transform.childCount == 0)
         {

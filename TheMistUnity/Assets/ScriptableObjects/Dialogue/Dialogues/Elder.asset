@@ -1,0 +1,693 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8676755607756495184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 27b873da-c9c2-46cd-8a8e-b5cc9f95850f
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: ......
+  children:
+  - 445d3976-175e-464f-aa04-e12204595c67
+  rect:
+    serializedVersion: 2
+    x: 1181
+    y: 459
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-6443250486516904531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: e1a2a00d-ba2d-4fd7-8db5-48ec0cf9f088
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: I wish you luck on your quest.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 428
+    y: 590
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 3
+      not: 0
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: 8db6afba326d21e40abf363f5dc331fc, type: 2}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-6049388790737531951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 680346bf-133b-4c94-89e9-1394b461967c
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: It's Milo, somethings wrong with him!
+  children:
+  - 9b6e96ce-14a8-434b-97a8-c4136a54a977
+  rect:
+    serializedVersion: 2
+    x: 639
+    y: 412
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-5975146975960545833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 51680b87-cac8-4f40-9c59-28c15a1ec01d
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: This isn't like anything we've treated before.
+  children:
+  - e533c1c5-53ad-41af-b252-e2936a48f4cc
+  rect:
+    serializedVersion: 2
+    x: 1683
+    y: 471
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-3067116003562011309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 445d3976-175e-464f-aa04-e12204595c67
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: .............................
+  children:
+  - 51680b87-cac8-4f40-9c59-28c15a1ec01d
+  rect:
+    serializedVersion: 2
+    x: 1431
+    y: 451
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-2750737690545839074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: f16ca1e3-f245-465f-b9a8-63fc08094543
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: I wish you luck.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2975
+    y: 844
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: AddQuestProgress
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1789c3776af84044184e6a159b4a0ea8, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: SetItemAmount
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: AddItems
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 98757f9e69bac6145a4fb4875510582b, type: 2}
+          m_ObjectArgumentAssemblyTypeName: InventoryItem, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: PassDialogueTrigger
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 8db6afba326d21e40abf363f5dc331fc, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: DialogueQuestManager, Assembly-CSharp
+        m_MethodName: ClearObstacle
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Town_Wagon
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-2514625019807633915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 9b6e96ce-14a8-434b-97a8-c4136a54a977
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Hmmm, let me have a look...
+  children:
+  - 27b873da-c9c2-46cd-8a8e-b5cc9f95850f
+  rect:
+    serializedVersion: 2
+    x: 918
+    y: 422
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-2292114638957912245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 264853e4-403c-40f8-95db-479f0c849795
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: You look troubled, do you need something?
+  children:
+  - 680346bf-133b-4c94-89e9-1394b461967c
+  rect:
+    serializedVersion: 2
+    x: 382
+    y: 362
+    width: 250
+    height: 100
+  requirementsOr:
+  - requirements:
+    - requirementType: 3
+      not: 1
+      quest: {fileID: 0}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 11400000, guid: 8db6afba326d21e40abf363f5dc331fc, type: 2}
+      amountOfItemRequired: 0
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-1129263292508298113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 06397e56-2e1e-4aa5-a65d-0b33784769dc
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: You want me to go there?
+  children:
+  - d5b75ee9-1d56-4258-b9eb-c3a68e90108e
+  rect:
+    serializedVersion: 2
+    x: 1273
+    y: 788
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-1004975200298990231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 838b27f0-0adf-4a69-92d9-b49bde6cc659
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: This sickness... It's tied to the mist.
+  children:
+  - 345eff73-98c9-4333-b002-bbc5b5209707
+  rect:
+    serializedVersion: 2
+    x: 2235
+    y: 450
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1521bdc4c1880b43b77716221978fa6, type: 3}
+  m_Name: Elder
+  m_EditorClassIdentifier: 
+  characterSpeakers:
+  - {fileID: 11400000, guid: a384387c1c12038499e1b9df9832798e, type: 2}
+  nodes:
+  - {fileID: 6247167351115152674}
+  - {fileID: -6049388790737531951}
+  - {fileID: -2514625019807633915}
+  - {fileID: -8676755607756495184}
+  - {fileID: -3067116003562011309}
+  - {fileID: -5975146975960545833}
+  - {fileID: 4233526304762175308}
+  - {fileID: -1004975200298990231}
+  - {fileID: 9091210795365923215}
+  - {fileID: 117547046330935492}
+  - {fileID: 1634033153009636610}
+  - {fileID: 630295495063778524}
+  - {fileID: -1129263292508298113}
+  - {fileID: 5669596227555929858}
+  - {fileID: 1302387056798798983}
+  - {fileID: 384446276086293162}
+  - {fileID: 6545005036232311044}
+  - {fileID: -2750737690545839074}
+  - {fileID: -2292114638957912245}
+  - {fileID: -6443250486516904531}
+  newNodeOffset: {x: 350, y: 0}
+--- !u!114 &117547046330935492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: be7c20e1-9a34-400b-b29d-9faa756b6f6e
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: So what can we do?
+  children:
+  - 8bcd7b7c-a1bb-49b5-b5b5-8f8211b18829
+  rect:
+    serializedVersion: 2
+    x: 2833
+    y: 436
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &384446276086293162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 9eef6ce5-7fff-487d-ba67-8f4600653bef
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: Take this amulet, it will help guard him from the symptoms but it will not
+    last forever.
+  children:
+  - f16ca1e3-f245-465f-b9a8-63fc08094543
+  rect:
+    serializedVersion: 2
+    x: 2654
+    y: 830
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &630295495063778524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 359c0d0e-5424-4fa7-8a27-fe2aa31b89b3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: "If it is what I think it is, the source lies beyond the village\u2026 In
+    the old temples."
+  children:
+  - 06397e56-2e1e-4aa5-a65d-0b33784769dc
+  rect:
+    serializedVersion: 2
+    x: 3435
+    y: 459
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1302387056798798983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 50a3ed11-afff-463b-beed-10f58d3c0bfa
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: If nothing is done it wont just be your hamster.
+  children:
+  - 5ae4986c-24fd-4dec-b796-99be3041f7c4
+  rect:
+    serializedVersion: 2
+    x: 1907
+    y: 867
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1634033153009636610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 8bcd7b7c-a1bb-49b5-b5b5-8f8211b18829
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: There's nothing here that can cure it.
+  children:
+  - 359c0d0e-5424-4fa7-8a27-fe2aa31b89b3
+  rect:
+    serializedVersion: 2
+    x: 3127
+    y: 477
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4233526304762175308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: e533c1c5-53ad-41af-b252-e2936a48f4cc
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: What do you mean? Can you help him?
+  children:
+  - 838b27f0-0adf-4a69-92d9-b49bde6cc659
+  rect:
+    serializedVersion: 2
+    x: 1947
+    y: 472
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5669596227555929858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: d5b75ee9-1d56-4258-b9eb-c3a68e90108e
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: I'm not sending you, I'm just telling you the truth.
+  children:
+  - 50a3ed11-afff-463b-beed-10f58d3c0bfa
+  rect:
+    serializedVersion: 2
+    x: 1611
+    y: 833
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6247167351115152674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: ec095a16-dcb2-4a7c-b886-196de03fdfdb
+  m_EditorClassIdentifier: 
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: 'Good afternoon Erin. '
+  children:
+  - 264853e4-403c-40f8-95db-479f0c849795
+  - e1a2a00d-ba2d-4fd7-8db5-48ec0cf9f088
+  rect:
+    serializedVersion: 2
+    x: 101
+    y: 490
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6545005036232311044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 5ae4986c-24fd-4dec-b796-99be3041f7c4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 1
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: If that's what it takes, I'll do it.
+  children:
+  - 9eef6ce5-7fff-487d-ba67-8f4600653bef
+  rect:
+    serializedVersion: 2
+    x: 2309
+    y: 831
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9091210795365923215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05c0dff9ebdff4094237276d48fd19, type: 3}
+  m_Name: 345eff73-98c9-4333-b002-bbc5b5209707
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  speakerIndex: 0
+  isPlayerSpeaking: 0
+  isQuestOption: 0
+  triggerInteraction: 0
+  text: It's been spreading further than we thought.
+  children:
+  - be7c20e1-9a34-400b-b29d-9faa756b6f6e
+  rect:
+    serializedVersion: 2
+    x: 2516
+    y: 472
+    width: 250
+    height: 100
+  requirementsOr: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
