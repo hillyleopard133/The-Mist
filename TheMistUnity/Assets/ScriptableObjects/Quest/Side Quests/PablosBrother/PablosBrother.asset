@@ -22,7 +22,6 @@ MonoBehaviour:
   Tasks:
   - {fileID: 11400000, guid: cd2e401013d1d994ab74e96c45f37ab0, type: 2}
   - {fileID: 11400000, guid: 20c781a1e6d74834baafabd5c0fb996d, type: 2}
-  - {fileID: 11400000, guid: b035b0191a2a7d146be847ae1e54e5b8, type: 2}
   - {fileID: 11400000, guid: 35f6ab46e401fe84a8caf938597ad99b, type: 2}
   CoinReward: 200
   ExpReward: 3000
@@ -34,4 +33,4 @@ MonoBehaviour:
   - Item: {fileID: 11400000, guid: c30386ce42986744fbc0b86f997aa5ae, type: 2}
     Quantity: 1
   QuestCompleted: 0
-  QuestAccepted: 0
+  QuestAccepted: 1

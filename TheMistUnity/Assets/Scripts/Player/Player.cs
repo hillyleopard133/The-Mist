@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : Singleton<Player>
@@ -18,8 +17,6 @@ public class Player : Singleton<Player>
     public void RespawnPlayer()
     {
         SceneChangeManager.Instance.LoadCheckpoint();
-        //PlayerMana.ResetMana();
-        //PlayerHealth.ResetHealth();
         animations.ResetPlayer();
     }
 }
