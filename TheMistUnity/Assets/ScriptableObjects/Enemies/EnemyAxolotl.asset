@@ -18,8 +18,8 @@ MonoBehaviour:
   isBoss: 0
   CoinsReward: 8
   ExpReward: 180
-  AttackDamage: 5
-  MaxHealth: 15
+  AttackDamage: 20
+  MaxHealth: 100
   CurrentHealth: 40
   IsDead: 0
   Index: 0

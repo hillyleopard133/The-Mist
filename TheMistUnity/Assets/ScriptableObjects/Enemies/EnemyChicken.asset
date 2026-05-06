@@ -15,10 +15,11 @@ MonoBehaviour:
   EnemyName: Chicken
   EnemySprite: {fileID: -855322296, guid: 34fd48863f97b7a45abae73a2f93a98f, type: 3}
   enemyPrefab: {fileID: 9185471420396107289, guid: fa7950473c3e5834f9dd78ac04ef7b72, type: 3}
+  isBoss: 0
   CoinsReward: 5
   ExpReward: 200
-  AttackDamage: 6
-  MaxHealth: 20
+  AttackDamage: 20
+  MaxHealth: 100
   CurrentHealth: 40
   IsDead: 0
   Index: 0
