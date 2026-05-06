@@ -785,6 +785,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Generate",
+                    "type": "Button",
+                    "id": "d44a87c5-d84a-4080-bf79-8a149b38989a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -796,6 +805,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "ActivateRelic",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aff48866-8d63-42ad-8594-ee4f86d82464",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Generate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

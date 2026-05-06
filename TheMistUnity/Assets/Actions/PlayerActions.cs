@@ -871,6 +871,15 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Generate"",
+                    ""type"": ""Button"",
+                    ""id"": ""d44a87c5-d84a-4080-bf79-8a149b38989a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -882,6 +891,17 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""ActivateRelic"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""aff48866-8d63-42ad-8594-ee4f86d82464"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Generate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -941,6 +961,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         // Temple
         m_Temple = asset.FindActionMap("Temple", throwIfNotFound: true);
         m_Temple_ActivateRelic = m_Temple.FindAction("ActivateRelic", throwIfNotFound: true);
+        m_Temple_Generate = m_Temple.FindAction("Generate", throwIfNotFound: true);
     }
 
     ~@PlayerActions()
@@ -2126,6 +2147,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Temple;
     private List<ITempleActions> m_TempleActionsCallbackInterfaces = new List<ITempleActions>();
     private readonly InputAction m_Temple_ActivateRelic;
+    private readonly InputAction m_Temple_Generate;
     /// <summary>
     /// Provides access to input actions defined in input action map "Temple".
     /// </summary>
@@ -2141,6 +2163,10 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Temple/ActivateRelic".
         /// </summary>
         public InputAction @ActivateRelic => m_Wrapper.m_Temple_ActivateRelic;
+        /// <summary>
+        /// Provides access to the underlying input action "Temple/Generate".
+        /// </summary>
+        public InputAction @Generate => m_Wrapper.m_Temple_Generate;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -2170,6 +2196,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @ActivateRelic.started += instance.OnActivateRelic;
             @ActivateRelic.performed += instance.OnActivateRelic;
             @ActivateRelic.canceled += instance.OnActivateRelic;
+            @Generate.started += instance.OnGenerate;
+            @Generate.performed += instance.OnGenerate;
+            @Generate.canceled += instance.OnGenerate;
         }
 
         /// <summary>
@@ -2184,6 +2213,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @ActivateRelic.started -= instance.OnActivateRelic;
             @ActivateRelic.performed -= instance.OnActivateRelic;
             @ActivateRelic.canceled -= instance.OnActivateRelic;
+            @Generate.started -= instance.OnGenerate;
+            @Generate.performed -= instance.OnGenerate;
+            @Generate.canceled -= instance.OnGenerate;
         }
 
         /// <summary>
@@ -2513,5 +2545,12 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnActivateRelic(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Generate" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnGenerate(InputAction.CallbackContext context);
     }
 }

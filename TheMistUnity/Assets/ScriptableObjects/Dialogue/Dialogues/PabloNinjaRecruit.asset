@@ -21,8 +21,8 @@ MonoBehaviour:
   - 718f3e44-9460-42df-bf11-5a1f6be72ccb
   rect:
     serializedVersion: 2
-    x: 2297
-    y: 558
+    x: 2014
+    y: 438
     width: 250
     height: 100
   requirementsOr: []
@@ -50,8 +50,8 @@ MonoBehaviour:
   - 382a1fe1-9f00-4883-bbf0-7d15fba7c48f
   rect:
     serializedVersion: 2
-    x: 1925
-    y: 555
+    x: 1697
+    y: 440
     width: 250
     height: 100
   requirementsOr: []
@@ -79,8 +79,8 @@ MonoBehaviour:
   - ba3bb603-68a8-4e23-8ea7-efa773643c84
   rect:
     serializedVersion: 2
-    x: 1189
-    y: 560
+    x: 1004
+    y: 542
     width: 250
     height: 100
   requirementsOr: []
@@ -135,8 +135,8 @@ MonoBehaviour:
   - dfd68dec-411b-404d-8d00-ea4096b705c3
   rect:
     serializedVersion: 2
-    x: 869
-    y: 359
+    x: 715
+    y: 370
     width: 250
     height: 100
   requirementsOr: []
@@ -165,8 +165,8 @@ MonoBehaviour:
   - 136a6881-1d02-408d-a177-f6f67dfe1cee
   rect:
     serializedVersion: 2
-    x: 2641
-    y: 454
+    x: 2366
+    y: 452
     width: 250
     height: 100
   requirementsOr: []
@@ -194,8 +194,8 @@ MonoBehaviour:
   - 1b81d497-c926-4637-bdd8-12f7d419d3d3
   rect:
     serializedVersion: 2
-    x: 849
-    y: 522
+    x: 690
+    y: 506
     width: 250
     height: 100
   requirementsOr: []
@@ -224,8 +224,8 @@ MonoBehaviour:
   - 19a25642-b9e4-42a5-8597-b06f206792db
   rect:
     serializedVersion: 2
-    x: 455
-    y: 433
+    x: 384
+    y: 446
     width: 250
     height: 100
   requirementsOr: []
@@ -254,8 +254,8 @@ MonoBehaviour:
   - ba3bb603-68a8-4e23-8ea7-efa773643c84
   rect:
     serializedVersion: 2
-    x: 1280
-    y: 331
+    x: 1022
+    y: 306
     width: 250
     height: 100
   requirementsOr: []
@@ -284,14 +284,33 @@ MonoBehaviour:
   - 80521f74-0d03-43e1-89f2-fceb482685e4
   rect:
     serializedVersion: 2
-    x: 1591
-    y: 482
+    x: 1345
+    y: 446
     width: 250
     height: 100
-  requirementsOr: []
+  requirementsOr:
+  - requirements:
+    - requirementType: 0
+      not: 0
+      quest: {fileID: 11400000, guid: 3a0fcfc36023c3f4c86dac6082e8059a, type: 2}
+      item: {fileID: 0}
+      dialogueTrigger: {fileID: 0}
+      amountOfItemRequired: 0
   onTrigger:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e2fcda955720f7d4a8b08353d6eebf57, type: 2}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7272006342293405695
 MonoBehaviour:
   m_ObjectHideFlags: 0
